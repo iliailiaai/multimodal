@@ -1,0 +1,47 @@
+{
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "judge": "deepseek/deepseek-v3.2",
+  "active_perception": false,
+  "state": "completed",
+  "stop_reason": null,
+  "metrics": {
+    "expected_count": 1,
+    "completed": 1,
+    "judged": 1,
+    "errors": 0,
+    "correct": 0,
+    "pass_at_1": 0.0,
+    "partial_accuracy": 0.0,
+    "by_level": {
+      "Easy": {
+        "count": 0,
+        "correct": 0
+      },
+      "Medium": {
+        "count": 1,
+        "correct": 0
+      },
+      "Hard": {
+        "count": 0,
+        "correct": 0
+      }
+    },
+    "tool_calls": {},
+    "recorded": 1,
+    "pending": 0
+  },
+  "openrouter_usage": {
+    "requests": 2,
+    "cost_usd": 7.7487e-05,
+    "input_tokens": 1598,
+    "output_tokens": 1445
+  },
+  "score_note_ru": "Технические ошибки учитываются отдельно. Итоговый pass_at_1 появится только после оценки всех выбранных задач.",
+  "started_at": "2026-10-28T12:14:05.647560+00:00",
+  "finished_at": "2026-10-28T12:15:51.690310+00:00",
+  "return_code": 0,
+  "imported_results_count": 0,
+  "imported_openrouter_cost_usd": 0,
+  "new_openrouter_cost_usd": 7.7487e-05,
+  "billing_note_ru": "Стоимость по журналу запросов включает импортированные ответы пилота. Новые расходы указаны отдельно. Баланс ключа может включать сторонние параллельные обращения."
+}

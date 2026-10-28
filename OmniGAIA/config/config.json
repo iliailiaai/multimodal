@@ -1,0 +1,41 @@
+{
+  "evaluation": {
+    "base_url": "http://localhost:8080/v1",
+    "api_key": "empty",
+    "model": "deepseek-v3.2"
+  },
+  "web_tools": {
+    "serper_api_key": "",
+    "jina_api_key": ""
+  },
+  "paths": {
+    "data_root": "./data",
+    "image_save_dir": "./cache/searched_images",
+    "web_cache_dir": "./cache"
+  },
+  "data": {
+    "media_dirs": {
+      "video": ["videos", "video"],
+      "audio": ["audios", "audio"],
+      "image": ["images", "image"]
+    }
+  },
+  "agent": {
+    "input_file": null,
+    "api_key": null,
+    "api_base_url": null,
+    "model_name": null,
+    "level": null,
+    "max_items": null,
+    "concurrent_limit": 5,
+    "max_action_limit": 50,
+    "use_asr": false,
+    "output_dir": "./outputs",
+    "request_timeout": 600,
+    "forced_final_timeout": 300,
+    "ffmpeg_timeout": 180,
+    "item_timeout": 36000,
+    "eval_timeout": 120,
+    "skip_eval": false
+  }
+}

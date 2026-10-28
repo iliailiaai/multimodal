@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/home/ilya/projects/multimodal/OmniGAIA/.venv/bin/python",
+    "-u",
+    "src/run_openrouter_job.py",
+    "--run-dir",
+    "/home/ilya/projects/multimodal/OmniGAIA/outputs/openrouter_nemotron_fixed130/retry_overload",
+    "--concurrency",
+    "1",
+    "--model",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "--input-file",
+    "/home/ilya/projects/multimodal/OmniGAIA/outputs/openrouter_nemotron_fixed130/retry_overload/metadata.json",
+    "--dataset-revision",
+    "adf542cf70735e061b8d73300cdbae9c847b9bc3"
+  ],
+  "ids": [
+    20,
+    42,
+    56,
+    74,
+    87,
+    130,
+    167
+  ],
+  "pid": 296062
+}

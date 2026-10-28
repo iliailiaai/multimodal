@@ -1,0 +1,51 @@
+{
+  "name": "both_videos_only",
+  "status": 200,
+  "seconds": 55.77,
+  "body": {
+    "id": "gen-1791453085-qmv9GR6o6a0ZUilh7Rjj",
+    "object": "chat.completion",
+    "created": 1791453085,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "This video demonstrates how to create a DIY NFC ring for phone unlocking. It shows the process of embedding an NFC tag into a 3D-printed or silicone ring, programming it with a smartphone app, and testing its functionality by tapping the ring against the device's screen to bypass the lock.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 32298,
+      "completion_tokens": 60,
+      "total_tokens": 32358,
+      "cost": 0.0048729,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0048729,
+        "upstream_inference_prompt_cost": 0.0048447,
+        "upstream_inference_completions_cost": 2.82e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

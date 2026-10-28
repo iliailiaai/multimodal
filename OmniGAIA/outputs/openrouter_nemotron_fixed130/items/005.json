@@ -1,0 +1,94 @@
+{
+  "id": 5,
+  "question": "Look at the image provided. What brand of skis is shown? In the ski industry, many ski brands have established partnerships with specific binding manufacturers to offer integrated setups. Based on the typical partnership model for the ski brand identified in the image, which binding brand is commonly designated as their primary partner for such systems? You can refer to the audio or online information for details.",
+  "Level": "Easy",
+  "category": "Sports",
+  "task_type": "image + audio",
+  "answer": "Marker",
+  "output": "<answer>Marker</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Look at the image provided. What brand of skis is shown? In the ski industry, many ski brands have established partnerships with specific binding manufacturers to offer integrated setups. Based on the typical partnership model for the ski brand identified in the image, which binding brand is commonly designated as their primary partner for such systems? You can refer to the audio or online information for details."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:149395 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:982092 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "<answer>Marker</answer>",
+      "reasoning": "So, let's look at the image. The skis have a red logo with \"K2\" on them. So the brand is K2. Now, in the ski industry, K2 has a partnership with a binding manufacturer. I need to recall or find which binding brand is their primary partner. From what I know, K2 often partners with Marker. Let me confirm. Marker is a well-known binding brand, and K2 has used Marker bindings in their systems. So the primary partner binding brand for K2 is Marker.\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "So, let's look at the image. The skis have a red logo with \"K2\" on them. So the brand is K2. Now, in the ski industry, K2 has a partnership with a binding manufacturer. I need to recall or find which binding brand is their primary partner. From what I know, K2 often partners with Marker. Let me confirm. Marker is a well-known binding brand, and K2 has used Marker bindings in their systems. So the primary partner binding brand for K2 is Marker.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [],
+  "requests": [
+    {
+      "item_id": 5,
+      "id": "gen-1793138543-Q9sdbBfwEQLTww9NMZzd",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "provider": "Nvidia",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 1090,
+        "completion_tokens": 119,
+        "total_tokens": 1209,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 113,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 5.405
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Marker",
+  "em_score": 1,
+  "llm_equal": 1,
+  "judge_response": "Exact match",
+  "judge_error": null,
+  "elapsed_seconds": 281.09
+}

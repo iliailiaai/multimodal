@@ -1,0 +1,11 @@
+{
+  "id": 66,
+  "question": "You are given two videos that document separate fatal incidents in U.S. history. First, analyze each video to identify the exact location of each event: for the first video, determine the specific restaurant where the shooting took place (including city and state); for the second video, determine the specific street block where the incident occurred (including city and state) and the year it happened. Based on your findings, use web research to find the geographic coordinates for the restaurant location and approximate coordinates for the street block location. Then, calculate the straight-line distance in miles between these two locations using the Haversine formula, rounding the result to the nearest ten. Finally, subtract the number of years elapsed between the two incidents from this distance to obtain a single numerical answer.",
+  "Level": "Medium",
+  "category": "History & Society",
+  "task_type": "video w/ audio",
+  "answer": "702",
+  "status": "error",
+  "error": "RuntimeError: OpenRouter HTTP 400: {\"error\":{\"message\":\"Provider returned error\",\"code\":400,\"metadata\":{\"raw\":\"data: {\\\"error\\\":{\\\"code\\\":\\\"invalid_parameter_error\\\",\\\"param\\\":null,\\\"message\\\":\\\"The audio is empty\\\",\\\"type\\\":\\\"invalid_request_error\\\"},\\\"id\\\":\\\"chatcmpl-ee23a9e6-5494-94a6-aabf-fab1a7bf073e\\\"}\\n\\n\",\"provider_name\":\"Alibaba\",\"is_byok\":false}},\"user_id\":\"user_3JzvfBNETxKVb7EntXZdb0lIIZv\"}",
+  "elapsed_seconds": 81.32
+}

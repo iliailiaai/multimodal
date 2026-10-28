@@ -1,0 +1,795 @@
+{
+  "id": 43,
+  "question": "You are watching two travel videos. The first video features a kayaking company operating from a specific town. The second video visits a brewery attraction where a famous historical document is displayed, showing a lease duration in years. From these videos, identify the town where the kayaking company is based, and the brewery attraction along with the lease duration. Then, calculate the Great Circle distance in kilometers between the town and the brewery, rounding to the nearest whole number. Finally, add the first digit of the lease duration to this distance to obtain your answer.",
+  "Level": "Medium",
+  "category": "Geography & Travel",
+  "task_type": "video w/ audio",
+  "answer": "285",
+  "output": "All coordinates are now cross-verified (Wikipedia: 51.8801°N, 9.5835°W; Wikivoyage: 51.880, −9.584; other gazetteers: 51.8800967, −9.5835174), confirming my calculation.\n\n## Summary of Analysis\n\n**Video 1 — Kayaking company:** The title card reads \"COLIN & JAMIE — EMERALD OUTDOORS, KENMARE,\" with the \"Discover Kerry / Kerry Tourism\" branding at the end, and the audio describes Kerry's mountains, sea, rivers and lakes. The company is **Emerald Outdoors**, based in the town of **Kenmare, County Kerry, Ireland** (51.8801°N, 9.5835°W). ✓ Verified via web search.\n\n**Video 2 — Brewery attraction:** The video shows the \"Guinness Storehouse\" signs at St James's Gate, Dublin, the giant barrel vats, the Grain store, the moving walkway, the Gravity Bar with Dublin views, and the circular glass atrium exhibit displaying the famous 1759 lease signed by Arthur Guinness. The attraction is the **Guinness Storehouse** (53.341874°N, 6.286709°W), and the lease duration displayed is **9,000 years**. ✓ Verified via web search.\n\n**Great Circle distance calculation:**\n- Using the Haversine formula with R = 6371 km: distance = 275.58 km → **276 km** (rounded)\n\n**Final step:**\n- First digit of the lease duration (9,000) = **9**\n- 276 + 9 = **285**\n\n<answer>285</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "You are watching two travel videos. The first video features a kayaking company operating from a specific town. The second video visits a brewery attraction where a famous historical document is displayed, showing a lease duration in years. From these videos, identify the town where the kayaking company is based, and the brewery attraction along with the lease duration. Then, calculate the Great Circle distance in kilometers between the town and the brewery, rounding to the nearest whole number. Finally, add the first digit of the lease duration to this distance to obtain your answer."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:780678 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:122988 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:4636850 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:2557308 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try analyzing the two videos.\n\nVideo 1: A kayaking company. Text overlay: \"COLIN & JAMIE - EMERALD OUTDOORS, KENMARE\". So the kayaking company is Emerald Outdoors, based in Kenmare, County Kerry, Ireland.\n\nVideo 2: Guinness Storehouse in Dublin. The video shows \"GUINNESS STOREHOUSE\" signage. Famous historical document: the 1759 Guinness lease, signed by Arthur Guinness, a 9,000-year lease. At the 00:10 mark of Video 2, text is visible around a circular display: \"...SIGNED THIS DAY 31ST DECEMBER 1759... CONTAINING ... ACRES ... at ... yearly rent ...\". The lease term is 9,000 years.\n\nSo what we need is:\n1. Town: Kenmare, Ireland. Coordinates: approximately 51.7558° N, 9.5761° W (Kenmare is roughly 51.75° N, 9.58° W).\n2. Brewery attraction: Guinness Storehouse, St James's Gate, Dublin. Coordinates: approximately 53.3494° N, 6.2960° W? Let me confirm: Guinness Storehouse is at 48.3? No, wrong. Dublin is about 53.3498° N, 6.2603° W. St James's Gate is slightly west of the city center: about 53.3484° N, 6.2961° W? Let me calculate precisely later.\n\nCompute the great-circle distance between Kenmare and Dublin (Guinness Storehouse). Then add the first digit of the lease term (9,000 → first digit 9) to the distance.\n\nLet me calculate. Kenmare coordinates: 51.7558° N, 9.5761° W (per Wikipedia: 51°45′21″N 9°34′34″W). Guinness Storehouse: 53.3489° N, 6.2961° W? Wikipedia: Guinness Storehouse coordinates 53°20′56″N 6°17′46″W? Let me search to confirm.\n\nActually, let me just use the tools: web search for coordinates, then compute with code.\n\nDistance from Kenmare to Dublin is about 290 km? Let me estimate: Dublin 53.35 N, -6.26; Kenmare 51.756 N, -9.576. Δlat = 1.593° ≈ 177 km. Δlon = 3.316°, at mean latitude ~52.5°, cos ≈ 0.608, so Δlon ≈ 3.316 × 111.32 × 0.608 ≈ 224.5 km. Distance ≈ sqrt(177² + 224.5²) ≈ sqrt(31329 + 50400) ≈ sqrt(81729) ≈ 285.9 km. So about 286 km. Adding 9 gives about 295.\n\nBut I need to round the distance to the nearest integer, then add 9. Let me compute precisely with the Haversine formula.\n\nLet me get the exact coordinates:\n- Kenmare: 51.7558° N, 9.5761° W (Wikipedia: 51°45′21″N 9°34′34″W → 51.7558, -9.5761).\n- Guinness Storehouse: Wikipedia lists it as 53°20′57″N 6°17′42″W? Let me search.\n\nI'll use web_search to confirm both, then compute with code.\n\nAlso confirming the lease term: 9,000 years. The frame at 00:10 in Video 2 shows the circular text of the lease. The famous 1759 lease was for 9,000 years at an annual rent of £45. First digit = 9.\n\nSo the final answer: distance ≈ 286 km (needs calculation), + 9 = 295.\n\nLet me compute precisely.\n\nHaversine with R = 6371 km.\n\nKenmare: lat1 = 51.7558, lon1 = -9.5761.\nGuinness Storehouse: lat2 = 53.3489 (approx), lon2 = -6.2961 (approx). Let me look up the actual coordinates.\n\nGuinness Storehouse, St James's Gate, Dublin 8. Google Maps: 53.34889, -6.29694? Hmm. Wikipedia article \"Guinness Storehouse\": coordinates 53°20′56″N 6°17′49″W? Not sure. Let me search.\n\nAnyway, let me run the search and computation.\n\nPlan:\n1. web_search \"Emerald Outdoors Kenmare kayaking\" to confirm the town (though the video text already says Kenmare).\n2. web_search \"Guinness Storehouse coordinates latitude longitude\".\n3. web_search \"Guinness 1759 lease 9000 years\".\n4. Compute the Haversine distance with code.\n5. Add 9.\n\nLet me run the searches in parallel.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_289d16ed268b4e8ab91313e6",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Emerald Outdoors kayaking Kenmare Colin Jamie\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_6ceed7a7efc346cdae38b85c",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Guinness Storehouse coordinates latitude longitude St James's Gate Dublin\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 2,
+          "id": "call_07bd019a27744d1e92afbae6",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Arthur Guinness 1759 lease 9000 years St James's Gate\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try analyzing the two videos.\n\nVideo 1: A kayaking company. Text overlay: \"COLIN & JAMIE - EMERALD OUTDOORS, KENMARE\". So the kayaking company is Emerald Outdoors, based in Kenmare, County Kerry, Ireland.\n\nVideo 2: Guinness Storehouse in Dublin. The video shows \"GUINNESS STOREHOUSE\" signage. Famous historical document: the 1759 Guinness lease, signed by Arthur Guinness, a 9,000-year lease. At the 00:10 mark of Video 2, text is visible around a circular display: \"...SIGNED THIS DAY 31ST DECEMBER 1759... CONTAINING ... ACRES ... at ... yearly rent ...\". The lease term is 9,000 years.\n\nSo what we need is:\n1. Town: Kenmare, Ireland. Coordinates: approximately 51.7558° N, 9.5761° W (Kenmare is roughly 51.75° N, 9.58° W).\n2. Brewery attraction: Guinness Storehouse, St James's Gate, Dublin. Coordinates: approximately 53.3494° N, 6.2960° W? Let me confirm: Guinness Storehouse is at 48.3? No, wrong. Dublin is about 53.3498° N, 6.2603° W. St James's Gate is slightly west of the city center: about 53.3484° N, 6.2961° W? Let me calculate precisely later.\n\nCompute the great-circle distance between Kenmare and Dublin (Guinness Storehouse). Then add the first digit of the lease term (9,000 → first digit 9) to the distance.\n\nLet me calculate. Kenmare coordinates: 51.7558° N, 9.5761° W (per Wikipedia: 51°45′21″N 9°34′34″W). Guinness Storehouse: 53.3489° N, 6.2961° W? Wikipedia: Guinness Storehouse coordinates 53°20′56″N 6°17′46″W? Let me search to confirm.\n\nActually, let me just use the tools: web search for coordinates, then compute with code.\n\nDistance from Kenmare to Dublin is about 290 km? Let me estimate: Dublin 53.35 N, -6.26; Kenmare 51.756 N, -9.576. Δlat = 1.593° ≈ 177 km. Δlon = 3.316°, at mean latitude ~52.5°, cos ≈ 0.608, so Δlon ≈ 3.316 × 111.32 × 0.608 ≈ 224.5 km. Distance ≈ sqrt(177² + 224.5²) ≈ sqrt(31329 + 50400) ≈ sqrt(81729) ≈ 285.9 km. So about 286 km. Adding 9 gives about 295.\n\nBut I need to round the distance to the nearest integer, then add 9. Let me compute precisely with the Haversine formula.\n\nLet me get the exact coordinates:\n- Kenmare: 51.7558° N, 9.5761° W (Wikipedia: 51°45′21″N 9°34′34″W → 51.7558, -9.5761).\n- Guinness Storehouse: Wikipedia lists it as 53°20′57″N 6°17′42″W? Let me search.\n\nI'll use web_search to confirm both, then compute with code.\n\nAlso confirming the lease term: 9,000 years. The frame at 00:10 in Video 2 shows the circular text of the lease. The famous 1759 lease was for 9,000 years at an annual rent of £45. First digit = 9.\n\nSo the final answer: distance ≈ 286 km (needs calculation), + 9 = 295.\n\nLet me compute precisely.\n\nHaversine with R = 6371 km.\n\nKenmare: lat1 = 51.7558, lon1 = -9.5761.\nGuinness Storehouse: lat2 = 53.3489 (approx), lon2 = -6.2961 (approx). Let me look up the actual coordinates.\n\nGuinness Storehouse, St James's Gate, Dublin 8. Google Maps: 53.34889, -6.29694? Hmm. Wikipedia article \"Guinness Storehouse\": coordinates 53°20′56″N 6°17′49″W? Not sure. Let me search.\n\nAnyway, let me run the search and computation.\n\nPlan:\n1. web_search \"Emerald Outdoors Kenmare kayaking\" to confirm the town (though the video text already says Kenmare).\n2. web_search \"Guinness Storehouse coordinates latitude longitude\".\n3. web_search \"Guinness 1759 lease 9000 years\".\n4. Compute the Haversine distance with code.\n5. Add 9.\n\nLet me run the searches in parallel.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_289d16ed268b4e8ab91313e6",
+      "content": "[{\"id\": 1, \"title\": \"Emerald Outdoors | Kayaking Adventures in Kenmare Bay\", \"url\": \"https://emeraldoutdoors.ie/\", \"snippet\": \"Company founders, Jamie and Colin, were working as whitewater kayak guides there when they met. Having spent years providing adventures all around the world ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"About Emerald Outdoors | Adventure & Expertise in Kenmare\", \"url\": \"https://emeraldoutdoors.ie/about-us/\", \"snippet\": \"Company founders, Jamie and Colin, were working as whitewater kayak guides there when they met. The pair have accumulated 30+ years of professional kayak ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"We are delighted to be mentioned with Colin and Jamie's ...\", \"url\": \"https://www.facebook.com/atlanticseakayaking/posts/we-are-delighted-to-be-mentioned-with-colin-and-jamies-emerald-outdoors-a-great-/1664010302396124/\", \"snippet\": \"We are delighted to be mentioned with Colin and Jamie's Emerald Outdoors A great company. Both of us take pride in our tours.\", \"date\": \"Jul 5, 2026\"}, {\"id\": 4, \"title\": \"Colin & Jamie - Humans Of Hospitaliy | Discover Kerry\", \"url\": \"https://www.facebook.com/DiscoverKerryIreland/videos/colin-jamie-humans-of-hospitaliy/646666572630708/\", \"snippet\": \"Emerald Outdoors, located in Kenmare was born during a chat by founders Colin and Jamie. The pair have worked as senior kayak guides across 5 ...\", \"date\": \"6 years ago\"}, {\"id\": 5, \"title\": \"Night Kayaking with Bioluminescent Plankton - Tripadvisor\", \"url\": \"https://en.tripadvisor.com.hk/ShowUserReviews-g211860-d12460779-r772297105-Emerald_Outdoors-Kenmare_County_Kerry.html\", \"snippet\": \"Kayaking in Kenmare Bay was a serene and enjoyable experience in itself. Jamie and Colin had interesting facts and stories about the local area/wildlife ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Emerald Outdoors Kenmare | Kenmare, Kerry V93 V0Y2\", \"url\": \"https://www.discoverkerry.com/listing/emerald-outdoors-kenmare/68356101/\", \"snippet\": \"Company founders, Jamie and Colin, were working as whitewater kayak guides. The pair have accumulated 20+ years of professional kayak guiding between them ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Kayaking Kerry | Kenmare (@emeraldoutdoors)\", \"url\": \"https://www.instagram.com/emeraldoutdoors/\", \"snippet\": \"Join Jamie, Colin, and our brilliant up-and-coming instructors for 4 days of kayaking fun at the stunning Blackwater Pier. Ages 12–16 💶 €200 per person. To ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Group Adventures & Events with Emerald Outdoors\", \"url\": \"https://emeraldoutdoors.ie/groups/\", \"snippet\": \"Join one of our famous kayak tours by day or by night. Specially tailored kayak trips for Stags/Hens, Corporate and other groups. Colin and Jamie made the ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"We experienced some incredible bioluminescence last night, ...\", \"url\": \"https://www.instagram.com/reel/DNX_t8oI6PW/\", \"snippet\": \"8 women from Dallas & Austin joined myself, Jamie & Rowan from @emeraldoutdoors for the most wonderful kayaking experience on Kenmare Bay. We ...\", \"date\": \"1 year ago\"}, {\"id\": 10, \"title\": \"Afternoon Kayak Tour on Kenmare Bay\", \"url\": \"https://emeraldoutdoors.ie/experience/kayak-day-tour/\", \"snippet\": \"The staff are as amazing as the sights, Jamie, Rowan, Rommel and Eamon are so helpful and informative – really great at explaining everything to more nervous ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_6ceed7a7efc346cdae38b85c",
+      "content": "[{\"id\": 1, \"title\": \"Getting Here\", \"url\": \"https://www.guinness-storehouse.com/en/getting-here\", \"snippet\": \"We are easy to find by foot, bike, bus, tram, train or taxi. Address: Guinness Storehouse, St James's Gate, Dublin 8, D08 VF8H, Ireland. DIRECTIONS. On Foot.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Guinness Storehouse\", \"url\": \"https://en.wikipedia.org/wiki/Guinness_Storehouse\", \"snippet\": \"Guinness Storehouse is a tourist attraction at St. James's Gate Brewery in Dublin, Ireland. Coordinates 53°20′30.7464′′N 6°17′12.1535′′W\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Guinness Storehouse Dublin - The Home of ...\", \"url\": \"https://questoapp.com/dublin/places-to-visit/guinness-storehouse-dublin\", \"snippet\": \"Visit the Guinness Storehouse in Dublin, a seven-floor experience inside St. James's Gate Brewery. Enjoy panoramic views from the Gravity Bar and learn...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Getting Here - Guinness Open Gate Brewery Dublin\", \"url\": \"https://opengatedublin.guinness.com/en/getting-here\", \"snippet\": \"Find us: 53 James's Street Dublin 8 D08 X20N Get Directions 2 Guinness Storehouse Monday: 9.30am to 5pm\", \"date\": \"\"}, {\"id\": 5, \"title\": \"New Exclusive Brewery Experience\", \"url\": \"https://www.guinness-storehouse.com/en/whats-hoppening/exclusive-brewery-experience\", \"snippet\": \"famous 1759 gate, Guinness Storehouse, St. James's Gate, Dublin 8, D08 VF8H, Ireland get directions\", \"date\": \"\"}, {\"id\": 6, \"title\": \"A snapshot from St. James's Street in Dublin\", \"url\": \"https://www.facebook.com/groups/LoveIrelandGroup/posts/2071445536725933/\", \"snippet\": \"The Guinness Storehouse: Located at the heart of the St. James's Gate Brewery, the Guinness Storehouse is a must-see attraction. This seven- ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"A Guide to the Guinness Storehouse\", \"url\": \"https://emerald-heritage.com/blog/2018/a-guide-to-the-guinness-storehouse\", \"snippet\": \"If you want the exact address then you'll find the Guinness Storehouse at St James's Gate, Ushers, Dublin 8. How to Get to the Guinness Storehouse? You can ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Everything You Need to Know about the Guinness Storehouse\", \"url\": \"https://cpireland.crowneplaza.com/news/guinness-storehouse-dublin/\", \"snippet\": \"Location of St. James' Gate. The Guinness Storehouse is in Dublin 8, on the southside of the river Liffey and just a short walk from well-known spots such as St ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Guinness Storehouse on the map, Dublin, Ireland. ...\", \"url\": \"https://tz.2markers.com/564248\", \"snippet\": \"Guinness Storehouse, Ireland coordinates in decimal format: latitude — 53.34194595237592, longitude — -6.286711101795186. When converted to degrees, minutes, ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"How to get to the Guinness Storehouse - Tiqets Blog\", \"url\": \"https://www.tiqets.com/blog/how-to-get-to-the-guinness-storehouse/\", \"snippet\": \"... and its official address is Guinness Storehouse, St. James's Gate, Dublin 8, D08 VF8H, Ireland. How to get to the Guinness Storehouse. The ...\", \"date\": \"Dec 12, 2023\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_07bd019a27744d1e92afbae6",
+      "content": "[{\"id\": 1, \"title\": \"On this Day in 1759, Arthur Guinness signed a 9000 year ...\", \"url\": \"https://www.facebook.com/Ireland/posts/on-this-day-in-1759-arthur-guinness-signed-a-9000-year-lease-for-the-st-jamess-g/1355908486579809/\", \"snippet\": \"On this Day in 1759, Arthur Guinness signed a 9,000 year lease for the St. James’s Gate Brewery, Dublin. The cost? Just £45 per year in annual rent 😱\", \"date\": \"9 months ago\"}, {\"id\": 2, \"title\": \"The Story of Guinness\", \"url\": \"https://www.guinness.com/en-us/our-craft/guinness-story\", \"snippet\": \"Arthur Price, later Archbishop of Cashel'. On 31st December 1759, the man signed a NINE THOUSAND YEAR lease on St. James's Gate Brewery in Dublin. If that's ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"In 1759, Arthur Guinness walked into St James's Gate and ...\", \"url\": \"https://www.facebook.com/loveirelandd/videos/in-1759-arthur-guinness-walked-into-st-jamess-gate-and-signed-a-lease-for-9000-y/1868450297147621/\", \"snippet\": \"A narrator recounts how Arthur Guinness signed a 9,000-year lease for the St. James's Gate brewery in Dublin in 1759, establishing what would ...\", \"date\": \"6 months ago\"}, {\"id\": 4, \"title\": \"Guinness Brewery\", \"url\": \"https://en.wikipedia.org/wiki/Guinness_Brewery\", \"snippet\": \"Originally leased in 1759 to Arthur Guinness at £45 per year for 9,000 years, the St. James's Gate area has been the home of Guinness ever since. The 1759 ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"TIL that in 1759 Arthur Guinness signed a 9000 year lease ...\", \"url\": \"https://www.reddit.com/r/todayilearned/comments/n8gf4n/til_that_in_1759_arthur_guinness_signed_a_9000/\", \"snippet\": \"Arthur Guinness, founder of Guinness, signed a 9,000 year lease at the St. James's Gate Brewery in Dublin for £45 per year back in 1759\", \"date\": \"5 years ago\"}, {\"id\": 6, \"title\": \"A 9000 Year Long Lease: An Arthur Guinness Brewery Story\", \"url\": \"https://www.youtube.com/watch?v=Rih5knvjksY\", \"snippet\": \"on December 31, 1759, Arthur Guinness signed a lease for his brewery at St. James Gate in Dublin, Ireland, that was set to last for 9,000 years ...\", \"date\": \"3 years ago\"}, {\"id\": 7, \"title\": \"Discover the Story of Guinness\", \"url\": \"https://www.guinness-storehouse.com/en/discover/story-of-guinness\", \"snippet\": \"Arthur Guinness was just 34 when he signed the iconic 9,000-year Guinness lease, on a then-disused brewery site on 31 December 1759 for an annual rent of £45.\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Guinness and the 9,000-year Lease\", \"url\": \"https://jamesfell.substack.com/p/guinness-and-the-9000-year-lease\", \"snippet\": \"On December 31, 1759, he signed a 9,000-year lease for the abandoned St. James Gate Brewery in Dublin to brew his namesake beer. The cost per ...\", \"date\": \"9 months ago\"}, {\"id\": 9, \"title\": \"On the last day of 1759, Arthur Guinness signed a ...\", \"url\": \"https://www.instagram.com/p/DbRTuX5lkTX/\", \"snippet\": \"On 31 December 1759, Arthur Guinness leased a disused brewery at St James's Gate for 9,000 years. The annual rent was £45. The agreement was ...\", \"date\": \"2 months ago\"}, {\"id\": 10, \"title\": \"Guinness is still brewed at St. James Gate\", \"url\": \"https://www.thevintagenews.com/2018/02/24/arthur-guinness/\", \"snippet\": \"On the last day of December 1759, Arthur somehow managed to get the owner to agree to a lease for up to 9,000 years on these terms. Guinness is ...\", \"date\": \"Feb 24, 2018\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Confirmed:\n- Video 1: Emerald Outdoors, Kenmare (founders Colin and Jamie). The town is Kenmare, County Kerry, Ireland.\n- Video 2: Guinness Storehouse at St James's Gate Brewery in Dublin. The famous document is the 1759 lease, 9,000 years. First digit = 9.\n\nNext, coordinates:\n- Kenmare: approximately 51.7558° N, 9.5761° W. Let me verify on Wikipedia.\n- Guinness Storehouse: Wikipedia coordinates 53°20′30.7464″N 6°17′12.1535″W → 53.341874, -6.286709. Another source gives 53.34194595, -6.2867111. These match up well.\n\nLet me get Kenmare's coordinates via search or Wikipedia.\n\nIt's been confirmed that the kayaking company is **Emerald Outdoors in Kenmare** (Colin & Jamie), and the brewery tourist facility is the **Guinness Storehouse** at St James's Gate in Dublin, which displays the famous **9,000-year lease** of 1759. Now, let's identify the exact coordinates of both locations.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_f473b12fc7c4482b81fdcb5a",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Kenmare County Kerry Ireland town coordinates latitude longitude wikipedia\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_5cc2b9ce329a4a058c8ae315",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/Kenmare\", \"https://en.wikipedia.org/wiki/Guinness_Storehouse\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed:\n- Video 1: Emerald Outdoors, Kenmare (founders Colin and Jamie). The town is Kenmare, County Kerry, Ireland.\n- Video 2: Guinness Storehouse at St James's Gate Brewery in Dublin. The famous document is the 1759 lease, 9,000 years. First digit = 9.\n\nNext, coordinates:\n- Kenmare: approximately 51.7558° N, 9.5761° W. Let me verify on Wikipedia.\n- Guinness Storehouse: Wikipedia coordinates 53°20′30.7464″N 6°17′12.1535″W → 53.341874, -6.286709. Another source gives 53.34194595, -6.2867111. These match up well.\n\nLet me get Kenmare's coordinates via search or Wikipedia.\n\nIt's been confirmed that the kayaking company is **Emerald Outdoors in Kenmare** (Colin & Jamie), and the brewery tourist facility is the **Guinness Storehouse** at St James's Gate in Dublin, which displays the famous **9,000-year lease** of 1759. Now, let's identify the exact coordinates of both locations.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f473b12fc7c4482b81fdcb5a",
+      "content": "[{\"id\": 1, \"title\": \"Kenmare\", \"url\": \"https://en.wikipedia.org/wiki/Kenmare\", \"snippet\": \"County Kerry, Ireland. Coordinates: 51°52′48′′N 9°35′01′′W / 51.8801°N 9.5835°W / 51.8801; -9.5835\", \"date\": \"\"}, {\"id\": 2, \"title\": \"County Kerry\", \"url\": \"https://en.wikipedia.org/wiki/County_Kerry\", \"snippet\": \"County Kerry Coordinates: 52°10′N 9°45′W / 52.167°N 9.750°W\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Kenmare (disambiguation)\", \"url\": \"https://en.wikipedia.org/wiki/Kenmare_(disambiguation)\", \"snippet\": \"Kenmare is a town in County Kerry, Ireland. Kenmare lace, associated with the Kerry town Kenmare Resources, Irish mining company\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Category:Towns and villages in County Kerry\", \"url\": \"https://en.wikipedia.org/wiki/Category:Towns_and_villages_in_County_Kerry\", \"snippet\": \"Map all coordinates using. This category is for Towns and villages in County Kerry, Ireland. K Kenmare (1 C, 4 P) K Kenmare Kilcummin,\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Killarney\", \"url\": \"https://en.wikipedia.org/wiki/Killarney\", \"snippet\": \"County Kerry, Ireland. Coordinates: 52°03′32′′N 9°30′26′′W / 52.0588°N 9.5072°W / 52.0588; -9.5072\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Kenmare – Travel guide at Wikivoyage\", \"url\": \"https://en.wikivoyage.org/wiki/Kenmare\", \"snippet\": \"Kenmare is a village in County Kerry in southwest Ireland. It's at the head of Kenmare Bay: north of the bay is Iveragh Peninsula, N72 west through Mallow to ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Ring of Kerry\", \"url\": \"https://en.wikipedia.org/wiki/Ring_of_Kerry\", \"snippet\": \"The Ring of Kerry. Clockwise from Killarney it follows the N71 to Kenmare, then the N70 around the Iveragh Peninsula … via the N72. Length 179 km (111 mi)\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Kenmare\", \"url\": \"https://www.wikidata.org/wiki/Q166232\", \"snippet\": \"town in County Kerry, Ireland. English Kenmare. Ireland located in the administrative territorial. Regional/Europe/Ireland/Kerry/Localities/ ...\", \"date\": \"Oct 28, 2013\"}, {\"id\": 9, \"title\": \"County Kerry - OpenStreetMap Wiki\", \"url\": \"https://wiki.openstreetmap.org/wiki/County_Kerry\", \"snippet\": \"County Kerry is a county in South-West Region, Ireland, Munster ... latitude: 52.1478, longitude: -9.8918. Browse map of County Kerry 52 ...\", \"date\": \"Nov 29, 2016\"}, {\"id\": 10, \"title\": \"List of townlands of County Kerry\", \"url\": \"https://en.wikipedia.org/wiki/List_of_townlands_of_County_Kerry\", \"snippet\": \"This is a sortable table of the approximately 2,756 townlands in County Kerry, Ireland. ... Glanarought, Kenmare, Kenmare. Ballyhar, 282, Magunihy, Kilcredane ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5cc2b9ce329a4a058c8ae315",
+      "content": "{\"https://en.wikipedia.org/wiki/Kenmare\": \"Title: Kenmare - Wikipedia\\n\\nURL Source: https://en.wikipedia.org/wiki/Kenmare\\n\\nPublished Time: Wed, 07 Oct 2026 01:48:34 GMT\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 Location]\\n\\n* [2 History]\\n\\n* [3 Tourism]\\n\\n* [4 Notable people]\\n\\n* [5 Fair days]\\n\\n* [6 Transport]\\n\\n* [7 Services]\\n\\n* [8 Sports]\\n\\n* [9 In popular culture]\\n\\n* [10 See also]\\n\\n* [11 References]\\n\\n* [12 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# Kenmare\\n\\n- [x] 15 languages \\n\\n* [Català]\\n* [Cebuano] \\\"Kenmare (lungsod sa Irland) – Cebuano\\\")\\n* [Deutsch]\\n* [Español]\\n* [Euskara]\\n* [فارسی]\\n* [Français]\\n* [Gaeilge]\\n* [Italiano] \\\"Kenmare (Irlanda) – Italian\\\")\\n* [Nederlands] \\\"Kenmare (Ierland) – Dutch\\\")\\n* [Norsk nynorsk]\\n* [Polski]\\n* [Русский]\\n* [Svenska] \\\"Kenmare (ort i Irland) – Swedish\\\")\\n* [اردو]\\n\\n[Edit links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikivoyage]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\n[Coordinates]: [51°52′48″N 9°35′01″W / 51.8801°N 9.5835°W / 51.8801; -9.5835])\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nTown in County Kerry, Ireland\\n\\nThis article is about the town in Ireland. For other uses, see [Kenmare (disambiguation)] \\\"Kenmare (disambiguation)\\\").\\n\\nTown in Munster, Ireland\\n\\n| Kenmare _Neidín_([Irish]) |\\n| - |\\n| Town |\\n| [![Image 4: Henry Street, Kenmare]] Henry Street, Kenmare |\\n| [![Image 5: Kenmare is located in Ireland]] ![Image 6: Kenmare] Kenmare Location in Ireland |\\n| Coordinates: [51°52′48″N 9°35′01″W / 51.8801°N 9.5835°W / 51.8801; -9.5835]) |\\n| Country | Ireland |\\n| [Province] | [Munster] |\\n| [County] | [County Kerry] |\\n| Population ([2022])[[1]] |\\n| •Total | 2,566 |\\n| Irish Grid Reference | [V908709] |\\n| Website | [www.kenmare.ie] |\\n\\nHistorical population| Year | Pop. | ±% |\\n| - | - | - |\\n| 1821 | 605 | — |\\n| 1831 | 1,072 | +77.2% |\\n| 1841 | 1,339 | +24.9% |\\n| 1851 | 1,509 | +12.7% |\\n| 1861 | 1,200 | −20.5% |\\n| 1871 | 1,205 | +0.4% |\\n| 1881 | 1,279 | +6.1% |\\n| 1891 | 1,189 | −7.0% |\\n| 1901 | 1,122 | −5.6% |\\n| 1911 | 1,034 | −7.8% |\\n| 1926 | 883 | −14.6% |\\n| 1936 | 921 | +4.3% |\\n| 1946 | 906 | −1.6% |\\n| 1951 | 907 | +0.1% |\\n| 1956 | 1,054 | +16.2% |\\n| 1961 | 1,046 | −0.8% |\\n| 1966 | 1,113 | +6.4% |\\n| 1971 | 903 | −18.9% |\\n| 1981 | 1,123 | +24.4% |\\n| 1986 | 1,130 | +0.6% |\\n| 1991 | 1,366 | +20.9% |\\n| 1996 | 1,420 | +4.0% |\\n| 2002 | 1,844 | +29.9% |\\n| 2006 | 1,701 | −7.8% |\\n| 2011 | 2,175 | +27.9% |\\n| 2016 | 2,376 | +9.2% |\\n| 2022 | 2,566 | +8.0% |\\n| [[2]][[3]][[4]][[5]][[6]][[7]][[1]] |\\n\\n**Kenmare** ([Irish]: _Neidín_, meaning 'the little nest')[[8]][[9]] is a town in the south of [County Kerry], Ireland. The name Kenmare is the [anglicised] form of _Ceann Mara_,[[8]] meaning \\\"head of the sea\\\", referring to the head of Kenmare Bay.\\n\\nKenmare had a population of 2,566 in 2022. It is also a [townland] and [civil parish].[[9]]\\n\\n## Location\\n\\n[[edit]]\\n\\nKenmare is located at the head of [Kenmare Bay] (where it reaches the farthest inland), sometimes called the Kenmare River, where the Roughty River (_An Ruachtach_) flows into the sea, and at the junction of the [Iveragh Peninsula] and the [Beara Peninsula]. It is also located near the [MacGillycuddy's Reeks], [Mangerton Mountain] and [Caha Mountains] and is a popular [hillwalking] destination. Nearby towns and villages are [Tuosist], [Ardgroom], [Glengarriff], [Kilgarvan], [Killarney], [Templenoe] and [Sneem].\\n\\nKenmare is in the [Kerry] \\\"Kerry (Dáil constituency)\\\") constituency of [Dáil Éireann].\\n\\n## History\\n\\n[[edit]]\\n\\nEvidence of ancient settlement in the Kenmare area includes one of the largest [stone circles] in the south-west of Ireland.[[10]] Close to the town, this stone circle shows occupation in the area going back to at least the Bronze Age (2,200–500 B.C), when it was constructed. The circle has 15 stones around the circumference with a boulder dolmen in the centre.[[10]]\\n\\n[![Image 7]]\\n\\nKenmare Stone Circle\\n\\n[Vikings] are said to have raided the area around the town which at that time was called _Ceann Mhara_, which means \\\"head of the sea\\\" in Irish.\\n\\nThe entire area was granted to the English economist and scientist Sir [William Petty] by [Oliver Cromwell] as part payment for completing the mapping of Ireland, the [Down Survey] in 1656. He laid out the modern town circa 1670. Before him, a previous surveyor of Ireland, [Sir Valentine Browne] (1510–1589), ancestor of the [Earl of Kenmare], was granted some lands in [County Kerry] during the resulting plantation, the [Munster Plantation].\\n\\nThe three main streets that form a triangle in the centre of the town are called Main Street (originally William Street, after [William Petty, 1st Marquess of Lansdowne]), Henry Street (originally Sound Road), after the son of the 1st Marquis and Shelbourne Street (Henry Petty became the first [Earl of Shelburne]). This name was also later applied to [Shelbourne Road] in Dublin.\\n\\n[![Image 8]]\\n\\nMass [famine] \\\"Great Famine (Ireland)\\\") grave for Kenmare victims\\n\\nThe convent in the town, the [Poor Clare Sisters], was founded in 1861 when five nuns including Sister Mary Frances Cusack (The Nun of Kenmare), who was also an author and publisher of many books, moved to Kenmare from their convent in [Newry], [County Down]. Under the guidance of Mother Abbess O'Hagan in 1864 a [lace]-working industry was established and [Kenmare lace] became noted worldwide. The convent no longer exists and Pobalscoil Inbhear Scéine secondary school occupies this site since 2001.\\n\\nA suspension bridge, which is claimed to be the first in Ireland, over the Kenmare River was opened in 1841 and served the community till 1932 when it was replaced by a new concrete bridge.[[11]]\\n\\nDuring and after the [Civil War] (1922–1923), there were a number of incidents in Kenmare, including the [killing of O'Connor brothers in September 1922] by the [Anti-Treaty IRA],[[12]] and the brutal assault against the allegedly [Unionist] daughters of a local doctor by three [Dublin Guard] officers led by [Paddy Daly] in 1923 (which is sometimes referred to as the '[Kenmare incident]').[[13]] Kenmare was briefly held by the Anti-Treaty IRA, during the [Irish Civil War], before being successfully retaken by the [Irish Army] in December 1922.[[12]]\\n\\nThe town library is one of the [Carnegie Libraries] funded by [Andrew Carnegie]. It opened in 1918, and the architect was R.M. Butler.[[14]][[15]] The library building is now home to the Carnegie Arts Centre and theatre, hosting a local drama group and a number of travelling productions each year, as well as music and comedy nights.[[16]]\\n\\nHoly Cross Catholic Church in Kenmare was consecrated in 1864. It was built under the guidance of Archdeacon Fr. John O'Sullivan – who is interred within the church.[[17]] The church has stained glass windows by O'Connor London (1863), by Caseys Dublin (1864) and by Earley Dublin (1864). The organ is by Telford & Telford(1865). Buried in the church grounds is Monsignor [Francis Cremin] (died 2001), who was a periitus or theological expert at Vatican II. He was a native of Kenmare and had been Professor of Canon Law and Moral Theology at [St Patrick's College, Maynooth] from 1949 until 1980. He was a brother of Con Cremin, an Irish diplomat, who represented Ireland in France and Germany during World War II and subsequently in Portugal, the Holy See, the United Kingdom and at the United Nations.\\n\\n[![Image 9]]\\n\\nView of Main Street in Kenmare (between the 1880s and early 1900s)\\n\\nThe [Church of Ireland] church of St Patrick celebrated its 150th anniversary in 2008.[[18]] The town has been a winner in the [Irish Tidy Towns Competition] in 2013, 2000 and was a runner-up in 2003 and 2008.\\n\\n## Tourism\\n\\n[[edit]]\\n\\n[![Image 10]]\\n\\nCarrigacappeen erratic, Kenmare, 1890s\\n\\nKenmare lies on two noted Irish tourist routes, the [Ring of Kerry] and the [Ring of Beara], approximately 32 kilometres (20 mi) from [Killarney]. As a result, it is a popular tourist destination and many of the businesses in the area cater to tourists. The town is noted for its food and pubs.\\n\\nSince the late 1990s the tourism industry has driven local construction work,[_[citation needed]_] with land being sold at high prices to [developers] wishing to build [estates] of [holiday homes].[[19]] This has led to an increase in the town's population, particularly during the peak tourist season, and prompted fears among some residents that the town is becoming overdeveloped and losing much of its identity.[[20]]\\n\\n## Notable people\\n\\n[[edit]]\\n\\nSee also: [Category:People from Kenmare]\\n\\n[![Image 11]]\\n\\nHorse and cart in Kenmare.\\n\\nInter-county [Gaelic footballers][Mickey 'Ned' O'Sullivan], [Stephen O'Brien] \\\"Stephen O'Brien (Kerry Gaelic footballer)\\\") and [Paul O'Connor] \\\"Paul O'Connor (Gaelic footballer)\\\") are from the Kenmare area, while [Pat Spillane] is from nearby [Templenoe]. Kenmare is also the home of Irish Olympic [slalom skier][Thos Foley].\\n\\nKenmare was home to composer [Ernest John Moeran] in later life.[[21]] Diplomat [Con Cremin] was also from Kenmare, as is senator [Mark Daly] \\\"Mark Daly (politician)\\\"). Writer [Anna McPartlin] grew up in Kenmare, and her 2007 nov\", \"https://en.wikipedia.org/wiki/Guinness_Storehouse\": \"Title: Guinness Storehouse\\n\\nURL Source: https://en.wikipedia.org/wiki/Guinness_Storehouse\\n\\nPublished Time: 2006-07-14T18:05:43Z\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5]]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 History]\\n\\n* [2 Visitor attractions]\\n\\n* [3 See also]\\n\\n* [4 References]\\n\\n* [5 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# Guinness Storehouse\\n\\n- [x] 11 languages \\n\\n* [Català]\\n* [Dansk]\\n* [Deutsch]\\n* [Euskara]\\n* [Suomi]\\n* [Français]\\n* [Magyar]\\n* [Հայերեն]\\n* [Nederlands]\\n* [Русский]\\n* [Українська]\\n\\n[Edit links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n* [Expand all]\\n* [Edit interlanguage links]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor \\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\n[Coordinates]: ![Image 6: Show location on an interactive map][53°20′30.7464″N 6°17′12.1535″W / 53.341874000°N 6.286709306°W / 53.341874000; -6.286709306]\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nTourist and visitor attraction, Dublin\\n\\nGuinness Storehouse[![Image 7]]\\n[![Image 8]]\\n\\nGuinness Storehouse in Dublin\\n[![Image 9: Map] [Wikimedia] | © [OpenStreetMap]]\\nEstablished November 2000;25 years ago(2000-11)\\nLocation[Guinness Brewery], [Dublin], Ireland\\nCoordinates![Image 10: Show location on an interactive map][53°20′30.7464″N 6°17′12.1535″W / 53.341874000°N 6.286709306°W / 53.341874000; -6.286709306]\\nType History of brewing\\nVisitors 23.9 million (2000 - 2022)[[1]]\\nOwner[Diageo]\\nWebsite[www.guinness-storehouse.com]\\n\\n**Guinness Storehouse** is a [tourist attraction] at [St. James's Gate Brewery] in [Dublin], Ireland.[[2]][[3]] Since opening in 2000, it has received over twenty million visitors.[[4]][[5]]\\n\\nThe Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of [Guinness].[[6]] The ground floor introduces the beer's four ingredients (water, barley, hops and yeast), and the brewery's founder, [Arthur Guinness]. Other floors feature the history of [Guinness advertising] and include an interactive exhibit on responsible drinking. The seventh floor houses the Gravity Bar with views of Dublin and where visitors may drink a pint of Guinness included in the price of most admission tickets.[[7]]\\n\\n## History\\n\\n[[edit]]\\n\\n[![Image 11]]\\n\\n The entrance to the Storehouse\\n\\nThe building in which the Storehouse is located was constructed in 1902 as a [fermentation] plant for the St. James's Gate Brewery (yeast is added to the brew). It was designed in the style of the [Chicago School of Architecture] \\\"Chicago school (architecture)\\\") and was the first multi-storey steel-framed building to be constructed in Ireland.[[6]][[8]] The building was used continuously as the fermentation plant of the Brewery until its closure in 1988, when a new fermentation plant was completed near the [River Liffey].[[8]]\\n\\nIn 1997, it was decided to convert the building into the Guinness Storehouse, replacing the Guinness Hop Store as the Brewery's visitor centre. The redesign of the building was undertaken by the UK-based design firm Imagination in conjunction with the Dublin-based architects firm RKD, and the Storehouse opened to the public on 2 December 2000.[[6]] In 2006-08 a new wing was developed, and Euro 2.5 million was invested in a live technology-driven multi-media installation demonstrating the modern brewing process for Guinness, which was designed by London-based museum design specialist, [Event Communications].[[9]][[10]]\\n\\nIn May 2011, [Queen Elizabeth II] and [Prince Philip] visited the Storehouse as part of a [state visit] to Ireland.[[11]][[12]]\\n\\n## Visitor attractions\\n\\n[[edit]]\\n\\nThe Guinness Storehouse explains the history of beer. The story is told through various interactive exhibition areas including ingredients, brewing, transport, cooperage, advertising, and sponsorship.\\n\\nThe Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.[[6]] The ground floor introduces the beer's four ingredients (water, barley, hops, and yeast), and the brewery's founder, [Arthur Guinness]. Other floors feature the history of Guinness advertising and include an interactive exhibit on responsible drinking.\\n\\nAt the base of the atrium lies a copy of the 9,000-year lease signed by [Arthur Guinness] on the brewery site. In the Perfect Pint bar, visitors may pour their own pint of Guinness and even get their selfie printed on top of a pint.[[13]] The Brewery Bar on the fifth floor offers Irish cuisine, using Guinness both in the cooking and as an accompaniment to food.[[14]] The seventh-floor houses the Gravity Bar with views of Dublin and where visitors may drink a pint of Guinness. Most of the admission tickets include one pint in the price.\\n\\nThe Guinness Open Gate Brewery is an experimental taproom nearby, showcasing small-batch beer creations from the Guinness brewery.\\n\\nThe Storehouse also contains the Guinness Archives, containing records and artifacts dating back to 1759.[[15]]\\n\\n## See also\\n\\n[[edit]]\\n\\n[![Image 12: Wikimedia Commons logo]]\\n\\nWikimedia Commons has media related to [Guinness Storehouse].\\n\\n* ![Image 13][Drink portal]\\n* ![Image 14][History portal]\\n\\n* [List of food and beverage museums]\\n\\n## References\\n\\n[[edit]]\\n\\n1. [↑][\\\"Guinness Storehouse visitor numbers rebound post-pandemic\\\"]. _[The Irish Times]_.\\n2. [↑][Guinness Storehouse][Archived] 23 December 2010 at the [Wayback Machine], [DublinTourist.com].\\n3. [↑][_Dublin Sights: a travel guide to the top 25 attractions in Dublin, Ireland_], MobileReference, 2010, p.115, [ISBN] \\\"ISBN (identifier)\\\")[9781607789635][_[permanent dead link]_]\\n4. [↑][\\\"Guinness Storehouse celebrates its 20 millionth visitor\\\"]. _IrishCentral.com_. 26 April 2019. Retrieved 16 August 2019.\\n5. [↑][\\\"Guinness Storehouse set to welcome 20 millionth visitor\\\"]. [RTÉ]. 2 January 2019.\\n6. [Jump up to: 1][2][3][4]David Dernie (2006), [_Exhibition design_], Laurence King Publishing, [ISBN] \\\"ISBN (identifier)\\\")[9781856694308]\\n7. [↑][\\\"Guinness Storehouse\\\"]. _www.guinness-storehouse.com_. Retrieved 13 September 2019.\\n8. [Jump up to: 1][2][\\\"Dublin can be heaven - and here's the cream\\\"]. _Irish Independent_. 15 May 2005. Retrieved 17 December 2011.\\n9. [↑]Editorial (6 July 2006). [\\\"Event drafted in to lead Guinness Storehouse design\\\"]. _[Design Week]_. Retrieved 10 October 2019. Event Communications's appointment, replacing Imagination as lead design group, follows its completion of a €2.5m (£1.73m) project to re-envisage the Storehouse's ground and first floor with a more interactive exhibition design that explains the brewing process. It has reinterpreted the space, installing additional video elements and introducing the concept of a brewer guide and a tasting laboratory where visitors can sample Guinness from the keg line. Event Communications was appointed to this project in April last year, following a four-way pitch.\\n10. [↑][\\\"The Family and the Product\\\"]. _[Event Communications]_. 2007. Archived from [the original] on 10 October 2019. Retrieved 10 October 2019.\\n11. [↑][\\\"Queen refuses pint of Guinness in Dublin, but Prince Phillip[sic] looks keen\\\"]. Metro. 18 May 2011. Retrieved 17 December 2011.\\n12. [↑][\\\"Visit grips imagination of world press\\\"]. _Irish Times_. 18 May 2011. Retrieved 17 December 2011.\\n13. [↑][_Stoutie - A Selfie on a Pint of Guinness_], 21 November 2018\\n14. [↑][\\\"Guinness Storehouse\\\"]. _www.guinness-storehouse.com_.\\n15. [↑]Ó Conghaile, Pól (1 November 2018). [\\\"Inside the Guinness Archives: From Arthur's signature to Obama's keg\\\"]. _Irish Independent_. Retrieved 28 January 2021.\\n\\n## External links\\n\\n[[edit]]\\n\\n* [Guinness Storehouse website]\\n* [Guinness website]\\n\\n| show * [v] * [t] * [e] Museums and galleries in the [Republic of Ireland] by [province] |\\n| - |\\n| [Connacht] | * [126 Artist-run Gallery] * [Arigna Mining Experience] * [Battle of Aughrim Visitor Centre] * [Castlerea Railway Museum] * [Cavan and Leitrim Railway] * [Connemara Heritage and History Centre] * [Custom House Studios and Gallery] * [Clew Bay Heritage Centre] * [Galway City Museum] * [Glengowla Mines] * [Hamilton Gallery] \\\"Hamilton Gallery (Sligo)\\\") * [James Mitchell Geology Museum] * [The Model, Sligo] * [National Famine Museum]&[Strokestown Park] * [National Museum of Ireland – Country Life] * [Roscommon County Museum] * [Sligo County Museum] |\\n| [Munster] | * [Allihies Copper Mine Museum] * [Clare Museum] * [Cobh Heritage Centre] * [Cobh Museum] * [Cork Butter Museum] * [Cork Public Museum] * [Craggaunowen] * [Crawford Art Gallery] * [Garda College Museum and Visitor Centre] * [Hunt Museum] * [Jameson Experience, Midleton] * [Kerry County Museum] * [Lewis Glucksman Gallery] * [Limerick City Museum] * [Ormston House] * [The People's Museum of Limerick] * [Tipperary Museum of Hidden History] * [Waterford County Museum] * [Waterford Treasures]\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "All facts are confirmed. Now let me compute the Great Circle distance between Kenmare (51.8801°N, 9.5835°W) and the Guinness Storehouse (53.341874°N, 6.286709°W). All facts confirmed. Now let me compute the Great Circle distance.\n\n",
+      "reasoning": "Now the coordinates are lined up:\n- Kenmare: 51.8801°N, 9.5835°W (Wikipedia)\n- Guinness Storehouse: 53.341874°N, 6.2867093°W (Wikipedia)\n\nLease period: 9,000 years. First digit: 9.\n\nCalculate the great-circle distance using the haversine formula with R = 6371 km.\n\nLet's try computing it with code.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_806748ebbddb435ea18dfd85",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2, R=6371.0):\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2 - lat1)\\n    dlmb = math.radians(lon2 - lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Kenmare, Co. Kerry (Wikipedia)\\nken_lat, ken_lon = 51.8801, -9.5835\\n# Guinness Storehouse, Dublin (Wikipedia)\\ngs_lat, gs_lon = 53.341874, -6.2867093\\n\\nd = haversine(ken_lat, ken_lon, gs_lat, gs_lon)\\nprint(f\\\"Great Circle distance: {d:.3f} km -> rounded: {round(d)} km\\\")\\n\\n# Also check with alternate coordinate sources for robustness\\nalt_pairs = [\\n    ((51.7558, -9.5761), (53.34194595, -6.28671110)),  # older Kenmare coord variant\\n    ((51.8801, -9.5835), (53.34194595, -6.28671110)),\\n]\\nfor (a, b) in alt_pairs:\\n    print(a, b, f\\\"{haversine(a[0], a[1], b[0], b[1]):.2f}\\\")\\n\\nlease = 9000\\nfirst_digit = int(str(lease)[0])\\nanswer = round(d) + first_digit\\nprint(f\\\"Distance rounded = {round(d)}, first digit of lease ({lease}) = {first_digit}\\\")\\nprint(f\\\"Final answer = {answer}\\\")\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Now the coordinates are lined up:\n- Kenmare: 51.8801°N, 9.5835°W (Wikipedia)\n- Guinness Storehouse: 53.341874°N, 6.2867093°W (Wikipedia)\n\nLease period: 9,000 years. First digit: 9.\n\nCalculate the great-circle distance using the haversine formula with R = 6371 km.\n\nLet's try computing it with code.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_806748ebbddb435ea18dfd85",
+      "content": "{\"stdout\": \"Great Circle distance: 275.582 km -> rounded: 276 km\\n(51.7558, -9.5761) (53.34194595, -6.2867111) 283.81\\n(51.8801, -9.5835) (53.34194595, -6.2867111) 275.59\\nDistance rounded = 276, first digit of lease (9000) = 9\\nFinal answer = 285\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "The calculation is done, but let me double-check Kenmare's coordinates with another source to make sure the distance is robust.\n\n",
+      "reasoning": "The distance is approximately 276 km (using the Wikipedia coordinates for Kenmare town, 51.8801°N, 9.5835°W). Adding the first digit of the lease term 9,000 years (i.e., 9) to it, we get 285.\n\nNote: Even if someone uses slightly different coordinates for Kenmare (e.g., 51.7558 — this might actually be a different point), the distance comes out to about 284, and adding 9 gives 293. However, the standard Wikipedia coordinates for Kenmare town are 51.8801°N, 9.5835°W, which yields 275.6 → 276 km. 276 + 9 = 285.\n\nHmm, which one is \"correct\"? Kenmare town on Google Maps: latitude approximately 51.7558? Let me check. Actually, Kenmare, County Kerry: the town center is around 51.7558°N, 9.5761°W? Wait — let me think. Killarney is 52.0588°N, 9.5072°W. Kenmare is southwest of Killarney, about 32 km away. If Killarney is at 52.06 and Kenmare is 32 km to the southwest, then Kenmare should be around latitude 51.83–51.88. The Wikipedia coordinates of 51.8801 seem reasonable. The 51.7558 I initially guessed might be wrong (perhaps that's Sneem or Glengarriff? Glengarriff is 51.764°N, 9.828°W. Hmm). Actually, Kenmare Bay… the town of Kenmare is at the head of the bay. Let me double-check with another source: Wikivoyage or GeoNames. GeoNames Kenmare: 51.75581°N, 9.57611°W? Hmm, that rings a bell. Let me verify.\n\nActually, I recall that the GeoNames entry for Kenmare (Ireland) was 51.75581, -9.57611? Not sure. Let me check quickly. Wikipedia says 51°52′48″N 9°35′01″W = 51.8801, -9.5835. Hmm, but 51°52′48″N… the Irish grid reference V908709 corresponds to roughly 51.88°N, 9.58°W. Yes, V90 is around there. So Wikipedia's 51.8801 is consistent with the grid reference.\n\nGeoNames: Kenmare 51.75581? That doesn't match. Let me verify: maybe I'm confusing it with something else. Let me do a quick search to cross-check.\n\nActually, openstreetmap: Kenmare town center is around 51.7556? Hmm. Let me check the coordinates of Kenmare on Google Maps: 51.7558°N, 9.5761°W — I've seen this before. But wait, that might be for \"Kenmare, Wisconsin\"? No…\n\nLet me verify with a quick search: \"Kenmare Ireland 51.75\" vs \"51.88\".\n\nIrish grid reference V908709: the V square is 100km… Grid letter V covers a 100x100km square. Within it, easting 90800? Actually, V908709 means easting 90800? Hmm, 6-figure: V 908 709 → easting 90.8 km, northing 70.9 km within the V square. The southwest corner of the V square is at (east 200km? no…). Irish grid: squares are lettered A–Z (excluding I), each 100km. Square V: origin is easting 200000? Let me stop trying to calculate this by hand. Better to verify online.\n\nLet me do a quick search to cross-check Kenmare's coordinates.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_885588c9616b486499b2a15d",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Kenmare\\\" Ireland town lat 51.75 OR 51.88 lon -9.57 geolocation\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_23d8f80000284e7db2fa3fea",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.geonames.org/2966020/kenmare.html\", \"https://en.wikivoyage.org/wiki/Kenmare\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The distance is approximately 276 km (using the Wikipedia coordinates for Kenmare town, 51.8801°N, 9.5835°W). Adding the first digit of the lease term 9,000 years (i.e., 9) to it, we get 285.\n\nNote: Even if someone uses slightly different coordinates for Kenmare (e.g., 51.7558 — this might actually be a different point), the distance comes out to about 284, and adding 9 gives 293. However, the standard Wikipedia coordinates for Kenmare town are 51.8801°N, 9.5835°W, which yields 275.6 → 276 km. 276 + 9 = 285.\n\nHmm, which one is \"correct\"? Kenmare town on Google Maps: latitude approximately 51.7558? Let me check. Actually, Kenmare, County Kerry: the town center is around 51.7558°N, 9.5761°W? Wait — let me think. Killarney is 52.0588°N, 9.5072°W. Kenmare is southwest of Killarney, about 32 km away. If Killarney is at 52.06 and Kenmare is 32 km to the southwest, then Kenmare should be around latitude 51.83–51.88. The Wikipedia coordinates of 51.8801 seem reasonable. The 51.7558 I initially guessed might be wrong (perhaps that's Sneem or Glengarriff? Glengarriff is 51.764°N, 9.828°W. Hmm). Actually, Kenmare Bay… the town of Kenmare is at the head of the bay. Let me double-check with another source: Wikivoyage or GeoNames. GeoNames Kenmare: 51.75581°N, 9.57611°W? Hmm, that rings a bell. Let me verify.\n\nActually, I recall that the GeoNames entry for Kenmare (Ireland) was 51.75581, -9.57611? Not sure. Let me check quickly. Wikipedia says 51°52′48″N 9°35′01″W = 51.8801, -9.5835. Hmm, but 51°52′48″N… the Irish grid reference V908709 corresponds to roughly 51.88°N, 9.58°W. Yes, V90 is around there. So Wikipedia's 51.8801 is consistent with the grid reference.\n\nGeoNames: Kenmare 51.75581? That doesn't match. Let me verify: maybe I'm confusing it with something else. Let me do a quick search to cross-check.\n\nActually, openstreetmap: Kenmare town center is around 51.7556? Hmm. Let me check the coordinates of Kenmare on Google Maps: 51.7558°N, 9.5761°W — I've seen this before. But wait, that might be for \"Kenmare, Wisconsin\"? No…\n\nLet me verify with a quick search: \"Kenmare Ireland 51.75\" vs \"51.88\".\n\nIrish grid reference V908709: the V square is 100km… Grid letter V covers a 100x100km square. Within it, easting 90800? Actually, V908709 means easting 90800? Hmm, 6-figure: V 908 709 → easting 90.8 km, northing 70.9 km within the V square. The southwest corner of the V square is at (east 200km? no…). Irish grid: squares are lettered A–Z (excluding I), each 100km. Square V: origin is easting 200000? Let me stop trying to calculate this by hand. Better to verify online.\n\nLet me do a quick search to cross-check Kenmare's coordinates.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_885588c9616b486499b2a15d",
+      "content": "[{\"id\": 1, \"title\": \"The Best Entrepreneurs and Rising Stars: Awards Shortlist\", \"url\": \"https://www.scribd.com/document/58348921/Cityam-2011-06-21\", \"snippet\": \"Kenmare Resources . .48.6 0.7 50.3 11.5. Lonmin . . . . . . . . . . .1384.0 -20.0 1983.0 1355.0. New World Resourc .918.0 -12.0 1060.0 890.0\", \"date\": \"Jun 21, 2011\"}, {\"id\": 2, \"title\": \"Full text of \\\"The New York Times 1919-05-19: Vol 68 Iss ...\", \"url\": \"https://archive.org/stream/sim_new-york-times_1919-05-19_68_22395/sim_new-york-times_1919-05-19_68_22395_djvu.txt\", \"snippet\": \"14, Kenmare Garage . 39, M. Shanzer. ' 69, Service Btation, ' La Fontaine Ave, 2063, Le Fontaine Ave. Garage. aT fv) mt. 14, 4,-Ruggter Service Station. 36 ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Full text of \\\"Financial Times , 1989, UK, English\\\"\", \"url\": \"https://archive.org/stream/FinancialTimes1989UKEnglish/Aug%2004%201989%2C%20Financial%20Times%2C%20%2330912%2C%20UK%20%28en%29_djvu.txt\", \"snippet\": \"Earnings per 5p share fell to &2p C&Spk Reserves of £267m at Kenmare venture Kenmare Resources, the USM-quoted Irish group, said yesterday that a ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Orte und Städte auf dem Breitengrad 51\", \"url\": \"https://www.orte-auf.de/breitengrad-51\", \"snippet\": \"... Kenmare (L: -9.5835174 | B: 51.8800967)Kennedyplatz 5 essen (L: 7.010330 | B: 51.456163)Kent (L: 0.5217254 | B: 51.2787075)kenton middlesex (L: -0.330974 ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Orte und Städte auf dem Breitengrad von A.40°n.b/.3w.L\", \"url\": \"https://www.orte-auf.de/gleichen-breitengrad-wie-a40-nb-3wl\", \"snippet\": \"... Kenmare (L: -9.5835174 | B: 51.8800967)Kennedyplatz 5 essen (L: 7.010330 | B: 51.456163)kenton middlesex (L: -0.330974 | B: 51.591626)Kentroper Weg 54 59063 ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Orte und Städte auf dem Breitengrad von Kassel, Frankfurter ...\", \"url\": \"https://www.orte-auf.de/gleichen-breitengrad-wie-kassel-frankfurter-strasse-365\", \"snippet\": \"... Kenmare (L: -9.5835174 | B: 51.8800967)Kennedyplatz 5 essen (L: 7.010330 | B: 51.456163)Kent (L: 0.5217254 | B: 51.2787075)kenton middlesex (L: -0.330974 ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_23d8f80000284e7db2fa3fea",
+      "content": "{\"https://www.geonames.org/2966020/kenmare.html\": \"Title: Bray Head, Ireland\\n\\nURL Source: https://www.geonames.org/2966020/kenmare.html\\n\\nMarkdown Content:\\n[GeoNames]\\n\\n*  About \\n  * [GeoNames.org]\\n  * [Blog]\\n  * [Press]\\n  * [Our team]\\n  * [Terms and conditions]\\n  * Data\\n  * [Main sources]\\n  * [Ontology]\\n  * Want to help?\\n  * [Learn how to contribute]\\n  * [Become an ambassador]\\n  * [Become a sponsor]\\n\\n*  Browse \\n  * Wiki demo\\n  * [Capitals]\\n  * [Wikipedia links]\\n  * Browse data\\n  * [Countries]\\n  * [Geotree]\\n  * [Metropolitan areas]\\n  * [Timezones]\\n  * [Postal codes]\\n  * [Oceans and seas]\\n  * [Day and night]\\n  * [Postal code atlas]\\n  * Recent activity\\n  * [Latest updates]\\n  * [Statistics]\\n\\n*  Download \\n  * [Readme]\\n  * [Free gazetteer data]\\n  * [Free postal codes]\\n  * [Premium data]\\n\\n*  API \\n  * Web services\\n  * [Overview]\\n  * [Documentation]\\n  * [Client libraries]\\n  * [Premium API]\\n\\n*  Help \\n  * Support\\n  * [Forum]\\n  * [FAQ]\\n  * [User manual]\\n  * [Consulting]\\n  * Subscribe\\n  * [Blog]\\n  * [Forum]\\n  * [Google group]\\n  * [Recent changes]\\n  * Follow\\n  * [Facebook]\\n  * [Twitter]\\n\\nSearch\\n\\n Account \\n* [Sign in]\\n* [Reset password]\\n\\n* [Create an account]\\n\\n**We've launched a new version of this site.** Some pages may look and behave a little differently while we finish the transition — thanks for your patience.\\n\\n×\\n\\n[Home]›[Europe]›[Ireland]IE›[Munster]M›[Co Kerry]11›Bray Head 11\\n# Bray Head\\n\\nT CAPE Cape · [IE]\\n\\n Feature  Map  Hierarchy  History  Alternate names \\n\\nGeonameId 2966020\\n\\nCoordinates 51.88417, -10.42472 Move 51°53′03.01″ N, 10°25′28.99″ W\\n\\nPopulation–\\n\\nElevation ca. 114 m \\nSRTM3 114 m · ASTER 117 m\\n\\nTimezone Europe/Dublin\\n\\nFeature code T CAPE\\n\\nWikipedia–\\n\\nPermalink: \\n\\n[.kml][.rdf][geotree]\\n\\nEdit\\n\\nDelete this place\\n\\n Administrative hierarchy  Parents  Children \\n\\n1. A[Ireland]IE Country\\n2. A ADM1[Munster]M First-order administrative division\\n3. A ADM2[Co Kerry]11 Second-order administrative division\\n4. T CAPE Bray Head 11 Cape\\n\\nEdit administrative hierarchy\\n* Aug 14, 2010, 19:15:22[nga] adm1:11>M,adm2:null>11 \\n\\nWhat do these codes mean?\\nThe language code refers to the ISO-639-2 and ISO-639-3 codes.\\n\\n* `en` (english)\\n* `fr` (french)\\n\\nThe language code may be followed by a hyphen and a country code or a country variant:\\n\\n* `zh-CN`\\n* `zh-Hant`\\n\\nAccepted pseudo language codes:\\n\\n* `post` (postal codes)\\n* `icao`, `iata`, `faac`, `tcid` (airport codes)\\n* `abbr` (abbreviation)\\n* `link` (link to website)\\n* `phon` (phonetics)\\n* `piny` (pinyin)\\n* `wkdt` (wikidataid)\\n* `unlc` (UNLOCODE)\\n* `nuts` (EU NUTS code)\\n* `lauc` (EU LAU code)\\n\\n* `p.` = preferred\\n* `s.` = short\\n* `h.` = historical\\n* `c.` = colloquial\\n\\n## Names in other languages\\n\\n + Add name \\n\\n| Code | Language ▲ | Name | Tags | Actions |\\n| - | - | - | - | - |\\n| No alternate names yet. |\\n\\n[info@geonames.org](mailto:info@geonames.org)![Image 1: ant] by [unxos gmbh]\\n\\n[GeoNames Home]•[Postal Codes]•[Download / Webservice]•[Forum]•[Blog]•[Sitemap]\\n\", \"https://en.wikivoyage.org/wiki/Kenmare\": \"Title: Kenmare\\n\\nURL Source: https://en.wikivoyage.org/wiki/Kenmare\\n\\nPublished Time: 2004-08-12T01:22:30Z\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Travel destinations]\\n* [Star articles]\\n* [What's nearby?]\\n* [Trip planner]\\n* [Travel forum]\\n* [Arrivals lounge]\\n* [Random page]\\n\\n Get involved \\n\\n* [Travellers' pub]\\n* [Recent changes]\\n* [Community portal]\\n* [Maintenance panel]\\n* [Policies]\\n* [Help]\\n* [Interlingual lounge]\\n\\n[![Image 1]![Image 2: Wikivoyage]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 3] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 4]]\\n\\n[[dismiss]]\\n\\nJoin us at the [travel forum], where you can share your upcoming travel plans, travel experiences or discuss anything about travel.\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [Beginning]\\n* [1 Get in]\\n\\n* [2 Get around]\\n\\n* [3 See]\\n\\n* [4 Do]\\n\\n* [5 Buy]\\n\\n* [6 Eat]\\n\\n* [7 Drink]\\n\\n* [8 Sleep]\\n\\n* [9 Connect]\\n\\n* [10 Go next]\\n\\n- [x] Toggle the table of contents \\n\\n- [x] 1 language \\n\\n* [Deutsch]\\n\\n[Edit links]\\n\\n* [Page]\\n* [Discussion] [alt-t]\\\")\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n* [Edit interlanguage links]\\n\\n Print/export \\n\\n* [Create a book]\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikipedia]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor (beta)\\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\n![Image 5]\\n\\n[![Image 6: Download GPX file for this article]]\\n\\n51.880-9.584[![Image 7: Full screen dynamic map]]\\n\\nFrom Wikivoyage\\n\\n[Europe]>[Britain and Ireland]>[Ireland]>[Southwest Ireland]>[County Kerry]>Kenmare  \\n\\n# Kenmare\\n\\n[![Image 8]]\\n\\n- [x] \\n\\n## Contents\\n\\n* [1 Get in]\\n\\n* [2 Get around]\\n\\n* [3 See]\\n\\n* [4 Do]\\n\\n* [5 Buy]\\n\\n* [6 Eat]\\n\\n* [7 Drink]\\n\\n* [8 Sleep]\\n\\n* [9 Connect]\\n\\n* [10 Go next]\\n\\nShow: - [x] map  (- [x] resizable ) - [x] table  | [help]\\n**Query area:**  \\nRadius/km: , center:  \\nArea:  SW: NE:\\n### - [x] Wikidata\\n\\nWikipedia language: \\n- [x] Sort by wikipedia viewcount \\n  \\n\\n**Filters**  \\n- [x] religious \\n- [x] settlements \\nSPARQL:### - [x]  OpenStreetMap\\n\\n**Filters**  \\n- [x] viewpoint \\n- [x] historic \\n- [x] museum \\nAUX:\\nQuery and show\\n\\n_For other places with the same name, see [Kenmare (disambiguation)] \\\"Kenmare (disambiguation)\\\")._\\n\\n**Kenmare** is a village in [County Kerry] in southwest Ireland. It's at the head of Kenmare Bay: north of the bay is Iveragh Peninsula, and its coast road is the popular Ring of Kerry tourist route. South is Beara Peninsula, marking the boundary with County Cork. Kenmare's resident population was 2600 in 2022, but it has lots of tourist accommodation and other facilities and gets busy in summer.\\n\\nKenmare's Irish name is _An Neidín_, \\\"the little nest\\\". It was laid out as a planned town in 1670 by Sir William Petty, who'd been awarded the land by Cromwell for mapping Ireland. Subsequent landowners promoted tourism, which boomed once the railway reached Killarney in the 1850s. Kenmare also became famous for the lace sewn at its convent.\\n\\n**Kenmare Tourist Information Centre** is north side of the main square, open daily 9AM-5PM.\\n\\n## Get in\\n\\n[[edit]][add listing](javascript:)\\n\\n[![Image 9]![Image 10]![Image 11]![Image 12]![Image 13]![Image 14]![Image 15]![Image 16]![Image 17]![Image 18]![Image 19]![Image 20] ![Image 21: The Square]![Image 22: Kilgarvan Motor Museum]![Image 23: Sneem]![Image 24: Staigue Stone Fort]![Image 25: Caherdaniel]![Image 26: Lauragh]![Image 27: Ardgroom]![Image 28: Kenmare Bay Hotel]![Image 29: Greenwood Hostel]![Image 30: Sheen Falls Lodge] [+][−] [] [] Wikimedia![Image 31] Mapnik Relief map - [x] Traffic line network - [x] Cycling - [x] Hiking [] 5 km 5 mi [Wikimedia maps] | Map data © [OpenStreetMap contributors]]\\n\\n[51°48′0″N 9°48′0″W]\\n\\nMap of Kenmare\\n\\nThe closest airport is [Kerry] (**[KIR]**[IATA]), midway between Killarney and Tralee. It has limited flights and you might do better to fly into Dublin, Shannon or Cork.\\n\\nBy road from Dublin follow M8 to Fermoy then N72 west through Mallow to Killarney then N71 south through the National Park.\\n\\n[Bus Éireann] 270 runs hourly from [Killarney] (the nearest railway station) via Glenfesk and Kilgarvan, taking 45 min to Kenmare. Five per day continue south to [Glengarriff], [Bantry] and [Skibbereen].\\n\\n[Local Link] Bus 281 runs four times a day from Waterville, taking 80 min via Caherdaniel and Sneem.\\n\\nBus 282 runs four times a day from [Castletownbere], taking 70 min via Laragh.\\n\\n## Get around\\n\\n[[edit]][add listing](javascript:)\\n\\nMotorists should use the main car park on Railway Rd by Holy Cross Church. There are public toilets here. Avoid the congested Square.\\n\\nTaxi firms are [Kenmare Taxi] (+353 87 349 9567), [Brown's] (+353 87 145 5413) and [Kenmare Coach and Cab] (+353 87 248 0800). You could negotiate a tour of the sights.\\n\\nBike hire is available from [Finnegan's Cycles] on Henry St, open M-Sa 10AM-6PM, Su 11AM-5PM.\\n\\n## See\\n\\n[[edit]][add listing](javascript:)\\n\\n[![Image 32]]\\n\\n Sewing Kenmare lace in 1889 \\n\\n* 51.88-9.583[1]The Square is the colourful centre of Kenmare, lined by pubs and shops along Henry St, Main St and Shelbourne St. Yes, it's a triangle. The Tourist Office is at the north end.\\n* **Holy Cross Church** (Roman Catholic) just north on Railway Rd was completed in 1864 along with the Poor Clare's Convent adjacent. Here the nuns developed the techniques of needlework that made Kenmare lace famous. You can visit the church but the convent closed and became a school. The Poor Clares continue elsewhere, and you can see the legacy of their craft in the Lace and Design Centre, described below.\\n* **Kenmare Stone Circle** is 300 m west along Market Street. It's a ring of 15 stones around a central boulder, from the Bronze Age 2200-500 BC. River Finnihy is the stream and scenic dell further west.\\n* **Ardtully Castle** 1 km west of Kilgarvan is a cod-castle of 1847, a mansion torched during the war of 1921. It's on private land, you see enough from the road.\\n* 51.8891-9.4342[2][Kilgarvan Motor Museum],Slaheny, Kilgarvan V93 PW28,☏[+353 64 668 5346](tel:+353646685346).Mon-Sat 9:30AM-12:45PM, 1:45-5:30PM.A personal collection of vintage and classic cars, including Rolls Royce, Bentley, Alvis and Armstrong Siddeley. If you happen to own one yourself, the boss can do repairs and servicing.[![Image 33: OSM directions]](updated Jul 2026|[edit](javascript:))\\n\\n[![Image 34]]\\n\\n Kenmare Stone Circle \\n\\n* **Battle of Callann** in 1261 was fought a short way west of Slaheny. Finghin MacCaura or McCarthy was King of Desmond, and with his Gaelic allies routed the Anglo-Normans here. He died shortly after the battle but his victory meant Desmond remained an independent kingdom for another 300 years.\\n* 51.838-9.9[3]Sneem is a village west on N70 with a scenic inlet of the sea. Its name _An tSnaidhm_ means \\\"the knot\\\", the explanation of which depends entirely on which garrulous codger has bent your ear with the tale. Charles de Gaulle holidayed here, and it's the burial place of the fifth Irish President Cearbhall Ó Dálaigh (Carroll O'Daly, 1911 – 1978). There's accommodation and a golf course.\\n* 51.8051-10.0155[4][Staigue Stone Fort] is an Iron Age ringfort of circa 300-400 AD. It has sturdy drystone walls and an encircling ditch. It's at the head of a valley and commands great views yet can't be seen from below, clearly no accident. Drive up the 4 km access lane from Castlecove, which is narrow but in good repair, to the car park. The site is free to access 24 hours.\\n\\n[![Image 35]]\\n\\n Staigue Stone Fort \\n\\n* 51.77-10.1[5]Caherdaniel is a village near the south point of Iveragh peninsula. Its sights are a ring fort, Derrynane Beg Ogham Stone, [Derrynane House] the home of liberation lawyer and politician Daniel O'Connell, and the fragmentary remains of an abbey on a tidal island. Boat trips to the Skelligs sail from Bealtra just west.\\n* **Waterville** and other points further along the peninsula are described as part of [Caherciveen].\\n* 51.7628-9.7792[6]Lauragh[![Image 36: Lauragh on Wikipedia]] is a village along R571 on Beara peninsula, which extends south of Kenmare. [Dereen Garden] is open daily 10AM-6PM, adult €12 child €6 (2026).\\n* 51.74-9.894[7]Ardgroom is the main village on the north side of Beara peninsula and has two stone circles. It's across the boundary into County Cork but easier to reach from the Kerry side, following R571.\\n* **See [Castletownbere]** for the tip of Beara peninsula, including Dursey Island, which is reached by cable-car.\\n\\n## Do\\n\\n[[edit]][add listing](javascript:)\\n\\n* **Ring of Kerry** is the 214-km circuit of the Iveragh Peninsula, a comfortable day-trip by car or tour bus. Buses tour anti-clockwise so Kenmare comes near the end of their circuit, then they climb N71 over Moll's Gap to return to Killarney. Independent travellers starting from Kenmare are probably better going clockwise, though you'll have to dodge all the oncoming buses somewhere on the road beyond Waterville.\\n* **[Wild Atlantic Way]** is the coastal route all the way down from Donegal to Kinsale. On Iveragh Peninsula it's one and the same as the Ring of Kerry. South it hugs the coast of Beara Peninsula, eventually reaching Bantry.\\n* **[Carnegie Arts Centre]** on Shelbourne St is the village performing arts venue, with film, theatre, music and comedy.\\n* **Horse riding:** there are centres at River Vall\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "All coordinates are now cross-verified (Wikipedia: 51.8801°N, 9.5835°W; Wikivoyage: 51.880, −9.584; other gazetteers: 51.8800967, −9.5835174), confirming my calculation.\n\n## Summary of Analysis\n\n**Video 1 — Kayaking company:** The title card reads \"COLIN & JAMIE — EMERALD OUTDOORS, KENMARE,\" with the \"Discover Kerry / Kerry Tourism\" branding at the end, and the audio describes Kerry's mountains, sea, rivers and lakes. The company is **Emerald Outdoors**, based in the town of **Kenmare, County Kerry, Ireland** (51.8801°N, 9.5835°W). ✓ Verified via web search.\n\n**Video 2 — Brewery attraction:** The video shows the \"Guinness Storehouse\" signs at St James's Gate, Dublin, the giant barrel vats, the Grain store, the moving walkway, the Gravity Bar with Dublin views, and the circular glass atrium exhibit displaying the famous 1759 lease signed by Arthur Guinness. The attraction is the **Guinness Storehouse** (53.341874°N, 6.286709°W), and the lease duration displayed is **9,000 years**. ✓ Verified via web search.\n\n**Great Circle distance calculation:**\n- Using the Haversine formula with R = 6371 km: distance = 275.58 km → **276 km** (rounded)\n\n**Final step:**\n- First digit of the lease duration (9,000) = **9**\n- 276 + 9 = **285**\n\n<answer>285</answer>",
+      "reasoning": "Multiple sources confirm the coordinates of the town of Kenmare: 51.8801°N, 9.5835°W (Wikipedia), 51.880, -9.584 (Wikivoyage), 51.8800967, -9.5835174 (orte-auf.de). Therefore, the distance from Kenmare to the Guinness Storehouse is approximately 275.6 km → rounded to 276 km.\n\nLease period: 9,000 years → first digit = 9.\n\nFinal: 276 + 9 = 285.\n\nLet me write the summary:\n- Video 1: Emerald Outdoors, Kenmare (text overlay \"COLIN & JAMIE, EMERALD OUTDOORS, KENMARE\"; audio mentions Kerry; Discover Kerry branding).\n- Video 2: Guinness Storehouse, St James's Gate, Dublin; the circular exhibit at the base of the atrium displays a copy of the 1759 lease — 9,000 years (audio: the narrator says \"responsible for brewing ale for the Archbishop of Cashel,\" and the video shows the lease text).\n- Distance: approximately 276 km.\n- Answer: 276 + 9 = 285.\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Multiple sources confirm the coordinates of the town of Kenmare: 51.8801°N, 9.5835°W (Wikipedia), 51.880, -9.584 (Wikivoyage), 51.8800967, -9.5835174 (orte-auf.de). Therefore, the distance from Kenmare to the Guinness Storehouse is approximately 275.6 km → rounded to 276 km.\n\nLease period: 9,000 years → first digit = 9.\n\nFinal: 276 + 9 = 285.\n\nLet me write the summary:\n- Video 1: Emerald Outdoors, Kenmare (text overlay \"COLIN & JAMIE, EMERALD OUTDOORS, KENMARE\"; audio mentions Kerry; Discover Kerry branding).\n- Video 2: Guinness Storehouse, St James's Gate, Dublin; the circular exhibit at the base of the atrium displays a copy of the 1759 lease — 9,000 years (audio: the narrator says \"responsible for brewing ale for the Archbishop of Cashel,\" and the video shows the lease text).\n- Distance: approximately 276 km.\n- Answer: 276 + 9 = 285.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Emerald Outdoors kayaking Kenmare Colin Jamie\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Emerald Outdoors | Kayaking Adventures in Kenmare Bay",
+          "url": "https://emeraldoutdoors.ie/",
+          "snippet": "Company founders, Jamie and Colin, were working as whitewater kayak guides there when they met. Having spent years providing adventures all around the world ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "About Emerald Outdoors | Adventure & Expertise in Kenmare",
+          "url": "https://emeraldoutdoors.ie/about-us/",
+          "snippet": "Company founders, Jamie and Colin, were working as whitewater kayak guides there when they met. The pair have accumulated 30+ years of professional kayak ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "We are delighted to be mentioned with Colin and Jamie's ...",
+          "url": "https://www.facebook.com/atlanticseakayaking/posts/we-are-delighted-to-be-mentioned-with-colin-and-jamies-emerald-outdoors-a-great-/1664010302396124/",
+          "snippet": "We are delighted to be mentioned with Colin and Jamie's Emerald Outdoors A great company. Both of us take pride in our tours.",
+          "date": "Jul 5, 2026"
+        },
+        {
+          "id": 4,
+          "title": "Colin & Jamie - Humans Of Hospitaliy | Discover Kerry",
+          "url": "https://www.facebook.com/DiscoverKerryIreland/videos/colin-jamie-humans-of-hospitaliy/646666572630708/",
+          "snippet": "Emerald Outdoors, located in Kenmare was born during a chat by founders Colin and Jamie. The pair have worked as senior kayak guides across 5 ...",
+          "date": "6 years ago"
+        },
+        {
+          "id": 5,
+          "title": "Night Kayaking with Bioluminescent Plankton - Tripadvisor",
+          "url": "https://en.tripadvisor.com.hk/ShowUserReviews-g211860-d12460779-r772297105-Emerald_Outdoors-Kenmare_County_Kerry.html",
+          "snippet": "Kayaking in Kenmare Bay was a serene and enjoyable experience in itself. Jamie and Colin had interesting facts and stories about the local area/wildlife ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Emerald Outdoors Kenmare | Kenmare, Kerry V93 V0Y2",
+          "url": "https://www.discoverkerry.com/listing/emerald-outdoors-kenmare/68356101/",
+          "snippet": "Company founders, Jamie and Colin, were working as whitewater kayak guides. The pair have accumulated 20+ years of professional kayak guiding between them ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Kayaking Kerry | Kenmare (@emeraldoutdoors)",
+          "url": "https://www.instagram.com/emeraldoutdoors/",
+          "snippet": "Join Jamie, Colin, and our brilliant up-and-coming instructors for 4 days of kayaking fun at the stunning Blackwater Pier. Ages 12–16 💶 €200 per person. To ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Group Adventures & Events with Emerald Outdoors",
+          "url": "https://emeraldoutdoors.ie/groups/",
+          "snippet": "Join one of our famous kayak tours by day or by night. Specially tailored kayak trips for Stags/Hens, Corporate and other groups. Colin and Jamie made the ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "We experienced some incredible bioluminescence last night, ...",
+          "url": "https://www.instagram.com/reel/DNX_t8oI6PW/",
+          "snippet": "8 women from Dallas & Austin joined myself, Jamie & Rowan from @emeraldoutdoors for the most wonderful kayaking experience on Kenmare Bay. We ...",
+          "date": "1 year ago"
+        },
+        {
+          "id": 10,
+          "title": "Afternoon Kayak Tour on Kenmare Bay",
+          "url": "https://emeraldoutdoors.ie/experience/kayak-day-tour/",
+          "snippet": "The staff are as amazing as the sights, Jamie, Rowan, Rommel and Eamon are so helpful and informative – really great at explaining everything to more nervous ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Guinness Storehouse coordinates latitude longitude St James's Gate Dublin\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Getting Here",
+          "url": "https://www.guinness-storehouse.com/en/getting-here",
+          "snippet": "We are easy to find by foot, bike, bus, tram, train or taxi. Address: Guinness Storehouse, St James's Gate, Dublin 8, D08 VF8H, Ireland. DIRECTIONS. On Foot.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Guinness Storehouse",
+          "url": "https://en.wikipedia.org/wiki/Guinness_Storehouse",
+          "snippet": "Guinness Storehouse is a tourist attraction at St. James's Gate Brewery in Dublin, Ireland. Coordinates 53°20′30.7464′′N 6°17′12.1535′′W",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Guinness Storehouse Dublin - The Home of ...",
+          "url": "https://questoapp.com/dublin/places-to-visit/guinness-storehouse-dublin",
+          "snippet": "Visit the Guinness Storehouse in Dublin, a seven-floor experience inside St. James's Gate Brewery. Enjoy panoramic views from the Gravity Bar and learn...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Getting Here - Guinness Open Gate Brewery Dublin",
+          "url": "https://opengatedublin.guinness.com/en/getting-here",
+          "snippet": "Find us: 53 James's Street Dublin 8 D08 X20N Get Directions 2 Guinness Storehouse Monday: 9.30am to 5pm",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "New Exclusive Brewery Experience",
+          "url": "https://www.guinness-storehouse.com/en/whats-hoppening/exclusive-brewery-experience",
+          "snippet": "famous 1759 gate, Guinness Storehouse, St. James's Gate, Dublin 8, D08 VF8H, Ireland get directions",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "A snapshot from St. James's Street in Dublin",
+          "url": "https://www.facebook.com/groups/LoveIrelandGroup/posts/2071445536725933/",
+          "snippet": "The Guinness Storehouse: Located at the heart of the St. James's Gate Brewery, the Guinness Storehouse is a must-see attraction. This seven- ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "A Guide to the Guinness Storehouse",
+          "url": "https://emerald-heritage.com/blog/2018/a-guide-to-the-guinness-storehouse",
+          "snippet": "If you want the exact address then you'll find the Guinness Storehouse at St James's Gate, Ushers, Dublin 8. How to Get to the Guinness Storehouse? You can ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Everything You Need to Know about the Guinness Storehouse",
+          "url": "https://cpireland.crowneplaza.com/news/guinness-storehouse-dublin/",
+          "snippet": "Location of St. James' Gate. The Guinness Storehouse is in Dublin 8, on the southside of the river Liffey and just a short walk from well-known spots such as St ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Guinness Storehouse on the map, Dublin, Ireland. ...",
+          "url": "https://tz.2markers.com/564248",
+          "snippet": "Guinness Storehouse, Ireland coordinates in decimal format: latitude — 53.34194595237592, longitude — -6.286711101795186. When converted to degrees, minutes, ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "How to get to the Guinness Storehouse - Tiqets Blog",
+          "url": "https://www.tiqets.com/blog/how-to-get-to-the-guinness-storehouse/",
+          "snippet": "... and its official address is Guinness Storehouse, St. James's Gate, Dublin 8, D08 VF8H, Ireland. How to get to the Guinness Storehouse. The ...",
+          "date": "Dec 12, 2023"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Arthur Guinness 1759 lease 9000 years St James's Gate\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "On this Day in 1759, Arthur Guinness signed a 9000 year ...",
+          "url": "https://www.facebook.com/Ireland/posts/on-this-day-in-1759-arthur-guinness-signed-a-9000-year-lease-for-the-st-jamess-g/1355908486579809/",
+          "snippet": "On this Day in 1759, Arthur Guinness signed a 9,000 year lease for the St. James’s Gate Brewery, Dublin. The cost? Just £45 per year in annual rent 😱",
+          "date": "9 months ago"
+        },
+        {
+          "id": 2,
+          "title": "The Story of Guinness",
+          "url": "https://www.guinness.com/en-us/our-craft/guinness-story",
+          "snippet": "Arthur Price, later Archbishop of Cashel'. On 31st December 1759, the man signed a NINE THOUSAND YEAR lease on St. James's Gate Brewery in Dublin. If that's ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "In 1759, Arthur Guinness walked into St James's Gate and ...",
+          "url": "https://www.facebook.com/loveirelandd/videos/in-1759-arthur-guinness-walked-into-st-jamess-gate-and-signed-a-lease-for-9000-y/1868450297147621/",
+          "snippet": "A narrator recounts how Arthur Guinness signed a 9,000-year lease for the St. James's Gate brewery in Dublin in 1759, establishing what would ...",
+          "date": "6 months ago"
+        },
+        {
+          "id": 4,
+          "title": "Guinness Brewery",
+          "url": "https://en.wikipedia.org/wiki/Guinness_Brewery",
+          "snippet": "Originally leased in 1759 to Arthur Guinness at £45 per year for 9,000 years, the St. James's Gate area has been the home of Guinness ever since. The 1759 ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "TIL that in 1759 Arthur Guinness signed a 9000 year lease ...",
+          "url": "https://www.reddit.com/r/todayilearned/comments/n8gf4n/til_that_in_1759_arthur_guinness_signed_a_9000/",
+          "snippet": "Arthur Guinness, founder of Guinness, signed a 9,000 year lease at the St. James's Gate Brewery in Dublin for £45 per year back in 1759",
+          "date": "5 years ago"
+        },
+        {
+          "id": 6,
+          "title": "A 9000 Year Long Lease: An Arthur Guinness Brewery Story",
+          "url": "https://www.youtube.com/watch?v=Rih5knvjksY",
+          "snippet": "on December 31, 1759, Arthur Guinness signed a lease for his brewery at St. James Gate in Dublin, Ireland, that was set to last for 9,000 years ...",
+          "date": "3 years ago"
+        },
+        {
+          "id": 7,
+          "title": "Discover the Story of Guinness",
+          "url": "https://www.guinness-storehouse.com/en/discover/story-of-guinness",
+          "snippet": "Arthur Guinness was just 34 when he signed the iconic 9,000-year Guinness lease, on a then-disused brewery site on 31 December 1759 for an annual rent of £45.",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Guinness and the 9,000-year Lease",
+          "url": "https://jamesfell.substack.com/p/guinness-and-the-9000-year-lease",
+          "snippet": "On December 31, 1759, he signed a 9,000-year lease for the abandoned St. James Gate Brewery in Dublin to brew his namesake beer. The cost per ...",
+          "date": "9 months ago"
+        },
+        {
+          "id": 9,
+          "title": "On the last day of 1759, Arthur Guinness signed a ...",
+          "url": "https://www.instagram.com/p/DbRTuX5lkTX/",
+          "snippet": "On 31 December 1759, Arthur Guinness leased a disused brewery at St James's Gate for 9,000 years. The annual rent was £45. The agreement was ...",
+          "date": "2 months ago"
+        },
+        {
+          "id": 10,
+          "title": "Guinness is still brewed at St. James Gate",
+          "url": "https://www.thevintagenews.com/2018/02/24/arthur-guinness/",
+          "snippet": "On the last day of December 1759, Arthur somehow managed to get the owner to agree to a lease for up to 9,000 years on these terms. Guinness is ...",
+          "date": "Feb 24, 2018"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Kenmare County Kerry Ireland town coordinates latitude longitude wikipedia\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Kenmare",
+          "url": "https://en.wikipedia.org/wiki/Kenmare",
+          "snippet": "County Kerry, Ireland. Coordinates: 51°52′48′′N 9°35′01′′W / 51.8801°N 9.5835°W / 51.8801; -9.5835",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "County Kerry",
+          "url": "https://en.wikipedia.org/wiki/County_Kerry",
+          "snippet": "County Kerry Coordinates: 52°10′N 9°45′W / 52.167°N 9.750°W",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Kenmare (disambiguation)",
+          "url": "https://en.wikipedia.org/wiki/Kenmare_(disambiguation)",
+          "snippet": "Kenmare is a town in County Kerry, Ireland. Kenmare lace, associated with the Kerry town Kenmare Resources, Irish mining company",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Category:Towns and villages in County Kerry",
+          "url": "https://en.wikipedia.org/wiki/Category:Towns_and_villages_in_County_Kerry",
+          "snippet": "Map all coordinates using. This category is for Towns and villages in County Kerry, Ireland. K Kenmare (1 C, 4 P) K Kenmare Kilcummin,",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Killarney",
+          "url": "https://en.wikipedia.org/wiki/Killarney",
+          "snippet": "County Kerry, Ireland. Coordinates: 52°03′32′′N 9°30′26′′W / 52.0588°N 9.5072°W / 52.0588; -9.5072",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Kenmare – Travel guide at Wikivoyage",
+          "url": "https://en.wikivoyage.org/wiki/Kenmare",
+          "snippet": "Kenmare is a village in County Kerry in southwest Ireland. It's at the head of Kenmare Bay: north of the bay is Iveragh Peninsula, N72 west through Mallow to ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Ring of Kerry",
+          "url": "https://en.wikipedia.org/wiki/Ring_of_Kerry",
+          "snippet": "The Ring of Kerry. Clockwise from Killarney it follows the N71 to Kenmare, then the N70 around the Iveragh Peninsula … via the N72. Length 179 km (111 mi)",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Kenmare",
+          "url": "https://www.wikidata.org/wiki/Q166232",
+          "snippet": "town in County Kerry, Ireland. English Kenmare. Ireland located in the administrative territorial. Regional/Europe/Ireland/Kerry/Localities/ ...",
+          "date": "Oct 28, 2013"
+        },
+        {
+          "id": 9,
+          "title": "County Kerry - OpenStreetMap Wiki",
+          "url": "https://wiki.openstreetmap.org/wiki/County_Kerry",
+          "snippet": "County Kerry is a county in South-West Region, Ireland, Munster ... latitude: 52.1478, longitude: -9.8918. Browse map of County Kerry 52 ...",
+          "date": "Nov 29, 2016"
+        },
+        {
+          "id": 10,
+          "title": "List of townlands of County Kerry",
+          "url": "https://en.wikipedia.org/wiki/List_of_townlands_of_County_Kerry",
+          "snippet": "This is a sortable table of the approximately 2,756 townlands in County Kerry, Ireland. ... Glanarought, Kenmare, Kenmare. Ballyhar, 282, Magunihy, Kilcredane ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/Kenmare\", \"https://en.wikipedia.org/wiki/Guinness_Storehouse\"]\n\n}",
+      "result": {
+        "https://en.wikipedia.org/wiki/Kenmare": "Title: Kenmare - Wikipedia\n\nURL Source: https://en.wikipedia.org/wiki/Kenmare\n\nPublished Time: Wed, 07 Oct 2026 01:48:34 GMT\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 Location]\n\n* [2 History]\n\n* [3 Tourism]\n\n* [4 Notable people]\n\n* [5 Fair days]\n\n* [6 Transport]\n\n* [7 Services]\n\n* [8 Sports]\n\n* [9 In popular culture]\n\n* [10 See also]\n\n* [11 References]\n\n* [12 External links]\n\n- [x] Toggle the table of contents \n\n# Kenmare\n\n- [x] 15 languages \n\n* [Català]\n* [Cebuano] \"Kenmare (lungsod sa Irland) – Cebuano\")\n* [Deutsch]\n* [Español]\n* [Euskara]\n* [فارسی]\n* [Français]\n* [Gaeilge]\n* [Italiano] \"Kenmare (Irlanda) – Italian\")\n* [Nederlands] \"Kenmare (Ierland) – Dutch\")\n* [Norsk nynorsk]\n* [Polski]\n* [Русский]\n* [Svenska] \"Kenmare (ort i Irland) – Swedish\")\n* [اردو]\n\n[Edit links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikivoyage]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\n[Coordinates]: [51°52′48″N 9°35′01″W / 51.8801°N 9.5835°W / 51.8801; -9.5835])\n\nFrom Wikipedia, the free encyclopedia\n\nTown in County Kerry, Ireland\n\nThis article is about the town in Ireland. For other uses, see [Kenmare (disambiguation)] \"Kenmare (disambiguation)\").\n\nTown in Munster, Ireland\n\n| Kenmare _Neidín_([Irish]) |\n| - |\n| Town |\n| [![Image 4: Henry Street, Kenmare]] Henry Street, Kenmare |\n| [![Image 5: Kenmare is located in Ireland]] ![Image 6: Kenmare] Kenmare Location in Ireland |\n| Coordinates: [51°52′48″N 9°35′01″W / 51.8801°N 9.5835°W / 51.8801; -9.5835]) |\n| Country | Ireland |\n| [Province] | [Munster] |\n| [County] | [County Kerry] |\n| Population ([2022])[[1]] |\n| •Total | 2,566 |\n| Irish Grid Reference | [V908709] |\n| Website | [www.kenmare.ie] |\n\nHistorical population| Year | Pop. | ±% |\n| - | - | - |\n| 1821 | 605 | — |\n| 1831 | 1,072 | +77.2% |\n| 1841 | 1,339 | +24.9% |\n| 1851 | 1,509 | +12.7% |\n| 1861 | 1,200 | −20.5% |\n| 1871 | 1,205 | +0.4% |\n| 1881 | 1,279 | +6.1% |\n| 1891 | 1,189 | −7.0% |\n| 1901 | 1,122 | −5.6% |\n| 1911 | 1,034 | −7.8% |\n| 1926 | 883 | −14.6% |\n| 1936 | 921 | +4.3% |\n| 1946 | 906 | −1.6% |\n| 1951 | 907 | +0.1% |\n| 1956 | 1,054 | +16.2% |\n| 1961 | 1,046 | −0.8% |\n| 1966 | 1,113 | +6.4% |\n| 1971 | 903 | −18.9% |\n| 1981 | 1,123 | +24.4% |\n| 1986 | 1,130 | +0.6% |\n| 1991 | 1,366 | +20.9% |\n| 1996 | 1,420 | +4.0% |\n| 2002 | 1,844 | +29.9% |\n| 2006 | 1,701 | −7.8% |\n| 2011 | 2,175 | +27.9% |\n| 2016 | 2,376 | +9.2% |\n| 2022 | 2,566 | +8.0% |\n| [[2]][[3]][[4]][[5]][[6]][[7]][[1]] |\n\n**Kenmare** ([Irish]: _Neidín_, meaning 'the little nest')[[8]][[9]] is a town in the south of [County Kerry], Ireland. The name Kenmare is the [anglicised] form of _Ceann Mara_,[[8]] meaning \"head of the sea\", referring to the head of Kenmare Bay.\n\nKenmare had a population of 2,566 in 2022. It is also a [townland] and [civil parish].[[9]]\n\n## Location\n\n[[edit]]\n\nKenmare is located at the head of [Kenmare Bay] (where it reaches the farthest inland), sometimes called the Kenmare River, where the Roughty River (_An Ruachtach_) flows into the sea, and at the junction of the [Iveragh Peninsula] and the [Beara Peninsula]. It is also located near the [MacGillycuddy's Reeks], [Mangerton Mountain] and [Caha Mountains] and is a popular [hillwalking] destination. Nearby towns and villages are [Tuosist], [Ardgroom], [Glengarriff], [Kilgarvan], [Killarney], [Templenoe] and [Sneem].\n\nKenmare is in the [Kerry] \"Kerry (Dáil constituency)\") constituency of [Dáil Éireann].\n\n## History\n\n[[edit]]\n\nEvidence of ancient settlement in the Kenmare area includes one of the largest [stone circles] in the south-west of Ireland.[[10]] Close to the town, this stone circle shows occupation in the area going back to at least the Bronze Age (2,200–500 B.C), when it was constructed. The circle has 15 stones around the circumference with a boulder dolmen in the centre.[[10]]\n\n[![Image 7]]\n\nKenmare Stone Circle\n\n[Vikings] are said to have raided the area around the town which at that time was called _Ceann Mhara_, which means \"head of the sea\" in Irish.\n\nThe entire area was granted to the English economist and scientist Sir [William Petty] by [Oliver Cromwell] as part payment for completing the mapping of Ireland, the [Down Survey] in 1656. He laid out the modern town circa 1670. Before him, a previous surveyor of Ireland, [Sir Valentine Browne] (1510–1589), ancestor of the [Earl of Kenmare], was granted some lands in [County Kerry] during the resulting plantation, the [Munster Plantation].\n\nThe three main streets that form a triangle in the centre of the town are called Main Street (originally William Street, after [William Petty, 1st Marquess of Lansdowne]), Henry Street (originally Sound Road), after the son of the 1st Marquis and Shelbourne Street (Henry Petty became the first [Earl of Shelburne]). This name was also later applied to [Shelbourne Road] in Dublin.\n\n[![Image 8]]\n\nMass [famine] \"Great Famine (Ireland)\") grave for Kenmare victims\n\nThe convent in the town, the [Poor Clare Sisters], was founded in 1861 when five nuns including Sister Mary Frances Cusack (The Nun of Kenmare), who was also an author and publisher of many books, moved to Kenmare from their convent in [Newry], [County Down]. Under the guidance of Mother Abbess O'Hagan in 1864 a [lace]-working industry was established and [Kenmare lace] became noted worldwide. The convent no longer exists and Pobalscoil Inbhear Scéine secondary school occupies this site since 2001.\n\nA suspension bridge, which is claimed to be the first in Ireland, over the Kenmare River was opened in 1841 and served the community till 1932 when it was replaced by a new concrete bridge.[[11]]\n\nDuring and after the [Civil War] (1922–1923), there were a number of incidents in Kenmare, including the [killing of O'Connor brothers in September 1922] by the [Anti-Treaty IRA],[[12]] and the brutal assault against the allegedly [Unionist] daughters of a local doctor by three [Dublin Guard] officers led by [Paddy Daly] in 1923 (which is sometimes referred to as the '[Kenmare incident]').[[13]] Kenmare was briefly held by the Anti-Treaty IRA, during the [Irish Civil War], before being successfully retaken by the [Irish Army] in December 1922.[[12]]\n\nThe town library is one of the [Carnegie Libraries] funded by [Andrew Carnegie]. It opened in 1918, and the architect was R.M. Butler.[[14]][[15]] The library building is now home to the Carnegie Arts Centre and theatre, hosting a local drama group and a number of travelling productions each year, as well as music and comedy nights.[[16]]\n\nHoly Cross Catholic Church in Kenmare was consecrated in 1864. It was built under the guidance of Archdeacon Fr. John O'Sullivan – who is interred within the church.[[17]] The church has stained glass windows by O'Connor London (1863), by Caseys Dublin (1864) and by Earley Dublin (1864). The organ is by Telford & Telford(1865). Buried in the church grounds is Monsignor [Francis Cremin] (died 2001), who was a periitus or theological expert at Vatican II. He was a native of Kenmare and had been Professor of Canon Law and Moral Theology at [St Patrick's College, Maynooth] from 1949 until 1980. He was a brother of Con Cremin, an Irish diplomat, who represented Ireland in France and Germany during World War II and subsequently in Portugal, the Holy See, the United Kingdom and at the United Nations.\n\n[![Image 9]]\n\nView of Main Street in Kenmare (between the 1880s and early 1900s)\n\nThe [Church of Ireland] church of St Patrick celebrated its 150th anniversary in 2008.[[18]] The town has been a winner in the [Irish Tidy Towns Competition] in 2013, 2000 and was a runner-up in 2003 and 2008.\n\n## Tourism\n\n[[edit]]\n\n[![Image 10]]\n\nCarrigacappeen erratic, Kenmare, 1890s\n\nKenmare lies on two noted Irish tourist routes, the [Ring of Kerry] and the [Ring of Beara], approximately 32 kilometres (20 mi) from [Killarney]. As a result, it is a popular tourist destination and many of the businesses in the area cater to tourists. The town is noted for its food and pubs.\n\nSince the late 1990s the tourism industry has driven local construction work,[_[citation needed]_] with land being sold at high prices to [developers] wishing to build [estates] of [holiday homes].[[19]] This has led to an increase in the town's population, particularly during the peak tourist season, and prompted fears among some residents that the town is becoming overdeveloped and losing much of its identity.[[20]]\n\n## Notable people\n\n[[edit]]\n\nSee also: [Category:People from Kenmare]\n\n[![Image 11]]\n\nHorse and cart in Kenmare.\n\nInter-county [Gaelic footballers][Mickey 'Ned' O'Sullivan], [Stephen O'Brien] \"Stephen O'Brien (Kerry Gaelic footballer)\") and [Paul O'Connor] \"Paul O'Connor (Gaelic footballer)\") are from the Kenmare area, while [Pat Spillane] is from nearby [Templenoe]. Kenmare is also the home of Irish Olympic [slalom skier][Thos Foley].\n\nKenmare was home to composer [Ernest John Moeran] in later life.[[21]] Diplomat [Con Cremin] was also from Kenmare, as is senator [Mark Daly] \"Mark Daly (politician)\"). Writer [Anna McPartlin] grew up in Kenmare, and her 2007 nov",
+        "https://en.wikipedia.org/wiki/Guinness_Storehouse": "Title: Guinness Storehouse\n\nURL Source: https://en.wikipedia.org/wiki/Guinness_Storehouse\n\nPublished Time: 2006-07-14T18:05:43Z\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5]]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 History]\n\n* [2 Visitor attractions]\n\n* [3 See also]\n\n* [4 References]\n\n* [5 External links]\n\n- [x] Toggle the table of contents \n\n# Guinness Storehouse\n\n- [x] 11 languages \n\n* [Català]\n* [Dansk]\n* [Deutsch]\n* [Euskara]\n* [Suomi]\n* [Français]\n* [Magyar]\n* [Հայերեն]\n* [Nederlands]\n* [Русский]\n* [Українська]\n\n[Edit links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n* [Expand all]\n* [Edit interlanguage links]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor \n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\n[Coordinates]: ![Image 6: Show location on an interactive map][53°20′30.7464″N 6°17′12.1535″W / 53.341874000°N 6.286709306°W / 53.341874000; -6.286709306]\n\nFrom Wikipedia, the free encyclopedia\n\nTourist and visitor attraction, Dublin\n\nGuinness Storehouse[![Image 7]]\n[![Image 8]]\n\nGuinness Storehouse in Dublin\n[![Image 9: Map] [Wikimedia] | © [OpenStreetMap]]\nEstablished November 2000;25 years ago(2000-11)\nLocation[Guinness Brewery], [Dublin], Ireland\nCoordinates![Image 10: Show location on an interactive map][53°20′30.7464″N 6°17′12.1535″W / 53.341874000°N 6.286709306°W / 53.341874000; -6.286709306]\nType History of brewing\nVisitors 23.9 million (2000 - 2022)[[1]]\nOwner[Diageo]\nWebsite[www.guinness-storehouse.com]\n\n**Guinness Storehouse** is a [tourist attraction] at [St. James's Gate Brewery] in [Dublin], Ireland.[[2]][[3]] Since opening in 2000, it has received over twenty million visitors.[[4]][[5]]\n\nThe Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of [Guinness].[[6]] The ground floor introduces the beer's four ingredients (water, barley, hops and yeast), and the brewery's founder, [Arthur Guinness]. Other floors feature the history of [Guinness advertising] and include an interactive exhibit on responsible drinking. The seventh floor houses the Gravity Bar with views of Dublin and where visitors may drink a pint of Guinness included in the price of most admission tickets.[[7]]\n\n## History\n\n[[edit]]\n\n[![Image 11]]\n\n The entrance to the Storehouse\n\nThe building in which the Storehouse is located was constructed in 1902 as a [fermentation] plant for the St. James's Gate Brewery (yeast is added to the brew). It was designed in the style of the [Chicago School of Architecture] \"Chicago school (architecture)\") and was the first multi-storey steel-framed building to be constructed in Ireland.[[6]][[8]] The building was used continuously as the fermentation plant of the Brewery until its closure in 1988, when a new fermentation plant was completed near the [River Liffey].[[8]]\n\nIn 1997, it was decided to convert the building into the Guinness Storehouse, replacing the Guinness Hop Store as the Brewery's visitor centre. The redesign of the building was undertaken by the UK-based design firm Imagination in conjunction with the Dublin-based architects firm RKD, and the Storehouse opened to the public on 2 December 2000.[[6]] In 2006-08 a new wing was developed, and Euro 2.5 million was invested in a live technology-driven multi-media installation demonstrating the modern brewing process for Guinness, which was designed by London-based museum design specialist, [Event Communications].[[9]][[10]]\n\nIn May 2011, [Queen Elizabeth II] and [Prince Philip] visited the Storehouse as part of a [state visit] to Ireland.[[11]][[12]]\n\n## Visitor attractions\n\n[[edit]]\n\nThe Guinness Storehouse explains the history of beer. The story is told through various interactive exhibition areas including ingredients, brewing, transport, cooperage, advertising, and sponsorship.\n\nThe Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.[[6]] The ground floor introduces the beer's four ingredients (water, barley, hops, and yeast), and the brewery's founder, [Arthur Guinness]. Other floors feature the history of Guinness advertising and include an interactive exhibit on responsible drinking.\n\nAt the base of the atrium lies a copy of the 9,000-year lease signed by [Arthur Guinness] on the brewery site. In the Perfect Pint bar, visitors may pour their own pint of Guinness and even get their selfie printed on top of a pint.[[13]] The Brewery Bar on the fifth floor offers Irish cuisine, using Guinness both in the cooking and as an accompaniment to food.[[14]] The seventh-floor houses the Gravity Bar with views of Dublin and where visitors may drink a pint of Guinness. Most of the admission tickets include one pint in the price.\n\nThe Guinness Open Gate Brewery is an experimental taproom nearby, showcasing small-batch beer creations from the Guinness brewery.\n\nThe Storehouse also contains the Guinness Archives, containing records and artifacts dating back to 1759.[[15]]\n\n## See also\n\n[[edit]]\n\n[![Image 12: Wikimedia Commons logo]]\n\nWikimedia Commons has media related to [Guinness Storehouse].\n\n* ![Image 13][Drink portal]\n* ![Image 14][History portal]\n\n* [List of food and beverage museums]\n\n## References\n\n[[edit]]\n\n1. [↑][\"Guinness Storehouse visitor numbers rebound post-pandemic\"]. _[The Irish Times]_.\n2. [↑][Guinness Storehouse][Archived] 23 December 2010 at the [Wayback Machine], [DublinTourist.com].\n3. [↑][_Dublin Sights: a travel guide to the top 25 attractions in Dublin, Ireland_], MobileReference, 2010, p.115, [ISBN] \"ISBN (identifier)\")[9781607789635][_[permanent dead link]_]\n4. [↑][\"Guinness Storehouse celebrates its 20 millionth visitor\"]. _IrishCentral.com_. 26 April 2019. Retrieved 16 August 2019.\n5. [↑][\"Guinness Storehouse set to welcome 20 millionth visitor\"]. [RTÉ]. 2 January 2019.\n6. [Jump up to: 1][2][3][4]David Dernie (2006), [_Exhibition design_], Laurence King Publishing, [ISBN] \"ISBN (identifier)\")[9781856694308]\n7. [↑][\"Guinness Storehouse\"]. _www.guinness-storehouse.com_. Retrieved 13 September 2019.\n8. [Jump up to: 1][2][\"Dublin can be heaven - and here's the cream\"]. _Irish Independent_. 15 May 2005. Retrieved 17 December 2011.\n9. [↑]Editorial (6 July 2006). [\"Event drafted in to lead Guinness Storehouse design\"]. _[Design Week]_. Retrieved 10 October 2019. Event Communications's appointment, replacing Imagination as lead design group, follows its completion of a €2.5m (£1.73m) project to re-envisage the Storehouse's ground and first floor with a more interactive exhibition design that explains the brewing process. It has reinterpreted the space, installing additional video elements and introducing the concept of a brewer guide and a tasting laboratory where visitors can sample Guinness from the keg line. Event Communications was appointed to this project in April last year, following a four-way pitch.\n10. [↑][\"The Family and the Product\"]. _[Event Communications]_. 2007. Archived from [the original] on 10 October 2019. Retrieved 10 October 2019.\n11. [↑][\"Queen refuses pint of Guinness in Dublin, but Prince Phillip[sic] looks keen\"]. Metro. 18 May 2011. Retrieved 17 December 2011.\n12. [↑][\"Visit grips imagination of world press\"]. _Irish Times_. 18 May 2011. Retrieved 17 December 2011.\n13. [↑][_Stoutie - A Selfie on a Pint of Guinness_], 21 November 2018\n14. [↑][\"Guinness Storehouse\"]. _www.guinness-storehouse.com_.\n15. [↑]Ó Conghaile, Pól (1 November 2018). [\"Inside the Guinness Archives: From Arthur's signature to Obama's keg\"]. _Irish Independent_. Retrieved 28 January 2021.\n\n## External links\n\n[[edit]]\n\n* [Guinness Storehouse website]\n* [Guinness website]\n\n| show * [v] * [t] * [e] Museums and galleries in the [Republic of Ireland] by [province] |\n| - |\n| [Connacht] | * [126 Artist-run Gallery] * [Arigna Mining Experience] * [Battle of Aughrim Visitor Centre] * [Castlerea Railway Museum] * [Cavan and Leitrim Railway] * [Connemara Heritage and History Centre] * [Custom House Studios and Gallery] * [Clew Bay Heritage Centre] * [Galway City Museum] * [Glengowla Mines] * [Hamilton Gallery] \"Hamilton Gallery (Sligo)\") * [James Mitchell Geology Museum] * [The Model, Sligo] * [National Famine Museum]&[Strokestown Park] * [National Museum of Ireland – Country Life] * [Roscommon County Museum] * [Sligo County Museum] |\n| [Munster] | * [Allihies Copper Mine Museum] * [Clare Museum] * [Cobh Heritage Centre] * [Cobh Museum] * [Cork Butter Museum] * [Cork Public Museum] * [Craggaunowen] * [Crawford Art Gallery] * [Garda College Museum and Visitor Centre] * [Hunt Museum] * [Jameson Experience, Midleton] * [Kerry County Museum] * [Lewis Glucksman Gallery] * [Limerick City Museum] * [Ormston House] * [The People's Museum of Limerick] * [Tipperary Museum of Hidden History] * [Waterford County Museum] * [Waterford Treasures]"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2, R=6371.0):\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2 - lat1)\\n    dlmb = math.radians(lon2 - lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Kenmare, Co. Kerry (Wikipedia)\\nken_lat, ken_lon = 51.8801, -9.5835\\n# Guinness Storehouse, Dublin (Wikipedia)\\ngs_lat, gs_lon = 53.341874, -6.2867093\\n\\nd = haversine(ken_lat, ken_lon, gs_lat, gs_lon)\\nprint(f\\\"Great Circle distance: {d:.3f} km -> rounded: {round(d)} km\\\")\\n\\n# Also check with alternate coordinate sources for robustness\\nalt_pairs = [\\n    ((51.7558, -9.5761), (53.34194595, -6.28671110)),  # older Kenmare coord variant\\n    ((51.8801, -9.5835), (53.34194595, -6.28671110)),\\n]\\nfor (a, b) in alt_pairs:\\n    print(a, b, f\\\"{haversine(a[0], a[1], b[0], b[1]):.2f}\\\")\\n\\nlease = 9000\\nfirst_digit = int(str(lease)[0])\\nanswer = round(d) + first_digit\\nprint(f\\\"Distance rounded = {round(d)}, first digit of lease ({lease}) = {first_digit}\\\")\\nprint(f\\\"Final answer = {answer}\\\")\"}",
+      "result": {
+        "stdout": "Great Circle distance: 275.582 km -> rounded: 276 km\n(51.7558, -9.5761) (53.34194595, -6.2867111) 283.81\n(51.8801, -9.5835) (53.34194595, -6.2867111) 275.59\nDistance rounded = 276, first digit of lease (9000) = 9\nFinal answer = 285",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "turn": 4,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Kenmare\\\" Ireland town lat 51.75 OR 51.88 lon -9.57 geolocation\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "The Best Entrepreneurs and Rising Stars: Awards Shortlist",
+          "url": "https://www.scribd.com/document/58348921/Cityam-2011-06-21",
+          "snippet": "Kenmare Resources . .48.6 0.7 50.3 11.5. Lonmin . . . . . . . . . . .1384.0 -20.0 1983.0 1355.0. New World Resourc .918.0 -12.0 1060.0 890.0",
+          "date": "Jun 21, 2011"
+        },
+        {
+          "id": 2,
+          "title": "Full text of \"The New York Times 1919-05-19: Vol 68 Iss ...",
+          "url": "https://archive.org/stream/sim_new-york-times_1919-05-19_68_22395/sim_new-york-times_1919-05-19_68_22395_djvu.txt",
+          "snippet": "14, Kenmare Garage . 39, M. Shanzer. ' 69, Service Btation, ' La Fontaine Ave, 2063, Le Fontaine Ave. Garage. aT fv) mt. 14, 4,-Ruggter Service Station. 36 ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Full text of \"Financial Times , 1989, UK, English\"",
+          "url": "https://archive.org/stream/FinancialTimes1989UKEnglish/Aug%2004%201989%2C%20Financial%20Times%2C%20%2330912%2C%20UK%20%28en%29_djvu.txt",
+          "snippet": "Earnings per 5p share fell to &2p C&Spk Reserves of £267m at Kenmare venture Kenmare Resources, the USM-quoted Irish group, said yesterday that a ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Orte und Städte auf dem Breitengrad 51",
+          "url": "https://www.orte-auf.de/breitengrad-51",
+          "snippet": "... Kenmare (L: -9.5835174 | B: 51.8800967)Kennedyplatz 5 essen (L: 7.010330 | B: 51.456163)Kent (L: 0.5217254 | B: 51.2787075)kenton middlesex (L: -0.330974 ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Orte und Städte auf dem Breitengrad von A.40°n.b/.3w.L",
+          "url": "https://www.orte-auf.de/gleichen-breitengrad-wie-a40-nb-3wl",
+          "snippet": "... Kenmare (L: -9.5835174 | B: 51.8800967)Kennedyplatz 5 essen (L: 7.010330 | B: 51.456163)kenton middlesex (L: -0.330974 | B: 51.591626)Kentroper Weg 54 59063 ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Orte und Städte auf dem Breitengrad von Kassel, Frankfurter ...",
+          "url": "https://www.orte-auf.de/gleichen-breitengrad-wie-kassel-frankfurter-strasse-365",
+          "snippet": "... Kenmare (L: -9.5835174 | B: 51.8800967)Kennedyplatz 5 essen (L: 7.010330 | B: 51.456163)Kent (L: 0.5217254 | B: 51.2787075)kenton middlesex (L: -0.330974 ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.geonames.org/2966020/kenmare.html\", \"https://en.wikivoyage.org/wiki/Kenmare\"]\n\n}",
+      "result": {
+        "https://www.geonames.org/2966020/kenmare.html": "Title: Bray Head, Ireland\n\nURL Source: https://www.geonames.org/2966020/kenmare.html\n\nMarkdown Content:\n[GeoNames]\n\n*  About \n  * [GeoNames.org]\n  * [Blog]\n  * [Press]\n  * [Our team]\n  * [Terms and conditions]\n  * Data\n  * [Main sources]\n  * [Ontology]\n  * Want to help?\n  * [Learn how to contribute]\n  * [Become an ambassador]\n  * [Become a sponsor]\n\n*  Browse \n  * Wiki demo\n  * [Capitals]\n  * [Wikipedia links]\n  * Browse data\n  * [Countries]\n  * [Geotree]\n  * [Metropolitan areas]\n  * [Timezones]\n  * [Postal codes]\n  * [Oceans and seas]\n  * [Day and night]\n  * [Postal code atlas]\n  * Recent activity\n  * [Latest updates]\n  * [Statistics]\n\n*  Download \n  * [Readme]\n  * [Free gazetteer data]\n  * [Free postal codes]\n  * [Premium data]\n\n*  API \n  * Web services\n  * [Overview]\n  * [Documentation]\n  * [Client libraries]\n  * [Premium API]\n\n*  Help \n  * Support\n  * [Forum]\n  * [FAQ]\n  * [User manual]\n  * [Consulting]\n  * Subscribe\n  * [Blog]\n  * [Forum]\n  * [Google group]\n  * [Recent changes]\n  * Follow\n  * [Facebook]\n  * [Twitter]\n\nSearch\n\n Account \n* [Sign in]\n* [Reset password]\n\n* [Create an account]\n\n**We've launched a new version of this site.** Some pages may look and behave a little differently while we finish the transition — thanks for your patience.\n\n×\n\n[Home]›[Europe]›[Ireland]IE›[Munster]M›[Co Kerry]11›Bray Head 11\n# Bray Head\n\nT CAPE Cape · [IE]\n\n Feature  Map  Hierarchy  History  Alternate names \n\nGeonameId 2966020\n\nCoordinates 51.88417, -10.42472 Move 51°53′03.01″ N, 10°25′28.99″ W\n\nPopulation–\n\nElevation ca. 114 m \nSRTM3 114 m · ASTER 117 m\n\nTimezone Europe/Dublin\n\nFeature code T CAPE\n\nWikipedia–\n\nPermalink: \n\n[.kml][.rdf][geotree]\n\nEdit\n\nDelete this place\n\n Administrative hierarchy  Parents  Children \n\n1. A[Ireland]IE Country\n2. A ADM1[Munster]M First-order administrative division\n3. A ADM2[Co Kerry]11 Second-order administrative division\n4. T CAPE Bray Head 11 Cape\n\nEdit administrative hierarchy\n* Aug 14, 2010, 19:15:22[nga] adm1:11>M,adm2:null>11 \n\nWhat do these codes mean?\nThe language code refers to the ISO-639-2 and ISO-639-3 codes.\n\n* `en` (english)\n* `fr` (french)\n\nThe language code may be followed by a hyphen and a country code or a country variant:\n\n* `zh-CN`\n* `zh-Hant`\n\nAccepted pseudo language codes:\n\n* `post` (postal codes)\n* `icao`, `iata`, `faac`, `tcid` (airport codes)\n* `abbr` (abbreviation)\n* `link` (link to website)\n* `phon` (phonetics)\n* `piny` (pinyin)\n* `wkdt` (wikidataid)\n* `unlc` (UNLOCODE)\n* `nuts` (EU NUTS code)\n* `lauc` (EU LAU code)\n\n* `p.` = preferred\n* `s.` = short\n* `h.` = historical\n* `c.` = colloquial\n\n## Names in other languages\n\n + Add name \n\n| Code | Language ▲ | Name | Tags | Actions |\n| - | - | - | - | - |\n| No alternate names yet. |\n\n[info@geonames.org](mailto:info@geonames.org)![Image 1: ant] by [unxos gmbh]\n\n[GeoNames Home]•[Postal Codes]•[Download / Webservice]•[Forum]•[Blog]•[Sitemap]\n",
+        "https://en.wikivoyage.org/wiki/Kenmare": "Title: Kenmare\n\nURL Source: https://en.wikivoyage.org/wiki/Kenmare\n\nPublished Time: 2004-08-12T01:22:30Z\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Travel destinations]\n* [Star articles]\n* [What's nearby?]\n* [Trip planner]\n* [Travel forum]\n* [Arrivals lounge]\n* [Random page]\n\n Get involved \n\n* [Travellers' pub]\n* [Recent changes]\n* [Community portal]\n* [Maintenance panel]\n* [Policies]\n* [Help]\n* [Interlingual lounge]\n\n[![Image 1]![Image 2: Wikivoyage]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 3] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 4]]\n\n[[dismiss]]\n\nJoin us at the [travel forum], where you can share your upcoming travel plans, travel experiences or discuss anything about travel.\n\n## Contents\n\nmove to sidebar hide\n\n* [Beginning]\n* [1 Get in]\n\n* [2 Get around]\n\n* [3 See]\n\n* [4 Do]\n\n* [5 Buy]\n\n* [6 Eat]\n\n* [7 Drink]\n\n* [8 Sleep]\n\n* [9 Connect]\n\n* [10 Go next]\n\n- [x] Toggle the table of contents \n\n- [x] 1 language \n\n* [Deutsch]\n\n[Edit links]\n\n* [Page]\n* [Discussion] [alt-t]\")\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n* [Edit interlanguage links]\n\n Print/export \n\n* [Create a book]\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikipedia]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor (beta)\n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\n![Image 5]\n\n[![Image 6: Download GPX file for this article]]\n\n51.880-9.584[![Image 7: Full screen dynamic map]]\n\nFrom Wikivoyage\n\n[Europe]>[Britain and Ireland]>[Ireland]>[Southwest Ireland]>[County Kerry]>Kenmare  \n\n# Kenmare\n\n[![Image 8]]\n\n- [x] \n\n## Contents\n\n* [1 Get in]\n\n* [2 Get around]\n\n* [3 See]\n\n* [4 Do]\n\n* [5 Buy]\n\n* [6 Eat]\n\n* [7 Drink]\n\n* [8 Sleep]\n\n* [9 Connect]\n\n* [10 Go next]\n\nShow: - [x] map  (- [x] resizable ) - [x] table  | [help]\n**Query area:**  \nRadius/km: , center:  \nArea:  SW: NE:\n### - [x] Wikidata\n\nWikipedia language: \n- [x] Sort by wikipedia viewcount \n  \n\n**Filters**  \n- [x] religious \n- [x] settlements \nSPARQL:### - [x]  OpenStreetMap\n\n**Filters**  \n- [x] viewpoint \n- [x] historic \n- [x] museum \nAUX:\nQuery and show\n\n_For other places with the same name, see [Kenmare (disambiguation)] \"Kenmare (disambiguation)\")._\n\n**Kenmare** is a village in [County Kerry] in southwest Ireland. It's at the head of Kenmare Bay: north of the bay is Iveragh Peninsula, and its coast road is the popular Ring of Kerry tourist route. South is Beara Peninsula, marking the boundary with County Cork. Kenmare's resident population was 2600 in 2022, but it has lots of tourist accommodation and other facilities and gets busy in summer.\n\nKenmare's Irish name is _An Neidín_, \"the little nest\". It was laid out as a planned town in 1670 by Sir William Petty, who'd been awarded the land by Cromwell for mapping Ireland. Subsequent landowners promoted tourism, which boomed once the railway reached Killarney in the 1850s. Kenmare also became famous for the lace sewn at its convent.\n\n**Kenmare Tourist Information Centre** is north side of the main square, open daily 9AM-5PM.\n\n## Get in\n\n[[edit]][add listing](javascript:)\n\n[![Image 9]![Image 10]![Image 11]![Image 12]![Image 13]![Image 14]![Image 15]![Image 16]![Image 17]![Image 18]![Image 19]![Image 20] ![Image 21: The Square]![Image 22: Kilgarvan Motor Museum]![Image 23: Sneem]![Image 24: Staigue Stone Fort]![Image 25: Caherdaniel]![Image 26: Lauragh]![Image 27: Ardgroom]![Image 28: Kenmare Bay Hotel]![Image 29: Greenwood Hostel]![Image 30: Sheen Falls Lodge] [+][−] [] [] Wikimedia![Image 31] Mapnik Relief map - [x] Traffic line network - [x] Cycling - [x] Hiking [] 5 km 5 mi [Wikimedia maps] | Map data © [OpenStreetMap contributors]]\n\n[51°48′0″N 9°48′0″W]\n\nMap of Kenmare\n\nThe closest airport is [Kerry] (**[KIR]**[IATA]), midway between Killarney and Tralee. It has limited flights and you might do better to fly into Dublin, Shannon or Cork.\n\nBy road from Dublin follow M8 to Fermoy then N72 west through Mallow to Killarney then N71 south through the National Park.\n\n[Bus Éireann] 270 runs hourly from [Killarney] (the nearest railway station) via Glenfesk and Kilgarvan, taking 45 min to Kenmare. Five per day continue south to [Glengarriff], [Bantry] and [Skibbereen].\n\n[Local Link] Bus 281 runs four times a day from Waterville, taking 80 min via Caherdaniel and Sneem.\n\nBus 282 runs four times a day from [Castletownbere], taking 70 min via Laragh.\n\n## Get around\n\n[[edit]][add listing](javascript:)\n\nMotorists should use the main car park on Railway Rd by Holy Cross Church. There are public toilets here. Avoid the congested Square.\n\nTaxi firms are [Kenmare Taxi] (+353 87 349 9567), [Brown's] (+353 87 145 5413) and [Kenmare Coach and Cab] (+353 87 248 0800). You could negotiate a tour of the sights.\n\nBike hire is available from [Finnegan's Cycles] on Henry St, open M-Sa 10AM-6PM, Su 11AM-5PM.\n\n## See\n\n[[edit]][add listing](javascript:)\n\n[![Image 32]]\n\n Sewing Kenmare lace in 1889 \n\n* 51.88-9.583[1]The Square is the colourful centre of Kenmare, lined by pubs and shops along Henry St, Main St and Shelbourne St. Yes, it's a triangle. The Tourist Office is at the north end.\n* **Holy Cross Church** (Roman Catholic) just north on Railway Rd was completed in 1864 along with the Poor Clare's Convent adjacent. Here the nuns developed the techniques of needlework that made Kenmare lace famous. You can visit the church but the convent closed and became a school. The Poor Clares continue elsewhere, and you can see the legacy of their craft in the Lace and Design Centre, described below.\n* **Kenmare Stone Circle** is 300 m west along Market Street. It's a ring of 15 stones around a central boulder, from the Bronze Age 2200-500 BC. River Finnihy is the stream and scenic dell further west.\n* **Ardtully Castle** 1 km west of Kilgarvan is a cod-castle of 1847, a mansion torched during the war of 1921. It's on private land, you see enough from the road.\n* 51.8891-9.4342[2][Kilgarvan Motor Museum],Slaheny, Kilgarvan V93 PW28,☏[+353 64 668 5346](tel:+353646685346).Mon-Sat 9:30AM-12:45PM, 1:45-5:30PM.A personal collection of vintage and classic cars, including Rolls Royce, Bentley, Alvis and Armstrong Siddeley. If you happen to own one yourself, the boss can do repairs and servicing.[![Image 33: OSM directions]](updated Jul 2026|[edit](javascript:))\n\n[![Image 34]]\n\n Kenmare Stone Circle \n\n* **Battle of Callann** in 1261 was fought a short way west of Slaheny. Finghin MacCaura or McCarthy was King of Desmond, and with his Gaelic allies routed the Anglo-Normans here. He died shortly after the battle but his victory meant Desmond remained an independent kingdom for another 300 years.\n* 51.838-9.9[3]Sneem is a village west on N70 with a scenic inlet of the sea. Its name _An tSnaidhm_ means \"the knot\", the explanation of which depends entirely on which garrulous codger has bent your ear with the tale. Charles de Gaulle holidayed here, and it's the burial place of the fifth Irish President Cearbhall Ó Dálaigh (Carroll O'Daly, 1911 – 1978). There's accommodation and a golf course.\n* 51.8051-10.0155[4][Staigue Stone Fort] is an Iron Age ringfort of circa 300-400 AD. It has sturdy drystone walls and an encircling ditch. It's at the head of a valley and commands great views yet can't be seen from below, clearly no accident. Drive up the 4 km access lane from Castlecove, which is narrow but in good repair, to the car park. The site is free to access 24 hours.\n\n[![Image 35]]\n\n Staigue Stone Fort \n\n* 51.77-10.1[5]Caherdaniel is a village near the south point of Iveragh peninsula. Its sights are a ring fort, Derrynane Beg Ogham Stone, [Derrynane House] the home of liberation lawyer and politician Daniel O'Connell, and the fragmentary remains of an abbey on a tidal island. Boat trips to the Skelligs sail from Bealtra just west.\n* **Waterville** and other points further along the peninsula are described as part of [Caherciveen].\n* 51.7628-9.7792[6]Lauragh[![Image 36: Lauragh on Wikipedia]] is a village along R571 on Beara peninsula, which extends south of Kenmare. [Dereen Garden] is open daily 10AM-6PM, adult €12 child €6 (2026).\n* 51.74-9.894[7]Ardgroom is the main village on the north side of Beara peninsula and has two stone circles. It's across the boundary into County Cork but easier to reach from the Kerry side, following R571.\n* **See [Castletownbere]** for the tip of Beara peninsula, including Dursey Island, which is reached by cable-car.\n\n## Do\n\n[[edit]][add listing](javascript:)\n\n* **Ring of Kerry** is the 214-km circuit of the Iveragh Peninsula, a comfortable day-trip by car or tour bus. Buses tour anti-clockwise so Kenmare comes near the end of their circuit, then they climb N71 over Moll's Gap to return to Killarney. Independent travellers starting from Kenmare are probably better going clockwise, though you'll have to dodge all the oncoming buses somewhere on the road beyond Waterville.\n* **[Wild Atlantic Way]** is the coastal route all the way down from Donegal to Kinsale. On Iveragh Peninsula it's one and the same as the Ring of Kerry. South it hugs the coast of Beara Peninsula, eventually reaching Bantry.\n* **[Carnegie Arts Centre]** on Shelbourne St is the village performing arts venue, with film, theatre, music and comedy.\n* **Horse riding:** there are centres at River Vall"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 43,
+      "id": "gen-1791461304-kJXHOdIflamaoq4AVgmA",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 25342,
+        "completion_tokens": 1378,
+        "total_tokens": 26720,
+        "cost": 0.00444896,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00444896,
+          "upstream_inference_prompt_cost": 0.0038013,
+          "upstream_inference_completions_cost": 0.00064766
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1260,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 28.981
+    },
+    {
+      "item_id": 43,
+      "id": "gen-1791461337-mJOXD89CFR4Bwz0OG7X8",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 29790,
+        "completion_tokens": 387,
+        "total_tokens": 30177,
+        "cost": 0.001288598,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 25088,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001288598,
+          "upstream_inference_prompt_cost": 0.001106708,
+          "upstream_inference_completions_cost": 0.00018189
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 300,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 43.376
+    },
+    {
+      "item_id": 43,
+      "id": "gen-1791461384-lsykLiik7tfZXackRnhn",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 37844,
+        "completion_tokens": 681,
+        "total_tokens": 38525,
+        "cost": 0.001914494,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 30464,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001914494,
+          "upstream_inference_prompt_cost": 0.001594424,
+          "upstream_inference_completions_cost": 0.00032007
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 122,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 32.658
+    },
+    {
+      "item_id": 43,
+      "id": "gen-1791461417-lw5HhzUN5WzJvCd6q1bE",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 38704,
+        "completion_tokens": 1130,
+        "total_tokens": 39834,
+        "cost": 0.001294012,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 37632,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001294012,
+          "upstream_inference_prompt_cost": 0.000762912,
+          "upstream_inference_completions_cost": 0.0005311
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 987,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 34.272
+    },
+    {
+      "item_id": 43,
+      "id": "gen-1791461457-5KhrBZD01mLZUbmWU3Y2",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 45382,
+        "completion_tokens": 725,
+        "total_tokens": 46107,
+        "cost": 0.001865234,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39424,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001865234,
+          "upstream_inference_prompt_cost": 0.001524484,
+          "upstream_inference_completions_cost": 0.00034075
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 301,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 50.51
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "285",
+  "em_score": 1,
+  "llm_equal": 1,
+  "judge_response": "Exact match",
+  "judge_error": null,
+  "elapsed_seconds": 367.98
+}

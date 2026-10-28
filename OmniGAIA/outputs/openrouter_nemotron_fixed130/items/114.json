@@ -1,0 +1,94 @@
+{
+  "id": 114,
+  "question": "In an audio recording of a traffic dispute, a driver cites a state vehicle code regarding passing distance for bicycles. The image depicts the actual scene with visible signage. Based solely on the signage in the image, determine the state jurisdiction of this location. Does the vehicle code referenced in the audio apply here? Answer 'Yes' or 'No', then specify the correct state statute number that governs safe bicycle passing distances in the identified jurisdiction and the required minimum distance in feet.",
+  "Level": "Medium",
+  "category": "Geography & Travel",
+  "task_type": "image + audio",
+  "answer": "No; O.C.G.A. § 40-6-56; 3 feet",
+  "output": "<answer>Yes, Georgia statute 40-6-56, 3 feet</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "In an audio recording of a traffic dispute, a driver cites a state vehicle code regarding passing distance for bicycles. The image depicts the actual scene with visible signage. Based solely on the signage in the image, determine the state jurisdiction of this location. Does the vehicle code referenced in the audio apply here? Answer 'Yes' or 'No', then specify the correct state statute number that governs safe bicycle passing distances in the identified jurisdiction and the required minimum distance in feet."
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:567948 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:319599 characters>"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "<answer>Yes, Georgia statute 40-6-56, 3 feet</answer>",
+      "reasoning": "So, let's try to figure this out. First, the image shows a cityscape. Let's identify the city. The skyline has specific buildings. I remember that Atlanta, Georgia has a skyline like that. Let's check the signs: \"PATH\" is a transit system in Atlanta (the Atlanta Regional Transit Authority's trail system). Also, the \"Share the Road\" sign with a bike symbol. Now, the question is about the state jurisdiction. If it's Atlanta, then the state is Georgia.\n\nNow, Georgia's vehicle code for passing distance for bicycles. Georgia's statute: O.C.G.A. § 40-6-56. The required minimum distance is 3 feet when passing a bicycle. Let's confirm. Georgia law says when overtaking a bicycle, the motor vehicle must maintain a safe distance of at least 3 feet. So the state is Georgia, statute number 40-6-56, minimum distance 3 feet.\n\nWait, let's make sure the city is Atlanta. The PATH sign: PATH is the Atlanta area's trail system (Pedestrian and Trail Highways). The skyline matches Atlanta. So the state is Georgia. Then the statute is Georgia's O.C.G.A. § 40-6-56, which requires 3 feet.\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "So, let's try to figure this out. First, the image shows a cityscape. Let's identify the city. The skyline has specific buildings. I remember that Atlanta, Georgia has a skyline like that. Let's check the signs: \"PATH\" is a transit system in Atlanta (the Atlanta Regional Transit Authority's trail system). Also, the \"Share the Road\" sign with a bike symbol. Now, the question is about the state jurisdiction. If it's Atlanta, then the state is Georgia.\n\nNow, Georgia's vehicle code for passing distance for bicycles. Georgia's statute: O.C.G.A. § 40-6-56. The required minimum distance is 3 feet when passing a bicycle. Let's confirm. Georgia law says when overtaking a bicycle, the motor vehicle must maintain a safe distance of at least 3 feet. So the state is Georgia, statute number 40-6-56, minimum distance 3 feet.\n\nWait, let's make sure the city is Atlanta. The PATH sign: PATH is the Atlanta area's trail system (Pedestrian and Trail Highways). The skyline matches Atlanta. So the state is Georgia. Then the statute is Georgia's O.C.G.A. § 40-6-56, which requires 3 feet.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [],
+  "requests": [
+    {
+      "item_id": 114,
+      "id": "gen-1793179212-qtGI0Rdsr0xlGRm8mugh",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "provider": "Nvidia",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 1151,
+        "completion_tokens": 298,
+        "total_tokens": 1449,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 273,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 2,
+      "elapsed_seconds": 25.24
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Yes, Georgia statute 40-6-56, 3 feet",
+  "em_score": 0,
+  "llm_equal": 0,
+  "judge_response": "Incorrect",
+  "judge_error": null,
+  "elapsed_seconds": 29.09
+}

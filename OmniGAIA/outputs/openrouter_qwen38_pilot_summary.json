@@ -1,0 +1,147 @@
+{
+  "updated_at": "2026-10-08T10:11:04.439992+00:00",
+  "model": "qwen/qwen3.8-omni-flash",
+  "judge": "deepseek/deepseek-v3.2",
+  "active_perception": false,
+  "training": false,
+  "tools": [
+    "web_search",
+    "page_browser",
+    "code_executor"
+  ],
+  "api_checks": {
+    "Serper": "passed",
+    "Jina": "passed",
+    "OpenRouter": "passed"
+  },
+  "pilot_size": 5,
+  "completed": 4,
+  "correct": 3,
+  "incorrect": 1,
+  "technical_errors": 1,
+  "pass_at_1": null,
+  "full_benchmark_started": false,
+  "full_benchmark_size": 360,
+  "reported_openrouter_cost_usd_including_preflight_and_diagnostics": 0.07099789,
+  "status_ru": "Пилот частично выполнен. Итогового результата по бенчмарку нет.",
+  "blocker_ru": "Для задачи 3 OpenRouter/Alibaba возвращает Download multimodal file timed out или The audio is empty при совместной передаче всех видео и аудио. По отдельности видео и аудио принимаются. Перепаковка, H.264, отдельные сообщения, объединение медиа и WAV проблему не устранили. Точная причина внутри сервиса не установлена.",
+  "protocol_note_ru": "Диагностические изменения формата не включены в основной адаптер. Основной запуск сохраняет предобработку GeminiBaseAgent. Технические ошибки не засчитываются как неправильные ответы модели.",
+  "results": [
+    {
+      "id": 1,
+      "status": "completed",
+      "level": "Easy",
+      "correct": 1,
+      "predicted_answer": "790",
+      "source": "outputs/openrouter_qwen38_pilot/items/001.json"
+    },
+    {
+      "id": 2,
+      "status": "completed",
+      "level": "Medium",
+      "correct": 1,
+      "predicted_answer": "20 months",
+      "source": "outputs/openrouter_qwen38_pilot_recovery/items/002.json"
+    },
+    {
+      "id": 3,
+      "status": "error",
+      "level": "Easy",
+      "correct": null,
+      "predicted_answer": null,
+      "source": "outputs/openrouter_qwen38_pilot_recovery/items/003.json"
+    },
+    {
+      "id": 4,
+      "status": "completed",
+      "level": "Hard",
+      "correct": 0,
+      "predicted_answer": "93492",
+      "source": "outputs/openrouter_qwen38_pilot/items/004.json"
+    },
+    {
+      "id": 5,
+      "status": "completed",
+      "level": "Easy",
+      "correct": 1,
+      "predicted_answer": "K2 (the skis shown are K2); their primary/integrated binding partner is Marker.",
+      "source": "outputs/openrouter_qwen38_pilot/items/005.json"
+    }
+  ],
+  "diagnostics": [
+    {
+      "probe": "both_audio_only",
+      "status": 200,
+      "error": null,
+      "source": "outputs/openrouter_multivideo_probe/both_audio_only.json"
+    },
+    {
+      "probe": "both_videos_and_audio",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-1562bb8a-ecab-93ab-9b22-d22f17e6a30b\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/both_videos_and_audio.json"
+    },
+    {
+      "probe": "both_videos_only",
+      "status": 200,
+      "error": null,
+      "source": "outputs/openrouter_multivideo_probe/both_videos_only.json"
+    },
+    {
+      "probe": "bundled_media",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"The audio is empty\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-fed7f38c-ab82-9106-8613-e69b8fb87d99\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/bundled_media.json"
+    },
+    {
+      "probe": "faststart_videos_and_audio",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-30ca9d8c-8d1e-9a96-9868-ad5652a04761\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/faststart_videos_and_audio.json"
+    },
+    {
+      "probe": "first_video",
+      "status": 200,
+      "error": null,
+      "source": "outputs/openrouter_multivideo_probe/first_video.json"
+    },
+    {
+      "probe": "h264_videos_and_original_audio",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-9f1c72b2-0139-90ec-a4b3-64f099101f4a\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/h264_videos_and_original_audio.json"
+    },
+    {
+      "probe": "original_videos_pcm_wav_audio",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"The audio is empty\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-2fff0240-9094-9ffb-b6e6-c980460c6731\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/original_videos_pcm_wav_audio.json"
+    },
+    {
+      "probe": "second_video",
+      "status": 200,
+      "error": null,
+      "source": "outputs/openrouter_multivideo_probe/second_video.json"
+    },
+    {
+      "probe": "separate_messages",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-b218ef83-b84e-95db-b0b5-dd1df3eb4425\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/separate_messages.json"
+    },
+    {
+      "probe": "two_videos_one_merged_audio",
+      "status": 400,
+      "error": "data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"The audio is empty\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-1438adce-55d1-975b-b6d6-267c76de4691\"}\n\n",
+      "source": "outputs/openrouter_multivideo_probe/two_videos_one_merged_audio.json"
+    },
+    {
+      "probe": "two_videos_one_original_audio",
+      "status": 200,
+      "error": null,
+      "source": "outputs/openrouter_multivideo_probe/two_videos_one_original_audio.json"
+    }
+  ],
+  "resume_command": "cd /home/ilya/projects/multimodal/OmniGAIA && .venv/bin/python -u src/run_openrouter_baseline.py --ids 2,3 --run-dir outputs/openrouter_qwen38_pilot_recovery",
+  "full_run_command": "cd /home/ilya/projects/multimodal/OmniGAIA && .venv/bin/python -u src/run_openrouter_baseline.py --run-dir outputs/openrouter_qwen38_baseline"
+}

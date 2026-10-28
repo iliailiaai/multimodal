@@ -1,0 +1,396 @@
+{
+  "id": 22,
+  "question": "The audio lists several minerals found in dates. The image shows a bunch of bananas, a fruit famously associated with one of these specific minerals. Using USDA nutrition data, how many milligrams of this mineral are in a 100-gram serving of raw bananas?",
+  "Level": "Easy",
+  "category": "Food & Nutrition",
+  "task_type": "image + audio",
+  "answer": "358",
+  "output": "**Reasoning chain:**\n\n1. **Audio → mineral list.** Around 0:34–0:43, the presenter lists what dates provide: \"B vitamins... potassium... iron, calcium, copper, magnesium... not to mention a good dose of fiber.\"\n\n2. **Image → fruit.** The photo shows a yellow-green bunch of **bananas** in an open plastic bag at the top, surrounded by other bagged items (corn, nuts, dried fruit, etc.).\n\n3. **Link.** Of the minerals named, bananas are famously associated with **potassium** — it's the nutrient they're popularly marketed for.\n\n4. **USDA lookup.** For \"Banana, raw\" (USDA FoodData Central, SR Legacy, FDC ID 173944 / NDB 09050), the mineral table gives **Potassium, K = 358 mg per 100 g** (≈8% DV). For reference, the same entry lists magnesium 27 mg, calcium 5 mg, iron 0.26 mg, copper 0.08 mg — so potassium is by far the dominant one, matching the banana reputation.\n\n<answer>358 mg</answer>\n\nThat is, per USDA FoodData Central, 100 g of raw banana contains **358 milligrams of potassium**.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "The audio lists several minerals found in dates. The image shows a bunch of bananas, a fruit famously associated with one of these specific minerals. Using USDA nutrition data, how many milligrams of this mineral are in a 100-gram serving of raw bananas?"
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1246332 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:229847 characters>"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll verify the mineral association and then look up the exact USDA figure.\n\n",
+      "reasoning": "The user asks: audio lists minerals in dates: potassium, iron, calcium, copper, magnesium. Bananas are famously associated with potassium. Using USDA nutrition data, how many mg of potassium in 100g serving of raw bananas?\n\nUSDA FoodData Central: Banana, raw — potassium 358 mg per 100 g. Let me verify with a search.\n\nLet me search to confirm.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_9da4d5c412484174a69ae6bd",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"USDA FoodData Central banana raw potassium mg per 100g\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_7ed5987407ff4fb1b41c9093",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"banana, raw\\\" USDA nutrition 358 mg potassium 100 gram\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user asks: audio lists minerals in dates: potassium, iron, calcium, copper, magnesium. Bananas are famously associated with potassium. Using USDA nutrition data, how many mg of potassium in 100g serving of raw bananas?\n\nUSDA FoodData Central: Banana, raw — potassium 358 mg per 100 g. Let me verify with a search.\n\nLet me search to confirm.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9da4d5c412484174a69ae6bd",
+      "content": "[{\"id\": 1, \"title\": \"USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/\", \"snippet\": \"USDA FoodData Central produces thorough resources for navigating and understanding nutritional info to support dietary choices and nutritional analysis.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"FoodData Central Food Search\", \"url\": \"http://fdc.nal.usda.gov/food-search/?query=banana\", \"snippet\": \"The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search\", \"snippet\": \"The USDA FoodData Central search function provides nutrient data for food components. Bananas, overripe, raw 9040 Bananas, ripe and slightly ripe, Size per ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"USDA FoodData Central Banana Potassium Carbohydrate ...\", \"url\": \"https://www.facebook.com/fb-answers/usda-fooddata-central-banana-potassium-carbohydrate/\", \"snippet\": \"According to USDA FoodData Central, a medium banana has about 422-450 mg potassium and 27-28g carbohydrates per serving. While bananas are a solid potassium ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Nutrients: Potassium, K(mg)\", \"url\": \"https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf\", \"snippet\": \"Potassium, K(mg)Per Measure. Beans, pink, mature seeds, raw. 1.0 cups. 3074. Whey, sweet, dried. 1.0 cups. 3016. Beans, black, mature seeds, raw. 1.0 cups. 2877.\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Nutrition facts for bananas, raw\", \"url\": \"https://nutritiondatahub.com/food/bananas-raw-173944\", \"snippet\": \"Nutrition data and key nutrients for bananas, raw, serving size 100g contains: calories 89.00 kcal, Vitamin A, IU 64.00. Ca 5.00 mg 0 % Potassium, K 358.00 mg. ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Bananas - SNAP-Ed Connection - USDA\", \"url\": \"https://snaped.fna.usda.gov/resources/nutrition-education-materials/seasonal-produce-guide/bananas\", \"snippet\": \"Nutrition Information Serving Size: 1 medium banana ( 118g) s Calcium 6 mg Potassium 11 mg\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Banana Nutrition Facts and Health Benefits\", \"url\": \"https://www.verywellfit.com/are-bananas-bad-for-weight-loss-3495634\", \"snippet\": \"Potassium: 422mg. Bananas are known for their potassium content, with one medium-sized banana offering 422mg potassium, or about 9% of the ...\", \"date\": \"May 10, 2024\"}, {\"id\": 9, \"title\": \"FoodData Central Inventory and Update Log\", \"url\": \"https://fdc.nal.usda.gov/log\", \"snippet\": \"Data Updates - Foundation Foods. NEW: Beet greens, raw; Fennel, bulb, raw; Parsnips, raw; Peppers, banana or Hungarian wax, seeded ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Nutrition Facts for Bananas\", \"url\": \"https://tools.myfooddata.com/nutrition-facts/173944/wt2\", \"snippet\": \"Nutrition Facts. Serving Size. 1 cup, sliced (150g). Calories, 134. % Daily Value *. Total Fat 0.5g, 1%. Saturated Fat 0.17g, 1%. Trans Fat 0g.\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_7ed5987407ff4fb1b41c9093",
+      "content": "[{\"id\": 1, \"title\": \"+usda fooddata central banana raw 89 kcal 100g\", \"url\": \"https://vicinia.fr/amphtml/news/articles/8drotwbxpzqb\", \"snippet\": \"Raw Banana: 89 cal, 1.1g protein, 0.3g fat, 22.8g carbs per 100g. Excellent source of Vitamin B6. USDA nutrition data. 100g of Banana, raw ...\", \"date\": \"Apr 23, 2026\"}, {\"id\": 2, \"title\": \"Banana (Raw) Calories & Nutrition Facts - EatBetter app\", \"url\": \"https://www.eatbetter.app/en/food/muz-raw\", \"snippet\": \"1 medium Banana (Raw) (120 g): 107 calories · 26 minutes of walking to burn off. Per 100 g: 89 calories, 22.8 g carbs, 1.1 g protein, 0.3 g fat.\", \"date\": \"Sep 30, 2026\"}, {\"id\": 3, \"title\": \"Dried Apricots vs Banana vs Avocado: Potassium Compared\", \"url\": \"https://kashmiril.com/blogs/journal/dried-apricots-vs-banana-vs-avocado?srsltid=AU7gw4VMdBiN1MbzV5z2EJLev5ROu4R-vnWQD2Cm8Twar0pW_uhjud9C\", \"snippet\": \"Banana, raw, 358 mg, 89, Lightest, quickest fuel. Read those figures straight from the USDA's FoodData Central database: dried apricots carry 1,162 mg per 100 g ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"USDA, FDA, and ODS-NIH Database for the Iodine Content ...\", \"url\": \"https://www.ars.usda.gov/ARSUSERFILES/80400535/DATA/IODINE/IODINE%20DATABASE_RELEASE_3_REVISION_1_DOCUMENTATION.PDF\", \"snippet\": \"by JM Roseland · 2023 · Cited by 7 — ... 100 grams of food and 2) per serving. Per 100g of food is the unit used ... Banana, raw. 35. 0.2. 0.6. 0.0. 3.5 FDA. 2016-2020. 196 09050. 398 Blueberries, raw.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"fooddata central banana raw 100 g calories protein\", \"url\": \"https://magistralicious.ch/amphtml/story/economy/2026/10/07/lolo-literature-neg%C3%B3cios-economy-mutala.html\", \"snippet\": \"Banana, raw contains 97 calories per 100g, according to the USDA FoodData Central database. It provides 0.7g of protein, 0.3g of fat, and 22.7g ...\", \"date\": \"17 hours ago\"}, {\"id\": 6, \"title\": \"Banana: Potassium Content — Myth vs. Reality\", \"url\": \"https://bananatower.com/banana/potassium\", \"snippet\": \"Potassium Comparison: How Bananas Stack Up ; Avocado, raw, 1 half (68g), 345 mg, 7% ; Banana, raw, 1 medium (118g), 422 mg, 9%.\", \"date\": \"Feb 25, 2026\"}, {\"id\": 7, \"title\": \"Banana Benefits for Men - Hims\", \"url\": \"https://www.forhims.co.uk/blog/benefits-of-banana-sexually\", \"snippet\": \"358 milligrams of potassium. 8.7 milligrams of vitamin C. 5 milligrams of ... Banana, raw. https://fdc.nal.usda.gov/fdc-app.html#/food-details/1102653 ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"+usda fooddata central banana raw calories medium 118 g\", \"url\": \"https://vicinia.fr/amphtml/news/articles/u3k9059ip32i\", \"snippet\": \"Banana (raw): 89 calories per 100 g and 105 per 1 medium (118 g). Protein 1.1 g, carbs 22.8 g, fat 0.3 g. USDA data. Get USDA nutrition facts ...\", \"date\": \"Feb 21, 2023\"}, {\"id\": 9, \"title\": \"usda fooddata central banana raw medium calories 118 g\", \"url\": \"https://elysir23.it/amphtml/live/development/titota-rikefi\", \"snippet\": \"Banana (raw): 89 calories per 100 g and 105 per 1 medium (118 g). Protein 1.1 g, carbs 22.8 g, fat 0.3 g. USDA data. Abridged List Ordered by ...\", \"date\": \"Jun 10, 2026\"}, {\"id\": 10, \"title\": \"Bananas are a tasty and convenient source of some ...\", \"url\": \"https://www.facebook.com/groups/ourmtbrides/posts/2255390571314960/\", \"snippet\": \"You can eat banana raw or mixed in your favorite smoothie. Banana is ... 100 g fruit provides 358 mg potassium. Potassium is an ...\", \"date\": \"3 years ago\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "The audio mentions potassium among the minerals in dates, and the image clearly shows a bunch of bananas — the fruit famously linked to potassium. Let me confirm the exact USDA value directly.\n\n",
+      "reasoning": "The USDA SR Legacy / FoodData Central value for \"Banana, raw\" potassium is 358 mg per 100 g. Let me confirm via the USDA FoodData Central page directly.\n\nAlso note the image shows bananas in a plastic bag — confirming the fruit. Let me quickly fetch the USDA page to double-check.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_cb08ab41fc5444dc84383181",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf\", \"https://nutritiondatahub.com/food/bananas-raw-173944\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The USDA SR Legacy / FoodData Central value for \"Banana, raw\" potassium is 358 mg per 100 g. Let me confirm via the USDA FoodData Central page directly.\n\nAlso note the image shows bananas in a plastic bag — confirming the fruit. Let me quickly fetch the USDA page to double-check.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_cb08ab41fc5444dc84383181",
+      "content": "{\"https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf\": \"Title: \\n\\nURL Source: https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf\\n\\nPublished Time: Fri, 24 Jun 2022 17:45:10 GMT\\n\\nWarning: This page contains iframe that are currently hidden, consider enabling iframe processing.\\n\\nMarkdown Content:\\n\\n\", \"https://nutritiondatahub.com/food/bananas-raw-173944\": \"Title: Nutrition facts for bananas, raw\\n\\nURL Source: https://nutritiondatahub.com/food/bananas-raw-173944\\n\\nMarkdown Content:\\n[![Image 1: NutritionDataHub logo]]\\n\\n* [Home]\\n* [Tools ![Image 2: Open menu]]\\n\\n## Nutrition Facts\\n\\n  *  [Search Foods Search nutrition facts for over 10000 foods]\\n  *  [Compare Foods Compare nutrition facts of food side by side]\\n\\n## Weekly Meal Planner\\n\\n  *  [Generator Generate custom weekly meal planner] \\n  *  [Templates A selection of weekly meal planner templates]\\n\\n* [Blog]\\n\\n![Image 3: Switch to dark mode] \\n\\n![Image 4: MealCompiler AI]\\n\\nPlan meals with AI based on your macros\\n\\nGet AI meal ideas that respect your diet and allergies, log meals by voice or text, and track your macros daily. 7-day free trial.\\n\\n[][Discover features]\\n\\n# Bananas, raw\\n\\nCategory: Fruits and Fruit Juices\\n\\n[Add to Compare]\\n\\nBananas, raw, serving size 100g contains: calories 89.00 kcal, total fat 0.33 g, saturated fat 0.11 g, polyunsaturated fat 0.07 g, monounsaturated fat 0.03 g, carbohydrates 22.80 g, protein 1.09 g, vitamin D 0.00 µg, calcium 5.00 mg, iron 0.26 mg, potassium 358.00 mg\\n\\nSelect portion size:\\n\\nEnter number of portions: Select portion size: \\n\\n Filter by nutrients:  \\n\\nNutrition facts Macronutrients| Macronutrients | Amount | %DV |\\n| - | - | - |\\n| Carbohydrate, by difference | 22.80 g | 8 % |\\n| Energy | 89.00 kcal | 4 % |\\n| Protein | 1.09 g | 2 % |\\n| Total lipid (fat) | 0.33 g | 0 % |\\n\\nNutrition facts Vitamins| Vitamins | Amount | %DV |\\n| - | - | - |\\n| Vitamin A, IU | 64.00 iu | -- |\\n| Vitamin A, RAE | 3.00 µg | 0 % |\\n| Folate, food | 20.00 µg | -- |\\n| Choline, total | 9.80 mg | 2 % |\\n| Folate, DFE | 20.00 µg | -- |\\n| Vitamin K (phylloquinone) | 0.50 µg | 0 % |\\n| Tocopherol, delta | 0.01 mg | -- |\\n| Vitamin C, total ascorbic acid | 8.70 mg | 10 % |\\n| Thiamin | 0.03 mg | 3 % |\\n| Riboflavin | 0.07 mg | 5 % |\\n| Folate, total | 20.00 µg | 5 % |\\n| Carotene, beta | 26.00 µg | -- |\\n| Carotene, alpha | 25.00 µg | -- |\\n| Lutein + zeaxanthin | 22.00 µg | -- |\\n| Tocopherol, gamma | 0.02 mg | -- |\\n| Tocotrienol, alpha | 0.06 mg | -- |\\n| Niacin | 0.67 mg | 4 % |\\n| Pantothenic acid | 0.33 mg | -- |\\n| Vitamin B-6 | 0.37 mg | 22 % |\\n| Vitamin E (alpha-tocopherol) | 0.10 mg | 1 % |\\n\\nNutrition facts Minerals| Minerals | Amount | %DV |\\n| - | - | - |\\n| Fluoride, F | 2.20 µg | -- |\\n| Iron, Fe | 0.26 mg | 1 % |\\n| Magnesium, Mg | 27.00 mg | 6 % |\\n| Phosphorus, P | 22.00 mg | 2 % |\\n| Sodium, Na | 1.00 mg | 0 % |\\n| Copper, Cu | 0.08 mg | 9 % |\\n| Manganese, Mn | 0.27 mg | -- |\\n| Calcium, Ca | 5.00 mg | 0 % |\\n| Potassium, K | 358.00 mg | 8 % |\\n| Zinc, Zn | 0.15 mg | 1 % |\\n| Selenium, Se | 1.00 µg | 2 % |\\n\\nNutrition facts Proteins| Proteins | Amount | %RDI |\\n| - | - | - |\\n| Betaine | 0.10 mg | -- |\\n| Tryptophan | 0.01 g | 4 % |\\n| Threonine | 0.03 g | 3 % |\\n| Methionine | 0.01 g | 1 % |\\n| Phenylalanine | 0.05 g | -- |\\n| Tyrosine | 0.01 g | -- |\\n| Alanine | 0.04 g | -- |\\n| Glutamic acid | 0.15 g | -- |\\n| Glycine | 0.04 g | -- |\\n| Isoleucine | 0.03 g | 2 % |\\n| Leucine | 0.07 g | 3 % |\\n| Lysine | 0.05 g | 2 % |\\n| Cystine | 0.01 g | -- |\\n| Valine | 0.05 g | 3 % |\\n| Arginine | 0.05 g | -- |\\n| Histidine | 0.08 g | 11 % |\\n| Aspartic acid | 0.12 g | -- |\\n| Serine | 0.04 g | -- |\\n\\nNutrition facts Fats| Fats | Amount | %DV |\\n| - | - | - |\\n| Fatty acids, total saturated | 0.11 g | 1 % |\\n| MUFA 16:1 | 0.01 g | -- |\\n| SFA 16:0 | 0.10 g | -- |\\n| SFA 18:0 | 0.01 g | -- |\\n| MUFA 18:1 | 0.02 g | -- |\\n| PUFA 18:2 | 0.05 g | -- |\\n| PUFA 18:3 | 0.03 g | -- |\\n| Fatty acids, total monounsaturated | 0.03 g | -- |\\n| Fatty acids, total polyunsaturated | 0.07 g | -- |\\n| Phytosterols | 16.00 mg | -- |\\n\\nNutrition facts Carbohydrates| Carbohydrates | Amount | %DV |\\n| - | - | - |\\n| Fiber, total dietary | 2.60 g | 9 % |\\n| Starch | 5.38 g | -- |\\n| Fructose | 4.85 g | -- |\\n| Sucrose | 2.39 g | -- |\\n| Glucose | 4.98 g | -- |\\n| Maltose | 0.01 g | -- |\\n\\nNutrition facts Other| Other | Amount | %DV |\\n| - | - | - |\\n| Ash | 0.82 g | -- |\\n| Water | 74.90 g | -- |\\n\\nData source: [USDA Food Data Central]\\n\\n## Nutrition Facts\\n\\nNutrition facts| Serving size | 100g |\\n| - |\\n| Calories | 89.00 |\\n| % Daily Value* |\\n| Total Fat | 0.33g | 0% |\\n| Saturated Fat | 0.11g | 1% |\\n| Polyunsaturated Fat | 0.07g |\\n| Monounsaturated Fat | 0.03g |\\n| Trans Fat | 0.00g |\\n| Cholesterol | 0.00mg | 0% |\\n| Sodium | 1.00mg | 0% |\\n| Total Carbohydrates | 22.80g | 8% |\\n| Dietary Fiber | 2.60g | 9% |\\n| Sugars |  |\\n| Protein | 1.09g | 2% |\\n| Vitamin D | 0.00µg | 0% |\\n| Calcium | 5.00 mg | 0% |\\n| Iron | 0.26 mg | 1% |\\n| Potassium | 358.00mg | 8% |\\n|  |\\n\\n## Top vitamins\\n\\n## Top minerals\\n\\n[![Image 5: NutritionDataHub logo]]\\n\\n## NutritionDataHub\\n\\n* [Search Foods]\\n* [Compare Foods]\\n* [Meal Plan Generator]\\n* [Blog]\\n* [About]\\n* [Contact]\\n\\n## Blog Categories\\n\\n* [antioxidants]\\n* [diets]\\n\\nCopyright © 2026 NutritionDataHub. All rights reserved.[Privacy Policy]\\n\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "**Reasoning chain:**\n\n1. **Audio → mineral list.** Around 0:34–0:43, the presenter lists what dates provide: \"B vitamins... potassium... iron, calcium, copper, magnesium... not to mention a good dose of fiber.\"\n\n2. **Image → fruit.** The photo shows a yellow-green bunch of **bananas** in an open plastic bag at the top, surrounded by other bagged items (corn, nuts, dried fruit, etc.).\n\n3. **Link.** Of the minerals named, bananas are famously associated with **potassium** — it's the nutrient they're popularly marketed for.\n\n4. **USDA lookup.** For \"Banana, raw\" (USDA FoodData Central, SR Legacy, FDC ID 173944 / NDB 09050), the mineral table gives **Potassium, K = 358 mg per 100 g** (≈8% DV). For reference, the same entry lists magnesium 27 mg, calcium 5 mg, iron 0.26 mg, copper 0.08 mg — so potassium is by far the dominant one, matching the banana reputation.\n\n<answer>358 mg</answer>\n\nThat is, per USDA FoodData Central, 100 g of raw banana contains **358 milligrams of potassium**.",
+      "reasoning": "Confirmed: USDA FoodData Central, \"Banana, raw\" (NDB 09050 / FDC 173944): Potassium, K = 358 mg per 100 g.\n\nNow write the answer with reasoning chain.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed: USDA FoodData Central, \"Banana, raw\" (NDB 09050 / FDC 173944): Potassium, K = 358 mg per 100 g.\n\nNow write the answer with reasoning chain.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"USDA FoodData Central banana raw potassium mg per 100g\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/",
+          "snippet": "USDA FoodData Central produces thorough resources for navigating and understanding nutritional info to support dietary choices and nutritional analysis.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "FoodData Central Food Search",
+          "url": "http://fdc.nal.usda.gov/food-search/?query=banana",
+          "snippet": "The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search",
+          "snippet": "The USDA FoodData Central search function provides nutrient data for food components. Bananas, overripe, raw 9040 Bananas, ripe and slightly ripe, Size per ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "USDA FoodData Central Banana Potassium Carbohydrate ...",
+          "url": "https://www.facebook.com/fb-answers/usda-fooddata-central-banana-potassium-carbohydrate/",
+          "snippet": "According to USDA FoodData Central, a medium banana has about 422-450 mg potassium and 27-28g carbohydrates per serving. While bananas are a solid potassium ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Nutrients: Potassium, K(mg)",
+          "url": "https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf",
+          "snippet": "Potassium, K(mg)Per Measure. Beans, pink, mature seeds, raw. 1.0 cups. 3074. Whey, sweet, dried. 1.0 cups. 3016. Beans, black, mature seeds, raw. 1.0 cups. 2877.",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Nutrition facts for bananas, raw",
+          "url": "https://nutritiondatahub.com/food/bananas-raw-173944",
+          "snippet": "Nutrition data and key nutrients for bananas, raw, serving size 100g contains: calories 89.00 kcal, Vitamin A, IU 64.00. Ca 5.00 mg 0 % Potassium, K 358.00 mg. ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Bananas - SNAP-Ed Connection - USDA",
+          "url": "https://snaped.fna.usda.gov/resources/nutrition-education-materials/seasonal-produce-guide/bananas",
+          "snippet": "Nutrition Information Serving Size: 1 medium banana ( 118g) s Calcium 6 mg Potassium 11 mg",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Banana Nutrition Facts and Health Benefits",
+          "url": "https://www.verywellfit.com/are-bananas-bad-for-weight-loss-3495634",
+          "snippet": "Potassium: 422mg. Bananas are known for their potassium content, with one medium-sized banana offering 422mg potassium, or about 9% of the ...",
+          "date": "May 10, 2024"
+        },
+        {
+          "id": 9,
+          "title": "FoodData Central Inventory and Update Log",
+          "url": "https://fdc.nal.usda.gov/log",
+          "snippet": "Data Updates - Foundation Foods. NEW: Beet greens, raw; Fennel, bulb, raw; Parsnips, raw; Peppers, banana or Hungarian wax, seeded ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Nutrition Facts for Bananas",
+          "url": "https://tools.myfooddata.com/nutrition-facts/173944/wt2",
+          "snippet": "Nutrition Facts. Serving Size. 1 cup, sliced (150g). Calories, 134. % Daily Value *. Total Fat 0.5g, 1%. Saturated Fat 0.17g, 1%. Trans Fat 0g.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"banana, raw\\\" USDA nutrition 358 mg potassium 100 gram\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "+usda fooddata central banana raw 89 kcal 100g",
+          "url": "https://vicinia.fr/amphtml/news/articles/8drotwbxpzqb",
+          "snippet": "Raw Banana: 89 cal, 1.1g protein, 0.3g fat, 22.8g carbs per 100g. Excellent source of Vitamin B6. USDA nutrition data. 100g of Banana, raw ...",
+          "date": "Apr 23, 2026"
+        },
+        {
+          "id": 2,
+          "title": "Banana (Raw) Calories & Nutrition Facts - EatBetter app",
+          "url": "https://www.eatbetter.app/en/food/muz-raw",
+          "snippet": "1 medium Banana (Raw) (120 g): 107 calories · 26 minutes of walking to burn off. Per 100 g: 89 calories, 22.8 g carbs, 1.1 g protein, 0.3 g fat.",
+          "date": "Sep 30, 2026"
+        },
+        {
+          "id": 3,
+          "title": "Dried Apricots vs Banana vs Avocado: Potassium Compared",
+          "url": "https://kashmiril.com/blogs/journal/dried-apricots-vs-banana-vs-avocado?srsltid=AU7gw4VMdBiN1MbzV5z2EJLev5ROu4R-vnWQD2Cm8Twar0pW_uhjud9C",
+          "snippet": "Banana, raw, 358 mg, 89, Lightest, quickest fuel. Read those figures straight from the USDA's FoodData Central database: dried apricots carry 1,162 mg per 100 g ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "USDA, FDA, and ODS-NIH Database for the Iodine Content ...",
+          "url": "https://www.ars.usda.gov/ARSUSERFILES/80400535/DATA/IODINE/IODINE%20DATABASE_RELEASE_3_REVISION_1_DOCUMENTATION.PDF",
+          "snippet": "by JM Roseland · 2023 · Cited by 7 — ... 100 grams of food and 2) per serving. Per 100g of food is the unit used ... Banana, raw. 35. 0.2. 0.6. 0.0. 3.5 FDA. 2016-2020. 196 09050. 398 Blueberries, raw.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "fooddata central banana raw 100 g calories protein",
+          "url": "https://magistralicious.ch/amphtml/story/economy/2026/10/07/lolo-literature-neg%C3%B3cios-economy-mutala.html",
+          "snippet": "Banana, raw contains 97 calories per 100g, according to the USDA FoodData Central database. It provides 0.7g of protein, 0.3g of fat, and 22.7g ...",
+          "date": "17 hours ago"
+        },
+        {
+          "id": 6,
+          "title": "Banana: Potassium Content — Myth vs. Reality",
+          "url": "https://bananatower.com/banana/potassium",
+          "snippet": "Potassium Comparison: How Bananas Stack Up ; Avocado, raw, 1 half (68g), 345 mg, 7% ; Banana, raw, 1 medium (118g), 422 mg, 9%.",
+          "date": "Feb 25, 2026"
+        },
+        {
+          "id": 7,
+          "title": "Banana Benefits for Men - Hims",
+          "url": "https://www.forhims.co.uk/blog/benefits-of-banana-sexually",
+          "snippet": "358 milligrams of potassium. 8.7 milligrams of vitamin C. 5 milligrams of ... Banana, raw. https://fdc.nal.usda.gov/fdc-app.html#/food-details/1102653 ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "+usda fooddata central banana raw calories medium 118 g",
+          "url": "https://vicinia.fr/amphtml/news/articles/u3k9059ip32i",
+          "snippet": "Banana (raw): 89 calories per 100 g and 105 per 1 medium (118 g). Protein 1.1 g, carbs 22.8 g, fat 0.3 g. USDA data. Get USDA nutrition facts ...",
+          "date": "Feb 21, 2023"
+        },
+        {
+          "id": 9,
+          "title": "usda fooddata central banana raw medium calories 118 g",
+          "url": "https://elysir23.it/amphtml/live/development/titota-rikefi",
+          "snippet": "Banana (raw): 89 calories per 100 g and 105 per 1 medium (118 g). Protein 1.1 g, carbs 22.8 g, fat 0.3 g. USDA data. Abridged List Ordered by ...",
+          "date": "Jun 10, 2026"
+        },
+        {
+          "id": 10,
+          "title": "Bananas are a tasty and convenient source of some ...",
+          "url": "https://www.facebook.com/groups/ourmtbrides/posts/2255390571314960/",
+          "snippet": "You can eat banana raw or mixed in your favorite smoothie. Banana is ... 100 g fruit provides 358 mg potassium. Potassium is an ...",
+          "date": "3 years ago"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf\", \"https://nutritiondatahub.com/food/bananas-raw-173944\"]\n\n}",
+      "result": {
+        "https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf": "Title: \n\nURL Source: https://www.nal.usda.gov/sites/default/files/page-files/potassium.pdf\n\nPublished Time: Fri, 24 Jun 2022 17:45:10 GMT\n\nWarning: This page contains iframe that are currently hidden, consider enabling iframe processing.\n\nMarkdown Content:\n\n",
+        "https://nutritiondatahub.com/food/bananas-raw-173944": "Title: Nutrition facts for bananas, raw\n\nURL Source: https://nutritiondatahub.com/food/bananas-raw-173944\n\nMarkdown Content:\n[![Image 1: NutritionDataHub logo]]\n\n* [Home]\n* [Tools ![Image 2: Open menu]]\n\n## Nutrition Facts\n\n  *  [Search Foods Search nutrition facts for over 10000 foods]\n  *  [Compare Foods Compare nutrition facts of food side by side]\n\n## Weekly Meal Planner\n\n  *  [Generator Generate custom weekly meal planner] \n  *  [Templates A selection of weekly meal planner templates]\n\n* [Blog]\n\n![Image 3: Switch to dark mode] \n\n![Image 4: MealCompiler AI]\n\nPlan meals with AI based on your macros\n\nGet AI meal ideas that respect your diet and allergies, log meals by voice or text, and track your macros daily. 7-day free trial.\n\n[][Discover features]\n\n# Bananas, raw\n\nCategory: Fruits and Fruit Juices\n\n[Add to Compare]\n\nBananas, raw, serving size 100g contains: calories 89.00 kcal, total fat 0.33 g, saturated fat 0.11 g, polyunsaturated fat 0.07 g, monounsaturated fat 0.03 g, carbohydrates 22.80 g, protein 1.09 g, vitamin D 0.00 µg, calcium 5.00 mg, iron 0.26 mg, potassium 358.00 mg\n\nSelect portion size:\n\nEnter number of portions: Select portion size: \n\n Filter by nutrients:  \n\nNutrition facts Macronutrients| Macronutrients | Amount | %DV |\n| - | - | - |\n| Carbohydrate, by difference | 22.80 g | 8 % |\n| Energy | 89.00 kcal | 4 % |\n| Protein | 1.09 g | 2 % |\n| Total lipid (fat) | 0.33 g | 0 % |\n\nNutrition facts Vitamins| Vitamins | Amount | %DV |\n| - | - | - |\n| Vitamin A, IU | 64.00 iu | -- |\n| Vitamin A, RAE | 3.00 µg | 0 % |\n| Folate, food | 20.00 µg | -- |\n| Choline, total | 9.80 mg | 2 % |\n| Folate, DFE | 20.00 µg | -- |\n| Vitamin K (phylloquinone) | 0.50 µg | 0 % |\n| Tocopherol, delta | 0.01 mg | -- |\n| Vitamin C, total ascorbic acid | 8.70 mg | 10 % |\n| Thiamin | 0.03 mg | 3 % |\n| Riboflavin | 0.07 mg | 5 % |\n| Folate, total | 20.00 µg | 5 % |\n| Carotene, beta | 26.00 µg | -- |\n| Carotene, alpha | 25.00 µg | -- |\n| Lutein + zeaxanthin | 22.00 µg | -- |\n| Tocopherol, gamma | 0.02 mg | -- |\n| Tocotrienol, alpha | 0.06 mg | -- |\n| Niacin | 0.67 mg | 4 % |\n| Pantothenic acid | 0.33 mg | -- |\n| Vitamin B-6 | 0.37 mg | 22 % |\n| Vitamin E (alpha-tocopherol) | 0.10 mg | 1 % |\n\nNutrition facts Minerals| Minerals | Amount | %DV |\n| - | - | - |\n| Fluoride, F | 2.20 µg | -- |\n| Iron, Fe | 0.26 mg | 1 % |\n| Magnesium, Mg | 27.00 mg | 6 % |\n| Phosphorus, P | 22.00 mg | 2 % |\n| Sodium, Na | 1.00 mg | 0 % |\n| Copper, Cu | 0.08 mg | 9 % |\n| Manganese, Mn | 0.27 mg | -- |\n| Calcium, Ca | 5.00 mg | 0 % |\n| Potassium, K | 358.00 mg | 8 % |\n| Zinc, Zn | 0.15 mg | 1 % |\n| Selenium, Se | 1.00 µg | 2 % |\n\nNutrition facts Proteins| Proteins | Amount | %RDI |\n| - | - | - |\n| Betaine | 0.10 mg | -- |\n| Tryptophan | 0.01 g | 4 % |\n| Threonine | 0.03 g | 3 % |\n| Methionine | 0.01 g | 1 % |\n| Phenylalanine | 0.05 g | -- |\n| Tyrosine | 0.01 g | -- |\n| Alanine | 0.04 g | -- |\n| Glutamic acid | 0.15 g | -- |\n| Glycine | 0.04 g | -- |\n| Isoleucine | 0.03 g | 2 % |\n| Leucine | 0.07 g | 3 % |\n| Lysine | 0.05 g | 2 % |\n| Cystine | 0.01 g | -- |\n| Valine | 0.05 g | 3 % |\n| Arginine | 0.05 g | -- |\n| Histidine | 0.08 g | 11 % |\n| Aspartic acid | 0.12 g | -- |\n| Serine | 0.04 g | -- |\n\nNutrition facts Fats| Fats | Amount | %DV |\n| - | - | - |\n| Fatty acids, total saturated | 0.11 g | 1 % |\n| MUFA 16:1 | 0.01 g | -- |\n| SFA 16:0 | 0.10 g | -- |\n| SFA 18:0 | 0.01 g | -- |\n| MUFA 18:1 | 0.02 g | -- |\n| PUFA 18:2 | 0.05 g | -- |\n| PUFA 18:3 | 0.03 g | -- |\n| Fatty acids, total monounsaturated | 0.03 g | -- |\n| Fatty acids, total polyunsaturated | 0.07 g | -- |\n| Phytosterols | 16.00 mg | -- |\n\nNutrition facts Carbohydrates| Carbohydrates | Amount | %DV |\n| - | - | - |\n| Fiber, total dietary | 2.60 g | 9 % |\n| Starch | 5.38 g | -- |\n| Fructose | 4.85 g | -- |\n| Sucrose | 2.39 g | -- |\n| Glucose | 4.98 g | -- |\n| Maltose | 0.01 g | -- |\n\nNutrition facts Other| Other | Amount | %DV |\n| - | - | - |\n| Ash | 0.82 g | -- |\n| Water | 74.90 g | -- |\n\nData source: [USDA Food Data Central]\n\n## Nutrition Facts\n\nNutrition facts| Serving size | 100g |\n| - |\n| Calories | 89.00 |\n| % Daily Value* |\n| Total Fat | 0.33g | 0% |\n| Saturated Fat | 0.11g | 1% |\n| Polyunsaturated Fat | 0.07g |\n| Monounsaturated Fat | 0.03g |\n| Trans Fat | 0.00g |\n| Cholesterol | 0.00mg | 0% |\n| Sodium | 1.00mg | 0% |\n| Total Carbohydrates | 22.80g | 8% |\n| Dietary Fiber | 2.60g | 9% |\n| Sugars |  |\n| Protein | 1.09g | 2% |\n| Vitamin D | 0.00µg | 0% |\n| Calcium | 5.00 mg | 0% |\n| Iron | 0.26 mg | 1% |\n| Potassium | 358.00mg | 8% |\n|  |\n\n## Top vitamins\n\n## Top minerals\n\n[![Image 5: NutritionDataHub logo]]\n\n## NutritionDataHub\n\n* [Search Foods]\n* [Compare Foods]\n* [Meal Plan Generator]\n* [Blog]\n* [About]\n* [Contact]\n\n## Blog Categories\n\n* [antioxidants]\n* [diets]\n\nCopyright © 2026 NutritionDataHub. All rights reserved.[Privacy Policy]\n"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 22,
+      "id": "gen-1791459828-MiUSIQ2iTY0UNYI7hXKC",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 3249,
+        "completion_tokens": 189,
+        "total_tokens": 3438,
+        "cost": 0.00057618,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00057618,
+          "upstream_inference_prompt_cost": 0.00048735,
+          "upstream_inference_completions_cost": 8.883e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 87,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 10.424
+    },
+    {
+      "item_id": 22,
+      "id": "gen-1791459842-ojuALPicjqzyppC7jIXy",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 5723,
+        "completion_tokens": 176,
+        "total_tokens": 5899,
+        "cost": 0.000701042,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000701042,
+          "upstream_inference_prompt_cost": 0.000618322,
+          "upstream_inference_completions_cost": 8.272e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 69,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 17.815
+    },
+    {
+      "item_id": 22,
+      "id": "gen-1791459873-GpeFb1ssK8bGt35P4aXS",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 8227,
+        "completion_tokens": 356,
+        "total_tokens": 8583,
+        "cost": 0.000680986,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5376,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000680986,
+          "upstream_inference_prompt_cost": 0.000513666,
+          "upstream_inference_completions_cost": 0.00016732
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 59,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 14.002
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "358 mg",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 105.11
+}

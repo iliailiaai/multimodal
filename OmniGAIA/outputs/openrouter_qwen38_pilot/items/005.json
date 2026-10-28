@@ -1,0 +1,322 @@
+{
+  "id": 5,
+  "question": "Look at the image provided. What brand of skis is shown? In the ski industry, many ski brands have established partnerships with specific binding manufacturers to offer integrated setups. Based on the typical partnership model for the ski brand identified in the image, which binding brand is commonly designated as their primary partner for such systems? You can refer to the audio or online information for details.",
+  "Level": "Easy",
+  "category": "Sports",
+  "task_type": "image + audio",
+  "answer": "Marker",
+  "output": "**Ski brand in the image:** **K2** — the white skis with the distinctive red \"K2\" logo on the tips/shovels identify them as K2 skis.\n\n**Designated binding partner:** **Marker**\n\nEvidence:\n- K2 and Marker run an official co‑branded program called **\"Perfect Match | K2 × MARKER\"** (e.g., the Mindbender 102 ski bundled with the Marker Griffon X 13 / Griffon 13 binding), described as an *exclusive binding collaboration*.\n- Historically, K2 began distributing Marker bindings early in its ski business, and both brands now sit under the same parent group (K2 Sports / Amer Sports portfolio alongside Völkl and Line, all of which use Marker as the binding partner).\n- This matches the audio, where the presenter highlights a **Marker** binding (with its Sole.ID system) as the example of an alpine‑style binding — the type K2 pairs with its skis in these integrated setups.\n\n<answer>K2 (the skis shown are K2); their primary/integrated binding partner is Marker.</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Look at the image provided. What brand of skis is shown? In the ski industry, many ski brands have established partnerships with specific binding manufacturers to offer integrated setups. Based on the typical partnership model for the ski brand identified in the image, which binding brand is commonly designated as their primary partner for such systems? You can refer to the audio or online information for details."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:149395 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:982092 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The user wants me to identify the ski brand in the image, then determine which binding brand is their typical primary partner.\n\nLooking at the image: a skier on snow, wearing a brown jacket, black pants, striped hat, orange goggles. The skis are white with red lettering. I can see what appears to be \"K2\" written on the ski tips in red. Let me look more carefully — the red text on the white ski looks like \"K2\" branding.\n\nLet me zoom into the image mentally. The skis show red logos/letters. K2 skis typically pair with Marker bindings? Actually, K2 is owned by... K2 Inc. Historically K2 skis came with Marker bindings? Hmm. Let me think: K2's sister brand... Actually, K2 skis were often paired with Marker bindings in integrated systems. Wait — I recall that K2 used to have a partnership with Marker. But also, \"Soul ID\" system mentioned in audio is from Marker. The audio mentions \"like this one from Marker uses the sole ID system.\"\n\nLet me verify the ski brand via search. The red logo on white ski could be \"K2\". Let me search to confirm K2's binding partner.\n\nActually I should use tools. Let me do a web search on \"K2 skis binding partner brand\" and also examine the image more.\n\nI'll search.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_996cc9d1ce47453e8eb29402",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"K2 skis primary binding partner brand integrated system\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_823ca0c9536b4071b5e418c8",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"K2 skis Marker bindings partnership history\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user wants me to identify the ski brand in the image, then determine which binding brand is their typical primary partner.\n\nLooking at the image: a skier on snow, wearing a brown jacket, black pants, striped hat, orange goggles. The skis are white with red lettering. I can see what appears to be \"K2\" written on the ski tips in red. Let me look more carefully — the red text on the white ski looks like \"K2\" branding.\n\nLet me zoom into the image mentally. The skis show red logos/letters. K2 skis typically pair with Marker bindings? Actually, K2 is owned by... K2 Inc. Historically K2 skis came with Marker bindings? Hmm. Let me think: K2's sister brand... Actually, K2 skis were often paired with Marker bindings in integrated systems. Wait — I recall that K2 used to have a partnership with Marker. But also, \"Soul ID\" system mentioned in audio is from Marker. The audio mentions \"like this one from Marker uses the sole ID system.\"\n\nLet me verify the ski brand via search. The red logo on white ski could be \"K2\". Let me search to confirm K2's binding partner.\n\nActually I should use tools. Let me do a web search on \"K2 skis binding partner brand\" and also examine the image more.\n\nI'll search.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_996cc9d1ce47453e8eb29402",
+      "content": "[{\"id\": 1, \"title\": \"K2 Skis and K2 Snowboarding\", \"url\": \"https://k2snow.com/en-us/?srsltid=AU7gw4VY4NY0OhVnPnXQqildtYu134fgslR_BpWQouB96OfbHVaofRCx\", \"snippet\": \"K2 is the original American Ski and Snowboard Brand, founded in 1962 in Washington State. The brand that invented the fiberglass ski continued to innovate,\", \"date\": \"\"}, {\"id\": 2, \"title\": \"How to Choose a Ski\", \"url\": \"https://k2snow.com/en-us/support/how-to-choose-a-ski?srsltid=AU7gw4W3_hwiZk8hGnlsy2BxjMh6blPpldVA7jSsJaQDHTVB12bxpMGp\", \"snippet\": \"K2 is the original American Ski and Snowboard Brand, Bindings Bindings ・ agile freeride binding ・ 800-985-2189\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Blog | K2 Skis and K2 Snowboarding\", \"url\": \"https://k2snow.com/en-us/blog?srsltid=AU7gw4UxJouPdOFBmcaJHypUufAI6sRc_q2mAqX943CUlCBpJb9bbV2Y\", \"snippet\": \"The latest from K2 Skis and Snowboards. An exclusive collab featuring the Mindbender 102 and Marker Griffon X 13 bindings.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"2026-2027 K2 Skis and Boots Preview feat. new Dark Matter tech\", \"url\": \"https://www.youtube.com/watch?v=VW4YaqIvx8c\", \"snippet\": \"K2 Skis and Boots Preview. K2 Mindbender Ski Collection and Mindbender 101 Ski Review. Atomic Skis, Boots, and Bindings Preview\", \"date\": \"8 months ago\"}, {\"id\": 5, \"title\": \"K2 Skis? : r/skiing\", \"url\": \"https://www.reddit.com/r/skiing/comments/1osudk4/k2_skis/\", \"snippet\": \"Any thoughts on the K2 ski brand? I grew up with them as a kid, but I've heard they have since been bought out by private equity.\", \"date\": \"11 months ago\"}, {\"id\": 6, \"title\": \"K2 Sports\", \"url\": \"https://en.wikipedia.org/wiki/K2_Sports\", \"snippet\": \"K2 Sports, LLC, known simply as K2, is an American sporting goods company headquartered in Seattle, Washington, focused primarily on winter sports equipment ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"K2 Skis, Snowboards, Boots & Bindings\", \"url\": \"https://www.aspenskiandboard.com/collections/k2?srsltid=AU7gw4VBWGv76vRup2XYYt9c0d8ccbILoPfXwaS3S06OGyvznCoSgCTX\", \"snippet\": \"Equal parts innovation and irreverence, K2 builds skis and snowboards that have shaped how a generation rides, alongside boots and bindings engineered to match.\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Perfect Match | K2 x MARKER\", \"url\": \"https://k2snow.com/en-us/perfect-match?srsltid=AU7gw4XSI4qRgqsmrMiBW_euF8_zCHJWCwF15WZ1chbVRHKCjllFY_ep\", \"snippet\": \"MARKER is excited to announce an exclusive binding collaboration with K2. This fantastic partnership features the tried and true Marker Griffon 13 bindings, ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"K2 Skis, Boots & Snowboards\", \"url\": \"https://www.sunandski.com/shop/category/k2-snow-2335?srsltid=AU7gw4UZbG1iyHWlx4n2a0jS2yqwVif8u_QY0TK0slVrShkocjcciGM5\", \"snippet\": \"Shop K2 at Sun & Ski Sports. Skis, ski boots, snowboards, and bindings built for every level, from first-timers to all-mountain chargers. Shop now and ride.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"How to use K2 bindings with Burton snowboard's Channel ...\", \"url\": \"https://www.facebook.com/groups/281669931948910/posts/25272825559073335/\", \"snippet\": \"I have all K2 gear including bindings. However I just bought a Burton snowboard that uses the channel system. The snowboard came with Burton bindings ...\", \"date\": \"11 months ago\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_823ca0c9536b4071b5e418c8",
+      "content": "[{\"id\": 1, \"title\": \"K2 Skis and K2 Snowboarding\", \"url\": \"https://k2snow.com/en-us/?srsltid=AU7gw4W5xJQx-8lMpdT4nES8s7M5dhk5uc0NDhNHDsljPm43TlqE-Oro\", \"snippet\": \"K2 is the original American Ski and Snowboard Brand, founded in 1962 in Washington State. K2 Ski X Marker Bindings Perfect Match An exclusive collab featuring ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"K2 buys Marker, Völkl and Marmot\", \"url\": \"https://skiracing.com/k2-buys-marker-volkl-and-marmot/\", \"snippet\": \"K2, Völkl and Marker are leading authentic brands and together they will constitute the , founded in 1952, is a worldwide market leader in ski bindings, 2000- ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Advanced Resource Collective | Made in the USA\", \"url\": \"https://k2snow.com/en-us/usamade?srsltid=AU7gw4Xl_2vjW1PksJmqx9Enbl5LcKIVp1FHKUy7B17rkrbzR-3GBCRb\", \"snippet\": \"K2 Ski X Marker Bindings Perfect Match An exclusive collab featuring the Mindbender 102 and Marker Griffon X 13 bindings. It all started with a shop.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Vintage K2 812 skis with Marker MRR bindings found on ...\", \"url\": \"https://www.facebook.com/groups/1873027070135065/posts/2267761277328307/\", \"snippet\": \"A few weeks ago I posted a photo on the group page of the skis that I still have in my collection from my skiing/racing career over the years. I ...\", \"date\": \"2 months ago\"}, {\"id\": 5, \"title\": \"K2 Sports\", \"url\": \"https://en.wikipedia.org/wiki/K2_Sports\", \"snippet\": \"Founded 1962; 64 years ago (1962) Products Skis, Snowboards, Ski Boots, Ski Bindings, Snowboard Boots, Snowboard bindings, Founded in 1962 by brothers Bill and ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"MARKER Comp 30 RD Bindings 2027\", \"url\": \"https://k2snow.com/en-us/p/comp-30-bindings-7130z1?srsltid=AU7gw4X7jxw7JEQINOTK2-A7fe3OfexRiuv4tRH5JVr1xb_QDDkA1uht\", \"snippet\": \"MARKER's COMP bindings have been an integral part of the Alpine Ski World Cup for years. Countless titles have been won with the Comp series.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Perfect Match | MARKER Bindings\", \"url\": \"https://markerbindings.com/en-us/perfect-match?srsltid=AU7gw4V1WMiMtoNQXE_XtAkeWl1E4b8LfD1jokYt4i0qSfiC5PcVEur1\", \"snippet\": \"K2 & LINE MARKER is excited to announce an exclusive binding collaboration with Völkl, LINE, and K2. This fantastic partnership features the versatile Griffon ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Perfect Match | K2 x MARKER\", \"url\": \"https://k2snow.com/en-us/perfect-match?srsltid=AU7gw4U68x2nzUc8zEy8DVNQRtb40P0K_5rMOvHcC7TTZd-yOhPZ8D3l\", \"snippet\": \"MARKER is excited to announce an exclusive binding collaboration with K2. This fantastic partnership features the tried and true Marker Griffon 13 bindings, ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Help identifying K2 skis\", \"url\": \"https://www.reddit.com/r/skiing/comments/17e8y97/help_identifying_k2_skis/\", \"snippet\": \"Just bought these second hand from a reputable shop for the upcoming season, but I cannot find any information about them online.\", \"date\": \"2 years ago\"}, {\"id\": 10, \"title\": \"A Focus on Fun—Celebrating 50 Years of K2 Skis\", \"url\": \"https://www.outdoorjapan.com/activities/winter-sports-in-japan/skiing-in-japan/a-focus-on-fun-celebrating-50-years-of-k2-skis/\", \"snippet\": \"K2 begins distribution of Marker bindings. 1976 K2 releases the Ballet and 244 skis; with turned-up tails, these models pre-dated today's ...\", \"date\": \"Oct 7, 2012\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "**Ski brand in the image:** **K2** — the white skis with the distinctive red \"K2\" logo on the tips/shovels identify them as K2 skis.\n\n**Designated binding partner:** **Marker**\n\nEvidence:\n- K2 and Marker run an official co‑branded program called **\"Perfect Match | K2 × MARKER\"** (e.g., the Mindbender 102 ski bundled with the Marker Griffon X 13 / Griffon 13 binding), described as an *exclusive binding collaboration*.\n- Historically, K2 began distributing Marker bindings early in its ski business, and both brands now sit under the same parent group (K2 Sports / Amer Sports portfolio alongside Völkl and Line, all of which use Marker as the binding partner).\n- This matches the audio, where the presenter highlights a **Marker** binding (with its Sole.ID system) as the example of an alpine‑style binding — the type K2 pairs with its skis in these integrated setups.\n\n<answer>K2 (the skis shown are K2); their primary/integrated binding partner is Marker.</answer>",
+      "reasoning": "The image shows skis with red \"K2\" branding on white topsheet/tips. The search confirms K2's binding partner is Marker — \"Perfect Match | K2 x MARKER\" exclusive collaboration, and historically K2 began distribution of Marker bindings. Also the audio mentions Marker's Sole ID system.\n\nSo the answer: Ski brand = K2; Binding partner = Marker.\n\nLet me confirm the image reading. The red letters on the ski tips appear to be \"K2\" stylized. Yes.\n\nI'm confident. Provide answer.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The image shows skis with red \"K2\" branding on white topsheet/tips. The search confirms K2's binding partner is Marker — \"Perfect Match | K2 x MARKER\" exclusive collaboration, and historically K2 began distribution of Marker bindings. Also the audio mentions Marker's Sole ID system.\n\nSo the answer: Ski brand = K2; Binding partner = Marker.\n\nLet me confirm the image reading. The red letters on the ski tips appear to be \"K2\" stylized. Yes.\n\nI'm confident. Provide answer.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"K2 skis primary binding partner brand integrated system\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "K2 Skis and K2 Snowboarding",
+          "url": "https://k2snow.com/en-us/?srsltid=AU7gw4VY4NY0OhVnPnXQqildtYu134fgslR_BpWQouB96OfbHVaofRCx",
+          "snippet": "K2 is the original American Ski and Snowboard Brand, founded in 1962 in Washington State. The brand that invented the fiberglass ski continued to innovate,",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "How to Choose a Ski",
+          "url": "https://k2snow.com/en-us/support/how-to-choose-a-ski?srsltid=AU7gw4W3_hwiZk8hGnlsy2BxjMh6blPpldVA7jSsJaQDHTVB12bxpMGp",
+          "snippet": "K2 is the original American Ski and Snowboard Brand, Bindings Bindings ・ agile freeride binding ・ 800-985-2189",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Blog | K2 Skis and K2 Snowboarding",
+          "url": "https://k2snow.com/en-us/blog?srsltid=AU7gw4UxJouPdOFBmcaJHypUufAI6sRc_q2mAqX943CUlCBpJb9bbV2Y",
+          "snippet": "The latest from K2 Skis and Snowboards. An exclusive collab featuring the Mindbender 102 and Marker Griffon X 13 bindings.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "2026-2027 K2 Skis and Boots Preview feat. new Dark Matter tech",
+          "url": "https://www.youtube.com/watch?v=VW4YaqIvx8c",
+          "snippet": "K2 Skis and Boots Preview. K2 Mindbender Ski Collection and Mindbender 101 Ski Review. Atomic Skis, Boots, and Bindings Preview",
+          "date": "8 months ago"
+        },
+        {
+          "id": 5,
+          "title": "K2 Skis? : r/skiing",
+          "url": "https://www.reddit.com/r/skiing/comments/1osudk4/k2_skis/",
+          "snippet": "Any thoughts on the K2 ski brand? I grew up with them as a kid, but I've heard they have since been bought out by private equity.",
+          "date": "11 months ago"
+        },
+        {
+          "id": 6,
+          "title": "K2 Sports",
+          "url": "https://en.wikipedia.org/wiki/K2_Sports",
+          "snippet": "K2 Sports, LLC, known simply as K2, is an American sporting goods company headquartered in Seattle, Washington, focused primarily on winter sports equipment ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "K2 Skis, Snowboards, Boots & Bindings",
+          "url": "https://www.aspenskiandboard.com/collections/k2?srsltid=AU7gw4VBWGv76vRup2XYYt9c0d8ccbILoPfXwaS3S06OGyvznCoSgCTX",
+          "snippet": "Equal parts innovation and irreverence, K2 builds skis and snowboards that have shaped how a generation rides, alongside boots and bindings engineered to match.",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Perfect Match | K2 x MARKER",
+          "url": "https://k2snow.com/en-us/perfect-match?srsltid=AU7gw4XSI4qRgqsmrMiBW_euF8_zCHJWCwF15WZ1chbVRHKCjllFY_ep",
+          "snippet": "MARKER is excited to announce an exclusive binding collaboration with K2. This fantastic partnership features the tried and true Marker Griffon 13 bindings, ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "K2 Skis, Boots & Snowboards",
+          "url": "https://www.sunandski.com/shop/category/k2-snow-2335?srsltid=AU7gw4UZbG1iyHWlx4n2a0jS2yqwVif8u_QY0TK0slVrShkocjcciGM5",
+          "snippet": "Shop K2 at Sun & Ski Sports. Skis, ski boots, snowboards, and bindings built for every level, from first-timers to all-mountain chargers. Shop now and ride.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "How to use K2 bindings with Burton snowboard's Channel ...",
+          "url": "https://www.facebook.com/groups/281669931948910/posts/25272825559073335/",
+          "snippet": "I have all K2 gear including bindings. However I just bought a Burton snowboard that uses the channel system. The snowboard came with Burton bindings ...",
+          "date": "11 months ago"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"K2 skis Marker bindings partnership history\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "K2 Skis and K2 Snowboarding",
+          "url": "https://k2snow.com/en-us/?srsltid=AU7gw4W5xJQx-8lMpdT4nES8s7M5dhk5uc0NDhNHDsljPm43TlqE-Oro",
+          "snippet": "K2 is the original American Ski and Snowboard Brand, founded in 1962 in Washington State. K2 Ski X Marker Bindings Perfect Match An exclusive collab featuring ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "K2 buys Marker, Völkl and Marmot",
+          "url": "https://skiracing.com/k2-buys-marker-volkl-and-marmot/",
+          "snippet": "K2, Völkl and Marker are leading authentic brands and together they will constitute the , founded in 1952, is a worldwide market leader in ski bindings, 2000- ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Advanced Resource Collective | Made in the USA",
+          "url": "https://k2snow.com/en-us/usamade?srsltid=AU7gw4Xl_2vjW1PksJmqx9Enbl5LcKIVp1FHKUy7B17rkrbzR-3GBCRb",
+          "snippet": "K2 Ski X Marker Bindings Perfect Match An exclusive collab featuring the Mindbender 102 and Marker Griffon X 13 bindings. It all started with a shop.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Vintage K2 812 skis with Marker MRR bindings found on ...",
+          "url": "https://www.facebook.com/groups/1873027070135065/posts/2267761277328307/",
+          "snippet": "A few weeks ago I posted a photo on the group page of the skis that I still have in my collection from my skiing/racing career over the years. I ...",
+          "date": "2 months ago"
+        },
+        {
+          "id": 5,
+          "title": "K2 Sports",
+          "url": "https://en.wikipedia.org/wiki/K2_Sports",
+          "snippet": "Founded 1962; 64 years ago (1962) Products Skis, Snowboards, Ski Boots, Ski Bindings, Snowboard Boots, Snowboard bindings, Founded in 1962 by brothers Bill and ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "MARKER Comp 30 RD Bindings 2027",
+          "url": "https://k2snow.com/en-us/p/comp-30-bindings-7130z1?srsltid=AU7gw4X7jxw7JEQINOTK2-A7fe3OfexRiuv4tRH5JVr1xb_QDDkA1uht",
+          "snippet": "MARKER's COMP bindings have been an integral part of the Alpine Ski World Cup for years. Countless titles have been won with the Comp series.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Perfect Match | MARKER Bindings",
+          "url": "https://markerbindings.com/en-us/perfect-match?srsltid=AU7gw4V1WMiMtoNQXE_XtAkeWl1E4b8LfD1jokYt4i0qSfiC5PcVEur1",
+          "snippet": "K2 & LINE MARKER is excited to announce an exclusive binding collaboration with Völkl, LINE, and K2. This fantastic partnership features the versatile Griffon ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Perfect Match | K2 x MARKER",
+          "url": "https://k2snow.com/en-us/perfect-match?srsltid=AU7gw4U68x2nzUc8zEy8DVNQRtb40P0K_5rMOvHcC7TTZd-yOhPZ8D3l",
+          "snippet": "MARKER is excited to announce an exclusive binding collaboration with K2. This fantastic partnership features the tried and true Marker Griffon 13 bindings, ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Help identifying K2 skis",
+          "url": "https://www.reddit.com/r/skiing/comments/17e8y97/help_identifying_k2_skis/",
+          "snippet": "Just bought these second hand from a reputable shop for the upcoming season, but I cannot find any information about them online.",
+          "date": "2 years ago"
+        },
+        {
+          "id": 10,
+          "title": "A Focus on Fun—Celebrating 50 Years of K2 Skis",
+          "url": "https://www.outdoorjapan.com/activities/winter-sports-in-japan/skiing-in-japan/a-focus-on-fun-celebrating-50-years-of-k2-skis/",
+          "snippet": "K2 begins distribution of Marker bindings. 1976 K2 releases the Ballet and 244 skis; with turned-up tails, these models pre-dated today's ...",
+          "date": "Oct 7, 2012"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 5,
+      "id": "gen-1791452540-UWv0AhFoFBhU5H3qvoEC",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 2828,
+        "completion_tokens": 363,
+        "total_tokens": 3191,
+        "cost": 0.00059481,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00059481,
+          "upstream_inference_prompt_cost": 0.0004242,
+          "upstream_inference_completions_cost": 0.00017061
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 292,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "elapsed_seconds": 8.648
+    },
+    {
+      "item_id": 5,
+      "id": "gen-1791452551-8isoR2QzQOJwbbmJi39j",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 5537,
+        "completion_tokens": 360,
+        "total_tokens": 5897,
+        "cost": 0.000759622,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000759622,
+          "upstream_inference_prompt_cost": 0.000590422,
+          "upstream_inference_completions_cost": 0.0001692
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 114,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "elapsed_seconds": 9.949
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "K2 (the skis shown are K2); their primary/integrated binding partner is Marker.",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 45.97
+}

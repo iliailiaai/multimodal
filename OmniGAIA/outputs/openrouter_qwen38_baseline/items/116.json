@@ -1,0 +1,788 @@
+{
+  "id": 116,
+  "question": "Watch the video to identify the game being featured and the location mentioned by the host. Then, calculate the great-circle distance in kilometers between the city center of the host's location and the former headquarters of the primary development studio for that game. Round the result to the nearest whole number.",
+  "Level": "Easy",
+  "category": "Technology",
+  "task_type": "video w/ audio",
+  "answer": "1736",
+  "output": "## Analysis Summary\n\n**Game identified:** *Dead Rising 4* — the loading screen shows \"DEADRISING 4 – Case 6: Eye on the Prize,\" and the host explicitly says \"how to do an infinite combo on Dead Rising 4.\"\n\n**Host's location:** In the audio intro, the host says \"Team SNES here, coming at you from **Los Angeles, California**\" → city center ≈ (34.0522°N, 118.2437°W).\n\n**Primary developer's former HQ:** Dead Rising 4 was developed by **Capcom Vancouver** (formerly Blue Castle Games), which was headquartered at 4401 Still Creek Drive, **Burnaby, British Columbia** (≈ 49.2603°N, 123.0075°W) before the studio was shut down in 2018 — hence \"former\" headquarters.\n\n**Great-circle distance calculation (haversine):**\n- LA (34.0522, −118.2437) → Burnaby HQ (49.2603, −123.0075) = **1735.85 km ≈ 1736 km**\n- (Sanity checks: → Burnaby city centre ≈ 1734 km; → downtown Vancouver ≈ 1740 km — all consistent at ~1,730–1,740 km.)\n\n<answer>Approximately 1,736 km</answer>\n\nThe video features **Dead Rising 4**, hosted from **Los Angeles, California**. The game's primary developer, **Capcom Vancouver**, had its (now former) headquarters at 4401 Still Creek Drive, Burnaby, BC. The great-circle distance between Los Angeles city center and that former HQ is **≈ 1,736 kilometers** (about 1,730–1,740 km depending on the exact reference points used).",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Watch the video to identify the game being featured and the location mentioned by the host. Then, calculate the great-circle distance in kilometers between the city center of the host's location and the former headquarters of the primary development studio for that game. Round the result to the nearest whole number."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:3275686 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1301196 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try analyzing this video. The game is Dead Rising 4 (shown on the loading screen at 14 seconds). The host says \"Team SNES here, coming at you from Los Angeles, California.\" So the host's location is Los Angeles, California.\n\nThe main development studio for Dead Rising 4 is Capcom Vancouver (formerly Blue Castle Games), located in Vancouver, British Columbia, Canada. Wait, \"the former headquarters of the main development studio\" — Capcom Vancouver was based in Vancouver, BC. The studio closed in 2018. Its headquarters was in Vancouver.\n\nSo I need the great-circle distance between the city center of Los Angeles and the city center of Vancouver? Or the former headquarters address of Capcom Vancouver: 1055 West Georgia Street? Let me think. Was Capcom Vancouver's office at 1100 – 1055 West Georgia Street, Vancouver, BC? Hmm, let me verify. Actually, Blue Castle Games was at 308 – 1500 West Broadway? Let me search.\n\nBut the question says \"the former headquarters of the main development studio for that game\" — Dead Rising 4 was developed by Capcom Vancouver. Capcom Vancouver's headquarters was in Vancouver, British Columbia. Since the studio is now closed, it's the \"former\" headquarters. The question probably asks for the distance between the city center of Los Angeles and the city center of Vancouver (or the specific address).\n\nLet me calculate: LA city center coordinates: 34.0522° N, 118.2437° W. Vancouver city center: 49.2827° N, 123.1207° W. Great-circle distance ≈ 1,736 km? Let me calculate precisely.\n\nActually, the distance between Los Angeles and Vancouver is about 1,730–1,740 km. Let me compute it with code.\n\nHowever, if the headquarters address is something specific like \"Capcom Vancouver, 1055 West Georgia Street,\" the coordinates would be approximately 49.2857, -123.1207. The difference is negligible.\n\nLet me verify Capcom Vancouver's address with a web search.\n\nPlan:\n1. Confirm the game: Dead Rising 4 (visible in the video, mentioned in the audio).\n2. Host's location: Los Angeles, California (audio).\n3. Main developer: Capcom Vancouver (formerly Blue Castle Games), headquartered in Vancouver, BC; closed in 2018 → \"former headquarters.\"\n4. Calculate the great-circle distance between downtown LA (34.0522, -118.2437) and downtown Vancouver (49.2827, -123.1207) ≈ 1,736 km.\n\nLet me run the calculation and also do a quick search to confirm the developer and address.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_df6332c310084bfb989513c5",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Dead Rising 4 developer Capcom Vancouver studio headquarters address\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_40c4c09cd8fe45d495b0aa3b",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Capcom Vancouver Blue Castle Games office location Vancouver BC closed 2018\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try analyzing this video. The game is Dead Rising 4 (shown on the loading screen at 14 seconds). The host says \"Team SNES here, coming at you from Los Angeles, California.\" So the host's location is Los Angeles, California.\n\nThe main development studio for Dead Rising 4 is Capcom Vancouver (formerly Blue Castle Games), located in Vancouver, British Columbia, Canada. Wait, \"the former headquarters of the main development studio\" — Capcom Vancouver was based in Vancouver, BC. The studio closed in 2018. Its headquarters was in Vancouver.\n\nSo I need the great-circle distance between the city center of Los Angeles and the city center of Vancouver? Or the former headquarters address of Capcom Vancouver: 1055 West Georgia Street? Let me think. Was Capcom Vancouver's office at 1100 – 1055 West Georgia Street, Vancouver, BC? Hmm, let me verify. Actually, Blue Castle Games was at 308 – 1500 West Broadway? Let me search.\n\nBut the question says \"the former headquarters of the main development studio for that game\" — Dead Rising 4 was developed by Capcom Vancouver. Capcom Vancouver's headquarters was in Vancouver, British Columbia. Since the studio is now closed, it's the \"former\" headquarters. The question probably asks for the distance between the city center of Los Angeles and the city center of Vancouver (or the specific address).\n\nLet me calculate: LA city center coordinates: 34.0522° N, 118.2437° W. Vancouver city center: 49.2827° N, 123.1207° W. Great-circle distance ≈ 1,736 km? Let me calculate precisely.\n\nActually, the distance between Los Angeles and Vancouver is about 1,730–1,740 km. Let me compute it with code.\n\nHowever, if the headquarters address is something specific like \"Capcom Vancouver, 1055 West Georgia Street,\" the coordinates would be approximately 49.2857, -123.1207. The difference is negligible.\n\nLet me verify Capcom Vancouver's address with a web search.\n\nPlan:\n1. Confirm the game: Dead Rising 4 (visible in the video, mentioned in the audio).\n2. Host's location: Los Angeles, California (audio).\n3. Main developer: Capcom Vancouver (formerly Blue Castle Games), headquartered in Vancouver, BC; closed in 2018 → \"former headquarters.\"\n4. Calculate the great-circle distance between downtown LA (34.0522, -118.2437) and downtown Vancouver (49.2827, -123.1207) ≈ 1,736 km.\n\nLet me run the calculation and also do a quick search to confirm the developer and address.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_df6332c310084bfb989513c5",
+      "content": "[{\"id\": 1, \"title\": \"Capcom Vancouver | Dead Rising Wiki | Fandom\", \"url\": \"https://deadrising.fandom.com/wiki/Capcom_Vancouver\", \"snippet\": \"Capcom Vancouver's studio is on a road called \\\"Still Creek Drive\\\", and they are located next to a small creek that runs across the road. This is possibly why ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"How Capcom's Dead Rising Studio Fell Apart - Game History ...\", \"url\": \"https://www.reddit.com/r/deadrising/comments/gyi05v/how_capcoms_dead_rising_studio_fell_apart_game/\", \"snippet\": \"Hi everyone. Liam Robertson from DYKG here. As I mentioned early this week, here is my video documentary investigating Capcom Vancouver.\", \"date\": \"6 years ago\"}, {\"id\": 3, \"title\": \"Capcom Vancouver\", \"url\": \"https://en.wikipedia.org/wiki/Capcom_Vancouver\", \"snippet\": \"Capcom announced the closure of the studio in September 2018, cancelling Dead Rising 5 and moving other development to their Japan-based studios. Capcom ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Capcom Vancouver officially shut down; 'Dead Rising ...\", \"url\": \"https://www.geekwire.com/2018/capcom-vancouver-officially-shut-dead-rising-developers-let-go-part-restructuring/\", \"snippet\": \"Capcom Vancouver, headquartered in Burnaby, British Columbia, initially opened its doors in 2005 as Blue Castle Games. It was subsequently ...\", \"date\": \"Sep 18, 2018\"}, {\"id\": 5, \"title\": \"How Capcom's Dead Rising Studio Fell Apart - Game History ...\", \"url\": \"https://www.youtube.com/watch?v=6glExmQadfY\", \"snippet\": \"Dead Rising 3, Dead Rising 4 and Dead Rising 5 all had troubled developments that ultimately led to the closure of Capcom Vancouver.\", \"date\": \"6 years ago\"}, {\"id\": 6, \"title\": \"Capcom Shutters Dead Rising Studio, Capcom Vancouver\", \"url\": \"https://www.gamespot.com/articles/capcom-shutters-dead-rising-studio-capcom-vancouve/1100-6461846/\", \"snippet\": \"Capcom Vancouver has been shut down. The studio, which was best known for its work on the Dead Rising series and the short-lived Puzzle ...\", \"date\": \"Sep 19, 2018\"}, {\"id\": 7, \"title\": \"Capcom Game Studio Vancouver, Inc.\", \"url\": \"https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\", \"snippet\": \"Capcom Games Studio Vancouver was a game development division of Capcom based in Vancouver, Canada. The studio was founded in 2005 as Blue Castle Games, ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Dead Rising 4\", \"url\": \"https://www.ign.com/games/dead-rising-4\", \"snippet\": \"Developers. Capcom Game Studio Vancouver. Publishers. Capcom. Franchises. Dead Rising. Features. Online Co-Op Multiplayer. Initial Release. Dec 5, 2016.\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Dead Rising 4\", \"url\": \"https://tcrf.net/Dead_Rising_4\", \"snippet\": \"Developer · Capcom Vancouver ; Publishers · Microsoft Studios (XB1), Capcom (Windows/PS4) ; Platforms · Xbox One, Windows, PlayStation 4. Released ...\", \"date\": \"Mar 17, 2026\"}, {\"id\": 10, \"title\": \"Capcom Game Studio Vancouver, Inc. - Game Developer\", \"url\": \"https://altarofgaming.com/company/capcom-vancouver/\", \"snippet\": \"Official Name Capcom Game Studio Vancouver, Inc. Founded July 04, 2005. Ceased Operations October 18, 2018. HQ Address Canada. Parent Company\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_40c4c09cd8fe45d495b0aa3b",
+      "content": "[{\"id\": 1, \"title\": \"Capcom Vancouver\", \"url\": \"https://en.wikipedia.org/wiki/Capcom_Vancouver\", \"snippet\": \"Capcom announced the closure of the studio in September 2018, cancelling Dead Rising 5 and moving other development to their Japan-based studios.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Capcom Vancouver officially shut down; 'Dead Rising ...\", \"url\": \"https://www.geekwire.com/2018/capcom-vancouver-officially-shut-dead-rising-developers-let-go-part-restructuring/\", \"snippet\": \"Capcom Vancouver is officially shutting down. The studio was primarily responsible for development on the popular but recently troubled Dead ...\", \"date\": \"Sep 18, 2018\"}, {\"id\": 3, \"title\": \"On this day 6 Years ago, Capcom Vancouver previously ...\", \"url\": \"https://www.reddit.com/r/deadrising/comments/1fjl0js/on_this_day_6_years_ago_capcom_vancouver/\", \"snippet\": \"Capcom Vancouver previously known as Blue Castle Games acquired by Capcom suspended it's operations. Why they closed the Studio?\", \"date\": \"2 years ago\"}, {\"id\": 4, \"title\": \"Capcom Game Studio Vancouver, Inc.\", \"url\": \"https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\", \"snippet\": \"On 18 September 2018, Capcom announced that it would shut down the studio. A skeleton crew would finalize operations by January 2019.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Capcom Vancouver | Dead Rising Wiki | Fandom\", \"url\": \"https://deadrising.fandom.com/wiki/Capcom_Vancouver\", \"snippet\": \"Vancouver, formerly known as Blue Castle Games, Blue Castle Games was officially acquired by Capcom. The company was shut down on September 18, 2018. on a road ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Blue Castle Games\", \"url\": \"https://ca.linkedin.com/company/blue-castle-games\", \"snippet\": \"Blue Castle Games is now known as Capcom Game Studio Vancouver. Website: http://www.bluecastlegames.com.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Gaming giant Capcom shutters its Burnaby studio\", \"url\": \"https://vancouversun.com/technology/gaming/gaming-giant-capcom-shutters-its-burnaby-studio\", \"snippet\": \"Capcom closed its Burnaby studio Tuesday, leaving 158 people out of work. being moved to Japan, the company says.\", \"date\": \"Sep 18, 2018\"}, {\"id\": 8, \"title\": \"Capcom has closed their Vancouver studio. The canceled ...\", \"url\": \"https://www.facebook.com/ign/videos/capcom-closes-vancouver-studio-loses-40-million-ign-news/2112116825486754/?locale=it_IT\", \"snippet\": \"Capcom has closed their Vancouver studio. The canceled projects amount to a $40 million loss. The former Blue Castle is gone...\", \"date\": \"8 years ago\"}, {\"id\": 9, \"title\": \"Capcom breaches Blue Castle Games\", \"url\": \"https://www.gamespot.com/articles/capcom-breaches-blue-castle-games/1100-6275943/\", \"snippet\": \"Capcom global head of production Keiji Inafune said Blue Castle would be renamed Capcom Games Studio Vancouver but didn't disclose the financial terms of the ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"How Capcom's Dead Rising Studio Fell Apart - Game History ...\", \"url\": \"https://www.youtube.com/watch?v=6glExmQadfY\", \"snippet\": \"... closure of Capcom Vancouver. Troubles at the studio also contributed to the cancellation of at least 7 other games including new Dino Crisis ...\", \"date\": \"6 years ago\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Interesting point: GeekWire states \"Capcom Vancouver, headquartered in Burnaby, British Columbia.\" The Dead Rising Wiki says the studio is on Still Creek Drive — this is in Burnaby (Still Creek Drive, Burnaby, BC, near Brentwood). So the former headquarters is at Still Creek Drive in Burnaby, BC. Hmm.\n\nQuestion: \"Calculate the great-circle distance in kilometers between the city center of the host's location and the former headquarters of the game's main development studio.\"\n\nHost's location: Los Angeles, California → City center: 34.0522° N, 118.2437° W.\n\nFormer headquarters: Capcom Vancouver, Burnaby, BC. Exact address: 4581 Still Creek Drive, Burnaby, BC V5C 6G9? Let me check. I recall Capcom Vancouver's address was \"4581 Still Creek Drive, Burnaby.\" Let me search.\n\nCoordinates for 4581 Still Creek Dr, Burnaby: approximately 49.2606° N, 123.0093° W? Let me look it up. Still Creek Drive in Burnaby is near the Brentwood Town Centre area. Coordinates roughly 49.2667, -123.0000.\n\nHmm, but the question might intend a simpler interpretation: the developer is \"Capcom Vancouver\" based in Vancouver, and the distance between central LA and central Vancouver ≈ 1736 km. But the phrase \"former headquarters\" suggests the studio is now closed, and its headquarters was in Burnaby (Metro Vancouver). The question setter probably used a specific address. Let me check the exact address on Wikipedia.\n\nLet me pull up the Wikipedia article on Capcom Vancouver.\n\nIn the audio, the host states that he is broadcasting \"from Los Angeles, California,\" and the game shown is **Dead Rising 4** (you can see the loading screen displaying \"DEADRISING 4 – Case 6: Eye on the Prize\"). The developer is Capcom Vancouver. Let me try to pinpoint the exact location of the former headquarters.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_8fdacc0dc129489ab50555ca",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/Capcom_Vancouver\", \"https://deadrising.fandom.com/wiki/Capcom_Vancouver\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_aa22619eb14d436786b6f58a",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Capcom Vancouver\\\" \\\"Still Creek Drive\\\" Burnaby address\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Interesting point: GeekWire states \"Capcom Vancouver, headquartered in Burnaby, British Columbia.\" The Dead Rising Wiki says the studio is on Still Creek Drive — this is in Burnaby (Still Creek Drive, Burnaby, BC, near Brentwood). So the former headquarters is at Still Creek Drive in Burnaby, BC. Hmm.\n\nQuestion: \"Calculate the great-circle distance in kilometers between the city center of the host's location and the former headquarters of the game's main development studio.\"\n\nHost's location: Los Angeles, California → City center: 34.0522° N, 118.2437° W.\n\nFormer headquarters: Capcom Vancouver, Burnaby, BC. Exact address: 4581 Still Creek Drive, Burnaby, BC V5C 6G9? Let me check. I recall Capcom Vancouver's address was \"4581 Still Creek Drive, Burnaby.\" Let me search.\n\nCoordinates for 4581 Still Creek Dr, Burnaby: approximately 49.2606° N, 123.0093° W? Let me look it up. Still Creek Drive in Burnaby is near the Brentwood Town Centre area. Coordinates roughly 49.2667, -123.0000.\n\nHmm, but the question might intend a simpler interpretation: the developer is \"Capcom Vancouver\" based in Vancouver, and the distance between central LA and central Vancouver ≈ 1736 km. But the phrase \"former headquarters\" suggests the studio is now closed, and its headquarters was in Burnaby (Metro Vancouver). The question setter probably used a specific address. Let me check the exact address on Wikipedia.\n\nLet me pull up the Wikipedia article on Capcom Vancouver.\n\nIn the audio, the host states that he is broadcasting \"from Los Angeles, California,\" and the game shown is **Dead Rising 4** (you can see the loading screen displaying \"DEADRISING 4 – Case 6: Eye on the Prize\"). The developer is Capcom Vancouver. Let me try to pinpoint the exact location of the former headquarters.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8fdacc0dc129489ab50555ca",
+      "content": "{\"https://en.wikipedia.org/wiki/Capcom_Vancouver\": \"Title: Capcom Vancouver\\n\\nURL Source: https://en.wikipedia.org/wiki/Capcom_Vancouver\\n\\nPublished Time: 2008-09-10T08:48:05Z\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5]]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 History]\\n\\n* [2 Games developed]Toggle Games developed subsection\\n  * [2.1 As Blue Castle Games]\\n\\n  * [2.2 As Capcom Vancouver]\\n\\n  * [2.3 Cancelled games]\\n\\n* [3 See also]\\n\\n* [4 Notes]\\n\\n* [5 References]\\n\\n* [6 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# Capcom Vancouver\\n\\n- [x] 6 languages \\n\\n* [فارسی]\\n* [Français]\\n* [Magyar]\\n* [Português]\\n* [Русский]\\n* [中文]\\n\\n[Edit links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n* [Expand all]\\n* [Edit interlanguage links]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor \\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nCanadian video game developer\\n\\nCapcom Vancouver[![Image 6]]\\nFormerly Blue Castle Games Inc.  \\n (2005–2010)\\nType[Subsidiary]\\nIndustry[Video games]\\nFounded July 4, 2004;22 years ago(2004-07-04)\\nFounder Robert Barrett\\nDefunct September 18,2018;8 years ago(2018-09-18)\\nFate[Dissolved] \\\"Dissolution (law)\\\")\\nHeadquarters[Burnaby], [British Columbia]\\n\\n, \\n\\n[Canada]\\nKey people* Tim Bennison ([COO])\\n* Bryce Cochrane ([creative director])\\n* Chris Rowe ([executive producer])\\nProducts _[Dead Rising] \\\"Dead Rising (series)\\\")_ series\\nNumber of employees 200[[1]](2018)\\n[Parent]* [Capcom]  \\n(2010–2018)\\n* [Microsoft Studios]  \\n(minority stake, 2010–2018)\\nWebsite[www.capcomvancouver.com]\\n\\n**Capcom Game Studio Vancouver, Inc.**[[2]] (formerly **Blue Castle Games Inc.**), more commonly known as **Capcom Vancouver**, was a Canadian [video game developer] owned by [Capcom] with minority stake partnership by [Microsoft Studios].[[3]] As Blue Castle Games, the company was the creator of several successful [baseball][sports video games], including _[The Bigs]_, _[MLB Front Office Manager]_ and _[The Bigs 2]_. They have also developed the _[Dead Rising] \\\"Dead Rising (series)\\\")_ series.[[4]][[5]][[6]] Blue Castle Games was acquired by Capcom after the release of _[Dead Rising 2]_, and renamed Capcom Vancouver, where they continued to work on the _Dead Rising_ series.[[7]][[8]] Capcom announced the closure of the studio in September 2018, cancelling _Dead Rising 5_ and moving other development to their Japan-based studios.\\n\\n## History\\n\\n[[edit]]\\n\\n[![Image 7]]\\n\\nBlue Castle Games logo\\n\\nThe company was formed on July 4, 2004 in [Burnaby], [British Columbia], [Canada] by three core founders with thirty five years of combined video game experience. Starting with only twelve staff and one game (_[The Bigs]_[[9]]), the company grew to 200 people with 3 shipped titles.[[1]] In February 2008, Blue Castle Games won the award for Best New Video Game Company at the 2008 Elan Awards for _[The Bigs]_, in a tie with another local Vancouver company.[[10]] A wide number of developers in Capcom Vancouver were formerly of [EA Vancouver], located only a couple blocks away from their studio. [Yoshinori Ono] \\\"Yoshinori Ono (game producer)\\\") was the studio director from 2011 to 2014.[[11]]\\n\\nIn February 2018, Capcom had laid off about 30% of the studio, but had continued to use Capcom Vancouver to support _Puzzle Fighter_ on mobile and ongoing work for _Dead Rising_ games. On September 18, 2018, Capcom announced the closure of the studio on reviewing the state of development of current projects. While a skeleton crew remained through January 2019 to complete certain projects, remaining development work was either cancelled or transitioned to Capcom's Japan studios.[[12]] Capcom estimated the cost of the cancelled projects equated to about ¥4.5 billion (approximately US$40 million).[[13]]\\n\\n## Games developed\\n\\n[[edit]]\\n\\n### As Blue Castle Games\\n\\n[[edit]]\\n\\n| Year | Game | Platform(s) | Publisher |\\n| - | - | - | - |\\n| 2007 | _[The Bigs]_ | [PlayStation 2], [PlayStation 3], [PlayStation Portable], [Wii], [Xbox 360] | [2K Sports] |\\n| _[Major League Baseball 2K8]_ | PlayStation 3, Xbox 360 |\\n| 2009 | _[MLB Front Office Manager]_ | [Microsoft Windows], PlayStation 3, Xbox 360 |\\n| _[The Bigs 2]_ | [Nintendo DS], PlayStation 2, PlayStation 3, PlayStation Portable, Wii, Xbox 360 |\\n| 2010 | _[Dead Rising 2: Case Zero]_[[a]] | Xbox 360 | [Capcom] |\\n| _[Dead Rising 2]_[[a]] | Microsoft Windows, PlayStation 3, Xbox 360 |\\n| _[Dead Rising 2: Case West]_[[a]] | Xbox 360 |\\n\\n### As Capcom Vancouver\\n\\n[[edit]]\\n\\n| Year | Game | Platform(s) | Publisher |\\n| - | - | - | - |\\n| 2011 | _[Dead Rising 2: Off the Record]_[[a]] | Microsoft Windows, PlayStation 3, Xbox 360 | Capcom |\\n| 2013 | _[Dead Rising 3]_[[b]] | Microsoft Windows, [Xbox One] | [Microsoft Studios]/Capcom |\\n| 2014 | _[Dead Rising Collection] \\\"Dead Rising\\\")_ | Xbox 360 |\\n| 2016 | _[Dead Rising 4]_[[b]] | Microsoft Windows, Xbox One |\\n| 2017 | _[Puzzle Fighter] \\\"Puzzle Fighter (2017 video game)\\\")_ | [iOS], [Android] \\\"Android (operating system)\\\") | Capcom |\\n| _[Dead Rising 4]: Frank's Big Package_ | [PlayStation 4] |\\n\\n### Cancelled games\\n\\n[[edit]]\\n\\n* _Knights of Aegis_ (2017)[[14]][[15]]\\n* _Dead Rising 5_ (2018)[[16]]\\n\\n## See also\\n\\n[[edit]]\\n\\n* [Capcom]\\n* [List of Capcom subsidiaries]\\n\\n## Notes\\n\\n[[edit]]\\n\\n1. [Jump up to: 1][2][3][4]Additional work, development support, and co-developed by [Capcom]\\n2. [Jump up to: 1][2]Additional work, development support, and co-developed by [Microsoft Studios]\\n\\n## References\\n\\n[[edit]]\\n\\n1. [Jump up to: 1][2][\\\"Company Homepage\\\"]. Capcom Vancouver. Archived from [the original] on 2012-09-19. Retrieved 2012-09-21.\\n2. [↑][\\\"Capcom Group\\\"]. _CAPCOM Investor Relations_. CAPCOM CO., LTD.\\n3. [↑]Jasper, Pieter (June 8, 2020). [\\\"Dead Rising 4 was supposed to be a The Last of Us competitor – the story on Capcom Vancouver unveiled\\\"]. _XboxEra_. Retrieved August 4, 2020.\\n4. [↑]Johnny Minkley (2008-11-07). [\\\"Blue Castle making Dead Rising 2\\\"]. Archived from [the original] on 2008-12-16. Retrieved 2008-11-07.\\n5. [↑]Brian Crecente (2008-07-09). [\\\"Dead Rising 2: Dead Rising 2 Set in Vegas?\\\"]. Kotaku. Archived from [the original] on July 10, 2008.\\n6. [↑][\\\"Blue Castle Games - Games under development\\\"]. Blue Castle Games. Archived from [the original] on 2008-09-09. Retrieved 2008-09-10.\\n7. [↑][\\\"Capcom buys Blue Castle Games\\\"].\\n8. [↑][\\\"Capcom Buys Dead Rising 2 Dev Blue Castle Games\\\"].\\n9. [↑][\\\"2K Sports - The BIGS\\\"]. 2K Sports. Archived from [the original] on 2008-09-13. Retrieved 2008-09-10.\\n10. [↑][\\\"2nd Annual ELANS Winners\\\"]. ELAN Awards. 2008-02-15.\\n11. [↑]Sarkar, Samit (16 June 2014). [\\\"Street Fighter producer Yoshinori Ono resigns from Capcom Vancouver (update)\\\"]. _[Polygon] \\\"Polygon (website)\\\")_. [Vox Media]. Retrieved 14 August 2022.\\n12. [↑]Tolito, Stephan (September 18, 2018). [\\\"Dead Rising Studio Capcom Vancouver Shuts Down\\\"]. _[Kotaku]_. Retrieved September 18, 2018.\\n13. [↑]Arif, Shabana (September 18, 2018). [\\\"Capcom Expects To Lose $40 Million After Cancelling Dead Rising Studio's Games\\\"]. _[IGN]_. Retrieved September 18, 2018.\\n14. [↑][\\\"Capcom Vancouver Cancelled Games\\\"]. _Siliconera_. 2020-06-07. Retrieved 2020-08-18.\\n15. [↑][\\\"Knights of Aegis, Broken Horizon and Lost Star, cancelled Capcom Vancouver's games\\\"]. _GamesFreezone_. 2017-02-10. Retrieved 2020-08-18.\\n16. [↑][\\\"Dead Rising 5 Development Detailed by Game History Secrets\\\"]. _Siliconera_. 2020-06-07. Retrieved 2020-08-04.\\n\\n## External links\\n\\n[[edit]]\\n\\n* [Official website]\\n\\n| show * [v] * [t] * [e] [Capcom] |\\n| - |\\n| [Employees] | | Current | * [Shinkiro] * [Jun Takeuchi] * [Shu Takumi] * [Ryozo Tsujimoto] | | - | | Former | * [Yoshino Aoki] * [Harumi Fujita] * [Yasuaki Fujita] * [Tokuro Fujiwara] * [Noritaka Funamizu] * [Atsushi Inaba] * [Keiji Inafune] * [Hideaki Itsuno] * [Akari Kaida] * [George Kamitani] * [Hideki Kamiya] * [Akira Kitamura] * [Hiroyuki Kobayashi] \\\"Hiroyuki Kobayashi (producer)\\\") * [Manami Matsumae] * [Shinji Mikami] * [Naoshi Mizuta] * [Kinu Nishimura] * [Akira Nishitani] * [Takashi Nishiyama] * [Yoshiki Okamoto] * [Yoshinori Ono] \\\"Yoshinori Ono (game producer)\\\") * [Tetsuya Shibata] * [Yoko Shimomura] * [Noboru Sugimura] * [Sawaki Takeyasu] * [Akira Yasuda] | |\\n| [Franchises] | * _[Ace Attorney]_ * _[Bionic Commando]_ * _[Breath of Fire]_ * _[Commando] \\\"Commando (video game)\\\")_ * _[Darkstalkers]_ * _[Dead Rising]_ * _[Devil May Cry]_ * _[Dino Crisis]_ * _[Dragon's Dogma]_ * _[El Dorado Gate]_ * _[Final Fight]_ * _[Ghosts 'n Goblins]_ * _[Lost Planet]_ * _[Marvel vs. Capcom]_ * _[Mega Man]_ * _[Monster Hunter]_ * _[Onimusha]_ * _[Resident Evil]_ * _[Sengoku Basara]_ * _[Street Fighter]_ * _[Strider] \\\"Strider (1989 arcade game)\\\")_ * _[Viewtiful Joe]_ |\\n| [Subsidiaries] | * [Capcom Vancouver] * [Clover Studio] * [Flagship] \\\"Flagship (company)\\\") * [K2] \\\"K2 (video game company)\\\") |\\n| Technology | * [MT Framework] * [RE Engine] |\\n| Rela\", \"https://deadrising.fandom.com/wiki/Capcom_Vancouver\": \"Title: Capcom Vancouver\\n\\nURL Source: https://deadrising.fandom.com/wiki/Capcom_Vancouver\\n\\nMarkdown Content:\\n[]\\n\\n[Sign In]\\n\\n[Create a Free Account]\\n\\n[]\\n\\n[Dead Rising Wiki]\\n* Explore  \\n\\n  * [Main Page]\\n  * [Discuss]\\n  * [All Pages]\\n  * [Community]\\n  * [Interactive Maps]\\n  * [Recent Blog Posts]\\n\\n* [Dead Rising 4] \\n\\n  * [Locations]\\n  * [Cases]\\n  * [Weapons]\\n  * [Combo Weapons]\\n  * [Vehicles]\\n\\n* [Dead Rising] \\n\\n  * [Main Series]\\n\\n    * [Dead Rising]\\n    * [Dead Rising 2: Case Zero]\\n    * [Dead Rising 2]\\n    * [Dead Rising 2: Case West]\\n    * [Dead Rising 3]\\n    * [Dead Rising 4]\\n\\n  * [Non-Canon]\\n\\n    * [Dead Rising: Chop Till You Drop]\\n    * [Dead Rising 2: Off the Record]\\n\\n  * [Film]\\n\\n    * [Zombrex: Dead Rising Sun]\\n    * [Dead Rising: Watchtower]\\n    * [Dead Rising: Endgame]\\n\\n* [Characters] \\n\\n  * [Dead Rising 4]\\n\\n    * [Frank West]\\n    * [Vick]\\n    * [Brad Park]\\n    * [Fontana]\\n    * [Calder]\\n\\n  * [Dead Rising 3]\\n\\n    * [Nick Ramos]\\n    * [Annie]\\n    * [Rhonda]\\n    * [Diego]\\n    * [Gary]\\n    * [Red]\\n    * [Marian Mallon]\\n    * Gen. John Hemlock \\n\\n  * [Case West]\\n\\n    * [Frank West]\\n    * [Chuck Greene]\\n    * [Isabela Keyes]\\n    * [Marian Mallon]\\n    * [Harjit Singh]\\n\\n  * [Case Zero]\\n\\n    * [Chuck Greene]\\n    * [Katey Greene]\\n    * Jeb Wright \\n\\n  * [Dead Rising 2]\\n\\n    * [Chuck Greene]\\n    * [Katey Greene]\\n    * [Stacey Forsythe]\\n    * [Tyrone King]\\n    * [The Twins]\\n    * [Rebecca Chang]\\n\\n  * [Dead Rising]\\n\\n    * [Frank West]\\n    * [Otis Washington]\\n    * [Carlito Keyes]\\n    * [Isabela Keyes]\\n    * [Brad Garrison]\\n    * [Jessica McCarney]\\n    * [Brock Mason]\\n\\n* [Weapons] \\n\\n  * [Dead Rising 4]\\n  * [Dead Rising 3]\\n  * [Case Zero]\\n  * [Case West]\\n  * [Dead Rising 2]\\n  * [Dead Rising]\\n\\n[][]\\n\\n[Sign In]\\n\\n Don't have an account? \\n\\n[Create a Free Account]\\n\\n* * *\\n\\n[Sign In]\\n\\n[Create a Free Account]\\n\\n[Home]\\n\\nExplore\\n\\n[Saved]\\n\\n[Progress]\\n\\nHistory\\n\\n[Utilities]\\n\\n[Cross Connect]\\n\\nSettings\\n\\nMore\\n\\n Advertisement \\n\\n[Skip to content]\\n\\n[![Image 1: Dead Rising Wiki]]\\n\\n[Dead Rising Wiki]\\n\\n5,978\\n\\npages\\n\\n[][]\\n\\n* Explore  \\n\\n  * [Main Page]\\n  * [Discuss]\\n  * [All Pages]\\n  * [Community]\\n  * [Interactive Maps]\\n  * [Recent Blog Posts]\\n\\n* [Dead Rising 4] \\n\\n  * [Locations]\\n  * [Cases]\\n  * [Weapons]\\n  * [Combo Weapons]\\n  * [Vehicles]\\n\\n* [Dead Rising] \\n\\n  * [Main Series]\\n\\n    * [Dead Rising]\\n    * [Dead Rising 2: Case Zero]\\n    * [Dead Rising 2]\\n    * [Dead Rising 2: Case West]\\n    * [Dead Rising 3]\\n    * [Dead Rising 4]\\n\\n  * [Non-Canon]\\n\\n    * [Dead Rising: Chop Till You Drop]\\n    * [Dead Rising 2: Off the Record]\\n\\n  * [Film]\\n\\n    * [Zombrex: Dead Rising Sun]\\n    * [Dead Rising: Watchtower]\\n    * [Dead Rising: Endgame]\\n\\n* [Characters] \\n\\n  * [Dead Rising 4]\\n\\n    * [Frank West]\\n    * [Vick]\\n    * [Brad Park]\\n    * [Fontana]\\n    * [Calder]\\n\\n  * [Dead Rising 3]\\n\\n    * [Nick Ramos]\\n    * [Annie]\\n    * [Rhonda]\\n    * [Diego]\\n    * [Gary]\\n    * [Red]\\n    * [Marian Mallon]\\n    * Gen. John Hemlock \\n\\n  * [Case West]\\n\\n    * [Frank West]\\n    * [Chuck Greene]\\n    * [Isabela Keyes]\\n    * [Marian Mallon]\\n    * [Harjit Singh]\\n\\n  * [Case Zero]\\n\\n    * [Chuck Greene]\\n    * [Katey Greene]\\n    * Jeb Wright \\n\\n  * [Dead Rising 2]\\n\\n    * [Chuck Greene]\\n    * [Katey Greene]\\n    * [Stacey Forsythe]\\n    * [Tyrone King]\\n    * [The Twins]\\n    * [Rebecca Chang]\\n\\n  * [Dead Rising]\\n\\n    * [Frank West]\\n    * [Otis Washington]\\n    * [Carlito Keyes]\\n    * [Isabela Keyes]\\n    * [Brad Garrison]\\n    * [Jessica McCarney]\\n    * [Brock Mason]\\n\\n* [Weapons] \\n\\n  * [Dead Rising 4]\\n  * [Dead Rising 3]\\n  * [Case Zero]\\n  * [Case West]\\n  * [Dead Rising 2]\\n  * [Dead Rising]\\n\\n## Contents\\n\\n* [1 History]\\n* [2 Titles]\\n* [3 Trivia]\\n* [4 References]\\n* [5 External links]\\n\\n[][]\\n\\nin:[Organizations], [Companies]\\n\\n# Capcom Vancouver\\n\\n[][Sign In to Save Save][Edit]\\n\\n* [History]\\n* [Purge]\\n* [Talk (0)]\\n\\n![Image 2: Wikipedia-logo]\\n\\n This page uses [Creative Commons licensed] content from [Wikipedia] ([view authors]).\\n[![Image 3: Capcom Vancouver's logo.]]\\n\\nCapcom Vancouver's logo.\\n\\n**Capcom Vancouver**, formerly known as **Blue Castle Games**, was a third-party developer of video games.\\n\\nThe company is the creator of several successful baseball video games, including _The BIGS_ and _The Bigs 2_. They also created the sequel to [_Dead Rising_], [_Dead Rising 2_][[1]][[2]], along with _[Dead Rising 2: Case Zero]_, _[Dead Rising 2: Case West],_ and _[Dead Rising 2: Off the Record]_.[[3]] A Capcom staff member explained that Blue Castle was picked for _Dead Rising 2_ because they had an emulator to make more zombies on screen.[[4]] Blue Castle Games was officially acquired by [Capcom] after the success of _Dead Rising 2_, under the name Capcom Vancouver. The company developed _[Dead Rising 3]_ and _[Dead Rising 4]_.\\n\\nThe company was shut down on September 18, 2018.\\n\\n- [x] \\n\\n## Contents\\n\\n* [1 History]\\n* [2 Titles]\\n* [3 Trivia]\\n* [4 References]\\n* [5 External links]\\n\\n## History[[]]\\n\\n[![Image 4: Old Blue Castle Games' logo.]]\\n\\nOld Blue Castle Games' logo.\\n\\nBlue Castle Games was formed on July 4, 2005, in Burnaby, British Columbia, Canada, by three core founders with thirty five years of combined video game experience. Starting with only twelve staff and one game (_The BIGS_[[5]]), the company has grown to 170 people with 4 shipped titles. In February 2008, Blue Castle Games won the award for Best New Video Game Company at the 2008 Elan Awards for The BIGS, in a tie with another local Vancouver company.[[6]] A wide number of developers in Blue Castle Games were formerly of EA Games.\\n\\n## Titles[[]]\\n\\nSince the company’s inception, Blue Castle Games has shipped four products with multiple SKUs. As of 2010, according to one of their recruitment pages, Blue Castle is also working on \\\"an unannounced Action project\\\".[[7]]\\n\\n| Game Name | Publisher | Ship Date | Platforms |\\n| - | - | - | - |\\n| _The Bigs_ | 2K Sports | June 2007 | PS2, PS3, PSP, Xbox 360, and Wii |\\n| _Major League Baseball Front Office Manager_ | 2K Sports | January 2009 | PS3, Xbox 360 and PC |\\n| _The Bigs 2_ | 2K Sports | July 7, 2009 | PS2, PS3, PSP, Xbox 360, and Wii |\\n| _[Dead Rising 2: Case Zero]_ | [Capcom] | August 31, 2010 | Xbox 360 |\\n| _[Dead Rising 2]_ | [Capcom] | September 28, 2010 | PS3, Xbox 360, PC, Xbox One and PS4 |\\n| _[Dead Rising 2: Case West]_ | [Capcom] | December 27, 2010 | Xbox 360 |\\n| _[Dead Rising 2: Off the Record]_ | [Capcom] | October 11, 2011 | PS3, Xbox 360, PC, Xbox One and PS4 |\\n| _[Dead Rising 3]_ | Microsoft | November 22, 2013 | Xbox One and PC |\\n| _[Dead Rising 4]_ | Microsoft | December 6, 2016 | Xbox One, PC and PS4 |\\n\\n## Trivia[[]]\\n\\n* Capcom Vancouver's studio is on a road called \\\"Still Creek Drive\\\", and they are located next to a small creek that runs across the road. This is possibly why they named the _[Case Zero]_ town \\\"[Still Creek]\\\".[_[Verification needed]_]\\n\\n## References[[]]\\n\\n1. [↑]Johnny Minkley (2008-11-07). [\\\"Blue Castle making Dead Rising 2\\\"].\\n2. [↑]Brian Crecente (2008-07-09). [\\\"Dead Rising 2: Dead Rising 2 Set in Vegas?\\\"]. Kotaku.\\n3. [↑][\\\"Blue Castle Games - Games under development\\\"]. Blue Castle Games. Retrieved 2008-09-10.\\n4. [↑]Kollar, Phil. [Special Edition Podcast: Dead Rising 2], _gameinformer_, (May 18, 2010).\\n5. [↑][\\\"2K Sports - The BIGS\\\"]. 2K Sports. Retrieved 2008-09-10.\\n6. [↑][\\\"2nd Annual ELANS Winners\\\"]. ELAN Awards (2008-02-15).\\n7. [↑][\\\"unannounced Action project\\\"]. Blue Castle Games (2010-05-27).\\n\\n## External links[[]]\\n\\n* [Official website]\\n\\n Categories \\n\\n* [Categories]: \\n* [Organizations]\\n* [Companies]\\n\\n Community content is available under [CC-BY-SA] unless otherwise noted. \\n\\n More Fandoms \\n\\n* [Horror]\\n\\nDiscussions on this wiki\\n\\nJoin the conversation\\n\\nSign in to read what others are saying and share your thoughts.\\n\\n[SIGN IN]\\n\\nDon't have account?[Register now]\\n\\n Advertisement \\n\\n## New to Fandom? Let's make it official.\\n\\nCreate your free account and dive into the worlds you love with fans who love them too.\\n\\n[Continue with Email]\\n\\nBy continuing, you agree to Fandom's [Terms of Use] and [Privacy Policy].\\n\\n## Recent Images\\n\\n[]\\n\\n* [![Image 5: DR2 w leaf rake.png]])### [Leaf Rake (Dead Rising 2)])5 hours ago  \\n* [![Image 6: Sloth IMG 9854.jpeg]]### [Theodore \\\"Teddy\\\" Lagerfeld Jr.]a day ago  \\n* [![Image 7: DR2 w pipe.png]])### [Lead Pipe (Dead Rising 2)])2 days ago  \\n\\n Advertisement \\n\\n Advertisement \\n\\n Advertisement \\n\\n## [![Image 8: Fandom logo]]\\n\\n### Explore properties\\n\\n* [Fandom]\\n* [Fanatical]\\n* [GameSpot]\\n* [Metacritic]\\n* [TV Guide]\\n* [Honest Entertainment]\\n\\n### Follow Us\\n\\n* []\\n* []\\n* []\\n* []\\n* []\\n\\n### Overview\\n\\n* [What is Fandom?]\\n* [Essentials]\\n* [About]\\n* [Careers]\\n* [Press]\\n* [Contact]\\n* [Terms of Use]\\n* [Privacy Policy]\\n* [Digital Services Act]\\n* [Global Sitemap]\\n* [Local Sitemap]\\n* Cookie Preferences\\n\\n### Community\\n\\n* [Community Central]\\n* [Support]\\n* [Help]\\n* [Accessibility Statement]\\n\\n### Advertise\\n\\n* [Media Kit]\\n* [Contact]\\n\\n### Fandom Apps\\n\\n Take your favorite fandoms with you and never miss a beat. ![Image 9: Fandom App logo]\\n* [![Image 10: Store icon]]\\n* [![Image 11: Store icon]]\\n\\nDead Rising Wiki is a Fandom Games Community.\\n\\n View Mobile Site \\n\\n[Search this wiki]\\n\\n[Search all wikis]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n![Image 12]![Image 13]![Image 14]![Image 15]![Image 16]![Image 17]![Image 18]![Image 19]![Image 20]![Image 21]![Image 22]![Image 23]![Image 24]![Image 25]\\n\\n![Image 26: Company Logo]\\n\\n## Cookie Preferences\\n\\nWhen you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience. Click on the different category headings to find out more. For more information about the First and Third Party Cookies used please follow this link. \\n[Privacy Policy]\\n\\nAllow All\\n### Categories & Purposes List\\n\\n#### Strictly Necessary Cookies\\n\\nThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_aa22619eb14d436786b6f58a",
+      "content": "[{\"id\": 1, \"title\": \"Capcom Vancouver | Dead Rising Wiki | Fandom\", \"url\": \"https://deadrising.fandom.com/wiki/Capcom_Vancouver\", \"snippet\": \"Capcom Vancouver's studio is on a road called \\\"Still Creek Drive\\\", and they are located next to a small creek that runs across the road. This is possibly ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Capcom Game Studio Vancouver, Inc.\", \"url\": \"https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\", \"snippet\": \"Capcom Vancouver. 200-4401 Still Creek Drive. Burnaby, BC V5C 6G9 Canada. Old company contact information and location (2008-2010): ... Burnaby, British Columbia ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Capcom Vancouver\", \"url\": \"https://echai.ventures/grid/vancouver/capcom-vancouver\", \"snippet\": \"Capcom Vancouver. Gaming in Burnaby. Open in Maps → · Website → · Open on ... Regus Still Creek Drive Coworking space in Burnaby 830 m · D-Wave Unlike other ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Capcom Vancouver (Closed) - Burnaby, British Columbia\", \"url\": \"http://wikimapia.org/9256223/Capcom-Vancouver-Closed\", \"snippet\": \"Capcom Vancouver (Closed) is located in Burnaby, British Columbia. Capcom Vancouver (Closed) - Burnaby, British Columbia on the map ... Still Creek Drive, 4401.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Virtual Vancouver: Fictional worlds generate real cash in B.C.\", \"url\": \"https://vancouversun.com/entertainment/local-arts/virtual-vancouver-fictional-worlds-generate-real-cash-in-b-c\", \"snippet\": \"At the offices of Capcom Vancouver on Still Creek Drive in Burnaby, studio director Joe Nickolls is still reeling from trying out the ...\", \"date\": \"Jul 1, 2016\"}, {\"id\": 6, \"title\": \"Still Creek Drive - Burnaby, British Columbia\", \"url\": \"https://wikimapia.org/street/146620/Still-Creek-Drive\", \"snippet\": \"The map created by people like you! Still Creek Drive (Burnaby, British Columbia) ... 4401 - Capcom Vancouver (Closed) · 4451 - Destination Toyota · 4500 - Costco ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Our Crows and Their Daily Commute : r/vancouver\", \"url\": \"https://www.reddit.com/r/vancouver/comments/1gkyk5k/our_crows_and_their_daily_commute/\", \"snippet\": \"You should watch that youtube short film on Crows of Still Creek Drive ... Btw still creek was were Capcom Vancouver studio was until 2017.\", \"date\": \"1 year ago\"}, {\"id\": 8, \"title\": \"Veemo · Vancouver Startup Grid\", \"url\": \"https://echai.ventures/grid/vancouver/veemo\", \"snippet\": \"Regus Still Creek Drive Coworking space in Burnaby 1.2 km · Capcom Vancouver Gaming in Burnaby 1.2 km · Regus Coworking space in Burnaby 1.2 km. More Logistics ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Game Developer - June/July 2011\", \"url\": \"https://media.gdcvault.com/GD_Mag_Archives/GDM_JuneJuly_2011.pdf\", \"snippet\": \"4401 Still Creek Drive, Suite 200. Burnaby, BC V5C 6G9 ... Capcom Vancouver . ... POSTMASTER: Send address changes to Game Developer, P.O. Box 1274, Skokie, IL ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Regus · Vancouver Startup Grid\", \"url\": \"https://echai.ventures/grid/vancouver/regus-40\", \"snippet\": \"Capcom Vancouver Gaming in Burnaby 10 m · SkyBox Labs We Build World ... Regus Still Creek Drive Coworking space in Burnaby 830 m · D-Wave Unlike other ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Confirmed:\n- Game: Dead Rising 4, developed by Capcom Vancouver (formerly Blue Castle Games).\n- Former headquarters: Burnaby, British Columbia, Canada — 4401 Still Creek Drive, Burnaby, BC V5C 6G9.\n- Host's location: Los Angeles, California → City center coordinates: 34.0522° N, 118.2437° W (the commonly used \"city center\" coordinates for Los Angeles).\n\nNext, coordinates for 4401 Still Creek Drive, Burnaby: approximately 49.2600° N, 123.0040° W? Let me get more precise. Still Creek Drive in Burnaby is near the Brentwood/Still Creek area. Coordinates for 4401 Still Creek Dr: roughly latitude 49.2613, longitude -123.0035? Let me verify with geocoding. I could use Nominatim via requests inside the code executor, but network access might be restricted. Let me try.\n\nAlternatively, the question might simply be asking for the distance between downtown LA and downtown Vancouver (since the studio is \"Capcom Vancouver\"). But it says \"former headquarters,\" which is Burnaby. Hmm. The question is: \"Calculate the great-circle distance in kilometers between the host's location city center and the former headquarters of the game's main development studio.\"\n\nGiven the ambiguity, the intended answer is probably: LA city center (34.0522, -118.2437) to Capcom Vancouver's former HQ in Burnaby (4401 Still Creek Drive, ~49.261, -123.004). Let me calculate both and present them.\n\nDistance LA→downtown Vancouver ≈ 1736 km. Distance LA→4401 Still Creek Dr Burnaby ≈ ? Burnaby's Still Creek is northeast of downtown Vancouver, about 10 km closer to LA? Actually, Still Creek is about 9 km east-northeast of downtown Vancouver. Downtown Vancouver is 49.2827, -123.1207. Still Creek is 49.261, -123.004. Difference in latitude: 0.0217° south (~2.4 km), longitude: 0.1167° east (~8.1 km at that latitude, since cos(49°)≈0.656, 0.1167*111.32*0.656 ≈ 8.5 km). So Still Creek is about 8.9 km east-southeast of downtown Vancouver. Direction from LA to Vancouver is roughly north-northwest. Moving east-southeast would slightly increase the distance? Let me calculate precisely with haversine.\n\nLet me try geocoding 4401 Still Creek Drive with Nominatim. If network isn't available, I'll use approximate coordinates from known sources. Let me try requests in the code executor.\n\nActually, let me first check if the sandbox has internet. I'll try a Nominatim query.\n\nBoth facts have been confirmed:\n- **Game:** Dead Rising 4 → Main developer: **Capcom Vancouver** (formerly Blue Castle Games), whose former headquarters was at **4401 Still Creek Drive, Burnaby, British Columbia** (studio closed in 2018).\n- **Host's location:** Los Angeles, California → City center ≈ (34.0522°N, 118.2437°W).\n\nAlright, let's determine the coordinates of the former headquarters and calculate the great-circle distance.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_d53005a4b5874d909fac3d50",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import json, urllib.request\\n\\ndef geocode(q):\\n    url = \\\"https://nominatim.openstreetmap.org/search?\\\" + urllib.parse.urlencode({\\\"q\\\": q, \\\"format\\\": \\\"json\\\", \\\"limit\\\": 3})\\n    req = urllib.request.Request(url, headers={\\\"User-Agent\\\": \\\"geo-test/1.0\\\"})\\n    with urllib.request.urlopen(req, timeout=20) as r:\\n        return json.loads(r.read().decode())\\n\\nimport urllib.parse\\nfor q in [\\\"4401 Still Creek Drive, Burnaby, BC\\\", \\\"Still Creek Drive, Burnaby, British Columbia\\\"]:\\n    try:\\n        res = geocode(q)\\n        for item in res:\\n            print(q, \\\"->\\\", item.get(\\\"lat\\\"), item.get(\\\"lon\\\"), item.get(\\\"display_name\\\")[:90])\\n    except Exception as e:\\n        print(\\\"ERROR\\\", q, e)\\n\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed:\n- Game: Dead Rising 4, developed by Capcom Vancouver (formerly Blue Castle Games).\n- Former headquarters: Burnaby, British Columbia, Canada — 4401 Still Creek Drive, Burnaby, BC V5C 6G9.\n- Host's location: Los Angeles, California → City center coordinates: 34.0522° N, 118.2437° W (the commonly used \"city center\" coordinates for Los Angeles).\n\nNext, coordinates for 4401 Still Creek Drive, Burnaby: approximately 49.2600° N, 123.0040° W? Let me get more precise. Still Creek Drive in Burnaby is near the Brentwood/Still Creek area. Coordinates for 4401 Still Creek Dr: roughly latitude 49.2613, longitude -123.0035? Let me verify with geocoding. I could use Nominatim via requests inside the code executor, but network access might be restricted. Let me try.\n\nAlternatively, the question might simply be asking for the distance between downtown LA and downtown Vancouver (since the studio is \"Capcom Vancouver\"). But it says \"former headquarters,\" which is Burnaby. Hmm. The question is: \"Calculate the great-circle distance in kilometers between the host's location city center and the former headquarters of the game's main development studio.\"\n\nGiven the ambiguity, the intended answer is probably: LA city center (34.0522, -118.2437) to Capcom Vancouver's former HQ in Burnaby (4401 Still Creek Drive, ~49.261, -123.004). Let me calculate both and present them.\n\nDistance LA→downtown Vancouver ≈ 1736 km. Distance LA→4401 Still Creek Dr Burnaby ≈ ? Burnaby's Still Creek is northeast of downtown Vancouver, about 10 km closer to LA? Actually, Still Creek is about 9 km east-northeast of downtown Vancouver. Downtown Vancouver is 49.2827, -123.1207. Still Creek is 49.261, -123.004. Difference in latitude: 0.0217° south (~2.4 km), longitude: 0.1167° east (~8.1 km at that latitude, since cos(49°)≈0.656, 0.1167*111.32*0.656 ≈ 8.5 km). So Still Creek is about 8.9 km east-southeast of downtown Vancouver. Direction from LA to Vancouver is roughly north-northwest. Moving east-southeast would slightly increase the distance? Let me calculate precisely with haversine.\n\nLet me try geocoding 4401 Still Creek Drive with Nominatim. If network isn't available, I'll use approximate coordinates from known sources. Let me try requests in the code executor.\n\nActually, let me first check if the sandbox has internet. I'll try a Nominatim query.\n\nBoth facts have been confirmed:\n- **Game:** Dead Rising 4 → Main developer: **Capcom Vancouver** (formerly Blue Castle Games), whose former headquarters was at **4401 Still Creek Drive, Burnaby, British Columbia** (studio closed in 2018).\n- **Host's location:** Los Angeles, California → City center ≈ (34.0522°N, 118.2437°W).\n\nAlright, let's determine the coordinates of the former headquarters and calculate the great-circle distance.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d53005a4b5874d909fac3d50",
+      "content": "{\"stdout\": \"ERROR 4401 Still Creek Drive, Burnaby, BC <urlopen error [Errno -3] Temporary failure in name resolution>\\nERROR Still Creek Drive, Burnaby, British Columbia <urlopen error [Errno -3] Temporary failure in name resolution>\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "There's no network inside the sandbox. I'll rely on known coordinates. 4401 Still Creek Drive, Burnaby, BC — this is in Burnaby's \"Still Creek\" industrial area, near the Brentwood Town Centre / Willingdon area. Known coordinates: approximately 49.2615° N, 123.0005° W? Let me think about this.\n\nStill Creek Drive runs east from Lougheed Highway… actually, Still Creek Drive is in Burnaby near the Gilmore/Hastings area? Let me try to remember: Costco Burnaby is at 4500 Still Creek Drive, coordinates roughly 49.2589, -123.0016? Hmm.\n\nLet me search the web for the coordinates of \"4401 Still Creek Drive\" or the Still Creek area of Burnaby. Wikimapia might have coordinates listed. Let me try fetching the wikimapia page.\n\nSince the sandbox doesn't have network access, I'll obtain the coordinates from the web source instead.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_8328be4bc149427f8d38c21b",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"http://wikimapia.org/9256223/Capcom-Vancouver-Closed\", \"https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_8be4dc2cba7645cc8b65c760",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"4401 Still Creek Drive\\\" Burnaby coordinates latitude longitude\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "There's no network inside the sandbox. I'll rely on known coordinates. 4401 Still Creek Drive, Burnaby, BC — this is in Burnaby's \"Still Creek\" industrial area, near the Brentwood Town Centre / Willingdon area. Known coordinates: approximately 49.2615° N, 123.0005° W? Let me think about this.\n\nStill Creek Drive runs east from Lougheed Highway… actually, Still Creek Drive is in Burnaby near the Gilmore/Hastings area? Let me try to remember: Costco Burnaby is at 4500 Still Creek Drive, coordinates roughly 49.2589, -123.0016? Hmm.\n\nLet me search the web for the coordinates of \"4401 Still Creek Drive\" or the Still Creek area of Burnaby. Wikimapia might have coordinates listed. Let me try fetching the wikimapia page.\n\nSince the sandbox doesn't have network access, I'll obtain the coordinates from the web source instead.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8328be4bc149427f8d38c21b",
+      "content": "{\"http://wikimapia.org/9256223/Capcom-Vancouver-Closed\": \"Title: Capcom Vancouver (Closed) - Wikimapia\\n\\nURL Source: http://wikimapia.org/9256223/Capcom-Vancouver-Closed\\n\\nMarkdown Content:\\n![Image 1]  \\nWikimapia is a multilingual open-content collaborative map, where anyone can create place tags and share their knowledge.\\n\\n![Image 2: Wikimapia]The map created by people like you!\\n\\n# Capcom Vancouver (Closed) (Burnaby, British Columbia)\\n\\nCanada / British Columbia / Vancouver / Burnaby, British Columbia / [Still Creek Drive], 4401 [World] / [Canada] / [British Columbia] / [Vancouver] World / Canada / British Columbia / Greater Vancouver \\n\\nUpload a photo ![Image 3]\\n\\n* * *\\n\\n![Image 4]![Image 5]![Image 6]![Image 7]![Image 8]![Image 9]![Image 10]![Image 11]![Image 12]\\n\\n Capcom Vancouver (Closed) is located in Burnaby, British Columbia. Capcom Vancouver (Closed) - Burnaby, British Columbia on the map. \\n\\n[Add place (company, shop, etc.) to this building]\\n\\n**Wikipedia article:**\\n\\n**Nearby cities:**\\n\\n**Coordinates:** 49°15'37\\\"N  123°0'27\\\"W\\n\\n Add your comment in english \\n\\nAdd comment for this object\\n\\n Your comment: Post comment\\n\\n* [Similar places]\\n* [Nearby places]\\n* [Nearby cities]\\n\\n* [Green Tree Village]1.2 km\\n* [Get Movers Surrey Moving Company]3.7 km\\n* [Former Safeway DC]6.6 km\\n* [Queens Park]8.3 km\\n* [Queensboro Division sawmill (now closed)]8.4 km\\n* [Former Canfor Plywood & Hardboard Division]10 km\\n* [Exit - Cliveden Avenue and Highway 91]10 km\\n* [Exit 12 - Highway 91A and Highway 91]10 km\\n* [IDC Distribution]11 km\\n* [Con-Force precast concrete products]11 km\\n\\n* [Exit 29 - Willingdon Avenue and Highway 1]0.4 km\\n* [Still Creek Conservation Area]0.7 km\\n* [Thornton Tunnel (South End)]1.3 km\\n* [British Columbia Institute of Technology]1.3 km\\n* [Vancouver Film Studios]1.4 km\\n* [Broadway Tech Centre]2.5 km\\n* [Garden Village]2.6 km\\n* [Renfrew-Collingwood]2.8 km\\n* [Hastings-Sunrise]3.1 km\\n* [Deer Lake Park]3.3 km\\n\\n* []7.8 km\\n* []15 km\\n* []20 km\\n* []34 km\\n* []40 km\\n* []41 km\\n* []65 km\\n* []260 km\\n* []657 km\\n* []812 km\\n\\n[Exit 29 - Willingdon Avenue and Highway 1][Still Creek Conservation Area][Thornton Tunnel (South End)][British Columbia Institute of Technology][Vancouver Film Studios][Broadway Tech Centre][Garden Village][Renfrew-Collingwood][Hastings-Sunrise][Deer Lake Park]\\n\\n* Languages: \\n* [en]\\n\\nThis article was last modified 7 years ago\\n\\n×\\n### Post comment\\n\\n Log in with Facebook\\n\\n Log in with VK\\n\\nor continue as guest\\n\\nWikimapia username\\n\\nYour name Please enter your name Post comment\\n\\n![Image 13]\\n\", \"https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\": \"Title: Just a moment...\\n\\nURL Source: https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\\n\\nWarning: This page maybe not yet fully loaded, consider explicitly specify a timeout.\\nWarning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.\\n\\nMarkdown Content:\\n![Image 1: Icon for www.mobygames.com]\\n# www.mobygames.com\\n\\n## Performing security verification\\n\\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\\n\\n## Verification successful. Waiting for www.mobygames.com to respond\\n\\nRay ID: `a4759d2c79180a9f`\\n\\nPerformance and Security by [Cloudflare][Privacy]\\n\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8be4dc2cba7645cc8b65c760",
+      "content": "[{\"id\": 1, \"title\": \"A.9 Proximity Installation Permit Application Form\", \"url\": \"https://docs.transmountain.com/PA-Brochures/A.9-Proximity-Installation-Permit-Application-Form_Aug-2023.pdf\", \"snippet\": \"GPS Coordinates: Lat: Long: Application Drawing(s) No. (or ... 4401 Still Creek Drive. #300. Burnaby, BC, V5C 6G9. Attention: Permit ...\", \"date\": \"Aug 4, 2023\"}, {\"id\": 2, \"title\": \"Finding Low-Energy Conformations of Lattice Protein Models ...\", \"url\": \"https://dash.harvard.edu/bitstreams/7312037c-bb1b-6bd4-e053-0100007fdf3b/download\", \"snippet\": \"by A Perdomo-Ortiz · 2012 · Cited by 529 — ... 4401 Still Creek Drive, Burnaby,. British Columbia V5C 6G9, Canada. (Dated: 26 April 2012) a)Corresponding author's e-mail: aspuru@chemistry ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Répertoire spatial canadien\", \"url\": \"https://epe.lac-bac.gc.ca/100/202/301/repertoire_spatial_cdn/2004/04-04.pdf?nodisclaimer=1\", \"snippet\": \"100-4401 Still Creek Drive. Burnaby (Colombie-Britannique) V5C 6G9. Canada. Telephone. (604) 292.9000. Toll Free. (877) 597-6206. Fax. (604) 292.9100. NovAtel ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Efficient Encodings for Constraint Satisfaction Programming a\", \"url\": \"https://dash.harvard.edu/bitstreams/7312037c-cc89-6bd4-e053-0100007fdf3b/download\", \"snippet\": \"by RJ Babbush · 2013 · Cited by 96 — 3D-Wave Systems, Inc., 100-4401 Still Creek Drive, Burnaby,. British Columbia V5C 6G9, Canada. ∗Corresponding author. Electronic address ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"A.30-Application-Form-Municipal-Roadways- ...\", \"url\": \"https://docs.transmountain.com/A.30-Application-Form-Municipal-Roadways-Canada-Only.pdf\", \"snippet\": \"GPS Coordinates: Lat: Long: Application Drawing(s) No. (or sketch) ... 4401 Still Creek Drive. Burnaby, BC V5C 6G9. Attention: Permit Technician. Toll ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Finding low-energy conformations of lattice protein models ...\", \"url\": \"https://www.researchgate.net/publication/230666631_Finding_low-energy_conformations_of_lattice_protein_models_by_quantum_annealing\", \"snippet\": \"Systems, Inc., 100-4401 Still Creek Drive, Burnaby, British Columbia V5C 6G9, Canada. Lattice protein folding models are a cornerstone of computational ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Newspaper Legal Notices November 2023\", \"url\": \"https://www.wcrinc.com/wp-content/uploads/2023/12/2023_11_NovLegalNotices.pdf\", \"snippet\": \"Location: parcels P119008 and P27079, its latitude/longitude is: 48.4231, -122.2993, its ... 4401 Still Creek Drive,. Burnaby, British Columbia, ...\", \"date\": \"Dec 14, 2023\"}, {\"id\": 8, \"title\": \"Canadian Space Directory\", \"url\": \"https://epe.lac-bac.gc.ca/100/202/301/cdn_space_directory/2003/03-06.pdf?nodisclaimer=1\", \"snippet\": \"100-4401 Still Creek Drive. Burnaby, British Columbia V5C 6G9. Canada. Telephone (604) 292.9000. Fax. (604) 292.9100. Toll Free. (877) 597-6206. NovAtel Inc ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Répertoire spatial canadien\", \"url\": \"https://epe.lac-bac.gc.ca/100/202/301/repertoire_spatial_cdn/2005/csd_jn05f.pdf?nodisclaimer=1\", \"snippet\": \"300 - 4401 Still Creek Drive. Burnaby (Colombie-Britannique) V5C 6G9. Canada. Telephone. (604) 292.9000. Toll Free. 1.800.644.4562. Fax. (604) 292.9100.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Canadian Space Directory\", \"url\": \"https://epe.lac-bac.gc.ca/100/202/301/cdn_space_directory/2004/04-10.pdf\", \"snippet\": \"100-4401 Still Creek Drive. Burnaby, British Columbia V5C 6G9. Canada. Telephone (604) 292.9000. Fax. (604) 292.9100. Toll Free. (877) 597-6206.\", \"date\": \"Oct 1, 2004\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "According to Wikimapia, the coordinates of Capcom Vancouver (closed) at 4401 Still Creek Drive are 49°15'37\"N 123°0'27\"W = 49.2603°N, 123.0075°W.\n\nTherefore, the former headquarters: latitude 49.2603, longitude -123.0075.\n\nCity center of Los Angeles: 34.0522°N, 118.2437°W (standard reference values, e.g., the coordinates of the Los Angeles City Hall / the \"city center\" listed on Wikipedia).\n\nNext, calculate the great-circle distance using the haversine formula.\n\nAlso, for comparison, calculate the distance to downtown Vancouver (49.2827, -123.1207) as well.\n\nLet's try computing it.\n\nI obtained the coordinates of the former headquarters from Wikimapia: 49°15′37″N, 123°00′27″W → (49.2603, −123.0075). Next, I'll calculate the great-circle distance from central Los Angeles (34.0522, −118.2437).",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_249978b2f31a4acd986c5d2f",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2, R=6371.0088):\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2-lat1)\\n    dlmb = math.radians(lon2-lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Los Angeles city center (per Wikipedia / City Hall reference)\\nla = (34.0522, -118.2437)\\n\\n# Former Capcom Vancouver HQ: 4401 Still Creek Drive, Burnaby, BC (Wikimapia: 49°15'37\\\"N 123°0'27\\\"W)\\nhq = (49 + 15/60 + 37/3600, -(123 + 0/60 + 27/3600))\\nprint(\\\"HQ coords:\\\", hq)\\n\\nd_hq = haversine(*la, *hq)\\nprint(\\\"LA -> Capcom Vancouver former HQ (Burnaby): %.2f km -> %d km\\\" % (d_hq, round(d_hq)))\\n\\n# Cross-check with generic Burnaby city centre and downtown Vancouver for sensitivity\\nburnaby = (49.2488, -122.9805)\\nvantown = (49.2827, -123.1207)\\nprint(\\\"LA -> Burnaby city centre: %.1f km\\\" % haversine(*la, *burnaby))\\nprint(\\\"LA -> downtown Vancouver: %.1f km\\\" % haversine(*la, *vantown))\\n\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "According to Wikimapia, the coordinates of Capcom Vancouver (closed) at 4401 Still Creek Drive are 49°15'37\"N 123°0'27\"W = 49.2603°N, 123.0075°W.\n\nTherefore, the former headquarters: latitude 49.2603, longitude -123.0075.\n\nCity center of Los Angeles: 34.0522°N, 118.2437°W (standard reference values, e.g., the coordinates of the Los Angeles City Hall / the \"city center\" listed on Wikipedia).\n\nNext, calculate the great-circle distance using the haversine formula.\n\nAlso, for comparison, calculate the distance to downtown Vancouver (49.2827, -123.1207) as well.\n\nLet's try computing it.\n\nI obtained the coordinates of the former headquarters from Wikimapia: 49°15′37″N, 123°00′27″W → (49.2603, −123.0075). Next, I'll calculate the great-circle distance from central Los Angeles (34.0522, −118.2437).",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_249978b2f31a4acd986c5d2f",
+      "content": "{\"stdout\": \"HQ coords: (49.26027777777778, -123.0075)\\nLA -> Capcom Vancouver former HQ (Burnaby): 1735.85 km -> 1736 km\\nLA -> Burnaby city centre: 1734.1 km\\nLA -> downtown Vancouver: 1740.4 km\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Analysis Summary\n\n**Game identified:** *Dead Rising 4* — the loading screen shows \"DEADRISING 4 – Case 6: Eye on the Prize,\" and the host explicitly says \"how to do an infinite combo on Dead Rising 4.\"\n\n**Host's location:** In the audio intro, the host says \"Team SNES here, coming at you from **Los Angeles, California**\" → city center ≈ (34.0522°N, 118.2437°W).\n\n**Primary developer's former HQ:** Dead Rising 4 was developed by **Capcom Vancouver** (formerly Blue Castle Games), which was headquartered at 4401 Still Creek Drive, **Burnaby, British Columbia** (≈ 49.2603°N, 123.0075°W) before the studio was shut down in 2018 — hence \"former\" headquarters.\n\n**Great-circle distance calculation (haversine):**\n- LA (34.0522, −118.2437) → Burnaby HQ (49.2603, −123.0075) = **1735.85 km ≈ 1736 km**\n- (Sanity checks: → Burnaby city centre ≈ 1734 km; → downtown Vancouver ≈ 1740 km — all consistent at ~1,730–1,740 km.)\n\n<answer>Approximately 1,736 km</answer>\n\nThe video features **Dead Rising 4**, hosted from **Los Angeles, California**. The game's primary developer, **Capcom Vancouver**, had its (now former) headquarters at 4401 Still Creek Drive, Burnaby, BC. The great-circle distance between Los Angeles city center and that former HQ is **≈ 1,736 kilometers** (about 1,730–1,740 km depending on the exact reference points used).",
+      "reasoning": "Results:\n- LA → Former headquarters of Capcom Vancouver (4401 Still Creek Dr, Burnaby): 1735.85 km ≈ 1736 km.\n- LA → Downtown Vancouver: 1740.4 km ≈ 1740 km.\n\nWhich one is intended? The question says \"the former headquarters of the game's main development studio.\" The main development studio of Dead Rising 4 = Capcom Vancouver. Its former headquarters = Burnaby, British Columbia (4401 Still Creek Drive). Therefore, the answer is ≈ 1736 km. However, depending on the coordinates chosen, some people might say about 1735–1740 km. The most defensible answer is: about 1736 km (roughly 1,730–1,740 km).\n\nTaking rounding into account, I'll present 1736 km as the answer and note that using downtown Vancouver as a reference point gives about 1740 km. Final answer: ≈1736 km.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Results:\n- LA → Former headquarters of Capcom Vancouver (4401 Still Creek Dr, Burnaby): 1735.85 km ≈ 1736 km.\n- LA → Downtown Vancouver: 1740.4 km ≈ 1740 km.\n\nWhich one is intended? The question says \"the former headquarters of the game's main development studio.\" The main development studio of Dead Rising 4 = Capcom Vancouver. Its former headquarters = Burnaby, British Columbia (4401 Still Creek Drive). Therefore, the answer is ≈ 1736 km. However, depending on the coordinates chosen, some people might say about 1735–1740 km. The most defensible answer is: about 1736 km (roughly 1,730–1,740 km).\n\nTaking rounding into account, I'll present 1736 km as the answer and note that using downtown Vancouver as a reference point gives about 1740 km. Final answer: ≈1736 km.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Dead Rising 4 developer Capcom Vancouver studio headquarters address\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Capcom Vancouver | Dead Rising Wiki | Fandom",
+          "url": "https://deadrising.fandom.com/wiki/Capcom_Vancouver",
+          "snippet": "Capcom Vancouver's studio is on a road called \"Still Creek Drive\", and they are located next to a small creek that runs across the road. This is possibly why ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "How Capcom's Dead Rising Studio Fell Apart - Game History ...",
+          "url": "https://www.reddit.com/r/deadrising/comments/gyi05v/how_capcoms_dead_rising_studio_fell_apart_game/",
+          "snippet": "Hi everyone. Liam Robertson from DYKG here. As I mentioned early this week, here is my video documentary investigating Capcom Vancouver.",
+          "date": "6 years ago"
+        },
+        {
+          "id": 3,
+          "title": "Capcom Vancouver",
+          "url": "https://en.wikipedia.org/wiki/Capcom_Vancouver",
+          "snippet": "Capcom announced the closure of the studio in September 2018, cancelling Dead Rising 5 and moving other development to their Japan-based studios. Capcom ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Capcom Vancouver officially shut down; 'Dead Rising ...",
+          "url": "https://www.geekwire.com/2018/capcom-vancouver-officially-shut-dead-rising-developers-let-go-part-restructuring/",
+          "snippet": "Capcom Vancouver, headquartered in Burnaby, British Columbia, initially opened its doors in 2005 as Blue Castle Games. It was subsequently ...",
+          "date": "Sep 18, 2018"
+        },
+        {
+          "id": 5,
+          "title": "How Capcom's Dead Rising Studio Fell Apart - Game History ...",
+          "url": "https://www.youtube.com/watch?v=6glExmQadfY",
+          "snippet": "Dead Rising 3, Dead Rising 4 and Dead Rising 5 all had troubled developments that ultimately led to the closure of Capcom Vancouver.",
+          "date": "6 years ago"
+        },
+        {
+          "id": 6,
+          "title": "Capcom Shutters Dead Rising Studio, Capcom Vancouver",
+          "url": "https://www.gamespot.com/articles/capcom-shutters-dead-rising-studio-capcom-vancouve/1100-6461846/",
+          "snippet": "Capcom Vancouver has been shut down. The studio, which was best known for its work on the Dead Rising series and the short-lived Puzzle ...",
+          "date": "Sep 19, 2018"
+        },
+        {
+          "id": 7,
+          "title": "Capcom Game Studio Vancouver, Inc.",
+          "url": "https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/",
+          "snippet": "Capcom Games Studio Vancouver was a game development division of Capcom based in Vancouver, Canada. The studio was founded in 2005 as Blue Castle Games, ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Dead Rising 4",
+          "url": "https://www.ign.com/games/dead-rising-4",
+          "snippet": "Developers. Capcom Game Studio Vancouver. Publishers. Capcom. Franchises. Dead Rising. Features. Online Co-Op Multiplayer. Initial Release. Dec 5, 2016.",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Dead Rising 4",
+          "url": "https://tcrf.net/Dead_Rising_4",
+          "snippet": "Developer · Capcom Vancouver ; Publishers · Microsoft Studios (XB1), Capcom (Windows/PS4) ; Platforms · Xbox One, Windows, PlayStation 4. Released ...",
+          "date": "Mar 17, 2026"
+        },
+        {
+          "id": 10,
+          "title": "Capcom Game Studio Vancouver, Inc. - Game Developer",
+          "url": "https://altarofgaming.com/company/capcom-vancouver/",
+          "snippet": "Official Name Capcom Game Studio Vancouver, Inc. Founded July 04, 2005. Ceased Operations October 18, 2018. HQ Address Canada. Parent Company",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Capcom Vancouver Blue Castle Games office location Vancouver BC closed 2018\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Capcom Vancouver",
+          "url": "https://en.wikipedia.org/wiki/Capcom_Vancouver",
+          "snippet": "Capcom announced the closure of the studio in September 2018, cancelling Dead Rising 5 and moving other development to their Japan-based studios.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Capcom Vancouver officially shut down; 'Dead Rising ...",
+          "url": "https://www.geekwire.com/2018/capcom-vancouver-officially-shut-dead-rising-developers-let-go-part-restructuring/",
+          "snippet": "Capcom Vancouver is officially shutting down. The studio was primarily responsible for development on the popular but recently troubled Dead ...",
+          "date": "Sep 18, 2018"
+        },
+        {
+          "id": 3,
+          "title": "On this day 6 Years ago, Capcom Vancouver previously ...",
+          "url": "https://www.reddit.com/r/deadrising/comments/1fjl0js/on_this_day_6_years_ago_capcom_vancouver/",
+          "snippet": "Capcom Vancouver previously known as Blue Castle Games acquired by Capcom suspended it's operations. Why they closed the Studio?",
+          "date": "2 years ago"
+        },
+        {
+          "id": 4,
+          "title": "Capcom Game Studio Vancouver, Inc.",
+          "url": "https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/",
+          "snippet": "On 18 September 2018, Capcom announced that it would shut down the studio. A skeleton crew would finalize operations by January 2019.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Capcom Vancouver | Dead Rising Wiki | Fandom",
+          "url": "https://deadrising.fandom.com/wiki/Capcom_Vancouver",
+          "snippet": "Vancouver, formerly known as Blue Castle Games, Blue Castle Games was officially acquired by Capcom. The company was shut down on September 18, 2018. on a road ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Blue Castle Games",
+          "url": "https://ca.linkedin.com/company/blue-castle-games",
+          "snippet": "Blue Castle Games is now known as Capcom Game Studio Vancouver. Website: http://www.bluecastlegames.com.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Gaming giant Capcom shutters its Burnaby studio",
+          "url": "https://vancouversun.com/technology/gaming/gaming-giant-capcom-shutters-its-burnaby-studio",
+          "snippet": "Capcom closed its Burnaby studio Tuesday, leaving 158 people out of work. being moved to Japan, the company says.",
+          "date": "Sep 18, 2018"
+        },
+        {
+          "id": 8,
+          "title": "Capcom has closed their Vancouver studio. The canceled ...",
+          "url": "https://www.facebook.com/ign/videos/capcom-closes-vancouver-studio-loses-40-million-ign-news/2112116825486754/?locale=it_IT",
+          "snippet": "Capcom has closed their Vancouver studio. The canceled projects amount to a $40 million loss. The former Blue Castle is gone...",
+          "date": "8 years ago"
+        },
+        {
+          "id": 9,
+          "title": "Capcom breaches Blue Castle Games",
+          "url": "https://www.gamespot.com/articles/capcom-breaches-blue-castle-games/1100-6275943/",
+          "snippet": "Capcom global head of production Keiji Inafune said Blue Castle would be renamed Capcom Games Studio Vancouver but didn't disclose the financial terms of the ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "How Capcom's Dead Rising Studio Fell Apart - Game History ...",
+          "url": "https://www.youtube.com/watch?v=6glExmQadfY",
+          "snippet": "... closure of Capcom Vancouver. Troubles at the studio also contributed to the cancellation of at least 7 other games including new Dino Crisis ...",
+          "date": "6 years ago"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/Capcom_Vancouver\", \"https://deadrising.fandom.com/wiki/Capcom_Vancouver\"]\n\n}",
+      "result": {
+        "https://en.wikipedia.org/wiki/Capcom_Vancouver": "Title: Capcom Vancouver\n\nURL Source: https://en.wikipedia.org/wiki/Capcom_Vancouver\n\nPublished Time: 2008-09-10T08:48:05Z\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5]]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 History]\n\n* [2 Games developed]Toggle Games developed subsection\n  * [2.1 As Blue Castle Games]\n\n  * [2.2 As Capcom Vancouver]\n\n  * [2.3 Cancelled games]\n\n* [3 See also]\n\n* [4 Notes]\n\n* [5 References]\n\n* [6 External links]\n\n- [x] Toggle the table of contents \n\n# Capcom Vancouver\n\n- [x] 6 languages \n\n* [فارسی]\n* [Français]\n* [Magyar]\n* [Português]\n* [Русский]\n* [中文]\n\n[Edit links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n* [Expand all]\n* [Edit interlanguage links]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor \n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\nFrom Wikipedia, the free encyclopedia\n\nCanadian video game developer\n\nCapcom Vancouver[![Image 6]]\nFormerly Blue Castle Games Inc.  \n (2005–2010)\nType[Subsidiary]\nIndustry[Video games]\nFounded July 4, 2004;22 years ago(2004-07-04)\nFounder Robert Barrett\nDefunct September 18,2018;8 years ago(2018-09-18)\nFate[Dissolved] \"Dissolution (law)\")\nHeadquarters[Burnaby], [British Columbia]\n\n, \n\n[Canada]\nKey people* Tim Bennison ([COO])\n* Bryce Cochrane ([creative director])\n* Chris Rowe ([executive producer])\nProducts _[Dead Rising] \"Dead Rising (series)\")_ series\nNumber of employees 200[[1]](2018)\n[Parent]* [Capcom]  \n(2010–2018)\n* [Microsoft Studios]  \n(minority stake, 2010–2018)\nWebsite[www.capcomvancouver.com]\n\n**Capcom Game Studio Vancouver, Inc.**[[2]] (formerly **Blue Castle Games Inc.**), more commonly known as **Capcom Vancouver**, was a Canadian [video game developer] owned by [Capcom] with minority stake partnership by [Microsoft Studios].[[3]] As Blue Castle Games, the company was the creator of several successful [baseball][sports video games], including _[The Bigs]_, _[MLB Front Office Manager]_ and _[The Bigs 2]_. They have also developed the _[Dead Rising] \"Dead Rising (series)\")_ series.[[4]][[5]][[6]] Blue Castle Games was acquired by Capcom after the release of _[Dead Rising 2]_, and renamed Capcom Vancouver, where they continued to work on the _Dead Rising_ series.[[7]][[8]] Capcom announced the closure of the studio in September 2018, cancelling _Dead Rising 5_ and moving other development to their Japan-based studios.\n\n## History\n\n[[edit]]\n\n[![Image 7]]\n\nBlue Castle Games logo\n\nThe company was formed on July 4, 2004 in [Burnaby], [British Columbia], [Canada] by three core founders with thirty five years of combined video game experience. Starting with only twelve staff and one game (_[The Bigs]_[[9]]), the company grew to 200 people with 3 shipped titles.[[1]] In February 2008, Blue Castle Games won the award for Best New Video Game Company at the 2008 Elan Awards for _[The Bigs]_, in a tie with another local Vancouver company.[[10]] A wide number of developers in Capcom Vancouver were formerly of [EA Vancouver], located only a couple blocks away from their studio. [Yoshinori Ono] \"Yoshinori Ono (game producer)\") was the studio director from 2011 to 2014.[[11]]\n\nIn February 2018, Capcom had laid off about 30% of the studio, but had continued to use Capcom Vancouver to support _Puzzle Fighter_ on mobile and ongoing work for _Dead Rising_ games. On September 18, 2018, Capcom announced the closure of the studio on reviewing the state of development of current projects. While a skeleton crew remained through January 2019 to complete certain projects, remaining development work was either cancelled or transitioned to Capcom's Japan studios.[[12]] Capcom estimated the cost of the cancelled projects equated to about ¥4.5 billion (approximately US$40 million).[[13]]\n\n## Games developed\n\n[[edit]]\n\n### As Blue Castle Games\n\n[[edit]]\n\n| Year | Game | Platform(s) | Publisher |\n| - | - | - | - |\n| 2007 | _[The Bigs]_ | [PlayStation 2], [PlayStation 3], [PlayStation Portable], [Wii], [Xbox 360] | [2K Sports] |\n| _[Major League Baseball 2K8]_ | PlayStation 3, Xbox 360 |\n| 2009 | _[MLB Front Office Manager]_ | [Microsoft Windows], PlayStation 3, Xbox 360 |\n| _[The Bigs 2]_ | [Nintendo DS], PlayStation 2, PlayStation 3, PlayStation Portable, Wii, Xbox 360 |\n| 2010 | _[Dead Rising 2: Case Zero]_[[a]] | Xbox 360 | [Capcom] |\n| _[Dead Rising 2]_[[a]] | Microsoft Windows, PlayStation 3, Xbox 360 |\n| _[Dead Rising 2: Case West]_[[a]] | Xbox 360 |\n\n### As Capcom Vancouver\n\n[[edit]]\n\n| Year | Game | Platform(s) | Publisher |\n| - | - | - | - |\n| 2011 | _[Dead Rising 2: Off the Record]_[[a]] | Microsoft Windows, PlayStation 3, Xbox 360 | Capcom |\n| 2013 | _[Dead Rising 3]_[[b]] | Microsoft Windows, [Xbox One] | [Microsoft Studios]/Capcom |\n| 2014 | _[Dead Rising Collection] \"Dead Rising\")_ | Xbox 360 |\n| 2016 | _[Dead Rising 4]_[[b]] | Microsoft Windows, Xbox One |\n| 2017 | _[Puzzle Fighter] \"Puzzle Fighter (2017 video game)\")_ | [iOS], [Android] \"Android (operating system)\") | Capcom |\n| _[Dead Rising 4]: Frank's Big Package_ | [PlayStation 4] |\n\n### Cancelled games\n\n[[edit]]\n\n* _Knights of Aegis_ (2017)[[14]][[15]]\n* _Dead Rising 5_ (2018)[[16]]\n\n## See also\n\n[[edit]]\n\n* [Capcom]\n* [List of Capcom subsidiaries]\n\n## Notes\n\n[[edit]]\n\n1. [Jump up to: 1][2][3][4]Additional work, development support, and co-developed by [Capcom]\n2. [Jump up to: 1][2]Additional work, development support, and co-developed by [Microsoft Studios]\n\n## References\n\n[[edit]]\n\n1. [Jump up to: 1][2][\"Company Homepage\"]. Capcom Vancouver. Archived from [the original] on 2012-09-19. Retrieved 2012-09-21.\n2. [↑][\"Capcom Group\"]. _CAPCOM Investor Relations_. CAPCOM CO., LTD.\n3. [↑]Jasper, Pieter (June 8, 2020). [\"Dead Rising 4 was supposed to be a The Last of Us competitor – the story on Capcom Vancouver unveiled\"]. _XboxEra_. Retrieved August 4, 2020.\n4. [↑]Johnny Minkley (2008-11-07). [\"Blue Castle making Dead Rising 2\"]. Archived from [the original] on 2008-12-16. Retrieved 2008-11-07.\n5. [↑]Brian Crecente (2008-07-09). [\"Dead Rising 2: Dead Rising 2 Set in Vegas?\"]. Kotaku. Archived from [the original] on July 10, 2008.\n6. [↑][\"Blue Castle Games - Games under development\"]. Blue Castle Games. Archived from [the original] on 2008-09-09. Retrieved 2008-09-10.\n7. [↑][\"Capcom buys Blue Castle Games\"].\n8. [↑][\"Capcom Buys Dead Rising 2 Dev Blue Castle Games\"].\n9. [↑][\"2K Sports - The BIGS\"]. 2K Sports. Archived from [the original] on 2008-09-13. Retrieved 2008-09-10.\n10. [↑][\"2nd Annual ELANS Winners\"]. ELAN Awards. 2008-02-15.\n11. [↑]Sarkar, Samit (16 June 2014). [\"Street Fighter producer Yoshinori Ono resigns from Capcom Vancouver (update)\"]. _[Polygon] \"Polygon (website)\")_. [Vox Media]. Retrieved 14 August 2022.\n12. [↑]Tolito, Stephan (September 18, 2018). [\"Dead Rising Studio Capcom Vancouver Shuts Down\"]. _[Kotaku]_. Retrieved September 18, 2018.\n13. [↑]Arif, Shabana (September 18, 2018). [\"Capcom Expects To Lose $40 Million After Cancelling Dead Rising Studio's Games\"]. _[IGN]_. Retrieved September 18, 2018.\n14. [↑][\"Capcom Vancouver Cancelled Games\"]. _Siliconera_. 2020-06-07. Retrieved 2020-08-18.\n15. [↑][\"Knights of Aegis, Broken Horizon and Lost Star, cancelled Capcom Vancouver's games\"]. _GamesFreezone_. 2017-02-10. Retrieved 2020-08-18.\n16. [↑][\"Dead Rising 5 Development Detailed by Game History Secrets\"]. _Siliconera_. 2020-06-07. Retrieved 2020-08-04.\n\n## External links\n\n[[edit]]\n\n* [Official website]\n\n| show * [v] * [t] * [e] [Capcom] |\n| - |\n| [Employees] | | Current | * [Shinkiro] * [Jun Takeuchi] * [Shu Takumi] * [Ryozo Tsujimoto] | | - | | Former | * [Yoshino Aoki] * [Harumi Fujita] * [Yasuaki Fujita] * [Tokuro Fujiwara] * [Noritaka Funamizu] * [Atsushi Inaba] * [Keiji Inafune] * [Hideaki Itsuno] * [Akari Kaida] * [George Kamitani] * [Hideki Kamiya] * [Akira Kitamura] * [Hiroyuki Kobayashi] \"Hiroyuki Kobayashi (producer)\") * [Manami Matsumae] * [Shinji Mikami] * [Naoshi Mizuta] * [Kinu Nishimura] * [Akira Nishitani] * [Takashi Nishiyama] * [Yoshiki Okamoto] * [Yoshinori Ono] \"Yoshinori Ono (game producer)\") * [Tetsuya Shibata] * [Yoko Shimomura] * [Noboru Sugimura] * [Sawaki Takeyasu] * [Akira Yasuda] | |\n| [Franchises] | * _[Ace Attorney]_ * _[Bionic Commando]_ * _[Breath of Fire]_ * _[Commando] \"Commando (video game)\")_ * _[Darkstalkers]_ * _[Dead Rising]_ * _[Devil May Cry]_ * _[Dino Crisis]_ * _[Dragon's Dogma]_ * _[El Dorado Gate]_ * _[Final Fight]_ * _[Ghosts 'n Goblins]_ * _[Lost Planet]_ * _[Marvel vs. Capcom]_ * _[Mega Man]_ * _[Monster Hunter]_ * _[Onimusha]_ * _[Resident Evil]_ * _[Sengoku Basara]_ * _[Street Fighter]_ * _[Strider] \"Strider (1989 arcade game)\")_ * _[Viewtiful Joe]_ |\n| [Subsidiaries] | * [Capcom Vancouver] * [Clover Studio] * [Flagship] \"Flagship (company)\") * [K2] \"K2 (video game company)\") |\n| Technology | * [MT Framework] * [RE Engine] |\n| Rela",
+        "https://deadrising.fandom.com/wiki/Capcom_Vancouver": "Title: Capcom Vancouver\n\nURL Source: https://deadrising.fandom.com/wiki/Capcom_Vancouver\n\nMarkdown Content:\n[]\n\n[Sign In]\n\n[Create a Free Account]\n\n[]\n\n[Dead Rising Wiki]\n* Explore  \n\n  * [Main Page]\n  * [Discuss]\n  * [All Pages]\n  * [Community]\n  * [Interactive Maps]\n  * [Recent Blog Posts]\n\n* [Dead Rising 4] \n\n  * [Locations]\n  * [Cases]\n  * [Weapons]\n  * [Combo Weapons]\n  * [Vehicles]\n\n* [Dead Rising] \n\n  * [Main Series]\n\n    * [Dead Rising]\n    * [Dead Rising 2: Case Zero]\n    * [Dead Rising 2]\n    * [Dead Rising 2: Case West]\n    * [Dead Rising 3]\n    * [Dead Rising 4]\n\n  * [Non-Canon]\n\n    * [Dead Rising: Chop Till You Drop]\n    * [Dead Rising 2: Off the Record]\n\n  * [Film]\n\n    * [Zombrex: Dead Rising Sun]\n    * [Dead Rising: Watchtower]\n    * [Dead Rising: Endgame]\n\n* [Characters] \n\n  * [Dead Rising 4]\n\n    * [Frank West]\n    * [Vick]\n    * [Brad Park]\n    * [Fontana]\n    * [Calder]\n\n  * [Dead Rising 3]\n\n    * [Nick Ramos]\n    * [Annie]\n    * [Rhonda]\n    * [Diego]\n    * [Gary]\n    * [Red]\n    * [Marian Mallon]\n    * Gen. John Hemlock \n\n  * [Case West]\n\n    * [Frank West]\n    * [Chuck Greene]\n    * [Isabela Keyes]\n    * [Marian Mallon]\n    * [Harjit Singh]\n\n  * [Case Zero]\n\n    * [Chuck Greene]\n    * [Katey Greene]\n    * Jeb Wright \n\n  * [Dead Rising 2]\n\n    * [Chuck Greene]\n    * [Katey Greene]\n    * [Stacey Forsythe]\n    * [Tyrone King]\n    * [The Twins]\n    * [Rebecca Chang]\n\n  * [Dead Rising]\n\n    * [Frank West]\n    * [Otis Washington]\n    * [Carlito Keyes]\n    * [Isabela Keyes]\n    * [Brad Garrison]\n    * [Jessica McCarney]\n    * [Brock Mason]\n\n* [Weapons] \n\n  * [Dead Rising 4]\n  * [Dead Rising 3]\n  * [Case Zero]\n  * [Case West]\n  * [Dead Rising 2]\n  * [Dead Rising]\n\n[][]\n\n[Sign In]\n\n Don't have an account? \n\n[Create a Free Account]\n\n* * *\n\n[Sign In]\n\n[Create a Free Account]\n\n[Home]\n\nExplore\n\n[Saved]\n\n[Progress]\n\nHistory\n\n[Utilities]\n\n[Cross Connect]\n\nSettings\n\nMore\n\n Advertisement \n\n[Skip to content]\n\n[![Image 1: Dead Rising Wiki]]\n\n[Dead Rising Wiki]\n\n5,978\n\npages\n\n[][]\n\n* Explore  \n\n  * [Main Page]\n  * [Discuss]\n  * [All Pages]\n  * [Community]\n  * [Interactive Maps]\n  * [Recent Blog Posts]\n\n* [Dead Rising 4] \n\n  * [Locations]\n  * [Cases]\n  * [Weapons]\n  * [Combo Weapons]\n  * [Vehicles]\n\n* [Dead Rising] \n\n  * [Main Series]\n\n    * [Dead Rising]\n    * [Dead Rising 2: Case Zero]\n    * [Dead Rising 2]\n    * [Dead Rising 2: Case West]\n    * [Dead Rising 3]\n    * [Dead Rising 4]\n\n  * [Non-Canon]\n\n    * [Dead Rising: Chop Till You Drop]\n    * [Dead Rising 2: Off the Record]\n\n  * [Film]\n\n    * [Zombrex: Dead Rising Sun]\n    * [Dead Rising: Watchtower]\n    * [Dead Rising: Endgame]\n\n* [Characters] \n\n  * [Dead Rising 4]\n\n    * [Frank West]\n    * [Vick]\n    * [Brad Park]\n    * [Fontana]\n    * [Calder]\n\n  * [Dead Rising 3]\n\n    * [Nick Ramos]\n    * [Annie]\n    * [Rhonda]\n    * [Diego]\n    * [Gary]\n    * [Red]\n    * [Marian Mallon]\n    * Gen. John Hemlock \n\n  * [Case West]\n\n    * [Frank West]\n    * [Chuck Greene]\n    * [Isabela Keyes]\n    * [Marian Mallon]\n    * [Harjit Singh]\n\n  * [Case Zero]\n\n    * [Chuck Greene]\n    * [Katey Greene]\n    * Jeb Wright \n\n  * [Dead Rising 2]\n\n    * [Chuck Greene]\n    * [Katey Greene]\n    * [Stacey Forsythe]\n    * [Tyrone King]\n    * [The Twins]\n    * [Rebecca Chang]\n\n  * [Dead Rising]\n\n    * [Frank West]\n    * [Otis Washington]\n    * [Carlito Keyes]\n    * [Isabela Keyes]\n    * [Brad Garrison]\n    * [Jessica McCarney]\n    * [Brock Mason]\n\n* [Weapons] \n\n  * [Dead Rising 4]\n  * [Dead Rising 3]\n  * [Case Zero]\n  * [Case West]\n  * [Dead Rising 2]\n  * [Dead Rising]\n\n## Contents\n\n* [1 History]\n* [2 Titles]\n* [3 Trivia]\n* [4 References]\n* [5 External links]\n\n[][]\n\nin:[Organizations], [Companies]\n\n# Capcom Vancouver\n\n[][Sign In to Save Save][Edit]\n\n* [History]\n* [Purge]\n* [Talk (0)]\n\n![Image 2: Wikipedia-logo]\n\n This page uses [Creative Commons licensed] content from [Wikipedia] ([view authors]).\n[![Image 3: Capcom Vancouver's logo.]]\n\nCapcom Vancouver's logo.\n\n**Capcom Vancouver**, formerly known as **Blue Castle Games**, was a third-party developer of video games.\n\nThe company is the creator of several successful baseball video games, including _The BIGS_ and _The Bigs 2_. They also created the sequel to [_Dead Rising_], [_Dead Rising 2_][[1]][[2]], along with _[Dead Rising 2: Case Zero]_, _[Dead Rising 2: Case West],_ and _[Dead Rising 2: Off the Record]_.[[3]] A Capcom staff member explained that Blue Castle was picked for _Dead Rising 2_ because they had an emulator to make more zombies on screen.[[4]] Blue Castle Games was officially acquired by [Capcom] after the success of _Dead Rising 2_, under the name Capcom Vancouver. The company developed _[Dead Rising 3]_ and _[Dead Rising 4]_.\n\nThe company was shut down on September 18, 2018.\n\n- [x] \n\n## Contents\n\n* [1 History]\n* [2 Titles]\n* [3 Trivia]\n* [4 References]\n* [5 External links]\n\n## History[[]]\n\n[![Image 4: Old Blue Castle Games' logo.]]\n\nOld Blue Castle Games' logo.\n\nBlue Castle Games was formed on July 4, 2005, in Burnaby, British Columbia, Canada, by three core founders with thirty five years of combined video game experience. Starting with only twelve staff and one game (_The BIGS_[[5]]), the company has grown to 170 people with 4 shipped titles. In February 2008, Blue Castle Games won the award for Best New Video Game Company at the 2008 Elan Awards for The BIGS, in a tie with another local Vancouver company.[[6]] A wide number of developers in Blue Castle Games were formerly of EA Games.\n\n## Titles[[]]\n\nSince the company’s inception, Blue Castle Games has shipped four products with multiple SKUs. As of 2010, according to one of their recruitment pages, Blue Castle is also working on \"an unannounced Action project\".[[7]]\n\n| Game Name | Publisher | Ship Date | Platforms |\n| - | - | - | - |\n| _The Bigs_ | 2K Sports | June 2007 | PS2, PS3, PSP, Xbox 360, and Wii |\n| _Major League Baseball Front Office Manager_ | 2K Sports | January 2009 | PS3, Xbox 360 and PC |\n| _The Bigs 2_ | 2K Sports | July 7, 2009 | PS2, PS3, PSP, Xbox 360, and Wii |\n| _[Dead Rising 2: Case Zero]_ | [Capcom] | August 31, 2010 | Xbox 360 |\n| _[Dead Rising 2]_ | [Capcom] | September 28, 2010 | PS3, Xbox 360, PC, Xbox One and PS4 |\n| _[Dead Rising 2: Case West]_ | [Capcom] | December 27, 2010 | Xbox 360 |\n| _[Dead Rising 2: Off the Record]_ | [Capcom] | October 11, 2011 | PS3, Xbox 360, PC, Xbox One and PS4 |\n| _[Dead Rising 3]_ | Microsoft | November 22, 2013 | Xbox One and PC |\n| _[Dead Rising 4]_ | Microsoft | December 6, 2016 | Xbox One, PC and PS4 |\n\n## Trivia[[]]\n\n* Capcom Vancouver's studio is on a road called \"Still Creek Drive\", and they are located next to a small creek that runs across the road. This is possibly why they named the _[Case Zero]_ town \"[Still Creek]\".[_[Verification needed]_]\n\n## References[[]]\n\n1. [↑]Johnny Minkley (2008-11-07). [\"Blue Castle making Dead Rising 2\"].\n2. [↑]Brian Crecente (2008-07-09). [\"Dead Rising 2: Dead Rising 2 Set in Vegas?\"]. Kotaku.\n3. [↑][\"Blue Castle Games - Games under development\"]. Blue Castle Games. Retrieved 2008-09-10.\n4. [↑]Kollar, Phil. [Special Edition Podcast: Dead Rising 2], _gameinformer_, (May 18, 2010).\n5. [↑][\"2K Sports - The BIGS\"]. 2K Sports. Retrieved 2008-09-10.\n6. [↑][\"2nd Annual ELANS Winners\"]. ELAN Awards (2008-02-15).\n7. [↑][\"unannounced Action project\"]. Blue Castle Games (2010-05-27).\n\n## External links[[]]\n\n* [Official website]\n\n Categories \n\n* [Categories]: \n* [Organizations]\n* [Companies]\n\n Community content is available under [CC-BY-SA] unless otherwise noted. \n\n More Fandoms \n\n* [Horror]\n\nDiscussions on this wiki\n\nJoin the conversation\n\nSign in to read what others are saying and share your thoughts.\n\n[SIGN IN]\n\nDon't have account?[Register now]\n\n Advertisement \n\n## New to Fandom? Let's make it official.\n\nCreate your free account and dive into the worlds you love with fans who love them too.\n\n[Continue with Email]\n\nBy continuing, you agree to Fandom's [Terms of Use] and [Privacy Policy].\n\n## Recent Images\n\n[]\n\n* [![Image 5: DR2 w leaf rake.png]])### [Leaf Rake (Dead Rising 2)])5 hours ago  \n* [![Image 6: Sloth IMG 9854.jpeg]]### [Theodore \"Teddy\" Lagerfeld Jr.]a day ago  \n* [![Image 7: DR2 w pipe.png]])### [Lead Pipe (Dead Rising 2)])2 days ago  \n\n Advertisement \n\n Advertisement \n\n Advertisement \n\n## [![Image 8: Fandom logo]]\n\n### Explore properties\n\n* [Fandom]\n* [Fanatical]\n* [GameSpot]\n* [Metacritic]\n* [TV Guide]\n* [Honest Entertainment]\n\n### Follow Us\n\n* []\n* []\n* []\n* []\n* []\n\n### Overview\n\n* [What is Fandom?]\n* [Essentials]\n* [About]\n* [Careers]\n* [Press]\n* [Contact]\n* [Terms of Use]\n* [Privacy Policy]\n* [Digital Services Act]\n* [Global Sitemap]\n* [Local Sitemap]\n* Cookie Preferences\n\n### Community\n\n* [Community Central]\n* [Support]\n* [Help]\n* [Accessibility Statement]\n\n### Advertise\n\n* [Media Kit]\n* [Contact]\n\n### Fandom Apps\n\n Take your favorite fandoms with you and never miss a beat. ![Image 9: Fandom App logo]\n* [![Image 10: Store icon]]\n* [![Image 11: Store icon]]\n\nDead Rising Wiki is a Fandom Games Community.\n\n View Mobile Site \n\n[Search this wiki]\n\n[Search all wikis]\n\n[]\n\n[]\n\n[]\n\n![Image 12]![Image 13]![Image 14]![Image 15]![Image 16]![Image 17]![Image 18]![Image 19]![Image 20]![Image 21]![Image 22]![Image 23]![Image 24]![Image 25]\n\n![Image 26: Company Logo]\n\n## Cookie Preferences\n\nWhen you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience. Click on the different category headings to find out more. For more information about the First and Third Party Cookies used please follow this link. \n[Privacy Policy]\n\nAllow All\n### Categories & Purposes List\n\n#### Strictly Necessary Cookies\n\nThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount"
+      }
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Capcom Vancouver\\\" \\\"Still Creek Drive\\\" Burnaby address\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Capcom Vancouver | Dead Rising Wiki | Fandom",
+          "url": "https://deadrising.fandom.com/wiki/Capcom_Vancouver",
+          "snippet": "Capcom Vancouver's studio is on a road called \"Still Creek Drive\", and they are located next to a small creek that runs across the road. This is possibly ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Capcom Game Studio Vancouver, Inc.",
+          "url": "https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/",
+          "snippet": "Capcom Vancouver. 200-4401 Still Creek Drive. Burnaby, BC V5C 6G9 Canada. Old company contact information and location (2008-2010): ... Burnaby, British Columbia ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Capcom Vancouver",
+          "url": "https://echai.ventures/grid/vancouver/capcom-vancouver",
+          "snippet": "Capcom Vancouver. Gaming in Burnaby. Open in Maps → · Website → · Open on ... Regus Still Creek Drive Coworking space in Burnaby 830 m · D-Wave Unlike other ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Capcom Vancouver (Closed) - Burnaby, British Columbia",
+          "url": "http://wikimapia.org/9256223/Capcom-Vancouver-Closed",
+          "snippet": "Capcom Vancouver (Closed) is located in Burnaby, British Columbia. Capcom Vancouver (Closed) - Burnaby, British Columbia on the map ... Still Creek Drive, 4401.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Virtual Vancouver: Fictional worlds generate real cash in B.C.",
+          "url": "https://vancouversun.com/entertainment/local-arts/virtual-vancouver-fictional-worlds-generate-real-cash-in-b-c",
+          "snippet": "At the offices of Capcom Vancouver on Still Creek Drive in Burnaby, studio director Joe Nickolls is still reeling from trying out the ...",
+          "date": "Jul 1, 2016"
+        },
+        {
+          "id": 6,
+          "title": "Still Creek Drive - Burnaby, British Columbia",
+          "url": "https://wikimapia.org/street/146620/Still-Creek-Drive",
+          "snippet": "The map created by people like you! Still Creek Drive (Burnaby, British Columbia) ... 4401 - Capcom Vancouver (Closed) · 4451 - Destination Toyota · 4500 - Costco ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Our Crows and Their Daily Commute : r/vancouver",
+          "url": "https://www.reddit.com/r/vancouver/comments/1gkyk5k/our_crows_and_their_daily_commute/",
+          "snippet": "You should watch that youtube short film on Crows of Still Creek Drive ... Btw still creek was were Capcom Vancouver studio was until 2017.",
+          "date": "1 year ago"
+        },
+        {
+          "id": 8,
+          "title": "Veemo · Vancouver Startup Grid",
+          "url": "https://echai.ventures/grid/vancouver/veemo",
+          "snippet": "Regus Still Creek Drive Coworking space in Burnaby 1.2 km · Capcom Vancouver Gaming in Burnaby 1.2 km · Regus Coworking space in Burnaby 1.2 km. More Logistics ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Game Developer - June/July 2011",
+          "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_JuneJuly_2011.pdf",
+          "snippet": "4401 Still Creek Drive, Suite 200. Burnaby, BC V5C 6G9 ... Capcom Vancouver . ... POSTMASTER: Send address changes to Game Developer, P.O. Box 1274, Skokie, IL ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Regus · Vancouver Startup Grid",
+          "url": "https://echai.ventures/grid/vancouver/regus-40",
+          "snippet": "Capcom Vancouver Gaming in Burnaby 10 m · SkyBox Labs We Build World ... Regus Still Creek Drive Coworking space in Burnaby 830 m · D-Wave Unlike other ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import json, urllib.request\\n\\ndef geocode(q):\\n    url = \\\"https://nominatim.openstreetmap.org/search?\\\" + urllib.parse.urlencode({\\\"q\\\": q, \\\"format\\\": \\\"json\\\", \\\"limit\\\": 3})\\n    req = urllib.request.Request(url, headers={\\\"User-Agent\\\": \\\"geo-test/1.0\\\"})\\n    with urllib.request.urlopen(req, timeout=20) as r:\\n        return json.loads(r.read().decode())\\n\\nimport urllib.parse\\nfor q in [\\\"4401 Still Creek Drive, Burnaby, BC\\\", \\\"Still Creek Drive, Burnaby, British Columbia\\\"]:\\n    try:\\n        res = geocode(q)\\n        for item in res:\\n            print(q, \\\"->\\\", item.get(\\\"lat\\\"), item.get(\\\"lon\\\"), item.get(\\\"display_name\\\")[:90])\\n    except Exception as e:\\n        print(\\\"ERROR\\\", q, e)\\n\"}",
+      "result": {
+        "stdout": "ERROR 4401 Still Creek Drive, Burnaby, BC <urlopen error [Errno -3] Temporary failure in name resolution>\nERROR Still Creek Drive, Burnaby, British Columbia <urlopen error [Errno -3] Temporary failure in name resolution>",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "turn": 4,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"http://wikimapia.org/9256223/Capcom-Vancouver-Closed\", \"https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\"]\n\n}",
+      "result": {
+        "http://wikimapia.org/9256223/Capcom-Vancouver-Closed": "Title: Capcom Vancouver (Closed) - Wikimapia\n\nURL Source: http://wikimapia.org/9256223/Capcom-Vancouver-Closed\n\nMarkdown Content:\n![Image 1]  \nWikimapia is a multilingual open-content collaborative map, where anyone can create place tags and share their knowledge.\n\n![Image 2: Wikimapia]The map created by people like you!\n\n# Capcom Vancouver (Closed) (Burnaby, British Columbia)\n\nCanada / British Columbia / Vancouver / Burnaby, British Columbia / [Still Creek Drive], 4401 [World] / [Canada] / [British Columbia] / [Vancouver] World / Canada / British Columbia / Greater Vancouver \n\nUpload a photo ![Image 3]\n\n* * *\n\n![Image 4]![Image 5]![Image 6]![Image 7]![Image 8]![Image 9]![Image 10]![Image 11]![Image 12]\n\n Capcom Vancouver (Closed) is located in Burnaby, British Columbia. Capcom Vancouver (Closed) - Burnaby, British Columbia on the map. \n\n[Add place (company, shop, etc.) to this building]\n\n**Wikipedia article:**\n\n**Nearby cities:**\n\n**Coordinates:** 49°15'37\"N  123°0'27\"W\n\n Add your comment in english \n\nAdd comment for this object\n\n Your comment: Post comment\n\n* [Similar places]\n* [Nearby places]\n* [Nearby cities]\n\n* [Green Tree Village]1.2 km\n* [Get Movers Surrey Moving Company]3.7 km\n* [Former Safeway DC]6.6 km\n* [Queens Park]8.3 km\n* [Queensboro Division sawmill (now closed)]8.4 km\n* [Former Canfor Plywood & Hardboard Division]10 km\n* [Exit - Cliveden Avenue and Highway 91]10 km\n* [Exit 12 - Highway 91A and Highway 91]10 km\n* [IDC Distribution]11 km\n* [Con-Force precast concrete products]11 km\n\n* [Exit 29 - Willingdon Avenue and Highway 1]0.4 km\n* [Still Creek Conservation Area]0.7 km\n* [Thornton Tunnel (South End)]1.3 km\n* [British Columbia Institute of Technology]1.3 km\n* [Vancouver Film Studios]1.4 km\n* [Broadway Tech Centre]2.5 km\n* [Garden Village]2.6 km\n* [Renfrew-Collingwood]2.8 km\n* [Hastings-Sunrise]3.1 km\n* [Deer Lake Park]3.3 km\n\n* []7.8 km\n* []15 km\n* []20 km\n* []34 km\n* []40 km\n* []41 km\n* []65 km\n* []260 km\n* []657 km\n* []812 km\n\n[Exit 29 - Willingdon Avenue and Highway 1][Still Creek Conservation Area][Thornton Tunnel (South End)][British Columbia Institute of Technology][Vancouver Film Studios][Broadway Tech Centre][Garden Village][Renfrew-Collingwood][Hastings-Sunrise][Deer Lake Park]\n\n* Languages: \n* [en]\n\nThis article was last modified 7 years ago\n\n×\n### Post comment\n\n Log in with Facebook\n\n Log in with VK\n\nor continue as guest\n\nWikimapia username\n\nYour name Please enter your name Post comment\n\n![Image 13]\n",
+        "https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/": "Title: Just a moment...\n\nURL Source: https://www.mobygames.com/company/9878/capcom-game-studio-vancouver-inc/\n\nWarning: This page maybe not yet fully loaded, consider explicitly specify a timeout.\nWarning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.\n\nMarkdown Content:\n![Image 1: Icon for www.mobygames.com]\n# www.mobygames.com\n\n## Performing security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\n## Verification successful. Waiting for www.mobygames.com to respond\n\nRay ID: `a4759d2c79180a9f`\n\nPerformance and Security by [Cloudflare][Privacy]\n"
+      }
+    },
+    {
+      "turn": 4,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"4401 Still Creek Drive\\\" Burnaby coordinates latitude longitude\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "A.9 Proximity Installation Permit Application Form",
+          "url": "https://docs.transmountain.com/PA-Brochures/A.9-Proximity-Installation-Permit-Application-Form_Aug-2023.pdf",
+          "snippet": "GPS Coordinates: Lat: Long: Application Drawing(s) No. (or ... 4401 Still Creek Drive. #300. Burnaby, BC, V5C 6G9. Attention: Permit ...",
+          "date": "Aug 4, 2023"
+        },
+        {
+          "id": 2,
+          "title": "Finding Low-Energy Conformations of Lattice Protein Models ...",
+          "url": "https://dash.harvard.edu/bitstreams/7312037c-bb1b-6bd4-e053-0100007fdf3b/download",
+          "snippet": "by A Perdomo-Ortiz · 2012 · Cited by 529 — ... 4401 Still Creek Drive, Burnaby,. British Columbia V5C 6G9, Canada. (Dated: 26 April 2012) a)Corresponding author's e-mail: aspuru@chemistry ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Répertoire spatial canadien",
+          "url": "https://epe.lac-bac.gc.ca/100/202/301/repertoire_spatial_cdn/2004/04-04.pdf?nodisclaimer=1",
+          "snippet": "100-4401 Still Creek Drive. Burnaby (Colombie-Britannique) V5C 6G9. Canada. Telephone. (604) 292.9000. Toll Free. (877) 597-6206. Fax. (604) 292.9100. NovAtel ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Efficient Encodings for Constraint Satisfaction Programming a",
+          "url": "https://dash.harvard.edu/bitstreams/7312037c-cc89-6bd4-e053-0100007fdf3b/download",
+          "snippet": "by RJ Babbush · 2013 · Cited by 96 — 3D-Wave Systems, Inc., 100-4401 Still Creek Drive, Burnaby,. British Columbia V5C 6G9, Canada. ∗Corresponding author. Electronic address ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "A.30-Application-Form-Municipal-Roadways- ...",
+          "url": "https://docs.transmountain.com/A.30-Application-Form-Municipal-Roadways-Canada-Only.pdf",
+          "snippet": "GPS Coordinates: Lat: Long: Application Drawing(s) No. (or sketch) ... 4401 Still Creek Drive. Burnaby, BC V5C 6G9. Attention: Permit Technician. Toll ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Finding low-energy conformations of lattice protein models ...",
+          "url": "https://www.researchgate.net/publication/230666631_Finding_low-energy_conformations_of_lattice_protein_models_by_quantum_annealing",
+          "snippet": "Systems, Inc., 100-4401 Still Creek Drive, Burnaby, British Columbia V5C 6G9, Canada. Lattice protein folding models are a cornerstone of computational ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Newspaper Legal Notices November 2023",
+          "url": "https://www.wcrinc.com/wp-content/uploads/2023/12/2023_11_NovLegalNotices.pdf",
+          "snippet": "Location: parcels P119008 and P27079, its latitude/longitude is: 48.4231, -122.2993, its ... 4401 Still Creek Drive,. Burnaby, British Columbia, ...",
+          "date": "Dec 14, 2023"
+        },
+        {
+          "id": 8,
+          "title": "Canadian Space Directory",
+          "url": "https://epe.lac-bac.gc.ca/100/202/301/cdn_space_directory/2003/03-06.pdf?nodisclaimer=1",
+          "snippet": "100-4401 Still Creek Drive. Burnaby, British Columbia V5C 6G9. Canada. Telephone (604) 292.9000. Fax. (604) 292.9100. Toll Free. (877) 597-6206. NovAtel Inc ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Répertoire spatial canadien",
+          "url": "https://epe.lac-bac.gc.ca/100/202/301/repertoire_spatial_cdn/2005/csd_jn05f.pdf?nodisclaimer=1",
+          "snippet": "300 - 4401 Still Creek Drive. Burnaby (Colombie-Britannique) V5C 6G9. Canada. Telephone. (604) 292.9000. Toll Free. 1.800.644.4562. Fax. (604) 292.9100.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Canadian Space Directory",
+          "url": "https://epe.lac-bac.gc.ca/100/202/301/cdn_space_directory/2004/04-10.pdf",
+          "snippet": "100-4401 Still Creek Drive. Burnaby, British Columbia V5C 6G9. Canada. Telephone (604) 292.9000. Fax. (604) 292.9100. Toll Free. (877) 597-6206.",
+          "date": "Oct 1, 2004"
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2, R=6371.0088):\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2-lat1)\\n    dlmb = math.radians(lon2-lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Los Angeles city center (per Wikipedia / City Hall reference)\\nla = (34.0522, -118.2437)\\n\\n# Former Capcom Vancouver HQ: 4401 Still Creek Drive, Burnaby, BC (Wikimapia: 49°15'37\\\"N 123°0'27\\\"W)\\nhq = (49 + 15/60 + 37/3600, -(123 + 0/60 + 27/3600))\\nprint(\\\"HQ coords:\\\", hq)\\n\\nd_hq = haversine(*la, *hq)\\nprint(\\\"LA -> Capcom Vancouver former HQ (Burnaby): %.2f km -> %d km\\\" % (d_hq, round(d_hq)))\\n\\n# Cross-check with generic Burnaby city centre and downtown Vancouver for sensitivity\\nburnaby = (49.2488, -122.9805)\\nvantown = (49.2827, -123.1207)\\nprint(\\\"LA -> Burnaby city centre: %.1f km\\\" % haversine(*la, *burnaby))\\nprint(\\\"LA -> downtown Vancouver: %.1f km\\\" % haversine(*la, *vantown))\\n\"}",
+      "result": {
+        "stdout": "HQ coords: (49.26027777777778, -123.0075)\nLA -> Capcom Vancouver former HQ (Burnaby): 1735.85 km -> 1736 km\nLA -> Burnaby city centre: 1734.1 km\nLA -> downtown Vancouver: 1740.4 km",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 116,
+      "id": "gen-1791467273-qBHFWZ6RZ8vMafakZ9S9",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 17195,
+        "completion_tokens": 708,
+        "total_tokens": 17903,
+        "cost": 0.00291201,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00291201,
+          "upstream_inference_prompt_cost": 0.00257925,
+          "upstream_inference_completions_cost": 0.00033276
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 629,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 23.036
+    },
+    {
+      "item_id": 116,
+      "id": "gen-1791467300-8jqWIws8I9cqqwnbaBwy",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 19733,
+        "completion_tokens": 545,
+        "total_tokens": 20278,
+        "cost": 0.001054948,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16128,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001054948,
+          "upstream_inference_prompt_cost": 0.000798798,
+          "upstream_inference_completions_cost": 0.00025615
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 449,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 34.627
+    },
+    {
+      "item_id": 116,
+      "id": "gen-1791467357-3lDvs4E6ghVnf9w7RtJW",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 28515,
+        "completion_tokens": 1030,
+        "total_tokens": 29545,
+        "cost": 0.002119942,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 19712,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002119942,
+          "upstream_inference_prompt_cost": 0.001635842,
+          "upstream_inference_completions_cost": 0.0004841
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 807,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 24.745
+    },
+    {
+      "item_id": 116,
+      "id": "gen-1791467383-1gixLRAKYu6PEKD95KrT",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 29631,
+        "completion_tokens": 343,
+        "total_tokens": 29974,
+        "cost": 0.000763812,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 28672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000763812,
+          "upstream_inference_prompt_cost": 0.000602602,
+          "upstream_inference_completions_cost": 0.00016121
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 227,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 34.171
+    },
+    {
+      "item_id": 116,
+      "id": "gen-1791467425-TWcOIVdAJY56jnI89Y2v",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 32511,
+        "completion_tokens": 736,
+        "total_tokens": 33247,
+        "cost": 0.001380522,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 28672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001380522,
+          "upstream_inference_prompt_cost": 0.001034602,
+          "upstream_inference_completions_cost": 0.00034592
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 297,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 21.817
+    },
+    {
+      "item_id": 116,
+      "id": "gen-1791467448-47lN3kbubMZPdrbxo6oz",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 33366,
+        "completion_tokens": 672,
+        "total_tokens": 34038,
+        "cost": 0.000998436,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 32256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000998436,
+          "upstream_inference_prompt_cost": 0.000682596,
+          "upstream_inference_completions_cost": 0.00031584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 231,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 54.992
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Approximately 1,736 km",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 255.09
+}

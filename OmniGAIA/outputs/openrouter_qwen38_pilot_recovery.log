@@ -1,0 +1,82 @@
+2026-10-08 12:44:22,730 INFO Начата задача 2 (Medium)
+2026-10-08 12:44:22,734 INFO Начата задача 3 (Easy)
+2026-10-08 12:44:43,819 INFO Задача 2, шаг 1: web_search
+2026-10-08 12:44:45,844 INFO Задача 2, шаг 1: web_search
+2026-10-08 12:44:54,131 INFO Задача 2, шаг 2: page_browser
+2026-10-08 12:44:55,751 INFO Задача 2, шаг 2: web_search
+2026-10-08 12:44:58,556 WARNING Задача 3: временный сбой OpenRouter HTTP 400, повтор 1/3
+2026-10-08 12:45:16,969 INFO Задача 2, шаг 3: web_search
+2026-10-08 12:45:20,863 INFO Задача 2, шаг 3: web_search
+2026-10-08 12:45:38,369 WARNING Задача 3: временный сбой OpenRouter HTTP 400, повтор 2/3
+2026-10-08 12:45:40,655 INFO Задача 2, шаг 4: page_browser
+2026-10-08 12:45:42,167 INFO Задача 2, шаг 4: web_search
+2026-10-08 12:46:14,351 INFO Задача 2, шаг 5: page_browser
+2026-10-08 12:46:15,646 INFO Задача 2, шаг 5: web_search
+2026-10-08 12:46:23,628 WARNING Задача 3: временный сбой OpenRouter HTTP 400, повтор 3/3
+2026-10-08 12:46:35,903 INFO Задача 2, шаг 6: page_browser
+2026-10-08 12:46:39,541 INFO Задача 2, шаг 6: web_search
+2026-10-08 12:46:50,048 WARNING Задача 2: ошибка провайдера, повтор 1/3
+2026-10-08 12:47:09,470 ERROR Ошибка задачи 3
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 166, in process
+    generated = await asyncio.wait_for(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 244, in run
+    message, usage = await self.client.complete(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 129, in complete
+    raise RuntimeError(f"OpenRouter HTTP {response.status_code}: {detail}")
+RuntimeError: OpenRouter HTTP 400: {"error":{"message":"Provider returned error","code":400,"metadata":{"raw":"data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-dcd81c7e-4d61-9da4-a9f9-8f557d39dfc0\"}\n\n","provider_name":"Alibaba","is_byok":false}},"user_id":"user_3JzvfBNETxKVb7EntXZdb0lIIZv"}
+2026-10-08 12:47:09,471 INFO Прогресс: 1/2; правильных 0; ошибок 1
+2026-10-08 12:47:14,469 INFO Задача 2, шаг 7: web_search
+2026-10-08 12:47:35,412 INFO Задача 2, шаг 7: page_browser
+2026-10-08 12:47:48,518 INFO Задача 2, шаг 8: code_executor
+2026-10-08 12:48:06,615 INFO Прогресс: 2/2; правильных 1; ошибок 1
+{
+  "expected_count": 2,
+  "completed": 1,
+  "judged": 1,
+  "errors": 1,
+  "correct": 1,
+  "pass_at_1": null,
+  "partial_accuracy": 1.0,
+  "by_level": {
+    "Easy": {
+      "count": 0,
+      "correct": 0
+    },
+    "Medium": {
+      "count": 1,
+      "correct": 1
+    },
+    "Hard": {
+      "count": 0,
+      "correct": 0
+    }
+  },
+  "tool_calls": {
+    "web_search": 9,
+    "page_browser": 5,
+    "code_executor": 1
+  }
+}
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 245, in <module>
+    asyncio.run(main())
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 239, in main
+    await run(args, client, items, models)
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 192, in run
+    raise RuntimeError("Прогон содержит ошибки; результаты сохранены. Повторный запуск продолжит обработку.")
+RuntimeError: Прогон содержит ошибки; результаты сохранены. Повторный запуск продолжит обработку.

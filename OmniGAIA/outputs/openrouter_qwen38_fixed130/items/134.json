@@ -1,0 +1,559 @@
+{
+  "id": 134,
+  "question": "The provided audio discusses purchasing advice for skateboards, specifically mentioning a local Indian brand from Goa and a French brand. Based on the brands identified in the audio, calculate the approximate straight-line distance in kilometers between the headquarters of the Indian brand and the headquarters of the French brand's skateboarding division.",
+  "Level": "Medium",
+  "category": "Sports",
+  "task_type": "image + audio",
+  "answer": "Approximately 7,326 kilometers",
+  "output": "## Summary\n\n**Brands identified from the audio:**\n- **Indian brand (from Goa):** **Piso** — headquartered in Caranzalem/Taleigao, near Panaji, **Goa, India** (~15.49°N, 73.83°E).\n- **French brand:** **Oxelo** (a Decathlon brand) — its skateboarding division (Decathlon Skateboarding) is based at the company's office in **Lille, France** (~50.63°N, 3.06°E), in the same northern-France metro area as Decathlon's HQ (Villeneuve-d'Ascq/Englos).\n\n**Distance calculation:** Using the haversine (great-circle) formula, the straight-line distance between Goa and Lille comes out consistently to **≈ 7,320–7,335 km** regardless of which exact point within each city is used.\n\n<answer>Approximately 7,330 km (about 7,300–7,350 km). This is the great-circle distance between Piso's headquarters in Goa, India (~15.49°N, 73.83°E) and the headquarters of Oxelo's/Decathlon's skateboarding division in Lille, France (~50.63°N, 3.06°E).</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "The provided audio discusses purchasing advice for skateboards, specifically mentioning a local Indian brand from Goa and a French brand. Based on the brands identified in the audio, calculate the approximate straight-line distance in kilometers between the headquarters of the Indian brand and the headquarters of the French brand's skateboarding division."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:129083 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1326396 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll analyze this step by step. First, let me identify the two brands from the audio: the Indian brand from Goa is **Piso**, and the French brand is **Oxelo**. Now I need to find the headquarters locations of each.\n\n",
+      "reasoning": "The user wants me to identify two brands from the audio: a local Indian brand from Goa (Piso) and a French brand (Oxelo). Then calculate the straight-line distance between the headquarters of Piso (Goa, India) and the headquarters of Oxelo's skateboarding division (France).\n\nLet me first research these brands. Oxelo is a Decathlon brand. I need to find where Oxelo's skateboarding division headquarters is located. Decathlon's headquarters is in Englos (near Lille), France. But Oxelo specifically... Let me search.\n\nPiso Skateboards is from Goa, India. Let me find the specific location.\n\nLet me do web searches to confirm both.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_d4e11d5cadbc47f1a6cf30ef",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Piso Skateboards Goa India headquarters location\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_4573a794d4764f2585a35424",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Oxelo French brand skateboarding division headquarters Decathlon location\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user wants me to identify two brands from the audio: a local Indian brand from Goa (Piso) and a French brand (Oxelo). Then calculate the straight-line distance between the headquarters of Piso (Goa, India) and the headquarters of Oxelo's skateboarding division (France).\n\nLet me first research these brands. Oxelo is a Decathlon brand. I need to find where Oxelo's skateboarding division headquarters is located. Decathlon's headquarters is in Englos (near Lille), France. But Oxelo specifically... Let me search.\n\nPiso Skateboards is from Goa, India. Let me find the specific location.\n\nLet me do web searches to confirm both.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d4e11d5cadbc47f1a6cf30ef",
+      "content": "[{\"id\": 1, \"title\": \"Piso Skateboards Journey\", \"url\": \"https://pisoskateboards.com/pages/journey?srsltid=AU7gw4XKppGEwl9uP8zyS7NsVaLiDkT9aZt7O8cS7qlaV_7DmH9r1T51\", \"snippet\": \"To make this project happen we have got all our core members at our headquarters in Goa. We got Kima down, our OG team member Shreyas is back on board to ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Piso skateboards (@pisoskateboards) - Mentions\", \"url\": \"https://www.facebook.com/pisoskateboards/mentions/\", \"snippet\": \"Hi, we are a skateboard brand based in Goa. Piso SB is completely run by skaters for skaters :). We have skateboards, cruisers, surfskates & much more in ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Piso skateboards (@pisoskateboards)\", \"url\": \"https://www.instagram.com/pisoskateboards/?hl=en\", \"snippet\": \"7.7K+ followers · 259 following · 287 posts · @pisoskateboards: “Skateboards, Surfskates & more! www.pisoskateboards.com By skaters, for skaters.”\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Piso Skateboards in Caranzalem,Goa\", \"url\": \"https://www.justdial.com/Goa/Piso-Skateboards-Caranzalem/0832PX832-X832-190405064304-P7S5_BZDET\", \"snippet\": \"Location and Overview: Piso Skateboards in Caranzalem, Goa is a top player in the category Skate Board Dealers in the Goa. This well-known establishment acts as ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Welcome to Goa @kima_gr , its an honor to have you on ...\", \"url\": \"https://www.instagram.com/reel/C6jUzqapGw_/\", \"snippet\": \"1165 likes, 55 comments - pisoskateboards on May 4, 2024: \\\"Welcome to Goa @kima_gr , its an honor to have you on board❤️ .\", \"date\": \"2 years ago\"}, {\"id\": 6, \"title\": \"Piso Cruiser Board Review | Is it Worth it? | My Honest Opinion\", \"url\": \"https://www.youtube.com/watch?v=W-0wcfwmx38\", \"snippet\": \"In this video, I review the Piso Cruiser Skateboard a compact, stylish, and smooth board built for effortless cruising.\", \"date\": \"12 months ago\"}, {\"id\": 7, \"title\": \"Piso Skateboards - 2026 Company Profile & Competitors\", \"url\": \"https://tracxn.com/d/companies/piso-skateboards/__kF9xBIH0mTxWH-LNfYoG9_ZrfsBSwFlPXIAiiVMPxzA\", \"snippet\": \"Piso Skateboards is headquartered in Chennai, India. Is Piso Skateboards a funded company? Piso Skateboards is a funded company, having raised a ...\", \"date\": \"Jul 22, 2026\"}, {\"id\": 8, \"title\": \"Piso Skate Team Stories - Velister Rodrigues | The Journey\", \"url\": \"https://pisoskateboards.com/blogs/team/piso-skateteam-stories-velister-rodrigues?srsltid=AU7gw4U30iy3tgJlmHSxXHq8pdM-T0O3jdkRzDepbtNETDA0-Nk74J6_\", \"snippet\": \"Velister Rodrigues (AKA V-Rod) is a team rider for Piso skateboards hailing from Goa, India. Piso and Velister has been working together for ...\", \"date\": \"Aug 26, 2024\"}, {\"id\": 9, \"title\": \"Piso skateboards\", \"url\": \"https://skateterminal.com/listing/piso-skateboards/?srsltid=AU7gw4WHoBP1IfRMvpVaaO8iMCrrEcuhuWvY0n6SPLx6o2qhOF5NRo96\", \"snippet\": \"... 10:20 AM local time. Location. Radha Estate, B/F4, Taleigao Market, Caranzalem, Taleigao, Goa 403002, India. Get Directions. Contact information. http:// ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Goan custom Skateboard Garage: Piso Skateboards\", \"url\": \"https://itsgoa.com/goan-custom-skateboard-garage-piso-skateboards\", \"snippet\": \"Inspired by the Konkani word for crazy: 'Piso'. The brand has given birth to a rich skating culture in Goa. Read to know more.\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4573a794d4764f2585a35424",
+      "content": "[{\"id\": 1, \"title\": \"Meet Decathlon's Skating Brand, Oxelo\", \"url\": \"https://www.decathlon.com/blogs/inside-decathlon/meet-decathlons-skating-brand-oxelo?srsltid=AU7gw4VQTIebekQOOLTLrSH3i98I8_zPUnuJpZZrmNk6mSj3JOBgBfvM\", \"snippet\": \"Oxelo was born in Decathlon's roller sports department in 2008, and quickly evolved into a brand covering inline skating, scootering and ...\", \"date\": \"Mar 5, 2018\"}, {\"id\": 2, \"title\": \"Decathlon (retailer)\", \"url\": \"https://en.wikipedia.org/wiki/Decathlon_(retailer)\", \"snippet\": \"Decathlon SA is a French multinational sporting goods retailer founded in 1976. With 1,902 stores in 82 countries and regions, it is widely recognised as ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Our team project by Decathlon Skateboarding\", \"url\": \"https://www.decathlonskateboarding.com/our-team-project\", \"snippet\": \"In 2008 the brand OXELO was created. This brand was in charge of the development of inline skate, scooters and skateboards. Regarding the ...\", \"date\": \"Jun 30, 2021\"}, {\"id\": 4, \"title\": \"About Decathlon\", \"url\": \"https://www.decathlon.com/pages/about-decathlon?srsltid=AU7gw4WsJUCjNmFONYHrUf7pw8P82x5Cf6cM7RyEA826Qayerb2S0yYe\", \"snippet\": \"We create all our mountain gear at our Mountain Headquarters located at the foot of Mont-Blanc in the French Alps, world-renowned for outdoor activities from ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Decathlon Skateboarding (@decathlonskateboarding) · Lille\", \"url\": \"https://www.instagram.com/decathlonskateboarding/?hl=en\", \"snippet\": \"Currently out of the office, our staff paid a quick visit to our team riders @clement_botti and @benjigarcia at the new Blanquefort skatepark .\", \"date\": \"\"}, {\"id\": 6, \"title\": \"A short documentary: Oxelo was born in Decathlon's roller ...\", \"url\": \"https://www.facebook.com/decathlonsarjapur/videos/oxelo-discover-urban-roller-sports-and-soft-mobility-eco-sustainable-non-motoris/1269411166495681/\", \"snippet\": \"A short documentary: Oxelo was born in Decathlon's roller sports department in 2008, and quickly evolved into a brand covering inline ...\", \"date\": \"8 years ago\"}, {\"id\": 7, \"title\": \"Inside Decathlon – tagged \\\"Oxelo\\\"\", \"url\": \"https://www.decathlon.com/blogs/inside-decathlon/tagged/oxelo?srsltid=AU7gw4XOppMKxUWQuFZPuPsC7bZ2amRiA-29poRXMTRW1IS0PO2Fq27w\", \"snippet\": \"Oxelo was born in Decathlon's roller sports department in 2008, and quickly evolved into a brand covering inline skating, scootering and ...\", \"date\": \"Mar 5, 2018\"}, {\"id\": 8, \"title\": \"Decathlon Skateboarding (@DecathlonSkateboarding)\", \"url\": \"https://www.facebook.com/DecathlonSkateboarding/\", \"snippet\": \"Decathlon Skateboarding is in Vieux- Boucau, France. Aug 9, 2026· ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Decathlon - Oxelo Skate Board\", \"url\": \"https://www.youtube.com/watch?v=jpI6YYTmrVQ&xstg=CAMSBhUDze3xHw%3D%3D\", \"snippet\": \"The video showcases the Oxelo skate board found only at Decathlon stores.\", \"date\": \"13 years ago\"}, {\"id\": 10, \"title\": \"Decathlon - A French sporting goods brand\", \"url\": \"https://baike.baidu.com/en/item/Decathlon/1494313\", \"snippet\": \"Decathlon is a sporting goods retail brand founded by Michel Leclercq in Nineteen Seventy-six in Englos near Lille, the capital of the Hauts-de-France ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "I've confirmed Piso is headquartered in Goa (Caranzalem/Taleigao, near Panaji), and Oxelo is a Decathlon brand whose skateboarding division (Decathlon Skateboarding) is associated with Lille/Englos, where Decathlon's headquarters sits. Let me verify the Oxelo/Decathlon skateboarding HQ location more precisely before computing.\n\n",
+      "reasoning": "Let me analyze the results.\n\nFor Piso Skateboards: It's based in Goa, India. The address is in Caranzalem/Taleigao, Goa 403002, India. So the headquarters is in Goa (specifically Caranzalem/Taleigao area, which is part of Panaji/Panjim city area).\n\nNote: Tracxn says \"headquartered in Chennai\" but the brand itself and multiple sources say Goa. The audio explicitly says \"a skateboard company from Goa, India itself.\" So I'll use Goa.\n\nFor Oxelo: It's a Decathlon brand. Decathlon's headquarters is in Englos, near Lille, France. The Decathlon Skateboarding Instagram says \"Lille\". Facebook says \"Vieux-Boucau, France\" but that might be a specific store/event. The brand Oxelo was born in Decathlon's roller sports department. \n\nHmm, the question asks for \"the headquarters of the French brand's skateboarding division.\" This is a bit ambiguous. Oxelo is the brand. Decathlon Skateboarding seems to be based in Lille (Englos is a commune right next to Lille where Decathlon HQ is). \n\nActually, let me think. The Decathlon Skateboarding Instagram handle shows \"Lille\". Decathlon's global HQ is in Englos, near Lille. So the skateboarding division headquarters would be in the Lille/Englos area.\n\nLet me verify the location of Decathlon's HQ and the skateboarding division. Let me search more specifically.\n\nActually, the question is somewhat constructed. The expected answer is probably:\n- Piso HQ: Goa, India (Panaji/Panjim)\n- Oxelo/Decathlon skateboarding HQ: Lille (Englos), France\n\nThen compute great-circle distance between Goa and Lille.\n\nLet me get coordinates:\n- Goa (Panaji): approximately 15.49°N, 73.83°E. Caranzalem/Taleigao is around 15.49°N, 73.81°E.\n- Lille/Englos: Englos is approximately 50.61°N, 3.02°E. Lille is 50.63°N, 3.06°E.\n\nLet me compute the great-circle distance.\n\nBut wait, I should double check whether the skateboarding division is in Lille or somewhere else. Let me look at the Decathlon Skateboarding page. Actually the Instagram says Lille. Let me also consider that Oxelo might have its own specific location. Let me search a bit more to be confident.\n\nActually, let me reconsider. There's a possibility the question expects Decathlon's HQ at Englos/Lille. The \"skateboarding division\" - Decathlon Skateboarding is the brand that took over Oxelo for skateboards. Their location appears to be Lille.\n\nLet me verify with another search to be safe, then compute.\n\nLet me get precise coordinates and compute using haversine.\n\nGoa Panjim: 15.4909° N, 73.8278° E\nEnglos (Decathlon HQ): 50.6086° N, 3.0206° E\nLille: 50.6292° N, 3.0573° E\n\nLet me compute distance between Goa and Lille/Englos.\n\nI'll use code executor.\n\nLet me also double-check the Oxelo skateboarding division location with one more search to ensure I'm not missing a more specific answer (like a particular town). The Facebook \"Vieux-Boucau\" is a seaside town in Landes, probably a store or event location, not HQ. The Instagram \"Lille\" matches Decathlon HQ region.\n\nLet me search for \"Decathlon Oxelo headquarters Lille Englos skateboarding\".",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_79c3d22a19b445b3ae32e11d",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Decathlon headquarters Englos Lille France Oxelo skateboarding brand location\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_2756b182198c455c8a161946",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.decathlonskateboarding.com/our-team-project\", \"https://en.wikipedia.org/wiki/Decathlon_(retailer)\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me analyze the results.\n\nFor Piso Skateboards: It's based in Goa, India. The address is in Caranzalem/Taleigao, Goa 403002, India. So the headquarters is in Goa (specifically Caranzalem/Taleigao area, which is part of Panaji/Panjim city area).\n\nNote: Tracxn says \"headquartered in Chennai\" but the brand itself and multiple sources say Goa. The audio explicitly says \"a skateboard company from Goa, India itself.\" So I'll use Goa.\n\nFor Oxelo: It's a Decathlon brand. Decathlon's headquarters is in Englos, near Lille, France. The Decathlon Skateboarding Instagram says \"Lille\". Facebook says \"Vieux-Boucau, France\" but that might be a specific store/event. The brand Oxelo was born in Decathlon's roller sports department. \n\nHmm, the question asks for \"the headquarters of the French brand's skateboarding division.\" This is a bit ambiguous. Oxelo is the brand. Decathlon Skateboarding seems to be based in Lille (Englos is a commune right next to Lille where Decathlon HQ is). \n\nActually, let me think. The Decathlon Skateboarding Instagram handle shows \"Lille\". Decathlon's global HQ is in Englos, near Lille. So the skateboarding division headquarters would be in the Lille/Englos area.\n\nLet me verify the location of Decathlon's HQ and the skateboarding division. Let me search more specifically.\n\nActually, the question is somewhat constructed. The expected answer is probably:\n- Piso HQ: Goa, India (Panaji/Panjim)\n- Oxelo/Decathlon skateboarding HQ: Lille (Englos), France\n\nThen compute great-circle distance between Goa and Lille.\n\nLet me get coordinates:\n- Goa (Panaji): approximately 15.49°N, 73.83°E. Caranzalem/Taleigao is around 15.49°N, 73.81°E.\n- Lille/Englos: Englos is approximately 50.61°N, 3.02°E. Lille is 50.63°N, 3.06°E.\n\nLet me compute the great-circle distance.\n\nBut wait, I should double check whether the skateboarding division is in Lille or somewhere else. Let me look at the Decathlon Skateboarding page. Actually the Instagram says Lille. Let me also consider that Oxelo might have its own specific location. Let me search a bit more to be confident.\n\nActually, let me reconsider. There's a possibility the question expects Decathlon's HQ at Englos/Lille. The \"skateboarding division\" - Decathlon Skateboarding is the brand that took over Oxelo for skateboards. Their location appears to be Lille.\n\nLet me verify with another search to be safe, then compute.\n\nLet me get precise coordinates and compute using haversine.\n\nGoa Panjim: 15.4909° N, 73.8278° E\nEnglos (Decathlon HQ): 50.6086° N, 3.0206° E\nLille: 50.6292° N, 3.0573° E\n\nLet me compute distance between Goa and Lille/Englos.\n\nI'll use code executor.\n\nLet me also double-check the Oxelo skateboarding division location with one more search to ensure I'm not missing a more specific answer (like a particular town). The Facebook \"Vieux-Boucau\" is a seaside town in Landes, probably a store or event location, not HQ. The Instagram \"Lille\" matches Decathlon HQ region.\n\nLet me search for \"Decathlon Oxelo headquarters Lille Englos skateboarding\".",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_79c3d22a19b445b3ae32e11d",
+      "content": "[{\"id\": 1, \"title\": \"Decathlon's story - our key dates\", \"url\": \"https://sustainability.decathlon.com/decathlons-story-our-key-dates\", \"snippet\": \"The first store opened in Englos (in Northern ... We establish the B'Twin Village in Lille (Northern, France), a new cycling park for bike enthusiasts.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Our team project by Decathlon Skateboarding\", \"url\": \"https://www.decathlonskateboarding.com/our-team-project\", \"snippet\": \"In 2008 the brand OXELO was created. This brand was in charge of the development of inline skate, scooters and skateboards. Regarding the ...\", \"date\": \"Jun 30, 2021\"}, {\"id\": 3, \"title\": \"Decathlon (retailer)\", \"url\": \"https://en.wikipedia.org/wiki/Decathlon_(retailer)\", \"snippet\": \"Founded by Michel Leclercq in 1976, Decathlon started with a store in Lille, France. Its holding company was formerly known as Oxylane. The company ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Meet Decathlon's Skating Brand, Oxelo\", \"url\": \"https://www.decathlon.com/blogs/inside-decathlon/meet-decathlons-skating-brand-oxelo?srsltid=AU7gw4Xx9eETMN1n-P-TJzEaCX0eGU0o6DKGXZwwkpCUyARkdoSH8R2P\", \"snippet\": \"At Oxelo, our number one goal is to help skaters discover urban roller sports and \\\"soft mobility\\\" (eco-sustainable non-motorized transport).\", \"date\": \"Mar 5, 2018\"}, {\"id\": 5, \"title\": \"Decathlon Skateboarding (@decathlonskateboarding) · Lille\", \"url\": \"https://www.instagram.com/decathlonskateboarding/?hl=en\", \"snippet\": \"Currently out of the office, our staff paid a quick visit to our team riders @clement_botti and @benjigarcia at the new Blanquefort skatepark .\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Decathlon Head Office France Contact\", \"url\": \"https://www.facebook.com/fb-answers/decathlon-head-office-france-contact/\", \"snippet\": \"Decathlon Headquarters Location in Lille, France. Decathlon was founded in Lille, France by Michel Leclercq in 1976, and the head office is still based there.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Decathlon Lille skatepark\", \"url\": \"https://www.trucksandfins.com/en/spots/skateparks/Decathlon-Lille-skatepark/7456\", \"snippet\": \"Address Decathlon Lille skatepark 4 Rue Professeur Langevin, 59000 Lille, France. ... Trucks and Fins has all the best skate destinations in one place; a map of ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Decathlon SA Company Profile - Overview\", \"url\": \"https://www.globaldata.com/company-profile/decathlon-sa/\", \"snippet\": \"Headquarters France ; Address 4 Boulevard de Mons, Villeneuve-d'Ascq, Lille, Nord-Pas-de-Calais, 59650 ; Website www.decathlon-united.com ; Telephone 33 9 69363210 ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"About Decathlon\", \"url\": \"https://www.decathlon.com/pages/about-decathlon?srsltid=AU7gw4Wkbe6J1cMnF7DQudxYEhtgkACZKaJjCHDQQCS7VL_d-1HSBmch\", \"snippet\": \"We create all our mountain gear at our Mountain Headquarters located at the foot of Mont-Blanc in the French Alps, world-renowned for outdoor activities from ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Welcome to the DECATHLON ARENA - PIERRE MAUROY ...\", \"url\": \"https://www.decathlon-united.media/decathlon-arena-pierre-mauroy-stadium\", \"snippet\": \"The sports retailer, born in the North of France and present in over 70 countries, will bestow its name upon the iconic Lille stadium, making it the DECATHLON ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_2756b182198c455c8a161946",
+      "content": "{\"https://www.decathlonskateboarding.com/our-team-project\": \"Title: Our team project\\n\\nURL Source: https://www.decathlonskateboarding.com/our-team-project\\n\\nPublished Time: 2021-06-30T09:40:18Z\\n\\nMarkdown Content:\\n[Skip to content ↓]\\n\\n[Decathlon Skateboarding][![Image 1: Decathlon Skateboarding].png)]\\n\\n* [Search] \\n* [Home]\\n* [WHO ARE WE ?]\\n* [SHOP]\\n* [SHOP ROOS ZWETSLOOT PRO MODEL WHEELS !]\\n* [Meet the team]\\n\\n* [Categories] \\n\\n[Instagram][Youtube]\\n\\n[Subscribe Subscribe]\\n\\n With **214** others \\n\\n* [Search] \\n* [Home]\\n* [WHO ARE WE ?]\\n* [SHOP]\\n* [SHOP ROOS ZWETSLOOT PRO MODEL WHEELS !]\\n* [Meet the team]\\n\\n* [Categories] \\n\\n[Instagram][Youtube]\\n\\n* [![Image 2: View site in English]![Image 3: View site in English]]\\n* [![Image 4: Voir le site en français]]\\n\\n## Photos from this story\\n\\n Use left and right arrow keys to navigate between photos. Press Escape to close. \\n\\nClose Photo\\n\\nPrevious Photo Next Photo\\n\\n[Photo link]\\n\\n[Home]\\n\\n Enjoy \\n\\n👍\\n\\n 831 \\n\\n10%\\n\\n[Video 1]\\n\\n![Image 5: Our team project - cover photo].jpeg?auto=webp)\\n\\n# Our team project\\n\\n## Who are we ?\\n\\n[![Image 6: Decathlon Skateboarding].jpeg?auto=webp)]\\n\\n**By**[Decathlon Skateboarding] June 30 th, 2021 \\n\\n## Table of Contents\\n\\n* [Who are we]\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\nIn a way there always has been skateboarding at Decathlon, as this vestige picture of this skate corner at Villeneuve d’Ascq in 1991 shows.\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 7: A photo in this story].png?auto=webp)\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\nSome skateparks and mini ramps projects were created here and there but it was mainly individual actions at local scale supported by skaters working at Decathlon. There was no brand in charge of the development of skateboarding products like there is Quechua responsible for camping and trekking gear or Tribord for sailing gear. In fact, not much happened before 2009.\\n\\nIn 2008 the brand OXELO was created. This brand was in charge of the development of inline skate, scooters and skateboards. Regarding the skateboarding side, there were only a few people involved and even fewer resources allocated to the project. Oxelo was mainly focused on inline skate and scooters.\\n\\nIt is in January 2018, with a dozen people passionate about skateboarding, that a big shift happened. We created the brand Decathlon Skateboarding with the ambition to promote, all over the world, this sport, this art, this lifestyle. This split was a big step in the right direction to develop better skateboarding products. First, the team from now on is 100% independent meaning that we have our own resources and our own team thus more energy to develop skateboarding projects.From this day, the team is composed solely of skaters whether it is in product development, design, engineering or communication. We found that sharing this passion for skateboarding within the team was really important and that recruiting skaters was the right thing to do.\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 8: A photo in this story].jpg?auto=webp)\\n\\n[Link to story section - Who are we]\\n\\n## Who are we\\n\\nWhen we created the brand Decathlon Skateboarding, one of the first steps was to sit together and define our sense, what we wanted to do and would be proud of. After a while we found something that we all agreed on, a sentence that sums-up pretty well what is motivating us.\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 9: A photo in this story].jpg?auto=webp)\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\nLet’s dissect this holy sentence to get a better understanding of what we mean by that.\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\n**SIMPLY** is important in the sentence. It expresses that we want to develop our products, **with respect to the people, the environment and to the skateboarding ecosystem**. We aim to evolve in an authentic way with humility yet ambition.\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 10: A photo in this story].jpg?auto=webp)\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\n**SERVING SKATEBOARDING** because **we try to be useful to skaters and the skateboarding scene in general**. Over the years **we took part in several skateparks projects**. We developed a free indoor spot at our office in Lille, a city where the weather is pretty rainy during the year.\\n\\nWe also partnered up with the [Decathlon Foundation], to develop a free indoor skatepark in Roubaix and after that with [Make Life Skate Life] to develop the first public skatepark in Beirut, Lebanon.\\n\\nWe recently helped out a Decathlon store in Bangkok to build a concrete skatepark by putting the local team in touch with skateparks designers and builders. We helped to organise the first contest at[Janwaar Castle] in India.\\n\\n**We also try to employ skaters in our team or offer them career opportunities at Decathlon worldwide**.\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 11: A photo in this story].jpg?auto=webp)\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\nLately we partnered up with several skate schools in France in order to help them develop their services. We are also taking part in various “social skate projects” around the world by sending some gears to those in need. Through these different actions we feel we are doing our share to ensure some bright days to skateboard.\\n\\nAnother way of serving skaters is to **develop the best value for money equipment on the market**. Decathlon's mission is to \\\"make the pleasure and benefits of sports accessible to as many people as possible in the long term\\\". Accessible, in every sense of the word, but particularly in terms of price. So what makes us cheaper? **By making useful choices in conception**. We concentrate our energy and resources to develop functional, intemporal and well (eco)conceived products while spending the bare minimum in marketing and publicity.\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 12: A photo in this story].jpg?auto=webp)\\n\\n[Link to story section]\\n\\n## Group Title (Optional)\\n\\n**THROUGH OUR PASSION**Everyone in the team is skating, of course some are skating way more than others these days but at the end **we all share this passion and we all have our history with skateboarding**. This passion and knowledge about skateboarding has proven really important. It sounds obvious but yes, it definitely helps to have skated hundreds of boards when it comes to developing one. You know what makes a board great, you have knowledge about shapes, construction, etc. Therefore, it became a guideline in our recruitment process, we want to hire skateboarders. We feel it is the right thing to do.\\n\\nUploading Photo\\n\\n[]\\n\\n*   Reorder photo \\n*   Add a link to this photo \\n* [Un Fill Row]\\n* [Remove]\\n\\n![Image 13: A photo in this story].jpg?auto=webp)\\n\\n[Button Label]\\n\\n* * *\\n\\n© 2026[Decathlon Skateboarding]\\n\\n Enjoy \\n\\n👍✨\\n\\n 831 \\n\\n* [Email story](mailto:?subject=Check%C2%A0out%C2%A0this%C2%A0story%C2%A0on%C2%A0Exposure!&body=https://www.decathlonskateboarding.com/our-team-project \\\"Open a new email with a link to this story\\\")\\n* [Embed story]\\n* [Share on X 𝕏]\\n* [Share on Facebook]\\n\\n[![Image 21: Decathlon Skateboarding].png)]\\n\\n Join 214 others \\n\\n## Stay updated\\n\\n Email address Subscribe to Stories \\n\\nGreat, You Are Now Subscribed!\\n\\n Unsubscribe anytime  Protected by reCAPTCHA [Privacy][Terms]\\n\\n Follow Us \\n\\n[Instagram][Youtube]\\n\\n[Privacy Policy][Terms of Service][Report][Accessibility]\\n\\n[More Stories by Decathlon Skateboarding]\\n\\n[![Image 22: Read Discover the CRUSH900 Garbaccio pro ! by Arthur Croisey]/1x.jpeg?auto=webp)]\\n\\n[Discover the CRUSH900 Garbaccio pro !]\\nJoseph Garbaccio's first Pro Model shoe\\n\\n[Read]\\n\\n[![Image 23: Read Learn more about our new cupsole shoe: the CRUSH500 by Arthur Croisey]/1x.jpeg?auto=webp)]\\n\\n[Learn more about our new cupsole shoe: the CRUSH500]\\nJune 18 th, 2024\\n\\n[Read]\\n\\n[![Image 24: Read We gave Roos Zwetsloot a wheel pro model ! by Arthur Croisey]/1x.jpeg?auto=webp)]\\n\\n[We gave Roos Zwetsloot a wheel pro model !]\\nDiscover the wheels used by Roos !\\n\\n[Read]\\n\\n[![Image 25: Read OUR FIRST CLOTHING LINE IS OUT ! by Arthur Croisey]/1x.jpeg?auto=webp)]\\n\\n[OUR FIRST CLOTHING LINE IS OUT !]\\nDiscover our first clothing line, designed entirely with skateboarders in mind!\\n\\n[Read]\\n\\n[![Image 26: Read EMPOWERING TUNISIA’S SKATEBOARDING COMMUNITY WITH NEW PARKS by Arthur Croisey]/1x.jpeg?auto=webp)]\\n\\n[EMPOWERING TUNISIA’S SKATEBOARDING COMMUNITY WITH NEW PARKS]\\nTwo new skateparks emerge in Tunisia thanks to collaborative efforts between the Decathlon Foundation, Make Life Skate Life, and our team.\\n\\n[Read]\\n\\n[![Image 27: Read 2023 Recap ! by Arthur Croisey]/1x.jpeg?auto=webp)]\\n\\n[2023 Recap !]\\nRelive with us our best moments of 2023 !\\n\\n[Read]\\n\\n[Back to the top]\\n\\n**Your browser is unsupported:** Please use Google Chrome, Firefox or Safari for the best Exposure experience \\n\\n Loading, please hold on.\\n\", \"https://en.wikipedia.org/wiki/Decathlon_(retailer)\": \"Title: Decathlon (retailer)\\n\\nURL Source: https://en.wikipedia.org/wiki/Decathlon_(retailer)\\n\\nPublished Time: 2006-01-10T11:40:09Z\\n\\nMarkdown Content:\\n[Jump to content]#bodyContent)\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]#)\\n* [1 History]#History)\\n\\n* [2 Corporate affairs]#Corporate_affairs)Toggle Corporate affairs subsection\\n  * [2.1 Financial results]#Financial_results)\\n\\n  * [2.2 Chief executive officers]#Chief_executive_officers)\\n\\n* [3 Product brands]#Product_brands)Toggle Product brands subsection\\n  * [3.1 Category specialist brands]#Category_specialist_brands)\\n\\n  * [3.2 Expert brands]#Expert_brands)\\n\\n* [4 Sports team ownership]#Sports_team_ownership)Toggle Sports team ownership subsection\\n  * [4.1 Mountain biking]#Mountain_biking)\\n\\n  * [4.2 Cycling]#Cycling)\\n\\n* [5 Sponsorship]#Sponsorship)Toggle Sponsorship subsection\\n  * [5.1 Association football]#Association_football)\\n    * [5.1.1 Clubs]#Clubs)\\n\\n    * [5.1.2 Players]#Players)\\n\\n    * [5.1.3 Associations and leagues]#Associations_and_leagues)\\n\\n    * [5.1.4 International confederation and tournament]#International_confederation_and_tournament)\\n\\n  * [5.2 Athletics]#Athletics)\\n\\n  * [5.3 Basketball]#Basketball)\\n\\n  * [5.4 Cycling]#Cycling_2)\\n\\n  * [5.5 Indoor football]#Indoor_football)\\n\\n  * [5.6 Mountain biking]#Mountain_biking_2)\\n\\n  * [5.7 Padel]#Padel)\\n\\n  * [5.8 Skateboarding]#Skateboarding)\\n\\n  * [5.9 Squash]#Squash)\\n\\n  * [5.10 Tennis]#Tennis)\\n    * [5.10.1 Players]#Players_2)\\n\\n    * [5.10.2 Events]#Events)\\n\\n  * [5.11 Other notable sponsorships]#Other_notable_sponsorships)\\n\\n* [6 Locations]#Locations)\\n\\n* [7 Economic review]#Economic_review)\\n\\n* [8 Competition]#Competition)\\n\\n* [9 Controversies]#Controversies)Toggle Controversies subsection\\n  * [9.1 Human rights issues and use of forced labour]#Human_rights_issues_and_use_of_forced_labour)\\n\\n  * [9.2 2022 Russian invasion of Ukraine]#2022_Russian_invasion_of_Ukraine)\\n\\n* [10 Notes]#Notes)\\n\\n* [11 References]#References)\\n\\n* [12 External links]#External_links)\\n\\n- [x] Toggle the table of contents \\n\\n# Decathlon (retailer)\\n\\n- [x] 37 languages \\n\\n* [العربية]\\n* [Asturianu]\\n* [تۆرکجه]\\n* [Български]\\n* [Català]\\n* [Čeština]\\n* [Dansk]\\n* [Deutsch] \\\"Decathlon (Unternehmen) – German\\\")\\n* [Ελληνικά]\\n* [Esperanto]\\n* [Español] \\\"Decathlon (empresa) – Spanish\\\")\\n* [Euskara]\\n* [فارسی]\\n* [Français] \\\"Decathlon (entreprise) – French\\\")\\n* [עברית]\\n* [हिन्दी]\\n* [Magyar] \\\"Decathlon (Magyarország) – Hungarian\\\")\\n* [Հայերեն]\\n* [Italiano] \\\"Decathlon (azienda) – Italian\\\")\\n* [日本語]\\n* [ಕನ್ನಡ] \\\"ಡೆಕಾಥ್ಲಾನ್ (ರಿಟೈಲರ್/ ಚಿಲ್ಲರೆ ವ್ಯಾಪಾರಿ ಕಂಪೆನಿ) – Kannada\\\")\\n* [한국어]\\n* [Lietuvių]\\n* [Bahasa Melayu]\\n* [Nederlands] \\\"Decathlon (winkel) – Dutch\\\")\\n* [ਪੰਜਾਬੀ]\\n* [Polski]\\n* [Português] \\\"Decathlon (empresa) – Portuguese\\\")\\n* [Română] \\\"Decathlon (companie) – Romanian\\\")\\n* [Русский]\\n* [Simple English] \\\"Decathlon (retailer) – Simple English\\\")\\n* [Српски / srpski]\\n* [Svenska]\\n* [Türkçe]\\n* [Українська]\\n* [粵語]\\n* [中文]\\n\\n[Edit links]\\n\\n* [Article] \\\"View the content page [c]\\\")\\n* [Talk] \\\"Discuss improvements to the content page [t]\\\")\\n\\n- [x] English \\n\\n* [Read])\\n* [Edit]&action=edit \\\"Edit this page [e]\\\")\\n* [View history]&action=history \\\"Past revisions of this page [h]\\\")\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read])\\n* [Edit]&action=edit \\\"Edit this page [e]\\\")\\n* [View history]&action=history \\\"Past revisions of this page [h]\\\")\\n\\n General \\n\\n* [What links here] \\\"List of all English Wikipedia pages containing links to this page [j]\\\")\\n* [Related changes] \\\"Recent changes in pages linked from this page [k]\\\")\\n* [Upload file]\\n* [Permanent link]&oldid=1374485429 \\\"Permanent link to this revision of this page\\\")\\n* [Page information]&action=info \\\"More information about this page\\\")\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]&useparsoid=0)\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]&printable=yes \\\"Printable version of this page [p]\\\")\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nFrench multinational sporting goods chain\\n\\nThis article is about the sporting goods retailer. For the track and field event, see [Decathlon]. For other uses, see [Decathlon (disambiguation)] \\\"Decathlon (disambiguation)\\\").\\n\\nDecathlon SA[![Image 4]].svg)\\n[![Image 5]]\\n\\nDecathlon store in [Sydney], Australia\\nType[Private]\\nIndustry[Retail]\\nFounded 1976;50 years ago(1976)\\nFounder[Michel Leclercq]\\nHeadquarters[Villeneuve d'Ascq], [Nord] \\\"Nord (French department)\\\")\\n\\n, \\n\\n France\\nNumber of locations 1,902 stores (2025)\\nArea served 82 countries\\nKey people Javier López ([CEO], since March 2025)\\nProducts[Clothing]  \\n[Sportswear] \\\"Sportswear (activewear)\\\")  \\n[Sports equipment]\\nRevenue![Image 6: Increase][€]20.7 billion(2025)\\n[Net income]![Image 7: Increase] €910 million(2025)\\nOwner[Association Familiale Mulliez] (51%) \\n Famille Leclercq (49%)\\nNumber of employees 103,000 (2025)\\nWebsite[decathlon.com]\\n**Footnotes**  \\n[[1]]#cite_note-:5-1)[[2]]#cite_note-2)[[3]]#cite_note-3)\\n\\n**Decathlon [SA] \\\"S.A. (corporation)\\\")** (French pronunciation:[[dekatlɔ̃]]) is a French [multinational][sporting goods][retailer] founded in 1976. With 1,902 stores in 82 countries and regions,[[1]]#cite_note-:5-1) it is widely recognised as the largest sporting goods retailer in the world.[[4]]#cite_note-4)[[5]]#cite_note-5)\\n\\nThe company manages the research, design, production, logistics and distribution of its products in-house; partners with global suppliers; and markets its own brands directly to consumers in Decathlon-branded [big-box stores]. The retailer stocks a wide range of sporting goods, from [tennis rackets] to advanced [scuba diving] equipment, usually in large, [big-box superstores] averaging 4,000 m 2 in size.[[6]]#cite_note-6) Decathlon Group markets its products under more than 20 brands.[[7]]#cite_note-decathlon.com-7) The company employs about 103,000 people (2025).[[1]]#cite_note-:5-1)\\n\\n## History\\n\\n[[edit]&action=edit&section=1 \\\"Edit section: History\\\")]\\n\\n[![Image 8]].svg)\\n\\nDecathlon's former logo.\\n\\nFounded by [Michel Leclercq] in 1976, Decathlon started with a store in [Lille], France.[[8]]#cite_note-8) Its holding company was formerly known as Oxylane.[[9]]#cite_note-9)\\n\\nThe company expanded abroad to [Germany] in 1986,[[10]]#cite_note-:1-10)[Spain] in 1992,[[10]]#cite_note-:1-10)[[11]]#cite_note-11)[Italy] in 1993,[[10]]#cite_note-:1-10)[Belgium] in 1997,[[12]]#cite_note-12)[Portugal], the [United Kingdom] in 1999, [Brazil] in 2001, mainland [China] in 2003, Russia in 2006,[[13]]#cite_note-13)[India] and [Romania] in 2009, [Turkey][[14]]#cite_note-14) and [Czech Republic] in 2010, [Sweden] in 2011, [Taiwan] and [Lebanon][[15]]#cite_note-15) in 2012, [Hong Kong] in 2013, [Malaysia], [Singapore], [Slovenia] and [Mexico][[16]]#cite_note-16) in 2016, [South Africa], [Philippines], [Tunisia][[17]]#cite_note-:2-17)[[18]]#cite_note-:3-18) and [Indonesia] and [Israel] in 2017; in [South Korea], and [Australia] in 2018, and [Canada] and [Serbia] in 2019.[_[citation needed]_]\\n\\nIn September 2019, Decathlon reached an agreement with Alltricks, an online retailer of accessories for cyclists and runners.[[19]]#cite_note-19)[[20]]#cite_note-20)[[21]]#cite_note-21)[[22]]#cite_note-22)\\n\\nIn 2022 Decathlon closed their retail store presence in the United States.[[23]]#cite_note-23)[[24]]#cite_note-24)\\n\\nIn 2023, Decathlon opened a training centre in [Lille].[[25]]#cite_note-:4-25) By October 2023, Decathlon had nine training centres in partnership with Afpa Entreprises, an association for the professional training of adults, and three centres of its own on its premises.[[25]]#cite_note-:4-25)\\n\\nIn November 2023, Decathlon acquired [Bergfreunde], an online specialist retailer for mountain sports, climbing, and outdoor equipment.[[26]]#cite_note-26)[[27]]#cite_note-27) Decathlon is increasing its investments to boost production and expand its retail presence in India, from where it presently exports around 65% of its output to international markets, according to Global CEO Barbara Martin Coppola.[[28]]#cite_note-28)\\n\\nIn July 2024, Decathlon reported its investment Recyc'Elit, a start-up specialized in the chemical recycling of polyester textiles and complex PET plastics.[[29]]#cite_note-29) This year it was also announced that Decathlon is partnered [CNES] and [Spartan Space] to develop an intravehicular spacesuit.[[30]]#cite_note-30) In November 2025, Decathlon unveiled its first spacesuit for European astronauts to wear aboard the [International Space Station].[[31]]#cite_note-31)[[32]]#cite_note-32)\\n\\nIn April 2025, Decathlon initiated a process to sell a 30% stake of its China business, with its China business being valued at over $1 billion.[[33]]#cite_note-33)\\n\\nIn June 2026, Decathlon acquired a 10% stake of [Brompton Bicycle].[[34]]#cite_note-34)[[35]]#cite_note-35)\\n\\n## Corporate affairs\\n\\n[[edit]&action=edit&section=2 \\\"Edit section: Corporate affairs\\\")]\\n\\n### Financial results\\n\\n[[edit]&action=edit&section=3 \\\"Edit section: Financial results\\\")]\\n\\nThe key trends of Decathlon are (as at the financial year ending 31 December):[[36]]#cite_note-36)\\n\\n|  | Revenue[[a]]#cite_note-37) (€ bn) | Net income (€ m) | Digital sales share | Number of employees | Number of served countries[[b]]#cite_note-38) | Number of stores | Number of products sold (bn) |\\n| - | - | - | - | - | - | - | - |\\n| 2010[[37]]#cite_note-:6-39) | 6.0 |  |  | 45,000 |  |  |  |\\n| 2011[[37]]#cite_note-:6-39) | 6.5 |  |  | 50,000 |  |  |  |\\n| 2012[[37]]#cite_note-:6-39) | 7.0 |  |  | 55\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "I now have solid confirmation of both locations:\n\n- **Indian brand (Piso):** Headquartered in **Goa, India** (Caranzalem/Taleigao, in the Panaji area).\n- **French brand (Oxelo → Decathlon Skateboarding):** The skateboarding division's office is in **Lille, France** (the Decathlon Skateboarding page states \"we developed a free indoor spot at our office in Lille,\" and Decathlon's HQ is in the Lille metro area, Villeneuve-d'Ascq/Englos).\n\nNow let me compute the great-circle (straight-line) distance between Goa and Lille.\n\n",
+      "reasoning": "Now I have strong confirmation:\n\n- Piso Skateboards: headquartered in Goa, India (Caranzalem/Taleigao, near Panaji). Coordinates roughly 15.49°N, 73.82°E.\n\n- Oxelo / Decathlon Skateboarding: The Decathlon Skateboarding page explicitly says \"We developed a free indoor spot at our office in Lille.\" And the Instagram handle shows \"Lille.\" Decathlon's overall HQ is in Villeneuve-d'Ascq (part of the Lille metropolitan area), Nord, France. The skateboarding division's office is in Lille. So the French brand's skateboarding division headquarters = Lille, France.\n\nSo I'll compute the great-circle distance between Goa (Panaji/Caranzalem) and Lille.\n\nCoordinates:\n- Goa (Caranzalem/Taleigao, Panaji area): ~15.49°N, 73.82°E. Let me use Panaji: 15.4909°N, 73.8278°E. Or Caranzalem ~15.487°N, 73.812°E. Close enough.\n- Lille: 50.6292°N, 3.0573°E. Villeneuve-d'Ascq: 50.6292°N, 3.1650°E. Both essentially same for distance purposes (~10 km difference negligible over ~7500 km).\n\nLet me compute using haversine.\n\nI'll use code executor.\n\nLet me compute for a couple of coordinate choices to give a robust approximate figure.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_f8497781574146079a2bde07",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2):\\n    R = 6371.0  # Earth's mean radius in km\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2 - lat1)\\n    dlmb = math.radians(lon2 - lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Goa (Piso HQ, Caranzalem/Taleigao near Panaji)\\ngoa_options = {\\n    \\\"Panaji/Caranzalem\\\": (15.4909, 73.8278),\\n    \\\"Taleigao\\\":          (15.4870, 73.8120),\\n}\\n\\n# Lille / Decathlon HQ (Villeneuve-d'Ascq)\\nlille_options = {\\n    \\\"Lille centre\\\":          (50.6292, 3.0573),\\n    \\\"Villeneuve-d'Ascq\\\":     (50.6292, 3.1650),\\n    \\\"Englos (Decathlon HQ)\\\": (50.6086, 3.0206),\\n}\\n\\nprint(\\\"Great-circle distances (km):\\\\n\\\")\\nresults = []\\nfor gname,(gla,glo) in goa_options.items():\\n    for lname,(lla,llo) in lille_options.items():\\n        d = haversine(gla,glo,lla,llo)\\n        results.append(d)\\n        print(f\\\"Goa[{gname}] -> Lille[{lname}]: {d:,.0f} km\\\")\\n\\nprint(f\\\"\\\\nRange: {min(results):,.0f} - {max(results):,.0f} km\\\")\\nprint(f\\\"Approximate average: {sum(results)/len(results):,.0f} km\\\")\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Now I have strong confirmation:\n\n- Piso Skateboards: headquartered in Goa, India (Caranzalem/Taleigao, near Panaji). Coordinates roughly 15.49°N, 73.82°E.\n\n- Oxelo / Decathlon Skateboarding: The Decathlon Skateboarding page explicitly says \"We developed a free indoor spot at our office in Lille.\" And the Instagram handle shows \"Lille.\" Decathlon's overall HQ is in Villeneuve-d'Ascq (part of the Lille metropolitan area), Nord, France. The skateboarding division's office is in Lille. So the French brand's skateboarding division headquarters = Lille, France.\n\nSo I'll compute the great-circle distance between Goa (Panaji/Caranzalem) and Lille.\n\nCoordinates:\n- Goa (Caranzalem/Taleigao, Panaji area): ~15.49°N, 73.82°E. Let me use Panaji: 15.4909°N, 73.8278°E. Or Caranzalem ~15.487°N, 73.812°E. Close enough.\n- Lille: 50.6292°N, 3.0573°E. Villeneuve-d'Ascq: 50.6292°N, 3.1650°E. Both essentially same for distance purposes (~10 km difference negligible over ~7500 km).\n\nLet me compute using haversine.\n\nI'll use code executor.\n\nLet me compute for a couple of coordinate choices to give a robust approximate figure.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f8497781574146079a2bde07",
+      "content": "{\"stdout\": \"Great-circle distances (km):\\n\\nGoa[Panaji/Caranzalem] -> Lille[Lille centre]: 7,331 km\\nGoa[Panaji/Caranzalem] -> Lille[Villeneuve-d'Ascq]: 7,324 km\\nGoa[Panaji/Caranzalem] -> Lille[Englos (Decathlon HQ)]: 7,334 km\\nGoa[Taleigao] -> Lille[Lille centre]: 7,331 km\\nGoa[Taleigao] -> Lille[Villeneuve-d'Ascq]: 7,323 km\\nGoa[Taleigao] -> Lille[Englos (Decathlon HQ)]: 7,333 km\\n\\nRange: 7,323 - 7,334 km\\nApproximate average: 7,329 km\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Summary\n\n**Brands identified from the audio:**\n- **Indian brand (from Goa):** **Piso** — headquartered in Caranzalem/Taleigao, near Panaji, **Goa, India** (~15.49°N, 73.83°E).\n- **French brand:** **Oxelo** (a Decathlon brand) — its skateboarding division (Decathlon Skateboarding) is based at the company's office in **Lille, France** (~50.63°N, 3.06°E), in the same northern-France metro area as Decathlon's HQ (Villeneuve-d'Ascq/Englos).\n\n**Distance calculation:** Using the haversine (great-circle) formula, the straight-line distance between Goa and Lille comes out consistently to **≈ 7,320–7,335 km** regardless of which exact point within each city is used.\n\n<answer>Approximately 7,330 km (about 7,300–7,350 km). This is the great-circle distance between Piso's headquarters in Goa, India (~15.49°N, 73.83°E) and the headquarters of Oxelo's/Decathlon's skateboarding division in Lille, France (~50.63°N, 3.06°E).</answer>",
+      "reasoning": "The calculation is robust across all coordinate choices: ~7,320–7,335 km, averaging ~7,330 km. So the approximate straight-line distance is about 7,300–7,350 km, roughly 7,330 km.\n\nLet me present the final answer clearly, identifying the brands and the distance.\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The calculation is robust across all coordinate choices: ~7,320–7,335 km, averaging ~7,330 km. So the approximate straight-line distance is about 7,300–7,350 km, roughly 7,330 km.\n\nLet me present the final answer clearly, identifying the brands and the distance.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Piso Skateboards Goa India headquarters location\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Piso Skateboards Journey",
+          "url": "https://pisoskateboards.com/pages/journey?srsltid=AU7gw4XKppGEwl9uP8zyS7NsVaLiDkT9aZt7O8cS7qlaV_7DmH9r1T51",
+          "snippet": "To make this project happen we have got all our core members at our headquarters in Goa. We got Kima down, our OG team member Shreyas is back on board to ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Piso skateboards (@pisoskateboards) - Mentions",
+          "url": "https://www.facebook.com/pisoskateboards/mentions/",
+          "snippet": "Hi, we are a skateboard brand based in Goa. Piso SB is completely run by skaters for skaters :). We have skateboards, cruisers, surfskates & much more in ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Piso skateboards (@pisoskateboards)",
+          "url": "https://www.instagram.com/pisoskateboards/?hl=en",
+          "snippet": "7.7K+ followers · 259 following · 287 posts · @pisoskateboards: “Skateboards, Surfskates & more! www.pisoskateboards.com By skaters, for skaters.”",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Piso Skateboards in Caranzalem,Goa",
+          "url": "https://www.justdial.com/Goa/Piso-Skateboards-Caranzalem/0832PX832-X832-190405064304-P7S5_BZDET",
+          "snippet": "Location and Overview: Piso Skateboards in Caranzalem, Goa is a top player in the category Skate Board Dealers in the Goa. This well-known establishment acts as ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Welcome to Goa @kima_gr , its an honor to have you on ...",
+          "url": "https://www.instagram.com/reel/C6jUzqapGw_/",
+          "snippet": "1165 likes, 55 comments - pisoskateboards on May 4, 2024: \"Welcome to Goa @kima_gr , its an honor to have you on board❤️ .",
+          "date": "2 years ago"
+        },
+        {
+          "id": 6,
+          "title": "Piso Cruiser Board Review | Is it Worth it? | My Honest Opinion",
+          "url": "https://www.youtube.com/watch?v=W-0wcfwmx38",
+          "snippet": "In this video, I review the Piso Cruiser Skateboard a compact, stylish, and smooth board built for effortless cruising.",
+          "date": "12 months ago"
+        },
+        {
+          "id": 7,
+          "title": "Piso Skateboards - 2026 Company Profile & Competitors",
+          "url": "https://tracxn.com/d/companies/piso-skateboards/__kF9xBIH0mTxWH-LNfYoG9_ZrfsBSwFlPXIAiiVMPxzA",
+          "snippet": "Piso Skateboards is headquartered in Chennai, India. Is Piso Skateboards a funded company? Piso Skateboards is a funded company, having raised a ...",
+          "date": "Jul 22, 2026"
+        },
+        {
+          "id": 8,
+          "title": "Piso Skate Team Stories - Velister Rodrigues | The Journey",
+          "url": "https://pisoskateboards.com/blogs/team/piso-skateteam-stories-velister-rodrigues?srsltid=AU7gw4U30iy3tgJlmHSxXHq8pdM-T0O3jdkRzDepbtNETDA0-Nk74J6_",
+          "snippet": "Velister Rodrigues (AKA V-Rod) is a team rider for Piso skateboards hailing from Goa, India. Piso and Velister has been working together for ...",
+          "date": "Aug 26, 2024"
+        },
+        {
+          "id": 9,
+          "title": "Piso skateboards",
+          "url": "https://skateterminal.com/listing/piso-skateboards/?srsltid=AU7gw4WHoBP1IfRMvpVaaO8iMCrrEcuhuWvY0n6SPLx6o2qhOF5NRo96",
+          "snippet": "... 10:20 AM local time. Location. Radha Estate, B/F4, Taleigao Market, Caranzalem, Taleigao, Goa 403002, India. Get Directions. Contact information. http:// ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Goan custom Skateboard Garage: Piso Skateboards",
+          "url": "https://itsgoa.com/goan-custom-skateboard-garage-piso-skateboards",
+          "snippet": "Inspired by the Konkani word for crazy: 'Piso'. The brand has given birth to a rich skating culture in Goa. Read to know more.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Oxelo French brand skateboarding division headquarters Decathlon location\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Meet Decathlon's Skating Brand, Oxelo",
+          "url": "https://www.decathlon.com/blogs/inside-decathlon/meet-decathlons-skating-brand-oxelo?srsltid=AU7gw4VQTIebekQOOLTLrSH3i98I8_zPUnuJpZZrmNk6mSj3JOBgBfvM",
+          "snippet": "Oxelo was born in Decathlon's roller sports department in 2008, and quickly evolved into a brand covering inline skating, scootering and ...",
+          "date": "Mar 5, 2018"
+        },
+        {
+          "id": 2,
+          "title": "Decathlon (retailer)",
+          "url": "https://en.wikipedia.org/wiki/Decathlon_(retailer)",
+          "snippet": "Decathlon SA is a French multinational sporting goods retailer founded in 1976. With 1,902 stores in 82 countries and regions, it is widely recognised as ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Our team project by Decathlon Skateboarding",
+          "url": "https://www.decathlonskateboarding.com/our-team-project",
+          "snippet": "In 2008 the brand OXELO was created. This brand was in charge of the development of inline skate, scooters and skateboards. Regarding the ...",
+          "date": "Jun 30, 2021"
+        },
+        {
+          "id": 4,
+          "title": "About Decathlon",
+          "url": "https://www.decathlon.com/pages/about-decathlon?srsltid=AU7gw4WsJUCjNmFONYHrUf7pw8P82x5Cf6cM7RyEA826Qayerb2S0yYe",
+          "snippet": "We create all our mountain gear at our Mountain Headquarters located at the foot of Mont-Blanc in the French Alps, world-renowned for outdoor activities from ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Decathlon Skateboarding (@decathlonskateboarding) · Lille",
+          "url": "https://www.instagram.com/decathlonskateboarding/?hl=en",
+          "snippet": "Currently out of the office, our staff paid a quick visit to our team riders @clement_botti and @benjigarcia at the new Blanquefort skatepark .",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "A short documentary: Oxelo was born in Decathlon's roller ...",
+          "url": "https://www.facebook.com/decathlonsarjapur/videos/oxelo-discover-urban-roller-sports-and-soft-mobility-eco-sustainable-non-motoris/1269411166495681/",
+          "snippet": "A short documentary: Oxelo was born in Decathlon's roller sports department in 2008, and quickly evolved into a brand covering inline ...",
+          "date": "8 years ago"
+        },
+        {
+          "id": 7,
+          "title": "Inside Decathlon – tagged \"Oxelo\"",
+          "url": "https://www.decathlon.com/blogs/inside-decathlon/tagged/oxelo?srsltid=AU7gw4XOppMKxUWQuFZPuPsC7bZ2amRiA-29poRXMTRW1IS0PO2Fq27w",
+          "snippet": "Oxelo was born in Decathlon's roller sports department in 2008, and quickly evolved into a brand covering inline skating, scootering and ...",
+          "date": "Mar 5, 2018"
+        },
+        {
+          "id": 8,
+          "title": "Decathlon Skateboarding (@DecathlonSkateboarding)",
+          "url": "https://www.facebook.com/DecathlonSkateboarding/",
+          "snippet": "Decathlon Skateboarding is in Vieux- Boucau, France. Aug 9, 2026· ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Decathlon - Oxelo Skate Board",
+          "url": "https://www.youtube.com/watch?v=jpI6YYTmrVQ&xstg=CAMSBhUDze3xHw%3D%3D",
+          "snippet": "The video showcases the Oxelo skate board found only at Decathlon stores.",
+          "date": "13 years ago"
+        },
+        {
+          "id": 10,
+          "title": "Decathlon - A French sporting goods brand",
+          "url": "https://baike.baidu.com/en/item/Decathlon/1494313",
+          "snippet": "Decathlon is a sporting goods retail brand founded by Michel Leclercq in Nineteen Seventy-six in Englos near Lille, the capital of the Hauts-de-France ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Decathlon headquarters Englos Lille France Oxelo skateboarding brand location\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Decathlon's story - our key dates",
+          "url": "https://sustainability.decathlon.com/decathlons-story-our-key-dates",
+          "snippet": "The first store opened in Englos (in Northern ... We establish the B'Twin Village in Lille (Northern, France), a new cycling park for bike enthusiasts.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Our team project by Decathlon Skateboarding",
+          "url": "https://www.decathlonskateboarding.com/our-team-project",
+          "snippet": "In 2008 the brand OXELO was created. This brand was in charge of the development of inline skate, scooters and skateboards. Regarding the ...",
+          "date": "Jun 30, 2021"
+        },
+        {
+          "id": 3,
+          "title": "Decathlon (retailer)",
+          "url": "https://en.wikipedia.org/wiki/Decathlon_(retailer)",
+          "snippet": "Founded by Michel Leclercq in 1976, Decathlon started with a store in Lille, France. Its holding company was formerly known as Oxylane. The company ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Meet Decathlon's Skating Brand, Oxelo",
+          "url": "https://www.decathlon.com/blogs/inside-decathlon/meet-decathlons-skating-brand-oxelo?srsltid=AU7gw4Xx9eETMN1n-P-TJzEaCX0eGU0o6DKGXZwwkpCUyARkdoSH8R2P",
+          "snippet": "At Oxelo, our number one goal is to help skaters discover urban roller sports and \"soft mobility\" (eco-sustainable non-motorized transport).",
+          "date": "Mar 5, 2018"
+        },
+        {
+          "id": 5,
+          "title": "Decathlon Skateboarding (@decathlonskateboarding) · Lille",
+          "url": "https://www.instagram.com/decathlonskateboarding/?hl=en",
+          "snippet": "Currently out of the office, our staff paid a quick visit to our team riders @clement_botti and @benjigarcia at the new Blanquefort skatepark .",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Decathlon Head Office France Contact",
+          "url": "https://www.facebook.com/fb-answers/decathlon-head-office-france-contact/",
+          "snippet": "Decathlon Headquarters Location in Lille, France. Decathlon was founded in Lille, France by Michel Leclercq in 1976, and the head office is still based there.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Decathlon Lille skatepark",
+          "url": "https://www.trucksandfins.com/en/spots/skateparks/Decathlon-Lille-skatepark/7456",
+          "snippet": "Address Decathlon Lille skatepark 4 Rue Professeur Langevin, 59000 Lille, France. ... Trucks and Fins has all the best skate destinations in one place; a map of ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Decathlon SA Company Profile - Overview",
+          "url": "https://www.globaldata.com/company-profile/decathlon-sa/",
+          "snippet": "Headquarters France ; Address 4 Boulevard de Mons, Villeneuve-d'Ascq, Lille, Nord-Pas-de-Calais, 59650 ; Website www.decathlon-united.com ; Telephone 33 9 69363210 ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "About Decathlon",
+          "url": "https://www.decathlon.com/pages/about-decathlon?srsltid=AU7gw4Wkbe6J1cMnF7DQudxYEhtgkACZKaJjCHDQQCS7VL_d-1HSBmch",
+          "snippet": "We create all our mountain gear at our Mountain Headquarters located at the foot of Mont-Blanc in the French Alps, world-renowned for outdoor activities from ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Welcome to the DECATHLON ARENA - PIERRE MAUROY ...",
+          "url": "https://www.decathlon-united.media/decathlon-arena-pierre-mauroy-stadium",
+          "snippet": "The sports retailer, born in the North of France and present in over 70 countries, will bestow its name upon the iconic Lille stadium, making it the DECATHLON ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.decathlonskateboarding.com/our-team-project\", \"https://en.wikipedia.org/wiki/Decathlon_(retailer)\"]\n\n}",
+      "result": {
+        "https://www.decathlonskateboarding.com/our-team-project": "Title: Our team project\n\nURL Source: https://www.decathlonskateboarding.com/our-team-project\n\nPublished Time: 2021-06-30T09:40:18Z\n\nMarkdown Content:\n[Skip to content ↓]\n\n[Decathlon Skateboarding][![Image 1: Decathlon Skateboarding].png)]\n\n* [Search] \n* [Home]\n* [WHO ARE WE ?]\n* [SHOP]\n* [SHOP ROOS ZWETSLOOT PRO MODEL WHEELS !]\n* [Meet the team]\n\n* [Categories] \n\n[Instagram][Youtube]\n\n[Subscribe Subscribe]\n\n With **214** others \n\n* [Search] \n* [Home]\n* [WHO ARE WE ?]\n* [SHOP]\n* [SHOP ROOS ZWETSLOOT PRO MODEL WHEELS !]\n* [Meet the team]\n\n* [Categories] \n\n[Instagram][Youtube]\n\n* [![Image 2: View site in English]![Image 3: View site in English]]\n* [![Image 4: Voir le site en français]]\n\n## Photos from this story\n\n Use left and right arrow keys to navigate between photos. Press Escape to close. \n\nClose Photo\n\nPrevious Photo Next Photo\n\n[Photo link]\n\n[Home]\n\n Enjoy \n\n👍\n\n 831 \n\n10%\n\n[Video 1]\n\n![Image 5: Our team project - cover photo].jpeg?auto=webp)\n\n# Our team project\n\n## Who are we ?\n\n[![Image 6: Decathlon Skateboarding].jpeg?auto=webp)]\n\n**By**[Decathlon Skateboarding] June 30 th, 2021 \n\n## Table of Contents\n\n* [Who are we]\n\n[Link to story section]\n\n## Group Title (Optional)\n\nIn a way there always has been skateboarding at Decathlon, as this vestige picture of this skate corner at Villeneuve d’Ascq in 1991 shows.\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 7: A photo in this story].png?auto=webp)\n\n[Link to story section]\n\n## Group Title (Optional)\n\nSome skateparks and mini ramps projects were created here and there but it was mainly individual actions at local scale supported by skaters working at Decathlon. There was no brand in charge of the development of skateboarding products like there is Quechua responsible for camping and trekking gear or Tribord for sailing gear. In fact, not much happened before 2009.\n\nIn 2008 the brand OXELO was created. This brand was in charge of the development of inline skate, scooters and skateboards. Regarding the skateboarding side, there were only a few people involved and even fewer resources allocated to the project. Oxelo was mainly focused on inline skate and scooters.\n\nIt is in January 2018, with a dozen people passionate about skateboarding, that a big shift happened. We created the brand Decathlon Skateboarding with the ambition to promote, all over the world, this sport, this art, this lifestyle. This split was a big step in the right direction to develop better skateboarding products. First, the team from now on is 100% independent meaning that we have our own resources and our own team thus more energy to develop skateboarding projects.From this day, the team is composed solely of skaters whether it is in product development, design, engineering or communication. We found that sharing this passion for skateboarding within the team was really important and that recruiting skaters was the right thing to do.\n\n[Link to story section]\n\n## Group Title (Optional)\n\n[Link to story section]\n\n## Group Title (Optional)\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 8: A photo in this story].jpg?auto=webp)\n\n[Link to story section - Who are we]\n\n## Who are we\n\nWhen we created the brand Decathlon Skateboarding, one of the first steps was to sit together and define our sense, what we wanted to do and would be proud of. After a while we found something that we all agreed on, a sentence that sums-up pretty well what is motivating us.\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 9: A photo in this story].jpg?auto=webp)\n\n[Link to story section]\n\n## Group Title (Optional)\n\nLet’s dissect this holy sentence to get a better understanding of what we mean by that.\n\n[Link to story section]\n\n## Group Title (Optional)\n\n**SIMPLY** is important in the sentence. It expresses that we want to develop our products, **with respect to the people, the environment and to the skateboarding ecosystem**. We aim to evolve in an authentic way with humility yet ambition.\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 10: A photo in this story].jpg?auto=webp)\n\n[Link to story section]\n\n## Group Title (Optional)\n\n**SERVING SKATEBOARDING** because **we try to be useful to skaters and the skateboarding scene in general**. Over the years **we took part in several skateparks projects**. We developed a free indoor spot at our office in Lille, a city where the weather is pretty rainy during the year.\n\nWe also partnered up with the [Decathlon Foundation], to develop a free indoor skatepark in Roubaix and after that with [Make Life Skate Life] to develop the first public skatepark in Beirut, Lebanon.\n\nWe recently helped out a Decathlon store in Bangkok to build a concrete skatepark by putting the local team in touch with skateparks designers and builders. We helped to organise the first contest at[Janwaar Castle] in India.\n\n**We also try to employ skaters in our team or offer them career opportunities at Decathlon worldwide**.\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 11: A photo in this story].jpg?auto=webp)\n\n[Link to story section]\n\n## Group Title (Optional)\n\nLately we partnered up with several skate schools in France in order to help them develop their services. We are also taking part in various “social skate projects” around the world by sending some gears to those in need. Through these different actions we feel we are doing our share to ensure some bright days to skateboard.\n\nAnother way of serving skaters is to **develop the best value for money equipment on the market**. Decathlon's mission is to \"make the pleasure and benefits of sports accessible to as many people as possible in the long term\". Accessible, in every sense of the word, but particularly in terms of price. So what makes us cheaper? **By making useful choices in conception**. We concentrate our energy and resources to develop functional, intemporal and well (eco)conceived products while spending the bare minimum in marketing and publicity.\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 12: A photo in this story].jpg?auto=webp)\n\n[Link to story section]\n\n## Group Title (Optional)\n\n**THROUGH OUR PASSION**Everyone in the team is skating, of course some are skating way more than others these days but at the end **we all share this passion and we all have our history with skateboarding**. This passion and knowledge about skateboarding has proven really important. It sounds obvious but yes, it definitely helps to have skated hundreds of boards when it comes to developing one. You know what makes a board great, you have knowledge about shapes, construction, etc. Therefore, it became a guideline in our recruitment process, we want to hire skateboarders. We feel it is the right thing to do.\n\nUploading Photo\n\n[]\n\n*   Reorder photo \n*   Add a link to this photo \n* [Un Fill Row]\n* [Remove]\n\n![Image 13: A photo in this story].jpg?auto=webp)\n\n[Button Label]\n\n* * *\n\n© 2026[Decathlon Skateboarding]\n\n Enjoy \n\n👍✨\n\n 831 \n\n* [Email story](mailto:?subject=Check%C2%A0out%C2%A0this%C2%A0story%C2%A0on%C2%A0Exposure!&body=https://www.decathlonskateboarding.com/our-team-project \"Open a new email with a link to this story\")\n* [Embed story]\n* [Share on X 𝕏]\n* [Share on Facebook]\n\n[![Image 21: Decathlon Skateboarding].png)]\n\n Join 214 others \n\n## Stay updated\n\n Email address Subscribe to Stories \n\nGreat, You Are Now Subscribed!\n\n Unsubscribe anytime  Protected by reCAPTCHA [Privacy][Terms]\n\n Follow Us \n\n[Instagram][Youtube]\n\n[Privacy Policy][Terms of Service][Report][Accessibility]\n\n[More Stories by Decathlon Skateboarding]\n\n[![Image 22: Read Discover the CRUSH900 Garbaccio pro ! by Arthur Croisey]/1x.jpeg?auto=webp)]\n\n[Discover the CRUSH900 Garbaccio pro !]\nJoseph Garbaccio's first Pro Model shoe\n\n[Read]\n\n[![Image 23: Read Learn more about our new cupsole shoe: the CRUSH500 by Arthur Croisey]/1x.jpeg?auto=webp)]\n\n[Learn more about our new cupsole shoe: the CRUSH500]\nJune 18 th, 2024\n\n[Read]\n\n[![Image 24: Read We gave Roos Zwetsloot a wheel pro model ! by Arthur Croisey]/1x.jpeg?auto=webp)]\n\n[We gave Roos Zwetsloot a wheel pro model !]\nDiscover the wheels used by Roos !\n\n[Read]\n\n[![Image 25: Read OUR FIRST CLOTHING LINE IS OUT ! by Arthur Croisey]/1x.jpeg?auto=webp)]\n\n[OUR FIRST CLOTHING LINE IS OUT !]\nDiscover our first clothing line, designed entirely with skateboarders in mind!\n\n[Read]\n\n[![Image 26: Read EMPOWERING TUNISIA’S SKATEBOARDING COMMUNITY WITH NEW PARKS by Arthur Croisey]/1x.jpeg?auto=webp)]\n\n[EMPOWERING TUNISIA’S SKATEBOARDING COMMUNITY WITH NEW PARKS]\nTwo new skateparks emerge in Tunisia thanks to collaborative efforts between the Decathlon Foundation, Make Life Skate Life, and our team.\n\n[Read]\n\n[![Image 27: Read 2023 Recap ! by Arthur Croisey]/1x.jpeg?auto=webp)]\n\n[2023 Recap !]\nRelive with us our best moments of 2023 !\n\n[Read]\n\n[Back to the top]\n\n**Your browser is unsupported:** Please use Google Chrome, Firefox or Safari for the best Exposure experience \n\n Loading, please hold on.\n",
+        "https://en.wikipedia.org/wiki/Decathlon_(retailer)": "Title: Decathlon (retailer)\n\nURL Source: https://en.wikipedia.org/wiki/Decathlon_(retailer)\n\nPublished Time: 2006-01-10T11:40:09Z\n\nMarkdown Content:\n[Jump to content]#bodyContent)\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]#)\n* [1 History]#History)\n\n* [2 Corporate affairs]#Corporate_affairs)Toggle Corporate affairs subsection\n  * [2.1 Financial results]#Financial_results)\n\n  * [2.2 Chief executive officers]#Chief_executive_officers)\n\n* [3 Product brands]#Product_brands)Toggle Product brands subsection\n  * [3.1 Category specialist brands]#Category_specialist_brands)\n\n  * [3.2 Expert brands]#Expert_brands)\n\n* [4 Sports team ownership]#Sports_team_ownership)Toggle Sports team ownership subsection\n  * [4.1 Mountain biking]#Mountain_biking)\n\n  * [4.2 Cycling]#Cycling)\n\n* [5 Sponsorship]#Sponsorship)Toggle Sponsorship subsection\n  * [5.1 Association football]#Association_football)\n    * [5.1.1 Clubs]#Clubs)\n\n    * [5.1.2 Players]#Players)\n\n    * [5.1.3 Associations and leagues]#Associations_and_leagues)\n\n    * [5.1.4 International confederation and tournament]#International_confederation_and_tournament)\n\n  * [5.2 Athletics]#Athletics)\n\n  * [5.3 Basketball]#Basketball)\n\n  * [5.4 Cycling]#Cycling_2)\n\n  * [5.5 Indoor football]#Indoor_football)\n\n  * [5.6 Mountain biking]#Mountain_biking_2)\n\n  * [5.7 Padel]#Padel)\n\n  * [5.8 Skateboarding]#Skateboarding)\n\n  * [5.9 Squash]#Squash)\n\n  * [5.10 Tennis]#Tennis)\n    * [5.10.1 Players]#Players_2)\n\n    * [5.10.2 Events]#Events)\n\n  * [5.11 Other notable sponsorships]#Other_notable_sponsorships)\n\n* [6 Locations]#Locations)\n\n* [7 Economic review]#Economic_review)\n\n* [8 Competition]#Competition)\n\n* [9 Controversies]#Controversies)Toggle Controversies subsection\n  * [9.1 Human rights issues and use of forced labour]#Human_rights_issues_and_use_of_forced_labour)\n\n  * [9.2 2022 Russian invasion of Ukraine]#2022_Russian_invasion_of_Ukraine)\n\n* [10 Notes]#Notes)\n\n* [11 References]#References)\n\n* [12 External links]#External_links)\n\n- [x] Toggle the table of contents \n\n# Decathlon (retailer)\n\n- [x] 37 languages \n\n* [العربية]\n* [Asturianu]\n* [تۆرکجه]\n* [Български]\n* [Català]\n* [Čeština]\n* [Dansk]\n* [Deutsch] \"Decathlon (Unternehmen) – German\")\n* [Ελληνικά]\n* [Esperanto]\n* [Español] \"Decathlon (empresa) – Spanish\")\n* [Euskara]\n* [فارسی]\n* [Français] \"Decathlon (entreprise) – French\")\n* [עברית]\n* [हिन्दी]\n* [Magyar] \"Decathlon (Magyarország) – Hungarian\")\n* [Հայերեն]\n* [Italiano] \"Decathlon (azienda) – Italian\")\n* [日本語]\n* [ಕನ್ನಡ] \"ಡೆಕಾಥ್ಲಾನ್ (ರಿಟೈಲರ್/ ಚಿಲ್ಲರೆ ವ್ಯಾಪಾರಿ ಕಂಪೆನಿ) – Kannada\")\n* [한국어]\n* [Lietuvių]\n* [Bahasa Melayu]\n* [Nederlands] \"Decathlon (winkel) – Dutch\")\n* [ਪੰਜਾਬੀ]\n* [Polski]\n* [Português] \"Decathlon (empresa) – Portuguese\")\n* [Română] \"Decathlon (companie) – Romanian\")\n* [Русский]\n* [Simple English] \"Decathlon (retailer) – Simple English\")\n* [Српски / srpski]\n* [Svenska]\n* [Türkçe]\n* [Українська]\n* [粵語]\n* [中文]\n\n[Edit links]\n\n* [Article] \"View the content page [c]\")\n* [Talk] \"Discuss improvements to the content page [t]\")\n\n- [x] English \n\n* [Read])\n* [Edit]&action=edit \"Edit this page [e]\")\n* [View history]&action=history \"Past revisions of this page [h]\")\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read])\n* [Edit]&action=edit \"Edit this page [e]\")\n* [View history]&action=history \"Past revisions of this page [h]\")\n\n General \n\n* [What links here] \"List of all English Wikipedia pages containing links to this page [j]\")\n* [Related changes] \"Recent changes in pages linked from this page [k]\")\n* [Upload file]\n* [Permanent link]&oldid=1374485429 \"Permanent link to this revision of this page\")\n* [Page information]&action=info \"More information about this page\")\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]&useparsoid=0)\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]&printable=yes \"Printable version of this page [p]\")\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nFrom Wikipedia, the free encyclopedia\n\nFrench multinational sporting goods chain\n\nThis article is about the sporting goods retailer. For the track and field event, see [Decathlon]. For other uses, see [Decathlon (disambiguation)] \"Decathlon (disambiguation)\").\n\nDecathlon SA[![Image 4]].svg)\n[![Image 5]]\n\nDecathlon store in [Sydney], Australia\nType[Private]\nIndustry[Retail]\nFounded 1976;50 years ago(1976)\nFounder[Michel Leclercq]\nHeadquarters[Villeneuve d'Ascq], [Nord] \"Nord (French department)\")\n\n, \n\n France\nNumber of locations 1,902 stores (2025)\nArea served 82 countries\nKey people Javier López ([CEO], since March 2025)\nProducts[Clothing]  \n[Sportswear] \"Sportswear (activewear)\")  \n[Sports equipment]\nRevenue![Image 6: Increase][€]20.7 billion(2025)\n[Net income]![Image 7: Increase] €910 million(2025)\nOwner[Association Familiale Mulliez] (51%) \n Famille Leclercq (49%)\nNumber of employees 103,000 (2025)\nWebsite[decathlon.com]\n**Footnotes**  \n[[1]]#cite_note-:5-1)[[2]]#cite_note-2)[[3]]#cite_note-3)\n\n**Decathlon [SA] \"S.A. (corporation)\")** (French pronunciation:[[dekatlɔ̃]]) is a French [multinational][sporting goods][retailer] founded in 1976. With 1,902 stores in 82 countries and regions,[[1]]#cite_note-:5-1) it is widely recognised as the largest sporting goods retailer in the world.[[4]]#cite_note-4)[[5]]#cite_note-5)\n\nThe company manages the research, design, production, logistics and distribution of its products in-house; partners with global suppliers; and markets its own brands directly to consumers in Decathlon-branded [big-box stores]. The retailer stocks a wide range of sporting goods, from [tennis rackets] to advanced [scuba diving] equipment, usually in large, [big-box superstores] averaging 4,000 m 2 in size.[[6]]#cite_note-6) Decathlon Group markets its products under more than 20 brands.[[7]]#cite_note-decathlon.com-7) The company employs about 103,000 people (2025).[[1]]#cite_note-:5-1)\n\n## History\n\n[[edit]&action=edit&section=1 \"Edit section: History\")]\n\n[![Image 8]].svg)\n\nDecathlon's former logo.\n\nFounded by [Michel Leclercq] in 1976, Decathlon started with a store in [Lille], France.[[8]]#cite_note-8) Its holding company was formerly known as Oxylane.[[9]]#cite_note-9)\n\nThe company expanded abroad to [Germany] in 1986,[[10]]#cite_note-:1-10)[Spain] in 1992,[[10]]#cite_note-:1-10)[[11]]#cite_note-11)[Italy] in 1993,[[10]]#cite_note-:1-10)[Belgium] in 1997,[[12]]#cite_note-12)[Portugal], the [United Kingdom] in 1999, [Brazil] in 2001, mainland [China] in 2003, Russia in 2006,[[13]]#cite_note-13)[India] and [Romania] in 2009, [Turkey][[14]]#cite_note-14) and [Czech Republic] in 2010, [Sweden] in 2011, [Taiwan] and [Lebanon][[15]]#cite_note-15) in 2012, [Hong Kong] in 2013, [Malaysia], [Singapore], [Slovenia] and [Mexico][[16]]#cite_note-16) in 2016, [South Africa], [Philippines], [Tunisia][[17]]#cite_note-:2-17)[[18]]#cite_note-:3-18) and [Indonesia] and [Israel] in 2017; in [South Korea], and [Australia] in 2018, and [Canada] and [Serbia] in 2019.[_[citation needed]_]\n\nIn September 2019, Decathlon reached an agreement with Alltricks, an online retailer of accessories for cyclists and runners.[[19]]#cite_note-19)[[20]]#cite_note-20)[[21]]#cite_note-21)[[22]]#cite_note-22)\n\nIn 2022 Decathlon closed their retail store presence in the United States.[[23]]#cite_note-23)[[24]]#cite_note-24)\n\nIn 2023, Decathlon opened a training centre in [Lille].[[25]]#cite_note-:4-25) By October 2023, Decathlon had nine training centres in partnership with Afpa Entreprises, an association for the professional training of adults, and three centres of its own on its premises.[[25]]#cite_note-:4-25)\n\nIn November 2023, Decathlon acquired [Bergfreunde], an online specialist retailer for mountain sports, climbing, and outdoor equipment.[[26]]#cite_note-26)[[27]]#cite_note-27) Decathlon is increasing its investments to boost production and expand its retail presence in India, from where it presently exports around 65% of its output to international markets, according to Global CEO Barbara Martin Coppola.[[28]]#cite_note-28)\n\nIn July 2024, Decathlon reported its investment Recyc'Elit, a start-up specialized in the chemical recycling of polyester textiles and complex PET plastics.[[29]]#cite_note-29) This year it was also announced that Decathlon is partnered [CNES] and [Spartan Space] to develop an intravehicular spacesuit.[[30]]#cite_note-30) In November 2025, Decathlon unveiled its first spacesuit for European astronauts to wear aboard the [International Space Station].[[31]]#cite_note-31)[[32]]#cite_note-32)\n\nIn April 2025, Decathlon initiated a process to sell a 30% stake of its China business, with its China business being valued at over $1 billion.[[33]]#cite_note-33)\n\nIn June 2026, Decathlon acquired a 10% stake of [Brompton Bicycle].[[34]]#cite_note-34)[[35]]#cite_note-35)\n\n## Corporate affairs\n\n[[edit]&action=edit&section=2 \"Edit section: Corporate affairs\")]\n\n### Financial results\n\n[[edit]&action=edit&section=3 \"Edit section: Financial results\")]\n\nThe key trends of Decathlon are (as at the financial year ending 31 December):[[36]]#cite_note-36)\n\n|  | Revenue[[a]]#cite_note-37) (€ bn) | Net income (€ m) | Digital sales share | Number of employees | Number of served countries[[b]]#cite_note-38) | Number of stores | Number of products sold (bn) |\n| - | - | - | - | - | - | - | - |\n| 2010[[37]]#cite_note-:6-39) | 6.0 |  |  | 45,000 |  |  |  |\n| 2011[[37]]#cite_note-:6-39) | 6.5 |  |  | 50,000 |  |  |  |\n| 2012[[37]]#cite_note-:6-39) | 7.0 |  |  | 55"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2):\\n    R = 6371.0  # Earth's mean radius in km\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2 - lat1)\\n    dlmb = math.radians(lon2 - lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Goa (Piso HQ, Caranzalem/Taleigao near Panaji)\\ngoa_options = {\\n    \\\"Panaji/Caranzalem\\\": (15.4909, 73.8278),\\n    \\\"Taleigao\\\":          (15.4870, 73.8120),\\n}\\n\\n# Lille / Decathlon HQ (Villeneuve-d'Ascq)\\nlille_options = {\\n    \\\"Lille centre\\\":          (50.6292, 3.0573),\\n    \\\"Villeneuve-d'Ascq\\\":     (50.6292, 3.1650),\\n    \\\"Englos (Decathlon HQ)\\\": (50.6086, 3.0206),\\n}\\n\\nprint(\\\"Great-circle distances (km):\\\\n\\\")\\nresults = []\\nfor gname,(gla,glo) in goa_options.items():\\n    for lname,(lla,llo) in lille_options.items():\\n        d = haversine(gla,glo,lla,llo)\\n        results.append(d)\\n        print(f\\\"Goa[{gname}] -> Lille[{lname}]: {d:,.0f} km\\\")\\n\\nprint(f\\\"\\\\nRange: {min(results):,.0f} - {max(results):,.0f} km\\\")\\nprint(f\\\"Approximate average: {sum(results)/len(results):,.0f} km\\\")\"}",
+      "result": {
+        "stdout": "Great-circle distances (km):\n\nGoa[Panaji/Caranzalem] -> Lille[Lille centre]: 7,331 km\nGoa[Panaji/Caranzalem] -> Lille[Villeneuve-d'Ascq]: 7,324 km\nGoa[Panaji/Caranzalem] -> Lille[Englos (Decathlon HQ)]: 7,334 km\nGoa[Taleigao] -> Lille[Lille centre]: 7,331 km\nGoa[Taleigao] -> Lille[Villeneuve-d'Ascq]: 7,323 km\nGoa[Taleigao] -> Lille[Englos (Decathlon HQ)]: 7,333 km\n\nRange: 7,323 - 7,334 km\nApproximate average: 7,329 km",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 134,
+      "id": "gen-1791468409-lJTPZJ3mKFQt7HAvjCVe",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 3374,
+        "completion_tokens": 268,
+        "total_tokens": 3642,
+        "cost": 0.00063206,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00063206,
+          "upstream_inference_prompt_cost": 0.0005061,
+          "upstream_inference_completions_cost": 0.00012596
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 144,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 14.093
+    },
+    {
+      "item_id": 134,
+      "id": "gen-1791468427-X8TUyAS9p6ogq2XWZoLU",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 5877,
+        "completion_tokens": 992,
+        "total_tokens": 6869,
+        "cost": 0.00134779,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00134779,
+          "upstream_inference_prompt_cost": 0.00088155,
+          "upstream_inference_completions_cost": 0.00046624
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 820,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 17.283
+    },
+    {
+      "item_id": 134,
+      "id": "gen-1791468452-P98cqeCHP63zR69yNEIu",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 14275,
+        "completion_tokens": 974,
+        "total_tokens": 15249,
+        "cost": 0.001878646,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5376,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001878646,
+          "upstream_inference_prompt_cost": 0.001420866,
+          "upstream_inference_completions_cost": 0.00045778
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 360,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 17.397
+    },
+    {
+      "item_id": 134,
+      "id": "gen-1791468470-eYEX3L2CO4jMlAsuZ6UN",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 15469,
+        "completion_tokens": 383,
+        "total_tokens": 15852,
+        "cost": 0.00250036,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00250036,
+          "upstream_inference_prompt_cost": 0.00232035,
+          "upstream_inference_completions_cost": 0.00018001
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 80,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 12.057
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Approximately 7,330 km (about 7,300–7,350 km). This is the great-circle distance between Piso's headquarters in Goa, India (~15.49°N, 73.83°E) and the headquarters of Oxelo's/Decathlon's skateboarding division in Lille, France (~50.63°N, 3.06°E).",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 86.28
+}

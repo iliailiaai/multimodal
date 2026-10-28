@@ -1,0 +1,1012 @@
+{
+  "id": 86,
+  "question": "In 2014, the media industry saw a trend of companies acquiring YouTube multi-channel networks (MCNs) to enhance their digital portfolios. Watch the provided video to learn about three specific acquisitions from that year. For each acquisition in the order they appear in the video, you must: (a) identify both the acquiring company and the acquired MCN, and (b) determine the acquisition price in millions of dollars. For the first two deals, use external sources to find the price (for the first deal, use the base price without earn-outs; for the second deal, use the midpoint of the reported valuation range). For the third deal, use the price stated directly in the video. (c) From external sources, determine the founding year of each acquired MCN. Assume all acquisitions took place in 2014.\n\nNext, for each acquisition, calculate the ratio of the acquisition price to the age of the MCN at the time of acquisition (in years). Sum these three ratios to get a value R.\n\nThen, determine the founding years of the acquiring companies for the first and third acquisitions from external sources, and compute the absolute difference between these founding years to get D.\n\nAdditionally, note the day number mentioned in the video's sponsorship segment.\n\nFinally, compute R × D × the sponsorship day number and provide the final integer result.",
+  "Level": "Medium",
+  "category": "Finance & Commerce",
+  "task_type": "video w/ audio",
+  "answer": "120888",
+  "output": "All data is verified. Here's the complete breakdown:\n\n**The three acquisitions (in order of appearance in the video):**\n\n| # | Acquirer | Acquired MCN | Price ($M) | MCN Founded | Age (2014) | Ratio |\n|---|----------|--------------|-----------|-------------|------------|-------|\n| 1 | Disney | Maker Studios | 500 (base price, excl. $450M earn-out) | 2009 | 5 | 100.0 |\n| 2 | Otter Media (AT&T/Chernin) | Fullscreen | 250 (midpoint of reported $200–300M range) | 2011 | 3 | 83.33 |\n| 3 | RTL Group | StyleHaul | 107 (stated in the video) | 2011 | 3 | 35.67 |\n\n**Computations:**\n- **R** = 100 + 250/3 + 107/3 = 100 + 357/3 = 100 + 119 = **219** (exact)\n- **D** = |Disney founded 1923 − RTL Group founded 1931| = **8**\n- **Sponsorship day number** (from the video's chyron \"Day 69 of our $100,000 sponsorship!\" and the host's statement \"we're only on day 69 of 365 days\") = **69**\n\n**Final:** R × D × day = 219 × 8 × 69 = 1,752 × 69 = **120,888**\n\n<answer>120888</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "In 2014, the media industry saw a trend of companies acquiring YouTube multi-channel networks (MCNs) to enhance their digital portfolios. Watch the provided video to learn about three specific acquisitions from that year. For each acquisition in the order they appear in the video, you must: (a) identify both the acquiring company and the acquired MCN, and (b) determine the acquisition price in millions of dollars. For the first two deals, use external sources to find the price (for the first deal, use the base price without earn-outs; for the second deal, use the midpoint of the reported valuation range). For the third deal, use the price stated directly in the video. (c) From external sources, determine the founding year of each acquired MCN. Assume all acquisitions took place in 2014.\n\nNext, for each acquisition, calculate the ratio of the acquisition price to the age of the MCN at the time of acquisition (in years). Sum these three ratios to get a value R.\n\nThen, determine the founding years of the acquiring companies for the first and third acquisitions from external sources, and compute the absolute difference between these founding years to get D.\n\nAdditionally, note the day number mentioned in the video's sponsorship segment.\n\nFinally, compute R × D × the sponsorship day number and provide the final integer result."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:3256986 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:884460 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try analyzing the video. The video mentions three acquisitions:\n1. Disney acquired Maker Studios\n2. The Sherwood Group? Actually, \"Otter Media of AT&T and The Sherwood Group acquired Fullscreen\" — in reality, AT&T's Otter Media acquired Fullscreen (in 2013, $200 million?). Let me try to remember: Otter Media (AT&T) invested in Fullscreen… actually, in 2013, Otter Media acquired a majority stake in Fullscreen for $200 million. Hmm.\n\nWait, the video says \"Disney acquired Maker Studios, The Sherwood Group and Otter Media of AT&T acquired Fullscreen, and now European entertainment company RTL Group just acquired StyleHaul for $107 million.\"\n\nActual facts: Disney acquired Maker Studios for $500 million (base price, plus up to $450 million in earnouts). Announced in May 2014.\n\nOtter Media (AT&T and Cherry Lane) acquired Fullscreen… hmm, actually in September 2013, Otter Media invested in Fullscreen… let me try to remember: \"Otter Media acquires Fullscreen\" — in 2013, Otter Media acquired a majority stake in Fullscreen for a reported $200 million? Some reports said the valuation was $150–200 million. The problem statement says \"use the midpoint of the reported valuation range for the second deal.\" So probably the reported range is $150 million–$200 million, and the midpoint = $175 million.\n\nThird deal: RTL Group acquired StyleHaul for $107 million (stated in the video). Actual fact: RTL Group acquired StyleHaul for up to $135 million? Actually, RTL acquired StyleHaul in 2014 for about $107 million (€80 million?). The video states $107 million, so use that.\n\nFounding years of the acquired MCNs:\n- Maker Studios: founded in 2009.\n- Fullscreen: founded in 2011.\n- StyleHaul: founded in 2010? Let me check: StyleHaul was founded in 2010 (by Ari Emanuel? No…). StyleHaul was founded in 2010 in Amsterdam? Hmm. Let me search.\n\nAge at time of acquisition (assuming 2014):\n- Maker Studios: 2014 - 2009 = 5 years. Price $500 million → ratio 100.\n- Fullscreen: 2014 - 2011 = 3 years. Price $175 million → ratio 58.333…\n- StyleHaul: 2014 - founding year. If founded in 2010, age 4 → 107/4 = 26.75.\n\nR = 100 + 58.3333 + 26.75 = 185.0833…\n\nHmm, not a clean number. Let me double-check the numbers.\n\nActually, maybe the reported range for Fullscreen is $150–200 million → midpoint 175. Age: Fullscreen was founded in 2011, acquired in 2013? But the problem statement says \"assume all acquisitions took place in 2014.\" So age = 3.\n\nStyleHaul's founding year: I think StyleHaul was founded in 2010 (by Peter Van… hmm). Let me search to confirm.\n\nD: Founding years of the acquiring companies for the first and third deals: Disney founded in 1923; RTL Group founded in… RTL Group was founded in 1993? Hmm. RTL Group's origins: founded in 1984? Let me think. RTL Group is a Luxembourg-based entertainment company; founded in 1993? Actually, \"RTL Group\" was established in 1993 as a holding company? CLT-UFA merged in 1997… hmm. Wikipedia: RTL Group was founded in 1993? Let me check: RTL Group's predecessor: Radio Télévision Luxembourg (RTL) started broadcasting in 1931… the group itself: \"Founded: 1993\"? Hmm, I recall RTL Group was formed in 2000 when CLT-Multivision renamed itself? Actually, CLT (Compagnie Luxembourgeoise de Télédiffusion) was founded in 1931? Hmm.\n\nWikipedia infobox: RTL Group — Founded: 1993? Not sure. Let me plan to search.\n\nD = |founding year of Disney - founding year of RTL Group|. If Disney is 1923 and RTL Group is 1993, then D = 70.\n\nSponsorship day count: Day 69.\n\nFinal = R × D × 69.\n\nR = 100 + 175/3 + 107/age(StyleHaul).\n\nIf StyleHaul was founded in 2010 → age 4 → 26.75. R = 185.0833333. Multiply by 70 = 12955.8333; multiply by 69 = 893,952.5? Let me calculate: 185.0833333 × 70 = 12955.83333; × 69 = 893,952.5. Not an integer. Hmm, the problem asks for the final integer result — maybe it expects rounding.\n\nMaybe StyleHaul was founded in 2009? Then age 5, ratio 21.4, R = 179.7333; ×70 = 12581.33; ×69 = 868,112. Hmm, also not an integer.\n\nMaybe RTL Group's founding year is different: Wikipedia says RTL Group was founded in 1993? Let me check via search.\n\nOr maybe Disney was founded in 1923 (October 16, 1923). RTL Group: founded in 1984? Hmm.\n\nLet me think about Fullscreen's founding year: 2011 (by George Strompolos). Maker Studios: 2009 (by Lisa Donovan, Jason Hemsley, Nicolo Turchi? Actually founded in 2009 in LA). StyleHaul: founded in 2010? I recall StyleHaul was founded in 2010 by Daan… hmm. Actually, StyleHaul was founded in 2010 in Amsterdam? Or New York? Let me search.\n\nThe problem statement says \"use external sources to find the price (for the first deal, use the base price excluding earnouts…)\" — Disney/Maker Studios: base $500 million, up to $450 million in earnouts. Yes.\n\n\"For the second deal, use the midpoint of the reported valuation range\" — Otter Media/Fullscreen: reports said $150–200 million? Let me confirm: In September 2013, Otter Media acquired Fullscreen for a reported $200 million? Some sources say \"the deal values Fullscreen at $150–200 million.\" Hmm. TechCrunch: \"Otter Media Acquires Fullscreen\"… actually, I recall the reported range was $150–200 million. Midpoint = 175.\n\nSo the ratios: Maker: 500/5 = 100. Fullscreen: 175/3 ≈ 58.33. StyleHaul: 107/x.\n\nR total: 100 + 58.3333 + 107/x.\n\nIf x = 4 (founded 2010): R = 185.08333.\nD: Disney 1923, RTL Group? If RTL Group was founded in 1993, D = 70. R×D = 12955.8333. ×69 = 893952.5 → round to 893953? Hmm, not a clean integer.\n\nMaybe the intended founding year for StyleHaul is 2011? Then age 3, ratio 35.6667, R = 194.0? Wait: 100 + 58.3333 + 35.6667 = exactly 194! That's clean. R = 194.\n\nInteresting: 107/3 = 35.6667; 175/3 = 58.3333; sum = 262.5/3? Wait 175+107 = 282; /3 = 94; +100 = 194. Yes! R = exactly 194. So StyleHaul must have been founded in 2011.\n\nHmm, was StyleHaul founded in 2011? Let me check: StyleHaul… I think StyleHaul was founded in 2011? Some sources: \"StyleHaul was founded in 2011 by Ari…\" hmm. Actually, I recall StyleHaul launched in 2011? Wikipedia: StyleHaul — Founded: 2011? Not sure. Let me search.\n\nThen D: Disney (1923) and RTL Group (founded in 1993?) → D = 70. R × D = 194 × 70 = 13580. × 69 = 937,020. Integer! Good.\n\nBut wait, RTL Group's founding year might be different: Wikipedia infobox: \"Founded: 1993; as CLT-UFA?\" Hmm. Let me think. RTL Group history: Radio Télévision Luxembourg (RTL) started in 1931… the corporate entity: \"RTL Group S.A.\" was founded in 1993? Actually, I think the company was founded in 1993 as \"CLT-Multivision\"? Hmm.\n\nLet me try to recall Wikipedia: RTL Group: \"RTL Group is a Luxembourg-based global media company… Founded: 1993; Headquarters: Luxembourg City… Owner: Bertelsmann (75%)…\" Hmm, I'm not certain.\n\nAlternatively, RTL Group's founding might be listed as 1984 (when RTL+? no). Let me search.\n\nAlso, the problem statement says \"compute the absolute difference between these founding years to get D.\" If Disney is 1923 and RTL is 1993, then D = 70.\n\nFinal = 194 × 70 × 69 = 194 × 4830 = 937,020.\n\nLet me verify: 70 × 69 = 4830. 4830 × 194 = 4830×200 - 4830×6 = 966,000 - 28,980 = 937,020. Yes.\n\nBut I need to verify StyleHaul's founding year (2011?), Fullscreen's founding year (2011), Maker Studios' founding year (2009), the Disney/Maker price ($500 million), Otter Media/Fullscreen range ($150–200 million?), RTL/StyleHaul $107 million (stated in the video), and RTL Group's founding year (1993?).\n\nHmm, wait: the video says \"The Sherwood Group and Otter Media of AT&T acquired Fullscreen.\" Actually, the real story: In 2013, Otter Media (a joint venture of AT&T and Cherry Lane Capital) acquired Fullscreen. Hmm, \"Sherwood Group\"? Maybe the narrator said \"Cherry Lane\"? Whatever.\n\nBut the problem statement says assume all acquisitions took place in 2014. So ages: Maker: 2014-2009=5; Fullscreen: 2014-2011=3; StyleHaul: 2014-2011=3? If StyleHaul was founded in 2011.\n\nLet me search to confirm StyleHaul's founding year. I think StyleHaul was founded in 2011 by Peter… hmm. Actually, I recall StyleHaul was founded in 2010 in Amsterdam by Daan…? Let me search.\n\nAlso, confirm the reported valuation range for Fullscreen: TechCrunch article \"Otter Media Acquires Fullscreen\" September 2013: \"sources say the deal values Fullscreen at $150–200 million\"? Something like that. Midpoint 175.\n\nAnd Disney/Maker Studios: $500 million base, up to $450 million in earnouts. Yes.\n\nRTL Group's founding year: Wikipedia infobox says \"Founded: 1993\"? Let me check. Hmm, I really don't remember. RTL Group's history: 1931 RTL radio; 1953 Télé Luxembourg; 1962 CLT; 1984 RTL+?; 1993?; 1997 CLT-UFA merger with UFA; 2000 CLT-UFA renamed to Premiere?; 2001 merger with Pearson Television → RTL Group? Hmm. Actually, \"RTL Group\" was formed in 2000 when CLT-UFA and Pearson Television merged? No wait: In 2000, CLT-UFA merged with Pearson Television to form RTL Group? Hmm: Bertelsmann acquired… let me think: In 2001, CLT-UFA and Pearson Entertainment? Actually, Wikipedia: \"RTL Group was founded in 1993\"? Not sure.\n\nLet me search.\n\nPlan:\n1. Search \"Disney Maker Studios acquisition $500 million 2014\"\n2. Search \"Otter Media Fullscreen acquisition valuation $150 million $200 million\"\n3. Search \"RTL Group StyleHaul $107 million 2014\"\n4. Search \"Maker Studios founded 2009\"\n5. Search \"Fullscreen founded 2011\"\n6. Search \"StyleHaul founded 2011\" or 2010\n7. Search \"RTL Group founded year\"\n8. Search \"Disney founded 1923\"\n\nThen calculate.\n\nLet me run these searches in parallel batches.\n\nAlso, confirm the sponsorship day count: The video shows \"Day 69 of our $100,000 sponsorship!\" Yes, 69.\n\nNow let me calculate possibilities: If StyleHaul was founded in 2010 → age 4 → R = 185.0833; ×70×69 = 893,952.5 → not integer. The problem asks for the final integer result, suggesting the calculation comes out to an integer. With 2011, R = 194 is exact, final = 937,020. This strongly suggests the intended founding year is 2011.\n\nBut wait, D might not be 70. If RTL Group was founded in 2000, D = 77. Then final = 194 × 77 × 69 = 194 × 5313 = 1,030,722. Also an integer. Hmm. So the integrality doesn't uniquely determine it. I need to check RTL Group's founding year on Wikipedia.\n\nLet me search.\n\nActually, I recall the Wikipedia infobox for RTL Group: \"Founded: 1993; Founder: …\"? Hmm. Or \"Founded: 2000\"? Let me think about the history: CLT (Compagnie Luxembourgeoise de Télédiffusion) was founded in 1931? RTL Group's official site says \"RTL Group's history dates back to 1931…\". Hmm.\n\nI think the Wikipedia infobox says \"Founded: 1993; as CLT-UFA?\" No…\n\nAnyway, let me search.\n\nAlso, Fullscreen's founding year: 2011 (by George Strompolos, then 19 years old). Yes.\n\nMaker Studios: founded in 2009 by Lisa Donovan, Jason Hemsley, and Nicolo Turchi? Actually, founded in 2009 in Los Angeles. Yes.\n\nStyleHaul: I think founded in 2011? Hmm, some sources: \"StyleHaul was founded in 2010 by Ari Emanuel's…\"? No, that's Endeavor? Let me search.\n\nOK, let me run the searches.\n\nBatch 1:\n- web_search: \"Disney acquires Maker Studios $500 million 2014\"\n- web_search: \"Otter Media acquires Fullscreen valuation $150 million $200 million\"\n- web_search: \"RTL Group acquires StyleHaul $107 million\"\n- web_search: \"StyleHaul founded year MCN\"\n- web_search: \"Maker Studios founded 2009\"\n- web_search: \"Fullscreen founded 2011\"\n- web_search: \"RTL Group founded year Wikipedia\"\n- web_search: \"The Walt Disney Company founded 1923\"\n\nThat's 8 searches; can be batched.\n\nThen calculate with code.\n\nLet's begin.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_5dc5d52f1eda48939e3dd900",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Disney acquires Maker Studios 2014 $500 million earnout\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_2e81c99371ce489aba5b867a",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Otter Media acquires Fullscreen valuation $150 million $200 million\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 2,
+          "id": "call_5e24b1f47a794f669ff61c98",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"RTL Group acquires StyleHaul 2014 $107 million\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 3,
+          "id": "call_bd3ea48342834e278b1a866b",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"StyleHaul YouTube network founded year\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try analyzing the video. The video mentions three acquisitions:\n1. Disney acquired Maker Studios\n2. The Sherwood Group? Actually, \"Otter Media of AT&T and The Sherwood Group acquired Fullscreen\" — in reality, AT&T's Otter Media acquired Fullscreen (in 2013, $200 million?). Let me try to remember: Otter Media (AT&T) invested in Fullscreen… actually, in 2013, Otter Media acquired a majority stake in Fullscreen for $200 million. Hmm.\n\nWait, the video says \"Disney acquired Maker Studios, The Sherwood Group and Otter Media of AT&T acquired Fullscreen, and now European entertainment company RTL Group just acquired StyleHaul for $107 million.\"\n\nActual facts: Disney acquired Maker Studios for $500 million (base price, plus up to $450 million in earnouts). Announced in May 2014.\n\nOtter Media (AT&T and Cherry Lane) acquired Fullscreen… hmm, actually in September 2013, Otter Media invested in Fullscreen… let me try to remember: \"Otter Media acquires Fullscreen\" — in 2013, Otter Media acquired a majority stake in Fullscreen for a reported $200 million? Some reports said the valuation was $150–200 million. The problem statement says \"use the midpoint of the reported valuation range for the second deal.\" So probably the reported range is $150 million–$200 million, and the midpoint = $175 million.\n\nThird deal: RTL Group acquired StyleHaul for $107 million (stated in the video). Actual fact: RTL Group acquired StyleHaul for up to $135 million? Actually, RTL acquired StyleHaul in 2014 for about $107 million (€80 million?). The video states $107 million, so use that.\n\nFounding years of the acquired MCNs:\n- Maker Studios: founded in 2009.\n- Fullscreen: founded in 2011.\n- StyleHaul: founded in 2010? Let me check: StyleHaul was founded in 2010 (by Ari Emanuel? No…). StyleHaul was founded in 2010 in Amsterdam? Hmm. Let me search.\n\nAge at time of acquisition (assuming 2014):\n- Maker Studios: 2014 - 2009 = 5 years. Price $500 million → ratio 100.\n- Fullscreen: 2014 - 2011 = 3 years. Price $175 million → ratio 58.333…\n- StyleHaul: 2014 - founding year. If founded in 2010, age 4 → 107/4 = 26.75.\n\nR = 100 + 58.3333 + 26.75 = 185.0833…\n\nHmm, not a clean number. Let me double-check the numbers.\n\nActually, maybe the reported range for Fullscreen is $150–200 million → midpoint 175. Age: Fullscreen was founded in 2011, acquired in 2013? But the problem statement says \"assume all acquisitions took place in 2014.\" So age = 3.\n\nStyleHaul's founding year: I think StyleHaul was founded in 2010 (by Peter Van… hmm). Let me search to confirm.\n\nD: Founding years of the acquiring companies for the first and third deals: Disney founded in 1923; RTL Group founded in… RTL Group was founded in 1993? Hmm. RTL Group's origins: founded in 1984? Let me think. RTL Group is a Luxembourg-based entertainment company; founded in 1993? Actually, \"RTL Group\" was established in 1993 as a holding company? CLT-UFA merged in 1997… hmm. Wikipedia: RTL Group was founded in 1993? Let me check: RTL Group's predecessor: Radio Télévision Luxembourg (RTL) started broadcasting in 1931… the group itself: \"Founded: 1993\"? Hmm, I recall RTL Group was formed in 2000 when CLT-Multivision renamed itself? Actually, CLT (Compagnie Luxembourgeoise de Télédiffusion) was founded in 1931? Hmm.\n\nWikipedia infobox: RTL Group — Founded: 1993? Not sure. Let me plan to search.\n\nD = |founding year of Disney - founding year of RTL Group|. If Disney is 1923 and RTL Group is 1993, then D = 70.\n\nSponsorship day count: Day 69.\n\nFinal = R × D × 69.\n\nR = 100 + 175/3 + 107/age(StyleHaul).\n\nIf StyleHaul was founded in 2010 → age 4 → 26.75. R = 185.0833333. Multiply by 70 = 12955.8333; multiply by 69 = 893,952.5? Let me calculate: 185.0833333 × 70 = 12955.83333; × 69 = 893,952.5. Not an integer. Hmm, the problem asks for the final integer result — maybe it expects rounding.\n\nMaybe StyleHaul was founded in 2009? Then age 5, ratio 21.4, R = 179.7333; ×70 = 12581.33; ×69 = 868,112. Hmm, also not an integer.\n\nMaybe RTL Group's founding year is different: Wikipedia says RTL Group was founded in 1993? Let me check via search.\n\nOr maybe Disney was founded in 1923 (October 16, 1923). RTL Group: founded in 1984? Hmm.\n\nLet me think about Fullscreen's founding year: 2011 (by George Strompolos). Maker Studios: 2009 (by Lisa Donovan, Jason Hemsley, Nicolo Turchi? Actually founded in 2009 in LA). StyleHaul: founded in 2010? I recall StyleHaul was founded in 2010 by Daan… hmm. Actually, StyleHaul was founded in 2010 in Amsterdam? Or New York? Let me search.\n\nThe problem statement says \"use external sources to find the price (for the first deal, use the base price excluding earnouts…)\" — Disney/Maker Studios: base $500 million, up to $450 million in earnouts. Yes.\n\n\"For the second deal, use the midpoint of the reported valuation range\" — Otter Media/Fullscreen: reports said $150–200 million? Let me confirm: In September 2013, Otter Media acquired Fullscreen for a reported $200 million? Some sources say \"the deal values Fullscreen at $150–200 million.\" Hmm. TechCrunch: \"Otter Media Acquires Fullscreen\"… actually, I recall the reported range was $150–200 million. Midpoint = 175.\n\nSo the ratios: Maker: 500/5 = 100. Fullscreen: 175/3 ≈ 58.33. StyleHaul: 107/x.\n\nR total: 100 + 58.3333 + 107/x.\n\nIf x = 4 (founded 2010): R = 185.08333.\nD: Disney 1923, RTL Group? If RTL Group was founded in 1993, D = 70. R×D = 12955.8333. ×69 = 893952.5 → round to 893953? Hmm, not a clean integer.\n\nMaybe the intended founding year for StyleHaul is 2011? Then age 3, ratio 35.6667, R = 194.0? Wait: 100 + 58.3333 + 35.6667 = exactly 194! That's clean. R = 194.\n\nInteresting: 107/3 = 35.6667; 175/3 = 58.3333; sum = 262.5/3? Wait 175+107 = 282; /3 = 94; +100 = 194. Yes! R = exactly 194. So StyleHaul must have been founded in 2011.\n\nHmm, was StyleHaul founded in 2011? Let me check: StyleHaul… I think StyleHaul was founded in 2011? Some sources: \"StyleHaul was founded in 2011 by Ari…\" hmm. Actually, I recall StyleHaul launched in 2011? Wikipedia: StyleHaul — Founded: 2011? Not sure. Let me search.\n\nThen D: Disney (1923) and RTL Group (founded in 1993?) → D = 70. R × D = 194 × 70 = 13580. × 69 = 937,020. Integer! Good.\n\nBut wait, RTL Group's founding year might be different: Wikipedia infobox: \"Founded: 1993; as CLT-UFA?\" Hmm. Let me think. RTL Group history: Radio Télévision Luxembourg (RTL) started in 1931… the corporate entity: \"RTL Group S.A.\" was founded in 1993? Actually, I think the company was founded in 1993 as \"CLT-Multivision\"? Hmm.\n\nLet me try to recall Wikipedia: RTL Group: \"RTL Group is a Luxembourg-based global media company… Founded: 1993; Headquarters: Luxembourg City… Owner: Bertelsmann (75%)…\" Hmm, I'm not certain.\n\nAlternatively, RTL Group's founding might be listed as 1984 (when RTL+? no). Let me search.\n\nAlso, the problem statement says \"compute the absolute difference between these founding years to get D.\" If Disney is 1923 and RTL is 1993, then D = 70.\n\nFinal = 194 × 70 × 69 = 194 × 4830 = 937,020.\n\nLet me verify: 70 × 69 = 4830. 4830 × 194 = 4830×200 - 4830×6 = 966,000 - 28,980 = 937,020. Yes.\n\nBut I need to verify StyleHaul's founding year (2011?), Fullscreen's founding year (2011), Maker Studios' founding year (2009), the Disney/Maker price ($500 million), Otter Media/Fullscreen range ($150–200 million?), RTL/StyleHaul $107 million (stated in the video), and RTL Group's founding year (1993?).\n\nHmm, wait: the video says \"The Sherwood Group and Otter Media of AT&T acquired Fullscreen.\" Actually, the real story: In 2013, Otter Media (a joint venture of AT&T and Cherry Lane Capital) acquired Fullscreen. Hmm, \"Sherwood Group\"? Maybe the narrator said \"Cherry Lane\"? Whatever.\n\nBut the problem statement says assume all acquisitions took place in 2014. So ages: Maker: 2014-2009=5; Fullscreen: 2014-2011=3; StyleHaul: 2014-2011=3? If StyleHaul was founded in 2011.\n\nLet me search to confirm StyleHaul's founding year. I think StyleHaul was founded in 2011 by Peter… hmm. Actually, I recall StyleHaul was founded in 2010 in Amsterdam by Daan…? Let me search.\n\nAlso, confirm the reported valuation range for Fullscreen: TechCrunch article \"Otter Media Acquires Fullscreen\" September 2013: \"sources say the deal values Fullscreen at $150–200 million\"? Something like that. Midpoint 175.\n\nAnd Disney/Maker Studios: $500 million base, up to $450 million in earnouts. Yes.\n\nRTL Group's founding year: Wikipedia infobox says \"Founded: 1993\"? Let me check. Hmm, I really don't remember. RTL Group's history: 1931 RTL radio; 1953 Télé Luxembourg; 1962 CLT; 1984 RTL+?; 1993?; 1997 CLT-UFA merger with UFA; 2000 CLT-UFA renamed to Premiere?; 2001 merger with Pearson Television → RTL Group? Hmm. Actually, \"RTL Group\" was formed in 2000 when CLT-UFA and Pearson Television merged? No wait: In 2000, CLT-UFA merged with Pearson Television to form RTL Group? Hmm: Bertelsmann acquired… let me think: In 2001, CLT-UFA and Pearson Entertainment? Actually, Wikipedia: \"RTL Group was founded in 1993\"? Not sure.\n\nLet me search.\n\nPlan:\n1. Search \"Disney Maker Studios acquisition $500 million 2014\"\n2. Search \"Otter Media Fullscreen acquisition valuation $150 million $200 million\"\n3. Search \"RTL Group StyleHaul $107 million 2014\"\n4. Search \"Maker Studios founded 2009\"\n5. Search \"Fullscreen founded 2011\"\n6. Search \"StyleHaul founded 2011\" or 2010\n7. Search \"RTL Group founded year\"\n8. Search \"Disney founded 1923\"\n\nThen calculate.\n\nLet me run these searches in parallel batches.\n\nAlso, confirm the sponsorship day count: The video shows \"Day 69 of our $100,000 sponsorship!\" Yes, 69.\n\nNow let me calculate possibilities: If StyleHaul was founded in 2010 → age 4 → R = 185.0833; ×70×69 = 893,952.5 → not integer. The problem asks for the final integer result, suggesting the calculation comes out to an integer. With 2011, R = 194 is exact, final = 937,020. This strongly suggests the intended founding year is 2011.\n\nBut wait, D might not be 70. If RTL Group was founded in 2000, D = 77. Then final = 194 × 77 × 69 = 194 × 5313 = 1,030,722. Also an integer. Hmm. So the integrality doesn't uniquely determine it. I need to check RTL Group's founding year on Wikipedia.\n\nLet me search.\n\nActually, I recall the Wikipedia infobox for RTL Group: \"Founded: 1993; Founder: …\"? Hmm. Or \"Founded: 2000\"? Let me think about the history: CLT (Compagnie Luxembourgeoise de Télédiffusion) was founded in 1931? RTL Group's official site says \"RTL Group's history dates back to 1931…\". Hmm.\n\nI think the Wikipedia infobox says \"Founded: 1993; as CLT-UFA?\" No…\n\nAnyway, let me search.\n\nAlso, Fullscreen's founding year: 2011 (by George Strompolos, then 19 years old). Yes.\n\nMaker Studios: founded in 2009 by Lisa Donovan, Jason Hemsley, and Nicolo Turchi? Actually, founded in 2009 in Los Angeles. Yes.\n\nStyleHaul: I think founded in 2011? Hmm, some sources: \"StyleHaul was founded in 2010 by Ari Emanuel's…\"? No, that's Endeavor? Let me search.\n\nOK, let me run the searches.\n\nBatch 1:\n- web_search: \"Disney acquires Maker Studios $500 million 2014\"\n- web_search: \"Otter Media acquires Fullscreen valuation $150 million $200 million\"\n- web_search: \"RTL Group acquires StyleHaul $107 million\"\n- web_search: \"StyleHaul founded year MCN\"\n- web_search: \"Maker Studios founded 2009\"\n- web_search: \"Fullscreen founded 2011\"\n- web_search: \"RTL Group founded year Wikipedia\"\n- web_search: \"The Walt Disney Company founded 1923\"\n\nThat's 8 searches; can be batched.\n\nThen calculate with code.\n\nLet's begin.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5dc5d52f1eda48939e3dd900",
+      "content": "[{\"id\": 1, \"title\": \"Disney to Acquire Maker Studios, the Leading Network of ...\", \"url\": \"https://thewaltdisneycompany.com/news/disney-to-acquire-maker-studios-the-leading-network-of-online-video-content/\", \"snippet\": \"Maker Studios shareholders will receive total consideration of $500 million, and a performance-linked earn-out of up to $450 million if the ...\", \"date\": \"Mar 24, 2014\"}, {\"id\": 2, \"title\": \"Disney's Maker Studios deal: Creator ownership vs ...\", \"url\": \"https://www.linkedin.com/posts/jastein_in-2014-disney-bought-maker-studios-for-activity-7456010352263073792-UiTa\", \"snippet\": \"In 2014, Disney bought Maker Studios for $500 million up front. The earnout could have pushed the deal to $950 million.\", \"date\": \"5 months ago\"}, {\"id\": 3, \"title\": \"Disney Buys Maker Studios In Deal Worth At Least $500 ...\", \"url\": \"https://variety.com/2014/biz/news/disney-buys-maker-studios-in-deal-worth-at-least-500-million-1201145068/\", \"snippet\": \"The Walt Disney Co. is acquiring Maker Studios, a top YouTube multichannel network, for $500 million with a performance-based earn-out of up ...\", \"date\": \"Mar 24, 2014\"}, {\"id\": 4, \"title\": \"Disney Digital Network\", \"url\": \"https://en.wikipedia.org/wiki/Disney_Digital_Network\", \"snippet\": \"Maker Studios was acquired by The Walt Disney Company in 2014 for $500 million, and was absorbed into the newly formed Disney Digital Network in 2017.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Inside Disney's troubled $675 mil. Maker Studios acquisition\", \"url\": \"https://digiday.com/future-of-tv/disney-maker-studios/\", \"snippet\": \"Disney ended up paying only $675 million for Maker, which is reportedly bracing for layoffs as the company plans to shrink the size of its ...\", \"date\": \"Feb 22, 2017\"}, {\"id\": 6, \"title\": \"It's Official: Disney Acquires Maker Studios For At Least ...\", \"url\": \"https://techcrunch.com/2014/03/24/disney-maker-studios/\", \"snippet\": \"announcing the acquisition of YouTube network Maker Studios for $500 million, along with a potential $450 million in performance-based earn ...\", \"date\": \"Mar 24, 2014\"}, {\"id\": 7, \"title\": \"Disney Buys Maker Studios for Up to $950 Million\", \"url\": \"https://time.com/36314/disney-maker-studios/\", \"snippet\": \"The acquisition will cost Disney $500 million, but the price could climb as high as $950 million if Maker meets certain performance targets set ...\", \"date\": \"Mar 24, 2014\"}, {\"id\": 8, \"title\": \"Latham, Bingham handle $500 million sale of Maker ...\", \"url\": \"https://www.dailyjournal.com/article/314058-latham-bingham-handle-500-million-sale-of-maker-studios-to-disney\", \"snippet\": \"Latham, Bingham handle $500 million sale of Maker Studios to Disney. The deal includes an earn-out of up to $450 million, which could lead to a final price tag ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Disney Buys Maker Studios (owner of Polaris) In Deal Worth At Least $500 ...\", \"url\": \"https://www.reddit.com/r/Games/comments/219tk2/disney_buys_maker_studios_owner_of_polaris_in/\", \"snippet\": \"\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Disney Just Acquired Maker Studios For $500M!\", \"url\": \"https://www.reddit.com/r/youtube/comments/219rhh/disney_just_acquired_maker_studios_for_500m/\", \"snippet\": \"\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_2e81c99371ce489aba5b867a",
+      "content": "[{\"id\": 1, \"title\": \"Otter Media Buys Remainder of Its Digital Businesses ...\", \"url\": \"https://www.hollywoodreporter.com/news/general-news/otter-media-buys-remainder-digital-businesses-fullscreen-ellation-1078100/\", \"snippet\": \"... valued the company between $200 million and $300 million. Existing investor WPP retained its stake in Fullscreen following the sale. Related ...\", \"date\": \"Jan 24, 2018\"}, {\"id\": 2, \"title\": \"AT&T-Chernin JV Otter Media officially buys Fullscreen for ...\", \"url\": \"https://www.streamtvinsider.com/online-video/at-t-chernin-jv-otter-media-officially-buys-fullscreen-for-reported-200-300m\", \"snippet\": \"The reported $200-$300 million price tag is a smaller payout than the landmark Disney purchase of Maker Studios last spring. Disney bought ...\", \"date\": \"Sep 22, 2014\"}, {\"id\": 3, \"title\": \"Gunderson Dettmer advises Fullscreen in acquisition by ...\", \"url\": \"https://www.gunder.com/en/news-insights/client-news/gunderson-dettmer-advises-fullscreen-in-acquisition-by-otter-media\", \"snippet\": \"Gunderson Dettmer advises Fullscreen in acquisition by Otter Media ... Emerald AI Raises $150 Million Series A at $1.05 Billion Valuation.\", \"date\": \"Jan 29, 2018\"}, {\"id\": 4, \"title\": \"Majority Owner Otter Media Buys Remaining Shares Of ...\", \"url\": \"https://www.tubefilter.com/2018/01/25/otter-media-buys-remaining-shares-fullscreen-ellation/\", \"snippet\": \"Otter purchased a majority stake in Fullscreen in 2014, valuing the company at between $200 and $300 million, though Fullscreen has faced ...\", \"date\": \"Jan 25, 2018\"}, {\"id\": 5, \"title\": \"YouTube network Fullscreen is ready for its close-up\", \"url\": \"https://digiday.com/media/fullscreen-acquisition/\", \"snippet\": \"Neither party disclosed the terms of the deal, but they value Fullscreen at between $200 million and $300 million, according to Bloomberg.\", \"date\": \"Sep 23, 2014\"}, {\"id\": 6, \"title\": \"Otter Media 2015 Revenue to Be North Of $200M\", \"url\": \"https://variety.com/2015/digital/news/chernin-att-otter-media-200-million-plus-revenue-2015-1201633420/\", \"snippet\": \"Otter Media, the online video-focused joint venture between the Chernin Group and AT&T, expects to generate more than $200 million in ...\", \"date\": \"Nov 4, 2015\"}, {\"id\": 7, \"title\": \"Fullscreen Sells Majority Stake to AT&T/Chernin Group\", \"url\": \"https://labusinessjournal.com/technology/fullscreen-sells-majority-stake-chernin-group/\", \"snippet\": \"The Fullscreen deal was estimated to value the company at between $200 million and $300 million. ... Representatives of Fullscreen and Otter Media ...\", \"date\": \"Sep 22, 2014\"}, {\"id\": 8, \"title\": \"Otter Media Buys Fullscreen\", \"url\": \"https://www.licenseglobal.com/entertainment/otter-media-buys-fullscreen\", \"snippet\": \"Otter Media, a joint venture between The Chernin Group and AT&T, has purchased a majority stake in the YouTube multi-channel network Fullscreen. April 5, 2018.\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Chernin/AT&T's Otter Buy Fullscreen\", \"url\": \"https://www.mediapost.com/publications/article/234620/cherninatts-otter-buy-fullscreen.html\", \"snippet\": \"... Fullscreen, after months (and months) of speculation. The deal is worth $200 million to $300 million, reports Re/Code, which is lower than the $500 million ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Chernin Group, AT&T take majority stake in Fullscreen ...\", \"url\": \"https://www.latimes.com/entertainment/envelope/cotown/la-et-ct-chernin-att-fullscreen-20140922-story.html\", \"snippet\": \"AT&T and the Chernin Group announced that their joint venture, Otter Media, will acquire a majority stake in Fullscreen. (Lisa Poole / ...\", \"date\": \"Sep 22, 2014\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5e24b1f47a794f669ff61c98",
+      "content": "[{\"id\": 1, \"title\": \"RTL Group to acquire majority in online video-network ...\", \"url\": \"https://www.bertelsmann.com/en/media/news/rtl-group-to-acquire-majority-in-online-video-network-stylehaul.html\", \"snippet\": \"RTL Group, the leading European entertainment network, today announced that it will acquire a controlling stake in StyleHaul for US-$107 million ...\", \"date\": \"Nov 3, 2014\"}, {\"id\": 2, \"title\": \"StyleHaul CEO Confirms YouTube Network's $107 Million ...\", \"url\": \"https://www.hollywoodreporter.com/news/general-news/stylehaul-ceo-confirms-youtube-networks-745663/\", \"snippet\": \"The transaction, which is expected to close at the end of the month, ups RTL's stake in StyleHaul from 22.3 percent to 93.6 percent, with the ...\", \"date\": \"Nov 2, 2014\"}, {\"id\": 3, \"title\": \"RTL Group Buys Video Lifestyle Network StyleHaul\", \"url\": \"https://www.adexchanger.com/ad-exchange-news/rtl-group-buys-video-lifestyle-network-stylehaul/\", \"snippet\": \"RTL already owned 22.3% of StyleHaul. The $107 million acquisition brings the total to 93.6%. It will invest an additional $20 million into ...\", \"date\": \"Nov 3, 2014\"}, {\"id\": 4, \"title\": \"Publications | Analysis: Why RTL saw beauty in Style Haul\", \"url\": \"https://www.greenbergglusker.com/publications/analysis-why-rtl-saw-beauty-in-style-haul\", \"snippet\": \"RTL Group's purchase of a controlling stake in StyleHaul for $107 million had been rumored for several weeks, so it came as no surprise when ...\", \"date\": \"Nov 5, 2014\"}, {\"id\": 5, \"title\": \"RTL Buys StyleHaul YouTube Network for $107 million\", \"url\": \"https://deadline.com/2014/11/rtl-buys-stylehaul-youtube-network-for-107-million-1201272475/\", \"snippet\": \"European media company RTL bought a controlling stake in online video network StyleHaul for $107 million. Stylehaul is focused on fashion.\", \"date\": \"Nov 3, 2014\"}, {\"id\": 6, \"title\": \"204interim report JanuarySeptember - RTL\", \"url\": \"https://company.rtl.com/.galleries/downloads/financial_reports/Interim-Report-January-to-September-2014.pdf\", \"snippet\": \"On 3 November 2014, RTL Group announced the acquisition of a controlling stake in StyleHaul, valuing the company at US-$ 151.4 million. RTL ...\", \"date\": \"Sep 30, 2014\"}, {\"id\": 7, \"title\": \"StyleHaul\", \"url\": \"https://en.wikipedia.org/wiki/StyleHaul\", \"snippet\": \"... RTL Group, which paid $127 million USD to acquire a controlling stake in the company in 2014. StyleHaul, Inc. Industry, Marketing. Headquarters, Los ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"StyleHaul Acquired by RTL Group\", \"url\": \"https://labusinessjournal.com/technology/stylehaul-acquired-rtl-group/\", \"snippet\": \"StyleHaul, the multichannel network for fashion and beauty enthusiasts, has been acquired by existing investor RTL Group for $107 million, ...\", \"date\": \"Nov 3, 2014\"}, {\"id\": 9, \"title\": \"StyleHaul, Inc. Asset Profile\", \"url\": \"https://www.preqin.com/data/profile/asset/stylehaul--inc-/81071\", \"snippet\": \"In November 2014, RTL Group acquired the company for USD 107 mn. The company has engaged in four deals to date, demonstrating its growth in the digital ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"RTL Group to acquire majority in StyleHaul\", \"url\": \"https://www.broadbandtvnews.com/2014/11/03/rtl-group-to-acquire-majority-in-stylehaul/\", \"snippet\": \"RTL Group will acquire a controlling stake in StyleHaul for $107 million (around €85 million), valuing the company at $151.4 million (around ...\", \"date\": \"Nov 3, 2014\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_bd3ea48342834e278b1a866b",
+      "content": "[{\"id\": 1, \"title\": \"StyleHaul CEO Confirms YouTube Network's $107 Million ...\", \"url\": \"https://www.hollywoodreporter.com/news/general-news/stylehaul-ceo-confirms-youtube-networks-745663/\", \"snippet\": \"Horbaczewski, a former marketing executive for Saks Fifth Avenue, founded StyleHaul in 2011 to establish a network for YouTubers in the fashion ...\", \"date\": \"Nov 2, 2014\"}, {\"id\": 2, \"title\": \"StyleHaul\", \"url\": \"https://en.wikipedia.org/wiki/StyleHaul\", \"snippet\": \"The company was founded in 2011 by Stephanie Horbaczewski and operated as a portfolio company. Style YouTubers' Careers\\\".\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Fashion-centric YouTube network StyleHaul gets picked up\", \"url\": \"https://www.bizjournals.com/triad/bizwomen/news/latest-news/2014/11/rtl-group-acquires-youtube-network-stylehaul.html\", \"snippet\": \"Founded three years ago by Stephanie Horbaczewski, left, StyleHaul was acquired by RTL Group, the Luxembourg-based entertainment conglomerate, ...\", \"date\": \"Nov 4, 2014\"}, {\"id\": 4, \"title\": \"StyleHaul: Funding, Team & Investors\", \"url\": \"https://startupintros.com/orgs/stylehaul\", \"snippet\": \"The company was founded in 2011 by Stephanie Horbaczewski, who identified a significant opportunity in the nascent creator economy. Her insight ...\", \"date\": \"Jul 13, 2026\"}, {\"id\": 5, \"title\": \"StyleHaul, Inc.\", \"url\": \"https://www.linkedin.com/company/stylehaul-inc-\", \"snippet\": \"Founded in 2011, StyleHaul played a crucial role in revolutionizing the global media industry by utilizing social platforms to foster relationships between ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"How StyleHaul Built a YouTube Network on Branded ...\", \"url\": \"https://www.wsj.com/articles/BL-269B-1989\", \"snippet\": \"StyleHaul was founded in 2011 and says it represents several thousand YouTube channels which collectively have generated one billion video ...\", \"date\": \"Nov 5, 2014\"}, {\"id\": 7, \"title\": \"RTL Group Buys Video Lifestyle Network StyleHaul\", \"url\": \"https://www.adexchanger.com/ad-exchange-news/rtl-group-buys-video-lifestyle-network-stylehaul/\", \"snippet\": \"StyleHaul brings together 5,000 content creators, who distribute their content across YouTube. It attracts 900 million views a month. Forty ...\", \"date\": \"Nov 3, 2014\"}, {\"id\": 8, \"title\": \"Is Haul.style legit? : r/influencermarketing\", \"url\": \"https://www.reddit.com/r/influencermarketing/comments/1utzyfs/is_haulstyle_legit/\", \"snippet\": \"Hi everyone, I run a YouTube channel with around 126k subscribers and recently received an email from media@haul.style offering $530 USD for a sponsored ...\", \"date\": \"2 months ago\"}, {\"id\": 9, \"title\": \"StyleHaul - 2026 Company Profile & Team\", \"url\": \"https://tracxn.com/d/companies/stylehaul/__lBzdH19A_XoOl7UHkRx99Uzx89HZsdcY7NAup6b4DJw\", \"snippet\": \"StyleHaul is an acquired company based in Los Angeles (United States), founded in 2010 by Stephanie Horbaczewski.\", \"date\": \"Sep 9, 2026\"}, {\"id\": 10, \"title\": \"StyleHaul CEO on What $107M Means for YouTube's No. 1 ...\", \"url\": \"https://www.nbcphiladelphia.com/news/local/stylehaul-ceo-on-what-107m-means-for-youtubes-no-1-fashion-and-beauty-network/81534/\", \"snippet\": \"Almost four years after Stephanie Horbaczewski co-founded StyleHaul, the YouTube juggernaut announced some major news: Luxembourg-based RTL ...\", \"date\": \"Nov 6, 2014\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "The video's audio confirms the three deals. Now let me verify the founding years of the acquired MCNs and the acquiring companies.\n\n",
+      "reasoning": "Confirmed:\n1. Disney acquired Maker Studios: base price $500 million (excluding the up to $450 million earnout). ✓\n2. Otter Media (AT&T/Chernin) acquired a majority stake in Fullscreen: reported valuation range is $200 million–$300 million → midpoint $250 million. Wait! The question says \"use the midpoint of the reported valuation range.\" The reported range is $200 million–$300 million → midpoint = $250 million. Hmm, earlier I guessed $150–200 million, but the search results consistently say $200–300 million. So midpoint = 250.\n\n3. RTL Group acquired StyleHaul for $107 million (as stated in the video). ✓\n\nFounding years:\n- Maker Studios: 2009 (needs confirmation).\n- Fullscreen: 2011 (needs confirmation).\n- StyleHaul: 2011 (confirmed by multiple sources; Tracxn says 2010 but most say 2011; Wikipedia says 2011).\n\nSo the ratios:\n- Maker: 500 / (2014-2009=5) = 100.\n- Fullscreen: 250 / (2014-2011=3) = 83.3333.\n- StyleHaul: 107 / 3 = 35.6667.\n\nR = 100 + 83.3333 + 35.6667 = exactly 219! Because (250+107)/3 = 357/3 = 119. 100 + 119 = 219.\n\nR = 219.\n\nD: Disney's founding year is 1923; RTL Group's founding year is? Needs confirmation. If RTL Group was founded in 1993, D = 70. Final = 219 × 70 × 69 = 219 × 4830 = 1,057,770.\n\nHmm, but what is RTL Group's founding year according to Wikipedia? Let me check. I'll search.\n\nAlso, confirm Maker Studios' founding year of 2009 and Fullscreen's founding year of 2011.\n\nLet me search for these.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_49a8cc40a36c4c178ecf3405",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Maker Studios founded 2009 YouTube network history\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_ffa43f4ab8da407082a17f02",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Fullscreen founded 2011 George Strompolos YouTube MCN\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 2,
+          "id": "call_b7fad69f9a394cc8b6fe0488",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"RTL Group Wikipedia founded year Luxembourg media company\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 3,
+          "id": "call_47206ecd59b34cf1b9a2124b",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Walt Disney Company founded 1923\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed:\n1. Disney acquired Maker Studios: base price $500 million (excluding the up to $450 million earnout). ✓\n2. Otter Media (AT&T/Chernin) acquired a majority stake in Fullscreen: reported valuation range is $200 million–$300 million → midpoint $250 million. Wait! The question says \"use the midpoint of the reported valuation range.\" The reported range is $200 million–$300 million → midpoint = $250 million. Hmm, earlier I guessed $150–200 million, but the search results consistently say $200–300 million. So midpoint = 250.\n\n3. RTL Group acquired StyleHaul for $107 million (as stated in the video). ✓\n\nFounding years:\n- Maker Studios: 2009 (needs confirmation).\n- Fullscreen: 2011 (needs confirmation).\n- StyleHaul: 2011 (confirmed by multiple sources; Tracxn says 2010 but most say 2011; Wikipedia says 2011).\n\nSo the ratios:\n- Maker: 500 / (2014-2009=5) = 100.\n- Fullscreen: 250 / (2014-2011=3) = 83.3333.\n- StyleHaul: 107 / 3 = 35.6667.\n\nR = 100 + 83.3333 + 35.6667 = exactly 219! Because (250+107)/3 = 357/3 = 119. 100 + 119 = 219.\n\nR = 219.\n\nD: Disney's founding year is 1923; RTL Group's founding year is? Needs confirmation. If RTL Group was founded in 1993, D = 70. Final = 219 × 70 × 69 = 219 × 4830 = 1,057,770.\n\nHmm, but what is RTL Group's founding year according to Wikipedia? Let me check. I'll search.\n\nAlso, confirm Maker Studios' founding year of 2009 and Fullscreen's founding year of 2011.\n\nLet me search for these.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_49a8cc40a36c4c178ecf3405",
+      "content": "[{\"id\": 1, \"title\": \"Disney Digital Network\", \"url\": \"https://en.wikipedia.org/wiki/Disney_Digital_Network\", \"snippet\": \"Maker Studios was founded in 2009. In over 1,000 channels signed under the network. YouTube channels under Maker Studios collectively earned over 90 million ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Maker Studios | Disney Wiki - Fandom\", \"url\": \"https://disney.fandom.com/wiki/Maker_Studios\", \"snippet\": \"Maker Studios, Inc. was an American worldwide Multi-channel network co-founded by Lisa Donovan, former CEO Danny Zappin, Scott Katz, Kassem Gharaibeh, ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"The Remarkable Journey of Maker Studios\", \"url\": \"https://www.youtube.com/watch?v=SXlIsKqEE94\", \"snippet\": \"Mega-popular YouTube channel Maker Studios recently sold to Disney for $500 million, but when the founders launched the company five years ...\", \"date\": \"8 years ago\"}, {\"id\": 4, \"title\": \"Maker Studios: Behind the curtain at the world's largest ...\", \"url\": \"https://financial-marketer.com/maker-studios-behind-the-curtain-at-the-worlds-largest-video-influencer-network/\", \"snippet\": \"In 2009, four friends were making video content in a backyard. Maker co-founder Kassem Gharaibeh, said of the company's humble origins. they ...\", \"date\": \"Sep 22, 2016\"}, {\"id\": 5, \"title\": \"Maker Studios company information, funding & investors\", \"url\": \"https://app.dealroom.co/companies/maker_studios\", \"snippet\": \"Maker Studios was established in 2009 by a group of early YouTube content creators, including Lisa Donovan, Danny Zappin, Shay Carl Butler, Ben Donovan, ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Maker Studios Inc (Acquired by Disney)\", \"url\": \"https://www.linkedin.com/company/maker-studios-inc\", \"snippet\": \"Founded in 2009 as a collaborative content engine, Maker Studios innovated with global creators by producing award-winning, original short form video.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Maker Studios (2009 - 2017)\", \"url\": \"https://rip.so/maker-studios.html\", \"snippet\": \"Maker Studios was the largest of the YouTube multi-channel networks (MCNs) that emerged around '09 when YouTube's partner program was still figuring out how to ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Maker Studios (A Walt Disney Company) - e27 Startup Profile\", \"url\": \"https://e27.co/startups/maker-studios-a-walt-disney-company/\", \"snippet\": \"Founded in 2009, Maker empowers creators and inspires expression. Attracting more than 12 billion views monthly with over 800 million loyal subscribers ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Maker Studios | Ray William Johnson Wiki - Fandom\", \"url\": \"https://ray-william-johnson.fandom.com/wiki/Maker_Studios\", \"snippet\": \"History. Maker Studios was founded in 2009. In June 2012, Maker Studios announced that over 1,000 channels signed under the network have received and ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Maker Studios\", \"url\": \"https://www.youtube.com/c/makerstudios\", \"snippet\": \"Maker Studios is the global leader in online short-form video and the largest influencer network worldwide. Founded in 2009 by a group of forward-thinking ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_ffa43f4ab8da407082a17f02",
+      "content": "[{\"id\": 1, \"title\": \"How Fullscreen Became a YouTube Giant (Almost) Overnight\", \"url\": \"https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/How-Fullscreen-Became-a-YouTube-Giant-(Almost)-Overnight-93613.aspx\", \"snippet\": \"Born in January 2011, it's been the No. 2 YouTube partner. It's a multichannel network (MCN) Founded by George Strompolos, now the CEO, it ...\", \"date\": \"Dec 3, 2013\"}, {\"id\": 2, \"title\": \"How to Make Money on YouTube with George Strompolos\", \"url\": \"https://howcast.com/videos/497527-about-youtube-expert-george-strompolos-youtube-programs/\", \"snippet\": \"Hi, my name is George Strompolos. I'm the CEO and founder of Fullscreen. Our website is fullscreen.net. We have over 400 YouTube channels,\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Fullscreen (company)\", \"url\": \"https://en.wikipedia.org/wiki/Fullscreen_(company)\", \"snippet\": \"Fullscreen was founded in January 2011 by CEO George Strompolos. [10] Strompolos hired Ezra Cooperstein as Fullscreen's COO.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Fullscreen CEO George Strompolos to Step Down\", \"url\": \"https://www.hollywoodreporter.com/business/digital/fullscreen-ceo-george-strompolos-step-down-1140824/\", \"snippet\": \"CEO George Strompolos is stepping down from the company he founded eight months after he completed a sale of the business to AT&T's Otter Media ...\", \"date\": \"Sep 7, 2018\"}, {\"id\": 5, \"title\": \"George Strompolos (@gstrompolos) ...\", \"url\": \"https://x.com/gstrompolos?lang=en\", \"snippet\": \"Founded Fullscreen (acquired 2018). Startup investor, dad. Co-Founder & CEO @Promise_AI. Launched YouTube Partner Program (2007).\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Fullscreen | Behind the Brand\", \"url\": \"https://www.youtube.com/watch?v=c8_AenHk1zc\", \"snippet\": \"In this episode of Behind the Brand I sit down with Fullscreen's founder and CEO, George Strompolos. Brand full-length video episodes. These ...\", \"date\": \"12 years ago\"}, {\"id\": 7, \"title\": \"Fullscreen Founder George Strompolos Steps Down As ...\", \"url\": \"https://www.tubefilter.com/2018/09/07/fullscreen-founder-george-strompolos-steps-down/\", \"snippet\": \"Strompolos founded Fullscreen after being an early YouTube employee that helped to orchestrate the platform's Partner Program. AT&T and ...\", \"date\": \"Sep 7, 2018\"}, {\"id\": 8, \"title\": \"Catching up with Fullscreen CEO George Strompolos\", \"url\": \"https://www.lapromisefund.org/catching-up-with-fullscreen-ceo-george-strompolos/\", \"snippet\": \"George Strompolos is an entrepreneur and digital media pioneer. He is the Founder and CEO of Fullscreen Media.\", \"date\": \"Aug 18, 2026\"}, {\"id\": 9, \"title\": \"George Strompolos - Co-Founder & CEO at Promise\", \"url\": \"https://www.linkedin.com/in/georgestrompolos\", \"snippet\": \"Jan 2011 - Dec 2018 8 years. Los Angeles, CA. Founded and built Fullscreen into the leading social media creative talent and advertising services company.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Fullscreen CEO George Strompolos on Premium Content and ...\", \"url\": \"https://www.vox.com/2014/12/4/11633546/fullscreen-ceo-george-strompolos-on-premium-content-and-making\", \"snippet\": \"The company he founded in 2011 has built a network of 50,000 content creators on YouTube who collectively reach 500 million subscribers.\", \"date\": \"Dec 4, 2014\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_b7fad69f9a394cc8b6fe0488",
+      "content": "[{\"id\": 1, \"title\": \"RTL Group\", \"url\": \"https://en.wikipedia.org/wiki/RTL_Group\", \"snippet\": \"RTL Group S.A. a Luxembourg-based international media conglomerate, Founded 30 May 1931; 95 years ago (1931-05-30) It was entered into the Luxembourg Trade ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Our history - RTL Deutschland\", \"url\": \"https://company.rtl.com/en/about-rtl/overview/our-history/\", \"snippet\": \"December 1975 RTL productions The Luxembourg-based production company RTL Productions is founded. RTL Group's Luxembourg-based technical service provider.\", \"date\": \"\"}, {\"id\": 3, \"title\": \"RTL Group\", \"url\": \"https://www.luxembourg-city.com/en/place/monument/rtl-group\", \"snippet\": \"The roots of the company's history date back to 1924, RTL Group itself was created in spring 2000 following the merger of Luxembourg-based CLT-UFA and the ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"RTL Group SA\", \"url\": \"https://www.encyclopedia.com/books/politics-and-business-magazines/rtl-group-sa\", \"snippet\": \"Incorporated: 1931 as Compagnie Luxembourgeoise. In 1931, the Compagnie Luxembourgeoise de Radiodiffusion (CLR) was incorporated in Luxembourg ・ granting a ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"RTL Group\", \"url\": \"https://www.companieshistory.com/rtl-group/\", \"snippet\": \"RTL Group's history began in 1931 when the Compagnie Luxembourgeoise de Radiodiffusion (CLR) was established. In 1954, the company was renamed ...\", \"date\": \"Aug 21, 2014\"}, {\"id\": 6, \"title\": \"RTL Group | Logo Timeline Wiki | Fandom\", \"url\": \"https://logo-timeline.fandom.com/wiki/RTL_Group\", \"snippet\": \"RTL Group, from Radio Télévision Luxembourg, is a pan-European media group headquartered in Luxembourg, owned by the German media conglomerate Bertelsmann.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"RTL Group on Instagram: \\\"100 years of radio  Our history ...\", \"url\": \"https://www.instagram.com/reel/C3SztKfK11j/?hl=en\", \"snippet\": \"Our history started with radio back in 1924, when Radio Luxembourg first went on air. Today, RTL Group is a leading entertainment company across ...\", \"date\": \"2 years ago\"}, {\"id\": 8, \"title\": \"RTL Group\", \"url\": \"https://commons.wikimedia.org/wiki/RTL_Group\", \"snippet\": \"RTL Group. international media company with headquarters in Luxembourg ... The RTL Group is a European broadcasting company.\", \"date\": \"Jun 8, 2026\"}, {\"id\": 9, \"title\": \"RTL | Media Ownership Monitor Germany\", \"url\": \"https://germany.mom-gmr.org/en/media/tv/outlet/rtl-113601\", \"snippet\": \"RTLplus (renamed RTL Television in 1992) was founded by CLT and UFA in 1984. The Bertelsmann Group held 40% of the shares in RTL via UFA Film und Fernsehen GmbH ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"RTL Lëtzebuerg\", \"url\": \"https://en.wikipedia.org/wiki/RTL_L%C3%ABtzebuerg\", \"snippet\": \"RTL Group. Sister channels, RTL Zwee. History. Launched, 21 October 1991; 34 ... Viewers in Luxembourg can also tune into RTL 4 (channel 41), RTL 5, RTL 7 ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_47206ecd59b34cf1b9a2124b",
+      "content": "[{\"id\": 1, \"title\": \"Disney History\", \"url\": \"https://d23.com/disney-history/\", \"snippet\": \"A distributor in New York, M. J. Winkler, contracted to distribute the Alice Comedies on October 16, 1923, and this date became the start of the Disney company.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Here's How a Four-Page Contract Started The Walt Disney ...\", \"url\": \"https://thewaltdisneycompany.com/news/disney100-anniversary-disney-contract/\", \"snippet\": \"Walt and Roy Disney officially began the The Walt Disney Company on October 16, 1923. On that date Walt Disney signed a contract with Margaret ...\", \"date\": \"Oct 16, 2023\"}, {\"id\": 3, \"title\": \"The Walt Disney Company\", \"url\": \"https://en.wikipedia.org/wiki/The_Walt_Disney_Company\", \"snippet\": \"Founded on October 16, 1923, as an animation studio by brothers Walt and Roy Oliver Disney as Disney Brothers Cartoon Studio, Disney operated under the names ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Walt Disney Company is founded | October 16, 1923\", \"url\": \"https://www.history.com/this-day-in-history/october-16/walt-disney-company-founded\", \"snippet\": \"On October 16, 1923, Walt Disney and his brother Roy found the Disney Brothers Cartoon Studio in Hollywood, California. The studio, now known as ...\", \"date\": \"Jul 22, 2019\"}, {\"id\": 5, \"title\": \"On this day in 1923, The Walt Disney Company was ...\", \"url\": \"https://www.facebook.com/Disney/posts/on-this-day-in-1923-the-walt-disney-company-was-founded-did-you-know-walt-and-ro/10156703126845954/\", \"snippet\": \"On this day in 1923, The Walt Disney Company was founded! Did you know Walt and Roy Disney originally named their venture \\\"Disney Brothers Cartoon Studio\\\"?\", \"date\": \"6 years ago\"}, {\"id\": 6, \"title\": \"Walt Disney Company is founded October 16, 1923 - This Day ...\", \"url\": \"https://www.youtube.com/watch?v=idGfIg5TW1M&xstg=CAMSBhUDze3xHw%3D%3D\", \"snippet\": \"Walt Disney Company is founded October 16, 1923 - This Day In History.\", \"date\": \"4 years ago\"}, {\"id\": 7, \"title\": \"This Day In History | October 16, 1923: The Walt Disney ...\", \"url\": \"https://www.reddit.com/r/disney/comments/11m08p/this_day_in_history_october_16_1923_the_walt/\", \"snippet\": \"[October 16th, 1923] The Walt Disney Company was founded as Disney Brothers Cartoon Studio when 21-year-old Walt Disney, and his 30-year-old ...\", \"date\": \"13 years ago\"}, {\"id\": 8, \"title\": \"Celebrating the creation of the Walt Disney Corporation- on ...\", \"url\": \"https://spartacarnegie.bibliocommons.com/list/share/1635674699_fclsmilton/1748767439_celebrating_the_creation_of_the_walt_disney_corporation-_on_this_date_october_16,_1923\", \"snippet\": \"1923 The Walt Disney Company is Founded A leader in the international entertainment industry, the company was created by brothers Walt and Roy as the Disney ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Walt Disney\", \"url\": \"https://en.wikipedia.org/wiki/Walt_Disney\", \"snippet\": \"Walter Elias Disney was an American animator, film producer, voice actor, and entrepreneur. A pioneer of the American animation industry, he introduced ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"The Walt Disney Company History\", \"url\": \"https://www.zippia.com/the-walt-disney-company-careers-11541/history/\", \"snippet\": \"On October 16, 1923, Walt Disney and his brother Roy found the Disney Brothers Cartoon Studio in Hollywood, California. The Walt Disney Company started in 1923 ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "All key facts are confirmed. Let me verify the RTL Group founding year on Wikipedia and then compute the final result.\n\n",
+      "reasoning": "Established facts:\n- Disney acquired Maker Studios: base amount $500 million (excluding the $450 million earnout). Maker Studios was founded in 2009 → age at time of acquisition (2014) = 5. Ratio = 100.\n- Otter Media (AT&T/Chernin Group) acquired Fullscreen: reported valuation range is $200 million–$300 million → midpoint $250 million. Fullscreen was founded in January 2011 → age 3. Ratio = 250/3 ≈ 83.3333.\n- RTL Group acquired StyleHaul: $107 million (as stated in the video). StyleHaul was founded in 2011 → age 3. Ratio = 107/3 ≈ 35.6667.\n\nR = 100 + (250+107)/3 = 100 + 357/3 = 100 + 119 = 219.\n\nD: Founding year of the acquiring companies for the 1st and 3rd deals: Disney was founded in 1923. RTL Group was founded on... According to Wikipedia, \"Founded 30 May 1931.\" Hmm, the Wikipedia snippet says \"Founded 30 May 1931; 95 years ago (1931-05-30).\" So RTL Group's founding year = 1931. D = |1923 - 1931| = 8.\n\nHmm, but another source says \"RTL Group itself was created in spring 2000.\" The Wikipedia infobox says founded May 30, 1931 (as Compagnie Luxembourgeoise de Radiodiffusion). Since the question says \"from external sources,\" the Wikipedia infobox value of 1931 seems to be the intended one. D = 8.\n\nSponsorship day count: 69 (displayed on screen as \"Day 69 of our $100,000 sponsorship!\" and stated in the audio as \"we're only on day 69 of 365 days\").\n\nFinal = R × D × 69 = 219 × 8 × 69 = 219 × 552 = 120,888.\n\nCalculation: 219 × 552 = 219×500 + 219×52 = 109,500 + 11,388 = 120,888.\n\nLet me double-check whether the Wikipedia infobox for RTL Group really says founded 1931. Snippet: \"RTL Group S.A. a Luxembourg-based international media conglomerate, Founded 30 May 1931; 95 years ago (1931-05-30).\" Yes.\n\nBut wait—should I reconfirm the Fullscreen deal: the question says \"for the 2nd deal, use the midpoint of the reported valuation range.\" Reported range: $200 million–$300 million (Bloomberg/Recode). Midpoint = $250 million. Good.\n\nNote: The video says \"The Sherwood Group and AT&T's Otter Media acquired Fullscreen\"—actually it's The Chernin Group, but whatever. The 2nd deal is Otter Media/AT&T acquiring Fullscreen.\n\nMaker Studios' founding year: 2009. Age 5. 500/5 = 100.\n\nStyleHaul: founded 2011 (Wikipedia, WSJ, LinkedIn). Age 3. 107/3 = 35.6667.\n\nR = 100 + 83.3333 + 35.6667 = 219.0.\n\nD = |1923 − 1931| = 8.\n\nDay count = 69.\n\nFinal = 219 × 8 × 69 = 120,888.\n\nJust to be safe, let me run the calculation in code and also quickly check the RTL Group Wikipedia page to confirm the infobox founding year. Actually, the snippet already shows it. But let me browse the Wikipedia page to confirm the infobox says \"Founded 30 May 1931.\" Also, confirm that the video's day count is 69 (yes, shown on screen at 0:01: \"Day 69 of our $100,000 sponsorship!\").\n\nLet me do a quick verification with code_executor and possibly a page browse of the RTL Group Wikipedia page.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_39171580792b4e299b5107cf",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/RTL_Group\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_34fa33e04b3e43149721da07",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"\\nfrom fractions import Fraction\\n\\n# Deal 1: Disney -> Maker Studios\\nprice1 = Fraction(500)          # base price, no earn-outs\\nmaker_founded = 2009\\nage1 = 2014 - maker_founded     # 5\\nratio1 = price1 / age1\\n\\n# Deal 2: Otter Media (AT&T/Chernin) -> Fullscreen\\nprice2 = Fraction(200 + 300, 2) # midpoint of $200M-$300M reported range\\nfull_founded = 2011\\nage2 = 2014 - full_founded      # 3\\nratio2 = price2 / age2\\n\\n# Deal 3: RTL Group -> StyleHaul (price stated in video)\\nprice3 = Fraction(107)\\nstyle_founded = 2011\\nage3 = 2014 - style_founded     # 3\\nratio3 = price3 / age3\\n\\nR = ratio1 + ratio2 + ratio3\\nprint(\\\"ratios:\\\", float(ratio1), float(ratio2), float(ratio3))\\nprint(\\\"R =\\\", R, float(R))\\n\\n# D: founding years of acquirers (Disney 1923, RTL Group 1931 per Wikipedia)\\nD = abs(1923 - 1931)\\nprint(\\\"D =\\\", D)\\n\\nday = 69\\nfinal = R * D * day\\nprint(\\\"Final =\\\", final, float(final))\\n\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Established facts:\n- Disney acquired Maker Studios: base amount $500 million (excluding the $450 million earnout). Maker Studios was founded in 2009 → age at time of acquisition (2014) = 5. Ratio = 100.\n- Otter Media (AT&T/Chernin Group) acquired Fullscreen: reported valuation range is $200 million–$300 million → midpoint $250 million. Fullscreen was founded in January 2011 → age 3. Ratio = 250/3 ≈ 83.3333.\n- RTL Group acquired StyleHaul: $107 million (as stated in the video). StyleHaul was founded in 2011 → age 3. Ratio = 107/3 ≈ 35.6667.\n\nR = 100 + (250+107)/3 = 100 + 357/3 = 100 + 119 = 219.\n\nD: Founding year of the acquiring companies for the 1st and 3rd deals: Disney was founded in 1923. RTL Group was founded on... According to Wikipedia, \"Founded 30 May 1931.\" Hmm, the Wikipedia snippet says \"Founded 30 May 1931; 95 years ago (1931-05-30).\" So RTL Group's founding year = 1931. D = |1923 - 1931| = 8.\n\nHmm, but another source says \"RTL Group itself was created in spring 2000.\" The Wikipedia infobox says founded May 30, 1931 (as Compagnie Luxembourgeoise de Radiodiffusion). Since the question says \"from external sources,\" the Wikipedia infobox value of 1931 seems to be the intended one. D = 8.\n\nSponsorship day count: 69 (displayed on screen as \"Day 69 of our $100,000 sponsorship!\" and stated in the audio as \"we're only on day 69 of 365 days\").\n\nFinal = R × D × 69 = 219 × 8 × 69 = 219 × 552 = 120,888.\n\nCalculation: 219 × 552 = 219×500 + 219×52 = 109,500 + 11,388 = 120,888.\n\nLet me double-check whether the Wikipedia infobox for RTL Group really says founded 1931. Snippet: \"RTL Group S.A. a Luxembourg-based international media conglomerate, Founded 30 May 1931; 95 years ago (1931-05-30).\" Yes.\n\nBut wait—should I reconfirm the Fullscreen deal: the question says \"for the 2nd deal, use the midpoint of the reported valuation range.\" Reported range: $200 million–$300 million (Bloomberg/Recode). Midpoint = $250 million. Good.\n\nNote: The video says \"The Sherwood Group and AT&T's Otter Media acquired Fullscreen\"—actually it's The Chernin Group, but whatever. The 2nd deal is Otter Media/AT&T acquiring Fullscreen.\n\nMaker Studios' founding year: 2009. Age 5. 500/5 = 100.\n\nStyleHaul: founded 2011 (Wikipedia, WSJ, LinkedIn). Age 3. 107/3 = 35.6667.\n\nR = 100 + 83.3333 + 35.6667 = 219.0.\n\nD = |1923 − 1931| = 8.\n\nDay count = 69.\n\nFinal = 219 × 8 × 69 = 120,888.\n\nJust to be safe, let me run the calculation in code and also quickly check the RTL Group Wikipedia page to confirm the infobox founding year. Actually, the snippet already shows it. But let me browse the Wikipedia page to confirm the infobox says \"Founded 30 May 1931.\" Also, confirm that the video's day count is 69 (yes, shown on screen at 0:01: \"Day 69 of our $100,000 sponsorship!\").\n\nLet me do a quick verification with code_executor and possibly a page browse of the RTL Group Wikipedia page.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_39171580792b4e299b5107cf",
+      "content": "{\"https://en.wikipedia.org/wiki/RTL_Group\": \"Title: RTL Group - Wikipedia\\n\\nURL Source: https://en.wikipedia.org/wiki/RTL_Group\\n\\nPublished Time: Wed, 07 Oct 2026 01:48:34 GMT\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 History]Toggle History subsection\\n  * [1.1 Historical background]\\n\\n  * [1.2 Growth and stock market launch]\\n\\n  * [1.3 Acquisition by Bertelsmann]\\n\\n  * [1.4 Recent developments]\\n\\n* [2 Corporate affairs]Toggle Corporate affairs subsection\\n  * [2.1 Listing]\\n\\n  * [2.2 Management]\\n\\n  * [2.3 Corporate headquarters]\\n\\n* [3 Divisions]Toggle Divisions subsection\\n  * [3.1 RTL Deutschland]\\n\\n  * [3.2 Groupe M6]\\n\\n  * [3.3 Fremantle]\\n\\n* [4 Former divisions]Toggle Former divisions subsection\\n  * [4.1 RTL Belgium]\\n\\n  * [4.2 RTL Nederland]\\n\\n* [5 Controversies]\\n\\n* [6 See also]\\n\\n* [7 Notes and references]\\n\\n* [8 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# RTL Group\\n\\n- [x] 41 languages \\n\\n* [مصرى]\\n* [Беларуская]\\n* [Català]\\n* [Čeština]\\n* [Cymraeg]\\n* [Dansk]\\n* [Deutsch]\\n* [Zazaki]\\n* [Ελληνικά]\\n* [Esperanto]\\n* [Español]\\n* [فارسی]\\n* [Suomi]\\n* [Français]\\n* [עברית]\\n* [Hrvatski]\\n* [Magyar]\\n* [Հայերեն]\\n* [Bahasa Indonesia]\\n* [Italiano]\\n* [日本語]\\n* [한국어]\\n* [Lëtzebuergesch]\\n* [Lietuvių]\\n* [Latviešu]\\n* [Bahasa Melayu]\\n* [Nederlands]\\n* [Norsk bokmål]\\n* [Polski]\\n* [Português]\\n* [Română]\\n* [Русский]\\n* [Srpskohrvatski / српскохрватски]\\n* [Simple English]\\n* [Српски / srpski]\\n* [Svenska]\\n* [Türkçe]\\n* [اردو]\\n* [吴语]\\n* [粵語]\\n* [中文]\\n\\n[Edit links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nEntertainment company\\n\\nRTL Group S.A.[![Image 4]]\\n\\nLogo used since 2021\\nFormerly Compagnie Luxembourgeoise de Radiodiffusion (1931–1954)  \\nCompagnie Luxembourgeoise de Télédiffusion (1954–1997)  \\nCLT-UFA (1997–2000)\\nType[Public]\\n[Traded as][FWB]:[RRTL]  \\n[LuxSE]:[RTLL]  \\n[MDAX] component (RRTL)  \\n[LuxX Index] component (RTLL)\\n[ISIN]LU0061462528[![Image 5: Edit this at Wikidata]]\\nIndustry[Mass media]\\nPredecessor Société Luxembourgeoise d'Études Radiophoniques (1929–1931)\\nFounded 30 May 1931;95 years ago(1931-05-30)\\nHeadquarters[Kirchberg, Luxembourg]  \\n[Cologne], [North Rhine-Westphalia]\\nArea served* Europe\\n* Worldwide (via [Fremantle] \\\"Fremantle (company)\\\"))\\nKey people* [Martin Taylor] \\\"Martin Taylor (businessman)\\\") ([chairman])\\n* Clément Schwebig ([CEO])\\n* [Thomas Rabe] \\\"Thomas Rabe (business manager)\\\") (Executive Director)\\n* Björn Bauer ([CFO])\\nProducts[Television]  \\n[Radio]  \\n[Streaming]  \\nContent production  \\nDigital services\\nRevenue€6.0 billion(2025)\\n[Operating income]€243 million(2025)\\n[Net income]€1 billion(2025)\\n[Total assets]€10.5 billion(2025)\\nNumber of employees 15,768(2025)\\n[Parent][Bertelsmann Capital Holding] (75.00%)  \\nRTL Group (2.3%)  \\nPublicly traded (22.8%)\\n[Divisions] \\\"Division (business)\\\")* [RTL Deutschland]\\n* [Groupe M6] (49.3%)\\n* [Fremantle] \\\"Fremantle (company)\\\")\\n\\n[RTL Hungary]\\\")\\n[Subsidiaries][Sky Deutschland]\\nWebsite[rtl.com]\\n**Footnotes**  \\n[Annual Report 2025]\\n\\n**RTL Group S.A.** (\\\"Radio Télévision Luxembourg\\\") is a [Luxembourg]-based international [media conglomerate], with another [corporate office] in [Cologne], North Rhine-Westphalia.[[1]][[2]] The company operates 52 television channels and 40 radio stations in Germany, [France] and other European countries. It also offers national streaming platforms, content productions and a range of digital services. Important segments of RTL Group are [RTL Deutschland], [Groupe M6] and [Fremantle] \\\"Fremantle (company)\\\").[[3]]\\n\\nThe company in its present form was established by [Bertelsmann], [Groupe Bruxelles Lambert] (GBL), and [Pearson plc] in 2000.[[4]] As of 2025 Bertelsmann, a conglomerate based in the German city of [Gütersloh] owns 75% of the shares in the company,[[5]] after holding a stake of more than 90% in the past.[[6]][[7]] RTL Group is one of a total of eight divisions of Bertelsmann: It is responsible for one third of its revenue and a large share of its operating profit.[[8]]-8)\\n\\nIt is one of the founding members of the [European Broadcasting Union].\\n\\n## History\\n\\n[[edit]]\\n\\n[![Image 6]]\\n\\nLogo of RTL Group used from 2000 until 2021\\n\\n### Historical background\\n\\n[[edit]]\\n\\nThe roots of RTL Group date back to the 1920s.[[9]] The company itself was established in 1931 as the Compagnie Luxembourgeoise de Radiodiffusion (known as CLR for short). It was one of the world's first [private broadcasting] companies. After the [Second World War], the company ventured into the world of television broadcasting. It was renamed Compagnie Luxembourgeoise de Télédiffusion (CLT) to reflect this new service in 1954. Under the name RTL (for [Radio Télévision Luxembourg]), it went on to provide its private broadcasting services in several European countries.[[10]] When the European media markets were liberalised in the 1980s, television became increasingly important and started to overtake radio.[[9]]\\n\\nIn the 1980s, Belgian and French media companies made up the majority of the shareholders of CLR and CLT.[[11]] The following decades witnessed repeated conflicts for domination within the company and among its [subsidiaries].[[12]][[13]] In the 1990s, Bertelsmann ultimately came out on top after having gradually increased its stake in the German television channel RTL.[[14]] Following a legal dispute with RTL/CLT,[[15]][[12]] Bertelsmann announced plans to merge the television businesses of [UFA] to form the joint venture CLT-UFA in April 1996.[[16]] A merger agreement was signed on 8 July 1996.[[17]] It was approved by the CLT board of directors on 5 December,[[18]] and the formation of CLT-UFA was completed on 14 January 1997.[[19]] As a result, German television channels such as RTL Television and VOX and international broadcasting services, including M6 in France, were all brought together under one roof.[[20]]\\n\\n### Growth and stock market launch\\n\\n[[edit]]\\n\\nCLT-UFA not only grew organically but also increased in size due to a number of acquisitions.[[21]] In the year 2000, Bertelsmann and Pearson announced plans to merge their television, radio, and production activities.[[22]] The two companies joined forces to create RTL Group, Europe's leading network of television channels and radio stations with a global content business,[[23]] which was rebranded FremantleMedia in 2001 (now called Fremantle).[[24]] This merger was designed to provide a strong European response to U.S. media dominance.[[25]]\\n\\nRTL Group was first listed on the [London Stock Exchange], the [Brussels Stock Exchange], and the [Luxembourg Stock Exchange][[26]] on 26 July 2000.[[27]][[28]] The existing shell of Audiofina,[[29]] which was already a listed company, was used to simplify the administrative effort involved in the [stock market] launch.[[30]] The issue price of the RTL Group share was calculated based on the closing prices of Audiofina in Luxembourg and Brussels.[[31]] The RTL Group share consequently replaced the Audiofina listing.[[27]]\\n\\n### Acquisition by Bertelsmann\\n\\n[[edit]]\\n\\nAlthough Bertelsmann initially only held a minority share in RTL Group, the German conglomerate managed by [Thomas Middelhoff] set its sights on playing a leading role within the group.[[32]] After exchanging shares with the Groupe Bruxelles Lambert (GBL) in 2001, Bertelsmann achieved its goal of becoming the majority shareholder of RTL Group and thus secured a leading position in the European television market.[[33]][[34]]\\n\\nOver the years, Bertelsmann increased its stake in RTL Group to more than 90%.[[7]] Bertelsmann's initial aim was to acquire full ownership of RTL Group to reduce administrative costs, but this plan failed in 2007 due to uncertainties in Luxembourg law.[[35]][[36]][[37]] The conglomerate responded by altering its strategy, and in 2013, it sold a minority interest in RTL Group on the [Frankfurt Stock Exchange][[38]][[39]] to finance the growth of Bertelsmann and especially its digital transformation.[[40]] Media reports responded positively to the secondary listing of RTL Group and the resulting availability of shares open to external investors.[[41]]\\n\\n### Recent developments\\n\\n[[edit]]\\n\\nRTL Group was already responsible for a large part of the revenue and profit of Bertelsmann in 2001.[[42]] In the new structure of Bertelsmann, introduced in 2016, the company maintained its position as an important division.[[43]] In April 2019, Bertelsmann chief executive officer [Thomas Rabe] \\\"Thomas Rabe (manager)\\\") also became chairman and chief executive officer of RTL Group.[[44]] Under his management, the company is pursuing the objective of strengthening its core businesses, establishing local [streaming services] and further developing [advertising technologies].[[45]]\\n\\nIn early 2025, Comcast began negotiations with the RTL Group regarding the acquisition of Sky Deutschland. In June 2025, the RTL Group announced the acquisition of Sky Deutschland for €150 million.[[46]] In April 2026, the European Commission approved the RTL Group’s acquisition of Sky Deutschland without imposing any conditions. The transaction was completed on 1 June 2026. The trans\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_34fa33e04b3e43149721da07",
+      "content": "{\"stdout\": \"ratios: 100.0 83.33333333333333 35.666666666666664\\nR = 219 219.0\\nD = 8\\nFinal = 120888 120888.0\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "All data is verified. Here's the complete breakdown:\n\n**The three acquisitions (in order of appearance in the video):**\n\n| # | Acquirer | Acquired MCN | Price ($M) | MCN Founded | Age (2014) | Ratio |\n|---|----------|--------------|-----------|-------------|------------|-------|\n| 1 | Disney | Maker Studios | 500 (base price, excl. $450M earn-out) | 2009 | 5 | 100.0 |\n| 2 | Otter Media (AT&T/Chernin) | Fullscreen | 250 (midpoint of reported $200–300M range) | 2011 | 3 | 83.33 |\n| 3 | RTL Group | StyleHaul | 107 (stated in the video) | 2011 | 3 | 35.67 |\n\n**Computations:**\n- **R** = 100 + 250/3 + 107/3 = 100 + 357/3 = 100 + 119 = **219** (exact)\n- **D** = |Disney founded 1923 − RTL Group founded 1931| = **8**\n- **Sponsorship day number** (from the video's chyron \"Day 69 of our $100,000 sponsorship!\" and the host's statement \"we're only on day 69 of 365 days\") = **69**\n\n**Final:** R × D × day = 219 × 8 × 69 = 1,752 × 69 = **120,888**\n\n<answer>120888</answer>",
+      "reasoning": "Confirmed:\n- RTL Group was founded on May 30, 1931 (Wikipedia infobox). Disney was founded in 1923. D = 8.\n- R = 219 (exact value).\n- Sponsorship day count = 69 (shown on screen as \"Day 69 of our $100,000 sponsorship!\" and mentioned in the audio as well).\n\nFinal = 219 × 8 × 69 = 120,888.\n\nNow, let me write out the answer along with the details of each acquisition:\n\n1st acquisition: Disney → Maker Studios, base price $500 million (excluding the $450 million earnout), Maker was founded in 2009, age 5 years, ratio 100.\n2nd acquisition: Otter Media (AT&T / Chernin Group) → Fullscreen, reported range $200 million–$300 million → midpoint $250 million, Fullscreen was founded in 2011, age 3 years, ratio 83.33.\n3rd acquisition: RTL Group → StyleHaul, $107 million (as stated in the video), StyleHaul was founded in 2011, age 3 years, ratio 35.67.\n\nR = 219. D = |1923 − 1931| = 8. Day count = 69. Final = 120,888.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed:\n- RTL Group was founded on May 30, 1931 (Wikipedia infobox). Disney was founded in 1923. D = 8.\n- R = 219 (exact value).\n- Sponsorship day count = 69 (shown on screen as \"Day 69 of our $100,000 sponsorship!\" and mentioned in the audio as well).\n\nFinal = 219 × 8 × 69 = 120,888.\n\nNow, let me write out the answer along with the details of each acquisition:\n\n1st acquisition: Disney → Maker Studios, base price $500 million (excluding the $450 million earnout), Maker was founded in 2009, age 5 years, ratio 100.\n2nd acquisition: Otter Media (AT&T / Chernin Group) → Fullscreen, reported range $200 million–$300 million → midpoint $250 million, Fullscreen was founded in 2011, age 3 years, ratio 83.33.\n3rd acquisition: RTL Group → StyleHaul, $107 million (as stated in the video), StyleHaul was founded in 2011, age 3 years, ratio 35.67.\n\nR = 219. D = |1923 − 1931| = 8. Day count = 69. Final = 120,888.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Disney acquires Maker Studios 2014 $500 million earnout\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Disney to Acquire Maker Studios, the Leading Network of ...",
+          "url": "https://thewaltdisneycompany.com/news/disney-to-acquire-maker-studios-the-leading-network-of-online-video-content/",
+          "snippet": "Maker Studios shareholders will receive total consideration of $500 million, and a performance-linked earn-out of up to $450 million if the ...",
+          "date": "Mar 24, 2014"
+        },
+        {
+          "id": 2,
+          "title": "Disney's Maker Studios deal: Creator ownership vs ...",
+          "url": "https://www.linkedin.com/posts/jastein_in-2014-disney-bought-maker-studios-for-activity-7456010352263073792-UiTa",
+          "snippet": "In 2014, Disney bought Maker Studios for $500 million up front. The earnout could have pushed the deal to $950 million.",
+          "date": "5 months ago"
+        },
+        {
+          "id": 3,
+          "title": "Disney Buys Maker Studios In Deal Worth At Least $500 ...",
+          "url": "https://variety.com/2014/biz/news/disney-buys-maker-studios-in-deal-worth-at-least-500-million-1201145068/",
+          "snippet": "The Walt Disney Co. is acquiring Maker Studios, a top YouTube multichannel network, for $500 million with a performance-based earn-out of up ...",
+          "date": "Mar 24, 2014"
+        },
+        {
+          "id": 4,
+          "title": "Disney Digital Network",
+          "url": "https://en.wikipedia.org/wiki/Disney_Digital_Network",
+          "snippet": "Maker Studios was acquired by The Walt Disney Company in 2014 for $500 million, and was absorbed into the newly formed Disney Digital Network in 2017.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Inside Disney's troubled $675 mil. Maker Studios acquisition",
+          "url": "https://digiday.com/future-of-tv/disney-maker-studios/",
+          "snippet": "Disney ended up paying only $675 million for Maker, which is reportedly bracing for layoffs as the company plans to shrink the size of its ...",
+          "date": "Feb 22, 2017"
+        },
+        {
+          "id": 6,
+          "title": "It's Official: Disney Acquires Maker Studios For At Least ...",
+          "url": "https://techcrunch.com/2014/03/24/disney-maker-studios/",
+          "snippet": "announcing the acquisition of YouTube network Maker Studios for $500 million, along with a potential $450 million in performance-based earn ...",
+          "date": "Mar 24, 2014"
+        },
+        {
+          "id": 7,
+          "title": "Disney Buys Maker Studios for Up to $950 Million",
+          "url": "https://time.com/36314/disney-maker-studios/",
+          "snippet": "The acquisition will cost Disney $500 million, but the price could climb as high as $950 million if Maker meets certain performance targets set ...",
+          "date": "Mar 24, 2014"
+        },
+        {
+          "id": 8,
+          "title": "Latham, Bingham handle $500 million sale of Maker ...",
+          "url": "https://www.dailyjournal.com/article/314058-latham-bingham-handle-500-million-sale-of-maker-studios-to-disney",
+          "snippet": "Latham, Bingham handle $500 million sale of Maker Studios to Disney. The deal includes an earn-out of up to $450 million, which could lead to a final price tag ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Disney Buys Maker Studios (owner of Polaris) In Deal Worth At Least $500 ...",
+          "url": "https://www.reddit.com/r/Games/comments/219tk2/disney_buys_maker_studios_owner_of_polaris_in/",
+          "snippet": "",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Disney Just Acquired Maker Studios For $500M!",
+          "url": "https://www.reddit.com/r/youtube/comments/219rhh/disney_just_acquired_maker_studios_for_500m/",
+          "snippet": "",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Otter Media acquires Fullscreen valuation $150 million $200 million\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Otter Media Buys Remainder of Its Digital Businesses ...",
+          "url": "https://www.hollywoodreporter.com/news/general-news/otter-media-buys-remainder-digital-businesses-fullscreen-ellation-1078100/",
+          "snippet": "... valued the company between $200 million and $300 million. Existing investor WPP retained its stake in Fullscreen following the sale. Related ...",
+          "date": "Jan 24, 2018"
+        },
+        {
+          "id": 2,
+          "title": "AT&T-Chernin JV Otter Media officially buys Fullscreen for ...",
+          "url": "https://www.streamtvinsider.com/online-video/at-t-chernin-jv-otter-media-officially-buys-fullscreen-for-reported-200-300m",
+          "snippet": "The reported $200-$300 million price tag is a smaller payout than the landmark Disney purchase of Maker Studios last spring. Disney bought ...",
+          "date": "Sep 22, 2014"
+        },
+        {
+          "id": 3,
+          "title": "Gunderson Dettmer advises Fullscreen in acquisition by ...",
+          "url": "https://www.gunder.com/en/news-insights/client-news/gunderson-dettmer-advises-fullscreen-in-acquisition-by-otter-media",
+          "snippet": "Gunderson Dettmer advises Fullscreen in acquisition by Otter Media ... Emerald AI Raises $150 Million Series A at $1.05 Billion Valuation.",
+          "date": "Jan 29, 2018"
+        },
+        {
+          "id": 4,
+          "title": "Majority Owner Otter Media Buys Remaining Shares Of ...",
+          "url": "https://www.tubefilter.com/2018/01/25/otter-media-buys-remaining-shares-fullscreen-ellation/",
+          "snippet": "Otter purchased a majority stake in Fullscreen in 2014, valuing the company at between $200 and $300 million, though Fullscreen has faced ...",
+          "date": "Jan 25, 2018"
+        },
+        {
+          "id": 5,
+          "title": "YouTube network Fullscreen is ready for its close-up",
+          "url": "https://digiday.com/media/fullscreen-acquisition/",
+          "snippet": "Neither party disclosed the terms of the deal, but they value Fullscreen at between $200 million and $300 million, according to Bloomberg.",
+          "date": "Sep 23, 2014"
+        },
+        {
+          "id": 6,
+          "title": "Otter Media 2015 Revenue to Be North Of $200M",
+          "url": "https://variety.com/2015/digital/news/chernin-att-otter-media-200-million-plus-revenue-2015-1201633420/",
+          "snippet": "Otter Media, the online video-focused joint venture between the Chernin Group and AT&T, expects to generate more than $200 million in ...",
+          "date": "Nov 4, 2015"
+        },
+        {
+          "id": 7,
+          "title": "Fullscreen Sells Majority Stake to AT&T/Chernin Group",
+          "url": "https://labusinessjournal.com/technology/fullscreen-sells-majority-stake-chernin-group/",
+          "snippet": "The Fullscreen deal was estimated to value the company at between $200 million and $300 million. ... Representatives of Fullscreen and Otter Media ...",
+          "date": "Sep 22, 2014"
+        },
+        {
+          "id": 8,
+          "title": "Otter Media Buys Fullscreen",
+          "url": "https://www.licenseglobal.com/entertainment/otter-media-buys-fullscreen",
+          "snippet": "Otter Media, a joint venture between The Chernin Group and AT&T, has purchased a majority stake in the YouTube multi-channel network Fullscreen. April 5, 2018.",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Chernin/AT&T's Otter Buy Fullscreen",
+          "url": "https://www.mediapost.com/publications/article/234620/cherninatts-otter-buy-fullscreen.html",
+          "snippet": "... Fullscreen, after months (and months) of speculation. The deal is worth $200 million to $300 million, reports Re/Code, which is lower than the $500 million ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Chernin Group, AT&T take majority stake in Fullscreen ...",
+          "url": "https://www.latimes.com/entertainment/envelope/cotown/la-et-ct-chernin-att-fullscreen-20140922-story.html",
+          "snippet": "AT&T and the Chernin Group announced that their joint venture, Otter Media, will acquire a majority stake in Fullscreen. (Lisa Poole / ...",
+          "date": "Sep 22, 2014"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"RTL Group acquires StyleHaul 2014 $107 million\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "RTL Group to acquire majority in online video-network ...",
+          "url": "https://www.bertelsmann.com/en/media/news/rtl-group-to-acquire-majority-in-online-video-network-stylehaul.html",
+          "snippet": "RTL Group, the leading European entertainment network, today announced that it will acquire a controlling stake in StyleHaul for US-$107 million ...",
+          "date": "Nov 3, 2014"
+        },
+        {
+          "id": 2,
+          "title": "StyleHaul CEO Confirms YouTube Network's $107 Million ...",
+          "url": "https://www.hollywoodreporter.com/news/general-news/stylehaul-ceo-confirms-youtube-networks-745663/",
+          "snippet": "The transaction, which is expected to close at the end of the month, ups RTL's stake in StyleHaul from 22.3 percent to 93.6 percent, with the ...",
+          "date": "Nov 2, 2014"
+        },
+        {
+          "id": 3,
+          "title": "RTL Group Buys Video Lifestyle Network StyleHaul",
+          "url": "https://www.adexchanger.com/ad-exchange-news/rtl-group-buys-video-lifestyle-network-stylehaul/",
+          "snippet": "RTL already owned 22.3% of StyleHaul. The $107 million acquisition brings the total to 93.6%. It will invest an additional $20 million into ...",
+          "date": "Nov 3, 2014"
+        },
+        {
+          "id": 4,
+          "title": "Publications | Analysis: Why RTL saw beauty in Style Haul",
+          "url": "https://www.greenbergglusker.com/publications/analysis-why-rtl-saw-beauty-in-style-haul",
+          "snippet": "RTL Group's purchase of a controlling stake in StyleHaul for $107 million had been rumored for several weeks, so it came as no surprise when ...",
+          "date": "Nov 5, 2014"
+        },
+        {
+          "id": 5,
+          "title": "RTL Buys StyleHaul YouTube Network for $107 million",
+          "url": "https://deadline.com/2014/11/rtl-buys-stylehaul-youtube-network-for-107-million-1201272475/",
+          "snippet": "European media company RTL bought a controlling stake in online video network StyleHaul for $107 million. Stylehaul is focused on fashion.",
+          "date": "Nov 3, 2014"
+        },
+        {
+          "id": 6,
+          "title": "204interim report JanuarySeptember - RTL",
+          "url": "https://company.rtl.com/.galleries/downloads/financial_reports/Interim-Report-January-to-September-2014.pdf",
+          "snippet": "On 3 November 2014, RTL Group announced the acquisition of a controlling stake in StyleHaul, valuing the company at US-$ 151.4 million. RTL ...",
+          "date": "Sep 30, 2014"
+        },
+        {
+          "id": 7,
+          "title": "StyleHaul",
+          "url": "https://en.wikipedia.org/wiki/StyleHaul",
+          "snippet": "... RTL Group, which paid $127 million USD to acquire a controlling stake in the company in 2014. StyleHaul, Inc. Industry, Marketing. Headquarters, Los ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "StyleHaul Acquired by RTL Group",
+          "url": "https://labusinessjournal.com/technology/stylehaul-acquired-rtl-group/",
+          "snippet": "StyleHaul, the multichannel network for fashion and beauty enthusiasts, has been acquired by existing investor RTL Group for $107 million, ...",
+          "date": "Nov 3, 2014"
+        },
+        {
+          "id": 9,
+          "title": "StyleHaul, Inc. Asset Profile",
+          "url": "https://www.preqin.com/data/profile/asset/stylehaul--inc-/81071",
+          "snippet": "In November 2014, RTL Group acquired the company for USD 107 mn. The company has engaged in four deals to date, demonstrating its growth in the digital ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "RTL Group to acquire majority in StyleHaul",
+          "url": "https://www.broadbandtvnews.com/2014/11/03/rtl-group-to-acquire-majority-in-stylehaul/",
+          "snippet": "RTL Group will acquire a controlling stake in StyleHaul for $107 million (around €85 million), valuing the company at $151.4 million (around ...",
+          "date": "Nov 3, 2014"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"StyleHaul YouTube network founded year\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "StyleHaul CEO Confirms YouTube Network's $107 Million ...",
+          "url": "https://www.hollywoodreporter.com/news/general-news/stylehaul-ceo-confirms-youtube-networks-745663/",
+          "snippet": "Horbaczewski, a former marketing executive for Saks Fifth Avenue, founded StyleHaul in 2011 to establish a network for YouTubers in the fashion ...",
+          "date": "Nov 2, 2014"
+        },
+        {
+          "id": 2,
+          "title": "StyleHaul",
+          "url": "https://en.wikipedia.org/wiki/StyleHaul",
+          "snippet": "The company was founded in 2011 by Stephanie Horbaczewski and operated as a portfolio company. Style YouTubers' Careers\".",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Fashion-centric YouTube network StyleHaul gets picked up",
+          "url": "https://www.bizjournals.com/triad/bizwomen/news/latest-news/2014/11/rtl-group-acquires-youtube-network-stylehaul.html",
+          "snippet": "Founded three years ago by Stephanie Horbaczewski, left, StyleHaul was acquired by RTL Group, the Luxembourg-based entertainment conglomerate, ...",
+          "date": "Nov 4, 2014"
+        },
+        {
+          "id": 4,
+          "title": "StyleHaul: Funding, Team & Investors",
+          "url": "https://startupintros.com/orgs/stylehaul",
+          "snippet": "The company was founded in 2011 by Stephanie Horbaczewski, who identified a significant opportunity in the nascent creator economy. Her insight ...",
+          "date": "Jul 13, 2026"
+        },
+        {
+          "id": 5,
+          "title": "StyleHaul, Inc.",
+          "url": "https://www.linkedin.com/company/stylehaul-inc-",
+          "snippet": "Founded in 2011, StyleHaul played a crucial role in revolutionizing the global media industry by utilizing social platforms to foster relationships between ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "How StyleHaul Built a YouTube Network on Branded ...",
+          "url": "https://www.wsj.com/articles/BL-269B-1989",
+          "snippet": "StyleHaul was founded in 2011 and says it represents several thousand YouTube channels which collectively have generated one billion video ...",
+          "date": "Nov 5, 2014"
+        },
+        {
+          "id": 7,
+          "title": "RTL Group Buys Video Lifestyle Network StyleHaul",
+          "url": "https://www.adexchanger.com/ad-exchange-news/rtl-group-buys-video-lifestyle-network-stylehaul/",
+          "snippet": "StyleHaul brings together 5,000 content creators, who distribute their content across YouTube. It attracts 900 million views a month. Forty ...",
+          "date": "Nov 3, 2014"
+        },
+        {
+          "id": 8,
+          "title": "Is Haul.style legit? : r/influencermarketing",
+          "url": "https://www.reddit.com/r/influencermarketing/comments/1utzyfs/is_haulstyle_legit/",
+          "snippet": "Hi everyone, I run a YouTube channel with around 126k subscribers and recently received an email from media@haul.style offering $530 USD for a sponsored ...",
+          "date": "2 months ago"
+        },
+        {
+          "id": 9,
+          "title": "StyleHaul - 2026 Company Profile & Team",
+          "url": "https://tracxn.com/d/companies/stylehaul/__lBzdH19A_XoOl7UHkRx99Uzx89HZsdcY7NAup6b4DJw",
+          "snippet": "StyleHaul is an acquired company based in Los Angeles (United States), founded in 2010 by Stephanie Horbaczewski.",
+          "date": "Sep 9, 2026"
+        },
+        {
+          "id": 10,
+          "title": "StyleHaul CEO on What $107M Means for YouTube's No. 1 ...",
+          "url": "https://www.nbcphiladelphia.com/news/local/stylehaul-ceo-on-what-107m-means-for-youtubes-no-1-fashion-and-beauty-network/81534/",
+          "snippet": "Almost four years after Stephanie Horbaczewski co-founded StyleHaul, the YouTube juggernaut announced some major news: Luxembourg-based RTL ...",
+          "date": "Nov 6, 2014"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Maker Studios founded 2009 YouTube network history\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Disney Digital Network",
+          "url": "https://en.wikipedia.org/wiki/Disney_Digital_Network",
+          "snippet": "Maker Studios was founded in 2009. In over 1,000 channels signed under the network. YouTube channels under Maker Studios collectively earned over 90 million ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Maker Studios | Disney Wiki - Fandom",
+          "url": "https://disney.fandom.com/wiki/Maker_Studios",
+          "snippet": "Maker Studios, Inc. was an American worldwide Multi-channel network co-founded by Lisa Donovan, former CEO Danny Zappin, Scott Katz, Kassem Gharaibeh, ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "The Remarkable Journey of Maker Studios",
+          "url": "https://www.youtube.com/watch?v=SXlIsKqEE94",
+          "snippet": "Mega-popular YouTube channel Maker Studios recently sold to Disney for $500 million, but when the founders launched the company five years ...",
+          "date": "8 years ago"
+        },
+        {
+          "id": 4,
+          "title": "Maker Studios: Behind the curtain at the world's largest ...",
+          "url": "https://financial-marketer.com/maker-studios-behind-the-curtain-at-the-worlds-largest-video-influencer-network/",
+          "snippet": "In 2009, four friends were making video content in a backyard. Maker co-founder Kassem Gharaibeh, said of the company's humble origins. they ...",
+          "date": "Sep 22, 2016"
+        },
+        {
+          "id": 5,
+          "title": "Maker Studios company information, funding & investors",
+          "url": "https://app.dealroom.co/companies/maker_studios",
+          "snippet": "Maker Studios was established in 2009 by a group of early YouTube content creators, including Lisa Donovan, Danny Zappin, Shay Carl Butler, Ben Donovan, ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Maker Studios Inc (Acquired by Disney)",
+          "url": "https://www.linkedin.com/company/maker-studios-inc",
+          "snippet": "Founded in 2009 as a collaborative content engine, Maker Studios innovated with global creators by producing award-winning, original short form video.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Maker Studios (2009 - 2017)",
+          "url": "https://rip.so/maker-studios.html",
+          "snippet": "Maker Studios was the largest of the YouTube multi-channel networks (MCNs) that emerged around '09 when YouTube's partner program was still figuring out how to ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Maker Studios (A Walt Disney Company) - e27 Startup Profile",
+          "url": "https://e27.co/startups/maker-studios-a-walt-disney-company/",
+          "snippet": "Founded in 2009, Maker empowers creators and inspires expression. Attracting more than 12 billion views monthly with over 800 million loyal subscribers ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Maker Studios | Ray William Johnson Wiki - Fandom",
+          "url": "https://ray-william-johnson.fandom.com/wiki/Maker_Studios",
+          "snippet": "History. Maker Studios was founded in 2009. In June 2012, Maker Studios announced that over 1,000 channels signed under the network have received and ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Maker Studios",
+          "url": "https://www.youtube.com/c/makerstudios",
+          "snippet": "Maker Studios is the global leader in online short-form video and the largest influencer network worldwide. Founded in 2009 by a group of forward-thinking ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Fullscreen founded 2011 George Strompolos YouTube MCN\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "How Fullscreen Became a YouTube Giant (Almost) Overnight",
+          "url": "https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/How-Fullscreen-Became-a-YouTube-Giant-(Almost)-Overnight-93613.aspx",
+          "snippet": "Born in January 2011, it's been the No. 2 YouTube partner. It's a multichannel network (MCN) Founded by George Strompolos, now the CEO, it ...",
+          "date": "Dec 3, 2013"
+        },
+        {
+          "id": 2,
+          "title": "How to Make Money on YouTube with George Strompolos",
+          "url": "https://howcast.com/videos/497527-about-youtube-expert-george-strompolos-youtube-programs/",
+          "snippet": "Hi, my name is George Strompolos. I'm the CEO and founder of Fullscreen. Our website is fullscreen.net. We have over 400 YouTube channels,",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Fullscreen (company)",
+          "url": "https://en.wikipedia.org/wiki/Fullscreen_(company)",
+          "snippet": "Fullscreen was founded in January 2011 by CEO George Strompolos. [10] Strompolos hired Ezra Cooperstein as Fullscreen's COO.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Fullscreen CEO George Strompolos to Step Down",
+          "url": "https://www.hollywoodreporter.com/business/digital/fullscreen-ceo-george-strompolos-step-down-1140824/",
+          "snippet": "CEO George Strompolos is stepping down from the company he founded eight months after he completed a sale of the business to AT&T's Otter Media ...",
+          "date": "Sep 7, 2018"
+        },
+        {
+          "id": 5,
+          "title": "George Strompolos (@gstrompolos) ...",
+          "url": "https://x.com/gstrompolos?lang=en",
+          "snippet": "Founded Fullscreen (acquired 2018). Startup investor, dad. Co-Founder & CEO @Promise_AI. Launched YouTube Partner Program (2007).",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Fullscreen | Behind the Brand",
+          "url": "https://www.youtube.com/watch?v=c8_AenHk1zc",
+          "snippet": "In this episode of Behind the Brand I sit down with Fullscreen's founder and CEO, George Strompolos. Brand full-length video episodes. These ...",
+          "date": "12 years ago"
+        },
+        {
+          "id": 7,
+          "title": "Fullscreen Founder George Strompolos Steps Down As ...",
+          "url": "https://www.tubefilter.com/2018/09/07/fullscreen-founder-george-strompolos-steps-down/",
+          "snippet": "Strompolos founded Fullscreen after being an early YouTube employee that helped to orchestrate the platform's Partner Program. AT&T and ...",
+          "date": "Sep 7, 2018"
+        },
+        {
+          "id": 8,
+          "title": "Catching up with Fullscreen CEO George Strompolos",
+          "url": "https://www.lapromisefund.org/catching-up-with-fullscreen-ceo-george-strompolos/",
+          "snippet": "George Strompolos is an entrepreneur and digital media pioneer. He is the Founder and CEO of Fullscreen Media.",
+          "date": "Aug 18, 2026"
+        },
+        {
+          "id": 9,
+          "title": "George Strompolos - Co-Founder & CEO at Promise",
+          "url": "https://www.linkedin.com/in/georgestrompolos",
+          "snippet": "Jan 2011 - Dec 2018 8 years. Los Angeles, CA. Founded and built Fullscreen into the leading social media creative talent and advertising services company.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Fullscreen CEO George Strompolos on Premium Content and ...",
+          "url": "https://www.vox.com/2014/12/4/11633546/fullscreen-ceo-george-strompolos-on-premium-content-and-making",
+          "snippet": "The company he founded in 2011 has built a network of 50,000 content creators on YouTube who collectively reach 500 million subscribers.",
+          "date": "Dec 4, 2014"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"RTL Group Wikipedia founded year Luxembourg media company\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "RTL Group",
+          "url": "https://en.wikipedia.org/wiki/RTL_Group",
+          "snippet": "RTL Group S.A. a Luxembourg-based international media conglomerate, Founded 30 May 1931; 95 years ago (1931-05-30) It was entered into the Luxembourg Trade ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Our history - RTL Deutschland",
+          "url": "https://company.rtl.com/en/about-rtl/overview/our-history/",
+          "snippet": "December 1975 RTL productions The Luxembourg-based production company RTL Productions is founded. RTL Group's Luxembourg-based technical service provider.",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "RTL Group",
+          "url": "https://www.luxembourg-city.com/en/place/monument/rtl-group",
+          "snippet": "The roots of the company's history date back to 1924, RTL Group itself was created in spring 2000 following the merger of Luxembourg-based CLT-UFA and the ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "RTL Group SA",
+          "url": "https://www.encyclopedia.com/books/politics-and-business-magazines/rtl-group-sa",
+          "snippet": "Incorporated: 1931 as Compagnie Luxembourgeoise. In 1931, the Compagnie Luxembourgeoise de Radiodiffusion (CLR) was incorporated in Luxembourg ・ granting a ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "RTL Group",
+          "url": "https://www.companieshistory.com/rtl-group/",
+          "snippet": "RTL Group's history began in 1931 when the Compagnie Luxembourgeoise de Radiodiffusion (CLR) was established. In 1954, the company was renamed ...",
+          "date": "Aug 21, 2014"
+        },
+        {
+          "id": 6,
+          "title": "RTL Group | Logo Timeline Wiki | Fandom",
+          "url": "https://logo-timeline.fandom.com/wiki/RTL_Group",
+          "snippet": "RTL Group, from Radio Télévision Luxembourg, is a pan-European media group headquartered in Luxembourg, owned by the German media conglomerate Bertelsmann.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "RTL Group on Instagram: \"100 years of radio  Our history ...",
+          "url": "https://www.instagram.com/reel/C3SztKfK11j/?hl=en",
+          "snippet": "Our history started with radio back in 1924, when Radio Luxembourg first went on air. Today, RTL Group is a leading entertainment company across ...",
+          "date": "2 years ago"
+        },
+        {
+          "id": 8,
+          "title": "RTL Group",
+          "url": "https://commons.wikimedia.org/wiki/RTL_Group",
+          "snippet": "RTL Group. international media company with headquarters in Luxembourg ... The RTL Group is a European broadcasting company.",
+          "date": "Jun 8, 2026"
+        },
+        {
+          "id": 9,
+          "title": "RTL | Media Ownership Monitor Germany",
+          "url": "https://germany.mom-gmr.org/en/media/tv/outlet/rtl-113601",
+          "snippet": "RTLplus (renamed RTL Television in 1992) was founded by CLT and UFA in 1984. The Bertelsmann Group held 40% of the shares in RTL via UFA Film und Fernsehen GmbH ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "RTL Lëtzebuerg",
+          "url": "https://en.wikipedia.org/wiki/RTL_L%C3%ABtzebuerg",
+          "snippet": "RTL Group. Sister channels, RTL Zwee. History. Launched, 21 October 1991; 34 ... Viewers in Luxembourg can also tune into RTL 4 (channel 41), RTL 5, RTL 7 ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Walt Disney Company founded 1923\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Disney History",
+          "url": "https://d23.com/disney-history/",
+          "snippet": "A distributor in New York, M. J. Winkler, contracted to distribute the Alice Comedies on October 16, 1923, and this date became the start of the Disney company.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Here's How a Four-Page Contract Started The Walt Disney ...",
+          "url": "https://thewaltdisneycompany.com/news/disney100-anniversary-disney-contract/",
+          "snippet": "Walt and Roy Disney officially began the The Walt Disney Company on October 16, 1923. On that date Walt Disney signed a contract with Margaret ...",
+          "date": "Oct 16, 2023"
+        },
+        {
+          "id": 3,
+          "title": "The Walt Disney Company",
+          "url": "https://en.wikipedia.org/wiki/The_Walt_Disney_Company",
+          "snippet": "Founded on October 16, 1923, as an animation studio by brothers Walt and Roy Oliver Disney as Disney Brothers Cartoon Studio, Disney operated under the names ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Walt Disney Company is founded | October 16, 1923",
+          "url": "https://www.history.com/this-day-in-history/october-16/walt-disney-company-founded",
+          "snippet": "On October 16, 1923, Walt Disney and his brother Roy found the Disney Brothers Cartoon Studio in Hollywood, California. The studio, now known as ...",
+          "date": "Jul 22, 2019"
+        },
+        {
+          "id": 5,
+          "title": "On this day in 1923, The Walt Disney Company was ...",
+          "url": "https://www.facebook.com/Disney/posts/on-this-day-in-1923-the-walt-disney-company-was-founded-did-you-know-walt-and-ro/10156703126845954/",
+          "snippet": "On this day in 1923, The Walt Disney Company was founded! Did you know Walt and Roy Disney originally named their venture \"Disney Brothers Cartoon Studio\"?",
+          "date": "6 years ago"
+        },
+        {
+          "id": 6,
+          "title": "Walt Disney Company is founded October 16, 1923 - This Day ...",
+          "url": "https://www.youtube.com/watch?v=idGfIg5TW1M&xstg=CAMSBhUDze3xHw%3D%3D",
+          "snippet": "Walt Disney Company is founded October 16, 1923 - This Day In History.",
+          "date": "4 years ago"
+        },
+        {
+          "id": 7,
+          "title": "This Day In History | October 16, 1923: The Walt Disney ...",
+          "url": "https://www.reddit.com/r/disney/comments/11m08p/this_day_in_history_october_16_1923_the_walt/",
+          "snippet": "[October 16th, 1923] The Walt Disney Company was founded as Disney Brothers Cartoon Studio when 21-year-old Walt Disney, and his 30-year-old ...",
+          "date": "13 years ago"
+        },
+        {
+          "id": 8,
+          "title": "Celebrating the creation of the Walt Disney Corporation- on ...",
+          "url": "https://spartacarnegie.bibliocommons.com/list/share/1635674699_fclsmilton/1748767439_celebrating_the_creation_of_the_walt_disney_corporation-_on_this_date_october_16,_1923",
+          "snippet": "1923 The Walt Disney Company is Founded A leader in the international entertainment industry, the company was created by brothers Walt and Roy as the Disney ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Walt Disney",
+          "url": "https://en.wikipedia.org/wiki/Walt_Disney",
+          "snippet": "Walter Elias Disney was an American animator, film producer, voice actor, and entrepreneur. A pioneer of the American animation industry, he introduced ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "The Walt Disney Company History",
+          "url": "https://www.zippia.com/the-walt-disney-company-careers-11541/history/",
+          "snippet": "On October 16, 1923, Walt Disney and his brother Roy found the Disney Brothers Cartoon Studio in Hollywood, California. The Walt Disney Company started in 1923 ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/RTL_Group\"]\n\n}",
+      "result": {
+        "https://en.wikipedia.org/wiki/RTL_Group": "Title: RTL Group - Wikipedia\n\nURL Source: https://en.wikipedia.org/wiki/RTL_Group\n\nPublished Time: Wed, 07 Oct 2026 01:48:34 GMT\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 History]Toggle History subsection\n  * [1.1 Historical background]\n\n  * [1.2 Growth and stock market launch]\n\n  * [1.3 Acquisition by Bertelsmann]\n\n  * [1.4 Recent developments]\n\n* [2 Corporate affairs]Toggle Corporate affairs subsection\n  * [2.1 Listing]\n\n  * [2.2 Management]\n\n  * [2.3 Corporate headquarters]\n\n* [3 Divisions]Toggle Divisions subsection\n  * [3.1 RTL Deutschland]\n\n  * [3.2 Groupe M6]\n\n  * [3.3 Fremantle]\n\n* [4 Former divisions]Toggle Former divisions subsection\n  * [4.1 RTL Belgium]\n\n  * [4.2 RTL Nederland]\n\n* [5 Controversies]\n\n* [6 See also]\n\n* [7 Notes and references]\n\n* [8 External links]\n\n- [x] Toggle the table of contents \n\n# RTL Group\n\n- [x] 41 languages \n\n* [مصرى]\n* [Беларуская]\n* [Català]\n* [Čeština]\n* [Cymraeg]\n* [Dansk]\n* [Deutsch]\n* [Zazaki]\n* [Ελληνικά]\n* [Esperanto]\n* [Español]\n* [فارسی]\n* [Suomi]\n* [Français]\n* [עברית]\n* [Hrvatski]\n* [Magyar]\n* [Հայերեն]\n* [Bahasa Indonesia]\n* [Italiano]\n* [日本語]\n* [한국어]\n* [Lëtzebuergesch]\n* [Lietuvių]\n* [Latviešu]\n* [Bahasa Melayu]\n* [Nederlands]\n* [Norsk bokmål]\n* [Polski]\n* [Português]\n* [Română]\n* [Русский]\n* [Srpskohrvatski / српскохрватски]\n* [Simple English]\n* [Српски / srpski]\n* [Svenska]\n* [Türkçe]\n* [اردو]\n* [吴语]\n* [粵語]\n* [中文]\n\n[Edit links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nFrom Wikipedia, the free encyclopedia\n\nEntertainment company\n\nRTL Group S.A.[![Image 4]]\n\nLogo used since 2021\nFormerly Compagnie Luxembourgeoise de Radiodiffusion (1931–1954)  \nCompagnie Luxembourgeoise de Télédiffusion (1954–1997)  \nCLT-UFA (1997–2000)\nType[Public]\n[Traded as][FWB]:[RRTL]  \n[LuxSE]:[RTLL]  \n[MDAX] component (RRTL)  \n[LuxX Index] component (RTLL)\n[ISIN]LU0061462528[![Image 5: Edit this at Wikidata]]\nIndustry[Mass media]\nPredecessor Société Luxembourgeoise d'Études Radiophoniques (1929–1931)\nFounded 30 May 1931;95 years ago(1931-05-30)\nHeadquarters[Kirchberg, Luxembourg]  \n[Cologne], [North Rhine-Westphalia]\nArea served* Europe\n* Worldwide (via [Fremantle] \"Fremantle (company)\"))\nKey people* [Martin Taylor] \"Martin Taylor (businessman)\") ([chairman])\n* Clément Schwebig ([CEO])\n* [Thomas Rabe] \"Thomas Rabe (business manager)\") (Executive Director)\n* Björn Bauer ([CFO])\nProducts[Television]  \n[Radio]  \n[Streaming]  \nContent production  \nDigital services\nRevenue€6.0 billion(2025)\n[Operating income]€243 million(2025)\n[Net income]€1 billion(2025)\n[Total assets]€10.5 billion(2025)\nNumber of employees 15,768(2025)\n[Parent][Bertelsmann Capital Holding] (75.00%)  \nRTL Group (2.3%)  \nPublicly traded (22.8%)\n[Divisions] \"Division (business)\")* [RTL Deutschland]\n* [Groupe M6] (49.3%)\n* [Fremantle] \"Fremantle (company)\")\n\n[RTL Hungary]\")\n[Subsidiaries][Sky Deutschland]\nWebsite[rtl.com]\n**Footnotes**  \n[Annual Report 2025]\n\n**RTL Group S.A.** (\"Radio Télévision Luxembourg\") is a [Luxembourg]-based international [media conglomerate], with another [corporate office] in [Cologne], North Rhine-Westphalia.[[1]][[2]] The company operates 52 television channels and 40 radio stations in Germany, [France] and other European countries. It also offers national streaming platforms, content productions and a range of digital services. Important segments of RTL Group are [RTL Deutschland], [Groupe M6] and [Fremantle] \"Fremantle (company)\").[[3]]\n\nThe company in its present form was established by [Bertelsmann], [Groupe Bruxelles Lambert] (GBL), and [Pearson plc] in 2000.[[4]] As of 2025 Bertelsmann, a conglomerate based in the German city of [Gütersloh] owns 75% of the shares in the company,[[5]] after holding a stake of more than 90% in the past.[[6]][[7]] RTL Group is one of a total of eight divisions of Bertelsmann: It is responsible for one third of its revenue and a large share of its operating profit.[[8]]-8)\n\nIt is one of the founding members of the [European Broadcasting Union].\n\n## History\n\n[[edit]]\n\n[![Image 6]]\n\nLogo of RTL Group used from 2000 until 2021\n\n### Historical background\n\n[[edit]]\n\nThe roots of RTL Group date back to the 1920s.[[9]] The company itself was established in 1931 as the Compagnie Luxembourgeoise de Radiodiffusion (known as CLR for short). It was one of the world's first [private broadcasting] companies. After the [Second World War], the company ventured into the world of television broadcasting. It was renamed Compagnie Luxembourgeoise de Télédiffusion (CLT) to reflect this new service in 1954. Under the name RTL (for [Radio Télévision Luxembourg]), it went on to provide its private broadcasting services in several European countries.[[10]] When the European media markets were liberalised in the 1980s, television became increasingly important and started to overtake radio.[[9]]\n\nIn the 1980s, Belgian and French media companies made up the majority of the shareholders of CLR and CLT.[[11]] The following decades witnessed repeated conflicts for domination within the company and among its [subsidiaries].[[12]][[13]] In the 1990s, Bertelsmann ultimately came out on top after having gradually increased its stake in the German television channel RTL.[[14]] Following a legal dispute with RTL/CLT,[[15]][[12]] Bertelsmann announced plans to merge the television businesses of [UFA] to form the joint venture CLT-UFA in April 1996.[[16]] A merger agreement was signed on 8 July 1996.[[17]] It was approved by the CLT board of directors on 5 December,[[18]] and the formation of CLT-UFA was completed on 14 January 1997.[[19]] As a result, German television channels such as RTL Television and VOX and international broadcasting services, including M6 in France, were all brought together under one roof.[[20]]\n\n### Growth and stock market launch\n\n[[edit]]\n\nCLT-UFA not only grew organically but also increased in size due to a number of acquisitions.[[21]] In the year 2000, Bertelsmann and Pearson announced plans to merge their television, radio, and production activities.[[22]] The two companies joined forces to create RTL Group, Europe's leading network of television channels and radio stations with a global content business,[[23]] which was rebranded FremantleMedia in 2001 (now called Fremantle).[[24]] This merger was designed to provide a strong European response to U.S. media dominance.[[25]]\n\nRTL Group was first listed on the [London Stock Exchange], the [Brussels Stock Exchange], and the [Luxembourg Stock Exchange][[26]] on 26 July 2000.[[27]][[28]] The existing shell of Audiofina,[[29]] which was already a listed company, was used to simplify the administrative effort involved in the [stock market] launch.[[30]] The issue price of the RTL Group share was calculated based on the closing prices of Audiofina in Luxembourg and Brussels.[[31]] The RTL Group share consequently replaced the Audiofina listing.[[27]]\n\n### Acquisition by Bertelsmann\n\n[[edit]]\n\nAlthough Bertelsmann initially only held a minority share in RTL Group, the German conglomerate managed by [Thomas Middelhoff] set its sights on playing a leading role within the group.[[32]] After exchanging shares with the Groupe Bruxelles Lambert (GBL) in 2001, Bertelsmann achieved its goal of becoming the majority shareholder of RTL Group and thus secured a leading position in the European television market.[[33]][[34]]\n\nOver the years, Bertelsmann increased its stake in RTL Group to more than 90%.[[7]] Bertelsmann's initial aim was to acquire full ownership of RTL Group to reduce administrative costs, but this plan failed in 2007 due to uncertainties in Luxembourg law.[[35]][[36]][[37]] The conglomerate responded by altering its strategy, and in 2013, it sold a minority interest in RTL Group on the [Frankfurt Stock Exchange][[38]][[39]] to finance the growth of Bertelsmann and especially its digital transformation.[[40]] Media reports responded positively to the secondary listing of RTL Group and the resulting availability of shares open to external investors.[[41]]\n\n### Recent developments\n\n[[edit]]\n\nRTL Group was already responsible for a large part of the revenue and profit of Bertelsmann in 2001.[[42]] In the new structure of Bertelsmann, introduced in 2016, the company maintained its position as an important division.[[43]] In April 2019, Bertelsmann chief executive officer [Thomas Rabe] \"Thomas Rabe (manager)\") also became chairman and chief executive officer of RTL Group.[[44]] Under his management, the company is pursuing the objective of strengthening its core businesses, establishing local [streaming services] and further developing [advertising technologies].[[45]]\n\nIn early 2025, Comcast began negotiations with the RTL Group regarding the acquisition of Sky Deutschland. In June 2025, the RTL Group announced the acquisition of Sky Deutschland for €150 million.[[46]] In April 2026, the European Commission approved the RTL Group’s acquisition of Sky Deutschland without imposing any conditions. The transaction was completed on 1 June 2026. The trans"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"\\nfrom fractions import Fraction\\n\\n# Deal 1: Disney -> Maker Studios\\nprice1 = Fraction(500)          # base price, no earn-outs\\nmaker_founded = 2009\\nage1 = 2014 - maker_founded     # 5\\nratio1 = price1 / age1\\n\\n# Deal 2: Otter Media (AT&T/Chernin) -> Fullscreen\\nprice2 = Fraction(200 + 300, 2) # midpoint of $200M-$300M reported range\\nfull_founded = 2011\\nage2 = 2014 - full_founded      # 3\\nratio2 = price2 / age2\\n\\n# Deal 3: RTL Group -> StyleHaul (price stated in video)\\nprice3 = Fraction(107)\\nstyle_founded = 2011\\nage3 = 2014 - style_founded     # 3\\nratio3 = price3 / age3\\n\\nR = ratio1 + ratio2 + ratio3\\nprint(\\\"ratios:\\\", float(ratio1), float(ratio2), float(ratio3))\\nprint(\\\"R =\\\", R, float(R))\\n\\n# D: founding years of acquirers (Disney 1923, RTL Group 1931 per Wikipedia)\\nD = abs(1923 - 1931)\\nprint(\\\"D =\\\", D)\\n\\nday = 69\\nfinal = R * D * day\\nprint(\\\"Final =\\\", final, float(final))\\n\"}",
+      "result": {
+        "stdout": "ratios: 100.0 83.33333333333333 35.666666666666664\nR = 219 219.0\nD = 8\nFinal = 120888 120888.0",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 86,
+      "id": "gen-1791464575-hpkfD3kzlYDy54Hubc9e",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 16681,
+        "completion_tokens": 4161,
+        "total_tokens": 20842,
+        "cost": 0.00445782,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00445782,
+          "upstream_inference_prompt_cost": 0.00250215,
+          "upstream_inference_completions_cost": 0.00195567
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3999,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 57.761
+    },
+    {
+      "item_id": 86,
+      "id": "gen-1791464636-fFw0kiM47rVA9WixdHrG",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 25023,
+        "completion_tokens": 731,
+        "total_tokens": 25754,
+        "cost": 0.00409702,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00409702,
+          "upstream_inference_prompt_cost": 0.00375345,
+          "upstream_inference_completions_cost": 0.00034357
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 558,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 37.782
+    },
+    {
+      "item_id": 86,
+      "id": "gen-1791464678-lywZpZ0lsi3CozZldPEi",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 29550,
+        "completion_tokens": 1488,
+        "total_tokens": 31038,
+        "cost": 0.00513186,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00513186,
+          "upstream_inference_prompt_cost": 0.0044325,
+          "upstream_inference_completions_cost": 0.00069936
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1060,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 34.323
+    },
+    {
+      "item_id": 86,
+      "id": "gen-1791464715-e1APhsV9hc1PqMFscLT4",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 34326,
+        "completion_tokens": 760,
+        "total_tokens": 35086,
+        "cost": 0.001664052,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 28672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001664052,
+          "upstream_inference_prompt_cost": 0.001306852,
+          "upstream_inference_completions_cost": 0.0003572
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 340,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 16.613
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "120888",
+  "em_score": 1,
+  "llm_equal": 1,
+  "judge_response": "Exact match",
+  "judge_error": null,
+  "elapsed_seconds": 178.56
+}

@@ -1,0 +1,465 @@
+{
+  "id": 10,
+  "question": "First, identify the brand of bottled water shown in the image and determine its original bottling source city. Then, listen to the audio to identify the community where water was collected in a copper pail for the ceremony described. Based on this information, calculate the straight-line distance in kilometers between the water brand's original bottling source city and the community mentioned in the audio. Round your answer to the nearest whole number.",
+  "Level": "Medium",
+  "category": "Geography & Travel",
+  "task_type": "image + audio",
+  "answer": "1930",
+  "output": "**Reasoning summary:**\n\n1. **Image:** The bottle on the table clearly shows the **NAYA** brand label (a Canadian natural spring water).\n2. **NAYA's original bottling source:** Naya's founders discovered the Naya spring at the foot of the Laurentian Mountains in **Mirabel, Quebec**, and opened the bottling plant at that exact source in 1986 (a second plant in Revelstoke, BC came only in 1995).\n3. **Audio:** The speaker recounts Elder Catherine Sinclair's walk around Lake Winnipeg — on July 12, 2014, the women gathered at **Norway House, Manitoba**, took water from the lake in a copper pail, held a ceremony, and set out walking.\n4. **Distance calculation:** Using coordinates for Mirabel, QC (≈45.67°N, 74.03°W) and Norway House, MB (≈53.98°N, 97.83°W), the great-circle (haversine) distance is ≈ 1928 km.\n\n<answer>1928</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "First, identify the brand of bottled water shown in the image and determine its original bottling source city. Then, listen to the audio to identify the community where water was collected in a copper pail for the ceremony described. Based on this information, calculate the straight-line distance in kilometers between the water brand's original bottling source city and the community mentioned in the audio. Round your answer to the nearest whole number."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:252251 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1611084 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me analyze the image and audio.\n\nImage: A bottle of NAYA water is visible. NAYA is a Canadian bottled water brand. I need to identify its original bottling source city. NAYA water originates from... I recall NAYA Springs water comes from a spring in Ontario? Let me think. NAYA is a brand by... Actually, NAYA water was originally bottled from \"NAYA Springs\" in... Hmm. Let me search.\n\nAudio: The speaker describes Katherine (Katie) Sinclair's walk around Lake Winnipeg. The women gathered at Norway House, took water from the lake in a copper pail, had a ceremony, and departed. So the community is Norway House, Manitoba.\n\nNext, NAYA water's original bottling source city. NAYA is a brand of... I think NAYA water comes from a spring in British Columbia? Or is it \"Naya Water\" from \"Naya Creek\"? Let me search the web.\n\nActually, NAYA was a Canadian premium bottled water brand owned by... It might come from \"Stanley, Wisconsin\"? No wait, that's another brand. Let me search.\n\nI recall NAYA water being sourced from an artesian well in... Hmm. There's \"Naya\" brand by \"Crystal Springs\"? Let me just search.\n\nThen compute the great-circle distance between the source city and Norway House, Manitoba.\n\nNorway House coordinates: approximately 53.98°N, 97.83°W (53°58′N 97°50′W).\n\nLet me search for NAYA water source.\n\nPossible answer: NAYA water originates from \"NAYA Springs\" in Ontario? Hmm, maybe it's from \"Millgrove, Ontario\"? Not sure.\n\nLet me use the web_search tool.\n\nAlso note: NAYA brand — I think it's a brand of \"Ontario\" water? Actually, I recall NAYA being a brand of \"Iceberg Water\"? No, iceberg water is \"Bubbi\" or \"Nuuk\". NAYA... let me search.\n\nI'll run searches: \"NAYA bottled water source spring\", \"NAYA water brand origin\".\n\nThen compute the distance with code.\n\nLet me proceed.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_d336e4f2d53b4f2b8ed5efbc",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"NAYA bottled water brand source spring city\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_b825ee91dc294310b8be3c13",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"NAYA\\\" water \\\"bottled\\\" origin \\\"spring\\\" Canada brand history\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me analyze the image and audio.\n\nImage: A bottle of NAYA water is visible. NAYA is a Canadian bottled water brand. I need to identify its original bottling source city. NAYA water originates from... I recall NAYA Springs water comes from a spring in Ontario? Let me think. NAYA is a brand by... Actually, NAYA water was originally bottled from \"NAYA Springs\" in... Hmm. Let me search.\n\nAudio: The speaker describes Katherine (Katie) Sinclair's walk around Lake Winnipeg. The women gathered at Norway House, took water from the lake in a copper pail, had a ceremony, and departed. So the community is Norway House, Manitoba.\n\nNext, NAYA water's original bottling source city. NAYA is a brand of... I think NAYA water comes from a spring in British Columbia? Or is it \"Naya Water\" from \"Naya Creek\"? Let me search the web.\n\nActually, NAYA was a Canadian premium bottled water brand owned by... It might come from \"Stanley, Wisconsin\"? No wait, that's another brand. Let me search.\n\nI recall NAYA water being sourced from an artesian well in... Hmm. There's \"Naya\" brand by \"Crystal Springs\"? Let me just search.\n\nThen compute the great-circle distance between the source city and Norway House, Manitoba.\n\nNorway House coordinates: approximately 53.98°N, 97.83°W (53°58′N 97°50′W).\n\nLet me search for NAYA water source.\n\nPossible answer: NAYA water originates from \"NAYA Springs\" in Ontario? Hmm, maybe it's from \"Millgrove, Ontario\"? Not sure.\n\nLet me use the web_search tool.\n\nAlso note: NAYA brand — I think it's a brand of \"Ontario\" water? Actually, I recall NAYA being a brand of \"Iceberg Water\"? No, iceberg water is \"Bubbi\" or \"Nuuk\". NAYA... let me search.\n\nI'll run searches: \"NAYA bottled water source spring\", \"NAYA water brand origin\".\n\nThen compute the distance with code.\n\nLet me proceed.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d336e4f2d53b4f2b8ed5efbc",
+      "content": "[{\"id\": 1, \"title\": \"Naya Spring Water | Case of 20 × 500 mL\", \"url\": \"https://naya.com/en/products/spring-water-20x500-ml/\", \"snippet\": \"Discover Naya spring water in a convenient case of 20 × 500 mL bottles, ideal for meeting your hydration needs at home, at work, or on the go.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Check out this great flyer feature! Naya bottled water is proudly ...\", \"url\": \"https://www.facebook.com/100069582944888/videos/check-out-this-great-flyer-feature-naya-bottled-water-is-proudly-sourced-from-qu/644373888088649/\", \"snippet\": \"The post highlights that the brand Naya is proudly sourced from Quebec, positioning it as a healthy choice. Comments from viewers reinforce this ...\", \"date\": \"1 year ago\"}, {\"id\": 3, \"title\": \"NAYA, Canadian Natural Spring Water\", \"url\": \"https://oukosher.org/companies/naya-canadian-natural-spring-water/\", \"snippet\": \"Naya water is a natural and pure spring water, from the purest of Canadian springs. It is bottled directly at the source in order to preserve its perfectly ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Naya Spring Water Eyes U.S. Expansion\", \"url\": \"https://www.adweek.com/brand-marketing/naya-spring-water-eyes-us-expansion-106735/\", \"snippet\": \"Once a top imported brand, Naya had all but disappeared from the U.S. Now, its new owner, private equity firm Catterton Partners, is planning ...\", \"date\": \"Dec 1, 2009\"}, {\"id\": 5, \"title\": \"Naya Waters Facts for Kids\", \"url\": \"https://kids.kiddle.co/Naya_Waters\", \"snippet\": \"Naya Waters Inc. is a Canadian company. It bottles natural spring water from a special spring. This spring is found in the Laurentian Mountains ...\", \"date\": \"Oct 17, 2025\"}, {\"id\": 6, \"title\": \"Naya Spring\", \"url\": \"https://www.bottledwaterweb.com/bottlersdetail.do?k=57\", \"snippet\": \"... bottle. NAYA is a natural spring water taken directly from sources deep beneath the Canadian shield in Quebec and the Selkirk mountains in British Columbia ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Naya Waters Seeks Return to Glory Days, Beginning With ...\", \"url\": \"https://www.bevnet.com/news/2016/naya-waters-seeks-return-to-glory-days-beginning-with-nyc/\", \"snippet\": \"Reda described a large and continuously growing market for bottled water in New York, a key reason that Big Geyser added Naya to its portfolio.\", \"date\": \"Feb 25, 2016\"}, {\"id\": 8, \"title\": \"Naya Natural Spring Water, 1.5 Lt Plastic Bottle\", \"url\": \"https://www.walmart.com/ip/Naya-Natural-Spring-Water-1-5-Lt-Plastic-Bottle/125738286\", \"snippet\": \"Buy Naya Natural Spring Water, 1.5 Lt Plastic Bottle at Walmart.com.\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Naya Water, Canadian Natural Spring\", \"url\": \"https://www.instacart.com/store/products/20052184-naya-water-canadian-natural-spring-1-05-pt\", \"snippet\": \"Naya bottles are made with 100% post-consumer recycled plastic (rPET). Naya donates 1% of its revenue to protect the environment. 1% For The Planet member.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Jon Drinks Water #6123 Naya Natural Spring Water VS Crystal ...\", \"url\": \"https://www.youtube.com/watch?v=7tgvdLZcO2I&xstg=CAMSBhUDzO3xHw%3D%3D\", \"snippet\": \"Jon Drinks Water #6123 Naya Natural Spring Water VS Crystal Springs Natural Spring Water. @JonDrinksWater27 likes3.1K views8 years ago\", \"date\": \"8 years ago\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_b825ee91dc294310b8be3c13",
+      "content": "[{\"id\": 1, \"title\": \"Naya Spring\", \"url\": \"https://www.bottledwaterweb.com/bottlersdetail.do?k=57\", \"snippet\": \"NAYA is the first and only brand of bottled water to specifically market to ... NAYA is the number one Canadian spring water in the world. It is ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Check out this great flyer feature! Naya bottled water is proudly ...\", \"url\": \"https://www.facebook.com/100069582944888/videos/check-out-this-great-flyer-feature-naya-bottled-water-is-proudly-sourced-from-qu/644373888088649/\", \"snippet\": \"Check out this great flyer feature! Naya bottled water is proudly sourced from Quebec! #livebetter.\", \"date\": \"1 year ago\"}, {\"id\": 3, \"title\": \"Naya Waters Facts for Kids\", \"url\": \"https://kids.kiddle.co/Naya_Waters\", \"snippet\": \"This made sure the water was bottled very close to its source. ... The Naya spring is in Mirabel, Quebec. It is at the foot of the ...\", \"date\": \"Oct 17, 2025\"}, {\"id\": 4, \"title\": \"Naya and Québec, a wonderful love story\", \"url\": \"https://naya.com/en/history\", \"snippet\": \"Naya's natural bottled spring water is launched. The name comes from the word “Naiads”, who in Greek mythology were the goddesses of thermal waters and the ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Trader Joe's Natural Mountain Spring Water. Same Source, ...\", \"url\": \"https://www.facebook.com/100063482112591/posts/in-the-world-of-bottled-water-not-everything-is-as-it-appears-on-the-label-somet/1579465840846138/\", \"snippet\": \"Same Source, Different Label Trader Joe's spring water is bottled by CG Roxane, a well-established spring water producer in the United States.\", \"date\": \"5 months ago\"}, {\"id\": 6, \"title\": \"Renewing the Federal Regulations on Bottled Water: A ...\", \"url\": \"https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/making-clear-renewing-federal-regulations-bottled-water-discussion-paper.html\", \"snippet\": \"Under the current Regulations, any bottled water labelled spring water or mineral water must: originate from an underground source which is not part of a ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"List of bottled water brands\", \"url\": \"https://en.wikipedia.org/wiki/List_of_bottled_water_brands\", \"snippet\": \"Bottled water brands ; Mountain Valley Spring Water, United States, North America ; Nabeglavi, Georgia, Europe/Asia ; Naya Waters, Canada, North America ; Nestlé ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Fine Bottled Water - Canada\", \"url\": \"https://finewaters.com/bottled-waters-of-the-world/canada\", \"snippet\": \"The Story of Fine Water naturally bottled water. Back; Water is not just Water ... Simply Natural Canadian Spring Water; Soul Water; Sparta; Spirit Water ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Naya Waters - Products, Competitors, Financials ...\", \"url\": \"https://www.cbinsights.com/company/naya-waters\", \"snippet\": \"Their main offering is spring water sourced from the Laurentians and bottled at the source. Naya Waters serves consumers looking for beverage options. It ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Naya Water Goes Eco-Friendly\", \"url\": \"https://www.pmq.com/naya-water-goes-eco-friendly/\", \"snippet\": \"Naya Water offers bottled water you can drink without burdening your eco-conscience. Naya is the first to use 50% recycled plastic for its ...\", \"date\": \"Jun 10, 2019\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "According to Kiddle's snippet, Naya's spring is located in Mirabel, Quebec (\"The Naya spring is in Mirabel, Quebec\"). Let me verify on the Wikipedia page for Naya Waters. The original source of bottling: Naya Waters Inc. bottles spring water from a spring in the Laurentian Mountains... Actually, I recall that Naya was originally bottled in \"Mirabel, Quebec.\" Let me check Wikipedia.\n\nAlso, the community in the audio is Norway House, Manitoba.\n\nLet me try fetching the Wikipedia page for Naya Waters and Kiddle.\n\nIn the image, a **NAYA** branded water bottle is shown, and in the audio, it's described that women gathered at **Norway House** (Manitoba), drew water from the lake into copper buckets, and performed a ceremony before starting their walk around Lake Winnipeg. Let's check the original bottling location of NAYA.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_8534a5ea7a1a481d856e15f4",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://kids.kiddle.co/Naya_Waters\", \"https://en.wikipedia.org/wiki/Naya_Waters\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "According to Kiddle's snippet, Naya's spring is located in Mirabel, Quebec (\"The Naya spring is in Mirabel, Quebec\"). Let me verify on the Wikipedia page for Naya Waters. The original source of bottling: Naya Waters Inc. bottles spring water from a spring in the Laurentian Mountains... Actually, I recall that Naya was originally bottled in \"Mirabel, Quebec.\" Let me check Wikipedia.\n\nAlso, the community in the audio is Norway House, Manitoba.\n\nLet me try fetching the Wikipedia page for Naya Waters and Kiddle.\n\nIn the image, a **NAYA** branded water bottle is shown, and in the audio, it's described that women gathered at **Norway House** (Manitoba), drew water from the lake into copper buckets, and performed a ceremony before starting their walk around Lake Winnipeg. Let's check the original bottling location of NAYA.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8534a5ea7a1a481d856e15f4",
+      "content": "{\"https://kids.kiddle.co/Naya_Waters\": \"Title: Naya Waters facts for kids\\n\\nURL Source: https://kids.kiddle.co/Naya_Waters\\n\\nMarkdown Content:\\n[![Image 1: kids encyclopedia robot]][![Image 2: kids search engine]] Clear Search * [Web] * [Images] * [Kimages] * [Kpedia] * [Español]\\n\\n# Naya Waters facts for kids\\n\\n[Kids Encyclopedia Facts]\\n\\nQuick facts for kids  \\nNaya Waters Inc.[![Image 3: Naya Company Logo.png]]\\nIndustry[Food industry]\\nFounded 1986; 40 years ago(1986)\\nHeadquarters Mirabel, [Quebec]\\n\\n , \\n\\n[Canada]\\nKey people Daniel Cotte ([President] \\\"President (corporate title)\\\"))\\nProducts[Bottled water]\\n\\n**Naya Waters Inc.** is a [Canadian] company. It bottles natural [spring water] \\\"Spring (water)\\\") from a special spring. This spring is found in the [Laurentian Mountains] in southern [Quebec]. The water is sold under the brand name Naya.\\n\\nThe name Naya comes from [Greek Mythology]. The [Naiads] were spirits who looked after fresh water sources. These included springs and streams.\\n\\nIn March 2021, Naya Waters became a 100% Québec-owned company again. This happened when Champlain Financial Corporation and GefCo bought it.\\n\\n## Naya's Story: How It Began\\n\\nNaya's founders looked for five years to find the perfect spring. They finally found the Naya spring at the bottom of the [Laurentians]. This was in Mirabel, just north of [Montreal].\\n\\nIn 1986, they opened a bottling plant right there. This made sure the water was bottled very close to its source. Since August 1995, NAYA has also bottled water in [Revelstoke], [British Columbia]. This second plant is in the [Selkirk Mountains].\\n\\n## Where Naya Water Comes From\\n\\nThe Naya spring is in Mirabel, [Quebec]. It is at the foot of the Laurentian mountains. These mountains have [aquifers], which are underground layers of rock or sand that hold water. These aquifers formed over millions of years.\\n\\nNaya water is taken from an aquifer that is more than 30 metres deep. This ensures the water is pure and natural.\\n\\n## Caring for Our Planet\\n\\nNaya says it is dedicated to reducing its [carbon footprint]. A carbon footprint is the total amount of greenhouse gases released by an organization. Naya recently started using bottles made from 100% recycled plastic. This type of plastic is called rPET (recycled polyethylene terephthalate).\\n\\nBefore this, Naya introduced bottles with 25% recycled plastic in 2008. Soon after, they used bottles with 50% recycled plastic.\\n\\nSince 2008, Naya has worked with One Percent for the Planet. Through this partnership, Naya donates 1% of its total sales each year. These donations go to programs that help protect the environment.\\n\\nOne of these programs is the \\\"NAYA Waterways Fund.\\\" This fund helps to make water habitats in cities healthy again. It is part of a partnership with the Fondation de la Faune du Québec (Quebec Wildlife Foundation).\\n\\n[![Image 4: kids search engine]]  \\n\\nAll content from [Kiddle encyclopedia] articles (including the article images and facts) can be freely used under [Attribution-ShareAlike] license, unless stated otherwise. Cite this article:\\n\\n[Naya Waters Facts for Kids]. _Kiddle Encyclopedia._\\n\\n*  This page was last modified on 17 October 2025, at 11:18. [Suggest an edit].\\n\\n## [Kiddle encyclopedia]\\n\\n Content is available under [CC BY-SA 3.0] unless otherwise noted. Kiddle encyclopedia articles are based on selected content and facts from [Wikipedia], rewritten for children. Powered by [MediaWiki]. \\n\\n* [Kiddle]\\n* [Español]\\n* [About]\\n* [Privacy]\\n* [Contact us]\\n* [Enciclopedia Kiddle para niños]\\n*  © 2026 Kiddle.co\\n\", \"https://en.wikipedia.org/wiki/Naya_Waters\": \"Title: Naya Waters\\n\\nURL Source: https://en.wikipedia.org/wiki/Naya_Waters\\n\\nPublished Time: 2009-09-28T19:35:26Z\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 4: Banner logo] Thousands of Latino trailblazers are missing or half-written on Wikipedia. Help fix the gap, Sep 15 to Oct 15!]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 Company history]\\n\\n* [2 Naya spring]\\n\\n* [3 Environmental commitment]\\n\\n* [4 References]\\n\\n* [5 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# Naya Waters\\n\\n- [x] 1 language \\n\\n* [Français] \\\"Naya (entreprise) – French\\\")\\n\\n[Edit links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n* [Edit interlanguage links]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor \\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nCanadian water bottling company\\n\\n![Image 5]This article **contains [promotional content]**. Please help [improve it] by removing [promotional language] and inappropriate [external links], and by adding encyclopedic text written from a [neutral point of view].See our [advice if the article is about you] and read our [scam warning] in case someone asks for money to edit this article._(March 2024)_ _([Learn how and when to remove this message])_\\n\\nNaya Waters Inc.[![Image 6]]\\nIndustry[Food industry]\\nFounded 1986;40 years ago(1986)\\nHeadquarters[Mirabel], [Quebec]\\n\\n, \\n\\n[Canada][[1]]\\nKey people Daniel Cotte ([President] \\\"President (corporate title)\\\"))[[2]]\\nProducts[Bottled water]\\nWebsite[naya.com/en]\\n\\n**Naya Waters****Inc.** is a [Canadian] company that bottles [natural spring water] \\\"Spring (hydrosphere)\\\") from a spring in the [Laurentian Mountains] in southern [Quebec]. The water is sold under the brand name Naya.[[3]][[4]]\\n\\nThe name Naya comes from the [Naiads], who are a type of spirit in [Greek Mythology] that presided over certain bodies of [fresh water] such as springs and streams.[[5]]\\n\\nIn March 2021, Naya Waters returned to being a 100% Québec-owned and operated company after being acquired by Champlain Financial Corporation and GefCo.[[6]]\\n\\n## Company history\\n\\n[[edit]]\\n\\nNaya's founders searched for five years before finding the Naya spring at the foot of the [Laurentians] in [Mirabel], just north of [Montreal].[_[citation needed]_] In 1986, the plant was opened at the same location to ensure the water was bottled as close to the spring as possible.[[7]]\\n\\nSince August 1995, NAYA has also operated a water bottling facility in the [Selkirk Mountains] of [Revelstoke], [British Columbia].[[8]]\\n\\n## Naya spring\\n\\n[[edit]]\\n\\nThe Naya spring is located in [Mirabel], [Quebec] at the foot of the Laurentian mountains, which contain [aquifers] that have formed over millions of years. Naya water is drawn from an aquifer located at a depth of over 30 metres deep.[[9]]\\n\\n## Environmental commitment\\n\\n[[edit]]\\n\\nNaya states that it is committed to [carbon footprint] reduction, and recently introduced bottles made from 100% recycled plastic, specifically polyethylene terephthalate ([rPET]).[[10]] This follows Naya introducing a 25% rPET packaging in 2008, followed soon after by a 50% recycled version.[[11]]Since 2008[[update]], through its relationship with [One Percent for the Planet], Naya has donated 1% of total revenues each year to programs advancing the protection of the environment. These funds finance a number of initiatives, such as the \\\"NAYA Waterways Fund\\\" which aims to revitalize aquatic habitats in urban areas as part of a partnership with the Fondation de la Faune du Québec (Quebec Wildlife Foundation).[[12]]\\n\\n## References\\n\\n[[edit]]\\n\\n1. [↑][\\\"Company Overview of Danone Naya Waters Inc\\\"]. Bloomberg L.P. Retrieved 2018-04-06.\\n2. [↑][\\\"Executive Profile: Daniel Cotte\\\"]. Bloomberg L.P. Retrieved 2018-04-06.\\n3. [↑][\\\"Are Bottled Waters All the Same?\\\"]. Naya. Archived from [the original] on 2018-04-06. Retrieved 2018-04-06.\\n4. [↑][\\\"Our Products\\\"]. Naya. Archived from [the original] on 2018-04-06. Retrieved 2018-04-06.\\n5. [↑][\\\"Naiads Study.com\\\"]. _study.com_. Retrieved 2024-08-21.\\n6. [↑]Corp, Champlain Financial. [\\\"Champlain Financial Corporation and GefCo Acquire Naya Waters\\\"]. _www.newswire.ca_. Retrieved 2021-04-10.\\n7. [↑][\\\"Naya and Quebec: A Love Story\\\"]. _www.naya.com_. Retrieved 2024-04-06.\\n8. [↑][\\\"Naya Spring\\\"]. BottledWaterWeb. Retrieved 2018-04-06.\\n9. [↑][\\\"NAYA Introduit 50% De Plastique Recyclé Dans Ses Bouteilles\\\"]. Decideurs.ca. Archived from [the original] on 2011-07-06. Retrieved 2009-10-21.\\n10. [↑]La Presse (2009-07-23). [\\\"Martin Vallières: Naya a Un Nouveau Proprio | Québec\\\"]. Lapresseaffaires.cyberpresse.ca. Archived from [the original] on 2009-08-26. Retrieved 2009-10-21.\\n11. [↑][\\\"Canadian Spring-Water Company Takes the 100% rPET Plunge\\\"]. _Packaging World_. 2010-01-06. Retrieved 2024-04-06.\\n12. [↑][\\\"Naya Waters First Bottled Spring Water Company To Introduce 100% Recycled Plastic Bottle\\\"]. _www.plasticsnet.com_. Retrieved 2024-04-06.\\n\\n## External links\\n\\n[[edit]]\\n\\n* [Official website]\\n\\nRetrieved from \\\"\\\"\\n\\n[Categories]: \\n* [Bottled water brands]\\n* [Soft drinks]\\n* [Food and drink companies of Canada]\\n* [Companies based in Quebec]\\n* [Mirabel, Quebec]\\n\\nHidden categories: \\n* [Articles with short description]\\n* [Short description matches Wikidata]\\n* [Articles with a promotional tone from March 2024]\\n* [All articles with a promotional tone]\\n* [Use Canadian English from January 2023]\\n* [All Wikipedia articles written in Canadian English]\\n* [All articles with unsourced statements]\\n* [Articles with unsourced statements from April 2024]\\n* [Articles containing potentially dated statements from 2008]\\n* [All articles containing potentially dated statements]\\n\\n*  This page was last edited on 16 June 2026, at 06:52(UTC).\\n* Page was rendered with [Parsoid].\\n* Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License]; additional terms may apply. By using this site, you agree to the [Terms of Use] and [Privacy Policy]. Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.], a non-profit organization.\\n\\n* [Privacy policy]\\n* [About Wikipedia]\\n* [Disclaimers]\\n* [Contact Wikipedia]\\n* [Legal & safety contacts]\\n* [Code of Conduct]\\n* [Developers]\\n* [Statistics]\\n* [Cookie statement]\\n* [Mobile view]\\n* [Edit preview settings]\\n\\n* [![Image 8: Wikimedia Foundation]]\\n* [![Image 9: Powered by MediaWiki]]\\n\\nSearch\\n\\nSearch\\n\\n- [x] Toggle the table of contents \\n\\nNaya Waters\\n\\n[][][][][][][]\\n\\n1 language[Add topic]\\n\\n[]\\n\"}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Confirmed: Naya's original water source/bottling location is Mirabel, Quebec (founded in 1986, plant at the spring location in Mirabel).\n\nThe community in the audio: Norway House, Manitoba.\n\nNext, calculate the straight-line (great-circle) distance between Mirabel, Quebec and Norway House, Manitoba.\n\nCoordinates:\n- Mirabel, Quebec: approximately 45.6667° N, 74.0333° W. More precisely: 45°40′N 74°02′W → 45.6667, -74.0333.\n- Norway House, Manitoba: 53°58′N 97°50′W → 53.9667, -97.8333. Actually, according to Wikipedia, Norway House is 53.983333, -97.833333.\n\nCalculate using haversine.\n\nIt has been confirmed that NAYA's original spring and bottling plant (established in 1986) is located in **Mirabel, Quebec**. The audio mentions that the water was collected in a copper bucket in **Norway House, Manitoba**. Now, let's calculate the great-circle distance between the two locations.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_3ba387d36cea4223b146eb41",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2):\\n    R = 6371.0  # Earth's mean radius in km\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2 - lat1)\\n    dlmb = math.radians(lon2 - lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Mirabel, Quebec (Naya spring/original bottling source)\\nmirabel = (45.6667, -74.0333)\\n# Norway House, Manitoba (copper pail water ceremony)\\nnorway_house = (53.9833, -97.8333)\\n\\nd = haversine(*mirabel, *norway_house)\\nprint(\\\"Distance:\\\", d, \\\"km -> rounded:\\\", round(d))\\n\\n# sensitivity check with slightly different coords\\nalt = haversine(45.65, -74.05, 53.97, -97.85)\\nprint(\\\"Alt check:\\\", alt)\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed: Naya's original water source/bottling location is Mirabel, Quebec (founded in 1986, plant at the spring location in Mirabel).\n\nThe community in the audio: Norway House, Manitoba.\n\nNext, calculate the straight-line (great-circle) distance between Mirabel, Quebec and Norway House, Manitoba.\n\nCoordinates:\n- Mirabel, Quebec: approximately 45.6667° N, 74.0333° W. More precisely: 45°40′N 74°02′W → 45.6667, -74.0333.\n- Norway House, Manitoba: 53°58′N 97°50′W → 53.9667, -97.8333. Actually, according to Wikipedia, Norway House is 53.983333, -97.833333.\n\nCalculate using haversine.\n\nIt has been confirmed that NAYA's original spring and bottling plant (established in 1986) is located in **Mirabel, Quebec**. The audio mentions that the water was collected in a copper bucket in **Norway House, Manitoba**. Now, let's calculate the great-circle distance between the two locations.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ba387d36cea4223b146eb41",
+      "content": "{\"stdout\": \"Distance: 1928.4286446273943 km -> rounded: 1928\\nAlt check: 1929.0733490689097\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "**Reasoning summary:**\n\n1. **Image:** The bottle on the table clearly shows the **NAYA** brand label (a Canadian natural spring water).\n2. **NAYA's original bottling source:** Naya's founders discovered the Naya spring at the foot of the Laurentian Mountains in **Mirabel, Quebec**, and opened the bottling plant at that exact source in 1986 (a second plant in Revelstoke, BC came only in 1995).\n3. **Audio:** The speaker recounts Elder Catherine Sinclair's walk around Lake Winnipeg — on July 12, 2014, the women gathered at **Norway House, Manitoba**, took water from the lake in a copper pail, held a ceremony, and set out walking.\n4. **Distance calculation:** Using coordinates for Mirabel, QC (≈45.67°N, 74.03°W) and Norway House, MB (≈53.98°N, 97.83°W), the great-circle (haversine) distance is ≈ 1928 km.\n\n<answer>1928</answer>",
+      "reasoning": "The distance is approximately 1928–1929 km. Rounded to the nearest integer, about 1928 km (roughly 1930). Presenting the answer: approximately 1928 km.\n\nSummary:\n- Brand: NAYA (shown on the bottle label).\n- Original bottling location: Mirabel, Quebec (Naya Spring, plant opened in 1986).\n- Audio community: Norway House, Manitoba.\n- Straight-line distance ≈ 1928 km (about 1930 km).",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The distance is approximately 1928–1929 km. Rounded to the nearest integer, about 1928 km (roughly 1930). Presenting the answer: approximately 1928 km.\n\nSummary:\n- Brand: NAYA (shown on the bottle label).\n- Original bottling location: Mirabel, Quebec (Naya Spring, plant opened in 1986).\n- Audio community: Norway House, Manitoba.\n- Straight-line distance ≈ 1928 km (about 1930 km).",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"NAYA bottled water brand source spring city\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Naya Spring Water | Case of 20 × 500 mL",
+          "url": "https://naya.com/en/products/spring-water-20x500-ml/",
+          "snippet": "Discover Naya spring water in a convenient case of 20 × 500 mL bottles, ideal for meeting your hydration needs at home, at work, or on the go.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Check out this great flyer feature! Naya bottled water is proudly ...",
+          "url": "https://www.facebook.com/100069582944888/videos/check-out-this-great-flyer-feature-naya-bottled-water-is-proudly-sourced-from-qu/644373888088649/",
+          "snippet": "The post highlights that the brand Naya is proudly sourced from Quebec, positioning it as a healthy choice. Comments from viewers reinforce this ...",
+          "date": "1 year ago"
+        },
+        {
+          "id": 3,
+          "title": "NAYA, Canadian Natural Spring Water",
+          "url": "https://oukosher.org/companies/naya-canadian-natural-spring-water/",
+          "snippet": "Naya water is a natural and pure spring water, from the purest of Canadian springs. It is bottled directly at the source in order to preserve its perfectly ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Naya Spring Water Eyes U.S. Expansion",
+          "url": "https://www.adweek.com/brand-marketing/naya-spring-water-eyes-us-expansion-106735/",
+          "snippet": "Once a top imported brand, Naya had all but disappeared from the U.S. Now, its new owner, private equity firm Catterton Partners, is planning ...",
+          "date": "Dec 1, 2009"
+        },
+        {
+          "id": 5,
+          "title": "Naya Waters Facts for Kids",
+          "url": "https://kids.kiddle.co/Naya_Waters",
+          "snippet": "Naya Waters Inc. is a Canadian company. It bottles natural spring water from a special spring. This spring is found in the Laurentian Mountains ...",
+          "date": "Oct 17, 2025"
+        },
+        {
+          "id": 6,
+          "title": "Naya Spring",
+          "url": "https://www.bottledwaterweb.com/bottlersdetail.do?k=57",
+          "snippet": "... bottle. NAYA is a natural spring water taken directly from sources deep beneath the Canadian shield in Quebec and the Selkirk mountains in British Columbia ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Naya Waters Seeks Return to Glory Days, Beginning With ...",
+          "url": "https://www.bevnet.com/news/2016/naya-waters-seeks-return-to-glory-days-beginning-with-nyc/",
+          "snippet": "Reda described a large and continuously growing market for bottled water in New York, a key reason that Big Geyser added Naya to its portfolio.",
+          "date": "Feb 25, 2016"
+        },
+        {
+          "id": 8,
+          "title": "Naya Natural Spring Water, 1.5 Lt Plastic Bottle",
+          "url": "https://www.walmart.com/ip/Naya-Natural-Spring-Water-1-5-Lt-Plastic-Bottle/125738286",
+          "snippet": "Buy Naya Natural Spring Water, 1.5 Lt Plastic Bottle at Walmart.com.",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Naya Water, Canadian Natural Spring",
+          "url": "https://www.instacart.com/store/products/20052184-naya-water-canadian-natural-spring-1-05-pt",
+          "snippet": "Naya bottles are made with 100% post-consumer recycled plastic (rPET). Naya donates 1% of its revenue to protect the environment. 1% For The Planet member.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Jon Drinks Water #6123 Naya Natural Spring Water VS Crystal ...",
+          "url": "https://www.youtube.com/watch?v=7tgvdLZcO2I&xstg=CAMSBhUDzO3xHw%3D%3D",
+          "snippet": "Jon Drinks Water #6123 Naya Natural Spring Water VS Crystal Springs Natural Spring Water. @JonDrinksWater27 likes3.1K views8 years ago",
+          "date": "8 years ago"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"NAYA\\\" water \\\"bottled\\\" origin \\\"spring\\\" Canada brand history\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Naya Spring",
+          "url": "https://www.bottledwaterweb.com/bottlersdetail.do?k=57",
+          "snippet": "NAYA is the first and only brand of bottled water to specifically market to ... NAYA is the number one Canadian spring water in the world. It is ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Check out this great flyer feature! Naya bottled water is proudly ...",
+          "url": "https://www.facebook.com/100069582944888/videos/check-out-this-great-flyer-feature-naya-bottled-water-is-proudly-sourced-from-qu/644373888088649/",
+          "snippet": "Check out this great flyer feature! Naya bottled water is proudly sourced from Quebec! #livebetter.",
+          "date": "1 year ago"
+        },
+        {
+          "id": 3,
+          "title": "Naya Waters Facts for Kids",
+          "url": "https://kids.kiddle.co/Naya_Waters",
+          "snippet": "This made sure the water was bottled very close to its source. ... The Naya spring is in Mirabel, Quebec. It is at the foot of the ...",
+          "date": "Oct 17, 2025"
+        },
+        {
+          "id": 4,
+          "title": "Naya and Québec, a wonderful love story",
+          "url": "https://naya.com/en/history",
+          "snippet": "Naya's natural bottled spring water is launched. The name comes from the word “Naiads”, who in Greek mythology were the goddesses of thermal waters and the ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Trader Joe's Natural Mountain Spring Water. Same Source, ...",
+          "url": "https://www.facebook.com/100063482112591/posts/in-the-world-of-bottled-water-not-everything-is-as-it-appears-on-the-label-somet/1579465840846138/",
+          "snippet": "Same Source, Different Label Trader Joe's spring water is bottled by CG Roxane, a well-established spring water producer in the United States.",
+          "date": "5 months ago"
+        },
+        {
+          "id": 6,
+          "title": "Renewing the Federal Regulations on Bottled Water: A ...",
+          "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/making-clear-renewing-federal-regulations-bottled-water-discussion-paper.html",
+          "snippet": "Under the current Regulations, any bottled water labelled spring water or mineral water must: originate from an underground source which is not part of a ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "List of bottled water brands",
+          "url": "https://en.wikipedia.org/wiki/List_of_bottled_water_brands",
+          "snippet": "Bottled water brands ; Mountain Valley Spring Water, United States, North America ; Nabeglavi, Georgia, Europe/Asia ; Naya Waters, Canada, North America ; Nestlé ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Fine Bottled Water - Canada",
+          "url": "https://finewaters.com/bottled-waters-of-the-world/canada",
+          "snippet": "The Story of Fine Water naturally bottled water. Back; Water is not just Water ... Simply Natural Canadian Spring Water; Soul Water; Sparta; Spirit Water ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Naya Waters - Products, Competitors, Financials ...",
+          "url": "https://www.cbinsights.com/company/naya-waters",
+          "snippet": "Their main offering is spring water sourced from the Laurentians and bottled at the source. Naya Waters serves consumers looking for beverage options. It ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Naya Water Goes Eco-Friendly",
+          "url": "https://www.pmq.com/naya-water-goes-eco-friendly/",
+          "snippet": "Naya Water offers bottled water you can drink without burdening your eco-conscience. Naya is the first to use 50% recycled plastic for its ...",
+          "date": "Jun 10, 2019"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://kids.kiddle.co/Naya_Waters\", \"https://en.wikipedia.org/wiki/Naya_Waters\"]\n\n}",
+      "result": {
+        "https://kids.kiddle.co/Naya_Waters": "Title: Naya Waters facts for kids\n\nURL Source: https://kids.kiddle.co/Naya_Waters\n\nMarkdown Content:\n[![Image 1: kids encyclopedia robot]][![Image 2: kids search engine]] Clear Search * [Web] * [Images] * [Kimages] * [Kpedia] * [Español]\n\n# Naya Waters facts for kids\n\n[Kids Encyclopedia Facts]\n\nQuick facts for kids  \nNaya Waters Inc.[![Image 3: Naya Company Logo.png]]\nIndustry[Food industry]\nFounded 1986; 40 years ago(1986)\nHeadquarters Mirabel, [Quebec]\n\n , \n\n[Canada]\nKey people Daniel Cotte ([President] \"President (corporate title)\"))\nProducts[Bottled water]\n\n**Naya Waters Inc.** is a [Canadian] company. It bottles natural [spring water] \"Spring (water)\") from a special spring. This spring is found in the [Laurentian Mountains] in southern [Quebec]. The water is sold under the brand name Naya.\n\nThe name Naya comes from [Greek Mythology]. The [Naiads] were spirits who looked after fresh water sources. These included springs and streams.\n\nIn March 2021, Naya Waters became a 100% Québec-owned company again. This happened when Champlain Financial Corporation and GefCo bought it.\n\n## Naya's Story: How It Began\n\nNaya's founders looked for five years to find the perfect spring. They finally found the Naya spring at the bottom of the [Laurentians]. This was in Mirabel, just north of [Montreal].\n\nIn 1986, they opened a bottling plant right there. This made sure the water was bottled very close to its source. Since August 1995, NAYA has also bottled water in [Revelstoke], [British Columbia]. This second plant is in the [Selkirk Mountains].\n\n## Where Naya Water Comes From\n\nThe Naya spring is in Mirabel, [Quebec]. It is at the foot of the Laurentian mountains. These mountains have [aquifers], which are underground layers of rock or sand that hold water. These aquifers formed over millions of years.\n\nNaya water is taken from an aquifer that is more than 30 metres deep. This ensures the water is pure and natural.\n\n## Caring for Our Planet\n\nNaya says it is dedicated to reducing its [carbon footprint]. A carbon footprint is the total amount of greenhouse gases released by an organization. Naya recently started using bottles made from 100% recycled plastic. This type of plastic is called rPET (recycled polyethylene terephthalate).\n\nBefore this, Naya introduced bottles with 25% recycled plastic in 2008. Soon after, they used bottles with 50% recycled plastic.\n\nSince 2008, Naya has worked with One Percent for the Planet. Through this partnership, Naya donates 1% of its total sales each year. These donations go to programs that help protect the environment.\n\nOne of these programs is the \"NAYA Waterways Fund.\" This fund helps to make water habitats in cities healthy again. It is part of a partnership with the Fondation de la Faune du Québec (Quebec Wildlife Foundation).\n\n[![Image 4: kids search engine]]  \n\nAll content from [Kiddle encyclopedia] articles (including the article images and facts) can be freely used under [Attribution-ShareAlike] license, unless stated otherwise. Cite this article:\n\n[Naya Waters Facts for Kids]. _Kiddle Encyclopedia._\n\n*  This page was last modified on 17 October 2025, at 11:18. [Suggest an edit].\n\n## [Kiddle encyclopedia]\n\n Content is available under [CC BY-SA 3.0] unless otherwise noted. Kiddle encyclopedia articles are based on selected content and facts from [Wikipedia], rewritten for children. Powered by [MediaWiki]. \n\n* [Kiddle]\n* [Español]\n* [About]\n* [Privacy]\n* [Contact us]\n* [Enciclopedia Kiddle para niños]\n*  © 2026 Kiddle.co\n",
+        "https://en.wikipedia.org/wiki/Naya_Waters": "Title: Naya Waters\n\nURL Source: https://en.wikipedia.org/wiki/Naya_Waters\n\nPublished Time: 2009-09-28T19:35:26Z\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 4: Banner logo] Thousands of Latino trailblazers are missing or half-written on Wikipedia. Help fix the gap, Sep 15 to Oct 15!]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 Company history]\n\n* [2 Naya spring]\n\n* [3 Environmental commitment]\n\n* [4 References]\n\n* [5 External links]\n\n- [x] Toggle the table of contents \n\n# Naya Waters\n\n- [x] 1 language \n\n* [Français] \"Naya (entreprise) – French\")\n\n[Edit links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n* [Edit interlanguage links]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor \n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\nFrom Wikipedia, the free encyclopedia\n\nCanadian water bottling company\n\n![Image 5]This article **contains [promotional content]**. Please help [improve it] by removing [promotional language] and inappropriate [external links], and by adding encyclopedic text written from a [neutral point of view].See our [advice if the article is about you] and read our [scam warning] in case someone asks for money to edit this article._(March 2024)_ _([Learn how and when to remove this message])_\n\nNaya Waters Inc.[![Image 6]]\nIndustry[Food industry]\nFounded 1986;40 years ago(1986)\nHeadquarters[Mirabel], [Quebec]\n\n, \n\n[Canada][[1]]\nKey people Daniel Cotte ([President] \"President (corporate title)\"))[[2]]\nProducts[Bottled water]\nWebsite[naya.com/en]\n\n**Naya Waters****Inc.** is a [Canadian] company that bottles [natural spring water] \"Spring (hydrosphere)\") from a spring in the [Laurentian Mountains] in southern [Quebec]. The water is sold under the brand name Naya.[[3]][[4]]\n\nThe name Naya comes from the [Naiads], who are a type of spirit in [Greek Mythology] that presided over certain bodies of [fresh water] such as springs and streams.[[5]]\n\nIn March 2021, Naya Waters returned to being a 100% Québec-owned and operated company after being acquired by Champlain Financial Corporation and GefCo.[[6]]\n\n## Company history\n\n[[edit]]\n\nNaya's founders searched for five years before finding the Naya spring at the foot of the [Laurentians] in [Mirabel], just north of [Montreal].[_[citation needed]_] In 1986, the plant was opened at the same location to ensure the water was bottled as close to the spring as possible.[[7]]\n\nSince August 1995, NAYA has also operated a water bottling facility in the [Selkirk Mountains] of [Revelstoke], [British Columbia].[[8]]\n\n## Naya spring\n\n[[edit]]\n\nThe Naya spring is located in [Mirabel], [Quebec] at the foot of the Laurentian mountains, which contain [aquifers] that have formed over millions of years. Naya water is drawn from an aquifer located at a depth of over 30 metres deep.[[9]]\n\n## Environmental commitment\n\n[[edit]]\n\nNaya states that it is committed to [carbon footprint] reduction, and recently introduced bottles made from 100% recycled plastic, specifically polyethylene terephthalate ([rPET]).[[10]] This follows Naya introducing a 25% rPET packaging in 2008, followed soon after by a 50% recycled version.[[11]]Since 2008[[update]], through its relationship with [One Percent for the Planet], Naya has donated 1% of total revenues each year to programs advancing the protection of the environment. These funds finance a number of initiatives, such as the \"NAYA Waterways Fund\" which aims to revitalize aquatic habitats in urban areas as part of a partnership with the Fondation de la Faune du Québec (Quebec Wildlife Foundation).[[12]]\n\n## References\n\n[[edit]]\n\n1. [↑][\"Company Overview of Danone Naya Waters Inc\"]. Bloomberg L.P. Retrieved 2018-04-06.\n2. [↑][\"Executive Profile: Daniel Cotte\"]. Bloomberg L.P. Retrieved 2018-04-06.\n3. [↑][\"Are Bottled Waters All the Same?\"]. Naya. Archived from [the original] on 2018-04-06. Retrieved 2018-04-06.\n4. [↑][\"Our Products\"]. Naya. Archived from [the original] on 2018-04-06. Retrieved 2018-04-06.\n5. [↑][\"Naiads Study.com\"]. _study.com_. Retrieved 2024-08-21.\n6. [↑]Corp, Champlain Financial. [\"Champlain Financial Corporation and GefCo Acquire Naya Waters\"]. _www.newswire.ca_. Retrieved 2021-04-10.\n7. [↑][\"Naya and Quebec: A Love Story\"]. _www.naya.com_. Retrieved 2024-04-06.\n8. [↑][\"Naya Spring\"]. BottledWaterWeb. Retrieved 2018-04-06.\n9. [↑][\"NAYA Introduit 50% De Plastique Recyclé Dans Ses Bouteilles\"]. Decideurs.ca. Archived from [the original] on 2011-07-06. Retrieved 2009-10-21.\n10. [↑]La Presse (2009-07-23). [\"Martin Vallières: Naya a Un Nouveau Proprio | Québec\"]. Lapresseaffaires.cyberpresse.ca. Archived from [the original] on 2009-08-26. Retrieved 2009-10-21.\n11. [↑][\"Canadian Spring-Water Company Takes the 100% rPET Plunge\"]. _Packaging World_. 2010-01-06. Retrieved 2024-04-06.\n12. [↑][\"Naya Waters First Bottled Spring Water Company To Introduce 100% Recycled Plastic Bottle\"]. _www.plasticsnet.com_. Retrieved 2024-04-06.\n\n## External links\n\n[[edit]]\n\n* [Official website]\n\nRetrieved from \"\"\n\n[Categories]: \n* [Bottled water brands]\n* [Soft drinks]\n* [Food and drink companies of Canada]\n* [Companies based in Quebec]\n* [Mirabel, Quebec]\n\nHidden categories: \n* [Articles with short description]\n* [Short description matches Wikidata]\n* [Articles with a promotional tone from March 2024]\n* [All articles with a promotional tone]\n* [Use Canadian English from January 2023]\n* [All Wikipedia articles written in Canadian English]\n* [All articles with unsourced statements]\n* [Articles with unsourced statements from April 2024]\n* [Articles containing potentially dated statements from 2008]\n* [All articles containing potentially dated statements]\n\n*  This page was last edited on 16 June 2026, at 06:52(UTC).\n* Page was rendered with [Parsoid].\n* Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License]; additional terms may apply. By using this site, you agree to the [Terms of Use] and [Privacy Policy]. Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.], a non-profit organization.\n\n* [Privacy policy]\n* [About Wikipedia]\n* [Disclaimers]\n* [Contact Wikipedia]\n* [Legal & safety contacts]\n* [Code of Conduct]\n* [Developers]\n* [Statistics]\n* [Cookie statement]\n* [Mobile view]\n* [Edit preview settings]\n\n* [![Image 8: Wikimedia Foundation]]\n* [![Image 9: Powered by MediaWiki]]\n\nSearch\n\nSearch\n\n- [x] Toggle the table of contents \n\nNaya Waters\n\n[][][][][][][]\n\n1 language[Add topic]\n\n[]\n"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import math\\n\\ndef haversine(lat1, lon1, lat2, lon2):\\n    R = 6371.0  # Earth's mean radius in km\\n    p1, p2 = math.radians(lat1), math.radians(lat2)\\n    dphi = math.radians(lat2 - lat1)\\n    dlmb = math.radians(lon2 - lon1)\\n    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2\\n    return 2*R*math.asin(math.sqrt(a))\\n\\n# Mirabel, Quebec (Naya spring/original bottling source)\\nmirabel = (45.6667, -74.0333)\\n# Norway House, Manitoba (copper pail water ceremony)\\nnorway_house = (53.9833, -97.8333)\\n\\nd = haversine(*mirabel, *norway_house)\\nprint(\\\"Distance:\\\", d, \\\"km -> rounded:\\\", round(d))\\n\\n# sensitivity check with slightly different coords\\nalt = haversine(45.65, -74.05, 53.97, -97.85)\\nprint(\\\"Alt check:\\\", alt)\"}",
+      "result": {
+        "stdout": "Distance: 1928.4286446273943 km -> rounded: 1928\nAlt check: 1929.0733490689097",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 10,
+      "id": "gen-1791455228-VwlEscRHAvmpjGItnFDg",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 3936,
+        "completion_tokens": 547,
+        "total_tokens": 4483,
+        "cost": 0.00084749,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00084749,
+          "upstream_inference_prompt_cost": 0.0005904,
+          "upstream_inference_completions_cost": 0.00025709
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 470,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 13.86
+    },
+    {
+      "item_id": 10,
+      "id": "gen-1791455245-EBwK90NZ7abdUb6GZkaH",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 6449,
+        "completion_tokens": 242,
+        "total_tokens": 6691,
+        "cost": 0.00108109,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00108109,
+          "upstream_inference_prompt_cost": 0.00096735,
+          "upstream_inference_completions_cost": 0.00011374
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 189,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 12.409
+    },
+    {
+      "item_id": 10,
+      "id": "gen-1791455259-QuQDNXCjOTZDKpSFiQFH",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 10123,
+        "completion_tokens": 599,
+        "total_tokens": 10722,
+        "cost": 0.001079596,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5376,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001079596,
+          "upstream_inference_prompt_cost": 0.000798066,
+          "upstream_inference_completions_cost": 0.00028153
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 291,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 11.718
+    },
+    {
+      "item_id": 10,
+      "id": "gen-1791455272-JZ36oBUkaTZ7wVBBr9z4",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 10805,
+        "completion_tokens": 377,
+        "total_tokens": 11182,
+        "cost": 0.00179794,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00179794,
+          "upstream_inference_prompt_cost": 0.00162075,
+          "upstream_inference_completions_cost": 0.00017719
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 123,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 12.869
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "1928",
+  "em_score": 0,
+  "llm_equal": 0,
+  "judge_response": "Incorrect",
+  "judge_error": null,
+  "elapsed_seconds": 79.06
+}

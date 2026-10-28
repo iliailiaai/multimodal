@@ -1,0 +1,63 @@
+{
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "judge": "deepseek/deepseek-v3.2",
+  "active_perception": false,
+  "image_mode": "image_captioning",
+  "caption_protocol": {
+    "mode": "image_captioning",
+    "caption_model": "internlm/CapRL-Qwen3VL-2B",
+    "caption_revision": "b838cec8b6c4791ed6169d12db21db0b47bb70e5",
+    "prompt": "Please describe this image in detail.",
+    "caption_sampling": "greedy; EOS required; budgets 2048 then 8192; no truncation",
+    "counter_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "counter_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+    "counter_method": "native image_processor num_tokens + image delimiters; native tokenizer of complete caption block",
+    "counter_scope": "all main-model HTTP attempts including retries; video/audio excluded",
+    "image_counter_api_verified": false,
+    "counter_version": 1
+  },
+  "state": "completed",
+  "stop_reason": null,
+  "metrics": {
+    "expected_count": 5,
+    "completed": 5,
+    "judged": 5,
+    "errors": 0,
+    "correct": 0,
+    "pass_at_1": 0.0,
+    "partial_accuracy": 0.0,
+    "by_level": {
+      "Easy": {
+        "count": 2,
+        "correct": 0
+      },
+      "Medium": {
+        "count": 2,
+        "correct": 0
+      },
+      "Hard": {
+        "count": 1,
+        "correct": 0
+      }
+    },
+    "tool_calls": {
+      "web_search": 19
+    },
+    "recorded": 5,
+    "pending": 0
+  },
+  "openrouter_usage": {
+    "requests": 29,
+    "cost_usd": 0.0006811559999999999,
+    "input_tokens": 297736,
+    "output_tokens": 41064
+  },
+  "score_note_ru": "Технические ошибки учитываются отдельно. Итоговый pass_at_1 появится только после оценки всех выбранных задач.",
+  "started_at": "2026-10-28T22:38:52.737238+00:00",
+  "finished_at": "2026-10-28T22:46:08.564364+00:00",
+  "return_code": 0,
+  "imported_results_count": 0,
+  "imported_openrouter_cost_usd": 0,
+  "new_openrouter_cost_usd": 0.0006811559999999999,
+  "billing_note_ru": "Стоимость по журналу запросов включает импортированные ответы пилота. Новые расходы указаны отдельно. Баланс ключа может включать сторонние параллельные обращения."
+}

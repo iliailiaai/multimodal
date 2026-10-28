@@ -1,0 +1,51 @@
+{
+  "name": "both_audio_only",
+  "status": 200,
+  "seconds": 25.4,
+  "body": {
+    "id": "gen-1791453057-UVgBfiSgwCZA9dEJ2p2z",
+    "object": "chat.completion",
+    "created": 1791453057,
+    "model": "qwen/qwen3.8-omni-flash",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The first video demonstrates DIY NFC wearables, showing how to embed tags into rings and nail polish for phone unlocking. The second is a CES interview with Sony about their SmartBand fitness tracker, covering its features like life logging, music control, waterproofing, and customizable straps via the Lifelog app.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2762,
+      "completion_tokens": 61,
+      "total_tokens": 2823,
+      "cost": 0.00044297,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00044297,
+        "upstream_inference_prompt_cost": 0.0004143,
+        "upstream_inference_completions_cost": 2.867e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

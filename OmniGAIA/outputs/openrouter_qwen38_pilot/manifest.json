@@ -1,0 +1,245 @@
+{
+  "created_at": "2026-10-08T09:37:00.946055+00:00",
+  "upstream_commit": "af5f797f9388f0eba02a55399e7636e34b5f3c56",
+  "model": "qwen/qwen3.8-omni-flash",
+  "judge": "deepseek/deepseek-v3.2",
+  "model_info": {
+    "id": "qwen/qwen3.8-omni-flash",
+    "canonical_slug": "qwen/qwen3.8-omni-flash-20260918",
+    "hugging_face_id": null,
+    "name": "Qwen: Qwen3.8 Omni Flash",
+    "created": 1789959954,
+    "description": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilities with native audio-video understanding. It is suited for audio-video analysis and summarization,...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.00000047",
+      "input_cache_read": "0.000000016"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.8-omni-flash-20260918/endpoints"
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supports_max_tokens": true
+    }
+  },
+  "judge_info": {
+    "id": "deepseek/deepseek-v3.2",
+    "canonical_slug": "deepseek/deepseek-v3.2-20251201",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
+    "name": "DeepSeek: DeepSeek V3.2",
+    "created": 1764594642,
+    "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000000259",
+      "completion": "0.00000042",
+      "input_cache_read": "0.000000135"
+    },
+    "top_provider": {
+      "context_length": 163840,
+      "max_completion_tokens": 147456,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v3.2-20251201/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1140,
+          "win_rate": 49.4,
+          "rank": 67
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1091,
+          "win_rate": 40.5,
+          "rank": 63
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1168,
+          "win_rate": 49.3,
+          "rank": 71
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1165,
+          "win_rate": 48.2,
+          "rank": 71
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1139,
+          "win_rate": 46.5,
+          "rank": 77
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1031,
+          "win_rate": 40.8,
+          "rank": 76
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1154,
+          "win_rate": 46.8,
+          "rank": 71
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1179,
+          "win_rate": 50.2,
+          "rank": 72
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 21.5,
+        "coding_index": 44.2,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false
+    }
+  },
+  "item_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "dataset_revision": "adf542cf70735e061b8d73300cdbae9c847b9bc3",
+  "input_sha256": "5b47b938ed74e1063fd3a8ae1702f369091b654e5abf64e210ab60cfdba5a533",
+  "active_perception": false,
+  "tools": [
+    "web_search",
+    "page_browser",
+    "code_executor"
+  ],
+  "media_preprocessing": "GeminiBaseAgent: max 128 uniformly sampled video frames; 2 FPS output; smart_resize min 224^2 max 512^2 pixels; original images; separate mono 16kHz MP3 audio, first 30 minutes",
+  "agent_protocol": "OpenRouter native function calling; original baseline system prompt and tool schemas",
+  "evaluation_protocol": "upstream answer extraction and normalization; DeepSeek-V3.2; strict Correct/Incorrect parsing; judge failures excluded from final score until resolved",
+  "max_turns": 50,
+  "max_tokens": 20480,
+  "sampling": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "concurrency": 2,
+  "source_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/config_loader.py": "74737bcecca7e5741ef70a2cb87ccbb6f3f0915e40cc5dedb0a682f9e019ef19",
+    "src/evaluate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/evaluate/eval_results.py": "44a8a2a1a10f5d3f015c3959b7de5a73cb718f5adf5b1ea0fb5025d8bc05a035",
+    "src/openrouter_baseline.py": "8af6fe4628d77455e891efc7cd68692eecc64bdf0a5f17087e28d908aaa17bf2",
+    "src/run_base_agent.py": "aa78c5a7d91291bf123a46ab6e5985fc26c9ec6ebce95d504150def2bb7a73c4",
+    "src/run_openrouter_baseline.py": "de8830b2ca7c30d3ef8a1eb0bfba3a5c52b36e8a918f81e9bd0c5185f187deea",
+    "src/tools/__init__.py": "d65678ef5cd4f1736a500062da025fd58d22b8ecb53bd22bc404927bf24d1749",
+    "src/tools/code_executor.py": "37e23f81d865022e7b2b57fce96e3d595e7fd5257247482236b90afd33d577a1",
+    "src/tools/isolated_code_executor.py": "cd7ebf4be1fb4f2b034173ab0360e643aee32ab9d57768f6405b2ed2ee64afb9",
+    "src/tools/web_tools.py": "354bc1d319ca60564d750fc19afaa467fc5915b11833c67695a584977042a4c3"
+  },
+  "requirements_sha256": "abe68d4e813eefa3afd399e716202b38042fd9b51c322599f05d40e76acef8d1"
+}
