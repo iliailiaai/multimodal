@@ -1,0 +1,34 @@
+# Локальные ключи и настройки доступа
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+*secrets*
+*.pem
+*.key
+
+# Окружения, кэш и временные файлы
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+cache/
+.pytest_cache/
+*.tmp
+*.partial
+*.lock
+!requirements*.lock
+.DS_Store
+
+# Скачанные веса; конфигурации и токенизаторы сохраняются в Git
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+models/**/.gitattributes
+models/.downloads/*
+!models/.downloads/download_caprl.py
+!models/.downloads/caprl_manifest.json
