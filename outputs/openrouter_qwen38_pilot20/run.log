@@ -1,0 +1,345 @@
+2026-10-08 13:17:14,207 INFO Начата задача 1 (Easy)
+2026-10-08 13:17:14,219 INFO Начата задача 2 (Medium)
+2026-10-08 13:17:14,222 INFO Начата задача 3 (Easy)
+2026-10-08 13:17:14,258 INFO Начата задача 4 (Hard)
+2026-10-08 13:17:35,779 INFO Задача 2, шаг 1: web_search
+2026-10-08 13:17:37,557 INFO Задача 2, шаг 1: web_search
+2026-10-08 13:17:44,144 INFO Задача 1, шаг 1: web_search
+2026-10-08 13:17:45,557 INFO Задача 1, шаг 1: web_search
+2026-10-08 13:17:49,121 INFO Задача 2, шаг 2: web_search
+2026-10-08 13:17:49,923 INFO Задача 2, шаг 2: code_executor
+2026-10-08 13:17:54,447 WARNING Задача 3: временный сбой OpenRouter HTTP 400, повтор 1/3
+2026-10-08 13:18:04,896 INFO Задача 2, шаг 3: web_search
+2026-10-08 13:18:05,610 INFO Задача 1, шаг 2: web_search
+2026-10-08 13:18:06,428 INFO Задача 1, шаг 2: page_browser
+2026-10-08 13:18:08,344 INFO Задача 2, шаг 3: page_browser
+2026-10-08 13:18:19,149 INFO Задача 2, шаг 4: page_browser
+2026-10-08 13:18:20,642 INFO Задача 1, шаг 3: web_search
+2026-10-08 13:18:21,662 INFO Задача 1, шаг 3: web_search
+2026-10-08 13:18:31,075 INFO Прогресс: 1/20; правильных 1; ошибок 0
+2026-10-08 13:18:31,075 INFO Начата задача 5 (Easy)
+2026-10-08 13:18:35,430 WARNING Задача 3: временный сбой OpenRouter HTTP 400, повтор 2/3
+2026-10-08 13:18:36,429 INFO Задача 1, шаг 4: web_search
+2026-10-08 13:18:39,880 INFO Задача 1, шаг 4: page_browser
+2026-10-08 13:18:48,035 INFO Задача 5, шаг 1: web_search
+2026-10-08 13:18:49,777 INFO Задача 5, шаг 1: web_search
+2026-10-08 13:19:01,957 INFO Прогресс: 2/20; правильных 2; ошибок 0
+2026-10-08 13:19:01,957 INFO Начата задача 6 (Medium)
+2026-10-08 13:19:05,699 INFO Задача 1, шаг 5: web_search
+2026-10-08 13:19:07,373 INFO Задача 1, шаг 5: web_search
+2026-10-08 13:19:18,608 WARNING Задача 3: временный сбой OpenRouter HTTP 400, повтор 3/3
+2026-10-08 13:19:39,375 INFO Задача 1, шаг 6: web_search
+2026-10-08 13:19:55,468 INFO Загружен videos/6WCVzwKAmek.mp4: 37.4 МБ
+2026-10-08 13:19:55,816 INFO Задача 1, шаг 6: page_browser
+2026-10-08 13:20:00,567 INFO Compressed video 6WCVzwKAmek.mp4 to 4.83MB (128 frames)
+2026-10-08 13:20:01,011 INFO Задача 4, шаг 1: web_search
+2026-10-08 13:20:02,305 INFO Задача 4, шаг 1: web_search
+2026-10-08 13:20:04,548 ERROR Ошибка задачи 3
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 166, in process
+    generated = await asyncio.wait_for(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 244, in run
+    message, usage = await self.client.complete(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 129, in complete
+    raise RuntimeError(f"OpenRouter HTTP {response.status_code}: {detail}")
+RuntimeError: OpenRouter HTTP 400: {"error":{"message":"Provider returned error","code":400,"metadata":{"raw":"data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-fecf0a91-e441-97c8-bdee-99893842b81f\"}\n\n","provider_name":"Alibaba","is_byok":false}},"user_id":"user_3JzvfBNETxKVb7EntXZdb0lIIZv"}
+2026-10-08 13:20:04,549 INFO Прогресс: 3/20; правильных 2; ошибок 1
+2026-10-08 13:20:04,549 INFO Начата задача 7 (Easy)
+2026-10-08 13:20:20,990 INFO Задача 1, шаг 7: page_browser
+2026-10-08 13:20:36,649 INFO Задача 1, шаг 8: web_search
+2026-10-08 13:20:40,713 INFO Задача 1, шаг 8: web_search
+2026-10-08 13:20:41,540 INFO Задача 4, шаг 2: page_browser
+2026-10-08 13:20:48,345 INFO Задача 4, шаг 2: web_search
+2026-10-08 13:20:57,587 INFO Задача 1, шаг 9: web_search
+2026-10-08 13:20:59,650 INFO Задача 1, шаг 9: web_search
+2026-10-08 13:21:14,320 INFO Загружен videos/DuE2eZSDBIY.mp4: 66.9 МБ
+2026-10-08 13:21:18,293 INFO Compressed video DuE2eZSDBIY.mp4 to 5.78MB (128 frames)
+2026-10-08 13:21:19,503 INFO Задача 1, шаг 10: page_browser
+2026-10-08 13:21:40,301 INFO Задача 4, шаг 3: page_browser
+2026-10-08 13:21:41,100 INFO Задача 4, шаг 3: code_executor
+2026-10-08 13:21:49,453 INFO Задача 1, шаг 11: code_executor
+2026-10-08 13:22:09,208 INFO Загружен videos/7321010343067618592.mp4: 3.5 МБ
+2026-10-08 13:22:16,969 INFO Задача 1, шаг 12: code_executor
+2026-10-08 13:22:17,580 INFO Compressed video 7321010343067618592.mp4 to 2.31MB (121 frames)
+2026-10-08 13:22:27,097 INFO Прогресс: 4/20; правильных 3; ошибок 1
+2026-10-08 13:22:27,097 INFO Начата задача 8 (Medium)
+2026-10-08 13:22:34,544 INFO Задача 1, шаг 13: web_search
+2026-10-08 13:22:34,672 INFO Загружен audios/XTnFUc2WneU.wav: 5.0 МБ
+2026-10-08 13:22:36,116 INFO Загружен images/000000156858.jpg: 0.2 МБ
+2026-10-08 13:22:37,017 INFO Загружен images/000000189159.jpg: 0.1 МБ
+2026-10-08 13:22:40,038 INFO Задача 1, шаг 13: web_search
+2026-10-08 13:22:48,748 INFO Задача 7, шаг 1: web_search
+2026-10-08 13:22:50,627 INFO Задача 7, шаг 1: web_search
+2026-10-08 13:22:56,633 INFO Задача 8, шаг 1: web_search
+2026-10-08 13:22:57,744 INFO Задача 8, шаг 1: web_search
+2026-10-08 13:23:01,209 INFO Задача 1, шаг 14: web_search
+2026-10-08 13:23:04,492 INFO Задача 1, шаг 14: web_search
+2026-10-08 13:23:12,170 INFO Задача 7, шаг 2: page_browser
+2026-10-08 13:23:12,202 WARNING Задача 6: временный сбой OpenRouter HTTP 400, повтор 1/3
+2026-10-08 13:23:13,187 INFO Задача 7, шаг 2: web_search
+2026-10-08 13:23:26,455 INFO Задача 8, шаг 2: web_search
+2026-10-08 13:23:30,588 INFO Задача 1, шаг 15: web_search
+2026-10-08 13:23:47,836 INFO Задача 8, шаг 2: web_search
+2026-10-08 13:23:50,421 INFO Задача 1, шаг 15: web_search
+2026-10-08 13:23:53,360 INFO Задача 7, шаг 3: web_search
+2026-10-08 13:24:09,777 INFO Задача 7, шаг 3: page_browser
+2026-10-08 13:24:18,954 INFO Задача 1, шаг 16: page_browser
+2026-10-08 13:24:20,967 INFO Задача 8, шаг 3: page_browser
+2026-10-08 13:24:28,025 INFO Задача 8, шаг 3: web_search
+2026-10-08 13:24:34,226 INFO Задача 1, шаг 17: web_search
+2026-10-08 13:24:35,612 INFO Задача 1, шаг 17: web_search
+2026-10-08 13:24:37,879 INFO Задача 7, шаг 4: page_browser
+2026-10-08 13:24:43,229 INFO Задача 8, шаг 4: web_search
+2026-10-08 13:24:45,132 INFO Задача 1, шаг 18: web_search
+2026-10-08 13:24:45,271 INFO Задача 8, шаг 4: web_search
+2026-10-08 13:24:46,562 INFO Задача 1, шаг 18: web_search
+2026-10-08 13:24:55,182 INFO Задача 7, шаг 5: code_executor
+2026-10-08 13:25:03,374 INFO Задача 8, шаг 5: web_search
+2026-10-08 13:25:04,052 INFO Задача 1, шаг 19: page_browser
+2026-10-08 13:25:04,505 INFO Задача 8, шаг 5: web_search
+2026-10-08 13:25:09,421 WARNING Задача 6: временный сбой OpenRouter HTTP 400, повтор 2/3
+2026-10-08 13:25:13,981 INFO Задача 7, шаг 6: code_executor
+2026-10-08 13:25:22,392 INFO Задача 1, шаг 20: web_search
+2026-10-08 13:25:23,686 INFO Задача 1, шаг 20: web_search
+2026-10-08 13:25:25,704 INFO Задача 8, шаг 6: page_browser
+2026-10-08 13:25:28,949 INFO Задача 7, шаг 7: page_browser
+2026-10-08 13:25:39,596 INFO Задача 7, шаг 8: web_search
+2026-10-08 13:25:41,703 INFO Задача 7, шаг 8: web_search
+2026-10-08 13:25:45,821 INFO Задача 1, шаг 21: page_browser
+2026-10-08 13:25:53,472 INFO Задача 8, шаг 7: web_search
+2026-10-08 13:25:53,691 INFO Задача 7, шаг 9: web_search
+2026-10-08 13:25:54,502 INFO Задача 8, шаг 7: web_search
+2026-10-08 13:25:54,771 INFO Задача 7, шаг 9: web_search
+2026-10-08 13:26:02,247 INFO Задача 1, шаг 22: code_executor
+2026-10-08 13:26:09,423 INFO Задача 7, шаг 10: code_executor
+2026-10-08 13:26:16,145 INFO Прогресс: 5/20; правильных 3; ошибок 1
+2026-10-08 13:26:16,145 INFO Начата задача 9 (Medium)
+2026-10-08 13:26:21,518 INFO Загружен videos/7253793316922346754.mp4: 4.0 МБ
+2026-10-08 13:26:22,696 INFO Прогресс: 6/20; правильных 4; ошибок 1
+2026-10-08 13:26:22,696 INFO Начата задача 10 (Medium)
+2026-10-08 13:26:24,428 INFO Compressed video 7253793316922346754.mp4 to 1.63MB (110 frames)
+2026-10-08 13:26:26,425 WARNING Задача 6: временный сбой OpenRouter HTTP 400, повтор 3/3
+2026-10-08 13:26:29,721 INFO Загружен images/000000084313.jpg: 0.2 МБ
+2026-10-08 13:26:39,309 INFO Загружен audios/GHq5SSqUbAc.wav: 12.3 МБ
+2026-10-08 13:26:49,611 INFO Задача 8, шаг 8: page_browser
+2026-10-08 13:26:56,704 INFO Задача 10, шаг 1: web_search
+2026-10-08 13:26:58,572 INFO Задача 10, шаг 1: web_search
+2026-10-08 13:27:13,892 INFO Задача 10, шаг 2: page_browser
+2026-10-08 13:27:16,679 INFO Задача 9, шаг 1: web_search
+2026-10-08 13:27:17,810 INFO Задача 9, шаг 1: web_search
+2026-10-08 13:27:26,494 INFO Задача 10, шаг 3: code_executor
+2026-10-08 13:27:29,555 INFO Задача 8, шаг 9: web_search
+2026-10-08 13:27:30,665 INFO Задача 8, шаг 9: page_browser
+2026-10-08 13:27:41,761 INFO Прогресс: 7/20; правильных 4; ошибок 1
+2026-10-08 13:27:41,761 INFO Начата задача 11 (Hard)
+2026-10-08 13:27:46,983 INFO Загружен audios/GzedUrBT2vk.wav: 2.9 МБ
+2026-10-08 13:27:48,429 INFO Загружен images/000000052827.jpg: 0.2 МБ
+2026-10-08 13:27:53,394 ERROR Ошибка задачи 6
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 166, in process
+    generated = await asyncio.wait_for(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 244, in run
+    message, usage = await self.client.complete(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 129, in complete
+    raise RuntimeError(f"OpenRouter HTTP {response.status_code}: {detail}")
+RuntimeError: OpenRouter HTTP 400: {"error":{"message":"Provider returned error","code":400,"metadata":{"raw":"data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-31ae1edc-22c4-9092-a77e-5839a0eff7fb\"}\n\n","provider_name":"Alibaba","is_byok":false}},"user_id":"user_3JzvfBNETxKVb7EntXZdb0lIIZv"}
+2026-10-08 13:27:53,395 INFO Прогресс: 8/20; правильных 4; ошибок 2
+2026-10-08 13:27:53,395 INFO Начата задача 12 (Medium)
+2026-10-08 13:27:54,870 INFO Задача 8, шаг 10: code_executor
+2026-10-08 13:28:18,507 INFO Задача 11, шаг 1: web_search
+2026-10-08 13:28:19,844 INFO Прогресс: 9/20; правильных 5; ошибок 2
+2026-10-08 13:28:19,844 INFO Начата задача 13 (Easy)
+2026-10-08 13:28:21,662 INFO Задача 11, шаг 1: web_search
+2026-10-08 13:28:21,941 INFO Загружен audios/hbJQEP4tSZw.wav: 13.2 МБ
+2026-10-08 13:28:23,177 INFO Задача 11, шаг 1: web_search
+2026-10-08 13:28:23,830 INFO Загружен images/000000122584.jpg: 0.2 МБ
+2026-10-08 13:28:36,705 INFO Задача 9, шаг 2: web_search
+2026-10-08 13:28:37,364 INFO Задача 11, шаг 2: page_browser
+2026-10-08 13:28:40,496 INFO Задача 11, шаг 2: web_search
+2026-10-08 13:28:40,877 INFO Задача 9, шаг 2: page_browser
+2026-10-08 13:28:54,552 INFO Задача 12, шаг 1: web_search
+2026-10-08 13:28:57,884 INFO Задача 12, шаг 1: web_search
+2026-10-08 13:29:12,559 INFO Задача 11, шаг 3: page_browser
+2026-10-08 13:29:15,616 INFO Задача 11, шаг 3: web_search
+2026-10-08 13:29:18,057 INFO Задача 9, шаг 3: page_browser
+2026-10-08 13:29:18,845 INFO Задача 9, шаг 3: code_executor
+2026-10-08 13:29:20,892 INFO Задача 12, шаг 2: web_search
+2026-10-08 13:29:30,538 INFO Задача 12, шаг 2: web_search
+2026-10-08 13:29:48,896 INFO Задача 11, шаг 4: page_browser
+2026-10-08 13:29:50,778 INFO Задача 11, шаг 4: web_search
+2026-10-08 13:29:54,512 INFO Прогресс: 10/20; правильных 6; ошибок 2
+2026-10-08 13:29:54,512 INFO Начата задача 14 (Medium)
+2026-10-08 13:30:00,862 INFO Задача 12, шаг 3: page_browser
+2026-10-08 13:30:03,162 INFO Задача 12, шаг 3: web_search
+2026-10-08 13:30:09,288 INFO Загружен videos/X5v4nBo5y28.mp4: 69.8 МБ
+2026-10-08 13:30:12,650 INFO Compressed video X5v4nBo5y28.mp4 to 2.32MB (128 frames)
+2026-10-08 13:30:20,918 INFO Задача 11, шаг 5: code_executor
+2026-10-08 13:30:39,787 INFO Загружен images/000000217241.jpg: 0.2 МБ
+2026-10-08 13:30:39,816 INFO Задача 12, шаг 4: web_search
+2026-10-08 13:30:43,816 INFO Задача 12, шаг 4: web_search
+2026-10-08 13:30:46,388 INFO Загружен audios/DOAr6O9DZGU.wav: 2.0 МБ
+2026-10-08 13:31:03,469 INFO Задача 12, шаг 5: page_browser
+2026-10-08 13:31:08,239 INFO Прогресс: 11/20; правильных 6; ошибок 2
+2026-10-08 13:31:08,239 INFO Начата задача 15 (Hard)
+2026-10-08 13:31:24,000 INFO Задача 12, шаг 6: web_search
+2026-10-08 13:31:25,353 INFO Задача 13, шаг 1: web_search
+2026-10-08 13:31:27,097 INFO Задача 13, шаг 1: web_search
+2026-10-08 13:31:30,089 INFO Задача 12, шаг 6: page_browser
+2026-10-08 13:31:40,410 INFO Задача 14, шаг 1: web_search
+2026-10-08 13:31:43,361 INFO Задача 14, шаг 1: web_search
+2026-10-08 13:31:45,865 INFO Задача 14, шаг 1: web_search
+2026-10-08 13:32:10,553 INFO Загружен videos/NpYUxd1vUUE.mp4: 38.6 МБ
+2026-10-08 13:32:13,593 INFO Compressed video NpYUxd1vUUE.mp4 to 1.33MB (128 frames)
+2026-10-08 13:32:17,493 INFO Задача 14, шаг 2: page_browser
+2026-10-08 13:32:19,359 INFO Задача 14, шаг 2: web_search
+2026-10-08 13:32:37,655 INFO Задача 12, шаг 7: page_browser
+2026-10-08 13:32:38,479 INFO Задача 12, шаг 7: code_executor
+2026-10-08 13:32:45,692 INFO Прогресс: 12/20; правильных 7; ошибок 2
+2026-10-08 13:32:45,692 INFO Начата задача 16 (Medium)
+2026-10-08 13:32:51,164 INFO Загружен audios/tewPiFAFDbo.wav: 3.7 МБ
+2026-10-08 13:32:59,318 INFO Загружен audios/inajlAlJKTs.wav: 3.1 МБ
+2026-10-08 13:33:01,308 INFO Загружен images/000000011015.jpg: 0.2 МБ
+2026-10-08 13:33:01,314 INFO Задача 12, шаг 8: web_search
+2026-10-08 13:33:04,710 INFO Задача 14, шаг 3: code_executor
+2026-10-08 13:33:05,921 INFO Задача 15, шаг 1: web_search
+2026-10-08 13:33:06,822 INFO Задача 12, шаг 8: page_browser
+2026-10-08 13:33:07,661 INFO Задача 15, шаг 1: web_search
+2026-10-08 13:33:13,420 INFO Прогресс: 13/20; правильных 8; ошибок 2
+2026-10-08 13:33:13,420 INFO Начата задача 17 (Hard)
+2026-10-08 13:33:14,908 INFO Загружен images/000000084313_1.jpg: 0.2 МБ
+2026-10-08 13:33:22,611 INFO Прогресс: 14/20; правильных 9; ошибок 2
+2026-10-08 13:33:22,611 INFO Начата задача 18 (Medium)
+2026-10-08 13:33:22,613 INFO Задача 17, шаг 1: web_search
+2026-10-08 13:33:24,276 INFO Задача 17, шаг 1: web_search
+2026-10-08 13:33:28,270 INFO Загружен audios/H-sg6x5iOyo.wav: 3.1 МБ
+2026-10-08 13:33:30,091 INFO Загружен images/000000125201.jpg: 0.1 МБ
+2026-10-08 13:33:31,606 INFO Загружен images/000000162358.jpg: 0.2 МБ
+2026-10-08 13:33:37,543 INFO Задача 15, шаг 2: page_browser
+2026-10-08 13:33:38,631 INFO Задача 15, шаг 2: web_search
+2026-10-08 13:33:44,618 INFO Задача 17, шаг 2: page_browser
+2026-10-08 13:33:45,672 INFO Задача 17, шаг 2: web_search
+2026-10-08 13:33:49,727 INFO Задача 16, шаг 1: web_search
+2026-10-08 13:33:51,644 INFO Задача 16, шаг 1: web_search
+2026-10-08 13:33:53,042 INFO Задача 16, шаг 1: web_search
+2026-10-08 13:33:53,214 INFO Задача 17, шаг 3: web_search
+2026-10-08 13:33:54,286 INFO Задача 16, шаг 1: web_search
+2026-10-08 13:34:04,555 INFO Задача 15, шаг 3: web_search
+2026-10-08 13:34:06,200 INFO Задача 15, шаг 3: web_search
+2026-10-08 13:34:10,626 INFO Задача 17, шаг 3: page_browser
+2026-10-08 13:34:31,099 INFO Задача 16, шаг 2: web_search
+2026-10-08 13:34:32,384 INFO Задача 16, шаг 2: web_search
+2026-10-08 13:34:34,697 INFO Задача 18, шаг 1: web_search
+2026-10-08 13:34:35,824 INFO Задача 18, шаг 1: web_search
+2026-10-08 13:34:43,555 INFO Задача 15, шаг 4: web_search
+2026-10-08 13:34:49,335 INFO Задача 16, шаг 3: page_browser
+2026-10-08 13:34:53,169 INFO Задача 18, шаг 2: web_search
+2026-10-08 13:34:55,099 INFO Задача 17, шаг 4: page_browser
+2026-10-08 13:34:55,457 INFO Задача 15, шаг 4: page_browser
+2026-10-08 13:34:56,339 INFO Задача 17, шаг 4: web_search
+2026-10-08 13:34:56,486 INFO Задача 18, шаг 2: page_browser
+2026-10-08 13:35:08,699 INFO Задача 16, шаг 4: code_executor
+2026-10-08 13:35:11,838 INFO Задача 17, шаг 5: web_search
+2026-10-08 13:35:12,422 INFO Задача 18, шаг 3: web_search
+2026-10-08 13:35:12,888 INFO Задача 17, шаг 5: web_search
+2026-10-08 13:35:13,143 INFO Задача 18, шаг 3: code_executor
+2026-10-08 13:35:23,730 INFO Задача 15, шаг 5: web_search
+2026-10-08 13:35:24,833 INFO Задача 15, шаг 5: web_search
+2026-10-08 13:35:26,825 INFO Задача 17, шаг 6: page_browser
+2026-10-08 13:35:29,038 INFO Задача 16, шаг 5: code_executor
+2026-10-08 13:35:31,301 INFO Задача 17, шаг 6: web_search
+2026-10-08 13:35:34,025 INFO Задача 18, шаг 4: web_search
+2026-10-08 13:35:34,738 INFO Задача 18, шаг 4: code_executor
+2026-10-08 13:35:42,248 INFO Задача 17, шаг 7: page_browser
+2026-10-08 13:35:43,534 INFO Задача 17, шаг 7: web_search
+2026-10-08 13:35:48,910 INFO Задача 18, шаг 5: page_browser
+2026-10-08 13:35:56,430 INFO Задача 16, шаг 6: code_executor
+2026-10-08 13:35:57,075 INFO Задача 17, шаг 8: web_search
+2026-10-08 13:36:00,481 INFO Задача 17, шаг 8: web_search
+2026-10-08 13:36:00,538 INFO Задача 18, шаг 6: web_search
+2026-10-08 13:36:02,201 INFO Задача 18, шаг 6: web_search
+2026-10-08 13:36:07,189 INFO Задача 15, шаг 6: page_browser
+2026-10-08 13:36:08,601 INFO Задача 15, шаг 6: web_search
+2026-10-08 13:36:09,946 INFO Задача 17, шаг 9: page_browser
+2026-10-08 13:36:15,219 INFO Задача 18, шаг 7: page_browser
+2026-10-08 13:36:24,332 INFO Задача 17, шаг 10: code_executor
+2026-10-08 13:36:37,124 INFO Задача 15, шаг 7: page_browser
+2026-10-08 13:36:38,210 INFO Задача 15, шаг 7: web_search
+2026-10-08 13:36:38,296 INFO Задача 18, шаг 8: web_search
+2026-10-08 13:36:56,459 INFO Прогресс: 15/20; правильных 10; ошибок 2
+2026-10-08 13:36:56,459 INFO Начата задача 19 (Hard)
+2026-10-08 13:37:04,608 INFO Прогресс: 16/20; правильных 10; ошибок 2
+2026-10-08 13:37:04,608 INFO Начата задача 20 (Easy)
+2026-10-08 13:37:07,849 INFO Загружен audios/92hiHvHrhsA.wav: 13.9 МБ
+2026-10-08 13:37:09,650 INFO Загружен images/000000103791.jpg: 0.2 МБ
+2026-10-08 13:37:19,921 INFO Задача 16, шаг 7: code_executor
+2026-10-08 13:37:24,710 INFO Загружен videos/2kG1o5epv6o.mp4: 10.9 МБ
+2026-10-08 13:37:25,926 INFO Задача 15, шаг 8: web_search
+2026-10-08 13:37:26,038 INFO Compressed video 2kG1o5epv6o.mp4 to 1.89MB (128 frames)
+2026-10-08 13:37:27,363 INFO Задача 15, шаг 8: web_search
+2026-10-08 13:37:48,904 INFO Загружен videos/-_CGf8D5tew.mp4: 20.2 МБ
+2026-10-08 13:37:49,844 INFO Задача 16, шаг 8: code_executor
+2026-10-08 13:37:50,597 INFO Compressed video -_CGf8D5tew.mp4 to 2.72MB (128 frames)
+2026-10-08 13:38:06,315 INFO Задача 19, шаг 1: code_executor
+2026-10-08 13:38:12,098 INFO Прогресс: 17/20; правильных 10; ошибок 2
+2026-10-08 13:38:13,143 INFO Задача 15, шаг 9: page_browser
+2026-10-08 13:38:26,859 INFO Прогресс: 18/20; правильных 11; ошибок 2
+2026-10-08 13:38:31,451 INFO Задача 20, шаг 1: web_search
+2026-10-08 13:38:32,577 INFO Задача 20, шаг 1: web_search
+2026-10-08 13:38:53,306 INFO Задача 20, шаг 2: code_executor
+2026-10-08 13:39:03,447 INFO Прогресс: 19/20; правильных 12; ошибок 2
+2026-10-08 13:39:17,210 INFO Прогресс: 20/20; правильных 13; ошибок 2
+{
+  "expected_count": 20,
+  "completed": 18,
+  "judged": 18,
+  "errors": 2,
+  "correct": 13,
+  "pass_at_1": null,
+  "partial_accuracy": 0.7222222222222222,
+  "by_level": {
+    "Easy": {
+      "count": 5,
+      "correct": 4
+    },
+    "Medium": {
+      "count": 8,
+      "correct": 6
+    },
+    "Hard": {
+      "count": 5,
+      "correct": 3
+    }
+  },
+  "tool_calls": {
+    "web_search": 119,
+    "page_browser": 47,
+    "code_executor": 24
+  }
+}
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 245, in <module>
+    asyncio.run(main())
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 239, in main
+    await run(args, client, items, models)
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 192, in run
+    raise RuntimeError("Прогон содержит ошибки; результаты сохранены. Повторный запуск продолжит обработку.")
+RuntimeError: Прогон содержит ошибки; результаты сохранены. Повторный запуск продолжит обработку.

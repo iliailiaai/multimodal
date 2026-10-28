@@ -1,0 +1,728 @@
+{
+  "id": 65,
+  "question": "Two videos are provided: a promotional contest video for an animated movie and a cooking show video. From the contest video, identify the animated movie and the contest end date. From the cooking show video, identify the country whose cuisine is featured. Then, calculate the number of days between the theatrical release date of that movie in that country and the contest's end date.",
+  "Level": "Medium",
+  "category": "Movies",
+  "task_type": "video w/ audio",
+  "answer": "65",
+  "output": "**Analysis of the two videos:**\n\n**Video 1 (contest promo):** This is a Kid Cuisine (ConAgra Foods) commercial tied to the animated film **Planet 51** — the astronaut duck \"Casey\" gets lost on Planet 51, the boxes advertise \"Planet 51 Kid Cuisine meals,\" and the marquee reads \"Movie Secret Agent Party Tonight!\" The legal fine print states: *\"Instant Win Game ends **1/24/10**\"* → contest end date = **January 24, 2010**.\n\n**Video 2 (cooking show):** This is Cliffieland's \"Cooking Every Country\" series, week/country #51, featuring the cuisine of **Ecuador** (pesado encocado, platanos maduros con queso, arroz estilo Ecuador, canchitas).\n\n**Release date lookup:** Per Box Office Mojo's international release data for *Planet 51*, the film opened theatrically in **Ecuador on November 20, 2009** (grossing $177,233 there), consistent with its simultaneous Latin American rollout (Colombia Nov 20, Peru Nov 19).\n\n**Calculation:**\n- From November 20, 2009 → January 24, 2010\n- Remaining days in November: 10; December: 31; January: 24\n- Total: 10 + 31 + 24 = **65 days** (verified by computation)\n\n<answer>65 days</answer>\n\nThe animated movie is **Planet 51**, whose contest (Kid Cuisine Instant Win Game) ended **January 24, 2010**; the cooking show features **Ecuador**, where *Planet 51* was released theatrically on **November 20, 2009** — a gap of **65 days** between the Ecuadorian release and the contest's end date.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Two videos are provided: a promotional contest video for an animated movie and a cooking show video. From the contest video, identify the animated movie and the contest end date. From the cooking show video, identify the country whose cuisine is featured. Then, calculate the number of days between the theatrical release date of that movie in that country and the contest's end date."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:1382366 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:128316 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:4383306 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:2037756 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try analyze these two videos.\n\nVideo 1: A Kid Cuisine commercial tied to \"Planet 51\" — the animated movie. The legal text says \"Instant Win Game ends 1/24/10.\" So the contest end date is January 24, 2010.\n\nVideo 2: Cliffieland's cooking show, featuring Ecuador cuisine (week 51, country number 51).\n\nSo I need to look up the theatrical release date of \"Planet 51\" in Ecuador, and calculate the number of days between that release date and January 24, 2010.\n\nPlanet 51 was released in Spain on November 20, 2009 (or maybe it was November 27?). Let me confirm. Planet 51 (2009 film) Spanish release date: November 27, 2009? Actually I recall it premiered in Spain on November 20, 2009... let me search.\n\nRelease in Ecuador: probably around January 2010? Let me search.\n\nLet me use web_search.\n\nPlan: search \"Planet 51 Ecuador release date\" and check Wikipedia or Kinopoisk etc.\n\nThen compute the day difference with code.\n\nLet's do that.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_d30c63824eb740f1a46a18b2",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Planet 51 movie Ecuador release date 2010\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_e7bfbd3a68624fb6896b76c7",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Planet 51\\\" 2009 film release dates by country Wikipedia\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try analyze these two videos.\n\nVideo 1: A Kid Cuisine commercial tied to \"Planet 51\" — the animated movie. The legal text says \"Instant Win Game ends 1/24/10.\" So the contest end date is January 24, 2010.\n\nVideo 2: Cliffieland's cooking show, featuring Ecuador cuisine (week 51, country number 51).\n\nSo I need to look up the theatrical release date of \"Planet 51\" in Ecuador, and calculate the number of days between that release date and January 24, 2010.\n\nPlanet 51 was released in Spain on November 20, 2009 (or maybe it was November 27?). Let me confirm. Planet 51 (2009 film) Spanish release date: November 27, 2009? Actually I recall it premiered in Spain on November 20, 2009... let me search.\n\nRelease in Ecuador: probably around January 2010? Let me search.\n\nLet me use web_search.\n\nPlan: search \"Planet 51 Ecuador release date\" and check Wikipedia or Kinopoisk etc.\n\nThen compute the day difference with code.\n\nLet's do that.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d30c63824eb740f1a46a18b2",
+      "content": "[{\"id\": 1, \"title\": \"Planet 51 (2009)\", \"url\": \"https://www.imdb.com/title/tt0762125/\", \"snippet\": \"Release date November 20, 2009 (United States) Also known as Planeta 51 Filming locations Las Rozas de Madrid, Madrid, Spain\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Planet 51\", \"url\": \"https://en.wikipedia.org/wiki/Planet_51\", \"snippet\": \"Planet 51 was released on 20 November 2009 in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners respectively ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Everything You Need to Know About Planet 51 Movie (2009)\", \"url\": \"https://www.movieinsider.com/m4533/planet-51\", \"snippet\": \"Planet 51 was released on DVD and Blu-ray on Wednesday, March 09, 2010 . The release was 6054 days ago. Availability may vary by region.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Planet 51 | Sony Pictures Entertaiment Wiki | Fandom\", \"url\": \"https://sony.fandom.com/wiki/Planet_51\", \"snippet\": \"Planet 51 was released on 30 December 2009 in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners respectively ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Watch Planet 51\", \"url\": \"https://www.netflix.com/title/70109891\", \"snippet\": \"After landing on a planet reminiscent of 1950s suburbia, a human astronaut tries to avoid capture, recover his spaceship and make it home safely.\", \"date\": \"\"}, {\"id\": 6, \"title\": \"On this day in 2009, Planet 51 was released in theaters\", \"url\": \"https://www.facebook.com/groups/nostalgiaworldofficial/posts/1943428249613436/\", \"snippet\": \"On this day in 2009, Planet 51 was released in theaters\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Planet 51\", \"url\": \"https://www.rottentomatoes.com/m/planet_51\", \"snippet\": \"When astronaut Capt. Charles \\\"Chuck\\\" Baker lands on Planet 51, he thinks he is the first life form to set foot there. He gets the surprise of his life when ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"New Release: Planet 51 DVD and Blu-ray - Disc Dish\", \"url\": \"https://www.discdish.com/2010/02/15/new-release-planet-51/\", \"snippet\": \"Planet 51 went into orbit on DVD and Blu-ray on March 9, 2010, priced at $28.96 on DVD and at $39.95\", \"date\": \"Feb 15, 2010\"}, {\"id\": 9, \"title\": \"Planet 51 (2009)\", \"url\": \"https://www.boxofficemojo.com/title/tt0762125/\", \"snippet\": \"Release Date, Opening, Gross. Domestic, Nov 20, 2009, $12,286,129, $42,194,060 ... Ecuador, Nov 20, 2009, –, $177,233. Bolivia, Jan 7, 2010, $12,462, $39,030.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Planet 51 - Funvasion\", \"url\": \"https://funvasion.miraheze.org/wiki/Planet_51\", \"snippet\": \"Planet 51 is a 2009 animated science fiction comedy film directed by Jorge Blanco (in his feature length directorial debut) from a script by Joe Stillman.\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e7bfbd3a68624fb6896b76c7",
+      "content": "[{\"id\": 1, \"title\": \"Planet 51\", \"url\": \"https://en.wikipedia.org/wiki/Planet_51\", \"snippet\": \"Planet 51 was released on 20 November 2009 in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners respectively ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Planet 51 - Simple English Wikipedia, the free encyclopedia\", \"url\": \"https://simple.wikipedia.org/wiki/Planet_51\", \"snippet\": \"Planet 51 is a computer animated movie made by Ilion Animation Studios and ... Release dates. 14 November 2009 (2009-11-14) (Westwood); 20 November 2009 ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Planet 51 | JH Wiki Collection Wiki | Fandom\", \"url\": \"https://jhmovie.fandom.com/wiki/Planet_51\", \"snippet\": \"Planet 51 was released on November 20, 2009, in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Planet 51 (2009)\", \"url\": \"https://www.imdb.com/title/tt0762125/\", \"snippet\": \"Planet 51: Directed by Javier Abad, Jorge Blanco, Marcos Martínez. With Dwayne Johnson, Seann William Scott, Jessica Biel, Justin Long.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Planet 51 2009 Film Wikipedia\", \"url\": \"https://www.instagram.com/popular/planet-51-2009-film-wikipedia/\", \"snippet\": \"Planet 51 Planet 51 is a family-friendly animated sci-fi comedy about what happens when humans become the “aliens.” The story takes place on a peaceful alien ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Planet 51 - Aiden Bave Wiki - Fandom\", \"url\": \"https://aiden-bave.fandom.com/wiki/Planet_51\", \"snippet\": \"Planet 51 was released on November 20, 2008, by TriStar Pictures. It was originally titled Planet One. Produced on a budget of $70 million, Planet 51 is the ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"List of films featuring extraterrestrials\", \"url\": \"https://en.wikipedia.org/wiki/List_of_films_featuring_extraterrestrials\", \"snippet\": \"Planet 51, 2009. Planet of the Apes, 2001, Planet of the Apes. Planet of the Vampires, 1965. Planeta Bur, 1962. The Pod People, 1983. Power ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Planet 51 Facts for Kids\", \"url\": \"https://kids.kiddle.co/Planet_51\", \"snippet\": \"Planet 51 cost about $70 million to make. This made it the most expensive film produced in Spain at that time. The movie was released on November 20, 2009, by ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Planet 51 (Western Animation)\", \"url\": \"https://tvtropes.org/pmwiki/pmwiki.php/WesternAnimation/Planet51\", \"snippet\": \"Planet 51 is a Spanish/American All-CGI Cartoon feature from 2009. It is the first animated film by TriStar Pictures since The Trumpet of the Swan.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"List of computer-animated films\", \"url\": \"https://en.wikipedia.org/wiki/List_of_computer-animated_films\", \"snippet\": \"Planet 51, November 20, 2009, Ilion Animation Studios · HandMade Films International, Spain United Kingdom United States. Plankton: The Movie, March 7, 2025 ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Box Office Mojo states \"Ecuador, Nov 20, 2009\". Hmm, interesting — but wait, the US release was November 20, 2009? Actually, Planet 51 was released in the US on November 20, 2009. Box Office Mojo shows Ecuador as November 20, 2009? Let me verify. Actually, I have some recollection that the Ecuador release might have been different. Let me check Box Office Mojo's page for Planet 51's international releases.\n\nAlso, the contest's end date is January 24, 2010 (from the video's fine print: \"Instant Win Game ends 1/24/10\").\n\nLet me fetch Box Office Mojo's page to verify the Ecuador release date.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_0fe1f7ccd4224e39bd625a56",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.boxofficemojo.com/title/tt0762125/\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_3f375ba8bedd43469de4fb7f",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Planeta 51\\\" Ecuador estreno fecha enero 2010 cines\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Box Office Mojo states \"Ecuador, Nov 20, 2009\". Hmm, interesting — but wait, the US release was November 20, 2009? Actually, Planet 51 was released in the US on November 20, 2009. Box Office Mojo shows Ecuador as November 20, 2009? Let me verify. Actually, I have some recollection that the Ecuador release might have been different. Let me check Box Office Mojo's page for Planet 51's international releases.\n\nAlso, the contest's end date is January 24, 2010 (from the video's fine print: \"Instant Win Game ends 1/24/10\").\n\nLet me fetch Box Office Mojo's page to verify the Ecuador release date.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_0fe1f7ccd4224e39bd625a56",
+      "content": "{\"https://www.boxofficemojo.com/title/tt0762125/\": \"Title: Planet 51 - Box Office Mojo\\n\\nURL Source: https://www.boxofficemojo.com/title/tt0762125/\\n\\nMarkdown Content:\\n![Image 1]\\n\\n[]\\n\\n[](javascript:void(0))\\n\\n[][][]\\n\\n[Domestic][International][Worldwide][Calendar][All Time][Showdowns][Indices]\\n\\n![Image 2]\\n\\n# Planet 51 (2009)\\n\\nAn alien civilization is invaded by Astronaut Chuck Baker, who believes that the planet was uninhabited. Wanted by the military, Baker must get back to his ship before it goes into orbit without him.\\n\\n  \\n[Cast information]  \\n[Crew information]  \\n[Company information]  \\n[News]  \\n[Box office]  \\n\\n[Animation]  \\n[CGI Animation]\\n\\n[Genre keyword rankings](javascript:void(0))\\n\\n[![Image 3] Title Summary]\\n\\n## All Releases\\n\\n Domestic (39.9%) \\n$42,194,060\\n\\n International (60.1%) \\n$63,453,042\\n\\n Worldwide \\n$105,647,102\\n\\n  \\n[Cast information]  \\n[Crew information]  \\n[Company information]  \\n[News]  \\n[Box office]  \\n\\n[Animation]  \\n[CGI Animation]\\n\\n[Genre keyword rankings](javascript:void(0))\\n\\n Summary Details \\n\\nDomestic Distributor Sony Pictures Releasing  \\n[See full company information]\\n\\nDomestic Opening[$12,286,129]\\n\\nBudget$70,000,000\\n\\nEarliest Release Date November 19, 2009 (4 markets)\\n\\nMPAA PG\\n\\nRunning Time 1 hr 31 min\\n\\nGenres Adventure Animation Comedy Family Fantasy Sci-Fi\\n\\n IMDbPro [See more details at IMDbPro]\\n\\n[Performance][Cast and Crew]\\n\\nAll-Time Rankings\\n\\n[Related Stories][Similar Movies]\\n\\n### Domestic\\n\\n| Area | Release Date | Opening | Gross |\\n| - | - | - | - |\\n| [Domestic] | Nov 20, 2009 | $12,286,129 | $42,194,060 |\\n\\n### Europe, Middle East, and Africa\\n\\n| Area | Release Date | Opening | Gross |\\n| - | - | - | - |\\n| [Spain] | Nov 27, 2009 | $4,342,884 | $15,762,612 |\\n| [France] | Feb 3, 2010 | $1,625,264 | $8,264,852 |\\n| [United Kingdom] | Nov 20, 2009 | – | $7,368,928 |\\n| [Italy] | Nov 20, 2009 | $1,155,765 | $3,405,781 |\\n| [Germany] | Dec 3, 2009 | $586,619 | $2,181,772 |\\n| [Poland] | Jan 29, 2010 | $394,513 | $1,796,388 |\\n| [Portugal] | Dec 3, 2009 | $242,799 | $1,424,154 |\\n| [Belgium] | Feb 10, 2010 | $138,250 | $862,786 |\\n| [South Africa] | Jan 8, 2010 | $273,599 | $603,855 |\\n| [Sweden] | Jan 15, 2010 | $131,347 | $470,378 |\\n| [Greece] | Nov 26, 2009 | $98,576 | $444,526 |\\n| [United Arab Emirates] | Nov 26, 2009 | $163,960 | $375,812 |\\n| [Denmark] | Jan 7, 2010 | $102,053 | $369,770 |\\n| [Czech Republic] | Nov 19, 2009 | – | $341,738 |\\n| [Austria] | Dec 4, 2009 | $91,185 | $337,111 |\\n| [Türkiye] | Jun 18, 2010 | $63,557 | $335,900 |\\n| [Netherlands] | Apr 28, 2010 | $42,408 | $329,237 |\\n| [Ukraine] | Nov 26, 2009 | $133,228 | $319,078 |\\n| [Finland] | Jan 1, 2010 | $78,978 | $229,683 |\\n| [Slovenia] | Dec 31, 2009 | $46,615 | $179,710 |\\n| [Bulgaria] | Dec 11, 2009 | $42,535 | $149,540 |\\n| [Slovakia] | Jan 14, 2010 | – | $104,623 |\\n| [Norway] | Jan 22, 2010 | $35,875 | $96,609 |\\n| [Iceland] | Jan 22, 2010 | $12,802 | $47,893 |\\n| [Romania] | Dec 4, 2009 | – | $47,047 |\\n| [Serbia and Montenegro] | Dec 3, 2009 | $6,895 | $38,221 |\\n| [Hungary] | Jan 14, 2010 | $35,724 | $35,724 |\\n| [Lebanon] | Dec 24, 2009 | – | $30,874 |\\n| [Croatia] | May 6, 2010 | $7,989 | $27,817 |\\n\\n### Latin America\\n\\n| Area | Release Date | Opening | Gross |\\n| - | - | - | - |\\n| [Mexico] | Nov 27, 2009 | $1,385,911 | $4,590,034 |\\n| [Brazil] | Nov 27, 2009 | $478,942 | $2,254,074 |\\n| [Colombia] | Nov 20, 2009 | $213,163 | $967,122 |\\n| [Peru] | Nov 19, 2009 | $155,076 | $555,260 |\\n| [Venezuela] | Dec 11, 2009 | $252,720 | $452,778 |\\n| [Chile] | Nov 26, 2009 | $69,946 | $271,297 |\\n| [Argentina] | Nov 26, 2009 | $147,665 | $179,380 |\\n| [Ecuador] | Nov 20, 2009 | – | $177,233 |\\n| [Bolivia] | Jan 7, 2010 | $12,462 | $39,030 |\\n| [Uruguay] | Dec 4, 2009 | $7,721 | $35,722 |\\n\\n### Asia Pacific\\n\\n| Area | Release Date | Opening | Gross |\\n| - | - | - | - |\\n| [Russia/CIS] | Nov 19, 2009 | $1,540,711 | $3,450,434 |\\n| [Australia] | Dec 10, 2009 | $582,389 | $2,581,551 |\\n| [Singapore] | Dec 10, 2009 | $223,737 | $487,588 |\\n| [New Zealand] | Dec 10, 2009 | $66,244 | $293,963 |\\n| [South Korea] | Oct 21, 2010 | $132,784 | $253,724 |\\n| [Malaysia] | Nov 19, 2009 | $57,841 | $158,215 |\\n| [Hong Kong] | Apr 1, 2010 | $40,286 | $117,746 |\\n| [Philippines] | Dec 2, 2009 | – | $64,020 |\\n\\n[]\\nLatest Updates: [News] | [Daily] | [Weekend] | [All Time] | [International] | [Showdowns]\\n\\n[Glossary] | [User Guide] | [License IMDb Data] | [Help]\\n\\nBoxOfficeMojo.com by IMDbPro - an [IMDb] company.\\n\\n© IMDb.com, Inc. or its affiliates. All rights reserved. Box Office Mojo and IMDb are trademarks or registered trademarks of IMDb.com, Inc. or its affiliates. [Conditions of Use] and [Privacy Policy] under which this service is provided to you.\\n\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3f375ba8bedd43469de4fb7f",
+      "content": "[{\"id\": 1, \"title\": \"Críticas de Planet 51 (Planeta 51) (2009)\", \"url\": \"https://m.filmaffinity.com/es/movieuserreviews2.php?movie_id=835976&orderby=6&page=3\", \"snippet\": \"Leer críticas de Planet 51 (Planeta 51) , dirigida por . Año: 2009. Consulta críticas de usuarios y opiniones sobre Planet 51 (Planeta 51) , y lee lo que ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Noticias sobre la industria del cine - Publicine Europe\", \"url\": \"https://www.publicine.es/publicidad_cine_noticias_de_cine.htm\", \"snippet\": \"o La cruda realidad, lograron mucho mejores estrenos, con similares campañas, menor casting y peor fecha de estreno. ... PLANETA 51 ENTRAN EN LA CARRERA DE LOS ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Especial Cine de Oscar en HD | PDF | Madrid\", \"url\": \"https://es.scribd.com/document/429381577/Revista-El-Cine-en-Casa-101\", \"snippet\": \"Director: Jorge Blanco y Javier Abad aterriza en el Planeta 51 pensando que es el primer ser vivo. Género: Animación en pisarlo. Para su sorpresa, descubre ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Condorito: la película - Wikipedia, la enciclopedia libre\", \"url\": \"https://es.wikipedia.org/wiki/Condorito:_la_pel%C3%ADcula\", \"snippet\": \"... Planeta 51 y Pie Pequeño). Para distribuir la película en Estados Unidos, Corea del Sur y Rusia y contrato a 180 animadores y artistas para el desarrollo de ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"La exportación de cine argentino en el circuito comercial ...\", \"url\": \"https://www.academia.edu/37404104/La_exportaci%C3%B3n_de_cine_argentino_en_el_circuito_comercial_internacional_Pr%C3%A1cticas_mercados_y_pol%C3%ADticas\", \"snippet\": \"... estrenos locales, espectadores totales y espectadores de cine local. En ... Planeta 51 Reino 45.594 21/10/2010 Ilion, Show- Unido, box Plumíferos ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Estudio sobre la Exportación de Cine Argentino: Prácticas ...\", \"url\": \"http://www.studocu.com/en-us/document/universidad-nacional-de-cuyo/comunicacion-cinematografica-cs/borello-jose-a-y-otros-politica-comercial-insercion-internacional-y-desarrollo-productivo/112037288\", \"snippet\": \"Planeta 51. España,. Reino. Unido,. 45.594 21/10/2010. Animación. Ilion, Show-. box. Plumíferos Argentina 44.650 17/9/2013 Vic. Atrapa. la bandera España 44.574 ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"cine\", \"url\": \"https://www.enciclopediadelapolitica.org/termino/cine/\", \"snippet\": \"Estos uploaders piráticos colocaron en la red las películas de estreno con mayor prestigio —»Ágora» de Alejandro Amenábar, «Planeta 51 ...\", \"date\": \"Jul 3, 2018\"}, {\"id\": 8, \"title\": \"Cartelera Cinemark del 3 al 9 de diciembre\", \"url\": \"http://grafelbergnoticias.blogspot.com/2009/12/cartelera-cinemark-del-3-al-9-de.html\", \"snippet\": \"6 PLANETA 51 (DOBLADA) TE 11:20 13:30 15:30 18:00 7 LA PRINCESA Y EL SAPO (DOBLADA) TE ESTRENO 13:00 15:20 17:40 7 LUNA NUEVA (SUBTITULADA) ...\", \"date\": \"Dec 3, 2009\"}, {\"id\": 9, \"title\": \"Actas II Congreso 2012\", \"url\": \"https://www.calameo.com/books/0044043776a241894844d\", \"snippet\": \"... Planeta 51 (título original: Planet 51), Javier Abad, Jorge Blanco, Marcos Martínez e Ignacio Pérez Dolset, año 2009. Ficha en la base de datos ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"México Francia - Ambiente Virtual de Pesquisa\", \"url\": \"https://www.avp.pro.br/pluginfile.php/4965/mod_glossary/attachment/518/2008%20M%C3%A9xico%20Francia%20memoria%20de%20una%20sensibilidad%20com%C3%BAn.pdf\", \"snippet\": \"... planeta.51. 316. Page 319. Adolfo Pedro Huet Brodeke en 1925. Fuente: Archivo particular de la Familia Huet Herrera. 26. Por último, otro elemento fundamental ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Box Office Mojo lists Ecuador: November 20, 2009. Hmm, but wait—there's also a blog post about Cinemark (Ecuador?) showing \"PLANETA 51 (DOBLADA)\" in the screening schedule for December 3–9, 2009. That blog \"grafelbergnoticias.blogspot.com\"—let me check: is Cinemark in Ecuador? Actually, the snippet says \"Cartelera Cinemark del 3 al 9 de diciembre,\" and Planet 51 dubbed is already listed (not as \"ESTRENO\"), so it was already being screened by early December. This suggests an Ecuador release around late November. Box Office Mojo has Ecuador's release date as November 20, 2009.\n\nHmm, but wait—let me double-check. Box Office Mojo data can sometimes be wrong. Let me verify with another source. The question asks: \"Calculate the number of days between that film's theatrical release date in that country and the contest's end date.\" Contest end date: January 24, 2010 (from the video's fine print \"Instant Win Game ends 1/24/10\"). Country: Ecuador.\n\nIf Ecuador's release date is November 20, 2009, then the number of days from November 20, 2009 to January 24, 2010 = 10 (remainder of November) + 31 (December) + 24 (January) = 65 days.\n\nLet me calculate: November 20 → November 30 is 10 days; +31 = 41; +24 = 65. Yes, 65 days.\n\nBut let me double-check Ecuador's release date with other sources. For example, IMDb's release info page. Let me pull up the release dates page on IMDb.\n\nActually, IMDb's combined release info page: https://www.imdb.com/title/tt0762125/releaseinfo/. Let me try fetching this.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_d411741dcc8044a28667cc67",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.imdb.com/title/tt0762125/releaseinfo/\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Box Office Mojo lists Ecuador: November 20, 2009. Hmm, but wait—there's also a blog post about Cinemark (Ecuador?) showing \"PLANETA 51 (DOBLADA)\" in the screening schedule for December 3–9, 2009. That blog \"grafelbergnoticias.blogspot.com\"—let me check: is Cinemark in Ecuador? Actually, the snippet says \"Cartelera Cinemark del 3 al 9 de diciembre,\" and Planet 51 dubbed is already listed (not as \"ESTRENO\"), so it was already being screened by early December. This suggests an Ecuador release around late November. Box Office Mojo has Ecuador's release date as November 20, 2009.\n\nHmm, but wait—let me double-check. Box Office Mojo data can sometimes be wrong. Let me verify with another source. The question asks: \"Calculate the number of days between that film's theatrical release date in that country and the contest's end date.\" Contest end date: January 24, 2010 (from the video's fine print \"Instant Win Game ends 1/24/10\"). Country: Ecuador.\n\nIf Ecuador's release date is November 20, 2009, then the number of days from November 20, 2009 to January 24, 2010 = 10 (remainder of November) + 31 (December) + 24 (January) = 65 days.\n\nLet me calculate: November 20 → November 30 is 10 days; +31 = 41; +24 = 65. Yes, 65 days.\n\nBut let me double-check Ecuador's release date with other sources. For example, IMDb's release info page. Let me pull up the release dates page on IMDb.\n\nActually, IMDb's combined release info page: https://www.imdb.com/title/tt0762125/releaseinfo/. Let me try fetching this.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d411741dcc8044a28667cc67",
+      "content": "{\"https://www.imdb.com/title/tt0762125/releaseinfo/\": \"Title: Planet 51 (2009) - Release info - IMDb\\n\\nURL Source: https://www.imdb.com/title/tt0762125/releaseinfo/\\n\\nMarkdown Content:\\n![Image 1]\\n\\n[]\\n\\nMenu \\n\\n- [x] \\n\\n[]\\n\\nMovies \\n\\n[Release calendar][Top 250 movies][Most popular movies][Browse movies by genre][Top box office][Showtimes & tickets][Movie news][India movie spotlight]\\n\\nTV shows \\n\\n[What's on TV & streaming][Top 250 TV shows][Most popular TV shows][Browse TV shows by genre][TV news]\\n\\nWatch \\n\\n[What to watch][Latest trailers][IMDb Originals][IMDb Picks][IMDb Spotlight][Family entertainment guide][IMDb Podcasts]\\n\\nAwards & events \\n\\n[Oscars][Primetime Emmys][Scary Good Picks][Halloween Family Fun][Fall TV Guide][Most Anticipated This Month][STARmeter Awards][Awards Central][Festival Central][All events]\\n\\nCelebs \\n\\n[Born today][Trending people][Celebrity news]\\n\\nCommunity \\n\\n[IMDb Labs][Help center][Contributor zone][Polls]\\n\\n[For industry professionals]* Language English (United States) \\n \\n\\n- [x] \\n\\n[]\\n\\n* Language\\n\\n* Fully supported\\n\\n* English (United States)\\n\\n[Partially supported]\\n\\nSome content may be auto-translated\\n\\n* Français (Canada)\\n* Français (France)\\n* Deutsch (Deutschland)\\n* हिंदी (भारत)\\n* Italiano (Italia)\\n* Português (Brasil)\\n* Español (España)\\n* Español (México)\\n\\n[]- [x] \\n\\nAll All\\n\\n8 suggestions available\\n\\n[]\\n\\n[Watchlist]\\n\\n[Sign in]\\n\\n[Sign in]\\n\\nNew customer?[Create account]\\n\\nEN- [x] \\n\\n* Fully supported\\n\\n* English (United States)\\n\\n[Partially supported]\\n\\nSome content may be auto-translated\\n\\n* Français (Canada)\\n* Français (France)\\n* Deutsch (Deutschland)\\n* हिंदी (भारत)\\n* Italiano (Italia)\\n* Português (Brasil)\\n* Español (España)\\n* Español (México)\\n\\n[Use app]\\n\\n[Back]\\n\\n* [Cast & crew]\\n* [User reviews]\\n* [Trivia]\\n\\n[IMDbPro]\\n\\nAll topics\\n\\n![Image 3: Dwayne Johnson, Justin Long, and Freddie Benedict in Planet 51 (2009)]\\n\\n[]\\n\\n# Release info\\n\\n## Planet 51\\n\\nJump to \\n\\n## [Release date]\\n\\nEdit\\n\\n* [United States]\\n\\n  * November 14, 2009(Westwood, California, premiere)\\n\\n[]\\n* [Malaysia]\\n\\n  * November 19, 2009\\n\\n[]\\n* [Peru]\\n\\n  * November 19, 2009\\n\\n[]\\n* [Russia]\\n\\n  * November 19, 2009\\n\\n[]\\n* [Ukraine]\\n\\n  * November 19, 2009\\n\\n[]\\n\\n50 more See all\\n\\n## [Also known as (AKA)]\\n\\nEdit\\n\\n* (original title)\\n\\n  * Planet 51\\n\\n* Argentina\\n\\n  * Planeta 51\\n\\n* Argentina\\n\\n  * Planet 51\\n\\n* Australia\\n\\n  * Planet 51\\n\\n* Azerbaijan\\n\\n  * Planeta 51\\n\\n* Bosnia and Herzegovina\\n\\n  * Planeta 51(Croatian)\\n\\n48 more See all\\n\\n## [Contribute to this page]\\n\\nSuggest an edit or add missing content\\n\\n* [Learn more about contributing][]\\n\\n[Edit page]\\n\\n## More from this title\\n\\n## More to explore\\n\\n![Image 4: Production art]\\n\\n[List]\\n\\n[The Biggest Movies and TV Coming in October]\\n\\n[Add these to your Watchlist]\\n\\n#### Editorial lists\\n\\nRelated lists created by IMDb editors\\n\\n[What's New on Prime Video in October 2024 Updated 1y ago•205 titles ![Image 5: Henry Fonda, Martin Balsam, Jack Klugman, Lee J. Cobb, Ed Begley, Edward Binns, John Fiedler, E.G. Marshall, Joseph Sweeney, George Voskovec, Jack Warden, and Robert Webber in 12 Angry Men (1957)]]\\n\\n[What's new on HBO and HBO Max in January 2023 Updated 4y ago•111 titles ![Image 6: 20 Feet from Stardom (2013)]]\\n\\n[What's New on Hulu in February 2022 Updated 5y ago•142 titles ![Image 7: John Hurt, Bob Flag, and Suzanna Hamilton in 1984 (1984)]]\\n\\n[Everything Coming to Hulu in May 2020 Updated 6y ago•87 titles ![Image 8: Jacki Weaver and Phoebe Tonkin in Bloom (2019)]]\\n\\n![Image 9: Production art]\\n\\n[List]\\n\\n[The Best New and Upcoming Horror]\\n\\n[See the list]\\n\\n#### [User lists]\\n\\nRelated lists from IMDb users\\n\\n[Create a list]\\n\\n[Dessene Animate Created 9y ago•24 titles ![Image 10: Denis Leary, Dave Foley, Hayden Panettiere, and Joe Ranft in A Bug's Life (1998)]]\\n\\n[Space movies Created 4mo ago•20 titles ![Image 11: Brad Pitt in Ad Astra (2019)]]\\n\\n[Animation Created 9y ago•43 titles ![Image 12: T.J. Miller in The Emoji Movie (2017)]]\\n\\n[My HD Movies Created 15y ago•28 titles ![Image 13: Janeane Garofalo, Ian Holm, Brian Dennehy, John Ratzenberger, James Remar, Will Arnett, Brad Garrett, Kathy Griffin, Brad Bird, Lindsey Collins, Walt Dohrn, Tony Fucile, Michael Giacchino, Bradford Lewis, Danny Mann, Teddy Newton, Patton Oswalt, Lou Romano, Peter Sohn, Jake Steinfeld, Stéphane Roux, Lori Richardson, Thomas Keller, Julius Callahan, Marco Boerries, Andrea Boerries, and Jack Bird in Ratatouille (2007)]]\\n\\n[To watch Created 13y ago•21 titles ![Image 14: Paddy Considine, Martin Freeman, Nick Frost, Eddie Marsan, Simon Pegg, and Rosamund Pike in The World's End (2013)]]\\n\\n[CGI Films that I've seen from 2000-2010 Created 15y ago•39 titles ![Image 15: Elijah Wood in 9 (2009)]]\\n\\n#### [User polls]\\n\\nRelated polls from IMDb users\\n\\n[The Adventures of Dwayne Johnson ![Image 16: Vin Diesel, Jordana Brewster, Dwayne Johnson, Sung Kang, Ludacris, Elsa Pataky, Matt Schulze, Tyrese Gibson, Paul Walker, Tego Calderon, Don Omar, and Gal Gadot in Fast Five (2011)]]\\n\\n[Best Dwayne Johnson Movie ![Image 17: Jack Black, Kevin Hart, Dwayne Johnson, and Karen Gillan in Jumanji: Welcome to the Jungle (2017)]]\\n\\n[Comedy Movies Set In Space ![Image 18: Vin Diesel, Bradley Cooper, Chris Pratt, Zoe Saldaña, and Dave Bautista in Guardians of the Galaxy (2014)]]\\n\\n[How many times have you seen your favorite movie? ![Image 19: Jack Nicholson in One Flew Over the Cuckoo's Nest (1975)]]\\n\\n[Movie and TV Astronauts: Who have the Right Stuff? ![Image 20: Matt Damon in The Martian (2015)]]\\n\\n[Astronaut Posters ![Image 21: Matthew McConaughey in Interstellar (2014)]]\\n\\n![Image 22: Production art]\\n\\n[Photos]\\n\\n[Actors' Early Horror Movie Roles]\\n\\n[See the gallery]\\n\\n### Recently viewed\\n\\nYou have no recently viewed pages\\n\\n[Get the IMDb app]\\n\\n[Sign in for more access][Sign in for more access]\\n\\nFollow IMDb on social\\n\\n* []\\n* []\\n* []\\n* []\\n* []\\n\\nGet the IMDb app\\n\\nFor Android and iOS\\n\\n![Image 23: Get the IMDb app]\\n\\n[]\\n\\n* []\\n* []\\n* []\\n* []\\n* []\\n\\n* [Help]\\n* [Site Index]\\n* [IMDbPro]\\n* [Box Office Mojo]\\n* [License IMDb Data]\\n\\n* [Press Room]\\n* [Advertising]\\n* [Jobs]\\n* [Conditions of Use]\\n* [Privacy Policy]\\n* [][Your Ads Privacy Choices] \\n\\n© 1990-2026 by IMDb.com, Inc.\\n\\nBack to top\\n\"}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "IMDb's release info doesn't fully display Ecuador's date in the extracted portion (only the first few entries and \"50 more\"). Box Office Mojo clearly states Ecuador: November 20, 2009.\n\nHmm, but wait. Is that correct? Planet 51's US release was November 20, 2009. According to Box Office Mojo, Ecuador is also November 20, 2009. Colombia is also November 20, 2009. This seems reasonable — many Latin American countries opened simultaneously.\n\nBut let me double-check with another source. For example, a Spanish-language Wikipedia article about Planet 51 that might have a release date table. Or \"estrenos\" sites. Actually, the Cinemark blog dated December 3, 2009 lists Planeta 51 (doblada) as already being shown — that might be Ecuador (Cinemark operates in Ecuador, and the blog mentions \"TE\" = Teatro? Hmm). Let me check whether that blog is Ecuadorian. The blog grafelbergnoticias — actually, could it be from Ecuador? Let me quickly check. But honestly, Box Office Mojo is a reliable enough source.\n\nLet me also confirm the contest end date from the video: the legal text says \"Instant Win Game ends 1/24/10.\" Yes, it's displayed at 25-30 seconds: \"Instant Win Game ends 1/24/10.\" So the contest ended on January 24, 2010.\n\nNext, let me calculate the number of days from November 20, 2009 to January 24, 2010.\n\nNovember 20 → 30: 10 days\nDecember: 31 → 41\nJanuary 24: +24 → 65 days.\n\nSo 65 days.\n\nLet me verify with code, and also reconfirm the Ecuador date via a search just to be safe. Also, let me confirm that the movie is \"Planet 51\" and the cooking show's country is Ecuador (yes, week 51, Ecuador).\n\nInteresting coincidence: both are 51.\n\nLet me run the date calculation code.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_652030978aca408db73c0303",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"from datetime import date\\nrelease_ec = date(2009, 11, 20)   # Planet 51 theatrical release in Ecuador (Box Office Mojo)\\ncontest_end = date(2010, 1, 24)   # Instant Win Game ends 1/24/10\\ndelta = (contest_end - release_ec).days\\nprint(\\\"Days between:\\\", delta)\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_a156809745e2444c8bf0a2d3",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Planet 51\\\" OR \\\"Planeta 51\\\" Ecuador \\\"20 de noviembre\\\" 2009 estreno\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "IMDb's release info doesn't fully display Ecuador's date in the extracted portion (only the first few entries and \"50 more\"). Box Office Mojo clearly states Ecuador: November 20, 2009.\n\nHmm, but wait. Is that correct? Planet 51's US release was November 20, 2009. According to Box Office Mojo, Ecuador is also November 20, 2009. Colombia is also November 20, 2009. This seems reasonable — many Latin American countries opened simultaneously.\n\nBut let me double-check with another source. For example, a Spanish-language Wikipedia article about Planet 51 that might have a release date table. Or \"estrenos\" sites. Actually, the Cinemark blog dated December 3, 2009 lists Planeta 51 (doblada) as already being shown — that might be Ecuador (Cinemark operates in Ecuador, and the blog mentions \"TE\" = Teatro? Hmm). Let me check whether that blog is Ecuadorian. The blog grafelbergnoticias — actually, could it be from Ecuador? Let me quickly check. But honestly, Box Office Mojo is a reliable enough source.\n\nLet me also confirm the contest end date from the video: the legal text says \"Instant Win Game ends 1/24/10.\" Yes, it's displayed at 25-30 seconds: \"Instant Win Game ends 1/24/10.\" So the contest ended on January 24, 2010.\n\nNext, let me calculate the number of days from November 20, 2009 to January 24, 2010.\n\nNovember 20 → 30: 10 days\nDecember: 31 → 41\nJanuary 24: +24 → 65 days.\n\nSo 65 days.\n\nLet me verify with code, and also reconfirm the Ecuador date via a search just to be safe. Also, let me confirm that the movie is \"Planet 51\" and the cooking show's country is Ecuador (yes, week 51, Ecuador).\n\nInteresting coincidence: both are 51.\n\nLet me run the date calculation code.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_652030978aca408db73c0303",
+      "content": "{\"stdout\": \"Days between: 65\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_a156809745e2444c8bf0a2d3",
+      "content": "[{\"id\": 1, \"title\": \"Planeta 51, el más ambicioso aterrizaje español en Hollywood\", \"url\": \"https://www.latercera.com/noticia/planeta-51-el-mas-ambicioso-aterrizaje-espanol-en-hollywood/\", \"snippet\": \"Planeta 51, que se estrena el 20 de noviembre en EEUU, supone el debut de Illion y la realización de su objetivo fundacional en 2002, que es la producción ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Diversión para los más pequeños - Meristation\", \"url\": \"https://as.com/meristation/2009/11/15/analisis/1258268400_158313.html\", \"snippet\": \"Como no podía ser de otra forma, la película Planet 51, creada en España, cuenta con su propio juego, obra de Pyro Studios ... 20 de noviembre ...\", \"date\": \"Sep 14, 2016\"}, {\"id\": 3, \"title\": \"William Gutiérrez Levy\", \"url\": \"https://www.cubanosfamosos.com/es/biografia/william%20gutierrez%20levy\", \"snippet\": \"... Planet 51\\\" al personaje del astronauta Capitán Charles `Chuck` Baker (que ... 20 de noviembre de 2020. Fuente: Heraldo de México. Leer más.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Unidos contra la Violencia de Género\", \"url\": \"https://www.alcobendas.org/sites/default/files/2021-09/189.pdf\", \"snippet\": \"Recordamos que el número correcto es el 72.647. Entradas gratis para. 'Planet 51' ... viernes, 20 de noviembre. Si todavía estás a tiempo no pier- das la ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Noticias sobre la industria del cine - Publicine Europe\", \"url\": \"https://www.publicine.es/publicidad_cine_noticias_de_cine.htm\", \"snippet\": \"... 20 de noviembre en la ciudad de Miami. El vídeo se puede ver en redes ... Los otros dos títulos españoles, Celda 211 y Planet 51, también han tenido muy buenos ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Eventos sociales navideños 2009 | PDF | Prisión\", \"url\": \"https://es.scribd.com/document/24449945/RevistaAqui-748ok\", \"snippet\": \"El 20 de noviembre muchos agricultores toledanos secundaron el histórico paro general ... Planet 51 convertir en amigos fieles y du- deseos sin cortapisas ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"La comedia y el melodrama en el audiovisual ...\", \"url\": \"https://dokumen.pub/la-comedia-y-el-melodrama-en-el-audiovisual-iberoamericano-9783954872640.html\", \"snippet\": \"... Planet 51 (Jorge Blanco, Javier Abad y Carlos Martínez, 2009) y Las ... 20 de noviembre de 1975. Se trata de una biografía parcial, limitada a dos de ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"INDUSTRIA DEL CINE Y EL AUDIOVISUAL EN ESPAÑA\", \"url\": \"https://festivaldemalaga.com/Content/source/img/superdestacados/20200401110850_159_super_destacado_descarga.pdf\", \"snippet\": \"... Planet 51 (Javier Blan- co, 2009). Este largometraje, estrenado en ... 20 de noviembre de 2018, y cifras extraídas de la base de datos ...\", \"date\": \"Apr 1, 2020\"}, {\"id\": 9, \"title\": \"BALCEI, nº145 by Balcei Peródico local de Alcorisa\", \"url\": \"https://issuu.com/balcei/docs/balcei_145/75\", \"snippet\": \"... 2009, cuando se estrenaron “Ágora” y “Planet 51”. Sin duda la ... El 20 de noviembre de 1972, a bordo de un cohete Scout fue lanzado ...\", \"date\": \"Mar 7, 2013\"}, {\"id\": 10, \"title\": \"CONFERENCIAS Y MESAS REDONDAS\", \"url\": \"https://bellasartes.ucm.es/data/cont/docs/14-2020-03-03-ACTIVIDADES%202019red.pdf\", \"snippet\": \"Ha trabajado en la película de animación “Planet 51”, en la producción de títulos como la trilogía ... Fechas: 18, 19 y 20 de noviembre de 2019.\", \"date\": \"Mar 29, 2019\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "**Analysis of the two videos:**\n\n**Video 1 (contest promo):** This is a Kid Cuisine (ConAgra Foods) commercial tied to the animated film **Planet 51** — the astronaut duck \"Casey\" gets lost on Planet 51, the boxes advertise \"Planet 51 Kid Cuisine meals,\" and the marquee reads \"Movie Secret Agent Party Tonight!\" The legal fine print states: *\"Instant Win Game ends **1/24/10**\"* → contest end date = **January 24, 2010**.\n\n**Video 2 (cooking show):** This is Cliffieland's \"Cooking Every Country\" series, week/country #51, featuring the cuisine of **Ecuador** (pesado encocado, platanos maduros con queso, arroz estilo Ecuador, canchitas).\n\n**Release date lookup:** Per Box Office Mojo's international release data for *Planet 51*, the film opened theatrically in **Ecuador on November 20, 2009** (grossing $177,233 there), consistent with its simultaneous Latin American rollout (Colombia Nov 20, Peru Nov 19).\n\n**Calculation:**\n- From November 20, 2009 → January 24, 2010\n- Remaining days in November: 10; December: 31; January: 24\n- Total: 10 + 31 + 24 = **65 days** (verified by computation)\n\n<answer>65 days</answer>\n\nThe animated movie is **Planet 51**, whose contest (Kid Cuisine Instant Win Game) ended **January 24, 2010**; the cooking show features **Ecuador**, where *Planet 51* was released theatrically on **November 20, 2009** — a gap of **65 days** between the Ecuadorian release and the contest's end date.",
+      "reasoning": "The search couldn't directly confirm Ecuador's release date, but Box Office Mojo explicitly lists Ecuador: November 20, 2009. This is consistent with simultaneous releases across Latin America (Colombia also November 20, Peru November 19).\n\nTherefore:\n- Animated film: Planet 51 (Sony/TriStar, 2009) — confirmed by the Kid Cuisine commercial tie-in (\"Planet 51 Kid Cuisine meal\", \"movie secret agent party tonight!\", URL kidcuisine.eprize.net/planet51, sponsor ConAgra Foods).\n- Contest end date: January 24, 2010 (fine print: \"Instant Win Game ends 1/24/10\").\n- Cooking show: Cliffieland's \"Cooking Every Country\" — Week 51: Ecuador.\n- Planet 51's Ecuador release: November 20, 2009.\n- Days from November 20, 2009 to January 24, 2010 = 65 days.\n\nFinal answer: 65 days.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The search couldn't directly confirm Ecuador's release date, but Box Office Mojo explicitly lists Ecuador: November 20, 2009. This is consistent with simultaneous releases across Latin America (Colombia also November 20, Peru November 19).\n\nTherefore:\n- Animated film: Planet 51 (Sony/TriStar, 2009) — confirmed by the Kid Cuisine commercial tie-in (\"Planet 51 Kid Cuisine meal\", \"movie secret agent party tonight!\", URL kidcuisine.eprize.net/planet51, sponsor ConAgra Foods).\n- Contest end date: January 24, 2010 (fine print: \"Instant Win Game ends 1/24/10\").\n- Cooking show: Cliffieland's \"Cooking Every Country\" — Week 51: Ecuador.\n- Planet 51's Ecuador release: November 20, 2009.\n- Days from November 20, 2009 to January 24, 2010 = 65 days.\n\nFinal answer: 65 days.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Planet 51 movie Ecuador release date 2010\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Planet 51 (2009)",
+          "url": "https://www.imdb.com/title/tt0762125/",
+          "snippet": "Release date November 20, 2009 (United States) Also known as Planeta 51 Filming locations Las Rozas de Madrid, Madrid, Spain",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Planet 51",
+          "url": "https://en.wikipedia.org/wiki/Planet_51",
+          "snippet": "Planet 51 was released on 20 November 2009 in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners respectively ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Everything You Need to Know About Planet 51 Movie (2009)",
+          "url": "https://www.movieinsider.com/m4533/planet-51",
+          "snippet": "Planet 51 was released on DVD and Blu-ray on Wednesday, March 09, 2010 . The release was 6054 days ago. Availability may vary by region.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Planet 51 | Sony Pictures Entertaiment Wiki | Fandom",
+          "url": "https://sony.fandom.com/wiki/Planet_51",
+          "snippet": "Planet 51 was released on 30 December 2009 in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners respectively ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Watch Planet 51",
+          "url": "https://www.netflix.com/title/70109891",
+          "snippet": "After landing on a planet reminiscent of 1950s suburbia, a human astronaut tries to avoid capture, recover his spaceship and make it home safely.",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "On this day in 2009, Planet 51 was released in theaters",
+          "url": "https://www.facebook.com/groups/nostalgiaworldofficial/posts/1943428249613436/",
+          "snippet": "On this day in 2009, Planet 51 was released in theaters",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Planet 51",
+          "url": "https://www.rottentomatoes.com/m/planet_51",
+          "snippet": "When astronaut Capt. Charles \"Chuck\" Baker lands on Planet 51, he thinks he is the first life form to set foot there. He gets the surprise of his life when ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "New Release: Planet 51 DVD and Blu-ray - Disc Dish",
+          "url": "https://www.discdish.com/2010/02/15/new-release-planet-51/",
+          "snippet": "Planet 51 went into orbit on DVD and Blu-ray on March 9, 2010, priced at $28.96 on DVD and at $39.95",
+          "date": "Feb 15, 2010"
+        },
+        {
+          "id": 9,
+          "title": "Planet 51 (2009)",
+          "url": "https://www.boxofficemojo.com/title/tt0762125/",
+          "snippet": "Release Date, Opening, Gross. Domestic, Nov 20, 2009, $12,286,129, $42,194,060 ... Ecuador, Nov 20, 2009, –, $177,233. Bolivia, Jan 7, 2010, $12,462, $39,030.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Planet 51 - Funvasion",
+          "url": "https://funvasion.miraheze.org/wiki/Planet_51",
+          "snippet": "Planet 51 is a 2009 animated science fiction comedy film directed by Jorge Blanco (in his feature length directorial debut) from a script by Joe Stillman.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Planet 51\\\" 2009 film release dates by country Wikipedia\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Planet 51",
+          "url": "https://en.wikipedia.org/wiki/Planet_51",
+          "snippet": "Planet 51 was released on 20 November 2009 in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners respectively ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Planet 51 - Simple English Wikipedia, the free encyclopedia",
+          "url": "https://simple.wikipedia.org/wiki/Planet_51",
+          "snippet": "Planet 51 is a computer animated movie made by Ilion Animation Studios and ... Release dates. 14 November 2009 (2009-11-14) (Westwood); 20 November 2009 ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Planet 51 | JH Wiki Collection Wiki | Fandom",
+          "url": "https://jhmovie.fandom.com/wiki/Planet_51",
+          "snippet": "Planet 51 was released on November 20, 2009, in the United States and Canada by Sony Pictures Releasing's TriStar Pictures and Remstar Media Partners ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Planet 51 (2009)",
+          "url": "https://www.imdb.com/title/tt0762125/",
+          "snippet": "Planet 51: Directed by Javier Abad, Jorge Blanco, Marcos Martínez. With Dwayne Johnson, Seann William Scott, Jessica Biel, Justin Long.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Planet 51 2009 Film Wikipedia",
+          "url": "https://www.instagram.com/popular/planet-51-2009-film-wikipedia/",
+          "snippet": "Planet 51 Planet 51 is a family-friendly animated sci-fi comedy about what happens when humans become the “aliens.” The story takes place on a peaceful alien ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Planet 51 - Aiden Bave Wiki - Fandom",
+          "url": "https://aiden-bave.fandom.com/wiki/Planet_51",
+          "snippet": "Planet 51 was released on November 20, 2008, by TriStar Pictures. It was originally titled Planet One. Produced on a budget of $70 million, Planet 51 is the ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "List of films featuring extraterrestrials",
+          "url": "https://en.wikipedia.org/wiki/List_of_films_featuring_extraterrestrials",
+          "snippet": "Planet 51, 2009. Planet of the Apes, 2001, Planet of the Apes. Planet of the Vampires, 1965. Planeta Bur, 1962. The Pod People, 1983. Power ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Planet 51 Facts for Kids",
+          "url": "https://kids.kiddle.co/Planet_51",
+          "snippet": "Planet 51 cost about $70 million to make. This made it the most expensive film produced in Spain at that time. The movie was released on November 20, 2009, by ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Planet 51 (Western Animation)",
+          "url": "https://tvtropes.org/pmwiki/pmwiki.php/WesternAnimation/Planet51",
+          "snippet": "Planet 51 is a Spanish/American All-CGI Cartoon feature from 2009. It is the first animated film by TriStar Pictures since The Trumpet of the Swan.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "List of computer-animated films",
+          "url": "https://en.wikipedia.org/wiki/List_of_computer-animated_films",
+          "snippet": "Planet 51, November 20, 2009, Ilion Animation Studios · HandMade Films International, Spain United Kingdom United States. Plankton: The Movie, March 7, 2025 ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.boxofficemojo.com/title/tt0762125/\"]\n\n}",
+      "result": {
+        "https://www.boxofficemojo.com/title/tt0762125/": "Title: Planet 51 - Box Office Mojo\n\nURL Source: https://www.boxofficemojo.com/title/tt0762125/\n\nMarkdown Content:\n![Image 1]\n\n[]\n\n[](javascript:void(0))\n\n[][][]\n\n[Domestic][International][Worldwide][Calendar][All Time][Showdowns][Indices]\n\n![Image 2]\n\n# Planet 51 (2009)\n\nAn alien civilization is invaded by Astronaut Chuck Baker, who believes that the planet was uninhabited. Wanted by the military, Baker must get back to his ship before it goes into orbit without him.\n\n  \n[Cast information]  \n[Crew information]  \n[Company information]  \n[News]  \n[Box office]  \n\n[Animation]  \n[CGI Animation]\n\n[Genre keyword rankings](javascript:void(0))\n\n[![Image 3] Title Summary]\n\n## All Releases\n\n Domestic (39.9%) \n$42,194,060\n\n International (60.1%) \n$63,453,042\n\n Worldwide \n$105,647,102\n\n  \n[Cast information]  \n[Crew information]  \n[Company information]  \n[News]  \n[Box office]  \n\n[Animation]  \n[CGI Animation]\n\n[Genre keyword rankings](javascript:void(0))\n\n Summary Details \n\nDomestic Distributor Sony Pictures Releasing  \n[See full company information]\n\nDomestic Opening[$12,286,129]\n\nBudget$70,000,000\n\nEarliest Release Date November 19, 2009 (4 markets)\n\nMPAA PG\n\nRunning Time 1 hr 31 min\n\nGenres Adventure Animation Comedy Family Fantasy Sci-Fi\n\n IMDbPro [See more details at IMDbPro]\n\n[Performance][Cast and Crew]\n\nAll-Time Rankings\n\n[Related Stories][Similar Movies]\n\n### Domestic\n\n| Area | Release Date | Opening | Gross |\n| - | - | - | - |\n| [Domestic] | Nov 20, 2009 | $12,286,129 | $42,194,060 |\n\n### Europe, Middle East, and Africa\n\n| Area | Release Date | Opening | Gross |\n| - | - | - | - |\n| [Spain] | Nov 27, 2009 | $4,342,884 | $15,762,612 |\n| [France] | Feb 3, 2010 | $1,625,264 | $8,264,852 |\n| [United Kingdom] | Nov 20, 2009 | – | $7,368,928 |\n| [Italy] | Nov 20, 2009 | $1,155,765 | $3,405,781 |\n| [Germany] | Dec 3, 2009 | $586,619 | $2,181,772 |\n| [Poland] | Jan 29, 2010 | $394,513 | $1,796,388 |\n| [Portugal] | Dec 3, 2009 | $242,799 | $1,424,154 |\n| [Belgium] | Feb 10, 2010 | $138,250 | $862,786 |\n| [South Africa] | Jan 8, 2010 | $273,599 | $603,855 |\n| [Sweden] | Jan 15, 2010 | $131,347 | $470,378 |\n| [Greece] | Nov 26, 2009 | $98,576 | $444,526 |\n| [United Arab Emirates] | Nov 26, 2009 | $163,960 | $375,812 |\n| [Denmark] | Jan 7, 2010 | $102,053 | $369,770 |\n| [Czech Republic] | Nov 19, 2009 | – | $341,738 |\n| [Austria] | Dec 4, 2009 | $91,185 | $337,111 |\n| [Türkiye] | Jun 18, 2010 | $63,557 | $335,900 |\n| [Netherlands] | Apr 28, 2010 | $42,408 | $329,237 |\n| [Ukraine] | Nov 26, 2009 | $133,228 | $319,078 |\n| [Finland] | Jan 1, 2010 | $78,978 | $229,683 |\n| [Slovenia] | Dec 31, 2009 | $46,615 | $179,710 |\n| [Bulgaria] | Dec 11, 2009 | $42,535 | $149,540 |\n| [Slovakia] | Jan 14, 2010 | – | $104,623 |\n| [Norway] | Jan 22, 2010 | $35,875 | $96,609 |\n| [Iceland] | Jan 22, 2010 | $12,802 | $47,893 |\n| [Romania] | Dec 4, 2009 | – | $47,047 |\n| [Serbia and Montenegro] | Dec 3, 2009 | $6,895 | $38,221 |\n| [Hungary] | Jan 14, 2010 | $35,724 | $35,724 |\n| [Lebanon] | Dec 24, 2009 | – | $30,874 |\n| [Croatia] | May 6, 2010 | $7,989 | $27,817 |\n\n### Latin America\n\n| Area | Release Date | Opening | Gross |\n| - | - | - | - |\n| [Mexico] | Nov 27, 2009 | $1,385,911 | $4,590,034 |\n| [Brazil] | Nov 27, 2009 | $478,942 | $2,254,074 |\n| [Colombia] | Nov 20, 2009 | $213,163 | $967,122 |\n| [Peru] | Nov 19, 2009 | $155,076 | $555,260 |\n| [Venezuela] | Dec 11, 2009 | $252,720 | $452,778 |\n| [Chile] | Nov 26, 2009 | $69,946 | $271,297 |\n| [Argentina] | Nov 26, 2009 | $147,665 | $179,380 |\n| [Ecuador] | Nov 20, 2009 | – | $177,233 |\n| [Bolivia] | Jan 7, 2010 | $12,462 | $39,030 |\n| [Uruguay] | Dec 4, 2009 | $7,721 | $35,722 |\n\n### Asia Pacific\n\n| Area | Release Date | Opening | Gross |\n| - | - | - | - |\n| [Russia/CIS] | Nov 19, 2009 | $1,540,711 | $3,450,434 |\n| [Australia] | Dec 10, 2009 | $582,389 | $2,581,551 |\n| [Singapore] | Dec 10, 2009 | $223,737 | $487,588 |\n| [New Zealand] | Dec 10, 2009 | $66,244 | $293,963 |\n| [South Korea] | Oct 21, 2010 | $132,784 | $253,724 |\n| [Malaysia] | Nov 19, 2009 | $57,841 | $158,215 |\n| [Hong Kong] | Apr 1, 2010 | $40,286 | $117,746 |\n| [Philippines] | Dec 2, 2009 | – | $64,020 |\n\n[]\nLatest Updates: [News] | [Daily] | [Weekend] | [All Time] | [International] | [Showdowns]\n\n[Glossary] | [User Guide] | [License IMDb Data] | [Help]\n\nBoxOfficeMojo.com by IMDbPro - an [IMDb] company.\n\n© IMDb.com, Inc. or its affiliates. All rights reserved. Box Office Mojo and IMDb are trademarks or registered trademarks of IMDb.com, Inc. or its affiliates. [Conditions of Use] and [Privacy Policy] under which this service is provided to you.\n"
+      }
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Planeta 51\\\" Ecuador estreno fecha enero 2010 cines\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Críticas de Planet 51 (Planeta 51) (2009)",
+          "url": "https://m.filmaffinity.com/es/movieuserreviews2.php?movie_id=835976&orderby=6&page=3",
+          "snippet": "Leer críticas de Planet 51 (Planeta 51) , dirigida por . Año: 2009. Consulta críticas de usuarios y opiniones sobre Planet 51 (Planeta 51) , y lee lo que ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Noticias sobre la industria del cine - Publicine Europe",
+          "url": "https://www.publicine.es/publicidad_cine_noticias_de_cine.htm",
+          "snippet": "o La cruda realidad, lograron mucho mejores estrenos, con similares campañas, menor casting y peor fecha de estreno. ... PLANETA 51 ENTRAN EN LA CARRERA DE LOS ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Especial Cine de Oscar en HD | PDF | Madrid",
+          "url": "https://es.scribd.com/document/429381577/Revista-El-Cine-en-Casa-101",
+          "snippet": "Director: Jorge Blanco y Javier Abad aterriza en el Planeta 51 pensando que es el primer ser vivo. Género: Animación en pisarlo. Para su sorpresa, descubre ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Condorito: la película - Wikipedia, la enciclopedia libre",
+          "url": "https://es.wikipedia.org/wiki/Condorito:_la_pel%C3%ADcula",
+          "snippet": "... Planeta 51 y Pie Pequeño). Para distribuir la película en Estados Unidos, Corea del Sur y Rusia y contrato a 180 animadores y artistas para el desarrollo de ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "La exportación de cine argentino en el circuito comercial ...",
+          "url": "https://www.academia.edu/37404104/La_exportaci%C3%B3n_de_cine_argentino_en_el_circuito_comercial_internacional_Pr%C3%A1cticas_mercados_y_pol%C3%ADticas",
+          "snippet": "... estrenos locales, espectadores totales y espectadores de cine local. En ... Planeta 51 Reino 45.594 21/10/2010 Ilion, Show- Unido, box Plumíferos ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Estudio sobre la Exportación de Cine Argentino: Prácticas ...",
+          "url": "http://www.studocu.com/en-us/document/universidad-nacional-de-cuyo/comunicacion-cinematografica-cs/borello-jose-a-y-otros-politica-comercial-insercion-internacional-y-desarrollo-productivo/112037288",
+          "snippet": "Planeta 51. España,. Reino. Unido,. 45.594 21/10/2010. Animación. Ilion, Show-. box. Plumíferos Argentina 44.650 17/9/2013 Vic. Atrapa. la bandera España 44.574 ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "cine",
+          "url": "https://www.enciclopediadelapolitica.org/termino/cine/",
+          "snippet": "Estos uploaders piráticos colocaron en la red las películas de estreno con mayor prestigio —»Ágora» de Alejandro Amenábar, «Planeta 51 ...",
+          "date": "Jul 3, 2018"
+        },
+        {
+          "id": 8,
+          "title": "Cartelera Cinemark del 3 al 9 de diciembre",
+          "url": "http://grafelbergnoticias.blogspot.com/2009/12/cartelera-cinemark-del-3-al-9-de.html",
+          "snippet": "6 PLANETA 51 (DOBLADA) TE 11:20 13:30 15:30 18:00 7 LA PRINCESA Y EL SAPO (DOBLADA) TE ESTRENO 13:00 15:20 17:40 7 LUNA NUEVA (SUBTITULADA) ...",
+          "date": "Dec 3, 2009"
+        },
+        {
+          "id": 9,
+          "title": "Actas II Congreso 2012",
+          "url": "https://www.calameo.com/books/0044043776a241894844d",
+          "snippet": "... Planeta 51 (título original: Planet 51), Javier Abad, Jorge Blanco, Marcos Martínez e Ignacio Pérez Dolset, año 2009. Ficha en la base de datos ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "México Francia - Ambiente Virtual de Pesquisa",
+          "url": "https://www.avp.pro.br/pluginfile.php/4965/mod_glossary/attachment/518/2008%20M%C3%A9xico%20Francia%20memoria%20de%20una%20sensibilidad%20com%C3%BAn.pdf",
+          "snippet": "... planeta.51. 316. Page 319. Adolfo Pedro Huet Brodeke en 1925. Fuente: Archivo particular de la Familia Huet Herrera. 26. Por último, otro elemento fundamental ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.imdb.com/title/tt0762125/releaseinfo/\"]\n\n}",
+      "result": {
+        "https://www.imdb.com/title/tt0762125/releaseinfo/": "Title: Planet 51 (2009) - Release info - IMDb\n\nURL Source: https://www.imdb.com/title/tt0762125/releaseinfo/\n\nMarkdown Content:\n![Image 1]\n\n[]\n\nMenu \n\n- [x] \n\n[]\n\nMovies \n\n[Release calendar][Top 250 movies][Most popular movies][Browse movies by genre][Top box office][Showtimes & tickets][Movie news][India movie spotlight]\n\nTV shows \n\n[What's on TV & streaming][Top 250 TV shows][Most popular TV shows][Browse TV shows by genre][TV news]\n\nWatch \n\n[What to watch][Latest trailers][IMDb Originals][IMDb Picks][IMDb Spotlight][Family entertainment guide][IMDb Podcasts]\n\nAwards & events \n\n[Oscars][Primetime Emmys][Scary Good Picks][Halloween Family Fun][Fall TV Guide][Most Anticipated This Month][STARmeter Awards][Awards Central][Festival Central][All events]\n\nCelebs \n\n[Born today][Trending people][Celebrity news]\n\nCommunity \n\n[IMDb Labs][Help center][Contributor zone][Polls]\n\n[For industry professionals]* Language English (United States) \n \n\n- [x] \n\n[]\n\n* Language\n\n* Fully supported\n\n* English (United States)\n\n[Partially supported]\n\nSome content may be auto-translated\n\n* Français (Canada)\n* Français (France)\n* Deutsch (Deutschland)\n* हिंदी (भारत)\n* Italiano (Italia)\n* Português (Brasil)\n* Español (España)\n* Español (México)\n\n[]- [x] \n\nAll All\n\n8 suggestions available\n\n[]\n\n[Watchlist]\n\n[Sign in]\n\n[Sign in]\n\nNew customer?[Create account]\n\nEN- [x] \n\n* Fully supported\n\n* English (United States)\n\n[Partially supported]\n\nSome content may be auto-translated\n\n* Français (Canada)\n* Français (France)\n* Deutsch (Deutschland)\n* हिंदी (भारत)\n* Italiano (Italia)\n* Português (Brasil)\n* Español (España)\n* Español (México)\n\n[Use app]\n\n[Back]\n\n* [Cast & crew]\n* [User reviews]\n* [Trivia]\n\n[IMDbPro]\n\nAll topics\n\n![Image 3: Dwayne Johnson, Justin Long, and Freddie Benedict in Planet 51 (2009)]\n\n[]\n\n# Release info\n\n## Planet 51\n\nJump to \n\n## [Release date]\n\nEdit\n\n* [United States]\n\n  * November 14, 2009(Westwood, California, premiere)\n\n[]\n* [Malaysia]\n\n  * November 19, 2009\n\n[]\n* [Peru]\n\n  * November 19, 2009\n\n[]\n* [Russia]\n\n  * November 19, 2009\n\n[]\n* [Ukraine]\n\n  * November 19, 2009\n\n[]\n\n50 more See all\n\n## [Also known as (AKA)]\n\nEdit\n\n* (original title)\n\n  * Planet 51\n\n* Argentina\n\n  * Planeta 51\n\n* Argentina\n\n  * Planet 51\n\n* Australia\n\n  * Planet 51\n\n* Azerbaijan\n\n  * Planeta 51\n\n* Bosnia and Herzegovina\n\n  * Planeta 51(Croatian)\n\n48 more See all\n\n## [Contribute to this page]\n\nSuggest an edit or add missing content\n\n* [Learn more about contributing][]\n\n[Edit page]\n\n## More from this title\n\n## More to explore\n\n![Image 4: Production art]\n\n[List]\n\n[The Biggest Movies and TV Coming in October]\n\n[Add these to your Watchlist]\n\n#### Editorial lists\n\nRelated lists created by IMDb editors\n\n[What's New on Prime Video in October 2024 Updated 1y ago•205 titles ![Image 5: Henry Fonda, Martin Balsam, Jack Klugman, Lee J. Cobb, Ed Begley, Edward Binns, John Fiedler, E.G. Marshall, Joseph Sweeney, George Voskovec, Jack Warden, and Robert Webber in 12 Angry Men (1957)]]\n\n[What's new on HBO and HBO Max in January 2023 Updated 4y ago•111 titles ![Image 6: 20 Feet from Stardom (2013)]]\n\n[What's New on Hulu in February 2022 Updated 5y ago•142 titles ![Image 7: John Hurt, Bob Flag, and Suzanna Hamilton in 1984 (1984)]]\n\n[Everything Coming to Hulu in May 2020 Updated 6y ago•87 titles ![Image 8: Jacki Weaver and Phoebe Tonkin in Bloom (2019)]]\n\n![Image 9: Production art]\n\n[List]\n\n[The Best New and Upcoming Horror]\n\n[See the list]\n\n#### [User lists]\n\nRelated lists from IMDb users\n\n[Create a list]\n\n[Dessene Animate Created 9y ago•24 titles ![Image 10: Denis Leary, Dave Foley, Hayden Panettiere, and Joe Ranft in A Bug's Life (1998)]]\n\n[Space movies Created 4mo ago•20 titles ![Image 11: Brad Pitt in Ad Astra (2019)]]\n\n[Animation Created 9y ago•43 titles ![Image 12: T.J. Miller in The Emoji Movie (2017)]]\n\n[My HD Movies Created 15y ago•28 titles ![Image 13: Janeane Garofalo, Ian Holm, Brian Dennehy, John Ratzenberger, James Remar, Will Arnett, Brad Garrett, Kathy Griffin, Brad Bird, Lindsey Collins, Walt Dohrn, Tony Fucile, Michael Giacchino, Bradford Lewis, Danny Mann, Teddy Newton, Patton Oswalt, Lou Romano, Peter Sohn, Jake Steinfeld, Stéphane Roux, Lori Richardson, Thomas Keller, Julius Callahan, Marco Boerries, Andrea Boerries, and Jack Bird in Ratatouille (2007)]]\n\n[To watch Created 13y ago•21 titles ![Image 14: Paddy Considine, Martin Freeman, Nick Frost, Eddie Marsan, Simon Pegg, and Rosamund Pike in The World's End (2013)]]\n\n[CGI Films that I've seen from 2000-2010 Created 15y ago•39 titles ![Image 15: Elijah Wood in 9 (2009)]]\n\n#### [User polls]\n\nRelated polls from IMDb users\n\n[The Adventures of Dwayne Johnson ![Image 16: Vin Diesel, Jordana Brewster, Dwayne Johnson, Sung Kang, Ludacris, Elsa Pataky, Matt Schulze, Tyrese Gibson, Paul Walker, Tego Calderon, Don Omar, and Gal Gadot in Fast Five (2011)]]\n\n[Best Dwayne Johnson Movie ![Image 17: Jack Black, Kevin Hart, Dwayne Johnson, and Karen Gillan in Jumanji: Welcome to the Jungle (2017)]]\n\n[Comedy Movies Set In Space ![Image 18: Vin Diesel, Bradley Cooper, Chris Pratt, Zoe Saldaña, and Dave Bautista in Guardians of the Galaxy (2014)]]\n\n[How many times have you seen your favorite movie? ![Image 19: Jack Nicholson in One Flew Over the Cuckoo's Nest (1975)]]\n\n[Movie and TV Astronauts: Who have the Right Stuff? ![Image 20: Matt Damon in The Martian (2015)]]\n\n[Astronaut Posters ![Image 21: Matthew McConaughey in Interstellar (2014)]]\n\n![Image 22: Production art]\n\n[Photos]\n\n[Actors' Early Horror Movie Roles]\n\n[See the gallery]\n\n### Recently viewed\n\nYou have no recently viewed pages\n\n[Get the IMDb app]\n\n[Sign in for more access][Sign in for more access]\n\nFollow IMDb on social\n\n* []\n* []\n* []\n* []\n* []\n\nGet the IMDb app\n\nFor Android and iOS\n\n![Image 23: Get the IMDb app]\n\n[]\n\n* []\n* []\n* []\n* []\n* []\n\n* [Help]\n* [Site Index]\n* [IMDbPro]\n* [Box Office Mojo]\n* [License IMDb Data]\n\n* [Press Room]\n* [Advertising]\n* [Jobs]\n* [Conditions of Use]\n* [Privacy Policy]\n* [][Your Ads Privacy Choices] \n\n© 1990-2026 by IMDb.com, Inc.\n\nBack to top\n"
+      }
+    },
+    {
+      "turn": 4,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"from datetime import date\\nrelease_ec = date(2009, 11, 20)   # Planet 51 theatrical release in Ecuador (Box Office Mojo)\\ncontest_end = date(2010, 1, 24)   # Instant Win Game ends 1/24/10\\ndelta = (contest_end - release_ec).days\\nprint(\\\"Days between:\\\", delta)\"}",
+      "result": {
+        "stdout": "Days between: 65",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "turn": 4,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Planet 51\\\" OR \\\"Planeta 51\\\" Ecuador \\\"20 de noviembre\\\" 2009 estreno\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Planeta 51, el más ambicioso aterrizaje español en Hollywood",
+          "url": "https://www.latercera.com/noticia/planeta-51-el-mas-ambicioso-aterrizaje-espanol-en-hollywood/",
+          "snippet": "Planeta 51, que se estrena el 20 de noviembre en EEUU, supone el debut de Illion y la realización de su objetivo fundacional en 2002, que es la producción ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Diversión para los más pequeños - Meristation",
+          "url": "https://as.com/meristation/2009/11/15/analisis/1258268400_158313.html",
+          "snippet": "Como no podía ser de otra forma, la película Planet 51, creada en España, cuenta con su propio juego, obra de Pyro Studios ... 20 de noviembre ...",
+          "date": "Sep 14, 2016"
+        },
+        {
+          "id": 3,
+          "title": "William Gutiérrez Levy",
+          "url": "https://www.cubanosfamosos.com/es/biografia/william%20gutierrez%20levy",
+          "snippet": "... Planet 51\" al personaje del astronauta Capitán Charles `Chuck` Baker (que ... 20 de noviembre de 2020. Fuente: Heraldo de México. Leer más.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Unidos contra la Violencia de Género",
+          "url": "https://www.alcobendas.org/sites/default/files/2021-09/189.pdf",
+          "snippet": "Recordamos que el número correcto es el 72.647. Entradas gratis para. 'Planet 51' ... viernes, 20 de noviembre. Si todavía estás a tiempo no pier- das la ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Noticias sobre la industria del cine - Publicine Europe",
+          "url": "https://www.publicine.es/publicidad_cine_noticias_de_cine.htm",
+          "snippet": "... 20 de noviembre en la ciudad de Miami. El vídeo se puede ver en redes ... Los otros dos títulos españoles, Celda 211 y Planet 51, también han tenido muy buenos ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Eventos sociales navideños 2009 | PDF | Prisión",
+          "url": "https://es.scribd.com/document/24449945/RevistaAqui-748ok",
+          "snippet": "El 20 de noviembre muchos agricultores toledanos secundaron el histórico paro general ... Planet 51 convertir en amigos fieles y du- deseos sin cortapisas ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "La comedia y el melodrama en el audiovisual ...",
+          "url": "https://dokumen.pub/la-comedia-y-el-melodrama-en-el-audiovisual-iberoamericano-9783954872640.html",
+          "snippet": "... Planet 51 (Jorge Blanco, Javier Abad y Carlos Martínez, 2009) y Las ... 20 de noviembre de 1975. Se trata de una biografía parcial, limitada a dos de ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "INDUSTRIA DEL CINE Y EL AUDIOVISUAL EN ESPAÑA",
+          "url": "https://festivaldemalaga.com/Content/source/img/superdestacados/20200401110850_159_super_destacado_descarga.pdf",
+          "snippet": "... Planet 51 (Javier Blan- co, 2009). Este largometraje, estrenado en ... 20 de noviembre de 2018, y cifras extraídas de la base de datos ...",
+          "date": "Apr 1, 2020"
+        },
+        {
+          "id": 9,
+          "title": "BALCEI, nº145 by Balcei Peródico local de Alcorisa",
+          "url": "https://issuu.com/balcei/docs/balcei_145/75",
+          "snippet": "... 2009, cuando se estrenaron “Ágora” y “Planet 51”. Sin duda la ... El 20 de noviembre de 1972, a bordo de un cohete Scout fue lanzado ...",
+          "date": "Mar 7, 2013"
+        },
+        {
+          "id": 10,
+          "title": "CONFERENCIAS Y MESAS REDONDAS",
+          "url": "https://bellasartes.ucm.es/data/cont/docs/14-2020-03-03-ACTIVIDADES%202019red.pdf",
+          "snippet": "Ha trabajado en la película de animación “Planet 51”, en la producción de títulos como la trilogía ... Fechas: 18, 19 y 20 de noviembre de 2019.",
+          "date": "Mar 29, 2019"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 65,
+      "id": "gen-1791463062-4H1KO2SSZEFf6kAP85H8",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 25888,
+        "completion_tokens": 362,
+        "total_tokens": 26250,
+        "cost": 0.00405334,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00405334,
+          "upstream_inference_prompt_cost": 0.0038832,
+          "upstream_inference_completions_cost": 0.00017014
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 280,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 29.495
+    },
+    {
+      "item_id": 65,
+      "id": "gen-1791463094-vmTM3e9vr1Fzou058IAf",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 28176,
+        "completion_tokens": 269,
+        "total_tokens": 28445,
+        "cost": 0.00435283,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00435283,
+          "upstream_inference_prompt_cost": 0.0042264,
+          "upstream_inference_completions_cost": 0.00012643
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 175,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 21.209
+    },
+    {
+      "item_id": 65,
+      "id": "gen-1791463120-t6SH2IxdwL1JRUUpwhJE",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 32184,
+        "completion_tokens": 490,
+        "total_tokens": 32674,
+        "cost": 0.0050579,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0050579,
+          "upstream_inference_prompt_cost": 0.0048276,
+          "upstream_inference_completions_cost": 0.0002303
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 440,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 70.932
+    },
+    {
+      "item_id": 65,
+      "id": "gen-1791463199-02lpCp5opXy7gHJbQlAf",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 34885,
+        "completion_tokens": 656,
+        "total_tokens": 35541,
+        "cost": 0.001218766,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 32256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001218766,
+          "upstream_inference_prompt_cost": 0.000910446,
+          "upstream_inference_completions_cost": 0.00030832
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 486,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 34.852
+    },
+    {
+      "item_id": 65,
+      "id": "gen-1791463239-KRJ7ZGSPqUqoyZjKIFpV",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 36756,
+        "completion_tokens": 674,
+        "total_tokens": 37430,
+        "cost": 0.00583018,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00583018,
+          "upstream_inference_prompt_cost": 0.0055134,
+          "upstream_inference_completions_cost": 0.00031678
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 241,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 30.058
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "65 days",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 281.45
+}

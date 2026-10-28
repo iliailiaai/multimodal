@@ -1845,9 +1845,10 @@ Return 'Correct' if the model's prediction is completely accurate, otherwise ret
             content = full_content
             if "</think>" in content:
                 content = content.split("</think>")[-1].strip()
-            if "Incorrect" in content:
-                return False, full_content
-            return True, full_content
+            label = content.strip().strip(".\"'` \n").casefold()
+            if label not in {"correct", "incorrect"}:
+                raise ValueError("Judge did not return Correct/Incorrect")
+            return label == "correct", full_content
         except Exception as e:
             logger.error(f"Eval Request Failed (Attempt {attempt+1}): {e}")
             if attempt < MAX_RETRIES - 1:

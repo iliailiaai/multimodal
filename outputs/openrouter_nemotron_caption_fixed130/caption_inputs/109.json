@@ -1,0 +1,65 @@
+{
+  "item_id": 109,
+  "images": [
+    {
+      "caption": "This is a cheerful, close-up photograph of a woman at what appears to be a convention, likely San Diego Comic-Con, given the badge.\n\n### Detailed Description\n\n**Central Subject:**\n- **Woman:** A woman with dark, wavy hair and glasses is the main focus. She is smiling broadly, showing her teeth, and appears happy and enthusiastic.\n- **Attire:** She is wearing a grey tank top with yellow and white patterned trim on the shoulders, a gold necklace with a small circular pendant, and a red lanyard with the word \"CATERER\" printed on it. She has a tattoo of a colorful, stylized floral or butterfly design on her left arm.\n- **Props:** She is holding two food items wrapped in paper:\n    - In her left hand, she holds a wrapped sandwich or burrito, which appears to be a \"San Diego Comic-Con\" themed item with a brown, textured wrapper.\n    - In her right hand, she holds a wrapped pastry, possibly a donut or a bagel, with a golden-brown, salted topping.\n- **Badge:** She is wearing a red lanyard with a \"PROFESSIONAL\" badge that reads \"SAN DIEGO COMIC-CON 2018\" and has a QR code.\n\n**Background and Other People:**\n- **In the background to the left:** A woman with dark hair and a white jacket is visible, smiling and looking down. She is wearing a green sash with the word \"WARNER\" in bold letters.\n- **In the background to the right:** A person in a purple jacket is partially visible, standing near a large green plant.\n- **Setting:** The setting is an indoor, bright space with large windows, suggesting a convention center or event hall.\n\n**Overall Atmosphere:**\nThe image captures a lively and positive moment, with the woman's joyful expression and the food she is holding suggesting she is enjoying the event.",
+      "eos_finished": true,
+      "generation_attempts": [
+        {
+          "max_new_tokens": 2048,
+          "generated_tokens": 402,
+          "eos_finished": true,
+          "seconds": 8.463
+        }
+      ],
+      "captioner_input_tokens": 297,
+      "captioner_image_grid_thw": [
+        [
+          1,
+          40,
+          28
+        ]
+      ],
+      "runtime": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 3060",
+        "dtype": "bfloat16",
+        "attention": "sdpa"
+      },
+      "image_sha256": "50d8379e55238ccd09efebc6e1fb2d3ca24a2f31d646d216b4fc5d8b121dea53",
+      "width": 456,
+      "height": 640,
+      "cache_hit": false,
+      "caption_block": "[Image 1 description]\nThis is a cheerful, close-up photograph of a woman at what appears to be a convention, likely San Diego Comic-Con, given the badge.\n\n### Detailed Description\n\n**Central Subject:**\n- **Woman:** A woman with dark, wavy hair and glasses is the main focus. She is smiling broadly, showing her teeth, and appears happy and enthusiastic.\n- **Attire:** She is wearing a grey tank top with yellow and white patterned trim on the shoulders, a gold necklace with a small circular pendant, and a red lanyard with the word \"CATERER\" printed on it. She has a tattoo of a colorful, stylized floral or butterfly design on her left arm.\n- **Props:** She is holding two food items wrapped in paper:\n    - In her left hand, she holds a wrapped sandwich or burrito, which appears to be a \"San Diego Comic-Con\" themed item with a brown, textured wrapper.\n    - In her right hand, she holds a wrapped pastry, possibly a donut or a bagel, with a golden-brown, salted topping.\n- **Badge:** She is wearing a red lanyard with a \"PROFESSIONAL\" badge that reads \"SAN DIEGO COMIC-CON 2018\" and has a QR code.\n\n**Background and Other People:**\n- **In the background to the left:** A woman with dark hair and a white jacket is visible, smiling and looking down. She is wearing a green sash with the word \"WARNER\" in bold letters.\n- **In the background to the right:** A person in a purple jacket is partially visible, standing near a large green plant.\n- **Setting:** The setting is an indoor, bright space with large windows, suggesting a convention center or event hall.\n\n**Overall Atmosphere:**\nThe image captures a lively and positive moment, with the woman's joyful expression and the food she is holding suggesting she is enjoying the event.\n[/Image 1 description]",
+      "image_visual_tokens": 300,
+      "native_image_size_hw": [
+        640,
+        480
+      ],
+      "image_tokens_single": 302,
+      "caption_text_tokens_single": 405,
+      "caption_tokens_single": 418,
+      "image_counter_api_verified": false,
+      "protocol": {
+        "mode": "image_captioning",
+        "caption_model": "internlm/CapRL-Qwen3VL-2B",
+        "caption_revision": "b838cec8b6c4791ed6169d12db21db0b47bb70e5",
+        "prompt": "Please describe this image in detail.",
+        "caption_sampling": "greedy; EOS required; budgets 2048 then 8192; no truncation",
+        "counter_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+        "counter_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+        "counter_method": "native image_processor num_tokens + image delimiters; native tokenizer of complete caption block",
+        "counter_scope": "all main-model HTTP attempts including retries; video/audio excluded",
+        "image_counter_api_verified": false,
+        "counter_version": 1
+      },
+      "occurrence_id": "109:1",
+      "source_path": "images/000000150292.jpg"
+    }
+  ],
+  "image_payloads_after": 0,
+  "other_media_sha256_before": "4941af751a19547afda1bcef8aa20f5af0b2bbdd7fa4b893749bae247b4b8a80",
+  "other_media_sha256_after": "4941af751a19547afda1bcef8aa20f5af0b2bbdd7fa4b893749bae247b4b8a80"
+}

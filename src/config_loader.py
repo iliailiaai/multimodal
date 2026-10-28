@@ -6,6 +6,7 @@ All relative paths in the config file are resolved against the project root.
 """
 import copy
 import json
+import os
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -126,6 +127,12 @@ def load_config(config_path: Optional[str] = None, force_reload: bool = False) -
             raise ValueError(f"Config file must contain a JSON object: {target_path}")
         cfg = _deep_merge_dict(cfg, user_cfg)
 
+    for env_name, section, key in [
+        ("SERPER_API_KEY", "web_tools", "serper_api_key"),
+        ("JINA_API_KEY", "web_tools", "jina_api_key"),
+    ]:
+        if os.environ.get(env_name):
+            cfg[section][key] = os.environ[env_name]
     cfg = _normalize_paths(cfg)
     _CONFIG_CACHE = cfg
     _CONFIG_CACHE_PATH = target_path

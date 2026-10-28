@@ -1,0 +1,47 @@
+{
+  "source_run": "/home/ilya/projects/multimodal/OmniGAIA/outputs/openrouter_nemotron_caption_smoke5",
+  "item_ids": [
+    8,
+    17,
+    109,
+    124,
+    128
+  ],
+  "protocol": {
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "judge": "deepseek/deepseek-v3.2",
+    "dataset_revision": "adf542cf70735e061b8d73300cdbae9c847b9bc3",
+    "image_mode": "image_captioning",
+    "caption_protocol": {
+      "mode": "image_captioning",
+      "caption_model": "internlm/CapRL-Qwen3VL-2B",
+      "caption_revision": "b838cec8b6c4791ed6169d12db21db0b47bb70e5",
+      "prompt": "Please describe this image in detail.",
+      "caption_sampling": "greedy; EOS required; budgets 2048 then 8192; no truncation",
+      "counter_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "counter_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+      "counter_method": "native image_processor num_tokens + image delimiters; native tokenizer of complete caption block",
+      "counter_scope": "all main-model HTTP attempts including retries; video/audio excluded",
+      "image_counter_api_verified": false,
+      "counter_version": 1
+    },
+    "max_turns": 50,
+    "max_tokens": 20480,
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": null
+    },
+    "tools": [
+      "web_search",
+      "page_browser",
+      "code_executor"
+    ],
+    "active_perception": false,
+    "agent_protocol": "OpenRouter native function calling; original baseline system prompt and tool schemas",
+    "media_preprocessing": "GeminiBaseAgent: max 128 uniformly sampled video frames; 2 FPS output; smart_resize min 224^2 max 512^2 pixels; original images; separate mono 16kHz MP3 audio, first 30 minutes",
+    "jina_reader_mode": "anonymous"
+  },
+  "request_cost_usd": 0.0006811559999999999,
+  "note_ru": "Импортированы все пять задач smoke, независимо от правильности. Передачи и расходы сохранены; повторный API-прогон этих задач не выполняется."
+}

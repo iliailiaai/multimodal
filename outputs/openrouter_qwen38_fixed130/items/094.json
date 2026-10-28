@@ -1,0 +1,555 @@
+{
+  "id": 94,
+  "question": "In a video of a high school soccer championship, a player mentions in an interview that he also won a state championship in another sport earlier in the same school year. Based on the information from the video, calculate how many days passed between his first state championship win and the soccer championship final.",
+  "Level": "Easy",
+  "category": "Sports",
+  "task_type": "video w/ audio",
+  "answer": "77",
+  "output": "## Analysis\n\n**From the video:**\n- The opening title card identifies the event: **Utah High School 3A Championship Boys Soccer — Juan Diego vs. Wasatch, Rio Tinto Stadium, 05-14-11** (May 14, 2011), which Wasatch won 1–0.\n- In the postgame interview, Wasatch's **Mike Brown** says: *\"Not many people can say that they have two state championships in one year... In basketball I was more of a main kind of player, in soccer I'm more of like a role player.\"*\n\n**His first championship that year:** Wasatch's 3A boys **basketball** state title — a 44–33 win over Morgan at the Jon M. Huntsman Center on **Saturday, February 26, 2011**, with Brown named tournament MVP (confirmed via contemporaneous Deseret News coverage).\n\n**Calculation:** From February 26, 2011 to May 14, 2011:\n- Remainder of February: 2 days\n- March: 31 days\n- April: 30 days\n- May 1–14: 14 days\n- Total: 2 + 31 + 30 + 14 = **77 days**\n\n<answer>77 days</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "In a video of a high school soccer championship, a player mentions in an interview that he also won a state championship in another sport earlier in the same school year. Based on the information from the video, calculate how many days passed between his first state championship win and the soccer championship final."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:4717110 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:837228 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try analyze this video. It's the Utah High School 3A Championship Boys Soccer match between Juan Diego and Wasatch, held at Rio Tinto Stadium on May 14, 2011 (05-14-11).\n\nIn the interview, Mike Brown (Wasatch defender) says, \"It's pretty amazing. Not many people can say they've won two state championships in one year. In basketball I'm more of a main player, in soccer I'm more of a role player...\"\n\nSo this player won a state championship in basketball earlier that same year. The question is: based on the information in the video, calculate the number of days between his first state championship win (basketball) and the soccer championship final.\n\nWait — \"based on the information in the video\" — the video shows the soccer final date: 05-14-11 (May 14, 2011). But the basketball championship date isn't in the video... hmm. Maybe I need to look up when the Utah 5A basketball championship was... Actually, Mike Brown is a Wasatch High School player. Wasatch High School is in Heber City, Utah, and competes in 5A classification. The 2011 Utah 5A boys basketball championship — Wasatch won it? Let me think.\n\nActually, the question might be expecting a web search: 2011 Utah high school boys basketball championship game date. Wasatch High School Warriors won the 5A state title in 2011? Let me search.\n\nThe video's date: May 14, 2011 (soccer final). The basketball state championship tournament in Utah for 2011 was probably held in late February or early March 2011. I recall the Utah 5A boys basketball final in 2011: Wasatch vs... hmm.\n\nLet me use web search to find the date of Wasatch's 2011 basketball state championship.\n\nThen compute the day difference between that date and May 14, 2011.\n\nLet me search.\n\nPlan:\n1. Web search: \"Wasatch High School 2011 state championship basketball\" date.\n2. Compute day difference with code.\n\nLet me try.\n\nPossible result: 5A state championship final was on Feb 26, 2011? Or maybe the tournament was at the Huntsman Center. Utah high school basketball state tournaments typically end in late February. For 2011, the 5A final might have been on Feb 26, 2011 (Wasatch beat Skyline?). Hmm, actually I recall Skyline won some titles around then. Let me search.\n\nAlso note: Mike Brown — Wasatch's 2011 basketball team won the 5A state title. Let me confirm via search.\n\nThen compute days between Feb 26, 2011 and May 14, 2011: Feb 26 → Mar 26 = 28 days (2011 is not a leap year, Feb has 28 days; Feb 26 + 28 days = Mar 26? Let me compute: Feb 26 to Feb 28 = 2 days, then to Mar 26 = 26 days, total 28 days). Then Mar 26 to Apr 26 = 31 days, Apr 26 to May 14 = 18 days. Total = 28+31+18 = 77 days. But this depends on the actual date.\n\nLet me search to verify.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_69bb368d30614bc182e86f5d",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Wasatch High School 2011 boys basketball state championship 5A Utah\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_f8e1184bd527468e82f8a3b5",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Mike Brown Wasatch 2011 state championships basketball soccer Rio Tinto Stadium\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try analyze this video. It's the Utah High School 3A Championship Boys Soccer match between Juan Diego and Wasatch, held at Rio Tinto Stadium on May 14, 2011 (05-14-11).\n\nIn the interview, Mike Brown (Wasatch defender) says, \"It's pretty amazing. Not many people can say they've won two state championships in one year. In basketball I'm more of a main player, in soccer I'm more of a role player...\"\n\nSo this player won a state championship in basketball earlier that same year. The question is: based on the information in the video, calculate the number of days between his first state championship win (basketball) and the soccer championship final.\n\nWait — \"based on the information in the video\" — the video shows the soccer final date: 05-14-11 (May 14, 2011). But the basketball championship date isn't in the video... hmm. Maybe I need to look up when the Utah 5A basketball championship was... Actually, Mike Brown is a Wasatch High School player. Wasatch High School is in Heber City, Utah, and competes in 5A classification. The 2011 Utah 5A boys basketball championship — Wasatch won it? Let me think.\n\nActually, the question might be expecting a web search: 2011 Utah high school boys basketball championship game date. Wasatch High School Warriors won the 5A state title in 2011? Let me search.\n\nThe video's date: May 14, 2011 (soccer final). The basketball state championship tournament in Utah for 2011 was probably held in late February or early March 2011. I recall the Utah 5A boys basketball final in 2011: Wasatch vs... hmm.\n\nLet me use web search to find the date of Wasatch's 2011 basketball state championship.\n\nThen compute the day difference between that date and May 14, 2011.\n\nLet me search.\n\nPlan:\n1. Web search: \"Wasatch High School 2011 state championship basketball\" date.\n2. Compute day difference with code.\n\nLet me try.\n\nPossible result: 5A state championship final was on Feb 26, 2011? Or maybe the tournament was at the Huntsman Center. Utah high school basketball state tournaments typically end in late February. For 2011, the 5A final might have been on Feb 26, 2011 (Wasatch beat Skyline?). Hmm, actually I recall Skyline won some titles around then. Let me search.\n\nAlso note: Mike Brown — Wasatch's 2011 basketball team won the 5A state title. Let me confirm via search.\n\nThen compute days between Feb 26, 2011 and May 14, 2011: Feb 26 → Mar 26 = 28 days (2011 is not a leap year, Feb has 28 days; Feb 26 + 28 days = Mar 26? Let me compute: Feb 26 to Feb 28 = 2 days, then to Mar 26 = 26 days, total 28 days). Then Mar 26 to Apr 26 = 31 days, Apr 26 to May 14 = 18 days. Total = 28+31+18 = 77 days. But this depends on the actual date.\n\nLet me search to verify.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_69bb368d30614bc182e86f5d",
+      "content": "[{\"id\": 1, \"title\": \"Wasatch High School students took home the state\", \"url\": \"https://www.facebook.com/kpcwradio/posts/wasatch-high-school-students-took-home-the-state-title-at-the-unified-sports-sta/1475104414625365/\", \"snippet\": \"Wasatch High School students took home the state title at the Unified Sports State Basketball Championship this month. The whole school ...\", \"date\": \"Mar 25, 2026\"}, {\"id\": 2, \"title\": \"Utah High School Activities Association Sports Records Book\", \"url\": \"https://www.uhsaa.org/RecordsBook/Records_BookBBball.pdf\", \"snippet\": \"6 Wasatch, 1944, 1945, 2003, 2004, 2010, 2011. State championships ... Utah High School Activities Association Sports Records Book. 39. Basketball - Boys.\", \"date\": \"\"}, {\"id\": 3, \"title\": \"History of Team State Championships - Wasatch High School\", \"url\": \"https://www.wasatchhighathletics.com/page/4a8804cd-6a73-4748-83b2-b6894010ff27\", \"snippet\": \"History of Team State Championships ; Boys Basketball. 1944, 1945, 2003, 2004, 2010, 2011 ; Girls Basketball. 1977, 1983, 1996, 2002, 2008, 2009 ; Boys Cross ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"High school basketball: Wasatch Academy wins first state ...\", \"url\": \"https://www.deseret.com/2011/3/6/20177439/high-school-basketball-wasatch-academy-wins-first-state-championship-in-136-years/\", \"snippet\": \"1A Boys Basketball State Championship at the Sevier Valley Center, in Richfield Saturday, Mar. 5, 2011. Ken Hansen, For the Deseret News. Amy ...\", \"date\": \"Mar 5, 2011\"}, {\"id\": 5, \"title\": \"Wasatch High School (Heber City, UT) Basketball\", \"url\": \"https://www.maxpreps.com/ut/heber-city/wasatch-wasps/basketball/\", \"snippet\": \"... 2026 • UHSAA Boys Basketball State Championships 5A Boys Basketball Championship. Wasatch58. Pleasant Grove66.\", \"date\": \"3 days ago\"}, {\"id\": 6, \"title\": \"2017 Utah 5A, 4A, 1A high school basketball state ...\", \"url\": \"https://www.youtube.com/watch?v=Saqyb_b6AjY\", \"snippet\": \"2017 Utah 5A, 4A, 1A high school basketball state championships. @KSL5Sports21 likes4.7K views9 years ago\", \"date\": \"9 years ago\"}, {\"id\": 7, \"title\": \"boys state basketball champions\", \"url\": \"https://idhsaa.org/asset/Year%20in%20Review/BBBrecords.pdf\", \"snippet\": \"5A. 1964 Kellogg. Don Haynes. 1965 Borah. Murray Satterfield. 1966 Borah. Terry ... Shoshone, 20, 2011. Individual. Most points in a game. Ethan Christenson ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Wasatch High boys basketball in state tournament\", \"url\": \"https://www.facebook.com/WasatchHighSchool/posts/good-luck-to-our-boys-basketball-team-tonight-in-the-first-round-of-the-state-to/5281157841897051/\", \"snippet\": \"Good luck to our Boys Basketball Team tonight in the first round of the State Tournament. You can watch the game on Sting TV at 7:00.\", \"date\": \"4 years ago\"}, {\"id\": 9, \"title\": \"Tradition\", \"url\": \"https://wasatchwrestling.com/tradition/\", \"snippet\": \"In just its second year of existence, Wasatch girls wrestling captured the 5A state championship — then did it again. 2024. 5A Champions. 249.5 pts · Year 2.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Wasatch @ Orem Boys Basketball\", \"url\": \"https://sports.ksl.com/watch/game/wasatch-orem-boys-basketball/43154f0b-c2f3-489d-9a54-63e217630cc5\", \"snippet\": \"Utah High School boys basketball game between the Wasatch Wasps and Orem ... Basketball Tournament (Beehive Sports Media). High School. Watch Bear River ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f8e1184bd527468e82f8a3b5",
+      "content": "[{\"id\": 1, \"title\": \"Mike Brown - Men's Basketball\", \"url\": \"https://weberstatesports.com/sports/mens-basketball/roster/mike-brown/2522\", \"snippet\": \"Also played soccer for the first time as a senior at Wasatch and helped lead the team to the state title and earned First Team All-State honors as a defender...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"3A high school soccer championship: Wasatch boys finally ...\", \"url\": \"https://www.ksl.com/article/sports/3a-high-school-soccer-championship-wasatch-boys-finally-win-elusive-state-title/15550610\", \"snippet\": \"Wasatch capped its greatest season in school history with a 1-0 victory over Juan Diego for its first soccer title in school history\", \"date\": \"May 14, 2011\"}, {\"id\": 3, \"title\": \"High school soccer: 3A Boys All-State Teams\", \"url\": \"https://www.deseret.com/2011/6/7/20196540/high-school-soccer-3a-boys-all-state-teams/\", \"snippet\": \"... Rio Tinto Stadium in Sandy on Saturday, May 14, 2011. Mike Terry ... Mike Brown, Wasatch, Sr., Athletic presence at back. Kendall ...\", \"date\": \"Jun 6, 2011\"}, {\"id\": 4, \"title\": \"Prep boys' soccer: Wasatch's wait ends with 3A title\", \"url\": \"https://archive.sltrib.com/article.php?id=51815632&itype=cmsid\", \"snippet\": \"Wasatch's Michael Brown. Wasatc Wasatch defeats Juan Diego 1-0 in the 3A State Championship high school soccer game at Rio Tinto Stadium, in ...\", \"date\": \"May 14, 2011\"}, {\"id\": 5, \"title\": \"Congrats to all of our teams who played this weekend in ...\", \"url\": \"https://www.facebook.com/LaRocaFC/posts/congrats-to-all-of-our-teams-who-played-this-weekend-in-the-wasatchsoccerclassic/798966235564667/\", \"snippet\": \"2011 Boys teams for being named the champions🥇Vamos. This amazing group of athletes played in the state final today at Rio Tinto Stadium\", \"date\": \"3 years ago\"}, {\"id\": 6, \"title\": \"Utah High School Activities Association Sports Records Book\", \"url\": \"https://www.uhsaa.org/RecordsBook/Records_Book.pdf\", \"snippet\": \"The UHSAA is the leadership organization for high school athletic and fine arts activities in Utah. Since 1927, the UHSAA has led the ...\", \"date\": \"3 days ago\"}, {\"id\": 7, \"title\": \"2011 1A Boys Basketball State Championship\", \"url\": \"https://www.youtube.com/watch?v=xW8mQexdQk4\", \"snippet\": \"Relive the excitement of the 2011 GHSA 1A Boys Basketball State Championship as Wilkinson County faces off against Terrell County on March 12, ...\", \"date\": \"2 years ago\"}, {\"id\": 8, \"title\": \"Mike Brown's Wasatch High School Career Home\", \"url\": \"https://www.maxpreps.com/ut/heber-city/wasatch-wasps/athletes/mike-brown/?careerid=agi0l4uop9c66\", \"snippet\": \"Mike BrownWasatch (Heber City, UT) Senior • 2011 6'2\\\" • 170 lbs V. Basketball #13 ・ 2010-11 basketball roster. Graduated 2011 Teams ・ 1 Points 50 FT Per Game ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"2011 Boys State Basketball Tournament Preview\", \"url\": \"https://www.ohsaa.org/sports/bk/boys/2011/2011BoysPreview.htm\", \"snippet\": \"The 89th Annual State Boys Basketball Tournaments are upon us and the card is filled with several intriguing match ups.\", \"date\": \"Mar 21, 2011\"}, {\"id\": 10, \"title\": \"3A boys basketball: Defense, free throws win ...\", \"url\": \"https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/\", \"snippet\": \"Wasatch's Mike Brown carries the state trophy to the stands as Wasatch takes the title against Morgan in the 3A Utah State Championships at ...\", \"date\": \"Feb 27, 2011\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Excellent! Found it. Mike Brown played for Wasatch. Wasatch's boys basketball team won the 3A state championship in 2011, defeating Morgan. According to the Deseret News article dated February 27, 2011, \"3A boys basketball: Defense, free throws win championship for Wasatch\" — Wasatch beat Morgan in the 3A Utah state championship. The date of the championship game was probably February 26, 2011 (the article is dated February 27, 2011, and it likely says \"Saturday\"). Let me check the article to confirm the exact date.\n\nAlso, according to the UHSAA record book, Wasatch's boys basketball titles are: 1944, 1945, 2003, 2004, 2010, 2011. So Wasatch won the 3A basketball state championship in both 2010 and 2011. Mike Brown's interview: \"Not many people can say they've won two state championships in one year\" — meaning he won the basketball state title in February 2011 and the soccer state title in May 2011.\n\nNext, let me get the exact date of the 2011 3A boys basketball final. Let me pull up the Deseret News article.\n\nI've identified the context of the video: this is the **Utah 3A Championship boys soccer** game played on **May 14, 2011**, at Rio Tinto Stadium (Juan Diego vs. Wasatch), and the player being interviewed is **Mike Brown** of Wasatch. He states, \"Not many people can say they've won two state championships in one year... in basketball I was more of a main player.\" The search results indicate that Wasatch won the 3A boys basketball state championship over Morgan around February 2011. Let me confirm the exact date of that basketball final.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_0348165ec4ed4b2f8234723c",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_ffa7b121f931404dbd9ead9c",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Wasatch\\\" \\\"Morgan\\\" 3A boys basketball state championship final February 2011 date\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Excellent! Found it. Mike Brown played for Wasatch. Wasatch's boys basketball team won the 3A state championship in 2011, defeating Morgan. According to the Deseret News article dated February 27, 2011, \"3A boys basketball: Defense, free throws win championship for Wasatch\" — Wasatch beat Morgan in the 3A Utah state championship. The date of the championship game was probably February 26, 2011 (the article is dated February 27, 2011, and it likely says \"Saturday\"). Let me check the article to confirm the exact date.\n\nAlso, according to the UHSAA record book, Wasatch's boys basketball titles are: 1944, 1945, 2003, 2004, 2010, 2011. So Wasatch won the 3A basketball state championship in both 2010 and 2011. Mike Brown's interview: \"Not many people can say they've won two state championships in one year\" — meaning he won the basketball state title in February 2011 and the soccer state title in May 2011.\n\nNext, let me get the exact date of the 2011 3A boys basketball final. Let me pull up the Deseret News article.\n\nI've identified the context of the video: this is the **Utah 3A Championship boys soccer** game played on **May 14, 2011**, at Rio Tinto Stadium (Juan Diego vs. Wasatch), and the player being interviewed is **Mike Brown** of Wasatch. He states, \"Not many people can say they've won two state championships in one year... in basketball I was more of a main player.\" The search results indicate that Wasatch won the 3A boys basketball state championship over Morgan around February 2011. Let me confirm the exact date of that basketball final.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_0348165ec4ed4b2f8234723c",
+      "content": "{\"https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/\": \"Title: 3A boys basketball: Defense, free throws win championship for Wasatch\\n\\nURL Source: https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/\\n\\nPublished Time: 2011-02-27T07:10:13Z\\n\\nMarkdown Content:\\n[___]\\n\\n* [Deseret News]\\n* [Deseret Magazine]\\n* [Church News]\\n\\n* [Deseret News]\\n* [Deseret Magazine]\\n\\n* [Print Subscriptions]\\n\\n[![Image 1: Deseret News Logo]]\\n\\n[Newsletter Sign Up]\\n\\n* [Latest][Latest] \\n* [Politics][Politics] \\n* [Utah]Utah  \\n* [Sports]Sports  \\n* [Opinion][Opinion] \\n* [Magazine][Magazine] \\n* More  More  \\n\\n* []\\n* []\\n\\n* \\nSign In \\n  * Register\\n  * Sign In\\n\\nSearch\\n\\nGo\\n\\n![Image 2: Deseret News Logo Black & Yellow]\\n\\nReport ad\\n\\n[Sports][High School Sports]\\n\\n# 3A boys basketball: Defense, free throws win championship for Wasatch\\n\\nPublished: Feb 27, 2011, 12:10 a.m. MST\\n\\n[See More Deseret News Stories In Search]\\n\\n![Image 3]\\n\\nView Comments\\n\\n![Image 4]\\n\\nShare\\n\\nView 3 more\\n\\n![Image 5]\\n\\nWasatch's Mike Brown carries the state trophy to the stands as Wasatch takes the title against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City, Utah on Saturday, Feb. 26, 2011. Mike Terry, Deseret News [Purchase Image]\\n\\nView 3 more\\n\\n![Image 6]\\n\\nWasatch's Matt Pelo waits for the swat from Morgan's Jared Brooks' shot as Wasatch matches up against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City on Saturday. Mike Terry, Deseret News [Purchase Image]\\n\\nView 3 more\\n\\n![Image 7]\\n\\nWasatch's Matt Pelo and Morgan's Jared Brooks get tangled as Wasatch matches up against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City, Utah on Saturday, Feb. 26, 2011. Mike Terry, Deseret News [Purchase Image]\\n\\nView 3 more\\n\\n![Image 8]\\n\\nWasatch's Mike Brown looks for the basket as he is guarded by Morgan's Casey Evans on Saturday. as Wasatch plays against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City on Saturday. Mike Terry, Deseret News [Purchase Image]\\n\\n[![Image 9: James Edward]]\\n\\nBy [James Edward]\\n\\nJames has been covering high school sports in Utah for the Deseret News for three decades.\\n\\n[Audio 1]\\n\\nNEW: Try Article Audio\\n\\nNEW: Try Article Audio\\n\\nAudio quality:|\\n\\n00:00\\n\\n00:00\\n\\n1.0x\\n\\n00:00/00:00\\n\\n-\\n\\n+\\n\\nSALT LAKE CITY — Winning a state championship can be as simple as playing defense and making free throws, and Wasatch does both better than anybody.\\n\\nDespite suffering through arguably their worst offensive performance of the season in Saturday's 3A state championship at the Huntsman Center, the Wasps were able to persevere thanks to their best defensive performance of the year.\\n\\n\\\"It's a broken record to the guys, but offense sells tickets and defense wins championship. I truly believe that, and I know my players believe in that,\\\" said Wasatch coach Norm Hayter.\\n\\nReport ad\\n\\nThe proof is in the titles, and Wasatch has plenty of those.\\n\\nWasatch held Morgan to 37 points below its season average, and then knocked down 14-of-16 free throws in the fourth quarter to pull away for the 44-33 victory at the Huntsman Center — its second consecutive title and sixth in school history.\\n\\n\\\"This was a lot harder than the first time. To win back to back, you have that target. Everyone is giving you their best game throughout the season. You have your highs and lows, and you've got to stay focused as a team,\\\" said Hayter. \\\"These guys showed a lot of maturity and a lot of focus all season.\\\"\\n\\nMorgan's 33-point night was its lowest of the season. It was also the fewest points allowed by Wasatch, as it limited the Trojans to 26 percent shooting and 3-of-16 from 3-point range.\\n\\nWasatch struggled just as much offensively, and found itself in a dogfight, only leading 32-30 with 3:09 remaining in the game. That's when it began to pull away from the free-throw line as [Mike Brown], [McKay Murdock] and [Alex Probst] combined on 14 straight makes to put the game away.\\n\\n\\\"We've been known to be a good free-throw shooting team because we practice a lot,\\\" said Brown, who finished with a game-high 18 points.\\n\\nReport ad\\n\\nBrown's coach said it's not uncommon for guys like Brown or Murdock to make 96 or 97 out of 100 free throws in practice.\\n\\nLong before free-throw shooting sealed the title, Wasatch's defense did the damage. It forced Morgan into three straight turnovers to start the game, and six by the end of the quarter. By halftime, the Trojans had committed nine and they finished with 16.\\n\\nMorgan's troubles had a lot to do with Wasatch's tempo.\\n\\n\\\"Last night, we watched Morgan-Desert Hills, and Desert Hills played Morgan's game, really fast pace, kind of out of control, and we wanted to slow it down and make them run their offense instead of getting easy lay-ins by pushing,\\\" said Brown.\\n\\nDespite only scoring 18 points in the first half, the mood in the Wasatch locker room at the half was all positive, as Morgan only scored 12 points.\\n\\nMorgan was just as upbeat. It could've easily been run out of the Huntsman Center after turning it over nine times in the first half, but Morgan's defense was giving Wasatch just as much trouble.\\n\\nReport ad\\n\\nTrailing 22-14 with 5:27 remaining in the third quarter, Morgan's [Casey Evans], [Boston Saunders], [Jared Brooks] and [Dallin Schenk] all scored baskets to help the Trojans close to within 24-23 by the end of the quarter.\\n\\nWasatch extended the lead to 28-23 early in the quarter, but Evans responded with a 3-pointer to whittle the deficit to 28-26. That's about the time Brown took over the game. He scored on three straight possessions, each one pushing Wasatch's lead from two to four points.\\n\\nMorgan couldn't keep up, and Wasatch pulled away in front of a huge crowd at the U.\\n\\n\\\"To see that kind of support by two communities, to really get behind it and support it, that's great. That's what high school basketball's all about,\\\" said Hayter.\\n\\nIt was such a big game, even BYU forward Logan Magnusson showed up to watch his alma mater after returning from San Diego.\\n\\nIn the loss, Evans led Morgan with 13 points and seven rebounds.\\n\\ne-mail: [jedward@desnews.com](mailto:jedward@desnews.com)\\n\\n3A Boys All-Tournament Team\\n\\nMVP — Mike Brown, Wasatch\\n\\nTanner Atkin, Desert Hills\\n\\nView Comments\\n\\nJared Brooks, Morgan\\n\\nCasey Evans, Morgan\\n\\nMcKay Murdock, Wasatch\\n\\nMike Pelo, Wasatch\\n\\n## Recommended For You\\n\\n[![Image 10] Grantsville rallies from 12-point deficit, scores 30 unanswered to stun San Juan 30-20][![Image 11] 3 takeaways from Utah basketball’s exhibition opener at UNLV][![Image 12] High school soccer: Wasatch survives Mountain View comeback][![Image 13] High school football: Braden Boucha leads Bountiful to thrilling victory over Syracuse][![Image 14] High school girls volleyball: Corner Canyon puts on dominant display in win over Skyridge][![Image 15] High school football: Morgan’s defense forces 3 turnovers in dominant win over Bountiful][![Image 16] High school football: 3A South projections][![Image 17] New-look Aggies made the most of summer practice sessions. Here’s how the team is shaping up]\\n\\n You Might Also Like \\n\\n[]\\n\\nJoin the Conversation\\n\\nLooking for comments?\\n\\nFind comments in their new home! Click the buttons at the top or within the article to view them — or use the button below for quick access.\\n\\nVIEW COMMENTS\\n\\n![Image 18: close]\\n\\nReport ad\\n\\nMost Popular\\n\\n[1][The speaker records set at general conference]\\n\\n[2][October general conference talk summaries, photos]\\n\\n[3][Analysis: BYU’s offensive struggles become Bear’s burden]\\n\\n[4][New statue of resurrected Jesus Christ unveiled inside Conference Center for general conference]\\n\\n[5][What TCU coach Sonny Dykes said after losing to BYU]\\n\\nMost Commented\\n\\n* [440][How Utahns and the country differ on transgender women in sports]\\n* [135][Opinion: In “So Ordered,” Justice Samuel Alito shows us why he is so important on the U.S. Supreme Court]\\n* [48][The moderate money network quietly reshaping Utah Republican politics]\\n* [46][Trump Jr. returns wedding gift to Russian oligarch]\\n* [43][Lawmakers roll out policy agenda they hope survives no matter who wins control of Congress]\\n\\nReport ad\\n\\n## Recommended For You\\n\\n[![Image 19] Why hasn’t Richie Saunders signed with the Memphis Grizzlies?][![Image 20] Trump administration’s proposed price tag for international students in work program: $70K][![Image 21] Opinion: A sports hero worthy of the title][![Image 22] Stephen King on Utah: ‘What’s wrong with these people?’][![Image 23] This NBA player from Utah was asked about basketball, then the questions changed to church missions. Here’s what he said]\\n\\n[![Image 24: Deseret News]]\\n\\nCompany\\n\\n[About Us][Editorial Staff][Careers]\\n\\nReach Out\\n\\n[Contact Us][Technical Support][Advertise][Send Us a Tip][Do Not Sell My Info]\\n\\nGet More\\n\\n[![Image 25: Newsletters]Newsletters][![Image 26: Print Subscription]Print Subscription][![Image 27: Shop Merchandise]Shop Merchandise][![Image 28: Deseret News Marathon]Deseret News Marathon]\\n\\nConnect\\n\\n[![Image 29: X]X][![Image 30: Facebook]Facebook][![Image 31: Instagram]Instagram][![Image 32: iOS App]iOS App][![Image 33: Android App]Android App]\\n\\nCopyright © 2026 Deseret News Publishing Company. All Rights Reserved\\n\\n* [Terms of Use]\\n* [Privacy Notice]\\n* [CA Notice of Collection]\\n* [Cookie Policy]\\n* [Cookie Preferences]\\n\\n## Why are you reporting this ad?\\n\\nPlease make a selection.\\n\\n Plays sound Contains adult content Covers the page Other  \\n## Additional Information\\n\\nPlease help us by describing the ad.\\n\\nOnly 500 characters are allowed.\\n\\nReport ad\\n\\nThank you for letting us know.\\n\\nThis ad has already been reported.\\n\\nPowered by[![Image 34: Ad Lightning](blob:http://localhost/8912c78fc3f015145d7104ff98b7e98d)]\\n\\n×\\n\\n## Cookie Notice\\n\\nThis website uses cookies and similar technologies (pixels, beacons, tags, etc.), belonging to us or third parties (including, but not limited to the Meta Pixel and Google Pixel), to improve your experience, optimize performance and our services, to understan\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_ffa7b121f931404dbd9ead9c",
+      "content": "[{\"id\": 1, \"title\": \"Utah High School Activities Association Sports Records Book\", \"url\": \"https://www.uhsaa.org/RecordsBook/Records_Book.pdf\", \"snippet\": \"... Morgan Trojans ... Wasatch Wasps ..................................................................2009. Wasatch Academy ...\", \"date\": \"3 days ago\"}, {\"id\": 2, \"title\": \"High school basketball: Wasatch's McKay Murdock ...\", \"url\": \"https://www.deseret.com/2011/2/26/20175881/high-school-basketball-wasatch-s-mckay-murdock-following-in-idol-s-footsteps/\", \"snippet\": \"... championship game against Morgan at 7:30 p.m. ... Ironically enough, Wasatch was upset by Tooele the next night in the 3A state championship game.\", \"date\": \"Feb 26, 2011\"}, {\"id\": 3, \"title\": \"At Wasatch Academy, an empty chair for Geno\", \"url\": \"https://archive.sltrib.com/article.php?id=3256928&itype=CMSID\", \"snippet\": \"Rick Egan | The Salt Lake Tribune Wasatch coach Geno Morgan, yells at his players, in the 1A basketball Championship game, Was Trent Nelson | ...\", \"date\": \"Dec 8, 2015\"}, {\"id\": 4, \"title\": \"'We grew up': Trusting in coach, Morgan boys break away ...\", \"url\": \"https://www.standard.net/sports/high-school/2025/feb/26/morgan-richfield-utah-boys-basketball-3a-championship-final-score-recap/\", \"snippet\": \"Morgan coach Scott Hunt and senior Kolton Asay hug after defeating Richfield for the 3A boys basketball state championship Wednesday, Feb. 26, ...\", \"date\": \"Feb 26, 2025\"}, {\"id\": 5, \"title\": \"3A Basketball Utah - High School, Tournaments & Teams\", \"url\": \"https://www.facebook.com/fb-answers/3a-basketball-utah/\", \"snippet\": \"... State) Judge Memorial vs. Bear River, 11:15 a.m. (at Weber State) Wasatch vs. Spanish Fork, 12:45 p.m. (at Weber State) Morgan vs. Cedar, 2:30 p.m. (at Weber ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Former Palmer High basketball head coach and player die ...\", \"url\": \"https://www.frontiersman.com/former-palmer-high-basketball-head-coach-and-player-die-unexpectedly-in-separate-incidents/\", \"snippet\": \"Morgan had been with Wasatch Academy since 2009, and led the program to three state championships. Last year, Morgan returned to Alaska, ...\", \"date\": \"Jul 9, 2015\"}, {\"id\": 7, \"title\": \"2026 Mountain West PBL Salt Lake Slam - Utah Lady ...\", \"url\": \"https://www.facebook.com/gteusabb/posts/2026-mountain-west-pbl-salt-lake-slam-utah-lady-prospectsgametimeevents-youthbas/122377308104006843/\", \"snippet\": \"... Boys: [Orem 67, Wasatch 53](https://sports.deseret. com/high-school ... Eric Morgan ▻ Utah Baseball Information Center. 26w · Public ...\", \"date\": \"1 month ago\"}, {\"id\": 8, \"title\": \"Wasatch Academy coach Geno Morgan dies in Chicago\", \"url\": \"https://www.ksl.com/article/sports/wasatch-academy-coach-geno-morgan-dies-in-chicago/35333730\", \"snippet\": \"Wasatch Academy coach Geno Morgan, who led the Tigers to three state championships in six seasons, died in his sleep Thursday morning while ...\", \"date\": \"Jul 2, 2015\"}, {\"id\": 9, \"title\": \"Salute to All-Time FAB 50 No. 1s\", \"url\": \"https://www.hoopscooponline.com/salute-to-all-time-fab-50-no-1s/\", \"snippet\": \"8 Wasatch Academy (Mt. Pleasant, Utah), 76-62, No. 2 Brewster Academy ... (29-3); HC–Morgan Wootten. 1961 — Collinsville (Collinsville, Ill.) (32-0); ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"High school boys basketball: 6A/5A/4A/3A/2A/1A ...\", \"url\": \"https://sports.yahoo.com/article/high-school-boys-basketball-6a-161138959.html\", \"snippet\": \"Richfield lost to Morgan in the championship game, and a rematch could be in the cards as the coaches pegged the Wildcats as preseason No. 2.\", \"date\": \"Nov 12, 2025\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Confirmed: Wasatch won the 3A boys basketball state championship on **Saturday, February 26, 2011**, defeating Morgan 44-33 at the Jon M. Huntsman Center. Mike Brown was the MVP of that game. And the 3A boys soccer championship was held on **Saturday, May 14, 2011**, at Rio Tinto Stadium (shown as \"05-14-11\" in the video).\n\nNext, calculating the number of days between February 26, 2011 and May 14, 2011.\n\nFebruary 26 → May 14:\n- February 2011: 28 days (non-leap year). From February 26 to February 28: 2 days.\n- March: 31 days\n- April: 30 days\n- May 1–14: 14 days\nTotal: 2 + 31 + 30 + 14 = 77 days.\n\nLet me verify with code.\n\nBoth dates have been confirmed. Next, I'll verify the details and calculate the number of days between the two championships.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_187c89bd37fd48029a21fbf5",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"from datetime import date\\n\\nbasketball_title = date(2011, 2, 26)   # 3A boys basketball state final: Wasatch 44, Morgan 33 (Huntsman Center), Mike Brown MVP\\nsoccer_final     = date(2011, 5, 14)   # 3A boys soccer state final shown in video: Wasatch 1, Juan Diego 0 (Rio Tinto Stadium)\\n\\ndelta = soccer_final - basketball_title\\nprint(\\\"Days between:\\\", delta.days)\\n\\n# breakdown\\nprint(\\\"Feb 26 -> Feb 28:\\\", (date(2011,2,28)-basketball_title).days, \\\"days\\\")\\nprint(\\\"March:\\\", 31, \\\"days; April:\\\", 30, \\\"days; May 1-14:\\\", 14, \\\"days\\\")\\nprint(\\\"Check:\\\", 2 + 31 + 30 + 14)\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed: Wasatch won the 3A boys basketball state championship on **Saturday, February 26, 2011**, defeating Morgan 44-33 at the Jon M. Huntsman Center. Mike Brown was the MVP of that game. And the 3A boys soccer championship was held on **Saturday, May 14, 2011**, at Rio Tinto Stadium (shown as \"05-14-11\" in the video).\n\nNext, calculating the number of days between February 26, 2011 and May 14, 2011.\n\nFebruary 26 → May 14:\n- February 2011: 28 days (non-leap year). From February 26 to February 28: 2 days.\n- March: 31 days\n- April: 30 days\n- May 1–14: 14 days\nTotal: 2 + 31 + 30 + 14 = 77 days.\n\nLet me verify with code.\n\nBoth dates have been confirmed. Next, I'll verify the details and calculate the number of days between the two championships.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_187c89bd37fd48029a21fbf5",
+      "content": "{\"stdout\": \"Days between: 77\\nFeb 26 -> Feb 28: 2 days\\nMarch: 31 days; April: 30 days; May 1-14: 14 days\\nCheck: 77\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Analysis\n\n**From the video:**\n- The opening title card identifies the event: **Utah High School 3A Championship Boys Soccer — Juan Diego vs. Wasatch, Rio Tinto Stadium, 05-14-11** (May 14, 2011), which Wasatch won 1–0.\n- In the postgame interview, Wasatch's **Mike Brown** says: *\"Not many people can say that they have two state championships in one year... In basketball I was more of a main kind of player, in soccer I'm more of like a role player.\"*\n\n**His first championship that year:** Wasatch's 3A boys **basketball** state title — a 44–33 win over Morgan at the Jon M. Huntsman Center on **Saturday, February 26, 2011**, with Brown named tournament MVP (confirmed via contemporaneous Deseret News coverage).\n\n**Calculation:** From February 26, 2011 to May 14, 2011:\n- Remainder of February: 2 days\n- March: 31 days\n- April: 30 days\n- May 1–14: 14 days\n- Total: 2 + 31 + 30 + 14 = **77 days**\n\n<answer>77 days</answer>",
+      "reasoning": "Confirmed: 77 days.\n\nSummary of reasoning:\n1. The video shows the title card \"Utah High School 3A Championship Boys Soccer, Rio Tinto Stadium, 05-14-11\" → the soccer final was on May 14, 2011, where Wasatch defeated Juan Diego 1-0.\n2. In the post-game interview, Wasatch's Mike Brown (D) says, \"Not many people can say they've won two state championships in one year... in basketball I was more of a main player, in soccer I was more of a role player.\"\n3. His first state championship that year was the 3A boys basketball title, which Wasatch won 44-33 over Morgan on Saturday, February 26, 2011, at the Jon M. Huntsman Center (Brown was tournament MVP).\n4. Days between February 26, 2011 and May 14, 2011 = 77 days.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed: 77 days.\n\nSummary of reasoning:\n1. The video shows the title card \"Utah High School 3A Championship Boys Soccer, Rio Tinto Stadium, 05-14-11\" → the soccer final was on May 14, 2011, where Wasatch defeated Juan Diego 1-0.\n2. In the post-game interview, Wasatch's Mike Brown (D) says, \"Not many people can say they've won two state championships in one year... in basketball I was more of a main player, in soccer I was more of a role player.\"\n3. His first state championship that year was the 3A boys basketball title, which Wasatch won 44-33 over Morgan on Saturday, February 26, 2011, at the Jon M. Huntsman Center (Brown was tournament MVP).\n4. Days between February 26, 2011 and May 14, 2011 = 77 days.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Wasatch High School 2011 boys basketball state championship 5A Utah\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Wasatch High School students took home the state",
+          "url": "https://www.facebook.com/kpcwradio/posts/wasatch-high-school-students-took-home-the-state-title-at-the-unified-sports-sta/1475104414625365/",
+          "snippet": "Wasatch High School students took home the state title at the Unified Sports State Basketball Championship this month. The whole school ...",
+          "date": "Mar 25, 2026"
+        },
+        {
+          "id": 2,
+          "title": "Utah High School Activities Association Sports Records Book",
+          "url": "https://www.uhsaa.org/RecordsBook/Records_BookBBball.pdf",
+          "snippet": "6 Wasatch, 1944, 1945, 2003, 2004, 2010, 2011. State championships ... Utah High School Activities Association Sports Records Book. 39. Basketball - Boys.",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "History of Team State Championships - Wasatch High School",
+          "url": "https://www.wasatchhighathletics.com/page/4a8804cd-6a73-4748-83b2-b6894010ff27",
+          "snippet": "History of Team State Championships ; Boys Basketball. 1944, 1945, 2003, 2004, 2010, 2011 ; Girls Basketball. 1977, 1983, 1996, 2002, 2008, 2009 ; Boys Cross ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "High school basketball: Wasatch Academy wins first state ...",
+          "url": "https://www.deseret.com/2011/3/6/20177439/high-school-basketball-wasatch-academy-wins-first-state-championship-in-136-years/",
+          "snippet": "1A Boys Basketball State Championship at the Sevier Valley Center, in Richfield Saturday, Mar. 5, 2011. Ken Hansen, For the Deseret News. Amy ...",
+          "date": "Mar 5, 2011"
+        },
+        {
+          "id": 5,
+          "title": "Wasatch High School (Heber City, UT) Basketball",
+          "url": "https://www.maxpreps.com/ut/heber-city/wasatch-wasps/basketball/",
+          "snippet": "... 2026 • UHSAA Boys Basketball State Championships 5A Boys Basketball Championship. Wasatch58. Pleasant Grove66.",
+          "date": "3 days ago"
+        },
+        {
+          "id": 6,
+          "title": "2017 Utah 5A, 4A, 1A high school basketball state ...",
+          "url": "https://www.youtube.com/watch?v=Saqyb_b6AjY",
+          "snippet": "2017 Utah 5A, 4A, 1A high school basketball state championships. @KSL5Sports21 likes4.7K views9 years ago",
+          "date": "9 years ago"
+        },
+        {
+          "id": 7,
+          "title": "boys state basketball champions",
+          "url": "https://idhsaa.org/asset/Year%20in%20Review/BBBrecords.pdf",
+          "snippet": "5A. 1964 Kellogg. Don Haynes. 1965 Borah. Murray Satterfield. 1966 Borah. Terry ... Shoshone, 20, 2011. Individual. Most points in a game. Ethan Christenson ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Wasatch High boys basketball in state tournament",
+          "url": "https://www.facebook.com/WasatchHighSchool/posts/good-luck-to-our-boys-basketball-team-tonight-in-the-first-round-of-the-state-to/5281157841897051/",
+          "snippet": "Good luck to our Boys Basketball Team tonight in the first round of the State Tournament. You can watch the game on Sting TV at 7:00.",
+          "date": "4 years ago"
+        },
+        {
+          "id": 9,
+          "title": "Tradition",
+          "url": "https://wasatchwrestling.com/tradition/",
+          "snippet": "In just its second year of existence, Wasatch girls wrestling captured the 5A state championship — then did it again. 2024. 5A Champions. 249.5 pts · Year 2.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Wasatch @ Orem Boys Basketball",
+          "url": "https://sports.ksl.com/watch/game/wasatch-orem-boys-basketball/43154f0b-c2f3-489d-9a54-63e217630cc5",
+          "snippet": "Utah High School boys basketball game between the Wasatch Wasps and Orem ... Basketball Tournament (Beehive Sports Media). High School. Watch Bear River ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Mike Brown Wasatch 2011 state championships basketball soccer Rio Tinto Stadium\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Mike Brown - Men's Basketball",
+          "url": "https://weberstatesports.com/sports/mens-basketball/roster/mike-brown/2522",
+          "snippet": "Also played soccer for the first time as a senior at Wasatch and helped lead the team to the state title and earned First Team All-State honors as a defender...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "3A high school soccer championship: Wasatch boys finally ...",
+          "url": "https://www.ksl.com/article/sports/3a-high-school-soccer-championship-wasatch-boys-finally-win-elusive-state-title/15550610",
+          "snippet": "Wasatch capped its greatest season in school history with a 1-0 victory over Juan Diego for its first soccer title in school history",
+          "date": "May 14, 2011"
+        },
+        {
+          "id": 3,
+          "title": "High school soccer: 3A Boys All-State Teams",
+          "url": "https://www.deseret.com/2011/6/7/20196540/high-school-soccer-3a-boys-all-state-teams/",
+          "snippet": "... Rio Tinto Stadium in Sandy on Saturday, May 14, 2011. Mike Terry ... Mike Brown, Wasatch, Sr., Athletic presence at back. Kendall ...",
+          "date": "Jun 6, 2011"
+        },
+        {
+          "id": 4,
+          "title": "Prep boys' soccer: Wasatch's wait ends with 3A title",
+          "url": "https://archive.sltrib.com/article.php?id=51815632&itype=cmsid",
+          "snippet": "Wasatch's Michael Brown. Wasatc Wasatch defeats Juan Diego 1-0 in the 3A State Championship high school soccer game at Rio Tinto Stadium, in ...",
+          "date": "May 14, 2011"
+        },
+        {
+          "id": 5,
+          "title": "Congrats to all of our teams who played this weekend in ...",
+          "url": "https://www.facebook.com/LaRocaFC/posts/congrats-to-all-of-our-teams-who-played-this-weekend-in-the-wasatchsoccerclassic/798966235564667/",
+          "snippet": "2011 Boys teams for being named the champions🥇Vamos. This amazing group of athletes played in the state final today at Rio Tinto Stadium",
+          "date": "3 years ago"
+        },
+        {
+          "id": 6,
+          "title": "Utah High School Activities Association Sports Records Book",
+          "url": "https://www.uhsaa.org/RecordsBook/Records_Book.pdf",
+          "snippet": "The UHSAA is the leadership organization for high school athletic and fine arts activities in Utah. Since 1927, the UHSAA has led the ...",
+          "date": "3 days ago"
+        },
+        {
+          "id": 7,
+          "title": "2011 1A Boys Basketball State Championship",
+          "url": "https://www.youtube.com/watch?v=xW8mQexdQk4",
+          "snippet": "Relive the excitement of the 2011 GHSA 1A Boys Basketball State Championship as Wilkinson County faces off against Terrell County on March 12, ...",
+          "date": "2 years ago"
+        },
+        {
+          "id": 8,
+          "title": "Mike Brown's Wasatch High School Career Home",
+          "url": "https://www.maxpreps.com/ut/heber-city/wasatch-wasps/athletes/mike-brown/?careerid=agi0l4uop9c66",
+          "snippet": "Mike BrownWasatch (Heber City, UT) Senior • 2011 6'2\" • 170 lbs V. Basketball #13 ・ 2010-11 basketball roster. Graduated 2011 Teams ・ 1 Points 50 FT Per Game ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "2011 Boys State Basketball Tournament Preview",
+          "url": "https://www.ohsaa.org/sports/bk/boys/2011/2011BoysPreview.htm",
+          "snippet": "The 89th Annual State Boys Basketball Tournaments are upon us and the card is filled with several intriguing match ups.",
+          "date": "Mar 21, 2011"
+        },
+        {
+          "id": 10,
+          "title": "3A boys basketball: Defense, free throws win ...",
+          "url": "https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/",
+          "snippet": "Wasatch's Mike Brown carries the state trophy to the stands as Wasatch takes the title against Morgan in the 3A Utah State Championships at ...",
+          "date": "Feb 27, 2011"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/\"]\n\n}",
+      "result": {
+        "https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/": "Title: 3A boys basketball: Defense, free throws win championship for Wasatch\n\nURL Source: https://www.deseret.com/2011/2/27/20176073/3a-boys-basketball-defense-free-throws-win-championship-for-wasatch/\n\nPublished Time: 2011-02-27T07:10:13Z\n\nMarkdown Content:\n[___]\n\n* [Deseret News]\n* [Deseret Magazine]\n* [Church News]\n\n* [Deseret News]\n* [Deseret Magazine]\n\n* [Print Subscriptions]\n\n[![Image 1: Deseret News Logo]]\n\n[Newsletter Sign Up]\n\n* [Latest][Latest] \n* [Politics][Politics] \n* [Utah]Utah  \n* [Sports]Sports  \n* [Opinion][Opinion] \n* [Magazine][Magazine] \n* More  More  \n\n* []\n* []\n\n* \nSign In \n  * Register\n  * Sign In\n\nSearch\n\nGo\n\n![Image 2: Deseret News Logo Black & Yellow]\n\nReport ad\n\n[Sports][High School Sports]\n\n# 3A boys basketball: Defense, free throws win championship for Wasatch\n\nPublished: Feb 27, 2011, 12:10 a.m. MST\n\n[See More Deseret News Stories In Search]\n\n![Image 3]\n\nView Comments\n\n![Image 4]\n\nShare\n\nView 3 more\n\n![Image 5]\n\nWasatch's Mike Brown carries the state trophy to the stands as Wasatch takes the title against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City, Utah on Saturday, Feb. 26, 2011. Mike Terry, Deseret News [Purchase Image]\n\nView 3 more\n\n![Image 6]\n\nWasatch's Matt Pelo waits for the swat from Morgan's Jared Brooks' shot as Wasatch matches up against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City on Saturday. Mike Terry, Deseret News [Purchase Image]\n\nView 3 more\n\n![Image 7]\n\nWasatch's Matt Pelo and Morgan's Jared Brooks get tangled as Wasatch matches up against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City, Utah on Saturday, Feb. 26, 2011. Mike Terry, Deseret News [Purchase Image]\n\nView 3 more\n\n![Image 8]\n\nWasatch's Mike Brown looks for the basket as he is guarded by Morgan's Casey Evans on Saturday. as Wasatch plays against Morgan in the 3A Utah State Championships at the Jon M. Huntsman Center in Salt Lake City on Saturday. Mike Terry, Deseret News [Purchase Image]\n\n[![Image 9: James Edward]]\n\nBy [James Edward]\n\nJames has been covering high school sports in Utah for the Deseret News for three decades.\n\n[Audio 1]\n\nNEW: Try Article Audio\n\nNEW: Try Article Audio\n\nAudio quality:|\n\n00:00\n\n00:00\n\n1.0x\n\n00:00/00:00\n\n-\n\n+\n\nSALT LAKE CITY — Winning a state championship can be as simple as playing defense and making free throws, and Wasatch does both better than anybody.\n\nDespite suffering through arguably their worst offensive performance of the season in Saturday's 3A state championship at the Huntsman Center, the Wasps were able to persevere thanks to their best defensive performance of the year.\n\n\"It's a broken record to the guys, but offense sells tickets and defense wins championship. I truly believe that, and I know my players believe in that,\" said Wasatch coach Norm Hayter.\n\nReport ad\n\nThe proof is in the titles, and Wasatch has plenty of those.\n\nWasatch held Morgan to 37 points below its season average, and then knocked down 14-of-16 free throws in the fourth quarter to pull away for the 44-33 victory at the Huntsman Center — its second consecutive title and sixth in school history.\n\n\"This was a lot harder than the first time. To win back to back, you have that target. Everyone is giving you their best game throughout the season. You have your highs and lows, and you've got to stay focused as a team,\" said Hayter. \"These guys showed a lot of maturity and a lot of focus all season.\"\n\nMorgan's 33-point night was its lowest of the season. It was also the fewest points allowed by Wasatch, as it limited the Trojans to 26 percent shooting and 3-of-16 from 3-point range.\n\nWasatch struggled just as much offensively, and found itself in a dogfight, only leading 32-30 with 3:09 remaining in the game. That's when it began to pull away from the free-throw line as [Mike Brown], [McKay Murdock] and [Alex Probst] combined on 14 straight makes to put the game away.\n\n\"We've been known to be a good free-throw shooting team because we practice a lot,\" said Brown, who finished with a game-high 18 points.\n\nReport ad\n\nBrown's coach said it's not uncommon for guys like Brown or Murdock to make 96 or 97 out of 100 free throws in practice.\n\nLong before free-throw shooting sealed the title, Wasatch's defense did the damage. It forced Morgan into three straight turnovers to start the game, and six by the end of the quarter. By halftime, the Trojans had committed nine and they finished with 16.\n\nMorgan's troubles had a lot to do with Wasatch's tempo.\n\n\"Last night, we watched Morgan-Desert Hills, and Desert Hills played Morgan's game, really fast pace, kind of out of control, and we wanted to slow it down and make them run their offense instead of getting easy lay-ins by pushing,\" said Brown.\n\nDespite only scoring 18 points in the first half, the mood in the Wasatch locker room at the half was all positive, as Morgan only scored 12 points.\n\nMorgan was just as upbeat. It could've easily been run out of the Huntsman Center after turning it over nine times in the first half, but Morgan's defense was giving Wasatch just as much trouble.\n\nReport ad\n\nTrailing 22-14 with 5:27 remaining in the third quarter, Morgan's [Casey Evans], [Boston Saunders], [Jared Brooks] and [Dallin Schenk] all scored baskets to help the Trojans close to within 24-23 by the end of the quarter.\n\nWasatch extended the lead to 28-23 early in the quarter, but Evans responded with a 3-pointer to whittle the deficit to 28-26. That's about the time Brown took over the game. He scored on three straight possessions, each one pushing Wasatch's lead from two to four points.\n\nMorgan couldn't keep up, and Wasatch pulled away in front of a huge crowd at the U.\n\n\"To see that kind of support by two communities, to really get behind it and support it, that's great. That's what high school basketball's all about,\" said Hayter.\n\nIt was such a big game, even BYU forward Logan Magnusson showed up to watch his alma mater after returning from San Diego.\n\nIn the loss, Evans led Morgan with 13 points and seven rebounds.\n\ne-mail: [jedward@desnews.com](mailto:jedward@desnews.com)\n\n3A Boys All-Tournament Team\n\nMVP — Mike Brown, Wasatch\n\nTanner Atkin, Desert Hills\n\nView Comments\n\nJared Brooks, Morgan\n\nCasey Evans, Morgan\n\nMcKay Murdock, Wasatch\n\nMike Pelo, Wasatch\n\n## Recommended For You\n\n[![Image 10] Grantsville rallies from 12-point deficit, scores 30 unanswered to stun San Juan 30-20][![Image 11] 3 takeaways from Utah basketball’s exhibition opener at UNLV][![Image 12] High school soccer: Wasatch survives Mountain View comeback][![Image 13] High school football: Braden Boucha leads Bountiful to thrilling victory over Syracuse][![Image 14] High school girls volleyball: Corner Canyon puts on dominant display in win over Skyridge][![Image 15] High school football: Morgan’s defense forces 3 turnovers in dominant win over Bountiful][![Image 16] High school football: 3A South projections][![Image 17] New-look Aggies made the most of summer practice sessions. Here’s how the team is shaping up]\n\n You Might Also Like \n\n[]\n\nJoin the Conversation\n\nLooking for comments?\n\nFind comments in their new home! Click the buttons at the top or within the article to view them — or use the button below for quick access.\n\nVIEW COMMENTS\n\n![Image 18: close]\n\nReport ad\n\nMost Popular\n\n[1][The speaker records set at general conference]\n\n[2][October general conference talk summaries, photos]\n\n[3][Analysis: BYU’s offensive struggles become Bear’s burden]\n\n[4][New statue of resurrected Jesus Christ unveiled inside Conference Center for general conference]\n\n[5][What TCU coach Sonny Dykes said after losing to BYU]\n\nMost Commented\n\n* [440][How Utahns and the country differ on transgender women in sports]\n* [135][Opinion: In “So Ordered,” Justice Samuel Alito shows us why he is so important on the U.S. Supreme Court]\n* [48][The moderate money network quietly reshaping Utah Republican politics]\n* [46][Trump Jr. returns wedding gift to Russian oligarch]\n* [43][Lawmakers roll out policy agenda they hope survives no matter who wins control of Congress]\n\nReport ad\n\n## Recommended For You\n\n[![Image 19] Why hasn’t Richie Saunders signed with the Memphis Grizzlies?][![Image 20] Trump administration’s proposed price tag for international students in work program: $70K][![Image 21] Opinion: A sports hero worthy of the title][![Image 22] Stephen King on Utah: ‘What’s wrong with these people?’][![Image 23] This NBA player from Utah was asked about basketball, then the questions changed to church missions. Here’s what he said]\n\n[![Image 24: Deseret News]]\n\nCompany\n\n[About Us][Editorial Staff][Careers]\n\nReach Out\n\n[Contact Us][Technical Support][Advertise][Send Us a Tip][Do Not Sell My Info]\n\nGet More\n\n[![Image 25: Newsletters]Newsletters][![Image 26: Print Subscription]Print Subscription][![Image 27: Shop Merchandise]Shop Merchandise][![Image 28: Deseret News Marathon]Deseret News Marathon]\n\nConnect\n\n[![Image 29: X]X][![Image 30: Facebook]Facebook][![Image 31: Instagram]Instagram][![Image 32: iOS App]iOS App][![Image 33: Android App]Android App]\n\nCopyright © 2026 Deseret News Publishing Company. All Rights Reserved\n\n* [Terms of Use]\n* [Privacy Notice]\n* [CA Notice of Collection]\n* [Cookie Policy]\n* [Cookie Preferences]\n\n## Why are you reporting this ad?\n\nPlease make a selection.\n\n Plays sound Contains adult content Covers the page Other  \n## Additional Information\n\nPlease help us by describing the ad.\n\nOnly 500 characters are allowed.\n\nReport ad\n\nThank you for letting us know.\n\nThis ad has already been reported.\n\nPowered by[![Image 34: Ad Lightning](blob:http://localhost/8912c78fc3f015145d7104ff98b7e98d)]\n\n×\n\n## Cookie Notice\n\nThis website uses cookies and similar technologies (pixels, beacons, tags, etc.), belonging to us or third parties (including, but not limited to the Meta Pixel and Google Pixel), to improve your experience, optimize performance and our services, to understan"
+      }
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Wasatch\\\" \\\"Morgan\\\" 3A boys basketball state championship final February 2011 date\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Utah High School Activities Association Sports Records Book",
+          "url": "https://www.uhsaa.org/RecordsBook/Records_Book.pdf",
+          "snippet": "... Morgan Trojans ... Wasatch Wasps ..................................................................2009. Wasatch Academy ...",
+          "date": "3 days ago"
+        },
+        {
+          "id": 2,
+          "title": "High school basketball: Wasatch's McKay Murdock ...",
+          "url": "https://www.deseret.com/2011/2/26/20175881/high-school-basketball-wasatch-s-mckay-murdock-following-in-idol-s-footsteps/",
+          "snippet": "... championship game against Morgan at 7:30 p.m. ... Ironically enough, Wasatch was upset by Tooele the next night in the 3A state championship game.",
+          "date": "Feb 26, 2011"
+        },
+        {
+          "id": 3,
+          "title": "At Wasatch Academy, an empty chair for Geno",
+          "url": "https://archive.sltrib.com/article.php?id=3256928&itype=CMSID",
+          "snippet": "Rick Egan | The Salt Lake Tribune Wasatch coach Geno Morgan, yells at his players, in the 1A basketball Championship game, Was Trent Nelson | ...",
+          "date": "Dec 8, 2015"
+        },
+        {
+          "id": 4,
+          "title": "'We grew up': Trusting in coach, Morgan boys break away ...",
+          "url": "https://www.standard.net/sports/high-school/2025/feb/26/morgan-richfield-utah-boys-basketball-3a-championship-final-score-recap/",
+          "snippet": "Morgan coach Scott Hunt and senior Kolton Asay hug after defeating Richfield for the 3A boys basketball state championship Wednesday, Feb. 26, ...",
+          "date": "Feb 26, 2025"
+        },
+        {
+          "id": 5,
+          "title": "3A Basketball Utah - High School, Tournaments & Teams",
+          "url": "https://www.facebook.com/fb-answers/3a-basketball-utah/",
+          "snippet": "... State) Judge Memorial vs. Bear River, 11:15 a.m. (at Weber State) Wasatch vs. Spanish Fork, 12:45 p.m. (at Weber State) Morgan vs. Cedar, 2:30 p.m. (at Weber ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Former Palmer High basketball head coach and player die ...",
+          "url": "https://www.frontiersman.com/former-palmer-high-basketball-head-coach-and-player-die-unexpectedly-in-separate-incidents/",
+          "snippet": "Morgan had been with Wasatch Academy since 2009, and led the program to three state championships. Last year, Morgan returned to Alaska, ...",
+          "date": "Jul 9, 2015"
+        },
+        {
+          "id": 7,
+          "title": "2026 Mountain West PBL Salt Lake Slam - Utah Lady ...",
+          "url": "https://www.facebook.com/gteusabb/posts/2026-mountain-west-pbl-salt-lake-slam-utah-lady-prospectsgametimeevents-youthbas/122377308104006843/",
+          "snippet": "... Boys: [Orem 67, Wasatch 53](https://sports.deseret. com/high-school ... Eric Morgan ▻ Utah Baseball Information Center. 26w · Public ...",
+          "date": "1 month ago"
+        },
+        {
+          "id": 8,
+          "title": "Wasatch Academy coach Geno Morgan dies in Chicago",
+          "url": "https://www.ksl.com/article/sports/wasatch-academy-coach-geno-morgan-dies-in-chicago/35333730",
+          "snippet": "Wasatch Academy coach Geno Morgan, who led the Tigers to three state championships in six seasons, died in his sleep Thursday morning while ...",
+          "date": "Jul 2, 2015"
+        },
+        {
+          "id": 9,
+          "title": "Salute to All-Time FAB 50 No. 1s",
+          "url": "https://www.hoopscooponline.com/salute-to-all-time-fab-50-no-1s/",
+          "snippet": "8 Wasatch Academy (Mt. Pleasant, Utah), 76-62, No. 2 Brewster Academy ... (29-3); HC–Morgan Wootten. 1961 — Collinsville (Collinsville, Ill.) (32-0); ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "High school boys basketball: 6A/5A/4A/3A/2A/1A ...",
+          "url": "https://sports.yahoo.com/article/high-school-boys-basketball-6a-161138959.html",
+          "snippet": "Richfield lost to Morgan in the championship game, and a rematch could be in the cards as the coaches pegged the Wildcats as preseason No. 2.",
+          "date": "Nov 12, 2025"
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"from datetime import date\\n\\nbasketball_title = date(2011, 2, 26)   # 3A boys basketball state final: Wasatch 44, Morgan 33 (Huntsman Center), Mike Brown MVP\\nsoccer_final     = date(2011, 5, 14)   # 3A boys soccer state final shown in video: Wasatch 1, Juan Diego 0 (Rio Tinto Stadium)\\n\\ndelta = soccer_final - basketball_title\\nprint(\\\"Days between:\\\", delta.days)\\n\\n# breakdown\\nprint(\\\"Feb 26 -> Feb 28:\\\", (date(2011,2,28)-basketball_title).days, \\\"days\\\")\\nprint(\\\"March:\\\", 31, \\\"days; April:\\\", 30, \\\"days; May 1-14:\\\", 14, \\\"days\\\")\\nprint(\\\"Check:\\\", 2 + 31 + 30 + 14)\"}",
+      "result": {
+        "stdout": "Days between: 77\nFeb 26 -> Feb 28: 2 days\nMarch: 31 days; April: 30 days; May 1-14: 14 days\nCheck: 77",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 94,
+      "id": "gen-1791465302-RC4tmBbBj1d4FtcMXIw3",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 16384,
+        "completion_tokens": 880,
+        "total_tokens": 17264,
+        "cost": 0.0028712,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0028712,
+          "upstream_inference_prompt_cost": 0.0024576,
+          "upstream_inference_completions_cost": 0.0004136
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 793,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 28.323
+    },
+    {
+      "item_id": 94,
+      "id": "gen-1791465346-vBTyF6AOIFVPnWhQHX7P",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 19551,
+        "completion_tokens": 553,
+        "total_tokens": 20104,
+        "cost": 0.001031408,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16128,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001031408,
+          "upstream_inference_prompt_cost": 0.000771498,
+          "upstream_inference_completions_cost": 0.00025991
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 430,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 30.618
+    },
+    {
+      "item_id": 94,
+      "id": "gen-1791465386-kwiuh5M4cboS2VMW5KQp",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 24155,
+        "completion_tokens": 500,
+        "total_tokens": 24655,
+        "cost": 0.00385825,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00385825,
+          "upstream_inference_prompt_cost": 0.00362325,
+          "upstream_inference_completions_cost": 0.000235
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 261,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 52.853
+    },
+    {
+      "item_id": 94,
+      "id": "gen-1791465441-aATK58YmshXZuP89uTo7",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 24737,
+        "completion_tokens": 526,
+        "total_tokens": 25263,
+        "cost": 0.000836106,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 23296,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000836106,
+          "upstream_inference_prompt_cost": 0.000588886,
+          "upstream_inference_completions_cost": 0.00024722
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 221,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 43.847
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "77 days",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 200.52
+}

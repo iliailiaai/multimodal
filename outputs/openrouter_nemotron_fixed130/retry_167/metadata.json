@@ -1,0 +1,58 @@
+[
+  {
+    "id": 167,
+    "question": "When comparing the real-world cost of luxury goods over long periods, economists adjust for inflation to measure value in constant dollars. For this analysis, we will examine the inflation-adjusted price ratio of two iconic Rolls-Royce models. Using the manufacturer's suggested retail price (MSRP) of $479,775 for the 2015 Rolls-Royce Phantom Drophead Coupe, and the original price of the 1931 Rolls-Royce Phantom II as found in the audio recordings, calculate their real prices after adjusting for inflation to 2013 dollars. Use official annual average CPI-U data from the Federal Reserve Bank of Minneapolis. Express the ratio of the 2015 model's real price to the 1931 model's real price in the form '1 : X', where X is rounded to two decimal places. (Note: Use the 2013 base year as indicated, and for the calculation, use only the provided nominal prices, ignoring any pre-adjusted figures mentioned elsewhere.)",
+    "omni_modal_input": [
+      {
+        "type": "image",
+        "id": "image_000000042529",
+        "path": "images/000000042529_1.jpg"
+      },
+      {
+        "type": "audio",
+        "id": "audio_3DrOlyLIx3c",
+        "path": "audios/3DrOlyLIx3c_1.wav"
+      },
+      {
+        "type": "audio",
+        "id": "audio_ZzPz7QMwvkk",
+        "path": "audios/ZzPz7QMwvkk.wav"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Analyze the image to identify the watermark text 'landahlauts, 2013', which indicates the base year for inflation adjustment should be 2013.",
+      "Step 2: Listen to the first audio (audio_3DrOlyLIx3c) to extract the original 1931 price of the Rolls-Royce Phantom II, which is stated as $19,000 USD at timestamp 135-150 seconds.",
+      "Step 3: Listen to the second audio (audio_ZzPz7QMwvkk) to confirm it features a 2015 Rolls-Royce Phantom Drophead Coupe (stated at 0-30 seconds). Use the specified MSRP of $479,775 for calculations.",
+      "Step 4: Use web_search to find the official US Consumer Price Index (CPI-U) annual averages for the years 1931, 2013, and 2015 from the Federal Reserve Bank of Minneapolis. The official values are: 1931 = 15.2, 2013 = 233.0, 2015 = 237.0.",
+      "Step 5: Calculate the inflation-adjusted price of the 1931 car to 2013 dollars: $19,000 × (233.0 / 15.2) = $291,250.",
+      "Step 6: Calculate the inflation-adjusted price of the 2015 car to 2013 dollars: $479,775 × (233.0 / 237.0) ≈ $471,677.53.",
+      "Step 7: The question asks for 'ratio of the real price of the 2015 model to the real price of the 1931 model', which is 2015_price : 1931_price = $471,677.53 : $291,250. To express as '1 : X', divide both sides by the 2015 price: 1 : ($291,250 / $471,677.53) ≈ 1 : 0.6175. Rounded to two decimal places: 1 : 0.62."
+    ],
+    "sources": [
+      {
+        "type": "web_search",
+        "url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-",
+        "key_information": "CPI-U annual averages: 1931 = 15.2, 2013 = 233.0, 2015 = 237.0"
+      },
+      {
+        "type": "web_search",
+        "url": "https://www.forbes.com/sites/joshmax/2015/10/12/2015-rolls-royce-phantom-drophead-coupe-review/",
+        "key_information": "MSRP for 2015 Rolls-Royce Phantom Drophead Coupe: $479,775"
+      },
+      {
+        "type": "code_executor",
+        "code": "price_1931 = 19000; price_2015 = 479775; cpi_1931 = 15.2; cpi_2013 = 233.0; cpi_2015 = 237.0; adj_1931 = price_1931 * (cpi_2013 / cpi_1931); adj_2015 = price_2015 * (cpi_2013 / cpi_2015); ratio = adj_1931 / adj_2015; print(f'Ratio as 1 : X where X = {ratio:.4f}, rounded to 2 decimals: 1 : {ratio:.2f}')",
+        "key_information": "X = 0.6175, rounded to 2 decimals: 1 : 0.62"
+      }
+    ],
+    "answer": "1 : 0.62",
+    "total_steps": 7,
+    "Level": "Medium",
+    "required_external_tools": [
+      "web_search",
+      "code_executor"
+    ],
+    "task_type": "image + audio",
+    "category": "Finance & Commerce"
+  }
+]

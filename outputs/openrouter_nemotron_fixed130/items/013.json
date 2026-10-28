@@ -1,0 +1,94 @@
+{
+  "id": 13,
+  "question": "In the TV series 'Forever', a character named Isaac Monroe is revealed to be a descendant of survivors from a specific shipwreck. The actor who portrayed Isaac won the Academy Award for Best Supporting Actor at the 69th Academy Awards in 1997 for his performance as Rod Tidwell in the film 'Jerry Maguire'. In an iconic scene from 'Jerry Maguire', Rod Tidwell shouts a memorable four-word phrase while demanding financial commitment. What is the exact four-word phrase (including punctuation) that he shouts, which became one of the most famous catchphrases in cinematic history?",
+  "Level": "Easy",
+  "category": "Movies",
+  "task_type": "video w/ audio",
+  "answer": "Show me the money!",
+  "output": "<answer>Show me the money!</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "In the TV series 'Forever', a character named Isaac Monroe is revealed to be a descendant of survivors from a specific shipwreck. The actor who portrayed Isaac won the Academy Award for Best Supporting Actor at the 69th Academy Awards in 1997 for his performance as Rod Tidwell in the film 'Jerry Maguire'. In an iconic scene from 'Jerry Maguire', Rod Tidwell shouts a memorable four-word phrase while demanding financial commitment. What is the exact four-word phrase (including punctuation) that he shouts, which became one of the most famous catchphrases in cinematic history?"
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:3250506 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:4825884 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "<answer>Show me the money!</answer>",
+      "reasoning": "We need to find the four-word phrase shouted by Rod Tidwell (the character played by Cuba Gooding Jr.) in Jerry Maguire. The question: \"What is the exact four-word phrase (including punctuation) that he shouts, which became one of the most famous catchphrases in cinematic history?\" The phrase is \"Show me the money!\" That's four words (Show, me, the, money!) including punctuation (exclamation). So answer: \"Show me the money!\" Ensure punctuation: maybe includes exclamation mark. The phrase is \"Show me the money!\" So answer that.\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "We need to find the four-word phrase shouted by Rod Tidwell (the character played by Cuba Gooding Jr.) in Jerry Maguire. The question: \"What is the exact four-word phrase (including punctuation) that he shouts, which became one of the most famous catchphrases in cinematic history?\" The phrase is \"Show me the money!\" That's four words (Show, me, the, money!) including punctuation (exclamation). So answer: \"Show me the money!\" Ensure punctuation: maybe includes exclamation mark. The phrase is \"Show me the money!\" So answer that.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [],
+  "requests": [
+    {
+      "item_id": 13,
+      "id": "gen-1793172369-Atwd6RWNJAwRX1Qkoxqf",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "provider": "Nvidia",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 10990,
+        "completion_tokens": 138,
+        "total_tokens": 11128,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 134,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 2,
+      "elapsed_seconds": 74.634
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Show me the money!",
+  "em_score": 1,
+  "llm_equal": 1,
+  "judge_response": "Exact match",
+  "judge_error": null,
+  "elapsed_seconds": 177.34
+}

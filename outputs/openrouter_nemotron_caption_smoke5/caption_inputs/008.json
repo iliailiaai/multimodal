@@ -1,0 +1,122 @@
+{
+  "item_id": 8,
+  "images": [
+    {
+      "caption": "This is a detailed description of the image, focusing on the subject and its environment.\n\n### Overall Scene\n\nThe image captures a dynamic moment of a dark-colored bird, likely a black moorhen or a similar species, in mid-flight over a pond filled with large, vibrant green lily pads. The bird is diving or landing, with its wings spread wide, creating a dramatic silhouette against the foliage. The scene is rich with natural detail, suggesting a lush, wetland environment.\n\n---\n\n### Detailed Description\n\n**1. The Bird:**\n- **Species:** The bird is a dark, iridescent waterfowl with a deep blue or black plumage on its body and wings. It has a striking red or orange beak and a blue-grey head, which is characteristic of a species like the **Black Moor** (*Gallinula chloropus*).\n- **Action:** The bird is in the process of landing or diving into the water. Its wings are fully extended, and its body is angled downwards, with its beak pointed towards the water's surface. It appears to be interacting with a small, green, unopened lily pad bud or a plant growing from the water.\n- **Coloration:** The wings are a deep, metallic blue, with a hint of green and purple in the light. The feathers on its back and wings are glossy, reflecting the sunlight.\n\n**2. The Environment:**\n- **Water and Lilies:** The pond is covered with large, broad, green lily pads, some of which are wet and glistening with water droplets. The water is dark and reflective, showing distorted reflections of the leaves and the bird.\n- **Lily Pad Details:**\n    - A prominent, unopened green lily pad bud is visible in the center-left, emerging from the water.\n    - The lily pads are in various stages of life; some are large and healthy, while others show signs of wear, such as brown or yellowed edges.\n    - The leaves have a soft, almost leafy texture and are arranged in a dense, natural pattern.\n\n**3. Lighting and Composition:**\n- **Lighting:** The scene is illuminated by bright, natural sunlight, which highlights the glossy surfaces of the leaves and the bird's feathers. The light creates a strong contrast between the dark water and the vibrant green foliage.\n- **Composition:** The bird is the central focus, positioned diagonally across the frame. The lily pads frame the image, with some in the foreground and others in the background, creating a sense of depth. The bird's flight path leads the viewer's eye from the upper right to the center, where it interacts with the water.",
+      "eos_finished": true,
+      "generation_attempts": [
+        {
+          "max_new_tokens": 2048,
+          "generated_tokens": 549,
+          "eos_finished": true,
+          "seconds": 11.62
+        }
+      ],
+      "captioner_input_tokens": 277,
+      "captioner_image_grid_thw": [
+        [
+          1,
+          40,
+          26
+        ]
+      ],
+      "runtime": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 3060",
+        "dtype": "bfloat16",
+        "attention": "sdpa"
+      },
+      "image_sha256": "88ca2a54801a967159f46161ed7d40c14f51c4bba82527317e30e063814bc625",
+      "width": 427,
+      "height": 640,
+      "cache_hit": false,
+      "caption_block": "[Image 1 description]\nThis is a detailed description of the image, focusing on the subject and its environment.\n\n### Overall Scene\n\nThe image captures a dynamic moment of a dark-colored bird, likely a black moorhen or a similar species, in mid-flight over a pond filled with large, vibrant green lily pads. The bird is diving or landing, with its wings spread wide, creating a dramatic silhouette against the foliage. The scene is rich with natural detail, suggesting a lush, wetland environment.\n\n---\n\n### Detailed Description\n\n**1. The Bird:**\n- **Species:** The bird is a dark, iridescent waterfowl with a deep blue or black plumage on its body and wings. It has a striking red or orange beak and a blue-grey head, which is characteristic of a species like the **Black Moor** (*Gallinula chloropus*).\n- **Action:** The bird is in the process of landing or diving into the water. Its wings are fully extended, and its body is angled downwards, with its beak pointed towards the water's surface. It appears to be interacting with a small, green, unopened lily pad bud or a plant growing from the water.\n- **Coloration:** The wings are a deep, metallic blue, with a hint of green and purple in the light. The feathers on its back and wings are glossy, reflecting the sunlight.\n\n**2. The Environment:**\n- **Water and Lilies:** The pond is covered with large, broad, green lily pads, some of which are wet and glistening with water droplets. The water is dark and reflective, showing distorted reflections of the leaves and the bird.\n- **Lily Pad Details:**\n    - A prominent, unopened green lily pad bud is visible in the center-left, emerging from the water.\n    - The lily pads are in various stages of life; some are large and healthy, while others show signs of wear, such as brown or yellowed edges.\n    - The leaves have a soft, almost leafy texture and are arranged in a dense, natural pattern.\n\n**3. Lighting and Composition:**\n- **Lighting:** The scene is illuminated by bright, natural sunlight, which highlights the glossy surfaces of the leaves and the bird's feathers. The light creates a strong contrast between the dark water and the vibrant green foliage.\n- **Composition:** The bird is the central focus, positioned diagonally across the frame. The lily pads frame the image, with some in the foreground and others in the background, creating a sense of depth. The bird's flight path leads the viewer's eye from the upper right to the center, where it interacts with the water.\n[/Image 1 description]",
+      "image_visual_tokens": 280,
+      "native_image_size_hw": [
+        640,
+        448
+      ],
+      "image_tokens_single": 282,
+      "caption_text_tokens_single": 551,
+      "caption_tokens_single": 564,
+      "image_counter_api_verified": false,
+      "protocol": {
+        "mode": "image_captioning",
+        "caption_model": "internlm/CapRL-Qwen3VL-2B",
+        "caption_revision": "b838cec8b6c4791ed6169d12db21db0b47bb70e5",
+        "prompt": "Please describe this image in detail.",
+        "caption_sampling": "greedy; EOS required; budgets 2048 then 8192; no truncation",
+        "counter_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+        "counter_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+        "counter_method": "native image_processor num_tokens + image delimiters; native tokenizer of complete caption block",
+        "counter_scope": "all main-model HTTP attempts including retries; video/audio excluded",
+        "image_counter_api_verified": false,
+        "counter_version": 1
+      },
+      "occurrence_id": "8:1",
+      "source_path": "images/000000156858.jpg"
+    },
+    {
+      "caption": "This is a detailed description of the image, focusing on the subjects and their environment.\n\n### Overall Scene\n\nThe image captures two dark-colored birds, likely moorhens or a similar species, perched on a rocky outcrop near a body of water, surrounded by lush green foliage. The scene has a natural, slightly blurred background that emphasizes the birds in the foreground.\n\n---\n\n### Detailed Description\n\n**1. The Birds**\n\n- **Bird on the Left:**\n  - **Color:** The bird is predominantly dark, with a deep, slate-like black or dark grey plumage.\n  - **Head and Beak:** It has a bright, vibrant orange beak and a matching orange patch on its head, which is characteristic of the species.\n  - **Posture:** It is standing on the rock, looking towards the left with a calm, alert expression.\n\n- **Bird on the Right:**\n  - **Color:** This bird is also dark, with a similar black or dark grey appearance, but it has a distinct white patch on its wing.\n  - **Head and Beak:** It has a bright orange beak, and its head is slightly turned, showing a more subdued look.\n  - **Posture:** It is positioned behind the first bird, with its head resting on the rock, and its body partially obscured by the leaves.\n\n**2. The Rock and Surroundings**\n\n- **Perch:** The birds are standing on a grey, textured rock that appears to be a natural outcrop or ledge.\n- **Foliage:**\n  - **Right Side:** The birds are nestled among vibrant green leaves, including a prominent, large, fan-shaped leaf that looks like a palm frond.\n  - **Background:** The background is a soft, out-of-focus blend of green and dark water, suggesting a pond or stream. The water has a murky, greenish appearance.\n\n**3. Lighting and Composition**\n\n- **Lighting:** The lighting is soft and diffused, likely from an overcast day, which gives the scene a gentle, natural feel.\n- **Focus:** The birds are the sharp focus of the image, while the background is intentionally blurred to create depth.\n- **Color Palette:** The image is dominated by dark greens, greys, and the striking orange of the birds' beaks, creating a strong contrast.",
+      "eos_finished": true,
+      "generation_attempts": [
+        {
+          "max_new_tokens": 2048,
+          "generated_tokens": 479,
+          "eos_finished": true,
+          "seconds": 9.768
+        }
+      ],
+      "captioner_input_tokens": 277,
+      "captioner_image_grid_thw": [
+        [
+          1,
+          26,
+          40
+        ]
+      ],
+      "runtime": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 3060",
+        "dtype": "bfloat16",
+        "attention": "sdpa"
+      },
+      "image_sha256": "8265f633ad46ee9d366935d3c47003d66f243560479f692df359fdbfee9a1ce8",
+      "width": 640,
+      "height": 426,
+      "cache_hit": false,
+      "caption_block": "[Image 2 description]\nThis is a detailed description of the image, focusing on the subjects and their environment.\n\n### Overall Scene\n\nThe image captures two dark-colored birds, likely moorhens or a similar species, perched on a rocky outcrop near a body of water, surrounded by lush green foliage. The scene has a natural, slightly blurred background that emphasizes the birds in the foreground.\n\n---\n\n### Detailed Description\n\n**1. The Birds**\n\n- **Bird on the Left:**\n  - **Color:** The bird is predominantly dark, with a deep, slate-like black or dark grey plumage.\n  - **Head and Beak:** It has a bright, vibrant orange beak and a matching orange patch on its head, which is characteristic of the species.\n  - **Posture:** It is standing on the rock, looking towards the left with a calm, alert expression.\n\n- **Bird on the Right:**\n  - **Color:** This bird is also dark, with a similar black or dark grey appearance, but it has a distinct white patch on its wing.\n  - **Head and Beak:** It has a bright orange beak, and its head is slightly turned, showing a more subdued look.\n  - **Posture:** It is positioned behind the first bird, with its head resting on the rock, and its body partially obscured by the leaves.\n\n**2. The Rock and Surroundings**\n\n- **Perch:** The birds are standing on a grey, textured rock that appears to be a natural outcrop or ledge.\n- **Foliage:**\n  - **Right Side:** The birds are nestled among vibrant green leaves, including a prominent, large, fan-shaped leaf that looks like a palm frond.\n  - **Background:** The background is a soft, out-of-focus blend of green and dark water, suggesting a pond or stream. The water has a murky, greenish appearance.\n\n**3. Lighting and Composition**\n\n- **Lighting:** The lighting is soft and diffused, likely from an overcast day, which gives the scene a gentle, natural feel.\n- **Focus:** The birds are the sharp focus of the image, while the background is intentionally blurred to create depth.\n- **Color Palette:** The image is dominated by dark greens, greys, and the striking orange of the birds' beaks, creating a strong contrast.\n[/Image 2 description]",
+      "image_visual_tokens": 280,
+      "native_image_size_hw": [
+        448,
+        640
+      ],
+      "image_tokens_single": 282,
+      "caption_text_tokens_single": 485,
+      "caption_tokens_single": 498,
+      "image_counter_api_verified": false,
+      "protocol": {
+        "mode": "image_captioning",
+        "caption_model": "internlm/CapRL-Qwen3VL-2B",
+        "caption_revision": "b838cec8b6c4791ed6169d12db21db0b47bb70e5",
+        "prompt": "Please describe this image in detail.",
+        "caption_sampling": "greedy; EOS required; budgets 2048 then 8192; no truncation",
+        "counter_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+        "counter_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+        "counter_method": "native image_processor num_tokens + image delimiters; native tokenizer of complete caption block",
+        "counter_scope": "all main-model HTTP attempts including retries; video/audio excluded",
+        "image_counter_api_verified": false,
+        "counter_version": 1
+      },
+      "occurrence_id": "8:2",
+      "source_path": "images/000000189159.jpg"
+    }
+  ],
+  "image_payloads_after": 0,
+  "other_media_sha256_before": "a4f65d40c0cbc67de2d9206e77e15b6dc176eb5d7114bfde85ff0b6a072610e2",
+  "other_media_sha256_after": "a4f65d40c0cbc67de2d9206e77e15b6dc176eb5d7114bfde85ff0b6a072610e2"
+}

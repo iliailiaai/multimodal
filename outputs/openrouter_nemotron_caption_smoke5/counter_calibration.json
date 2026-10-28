@@ -1,0 +1,14 @@
+{
+  "item_id": 17,
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "provider": "Nvidia",
+  "native_run": "outputs/openrouter_nemotron_fixed130",
+  "caption_run": "outputs/openrouter_nemotron_caption_smoke5",
+  "native_api_prompt_tokens": 1244,
+  "caption_api_prompt_tokens": 1631,
+  "local_image_tokens": 282,
+  "local_caption_tokens": 670,
+  "observed_api_difference": 387,
+  "local_predicted_difference": 388,
+  "note_ru": "Один пример только с изображением, без аудио и видео; одинаковые вопрос, инструменты, модель и провайдер. Разница API составляет 387 токенов, локальное предсказание 388: расхождение в 1 токен может быть связано с границами блоков и шаблоном сообщений. Это не универсальная верификация счётчика или гарантия неизменности препроцессинга провайдера."
+}

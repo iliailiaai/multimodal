@@ -1,0 +1,778 @@
+{
+  "id": 127,
+  "question": "You are analyzing a report on mobile recharge trends in India. First, listen to the audio clip to determine the average recharge value mentioned by the speaker in US cents. Next, examine the provided image to identify the specific date visible in its watermark. Then, using the official RBI Reference Rate for USD to INR on that date, calculate the equivalent value in Indian Rupees. Round your final answer to two decimal places.",
+  "Level": "Easy",
+  "category": "Finance & Commerce",
+  "task_type": "image + audio",
+  "answer": "3.71",
+  "output": "## Summary of Analysis\n\n**Step 1 — Audio:** R.S. Sharma states that \"the top-up value for a mobile recharge in India today average is about **six US cents**\" (= $0.06 USD).\n\n**Step 2 — Image:** The watermark in the bottom-right corner reads \"© RAH 2013/ **16-05-2013**\", giving the date 16 May 2013.\n\n**Step 3 — RBI Reference Rate:** On 16 May 2013, the official RBI Reference Rate for USD was **₹54.7723 per US dollar** (confirmed by historical RBI reference rate data and contemporaneous news reporting that the rupee closed at ~54.77/USD that day).\n\n**Step 4 — Calculation:**\n$$0.06 \\text{ USD} \\times 54.7723 \\text{ INR/USD} = 3.286338 \\text{ INR} \\approx ₹3.29$$\n\n<answer>₹3.29</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "You are analyzing a report on mobile recharge trends in India. First, listen to the audio clip to determine the average recharge value mentioned by the speaker in US cents. Next, examine the provided image to identify the specific date visible in its watermark. Then, using the official RBI Reference Rate for USD to INR on that date, calculate the equivalent value in Indian Rupees. Round your final answer to two decimal places."
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1586604 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:410087 characters>"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll work through this step by step.\n\n**Step 1: Audio Analysis**\n\nListening to the audio, the speaker (R.S. Sharma) states at around 2:09: \"the top-up value for a mobile recharge in India today average is about **six US cents**.\" So the recharge value = 6 US cents = $0.06 USD.\n\n**Step 2: Image Analysis**\n\nThe watermark in the bottom-right corner of the image reads \"© RAH 2013/ 16-05-2013\", indicating the date **16 May 2013**.\n\n**Step 3: Find the RBI Reference Rate for USD/INR on 16 May 2013**\n\nLet me search for this rate.\n\n",
+      "reasoning": "Let me break down this task:\n\n1. Listen to the audio to determine the average recharge value in US cents mentioned by the speaker.\n2. Examine the image to identify the specific date in its watermark.\n3. Find the official RBI Reference Rate for USD to INR on that date.\n4. Calculate the equivalent value in Indian Rupees.\n\nFrom the audio, at around 02:09-02:15, the speaker says: \"For example, the top-up value for a mobile recharge in India today averages about six US cents.\" So the value is 6 US cents = $0.06.\n\nFrom the image, the watermark reads \"© RAH 2013/ 16-05-2013\" — so the date is 16-05-2013 (May 16, 2013).\n\nNext, I need to look up the RBI reference rate for USD to INR on May 16, 2013. Let me search for this.\n\nI recall that the USD/INR rate in mid-May 2013 was around 55.6–56. Let me verify with a search.\n\nLet me do the search and calculation.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_e182af8e9dbc4e1cb4a56524",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"RBI reference rate USD INR 16 May 2013\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_609c1e7a456b4f82bef29228",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"16.05.2013\\\" OR \\\"16-05-2013\\\" RBI reference rate US dollar rupee\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me break down this task:\n\n1. Listen to the audio to determine the average recharge value in US cents mentioned by the speaker.\n2. Examine the image to identify the specific date in its watermark.\n3. Find the official RBI Reference Rate for USD to INR on that date.\n4. Calculate the equivalent value in Indian Rupees.\n\nFrom the audio, at around 02:09-02:15, the speaker says: \"For example, the top-up value for a mobile recharge in India today averages about six US cents.\" So the value is 6 US cents = $0.06.\n\nFrom the image, the watermark reads \"© RAH 2013/ 16-05-2013\" — so the date is 16-05-2013 (May 16, 2013).\n\nNext, I need to look up the RBI reference rate for USD to INR on May 16, 2013. Let me search for this.\n\nI recall that the USD/INR rate in mid-May 2013 was around 55.6–56. Let me verify with a search.\n\nLet me do the search and calculation.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e182af8e9dbc4e1cb4a56524",
+      "content": "[{\"id\": 1, \"title\": \"Reference Rate Archive| Official Website of ...\", \"url\": \"https://www.rbi.org.in/scripts/referenceratearchive.aspx\", \"snippet\": \"Reference Rate Archive - Reserve Bank of India. RBI Circulars. Search Reference Rate Select the Option All GBP JPY USD. Reserve Bank of India.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"RBI Reference Rate (Archives) | Historical Data\", \"url\": \"https://www.msei.in/markets/currency/historical-data/rbireferenceratearchives\", \"snippet\": \"RBI Reference Rate (Archives) Historical Data for RBI Reference Rate for the period. RBI reference rate is not available on Muhurat Trading days\", \"date\": \"\"}, {\"id\": 3, \"title\": \"RBI Reference Rates Statistics\", \"url\": \"https://www.nseindia.com/report-detail/rbi-reference-rate-statistics\", \"snippet\": \"Reference rate-FBIL. Average Trade Value = Total Traded Value. Reference Rate Statistics Data 1D. Reference rate-FBIL from to csv Download (.csv)\", \"date\": \"\"}, {\"id\": 4, \"title\": \"RBI Reference Exchange Rate\", \"url\": \"https://ies.gov.in/arthapedia/concept/rbi-reference-exchange-rate\", \"snippet\": \"The rate for spot US Dollar against Indian Rupee will be polled from the select list of contributing banks at a randomly chosen five minute window between 11.30 ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"EXCHANGE RATE OF THE INDIAN RUPEE VIS- ...\", \"url\": \"https://www.fedai.org.in/UploadPopupPageFiles/HistoricalExchangeRates_2018-19.pdf\", \"snippet\": \"2013-14 92.2602 92.7790. RBI reference rates are used w.e. f. May 2012. dissemination of reference rates\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Foreign Exchange Rates - H.10 - October 05, 2026\", \"url\": \"https://www.federalreserve.gov/releases/h10/hist/dat00_in.htm\", \"snippet\": \"Historical Rates for the Indian Rupee. (Rates in Indian rupees per U.S. dollar) ... 16-MAY-16, 66.7800. 17-MAY-16, 66.7400. 18-MAY-16, 66.9500. 19-MAY-16, 67.5700.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"DQAF View : India - Exchange rates - SDDS\", \"url\": \"https://dsbb.imf.org/sdds/dqaf-base/country/IND/category/EXR00\", \"snippet\": \"The Reference Rate data for USD/INR, GBP/INR, EUR/INR and JPY/INR are published on daily basis by the FBIL. Spot exchange rates for the INR against USD\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Press Release| Official Website of Reserve Bank of India\", \"url\": \"https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=29314\", \"snippet\": \"The Reserve Bank of India's Reference Rate for the US dollar is ` 61.8195 and the Reference Rate for Euro is ` 82.4510 on August 16, 2013.\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Exchange rate history of the Indian rupee\", \"url\": \"https://en.wikipedia.org/wiki/Exchange_rate_history_of_the_Indian_rupee\", \"snippet\": \"2014 to 2026 ; 2013–14, 92.2602, 92.7790 ; 2014–15, 90.7955, 86.3431 ; 2015–16, 91.3452, 93.4510 ; 2016–17, 92.6156, 87.9763 ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"India Foreign Exchange Rate: RBI: Reference Rate: US Dollars\", \"url\": \"https://www.ceicdata.com/en/india/foreign-exchange-rate-reserve-bank-of-india/foreign-exchange-rate-rbi-reference-rate-us-dollars\", \"snippet\": \"India Foreign Exchange Rate: RBI: Reference Rate: US Dollars data was reported at 96.623 USD/INR in 07 Oct 2026. This records an increase from the previous ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_609c1e7a456b4f82bef29228",
+      "content": "[{\"id\": 1, \"title\": \"India FIMMDA-Thomson Reuters-MITOR based on dlr/rupee swap\", \"url\": \"https://www.reuters.com/article/world/us/india-fimmda-thomson-reuters-mitor-based-on-dlrrupee-swap-idUSL3N0DW1IG/\", \"snippet\": \"... rate(%) -------------------------------------------------------------- 15/05/2013 01.06/01.08 07.08/07.22 07.20/07.34 OVER 16/05/2013 Spot rate : 1$ = 54.6275 ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"USD to INR Daily Exchange Rates | PDF\", \"url\": \"https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\", \"snippet\": \"The document contains daily reference rates and returns for the Indian Rupee (INR) ... 16/05/2013 54.7723 -0.020% 17/05/2013 54.8865 0.208% 20/05/2013 55.0368 ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"ANNUAL REPORT\", \"url\": \"https://dea.gov.in/files/annual_reports_documents/AnnualReport2013_14.pdf\", \"snippet\": \"... rate of Gross-. Domestic Proudct (GDP) at factor cost at constant (2004 ... 16/05/2013. 31/03/2017. 5. LN-2924-Uttarakhand Power Sector Investment. Program ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"BOI AR_Normal Cover 13-14 for web\", \"url\": \"https://bankofindia.bank.in/documents/20121/570417/BOIAR2.pdf\", \"snippet\": \"Discounting the effect of depreciation of the rupee growth was still impressive at 17% and 14% respectively. ... 16.05.2013. 29.05.2013. 03.06.\", \"date\": \"Nov 15, 2013\"}, {\"id\": 5, \"title\": \"Draft Prospectus Dated July 22, 2013\", \"url\": \"https://www.sebi.gov.in/sebi_data/attachdocs/1375173947849.pdf\", \"snippet\": \"... 16.05.2013. 12000. 1200.00. 16.05.2013. 12000. Apr-13. NIL. NIL. NIL. NIL. NIL. NIL. Mar-13. NIL. NIL. NIL. NIL. NIL. NIL. Feb-13. NIL. NIL. NIL. NIL. NIL. NIL.\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Report of the Comptroller and Auditor General of India ON ...\", \"url\": \"https://saiindia.gov.in/webroot/uploads/download_audit_report/2016/Madhya_Pradesh_Economic_NON_PSUs_Report_3_2016.pdf\", \"snippet\": \"required to be made with reference to the SOR rate applicable for 40-60 TPH ... 48/16-05-2013. 1100000. 932670. 40/9. 33 Sili Tank. 45/2010-11. 51 ...\", \"date\": \"Nov 28, 2009\"}, {\"id\": 7, \"title\": \"CNY INR Historical Exchange Rate\", \"url\": \"https://www.currency-converter.org.uk/currency-rates/historical/table/CNY-INR.html\", \"snippet\": \"CNY INR rate for 18/05/2013. Friday, 17/05/2013, 1 CNY = 8.9326 INR, CNY INR rate for 17/05/2013. Thursday, 16/05/2013, 1 CNY = 8.9071 INR, CNY INR rate for 16/ ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Contradicting official statements on ambush in Poonch Sector\", \"url\": \"https://cms.rajyasabha.nic.in/UploadedFiles/Debates/OfficialDebatesDatewise/Floor/229/F07.08.2013.pdf\", \"snippet\": \"by RS SECRETARIAT · 2013 · Cited by 1 — ... 16.05.2013. However, no regular meeting of the Executive Committee has so far been convened. The issue is proposed to be placed before the ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"RESEARCH BULLETIN - Cloudfront.net\", \"url\": \"https://dwpivt501gtb6.cloudfront.net/upload/about/bulletin/Vol_42_I.pdf\", \"snippet\": \"... 16-05-2013. 230.00. 251.40. 261.30. 250.75. 240.44. 237.10. 46. Steel Authority of India Limited. 22-03-2013. 63.00. 63.90. 63.35. 63.00. 63.07. 63.00. 47. 3M ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"NOVUS GREEN ENERGY SYSTEMS LIMITED\", \"url\": \"https://nsearchives.nseindia.com/emerge/corporates/content/Novus_Green_DRHP.pdf\", \"snippet\": \"THE FACE VALUE OF THE EQUITY SHARES IS ` 10 EACH AND THE ISSUE ... 16.05.2013. 2. Ministry of New and Renewable Energy. Grid connected ...\", \"date\": \"Dec 27, 2018\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "I found something interesting. The Scribd document says \"16/05/2013 54.7723 -0.020%\", which looks like it's the RBI reference rate for USD/INR on May 16, 2013. The Reuters article says for 16/05/2013 \"Spot rate: 1$ = 54.6275\", but this is the spot rate, not necessarily the RBI reference rate.\n\nLet me check the Scribd document more carefully. It says \"USD to INR Daily Exchange Rates\" and \"The document contains daily reference rates...\" with \"16/05/2013 54.7723 -0.020%\". This looks like the RBI reference rate.\n\nLet me try accessing the RBI website directly to confirm. The RBI has a reference rate archive page. Let me try fetching it. The URL format might be something like https://www.rbi.org.in/scripts/ReferenceRateArchive.aspx, but it requires POST data. Alternatively, I could check the MSEI page or try other sources.\n\nLet me search more specifically for the RBI reference rate on May 16, 2013.\n\nI found some clues. The Reuters article shows a spot rate of 54.6275 on May 16, 2013, while the Scribd document listing what appears to be RBI reference rates shows 54.7723 for May 16, 2013. Let me try to verify the official RBI reference rate directly.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_2da2704354e743b8abccd1a7",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\", \"https://www.rbi.org.in/scripts/referenceratearchive.aspx\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_f8cbd8de32b94d4fbd4ef6f5",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"RBI reference rate \\\"54.7723\\\" May 2013\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I found something interesting. The Scribd document says \"16/05/2013 54.7723 -0.020%\", which looks like it's the RBI reference rate for USD/INR on May 16, 2013. The Reuters article says for 16/05/2013 \"Spot rate: 1$ = 54.6275\", but this is the spot rate, not necessarily the RBI reference rate.\n\nLet me check the Scribd document more carefully. It says \"USD to INR Daily Exchange Rates\" and \"The document contains daily reference rates...\" with \"16/05/2013 54.7723 -0.020%\". This looks like the RBI reference rate.\n\nLet me try accessing the RBI website directly to confirm. The RBI has a reference rate archive page. Let me try fetching it. The URL format might be something like https://www.rbi.org.in/scripts/ReferenceRateArchive.aspx, but it requires POST data. Alternatively, I could check the MSEI page or try other sources.\n\nLet me search more specifically for the RBI reference rate on May 16, 2013.\n\nI found some clues. The Reuters article shows a spot rate of 54.6275 on May 16, 2013, while the Scribd document listing what appears to be RBI reference rates shows 54.7723 for May 16, 2013. Let me try to verify the official RBI reference rate directly.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_2da2704354e743b8abccd1a7",
+      "content": "{\"https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\": \"Title: USDINR_RBI-data_hitorical\\n\\nURL Source: https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\\n\\nPublished Time: Mon, 19 Aug 2024 22:15:10 GMT\\n\\nMarkdown Content:\\nOpens in a new window Opens an external website Opens an external website in a new window\\n\\n This website utilizes technologies such as cookies to enable essential site functionality, as well as for performance cookies, personalization, and targeted advertising. To learn more, view the following link: [Privacy Policy]\\n\\nYour Privacy Choices\\n\\nSkip to main content\\n\\n[Open navigation menu][![Image 1: Scribd](blob:http://localhost/d0cf58e0c96bd48797ae3249dd19d8af)]\\n\\nClose suggestions Search Search\\n\\nen Change Language, English\\n\\n[Upload]\\n\\nSign in\\n\\nSign in\\n\\n[]\\n\\n# USD to INR Daily Exchange Rates\\n\\n0 ratings 0% found this document useful (0 votes)\\n\\n23 views 51 pages\\n\\nAI-enhanced title and description\\n\\nThe document contains daily reference rates and returns for the Indian Rupee (INR) against the US Dollar (USD) from July 2008 to June 2009. It shows the daily INR/USD exchange rate, daily pe…\\n\\nFull description\\n\\n## Uploaded by\\n\\n[Abhishek Kumar Singh]\\n\\nDownload\\n\\nYou are on page 1\\n\\n51\\n\\n@k t c s R c j R k t c @k a i y R c t u r h;0/></2>>= 0 2.=2;3/></2>>= 0?.;<>.=;<%;:/></2>>= 0?.;<>.>>>% D a h R c t u r h -2.1:2%;</></2>>= 0 2.1 0 ->.3??% D k x R c t u r h 0.;>2%;=/></2>>= 0 2.<= ->.?<?% K v c r k l c @k a i y R c t u r h >.>2 3%2;/></2>>= 0 2.<; ->.;:0% @k a i y _ t k h`k r` @c v a ke h (i k s t = y c k r s) >.3:<%2 2/></2>>= 0 2.<; >.>>>% @k a i y _ t k h`k r` @c v a ke h (i k s t y c k r, 2>;3) >.?;;%2?/></2>>= 0 2.?? ->.=1>% K h u k i a z c` _ t k h`k r` @c v a ke h (2>;3) 0.1 0%2 0/></2>>= 0;.1: ->.=<0%2 3/></2>>= 0 2.2? >.:0?%2=/></2>>= 0 2.? >.;::%2 1/></2>>= 0 2.3 0 >.3:<%?>/></2>>= 0 2.0<->.;:3%?;/></2>>= 0 2.0 1 >.>0<%;/=/2>>= 0 2.?<->.2=2%0/=/2>>= 0 2.0 >.><;%3/=/2>>= 0 2.2= ->.2=?%:/=/2>>= 0 2 ->.::2%</=/2>>= 0;.=1 ->.2:2%=/=/2>>= 0 2.2 >.<0>%;;/=/2>>= 0 2 ->.0<0%;2/=/2>>= 0 2.0 >.1 3 2%;?/>=/2>>= 0 2.:<>.:?<%;0/>=/2>>= 0 2.=2 >.?3 2%;=/>=/2>>= 0?.2? >.1 3<%2>/>=/2>>= 0?.<2 ;.;??%2;/>=/2>>= 0?.3= ->.?2>%2 2/>=/2>>= 0?.?= ->.0 3 1%2 3/>=/2>>= 0?.3= >.0:;%2:/>=/2>>= 0 0.><;.;2 0%2</>=/2>>= 0?.<? ->.<<;%2=/>=/2>>= 0?.<? >.>>>%2 1/>=/2>>= 0?.<1 >.;?<%;/1/2>>= 0 0.2; >.1 3 1%2/1/2>>= 0 0.2: >.;;?%0/1/2>>= 0 0.0 3 >.0 2 1%3/1/2>>= 0 0.?<->.;=>%=/1/2>>= 0 0.2: ->.2 0=%1/1/2>>= 0 0.=1 ;.0 2?%;>/1/2>>= 0 3.;2 >.3;2%;;/1/2>>= 0 3.0 0 >.<>1%;2/1/2>>= 0 3.<<>.<2:%;3/>1/2>>= 0 3.1 0 >.?<;%;:/>1/2>>= 0:.:? ;.3>2%\\n\\n-0.>>%-?.>>%-2.>>%-;.>>%>.>>%;.>>%2.>>%?.>>%0.>>%3.>>%\\n\\nS_@ AHR @k aiy Rctur h\\n\\n![Image 2]\\n\\n;</>1/2>>= 0:.?0 ->.:2 2%;=/>1/2>>= 0:.<; >.<1=%;1/>1/2>>= 0:.?2 ->.=?3%2 2/>1/2>>= 0 3.0 -;.1=:%2?/>1/2>>= 0 3.<2 >.<>3%2 0/>1/2>>= 0 3.=? >.2 0;%2 3/>1/2>>= 0:.2 3 >.1;:%2:/>1/2>>= 0:.0? >.?=1%2 1/>1/2>>= 0:.1 0 ;.>1=%;/;>/2>>= 0:.1: >.>0?%?/;>/2>>= 0:.== ->.;<>%:/;>/2>>= 0<.0: ;.2?<%</;>/2>>= 0=.>; ;.;3 1%=/;>/2>>= 0=.<0 ;.3 2;%;>/;>/2>>= 0=.<2 ->.>0;%;?/;>/2>>= 0=.;0 -;.;1>%;0/;>/2>>= 0<.<; ->.=1?%;3/;>/2>>= 0=.0? ;.3>1%;:/;>/2>>= 0=.=: >.=%;</;>/2>>= 0=.:= ->.?:=%2>/;>/2>>= 0=.=? >.?>=%2 2/;>/2>>= 0 1.2 1 >.1 0 2%2?/;>/2>>= 0 1.<1 ;.>;0%2 0/;>/2>>= 0 1.1 3 >.?2;%2</;>/2>>= 3>.>1 >.2=>%2 1/;>/2>>= 0 1.<<->.:?1%?;/;>/2>>= 0 1.2 3 -;.>0 3%?/;;/2>>= 0=.1: ->.3=1%0/;;/2>>= 0=.:2 ->.:1 0%3/;;/2>>= 0<.;= -2.1:2%:/;;/2>>= 0<.:<;.>?1%</;;/2>>= 0<.<: >.;=1%;>/;;/2>>= 0<.?2 ->.1 2;%;;/;;/2>>= 0<.3 1 >.3<;%;2/;;/2>>= 0=.<1 2.3 2 2%;0/;;/2>>= 0 1.0: ;.?<?%;</;;/2>>= 0=.1 1 ->.1 3>%;=/;;/2>>= 0 1.:= ;.0>=%;1/;;/2>>= 0 1.<0 >.;2;%2>/;;/2>>= 3>.3 2 ;.3:=%2;/;;/2>>= 3>.>? ->.1<>%2 0/;;/2>>= 3>.>1 >.;2>%2 3/;;/2>>= 0 1.1<->.2 0>%2:/;;/2>>= 0 1.=3 ->.2 0>%2=/;;/2>>= 0 1.=0 ->.>2>%\\n\\n;/;2/2>>= 3>.>1 >.3>2%2/;2/2>>= 3>.3 2 >.=3=%?/;2/2>>= 0 1.1 -;.2 2<%0/;2/2>>= 0 1.<1 ->.2 2>%3/;2/2>>= 0 1.:1 ->.2>;%=/;2/2>>= 0 1.2 2 ->.1 0:%;>/;2/2>>= 0 1.;2 ->.2>?%;;/;2/2>>= 0=.3 2 -;.2 2;%;2/;2/2>>= 0=.<; >.?1 2%;3/;2/2>>= 0<.1 0 -;.3=;%;:/;2/2>>= 0<.=2 ->.2 3>%;</;2/2>>= 0<.?? -;.>2 3%;=/;2/2>>= 0<.2= ->.;>:%;1/;2/2>>= 0<.>= ->.0 2?%2 2/;2/2>>= 0<.?1 >.:3=%2?/;2/2>>= 0=.0 1 2.?2;%2 0/;2/2>>= 0=.1 1 ;.>?;%2:/;2/2>>= 0<.=1 -2.2 0 3%2 1/;2/2>>= 0=.<: ;.=;<%?>/;2/2>>= 0=.3 ->.3??%?;/;2/2>>= 0=.0 3 ->.;>?%;/;/2>>1 0=.<? >.3<=%2/;/2>>1 0=.=1 >.?2=%3/;/2>>1 0=.?<-;.>:0%:/;/2>>1 0=.:= >.:0;%</;/2>>1 0=.:; ->.;0 0%1/;/2>>1 0=.1 2 >.:?=%;2/;/2>>1 0=.: ->.:3 0%;?/>;/2>>1 0=.1; >.:?=%;0/>;/2>>1 0=.<->.0 2 1%;3/>;/2>>1 0 1.>= >.<=>%;:/>;/2>>1 0=.<<->.:?2%;1/>;/2>>1 0=.3: ->.0?;%2>/>;/2>>1 0=.1 1 >.==:%2;/>;/2>>1 0 1.;2 >.2:3%2 2/>;/2>>1 0=.1? ->.?=<%2?/>;/2>>1 0 1.;1 >.3?;%2</>;/2>>1 0=.=3 ->.:1;%2=/>;/2>>1 0=.=<>.>0;%2 1/>;/2>>1 0=.1 >.>:;%?>/>;/2>>1 0 1.>2 >.2 0 3%2/2/2>>1 0 1.>; ->.>2>%?/2/2>>1 0=.= ->.0 2=%0/2/2>>1 0=.:3 ->.?><%3/2/2>>1 0=.=2 >.?0 1%\\n\\n:/2/2>>1 0=.<? ->.;=0%1/2/2>>1 0=.: ->.2:<%;>/2/2>>1 0=.<>.2>:%;;/2/2>>1 0=.=2 >.2 0:%;2/2/2>>1 0=.<2 ->.2>3%;?/>2/2>>1 0=.<2 >.>>>%;:/>2/2>>1 0=.<2 >.>>>%;</>2/2>>1 0 1.;: >.1>?%;=/>2/2>>1 0 1.=3 ;.0>0%;1/>2/2>>1 0 1.=3 >.>>>%2 0/>2/2>>1 0 1.=1 >.>=>%2 3/>2/2>>1 0 1.=2 ->.;0>%2:/>2/2>>1 3>.0; ;.;=0%2</>2/2>>1 3>.<? >.:?3%2/?/2>>1 3;.<3 2.>;;%?/?/2>>1 3;.:: ->.;<0%0/?/2>>1 3;.1? >.3 2?%3/?/2>>1 3 2.>: >.2 3>%:/?/2>>1 3;.3; -;.>3:%1/?/2>>1 3;.= >.3:?%;2/?/2>>1 3;.<->.;1?%;?/>?/2>>1 3;.:<->.>3=%;:/>?/2>>1 3;.3= ->.;<0%;</>?/2>>1 3;.2 3 ->.:0>%;=/>?/2>>1 3;.?3 >.;1 3%;1/>?/2>>1 3>.<<-;.;?>%2>/>?/2>>1 3>.;0 -;.2 0;%2?/>?/2>>1 3>.3 2 >.<3=%2 0/>?/2>>1 3>.?; ->.0;:%2 3/>?/2>>1 3>.=? ;.>?0%2:/>?/2>>1 3>.3 0 ->.3<;%?>/>?/2>>1 3;.>= ;.>:=%?;/>?/2>>1 3>.1 3 ->.2 3 3%2/0/2>>1 3>.? -;.2<:%:/0/2>>1 3>->.3 1:%=/0/2>>1 3>.3? ;.>:>%1/0/2>>1 0 1.1; -;.2 2<%;?/>0/2>>1 0 1.=: ->.;>>%;3/>0/2>>1 0 1.== >.>0>%;:/>0/2>>1 0 1.0 1 ->.<=2%;</>0/2>>1 0 1.<; >.0 0 3%2>/>0/2>>1 0 1.1 3 >.0=?%2;/>0/2>>1 3>.?: >.=2;%2 2/>0/2>>1 3>.2 ->.?;=%2?/>0/2>>1 3>.2 2 >.>0>%\\n\\n## Share this document\\n\\n* [Share on Facebook, opens a new window]\\n* [Share on LinkedIn, opens a new window]\\n* [Share with Email, opens mail client](mailto:?subject=Read%20USDINR_RBI-data_hitorical%20on%20Scribd&body=I%E2%80%99m%20reading%20USDINR_RBI-data_hitorical%20on%20Scribd:%20https%3A%2F%2Fwww.scribd.com%2Fdocument%2F464380826%2FUSDINR-RBI-data-hitorical)\\n* Copy link\\n\\n[![Image 3]Millions of documents at your fingertips, ad-free Subscribe with a free trial]\\n\\n1. [Documents]\\n2. [Teaching Methods & Materials]\\n3. [Mathematics]\\n\\n## Footer menu\\n\\n[Back to top]\\n\\n## About\\n\\n* [About Scribd, Inc.]\\n* [Slideshare]\\n* [Join our team!]\\n* [Contact us]\\n\\n## Support\\n\\n* [Help / FAQ]\\n* [Accessibility]\\n* [Purchase help]\\n* [AdChoices]\\n\\n## Legal\\n\\n* [Terms]\\n* [Privacy]\\n* [Copyright]\\n* Your Privacy Choices\\n\\n## Social\\n\\n* [Instagram Instagram]\\n* [Facebook Facebook]\\n* [Pinterest Pinterest]\\n\\n## Get our free apps\\n\\n* [![Image 4: Scribd - Download on the App Store]]\\n* [![Image 5: Scribd - Get it on Google Play]]\\n\\n## About\\n\\n* [About Scribd, Inc.]\\n* [Slideshare]\\n* [Join our team!]\\n* [Contact us]\\n\\n## Legal\\n\\n* [Terms]\\n* [Privacy]\\n* [Copyright]\\n* Your Privacy Choices\\n\\n## Support\\n\\n* [Help / FAQ]\\n* [Accessibility]\\n* [Purchase help]\\n* [AdChoices]\\n\\n## Social\\n\\n* [Instagram Instagram]\\n* [Facebook Facebook]\\n* [Pinterest Pinterest]\\n\\n## Get our free apps\\n\\n* [![Image 6: Scribd - Download on the App Store]]\\n* [![Image 7: Scribd - Get it on Google Play]]\\n\\n* [Documents]\\n\\nLanguage:\\n\\nEnglish\\n\\nCopyright © 2026 Scribd Inc.\\n\\nWe take content rights seriously. [Learn more] in our FAQs or [report infringement here].\\n\\nWe take content rights seriously. [Learn more] in our FAQs or [report infringement here].\\n\\nLanguage:\\n\\nEnglish\\n\\nCopyright © 2026 Scribd Inc.\\n\\n576648e32a3d8b82ca71961b7a986505\\n\\nscribd.scribd.scribd.\\n\", \"https://www.rbi.org.in/scripts/referenceratearchive.aspx\": \"Title: Reference Rate Archive | Official Website of Reserve Bank of India\\n\\nURL Source: https://www.rbi.org.in/scripts/referenceratearchive.aspx\\n\\nMarkdown Content:\\n[Skip to main content]\\n\\n* [![Image 1: Increase Letter Spacing]Not Pressed](javascript:__doPostBack('UsrFontCntr$LinkBtnSpace','') \\\"Increase Letter Spacing\\\")\\n* [![Image 2: Increase Font Size]](javascript:__doPostBack('UsrFontCntr$LinkBtnFontIncrease','') \\\"Increase Font Size\\\")\\n* [![Image 3: Regular Font Size]](javascript:__doPostBack('UsrFontCntr$LinkBtnFontRegular','') \\\"Regular Font Size\\\")\\n* [![Image 4: Decrease Font Size]](javascript:__doPostBack('UsrFontCntr$LinkBtnFontDecrease','') \\\"Decrease Font Size\\\")\\n\\n* [![Image 5: Apply Dark Theme]](javascript:__doPostBack('UsrFontCntr$LinkBtnAccessibilty','') \\\"Apply Dark Theme\\\")\\n* [![Image 6: Apply Normal Theme]](javascript:__doPostBack('UsrFontCntr$LinkBtnUndoAccessibilty','') \\\"Apply Normal Theme\\\")\\n* [![Image 7: Apply Grey Theme]](javascript:__doPostBack('UsrFontCntr$LinkBtnGreyScale','') \\\"Apply Grey Theme\\\")\\n\\n[![Image 8: Print this page]]\\n\\n Change Language [हिंदी]\\n\\n[![Image 9: Logo of Official website of Reserve Bank of India]]\\n\\n Search the Website  Search\\n\\n![Image 10: Beti Bachao Beti Padhao Logo]\\n\\n* [Home]\\n* [About Us ▼]\\n  * [About Us]\\n  * [Organisation & Functions ▶]\\n    * [Organisation Structure]\\n    * [Departments]\\n    * [Offices]\\n    * [Training Establishment ▶]\\n    * [College of Agricultural Banking]\\n    * [Reserve Bank Staff College]\\n    * [College of Supervisors]\\n\\n    * [RBI's Functions and Working]\\n    * [Governors]\\n    * [Deputy Governors]\\n    * [Executive Directors]\\n\\n  * [Media Kit]\\n  * [Communication Policy of RBI]\\n  * [Sources of Information ▶]\\n    * [Annual Publications]\\n    * [Half-yearly Publications]\\n    * [Quarterly Publications]\\n    * [Monthly Publications]\\n    * [Weekly Publications]\\n    * [Occasional Publications]\\n    * [SDDS]\\n    * [NSDP]\\n    * [Data Releases]\\n    * [Publications available on Subscription]\\n    * [General Information]\\n\\n  * [RBI History]\\n  * [Museum ▶]\\n    * [The RBI Museum]\\n    * [RBI Monetary Museum]\\n\\n* [Notifications ▼]\\n  * [Notifications]\\n  * [Master Directions]\\n  * [Master Circulars]\\n  * [Amendment Directions]\\n  * [Draft Notifications/Guidelines ▶]\\n    * [Draft Notifications/Guidelines]\\n    * [Draft Directions (RE-wise)]\\n\\n  * [Index To RBI Circulars]\\n  * [Standalone Circulars]\\n  * [Circulars Withdrawn]\\n\\n* [Press Releases]\\n* [Speeches & Media Interactions ▼]\\n  * [Speeches]\\n  * [Media Interactions]\\n  * [Memorial Lectures]\\n  * [Podcasts]\\n\\n* [Publications ▼]\\n  * [Biennial]\\n  * [Annual]\\n  * [Half-Yearly]\\n  * [Quarterly]\\n  * [Bi-monthly]\\n  * [Monthly]\\n  * [Weekly]\\n  * [Occasional]\\n  * [Reports]\\n  * [Working Papers]\\n\\n* [Legal Framework ▼]\\n  * [Act]\\n  * [Rules]\\n  * [Regulations]\\n  * [Schemes]\\n\\n* [Research ▼]\\n  * [External Research Schemes]\\n  * [RBI Occasional Papers]\\n  * [Working Papers]\\n  * [RBI Bulletin]\\n  * [History]\\n  * [DRG Studies]\\n  * [KLEMS]\\n  * [State Statistics and Finances]\\n\\n* [Statistics ▼]\\n  * [Data Releases]\\n  * [Database on Indian Economy]\\n  * [Public Debt Statistics]\\n\\n* [Regulatory Reporting ▼]\\n  * [List of Returns]\\n  * [Data Definition]\\n  * [Validation rules/ Taxonomy]\\n  * [List of RBI Reporting Portals]\\n  * [FAQs of RBI Reporting Portals]\\n\\n[]\\n\\n* [Home]\\n* Reference Rate Archive\\n\\n## Reference Rate Archive\\n\\n### Search Reference Rate\\n**Select the Option**- [x]  All - [x]  USD - [x]  GBP - [x]  EUR - [x]  JPY - [x]  AED - [x]  IDR\\nFrom Date \\n\\n To Date\\n\\n ◀ ▶\\n\\n Sun \\n\\n Mon \\n\\n Tue \\n\\n Wed \\n\\n Thu \\n\\n Fri \\n\\n Sat \\n\\n**Download to:**[Excel ![Image 11: Download reference rates excel]](javascript:__doPostBack('lnkDownloadExcel',''))\\n\\n  \\n\\n[Top]\\n\\n[Back to previous page](javascript:history.back())  \\nLast Updated On: Oct 08, 2026\\n\\n## More Links\\n\\n* [Bank Holidays]\\n* [Banking Glossary]\\n* [Citizen's Charter]\\n* [Complaints]\\n* [Contact Us]\\n* [COVID-19 Measures]\\n* [E-LMS]\\n* [Events]\\n* [FAQs]\\n* [Financial Education]\\n* [Forms]\\n* [IFSC/MICR Codes]\\n* [Important Websites]\\n* [Opportunities@RBI]\\n* [RBI Clarifications]\\n* [RBI Kehta Hai]\\n* [RBI’s Vision and Values ![Image 12: PDF - Accessibility Statement] (652 kb)]\\n* [Right to Information Act]\\n* [Tenders]\\n\\n## Follow RBI\\n\\n* [![Image 13: RSS Icon]RSS]\\n* [![Image 14: Twitter Icon]Twitter]\\n* [![Image 15: YouTube Icon]YouTube]\\n* [![Image 16: Instagram Icon]Instagram]\\n* [![Image 17: Facebook Icon]Facebook]\\n* [![Image 18: LinkedIn Icon]LinkedIn]\\n\\n[![Image 19: National Portal of India logo]]\\n\\n© Reserve Bank of India. All Rights Reserved. \\n\\n[Sitemap]|[Disclaimer]\\n\\nWebsite owned and managed by Reserve Bank of India. Contact us on helpdoc[at]rbi[dot]org[dot]in\\n\\nWebsite last updated date: Oct 08, 2026\\n\\n[Web Information Manager]\\n\\n[Accessibility Statement ![Image 20: PDF - Accessibility Statement] (133 KB)] |[Screen Reader and Accessibility Help]\\n\\nSupports: Google Chrome 147+ | Firefox 150+ | Microsoft Edge Version 147+ | Safari 17+\\n\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f8cbd8de32b94d4fbd4ef6f5",
+      "content": "[{\"id\": 1, \"title\": \"USD to INR Daily Exchange Rates | PDF\", \"url\": \"https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\", \"snippet\": \"16/05/2013 54.7723 -0.020% 17/05/2013 54.8865 0.208% 20/05/2013 55.0368 ... RBI Repo Rate History 2000-2023. 10 pages. Treynor Measure Analysis of ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Global Integration and Rupee Depreciation\", \"url\": \"https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269\", \"snippet\": \"54.7723. 55.0368. 55.522. 55.6075. 55.7423. 56.0995. 56.574. 56.4238. 56.7445. 58.9255. 58.414. 57.731. 58.7445. 59.3505. 59.703. 60.588. 59.149.\", \"date\": \"by B Pushpa · 2014\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The Scribd document is garbled, but the search snippets consistently show \"16/05/2013 54.7723\" as the RBI reference rate for USD/INR. Also, an academic paper (\"Global Integration and Rupee Depreciation\") lists 54.7723 among the rates.\n\nLet me cross-check this against another source. The Reuters article showed the spot rate for 16/05/2013 as 1$ = 54.6275, but the RBI reference rate is calculated slightly differently (based on a 5-minute window from 11:30). The Scribd document titled \"USDINR_RBI-data_historical\" clearly lists the RBI reference rate: 16/05/2013 → 54.7723.\n\nLet me also check the RBI press release format. RBI publishes daily reference rates via press releases. Let me search for the specific RBI press release for May 16, 2013. Actually, let me try to verify with another source. For example, exchange-rates.org, or the FEDAI historical exchange rate PDF.\n\nActually, let me check the academic paper that listed these rates. The snippet shows \"54.7723. 55.0368. 55.6075...\" which matches the Scribd sequence (16/05: 54.7723, 20/05: 55.0368...). This corroborates that 54.7723 is the RBI reference rate for May 16, 2013.\n\nLet me also try searching for the RBI press release for that date to further verify.\n\nThe search results strongly suggest that the RBI reference rate for USD/INR on May 16, 2013 was **54.7723**. Let me cross-check this against the RBI press release archive and academic paper sources to verify.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_50c557ed5a9541d1b540b088",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"rbi.org.in press release reference rate US dollar \\\"May 16, 2013\\\" 54.77\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_df5262a07bcc4832966439d2",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The Scribd document is garbled, but the search snippets consistently show \"16/05/2013 54.7723\" as the RBI reference rate for USD/INR. Also, an academic paper (\"Global Integration and Rupee Depreciation\") lists 54.7723 among the rates.\n\nLet me cross-check this against another source. The Reuters article showed the spot rate for 16/05/2013 as 1$ = 54.6275, but the RBI reference rate is calculated slightly differently (based on a 5-minute window from 11:30). The Scribd document titled \"USDINR_RBI-data_historical\" clearly lists the RBI reference rate: 16/05/2013 → 54.7723.\n\nLet me also check the RBI press release format. RBI publishes daily reference rates via press releases. Let me search for the specific RBI press release for May 16, 2013. Actually, let me try to verify with another source. For example, exchange-rates.org, or the FEDAI historical exchange rate PDF.\n\nActually, let me check the academic paper that listed these rates. The snippet shows \"54.7723. 55.0368. 55.6075...\" which matches the Scribd sequence (16/05: 54.7723, 20/05: 55.0368...). This corroborates that 54.7723 is the RBI reference rate for May 16, 2013.\n\nLet me also try searching for the RBI press release for that date to further verify.\n\nThe search results strongly suggest that the RBI reference rate for USD/INR on May 16, 2013 was **54.7723**. Let me cross-check this against the RBI press release archive and academic paper sources to verify.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_50c557ed5a9541d1b540b088",
+      "content": "[{\"id\": 1, \"title\": \"Quarterly Credit Report\", \"url\": \"https://d2.nuscri.org/static/pdf/qcr/QCR-2013-Q3.pdf\", \"snippet\": \"... Rates, Reserve Bank of India, rbi.org.in. 11Oct 4, 2013, Cumulative Cash ... 47May 16, 2013, Sumitomo Mitsui Leads Japan Banks Forecasting Lower Profit ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Federal Communications Commission DA 15-132 1\", \"url\": \"https://docs.fcc.gov/public/attachments/DA-15-132A1.pdf\", \"snippet\": \"... rate benchmarks for broadband service utilized by the Commission to ... May 16, 2013, available at http://www.latimes.com/business ...\", \"date\": \"Feb 4, 2015\"}, {\"id\": 3, \"title\": \"FCC Record | PDF\", \"url\": \"https://de.scribd.com/document/593646169/FCC-Record\", \"snippet\": \"... May 16, 2013, available at [Link] windows-phone -now -a - distant-third ... of the contract. Next, we convert all prices to U.S. dollars based on both current ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_df5262a07bcc4832966439d2",
+      "content": "{\"https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269\": \"Title: 1473-Article Text-2968-1-10-20170629.pdf\\n\\nURL Source: https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269\\n\\nPublished Time: 2014-11-18T10:10:25.000Z\\n\\nNumber of Pages: 15\\n\\nMarkdown Content:\\nUshus J B Mgt 13, 3 (2014), 73-87 ISSN 0975-3311│ doi: 10.12725/ujbm.28.5 \\n\\n73 \\n\\n# Global Integration a nd Rupee Depreciation: \\n\\n# Are Times Good Forward? \\n\\nPushpa B * and  Deepak R †\\n\\nAbstract \\n\\nThe S& P BSE Sensex  has plunged over 1,000 points so far in August, weighed by a host of factors, including weakness in the currency, possible tapering of US Fed's bond-buying program and threats of ratings downgrade. The Indian rupee has depreciated by over ten per cent since May 2, 2013 against the US dollar, and eleven per cent against the Euro. Depreciating currency will adversely impact capital-intensive sectors and firms with foreign borrowings and those who import raw materials heavily. Automobiles, capital goods, petroleum, power and telecom companies will bear the brunt of a weak rupee. But sectors such as software services and pharma, with major export revenues, will benefit. The rupee's decline in the last six months has deep consequences for the Indian economy and various asset classes. Thus in the study, we examined the impact of rupee depreciation on broad and sectoral indices of BSE and NSE markets. Sample T-tests for means and variances were conducted on both the price returns and volume changes to understand the behavior of stock market in unison. The study finds conclusive evidence of impact of rupee depreciation on indices considered. The impact observed is found to be more severe when compared to previous  \\n\\n> *\\n\\nAssistant Professor in Accounts and Finance, M P Birla Institute of Management (MPBIM), Bangalore, India;  pushpabv75@gmail.com  \\n\\n> †\\n\\nAssistant Professor in Finance, (MPBIM), Bangalore, India; dnaikr@gmail.com Ushus J B Mgt 13 , 3 (2014) ISSN 0975-3311  \\n\\n> 74\\n> depreciations ,which points towards integration of glo bal\\n> markets with Indian markets in more positive sense than\\n> ever. Thus co -integration tests were conducted to analyze\\n> the long term relationship between Major Indian and\\n> global indices.\\n\\nKeyw ords:  Rupee Depreciation, Integration, Indices, BSE, NSE \\n\\n1. Introduction: \\n\\nIn the past few months, the Indian Rupee has depreciated significantly against the U.S.D marking a new risk for the Indian economy. The gloom surrounding the recent rupee fall has been unnerving for investors. The near 11% fall in the currency between January and July is hurting large parts of India Inc. For stock investors, the rupee's roller-coaster ride over the last few weeks has added another layer of uncertainty in a market whose movements over the last few months have anyway been as unpredictable as during any time in recent history. Foreign investors, already nervous about India's high current account deficit, or CAD, fell for the rising dollar bond yields as a result of the Fed's actions and took money out of India to invest there. It is believed that the Rupee depreciation will have really unsettling consequences for the Indian economy as it will add further pressure on the overall domestic inflation. India, being an import intensive economy, will have to bear the burden of higher domestic costs and higher fiscal and current account deficits. Many macroeconomic variables like inflation rate, stock prices, interest rates, high fiscal deficit, lack of reforms, global uncertainties etc. are said to have an impact on the exchange rates (Singhal, 2012). Especially with the rise in the world trade and capital movements, exchange rate has become the most vital determinant of a country’s relative economic health. Indian rupee is witnessing extreme volatility mainly the fall and it may take some more time to stabilize and analysts believe that this sharp depreciation in the currency will impact the earnings of some sectors materially. A weak currency has historically had an adverse impact on equity markets, given their sensitivity to FII flows. Any expectation of structural weakness in the rupee sours their return expectations. This can lead to outflows, which can further pressure Pushpa B et al Global Integration and Rupee Depreciation \\n\\n> 75\\n\\nthe rupee. Hence, the regulators need to calm the markets by taking measures to boost capital flows and manage expectations. However, on an aggregate basis, companies in the listed space may see positive earnings as they operate in sectors that benefit from a weaker currency. Previous studies have proven correlation and some de correlation between rupee/ exchange rates and stock prices. Smith (1992); Solnik (1987) and Aggarwal (1981) have found a significant positive relationship between stock prices and exchange rates while Soenen and Hennigar (1998) have reported a significant negative relationship between the two. Franck and Young ( 1972), Bartov and Bodnor (1994) have found very weak or no association between stock prices and exchange rates. Abdalla and Murinde (1997) have found causation runs from exchange rates to stock prices, but Ajayi and Mougoue (1996) have proved a reverse causation. Bi-directional causality between the two in the short run is proved by Bahmani-Oskooee and Sohrabian(1992). \\n\\nA depreciation of the local currency makes exporting goods attractive and leads to an increase in foreign demand and hence revenue for the firm and its value would appreciate and hence the stock prices. On the other hand, an appreciation of the local currency decreases profits for an exporting firm because it leads to a decrease in foreign demand of its products. However, the sensitivity of the value of an importing firm to exchange rate changes is just the opposite of that of an exporting firm. In addition, variations in exchange rates affect a firm's transaction exposure. That is, exchange rate movements also affect the value of a firm’s future payables (or receivables) denominated in foreign currency. Therefore, on a macro basis, the impact of exchange rate fluctuations on stock market seems to depend on both the importance of a country’s international trades in its economy and the degree of the trade imbalance. \\n\\nAnother way of explaining the relationship between exchange rates and stock prices is through following the capital account transactions. Like all commodities, exchange rates are determined by market mechanism, i.e., the demand and supply condition. A blooming stock market would attract capital flows from foreign investors, which may cause an increase in the demand for acountry’s currency. The reverse would happen in case of falling Ushus J B Mgt 13 , 3 (2014) ISSN 0975-3311 \\n\\n> 76\\n\\nstock prices where the investors would try to sell their stocks to avoid further losses and would convert their money into foreign currency to move out of the country. There would be demand for foreign currency in exchange of local currency and it would lead to depreciation of local currency. As a result, rising (declining) stock prices would lead to an appreciation (depreciation) in exchange rates. Moreover, foreign investment in domestic equities could increase over time due to benefits of international diversification that foreign investors would gain. Furthermore, movements in stock prices may influence exchange rates and money demand because investor’s wealth and liquidity demand could depend on the performance of the stock market. \\n\\nBetween 2005 and 2012, 75% of the times rupee and Sensex  moved \\n\\nin similar direction. Therefore, movement in the rupee has become \\n\\nextremely critical for the direction of the Indian stock markets. \\n\\nThere is a chance that three out of four times markets will go up if \\n\\nthe rupee goes up and fall if the rupee falls. \\n\\nThe weakness of the rupee is also haunting the equity markets. \\n\\nInvestors in the emerging markets have suffered more than those in \\n\\nthe developed world, a comparison of benchmark indices indicates. \\n\\nIndices  were d own  in October, Russia's RTS has shed 36 per c ent; \\n\\nBrazil's Bovespa lost almost 25 per cent and the Korea's Kospi came \\n\\ndown 24.6 per cent. In India, the 30 -share Sensex has fallen close to \\n\\n24 per cent and the broader Nifty almost 27 per cent. Dubai \\n\\nFinancial Market has dropped more than 28 per cent. \\n\\nThe rupee's decline in the last six months has deep consequences for the Indian economy and various asset classes. It may have an adverse impact on sectors that are dependent on imported commodities and technologies for their functioning as landed cost of imports may become dearer and may thus escalate operating costs and depress profit margins. The transmission of these increased costs to consumers may also lead to renewed inflationary pressures. Moreover, companies that may have subscribed to dollar-denominated borrowings may find it expensive to service their loan commitments. Also, while the domestically-oriented companies may remain largely unperturbed by the declining rupee, yet, they too may find the inflationary impact inimical to their business interests. Export-oriented sectors may witness a higher Pushpa B et al Global Integration and Rupee Depreciation \\n\\n> 77\\n\\nvalue turnover. The rupee's decline increases price competitiveness of Indian products in the overseas markets, which may aid the volume-led growth of exports of these sectors. We may therefore see increased investment preference for such sectors in the allocation decisions. The defensive bias in the market will continue for some time with overweight positions in domestic consumption and overseas services related sector viz. FMCG, Pharma, IT and utilities. Any improvement on the policy front may see large liquidity inflows into the markets leading to a sharp recovery. The interesting question to answer is why stock markets worry so much every time there is a pressure on the rupee, especially when large numbers of countries are working hard to keep their currency undervalued? The probable reason may be that some\"}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "I need to investigate this further. Let me check the details.\n\nThe academic paper didn't directly display the table in the extracted text, but the search snippet showed \"54.7723. 55.0368. 55.6075...\", which matches the sequence in the Scribd document. The Scribd document clearly lists the following:\n- 16/05/2013 → 54.7723\n- 17/05/2013 → 54.8865\n- 20/05/2013 → 55.0368\n\nThese are labeled as RBI reference rates.\n\nLet me double-check with another source. I'll try FEDAI's historical exchange rate PDF, or another site that lists RBI reference rates for May 2013. Actually, let me search again to confirm whether 54.7723 was indeed the RBI reference rate on May 16, 2013.\n\nThe data is converging: multiple sources list the RBI reference rate for 16/05/2013 as 54.7723 INR/USD. Just to be safe, let me do one more verification.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_c17640eba2114693922377b5",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"16/05/2013\\\" OR \\\"16.05.2013\\\" \\\"54.7723\\\" RBI reference rate dollar\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_9b80fbd820b2417f876e5fae",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"RBI reference rate May 2013 daily \\\"54.77\\\" US dollar Indian rupee\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I need to investigate this further. Let me check the details.\n\nThe academic paper didn't directly display the table in the extracted text, but the search snippet showed \"54.7723. 55.0368. 55.6075...\", which matches the sequence in the Scribd document. The Scribd document clearly lists the following:\n- 16/05/2013 → 54.7723\n- 17/05/2013 → 54.8865\n- 20/05/2013 → 55.0368\n\nThese are labeled as RBI reference rates.\n\nLet me double-check with another source. I'll try FEDAI's historical exchange rate PDF, or another site that lists RBI reference rates for May 2013. Actually, let me search again to confirm whether 54.7723 was indeed the RBI reference rate on May 16, 2013.\n\nThe data is converging: multiple sources list the RBI reference rate for 16/05/2013 as 54.7723 INR/USD. Just to be safe, let me do one more verification.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_c17640eba2114693922377b5",
+      "content": "[{\"id\": 1, \"title\": \"USD to INR Daily Exchange Rates | PDF\", \"url\": \"https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\", \"snippet\": \"16/05/2013 54.7723 -0.020% 17/05/2013 54.8865 0.208% 20/05/2013 55.0368 0.274% 21/05/2013 55.0395 0.005% 22/05/2013 55.522 0.877% 23/05/2013 55.991 0.845 ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9b80fbd820b2417f876e5fae",
+      "content": "[{\"id\": 1, \"title\": \"Analysing the Factors Behind Exchange Rate Fluctuations ...\", \"url\": \"https://www.ijraset.com/best-journal/analyzing-the-factors-behind-exchange-rate-fluctuations-in-india\", \"snippet\": \"... rate of the Indian Rupee against the US Dollar. (USD/INR). The following ... 54.77. 3.21. 14490. 7,700. Feb-21. 73.92. 1814.01. 62.28. 3.26. 13120. 2,295. Mar-21.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"RBI Bulletin - Reserve Bank of India| Official Website of ...\", \"url\": \"https://rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=13048\", \"snippet\": \"The FEDAI revaluation rate for Rupee-US Dollar exchange as at end ... 54.77. 59.79. (1.3). (1.2). (0.9). (1.0). (1.1). (a) Bonds. 59.34. 58.95.\", \"date\": \"Mar 12, 2012\"}, {\"id\": 3, \"title\": \"Rupee rules firm at 66.19 vs. dollar, up 2 paise\", \"url\": \"https://www.thehindu.com/business/Rupee-rules-firm-at-66.19-vs.-dollar-up-2-paise/article60272608.ece\", \"snippet\": \"It also declined against the Japanese yen to 54.94 per yen from 54.77 last Wednesday. Published - December 28, 2015 07:29 pm IST. Read Comments.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Converting 5700 USD to Indian Rupees - Exchange Rate\", \"url\": \"https://www.scribd.com/document/256637801/Depreciation-of-Rupee-modified-docx\", \"snippet\": \"Over the past few months, since May 2013, the rupee has been weakening ... 54.77. 88.50. 72.26. 63.66. 31/01/2013. 53.29. 84.22. 72.23. 58.66. 28/02/2013. 53.77.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Rupee falls one paise to 63.38 before US Fed Reserve ...\", \"url\": \"https://timesofindia.indiatimes.com/business/india-business/rupee-falls-one-paise-to-63-38-before-us-fed-reserve-meeting/articleshow/22715599.cms\", \"snippet\": \"On May 16, the rupee closed one paisa higher at 54.77. The Fed's ... The RBI fixed the reference rate for the dollar at 63.1440 and for the euro ...\", \"date\": \"Sep 18, 2013\"}, {\"id\": 6, \"title\": \"FORM F-1\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1557408/000119312514127798/d392421df1.htm\", \"snippet\": \"2013. June 30,. 2013. September 30, 2013. (Rs. per $1.00). 51.43. 49.93. 55.08. 54.77. 54.57. 53.92. 56.80. 63.01. We believe that the rupee figures for ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Why the Indian Rupee Keeps Falling: The Currency That ...\", \"url\": \"https://note.com/umaki11/n/ncd5089e58e31?hl=en\", \"snippet\": \"10 years plus 8.87% = minus 29.65% × plus 54.77%. 15 years plus 0.96% = minus 51.56% × plus 108.41%. 20 years minus 33.33% = minus 51.45 ...\", \"date\": \"1 month ago\"}, {\"id\": 8, \"title\": \"(PDF) Analysis of Volatility Spill over between Oil Price and ...\", \"url\": \"https://www.researchgate.net/publication/312039807_Analysis_of_Volatility_Spill_over_between_Oil_Price_and_Exchange_Rate_in_India_GARCH_Approach_Shekhar_Mishra_Assistant_Professor_Finance_Department_of_Business_Management\", \"snippet\": \"... 54.77. -42.59. -54.67. In ADF and PP Test the null hypothesis is the series has ... To examine the impact of oil price on exchange rate of Indian Rupee against ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"ROYAL MONETARY AUTHORITY OF BHUTAN\", \"url\": \"https://www.rma.org.bt/media/Publication/Macro-economic%20Data/Monetary%20Policy%20Statement%20December%202022.pdf\", \"snippet\": \"54.77. 45.97. 38.14 157.32. Jul. 1,824.50. 49.30. 267.79. 90.19. 48.61. 830.18. 538.43. 4,776.61. 835.41. 284.96. 37.09 1,431.29 2,187.86.\", \"date\": \"Dec 1, 2022\"}, {\"id\": 10, \"title\": \"united states securities and exchange commission\", \"url\": \"https://www.wipro.com/content/dam/nexus/en/investor/annual-reports/2017-2018/form-20f-2017-18.pdf\", \"snippet\": \"(54.77)%. 54.98%. Selling and marketing expenses. (1,274). (621). (248) ... rate of the Indian rupee with the U.S. dollar would result in ...\", \"date\": \"Jun 28, 2018\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The Times of India article confirms: \"On May 16, the rupee closed one paisa higher at 54.77\" — this refers to May 16, 2013, which matches the RBI reference rate of 54.7723.\n\nTherefore, the official RBI reference rate for USD/INR on May 16, 2013 = 54.7723.\n\nNow let's calculate:\n- Mobile recharge average = 6 US cents = $0.06\n- INR value = 0.06 × 54.7723 = 3.286338 ≈ ₹3.29\n\nLet me try computing this precisely.\nMultiple sources corroborate this: the Times of India states that \"on May 16, the rupee closed one paisa higher at 54.77,\" and the list of RBI reference rates shows 54.7723 for May 16, 2013. Now let's do the final calculation.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_4f8348fa3f194e09bafc5447",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"# Step 1: Average mobile recharge value from audio = 6 US cents\\nrecharge_usd = 0.06  # USD\\n\\n# Step 2: Date from image watermark = 16-05-2013\\n# Step 3: RBI Reference Rate USD/INR on 16 May 2013 = 54.7723\\nrbi_rate = 54.7723\\n\\n# Step 4: Convert to INR\\nrecharge_inr = recharge_usd * rbi_rate\\nprint(f\\\"Recharge value in USD: ${recharge_usd}\\\")\\nprint(f\\\"RBI Reference Rate on 16-05-2013: {rbi_rate} INR per USD\\\")\\nprint(f\\\"Value in INR: {recharge_inr}\\\")\\nprint(f\\\"Rounded to two decimals: ₹{round(recharge_inr, 2)}\\\")\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The Times of India article confirms: \"On May 16, the rupee closed one paisa higher at 54.77\" — this refers to May 16, 2013, which matches the RBI reference rate of 54.7723.\n\nTherefore, the official RBI reference rate for USD/INR on May 16, 2013 = 54.7723.\n\nNow let's calculate:\n- Mobile recharge average = 6 US cents = $0.06\n- INR value = 0.06 × 54.7723 = 3.286338 ≈ ₹3.29\n\nLet me try computing this precisely.\nMultiple sources corroborate this: the Times of India states that \"on May 16, the rupee closed one paisa higher at 54.77,\" and the list of RBI reference rates shows 54.7723 for May 16, 2013. Now let's do the final calculation.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4f8348fa3f194e09bafc5447",
+      "content": "{\"stdout\": \"Recharge value in USD: $0.06\\nRBI Reference Rate on 16-05-2013: 54.7723 INR per USD\\nValue in INR: 3.2863379999999998\\nRounded to two decimals: ₹3.29\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Summary of Analysis\n\n**Step 1 — Audio:** R.S. Sharma states that \"the top-up value for a mobile recharge in India today average is about **six US cents**\" (= $0.06 USD).\n\n**Step 2 — Image:** The watermark in the bottom-right corner reads \"© RAH 2013/ **16-05-2013**\", giving the date 16 May 2013.\n\n**Step 3 — RBI Reference Rate:** On 16 May 2013, the official RBI Reference Rate for USD was **₹54.7723 per US dollar** (confirmed by historical RBI reference rate data and contemporaneous news reporting that the rupee closed at ~54.77/USD that day).\n\n**Step 4 — Calculation:**\n$$0.06 \\text{ USD} \\times 54.7723 \\text{ INR/USD} = 3.286338 \\text{ INR} \\approx ₹3.29$$\n\n<answer>₹3.29</answer>",
+      "reasoning": "Calculation complete:\n- 6 US cents = $0.06\n- RBI reference rate on May 16, 2013: 54.7723 INR/USD\n- 0.06 × 54.7723 = 3.286338 ≈ ₹3.29\n\nFinal answer: ₹3.29 (approximately 3.29 Indian Rupees).\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Calculation complete:\n- 6 US cents = $0.06\n- RBI reference rate on May 16, 2013: 54.7723 INR/USD\n- 0.06 × 54.7723 = 3.286338 ≈ ₹3.29\n\nFinal answer: ₹3.29 (approximately 3.29 Indian Rupees).\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"RBI reference rate USD INR 16 May 2013\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Reference Rate Archive| Official Website of ...",
+          "url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+          "snippet": "Reference Rate Archive - Reserve Bank of India. RBI Circulars. Search Reference Rate Select the Option All GBP JPY USD. Reserve Bank of India.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "RBI Reference Rate (Archives) | Historical Data",
+          "url": "https://www.msei.in/markets/currency/historical-data/rbireferenceratearchives",
+          "snippet": "RBI Reference Rate (Archives) Historical Data for RBI Reference Rate for the period. RBI reference rate is not available on Muhurat Trading days",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "RBI Reference Rates Statistics",
+          "url": "https://www.nseindia.com/report-detail/rbi-reference-rate-statistics",
+          "snippet": "Reference rate-FBIL. Average Trade Value = Total Traded Value. Reference Rate Statistics Data 1D. Reference rate-FBIL from to csv Download (.csv)",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "RBI Reference Exchange Rate",
+          "url": "https://ies.gov.in/arthapedia/concept/rbi-reference-exchange-rate",
+          "snippet": "The rate for spot US Dollar against Indian Rupee will be polled from the select list of contributing banks at a randomly chosen five minute window between 11.30 ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "EXCHANGE RATE OF THE INDIAN RUPEE VIS- ...",
+          "url": "https://www.fedai.org.in/UploadPopupPageFiles/HistoricalExchangeRates_2018-19.pdf",
+          "snippet": "2013-14 92.2602 92.7790. RBI reference rates are used w.e. f. May 2012. dissemination of reference rates",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Foreign Exchange Rates - H.10 - October 05, 2026",
+          "url": "https://www.federalreserve.gov/releases/h10/hist/dat00_in.htm",
+          "snippet": "Historical Rates for the Indian Rupee. (Rates in Indian rupees per U.S. dollar) ... 16-MAY-16, 66.7800. 17-MAY-16, 66.7400. 18-MAY-16, 66.9500. 19-MAY-16, 67.5700.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "DQAF View : India - Exchange rates - SDDS",
+          "url": "https://dsbb.imf.org/sdds/dqaf-base/country/IND/category/EXR00",
+          "snippet": "The Reference Rate data for USD/INR, GBP/INR, EUR/INR and JPY/INR are published on daily basis by the FBIL. Spot exchange rates for the INR against USD",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Press Release| Official Website of Reserve Bank of India",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=29314",
+          "snippet": "The Reserve Bank of India's Reference Rate for the US dollar is ` 61.8195 and the Reference Rate for Euro is ` 82.4510 on August 16, 2013.",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Exchange rate history of the Indian rupee",
+          "url": "https://en.wikipedia.org/wiki/Exchange_rate_history_of_the_Indian_rupee",
+          "snippet": "2014 to 2026 ; 2013–14, 92.2602, 92.7790 ; 2014–15, 90.7955, 86.3431 ; 2015–16, 91.3452, 93.4510 ; 2016–17, 92.6156, 87.9763 ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "India Foreign Exchange Rate: RBI: Reference Rate: US Dollars",
+          "url": "https://www.ceicdata.com/en/india/foreign-exchange-rate-reserve-bank-of-india/foreign-exchange-rate-rbi-reference-rate-us-dollars",
+          "snippet": "India Foreign Exchange Rate: RBI: Reference Rate: US Dollars data was reported at 96.623 USD/INR in 07 Oct 2026. This records an increase from the previous ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"16.05.2013\\\" OR \\\"16-05-2013\\\" RBI reference rate US dollar rupee\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "India FIMMDA-Thomson Reuters-MITOR based on dlr/rupee swap",
+          "url": "https://www.reuters.com/article/world/us/india-fimmda-thomson-reuters-mitor-based-on-dlrrupee-swap-idUSL3N0DW1IG/",
+          "snippet": "... rate(%) -------------------------------------------------------------- 15/05/2013 01.06/01.08 07.08/07.22 07.20/07.34 OVER 16/05/2013 Spot rate : 1$ = 54.6275 ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "USD to INR Daily Exchange Rates | PDF",
+          "url": "https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical",
+          "snippet": "The document contains daily reference rates and returns for the Indian Rupee (INR) ... 16/05/2013 54.7723 -0.020% 17/05/2013 54.8865 0.208% 20/05/2013 55.0368 ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "ANNUAL REPORT",
+          "url": "https://dea.gov.in/files/annual_reports_documents/AnnualReport2013_14.pdf",
+          "snippet": "... rate of Gross-. Domestic Proudct (GDP) at factor cost at constant (2004 ... 16/05/2013. 31/03/2017. 5. LN-2924-Uttarakhand Power Sector Investment. Program ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "BOI AR_Normal Cover 13-14 for web",
+          "url": "https://bankofindia.bank.in/documents/20121/570417/BOIAR2.pdf",
+          "snippet": "Discounting the effect of depreciation of the rupee growth was still impressive at 17% and 14% respectively. ... 16.05.2013. 29.05.2013. 03.06.",
+          "date": "Nov 15, 2013"
+        },
+        {
+          "id": 5,
+          "title": "Draft Prospectus Dated July 22, 2013",
+          "url": "https://www.sebi.gov.in/sebi_data/attachdocs/1375173947849.pdf",
+          "snippet": "... 16.05.2013. 12000. 1200.00. 16.05.2013. 12000. Apr-13. NIL. NIL. NIL. NIL. NIL. NIL. Mar-13. NIL. NIL. NIL. NIL. NIL. NIL. Feb-13. NIL. NIL. NIL. NIL. NIL. NIL.",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Report of the Comptroller and Auditor General of India ON ...",
+          "url": "https://saiindia.gov.in/webroot/uploads/download_audit_report/2016/Madhya_Pradesh_Economic_NON_PSUs_Report_3_2016.pdf",
+          "snippet": "required to be made with reference to the SOR rate applicable for 40-60 TPH ... 48/16-05-2013. 1100000. 932670. 40/9. 33 Sili Tank. 45/2010-11. 51 ...",
+          "date": "Nov 28, 2009"
+        },
+        {
+          "id": 7,
+          "title": "CNY INR Historical Exchange Rate",
+          "url": "https://www.currency-converter.org.uk/currency-rates/historical/table/CNY-INR.html",
+          "snippet": "CNY INR rate for 18/05/2013. Friday, 17/05/2013, 1 CNY = 8.9326 INR, CNY INR rate for 17/05/2013. Thursday, 16/05/2013, 1 CNY = 8.9071 INR, CNY INR rate for 16/ ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Contradicting official statements on ambush in Poonch Sector",
+          "url": "https://cms.rajyasabha.nic.in/UploadedFiles/Debates/OfficialDebatesDatewise/Floor/229/F07.08.2013.pdf",
+          "snippet": "by RS SECRETARIAT · 2013 · Cited by 1 — ... 16.05.2013. However, no regular meeting of the Executive Committee has so far been convened. The issue is proposed to be placed before the ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "RESEARCH BULLETIN - Cloudfront.net",
+          "url": "https://dwpivt501gtb6.cloudfront.net/upload/about/bulletin/Vol_42_I.pdf",
+          "snippet": "... 16-05-2013. 230.00. 251.40. 261.30. 250.75. 240.44. 237.10. 46. Steel Authority of India Limited. 22-03-2013. 63.00. 63.90. 63.35. 63.00. 63.07. 63.00. 47. 3M ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "NOVUS GREEN ENERGY SYSTEMS LIMITED",
+          "url": "https://nsearchives.nseindia.com/emerge/corporates/content/Novus_Green_DRHP.pdf",
+          "snippet": "THE FACE VALUE OF THE EQUITY SHARES IS ` 10 EACH AND THE ISSUE ... 16.05.2013. 2. Ministry of New and Renewable Energy. Grid connected ...",
+          "date": "Dec 27, 2018"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\", \"https://www.rbi.org.in/scripts/referenceratearchive.aspx\"]\n\n}",
+      "result": {
+        "https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical": "Title: USDINR_RBI-data_hitorical\n\nURL Source: https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical\n\nPublished Time: Mon, 19 Aug 2024 22:15:10 GMT\n\nMarkdown Content:\nOpens in a new window Opens an external website Opens an external website in a new window\n\n This website utilizes technologies such as cookies to enable essential site functionality, as well as for performance cookies, personalization, and targeted advertising. To learn more, view the following link: [Privacy Policy]\n\nYour Privacy Choices\n\nSkip to main content\n\n[Open navigation menu][![Image 1: Scribd](blob:http://localhost/d0cf58e0c96bd48797ae3249dd19d8af)]\n\nClose suggestions Search Search\n\nen Change Language, English\n\n[Upload]\n\nSign in\n\nSign in\n\n[]\n\n# USD to INR Daily Exchange Rates\n\n0 ratings 0% found this document useful (0 votes)\n\n23 views 51 pages\n\nAI-enhanced title and description\n\nThe document contains daily reference rates and returns for the Indian Rupee (INR) against the US Dollar (USD) from July 2008 to June 2009. It shows the daily INR/USD exchange rate, daily pe…\n\nFull description\n\n## Uploaded by\n\n[Abhishek Kumar Singh]\n\nDownload\n\nYou are on page 1\n\n51\n\n@k t c s R c j R k t c @k a i y R c t u r h;0/></2>>= 0 2.=2;3/></2>>= 0?.;<>.=;<%;:/></2>>= 0?.;<>.>>>% D a h R c t u r h -2.1:2%;</></2>>= 0 2.1 0 ->.3??% D k x R c t u r h 0.;>2%;=/></2>>= 0 2.<= ->.?<?% K v c r k l c @k a i y R c t u r h >.>2 3%2;/></2>>= 0 2.<; ->.;:0% @k a i y _ t k h`k r` @c v a ke h (i k s t = y c k r s) >.3:<%2 2/></2>>= 0 2.<; >.>>>% @k a i y _ t k h`k r` @c v a ke h (i k s t y c k r, 2>;3) >.?;;%2?/></2>>= 0 2.?? ->.=1>% K h u k i a z c` _ t k h`k r` @c v a ke h (2>;3) 0.1 0%2 0/></2>>= 0;.1: ->.=<0%2 3/></2>>= 0 2.2? >.:0?%2=/></2>>= 0 2.? >.;::%2 1/></2>>= 0 2.3 0 >.3:<%?>/></2>>= 0 2.0<->.;:3%?;/></2>>= 0 2.0 1 >.>0<%;/=/2>>= 0 2.?<->.2=2%0/=/2>>= 0 2.0 >.><;%3/=/2>>= 0 2.2= ->.2=?%:/=/2>>= 0 2 ->.::2%</=/2>>= 0;.=1 ->.2:2%=/=/2>>= 0 2.2 >.<0>%;;/=/2>>= 0 2 ->.0<0%;2/=/2>>= 0 2.0 >.1 3 2%;?/>=/2>>= 0 2.:<>.:?<%;0/>=/2>>= 0 2.=2 >.?3 2%;=/>=/2>>= 0?.2? >.1 3<%2>/>=/2>>= 0?.<2 ;.;??%2;/>=/2>>= 0?.3= ->.?2>%2 2/>=/2>>= 0?.?= ->.0 3 1%2 3/>=/2>>= 0?.3= >.0:;%2:/>=/2>>= 0 0.><;.;2 0%2</>=/2>>= 0?.<? ->.<<;%2=/>=/2>>= 0?.<? >.>>>%2 1/>=/2>>= 0?.<1 >.;?<%;/1/2>>= 0 0.2; >.1 3 1%2/1/2>>= 0 0.2: >.;;?%0/1/2>>= 0 0.0 3 >.0 2 1%3/1/2>>= 0 0.?<->.;=>%=/1/2>>= 0 0.2: ->.2 0=%1/1/2>>= 0 0.=1 ;.0 2?%;>/1/2>>= 0 3.;2 >.3;2%;;/1/2>>= 0 3.0 0 >.<>1%;2/1/2>>= 0 3.<<>.<2:%;3/>1/2>>= 0 3.1 0 >.?<;%;:/>1/2>>= 0:.:? ;.3>2%\n\n-0.>>%-?.>>%-2.>>%-;.>>%>.>>%;.>>%2.>>%?.>>%0.>>%3.>>%\n\nS_@ AHR @k aiy Rctur h\n\n![Image 2]\n\n;</>1/2>>= 0:.?0 ->.:2 2%;=/>1/2>>= 0:.<; >.<1=%;1/>1/2>>= 0:.?2 ->.=?3%2 2/>1/2>>= 0 3.0 -;.1=:%2?/>1/2>>= 0 3.<2 >.<>3%2 0/>1/2>>= 0 3.=? >.2 0;%2 3/>1/2>>= 0:.2 3 >.1;:%2:/>1/2>>= 0:.0? >.?=1%2 1/>1/2>>= 0:.1 0 ;.>1=%;/;>/2>>= 0:.1: >.>0?%?/;>/2>>= 0:.== ->.;<>%:/;>/2>>= 0<.0: ;.2?<%</;>/2>>= 0=.>; ;.;3 1%=/;>/2>>= 0=.<0 ;.3 2;%;>/;>/2>>= 0=.<2 ->.>0;%;?/;>/2>>= 0=.;0 -;.;1>%;0/;>/2>>= 0<.<; ->.=1?%;3/;>/2>>= 0=.0? ;.3>1%;:/;>/2>>= 0=.=: >.=%;</;>/2>>= 0=.:= ->.?:=%2>/;>/2>>= 0=.=? >.?>=%2 2/;>/2>>= 0 1.2 1 >.1 0 2%2?/;>/2>>= 0 1.<1 ;.>;0%2 0/;>/2>>= 0 1.1 3 >.?2;%2</;>/2>>= 3>.>1 >.2=>%2 1/;>/2>>= 0 1.<<->.:?1%?;/;>/2>>= 0 1.2 3 -;.>0 3%?/;;/2>>= 0=.1: ->.3=1%0/;;/2>>= 0=.:2 ->.:1 0%3/;;/2>>= 0<.;= -2.1:2%:/;;/2>>= 0<.:<;.>?1%</;;/2>>= 0<.<: >.;=1%;>/;;/2>>= 0<.?2 ->.1 2;%;;/;;/2>>= 0<.3 1 >.3<;%;2/;;/2>>= 0=.<1 2.3 2 2%;0/;;/2>>= 0 1.0: ;.?<?%;</;;/2>>= 0=.1 1 ->.1 3>%;=/;;/2>>= 0 1.:= ;.0>=%;1/;;/2>>= 0 1.<0 >.;2;%2>/;;/2>>= 3>.3 2 ;.3:=%2;/;;/2>>= 3>.>? ->.1<>%2 0/;;/2>>= 3>.>1 >.;2>%2 3/;;/2>>= 0 1.1<->.2 0>%2:/;;/2>>= 0 1.=3 ->.2 0>%2=/;;/2>>= 0 1.=0 ->.>2>%\n\n;/;2/2>>= 3>.>1 >.3>2%2/;2/2>>= 3>.3 2 >.=3=%?/;2/2>>= 0 1.1 -;.2 2<%0/;2/2>>= 0 1.<1 ->.2 2>%3/;2/2>>= 0 1.:1 ->.2>;%=/;2/2>>= 0 1.2 2 ->.1 0:%;>/;2/2>>= 0 1.;2 ->.2>?%;;/;2/2>>= 0=.3 2 -;.2 2;%;2/;2/2>>= 0=.<; >.?1 2%;3/;2/2>>= 0<.1 0 -;.3=;%;:/;2/2>>= 0<.=2 ->.2 3>%;</;2/2>>= 0<.?? -;.>2 3%;=/;2/2>>= 0<.2= ->.;>:%;1/;2/2>>= 0<.>= ->.0 2?%2 2/;2/2>>= 0<.?1 >.:3=%2?/;2/2>>= 0=.0 1 2.?2;%2 0/;2/2>>= 0=.1 1 ;.>?;%2:/;2/2>>= 0<.=1 -2.2 0 3%2 1/;2/2>>= 0=.<: ;.=;<%?>/;2/2>>= 0=.3 ->.3??%?;/;2/2>>= 0=.0 3 ->.;>?%;/;/2>>1 0=.<? >.3<=%2/;/2>>1 0=.=1 >.?2=%3/;/2>>1 0=.?<-;.>:0%:/;/2>>1 0=.:= >.:0;%</;/2>>1 0=.:; ->.;0 0%1/;/2>>1 0=.1 2 >.:?=%;2/;/2>>1 0=.: ->.:3 0%;?/>;/2>>1 0=.1; >.:?=%;0/>;/2>>1 0=.<->.0 2 1%;3/>;/2>>1 0 1.>= >.<=>%;:/>;/2>>1 0=.<<->.:?2%;1/>;/2>>1 0=.3: ->.0?;%2>/>;/2>>1 0=.1 1 >.==:%2;/>;/2>>1 0 1.;2 >.2:3%2 2/>;/2>>1 0=.1? ->.?=<%2?/>;/2>>1 0 1.;1 >.3?;%2</>;/2>>1 0=.=3 ->.:1;%2=/>;/2>>1 0=.=<>.>0;%2 1/>;/2>>1 0=.1 >.>:;%?>/>;/2>>1 0 1.>2 >.2 0 3%2/2/2>>1 0 1.>; ->.>2>%?/2/2>>1 0=.= ->.0 2=%0/2/2>>1 0=.:3 ->.?><%3/2/2>>1 0=.=2 >.?0 1%\n\n:/2/2>>1 0=.<? ->.;=0%1/2/2>>1 0=.: ->.2:<%;>/2/2>>1 0=.<>.2>:%;;/2/2>>1 0=.=2 >.2 0:%;2/2/2>>1 0=.<2 ->.2>3%;?/>2/2>>1 0=.<2 >.>>>%;:/>2/2>>1 0=.<2 >.>>>%;</>2/2>>1 0 1.;: >.1>?%;=/>2/2>>1 0 1.=3 ;.0>0%;1/>2/2>>1 0 1.=3 >.>>>%2 0/>2/2>>1 0 1.=1 >.>=>%2 3/>2/2>>1 0 1.=2 ->.;0>%2:/>2/2>>1 3>.0; ;.;=0%2</>2/2>>1 3>.<? >.:?3%2/?/2>>1 3;.<3 2.>;;%?/?/2>>1 3;.:: ->.;<0%0/?/2>>1 3;.1? >.3 2?%3/?/2>>1 3 2.>: >.2 3>%:/?/2>>1 3;.3; -;.>3:%1/?/2>>1 3;.= >.3:?%;2/?/2>>1 3;.<->.;1?%;?/>?/2>>1 3;.:<->.>3=%;:/>?/2>>1 3;.3= ->.;<0%;</>?/2>>1 3;.2 3 ->.:0>%;=/>?/2>>1 3;.?3 >.;1 3%;1/>?/2>>1 3>.<<-;.;?>%2>/>?/2>>1 3>.;0 -;.2 0;%2?/>?/2>>1 3>.3 2 >.<3=%2 0/>?/2>>1 3>.?; ->.0;:%2 3/>?/2>>1 3>.=? ;.>?0%2:/>?/2>>1 3>.3 0 ->.3<;%?>/>?/2>>1 3;.>= ;.>:=%?;/>?/2>>1 3>.1 3 ->.2 3 3%2/0/2>>1 3>.? -;.2<:%:/0/2>>1 3>->.3 1:%=/0/2>>1 3>.3? ;.>:>%1/0/2>>1 0 1.1; -;.2 2<%;?/>0/2>>1 0 1.=: ->.;>>%;3/>0/2>>1 0 1.== >.>0>%;:/>0/2>>1 0 1.0 1 ->.<=2%;</>0/2>>1 0 1.<; >.0 0 3%2>/>0/2>>1 0 1.1 3 >.0=?%2;/>0/2>>1 3>.?: >.=2;%2 2/>0/2>>1 3>.2 ->.?;=%2?/>0/2>>1 3>.2 2 >.>0>%\n\n## Share this document\n\n* [Share on Facebook, opens a new window]\n* [Share on LinkedIn, opens a new window]\n* [Share with Email, opens mail client](mailto:?subject=Read%20USDINR_RBI-data_hitorical%20on%20Scribd&body=I%E2%80%99m%20reading%20USDINR_RBI-data_hitorical%20on%20Scribd:%20https%3A%2F%2Fwww.scribd.com%2Fdocument%2F464380826%2FUSDINR-RBI-data-hitorical)\n* Copy link\n\n[![Image 3]Millions of documents at your fingertips, ad-free Subscribe with a free trial]\n\n1. [Documents]\n2. [Teaching Methods & Materials]\n3. [Mathematics]\n\n## Footer menu\n\n[Back to top]\n\n## About\n\n* [About Scribd, Inc.]\n* [Slideshare]\n* [Join our team!]\n* [Contact us]\n\n## Support\n\n* [Help / FAQ]\n* [Accessibility]\n* [Purchase help]\n* [AdChoices]\n\n## Legal\n\n* [Terms]\n* [Privacy]\n* [Copyright]\n* Your Privacy Choices\n\n## Social\n\n* [Instagram Instagram]\n* [Facebook Facebook]\n* [Pinterest Pinterest]\n\n## Get our free apps\n\n* [![Image 4: Scribd - Download on the App Store]]\n* [![Image 5: Scribd - Get it on Google Play]]\n\n## About\n\n* [About Scribd, Inc.]\n* [Slideshare]\n* [Join our team!]\n* [Contact us]\n\n## Legal\n\n* [Terms]\n* [Privacy]\n* [Copyright]\n* Your Privacy Choices\n\n## Support\n\n* [Help / FAQ]\n* [Accessibility]\n* [Purchase help]\n* [AdChoices]\n\n## Social\n\n* [Instagram Instagram]\n* [Facebook Facebook]\n* [Pinterest Pinterest]\n\n## Get our free apps\n\n* [![Image 6: Scribd - Download on the App Store]]\n* [![Image 7: Scribd - Get it on Google Play]]\n\n* [Documents]\n\nLanguage:\n\nEnglish\n\nCopyright © 2026 Scribd Inc.\n\nWe take content rights seriously. [Learn more] in our FAQs or [report infringement here].\n\nWe take content rights seriously. [Learn more] in our FAQs or [report infringement here].\n\nLanguage:\n\nEnglish\n\nCopyright © 2026 Scribd Inc.\n\n576648e32a3d8b82ca71961b7a986505\n\nscribd.scribd.scribd.\n",
+        "https://www.rbi.org.in/scripts/referenceratearchive.aspx": "Title: Reference Rate Archive | Official Website of Reserve Bank of India\n\nURL Source: https://www.rbi.org.in/scripts/referenceratearchive.aspx\n\nMarkdown Content:\n[Skip to main content]\n\n* [![Image 1: Increase Letter Spacing]Not Pressed](javascript:__doPostBack('UsrFontCntr$LinkBtnSpace','') \"Increase Letter Spacing\")\n* [![Image 2: Increase Font Size]](javascript:__doPostBack('UsrFontCntr$LinkBtnFontIncrease','') \"Increase Font Size\")\n* [![Image 3: Regular Font Size]](javascript:__doPostBack('UsrFontCntr$LinkBtnFontRegular','') \"Regular Font Size\")\n* [![Image 4: Decrease Font Size]](javascript:__doPostBack('UsrFontCntr$LinkBtnFontDecrease','') \"Decrease Font Size\")\n\n* [![Image 5: Apply Dark Theme]](javascript:__doPostBack('UsrFontCntr$LinkBtnAccessibilty','') \"Apply Dark Theme\")\n* [![Image 6: Apply Normal Theme]](javascript:__doPostBack('UsrFontCntr$LinkBtnUndoAccessibilty','') \"Apply Normal Theme\")\n* [![Image 7: Apply Grey Theme]](javascript:__doPostBack('UsrFontCntr$LinkBtnGreyScale','') \"Apply Grey Theme\")\n\n[![Image 8: Print this page]]\n\n Change Language [हिंदी]\n\n[![Image 9: Logo of Official website of Reserve Bank of India]]\n\n Search the Website  Search\n\n![Image 10: Beti Bachao Beti Padhao Logo]\n\n* [Home]\n* [About Us ▼]\n  * [About Us]\n  * [Organisation & Functions ▶]\n    * [Organisation Structure]\n    * [Departments]\n    * [Offices]\n    * [Training Establishment ▶]\n    * [College of Agricultural Banking]\n    * [Reserve Bank Staff College]\n    * [College of Supervisors]\n\n    * [RBI's Functions and Working]\n    * [Governors]\n    * [Deputy Governors]\n    * [Executive Directors]\n\n  * [Media Kit]\n  * [Communication Policy of RBI]\n  * [Sources of Information ▶]\n    * [Annual Publications]\n    * [Half-yearly Publications]\n    * [Quarterly Publications]\n    * [Monthly Publications]\n    * [Weekly Publications]\n    * [Occasional Publications]\n    * [SDDS]\n    * [NSDP]\n    * [Data Releases]\n    * [Publications available on Subscription]\n    * [General Information]\n\n  * [RBI History]\n  * [Museum ▶]\n    * [The RBI Museum]\n    * [RBI Monetary Museum]\n\n* [Notifications ▼]\n  * [Notifications]\n  * [Master Directions]\n  * [Master Circulars]\n  * [Amendment Directions]\n  * [Draft Notifications/Guidelines ▶]\n    * [Draft Notifications/Guidelines]\n    * [Draft Directions (RE-wise)]\n\n  * [Index To RBI Circulars]\n  * [Standalone Circulars]\n  * [Circulars Withdrawn]\n\n* [Press Releases]\n* [Speeches & Media Interactions ▼]\n  * [Speeches]\n  * [Media Interactions]\n  * [Memorial Lectures]\n  * [Podcasts]\n\n* [Publications ▼]\n  * [Biennial]\n  * [Annual]\n  * [Half-Yearly]\n  * [Quarterly]\n  * [Bi-monthly]\n  * [Monthly]\n  * [Weekly]\n  * [Occasional]\n  * [Reports]\n  * [Working Papers]\n\n* [Legal Framework ▼]\n  * [Act]\n  * [Rules]\n  * [Regulations]\n  * [Schemes]\n\n* [Research ▼]\n  * [External Research Schemes]\n  * [RBI Occasional Papers]\n  * [Working Papers]\n  * [RBI Bulletin]\n  * [History]\n  * [DRG Studies]\n  * [KLEMS]\n  * [State Statistics and Finances]\n\n* [Statistics ▼]\n  * [Data Releases]\n  * [Database on Indian Economy]\n  * [Public Debt Statistics]\n\n* [Regulatory Reporting ▼]\n  * [List of Returns]\n  * [Data Definition]\n  * [Validation rules/ Taxonomy]\n  * [List of RBI Reporting Portals]\n  * [FAQs of RBI Reporting Portals]\n\n[]\n\n* [Home]\n* Reference Rate Archive\n\n## Reference Rate Archive\n\n### Search Reference Rate\n**Select the Option**- [x]  All - [x]  USD - [x]  GBP - [x]  EUR - [x]  JPY - [x]  AED - [x]  IDR\nFrom Date \n\n To Date\n\n ◀ ▶\n\n Sun \n\n Mon \n\n Tue \n\n Wed \n\n Thu \n\n Fri \n\n Sat \n\n**Download to:**[Excel ![Image 11: Download reference rates excel]](javascript:__doPostBack('lnkDownloadExcel',''))\n\n  \n\n[Top]\n\n[Back to previous page](javascript:history.back())  \nLast Updated On: Oct 08, 2026\n\n## More Links\n\n* [Bank Holidays]\n* [Banking Glossary]\n* [Citizen's Charter]\n* [Complaints]\n* [Contact Us]\n* [COVID-19 Measures]\n* [E-LMS]\n* [Events]\n* [FAQs]\n* [Financial Education]\n* [Forms]\n* [IFSC/MICR Codes]\n* [Important Websites]\n* [Opportunities@RBI]\n* [RBI Clarifications]\n* [RBI Kehta Hai]\n* [RBI’s Vision and Values ![Image 12: PDF - Accessibility Statement] (652 kb)]\n* [Right to Information Act]\n* [Tenders]\n\n## Follow RBI\n\n* [![Image 13: RSS Icon]RSS]\n* [![Image 14: Twitter Icon]Twitter]\n* [![Image 15: YouTube Icon]YouTube]\n* [![Image 16: Instagram Icon]Instagram]\n* [![Image 17: Facebook Icon]Facebook]\n* [![Image 18: LinkedIn Icon]LinkedIn]\n\n[![Image 19: National Portal of India logo]]\n\n© Reserve Bank of India. All Rights Reserved. \n\n[Sitemap]|[Disclaimer]\n\nWebsite owned and managed by Reserve Bank of India. Contact us on helpdoc[at]rbi[dot]org[dot]in\n\nWebsite last updated date: Oct 08, 2026\n\n[Web Information Manager]\n\n[Accessibility Statement ![Image 20: PDF - Accessibility Statement] (133 KB)] |[Screen Reader and Accessibility Help]\n\nSupports: Google Chrome 147+ | Firefox 150+ | Microsoft Edge Version 147+ | Safari 17+\n"
+      }
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"RBI reference rate \\\"54.7723\\\" May 2013\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "USD to INR Daily Exchange Rates | PDF",
+          "url": "https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical",
+          "snippet": "16/05/2013 54.7723 -0.020% 17/05/2013 54.8865 0.208% 20/05/2013 55.0368 ... RBI Repo Rate History 2000-2023. 10 pages. Treynor Measure Analysis of ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Global Integration and Rupee Depreciation",
+          "url": "https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269",
+          "snippet": "54.7723. 55.0368. 55.522. 55.6075. 55.7423. 56.0995. 56.574. 56.4238. 56.7445. 58.9255. 58.414. 57.731. 58.7445. 59.3505. 59.703. 60.588. 59.149.",
+          "date": "by B Pushpa · 2014"
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "web_search",
+      "arguments": "{\"query\": \"rbi.org.in press release reference rate US dollar \\\"May 16, 2013\\\" 54.77\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Quarterly Credit Report",
+          "url": "https://d2.nuscri.org/static/pdf/qcr/QCR-2013-Q3.pdf",
+          "snippet": "... Rates, Reserve Bank of India, rbi.org.in. 11Oct 4, 2013, Cumulative Cash ... 47May 16, 2013, Sumitomo Mitsui Leads Japan Banks Forecasting Lower Profit ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Federal Communications Commission DA 15-132 1",
+          "url": "https://docs.fcc.gov/public/attachments/DA-15-132A1.pdf",
+          "snippet": "... rate benchmarks for broadband service utilized by the Commission to ... May 16, 2013, available at http://www.latimes.com/business ...",
+          "date": "Feb 4, 2015"
+        },
+        {
+          "id": 3,
+          "title": "FCC Record | PDF",
+          "url": "https://de.scribd.com/document/593646169/FCC-Record",
+          "snippet": "... May 16, 2013, available at [Link] windows-phone -now -a - distant-third ... of the contract. Next, we convert all prices to U.S. dollars based on both current ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269\"]\n\n}",
+      "result": {
+        "https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269": "Title: 1473-Article Text-2968-1-10-20170629.pdf\n\nURL Source: https://journals.christuniversity.in/index.php/ushus/article/download/1473/1269\n\nPublished Time: 2014-11-18T10:10:25.000Z\n\nNumber of Pages: 15\n\nMarkdown Content:\nUshus J B Mgt 13, 3 (2014), 73-87 ISSN 0975-3311│ doi: 10.12725/ujbm.28.5 \n\n73 \n\n# Global Integration a nd Rupee Depreciation: \n\n# Are Times Good Forward? \n\nPushpa B * and  Deepak R †\n\nAbstract \n\nThe S& P BSE Sensex  has plunged over 1,000 points so far in August, weighed by a host of factors, including weakness in the currency, possible tapering of US Fed's bond-buying program and threats of ratings downgrade. The Indian rupee has depreciated by over ten per cent since May 2, 2013 against the US dollar, and eleven per cent against the Euro. Depreciating currency will adversely impact capital-intensive sectors and firms with foreign borrowings and those who import raw materials heavily. Automobiles, capital goods, petroleum, power and telecom companies will bear the brunt of a weak rupee. But sectors such as software services and pharma, with major export revenues, will benefit. The rupee's decline in the last six months has deep consequences for the Indian economy and various asset classes. Thus in the study, we examined the impact of rupee depreciation on broad and sectoral indices of BSE and NSE markets. Sample T-tests for means and variances were conducted on both the price returns and volume changes to understand the behavior of stock market in unison. The study finds conclusive evidence of impact of rupee depreciation on indices considered. The impact observed is found to be more severe when compared to previous  \n\n> *\n\nAssistant Professor in Accounts and Finance, M P Birla Institute of Management (MPBIM), Bangalore, India;  pushpabv75@gmail.com  \n\n> †\n\nAssistant Professor in Finance, (MPBIM), Bangalore, India; dnaikr@gmail.com Ushus J B Mgt 13 , 3 (2014) ISSN 0975-3311  \n\n> 74\n> depreciations ,which points towards integration of glo bal\n> markets with Indian markets in more positive sense than\n> ever. Thus co -integration tests were conducted to analyze\n> the long term relationship between Major Indian and\n> global indices.\n\nKeyw ords:  Rupee Depreciation, Integration, Indices, BSE, NSE \n\n1. Introduction: \n\nIn the past few months, the Indian Rupee has depreciated significantly against the U.S.D marking a new risk for the Indian economy. The gloom surrounding the recent rupee fall has been unnerving for investors. The near 11% fall in the currency between January and July is hurting large parts of India Inc. For stock investors, the rupee's roller-coaster ride over the last few weeks has added another layer of uncertainty in a market whose movements over the last few months have anyway been as unpredictable as during any time in recent history. Foreign investors, already nervous about India's high current account deficit, or CAD, fell for the rising dollar bond yields as a result of the Fed's actions and took money out of India to invest there. It is believed that the Rupee depreciation will have really unsettling consequences for the Indian economy as it will add further pressure on the overall domestic inflation. India, being an import intensive economy, will have to bear the burden of higher domestic costs and higher fiscal and current account deficits. Many macroeconomic variables like inflation rate, stock prices, interest rates, high fiscal deficit, lack of reforms, global uncertainties etc. are said to have an impact on the exchange rates (Singhal, 2012). Especially with the rise in the world trade and capital movements, exchange rate has become the most vital determinant of a country’s relative economic health. Indian rupee is witnessing extreme volatility mainly the fall and it may take some more time to stabilize and analysts believe that this sharp depreciation in the currency will impact the earnings of some sectors materially. A weak currency has historically had an adverse impact on equity markets, given their sensitivity to FII flows. Any expectation of structural weakness in the rupee sours their return expectations. This can lead to outflows, which can further pressure Pushpa B et al Global Integration and Rupee Depreciation \n\n> 75\n\nthe rupee. Hence, the regulators need to calm the markets by taking measures to boost capital flows and manage expectations. However, on an aggregate basis, companies in the listed space may see positive earnings as they operate in sectors that benefit from a weaker currency. Previous studies have proven correlation and some de correlation between rupee/ exchange rates and stock prices. Smith (1992); Solnik (1987) and Aggarwal (1981) have found a significant positive relationship between stock prices and exchange rates while Soenen and Hennigar (1998) have reported a significant negative relationship between the two. Franck and Young ( 1972), Bartov and Bodnor (1994) have found very weak or no association between stock prices and exchange rates. Abdalla and Murinde (1997) have found causation runs from exchange rates to stock prices, but Ajayi and Mougoue (1996) have proved a reverse causation. Bi-directional causality between the two in the short run is proved by Bahmani-Oskooee and Sohrabian(1992). \n\nA depreciation of the local currency makes exporting goods attractive and leads to an increase in foreign demand and hence revenue for the firm and its value would appreciate and hence the stock prices. On the other hand, an appreciation of the local currency decreases profits for an exporting firm because it leads to a decrease in foreign demand of its products. However, the sensitivity of the value of an importing firm to exchange rate changes is just the opposite of that of an exporting firm. In addition, variations in exchange rates affect a firm's transaction exposure. That is, exchange rate movements also affect the value of a firm’s future payables (or receivables) denominated in foreign currency. Therefore, on a macro basis, the impact of exchange rate fluctuations on stock market seems to depend on both the importance of a country’s international trades in its economy and the degree of the trade imbalance. \n\nAnother way of explaining the relationship between exchange rates and stock prices is through following the capital account transactions. Like all commodities, exchange rates are determined by market mechanism, i.e., the demand and supply condition. A blooming stock market would attract capital flows from foreign investors, which may cause an increase in the demand for acountry’s currency. The reverse would happen in case of falling Ushus J B Mgt 13 , 3 (2014) ISSN 0975-3311 \n\n> 76\n\nstock prices where the investors would try to sell their stocks to avoid further losses and would convert their money into foreign currency to move out of the country. There would be demand for foreign currency in exchange of local currency and it would lead to depreciation of local currency. As a result, rising (declining) stock prices would lead to an appreciation (depreciation) in exchange rates. Moreover, foreign investment in domestic equities could increase over time due to benefits of international diversification that foreign investors would gain. Furthermore, movements in stock prices may influence exchange rates and money demand because investor’s wealth and liquidity demand could depend on the performance of the stock market. \n\nBetween 2005 and 2012, 75% of the times rupee and Sensex  moved \n\nin similar direction. Therefore, movement in the rupee has become \n\nextremely critical for the direction of the Indian stock markets. \n\nThere is a chance that three out of four times markets will go up if \n\nthe rupee goes up and fall if the rupee falls. \n\nThe weakness of the rupee is also haunting the equity markets. \n\nInvestors in the emerging markets have suffered more than those in \n\nthe developed world, a comparison of benchmark indices indicates. \n\nIndices  were d own  in October, Russia's RTS has shed 36 per c ent; \n\nBrazil's Bovespa lost almost 25 per cent and the Korea's Kospi came \n\ndown 24.6 per cent. In India, the 30 -share Sensex has fallen close to \n\n24 per cent and the broader Nifty almost 27 per cent. Dubai \n\nFinancial Market has dropped more than 28 per cent. \n\nThe rupee's decline in the last six months has deep consequences for the Indian economy and various asset classes. It may have an adverse impact on sectors that are dependent on imported commodities and technologies for their functioning as landed cost of imports may become dearer and may thus escalate operating costs and depress profit margins. The transmission of these increased costs to consumers may also lead to renewed inflationary pressures. Moreover, companies that may have subscribed to dollar-denominated borrowings may find it expensive to service their loan commitments. Also, while the domestically-oriented companies may remain largely unperturbed by the declining rupee, yet, they too may find the inflationary impact inimical to their business interests. Export-oriented sectors may witness a higher Pushpa B et al Global Integration and Rupee Depreciation \n\n> 77\n\nvalue turnover. The rupee's decline increases price competitiveness of Indian products in the overseas markets, which may aid the volume-led growth of exports of these sectors. We may therefore see increased investment preference for such sectors in the allocation decisions. The defensive bias in the market will continue for some time with overweight positions in domestic consumption and overseas services related sector viz. FMCG, Pharma, IT and utilities. Any improvement on the policy front may see large liquidity inflows into the markets leading to a sharp recovery. The interesting question to answer is why stock markets worry so much every time there is a pressure on the rupee, especially when large numbers of countries are working hard to keep their currency undervalued? The probable reason may be that some"
+      }
+    },
+    {
+      "turn": 4,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"16/05/2013\\\" OR \\\"16.05.2013\\\" \\\"54.7723\\\" RBI reference rate dollar\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "USD to INR Daily Exchange Rates | PDF",
+          "url": "https://www.scribd.com/document/464380826/USDINR-RBI-data-hitorical",
+          "snippet": "16/05/2013 54.7723 -0.020% 17/05/2013 54.8865 0.208% 20/05/2013 55.0368 0.274% 21/05/2013 55.0395 0.005% 22/05/2013 55.522 0.877% 23/05/2013 55.991 0.845 ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "name": "web_search",
+      "arguments": "{\"query\": \"RBI reference rate May 2013 daily \\\"54.77\\\" US dollar Indian rupee\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Analysing the Factors Behind Exchange Rate Fluctuations ...",
+          "url": "https://www.ijraset.com/best-journal/analyzing-the-factors-behind-exchange-rate-fluctuations-in-india",
+          "snippet": "... rate of the Indian Rupee against the US Dollar. (USD/INR). The following ... 54.77. 3.21. 14490. 7,700. Feb-21. 73.92. 1814.01. 62.28. 3.26. 13120. 2,295. Mar-21.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "RBI Bulletin - Reserve Bank of India| Official Website of ...",
+          "url": "https://rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=13048",
+          "snippet": "The FEDAI revaluation rate for Rupee-US Dollar exchange as at end ... 54.77. 59.79. (1.3). (1.2). (0.9). (1.0). (1.1). (a) Bonds. 59.34. 58.95.",
+          "date": "Mar 12, 2012"
+        },
+        {
+          "id": 3,
+          "title": "Rupee rules firm at 66.19 vs. dollar, up 2 paise",
+          "url": "https://www.thehindu.com/business/Rupee-rules-firm-at-66.19-vs.-dollar-up-2-paise/article60272608.ece",
+          "snippet": "It also declined against the Japanese yen to 54.94 per yen from 54.77 last Wednesday. Published - December 28, 2015 07:29 pm IST. Read Comments.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Converting 5700 USD to Indian Rupees - Exchange Rate",
+          "url": "https://www.scribd.com/document/256637801/Depreciation-of-Rupee-modified-docx",
+          "snippet": "Over the past few months, since May 2013, the rupee has been weakening ... 54.77. 88.50. 72.26. 63.66. 31/01/2013. 53.29. 84.22. 72.23. 58.66. 28/02/2013. 53.77.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Rupee falls one paise to 63.38 before US Fed Reserve ...",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/rupee-falls-one-paise-to-63-38-before-us-fed-reserve-meeting/articleshow/22715599.cms",
+          "snippet": "On May 16, the rupee closed one paisa higher at 54.77. The Fed's ... The RBI fixed the reference rate for the dollar at 63.1440 and for the euro ...",
+          "date": "Sep 18, 2013"
+        },
+        {
+          "id": 6,
+          "title": "FORM F-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1557408/000119312514127798/d392421df1.htm",
+          "snippet": "2013. June 30,. 2013. September 30, 2013. (Rs. per $1.00). 51.43. 49.93. 55.08. 54.77. 54.57. 53.92. 56.80. 63.01. We believe that the rupee figures for ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Why the Indian Rupee Keeps Falling: The Currency That ...",
+          "url": "https://note.com/umaki11/n/ncd5089e58e31?hl=en",
+          "snippet": "10 years plus 8.87% = minus 29.65% × plus 54.77%. 15 years plus 0.96% = minus 51.56% × plus 108.41%. 20 years minus 33.33% = minus 51.45 ...",
+          "date": "1 month ago"
+        },
+        {
+          "id": 8,
+          "title": "(PDF) Analysis of Volatility Spill over between Oil Price and ...",
+          "url": "https://www.researchgate.net/publication/312039807_Analysis_of_Volatility_Spill_over_between_Oil_Price_and_Exchange_Rate_in_India_GARCH_Approach_Shekhar_Mishra_Assistant_Professor_Finance_Department_of_Business_Management",
+          "snippet": "... 54.77. -42.59. -54.67. In ADF and PP Test the null hypothesis is the series has ... To examine the impact of oil price on exchange rate of Indian Rupee against ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "ROYAL MONETARY AUTHORITY OF BHUTAN",
+          "url": "https://www.rma.org.bt/media/Publication/Macro-economic%20Data/Monetary%20Policy%20Statement%20December%202022.pdf",
+          "snippet": "54.77. 45.97. 38.14 157.32. Jul. 1,824.50. 49.30. 267.79. 90.19. 48.61. 830.18. 538.43. 4,776.61. 835.41. 284.96. 37.09 1,431.29 2,187.86.",
+          "date": "Dec 1, 2022"
+        },
+        {
+          "id": 10,
+          "title": "united states securities and exchange commission",
+          "url": "https://www.wipro.com/content/dam/nexus/en/investor/annual-reports/2017-2018/form-20f-2017-18.pdf",
+          "snippet": "(54.77)%. 54.98%. Selling and marketing expenses. (1,274). (621). (248) ... rate of the Indian rupee with the U.S. dollar would result in ...",
+          "date": "Jun 28, 2018"
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"# Step 1: Average mobile recharge value from audio = 6 US cents\\nrecharge_usd = 0.06  # USD\\n\\n# Step 2: Date from image watermark = 16-05-2013\\n# Step 3: RBI Reference Rate USD/INR on 16 May 2013 = 54.7723\\nrbi_rate = 54.7723\\n\\n# Step 4: Convert to INR\\nrecharge_inr = recharge_usd * rbi_rate\\nprint(f\\\"Recharge value in USD: ${recharge_usd}\\\")\\nprint(f\\\"RBI Reference Rate on 16-05-2013: {rbi_rate} INR per USD\\\")\\nprint(f\\\"Value in INR: {recharge_inr}\\\")\\nprint(f\\\"Rounded to two decimals: ₹{round(recharge_inr, 2)}\\\")\"}",
+      "result": {
+        "stdout": "Recharge value in USD: $0.06\nRBI Reference Rate on 16-05-2013: 54.7723 INR per USD\nValue in INR: 3.2863379999999998\nRounded to two decimals: ₹3.29",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 127,
+      "id": "gen-1791467995-aAsBb2PvkpxA6esMv6Re",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 3994,
+        "completion_tokens": 544,
+        "total_tokens": 4538,
+        "cost": 0.00085478,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00085478,
+          "upstream_inference_prompt_cost": 0.0005991,
+          "upstream_inference_completions_cost": 0.00025568
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 273,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 15.029
+    },
+    {
+      "item_id": 127,
+      "id": "gen-1791468013-oeM60OFk7tH7thosDhGK",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 7163,
+        "completion_tokens": 467,
+        "total_tokens": 7630,
+        "cost": 0.00129394,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00129394,
+          "upstream_inference_prompt_cost": 0.00107445,
+          "upstream_inference_completions_cost": 0.00021949
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 348,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 24.149
+    },
+    {
+      "item_id": 127,
+      "id": "gen-1791468047-A3k7VEOFa14FLKhiPDVD",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 14192,
+        "completion_tokens": 547,
+        "total_tokens": 14739,
+        "cost": 0.00238589,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00238589,
+          "upstream_inference_prompt_cost": 0.0021288,
+          "upstream_inference_completions_cost": 0.00025709
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 437,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 17.643
+    },
+    {
+      "item_id": 127,
+      "id": "gen-1791468082-LjOITW37zNNVdW98xqnk",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 17385,
+        "completion_tokens": 391,
+        "total_tokens": 17776,
+        "cost": 0.001110624,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12544,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001110624,
+          "upstream_inference_prompt_cost": 0.000926854,
+          "upstream_inference_completions_cost": 0.00018377
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 277,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 14.67
+    },
+    {
+      "item_id": 127,
+      "id": "gen-1791468101-xuSGqMOtr5B8M8e7i9GY",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 19632,
+        "completion_tokens": 466,
+        "total_tokens": 20098,
+        "cost": 0.00316382,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00316382,
+          "upstream_inference_prompt_cost": 0.0029448,
+          "upstream_inference_completions_cost": 0.00021902
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 233,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 18.247
+    },
+    {
+      "item_id": 127,
+      "id": "gen-1791468119-kXwCtx7DgTwC9EisXjK1",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 20206,
+        "completion_tokens": 347,
+        "total_tokens": 20553,
+        "cost": 0.002233478,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 7168,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002233478,
+          "upstream_inference_prompt_cost": 0.002070388,
+          "upstream_inference_completions_cost": 0.00016309
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 98,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 14.849
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "₹3.29",
+  "em_score": 0,
+  "llm_equal": 0,
+  "judge_response": "Incorrect",
+  "judge_error": null,
+  "elapsed_seconds": 153.21
+}

@@ -1,0 +1,11 @@
+{
+  "id": 87,
+  "question": "You are a music enthusiast solving a puzzle that connects musical imitation, copyright law, and visual symbolism. Analyze the provided multimodal inputs and follow the guidance below to unravel the puzzle.\n\nFirst, listen to Audio 1 and identify the singer‑songwriter being imitated (denote as Artist A) and the original band (denote as Band B) whose song is being reinterpreted.\n\nSecond, examine Image 1 and extract the integer number displayed on the performer's jersey (denote as Number C).\n\nThird, listen to Audio 2 to learn about a plagiarism lawsuit involving Artist A. You will need to conduct external research to find the release years of the two songs at the center of this lawsuit: the older song (released in Year D) and the more recent song by Artist A (released in Year E).\n\nThen, look at Image 2 and identify the text displayed on the circular sign (denote as Text F). Calculate the numeric value of Text F by summing the alphabetical positions of its letters (A=1, B=2, …, Z=26).\n\nFinally, compute the expression: (Number C) × (Year E – Year D) + (numeric value of Text F). Provide the result.",
+  "Level": "Hard",
+  "category": "Arts & Culture",
+  "task_type": "image + audio",
+  "answer": "1735",
+  "status": "error",
+  "error": "RuntimeError: OpenRouter: {'message': 'Upstream error from Nvidia: ResourceExhausted: Worker local total request limit reached (16/16)', 'code': 502, 'metadata': {'error_type': 'provider_unavailable'}}",
+  "elapsed_seconds": 398.79
+}

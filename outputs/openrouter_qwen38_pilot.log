@@ -1,0 +1,146 @@
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 243, in <module>
+    asyncio.run(main())
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 237, in main
+    await run(args, client, items, models)
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 110, in run
+    await validate_web_tools(client)
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 55, in validate_web_tools
+    raise RuntimeError("Jina не вернула содержимое проверочной страницы.")
+RuntimeError: Jina не вернула содержимое проверочной страницы.
+2026-10-08 12:37:01,343 INFO Начата задача 1 (Easy)
+2026-10-08 12:37:01,354 INFO Начата задача 2 (Medium)
+2026-10-08 12:37:13,820 INFO Задача 2, шаг 1: web_search
+2026-10-08 12:37:15,308 INFO Задача 2, шаг 1: web_search
+2026-10-08 12:37:22,032 INFO Задача 1, шаг 1: web_search
+2026-10-08 12:37:23,209 INFO Задача 1, шаг 1: web_search
+2026-10-08 12:37:33,843 INFO Задача 2, шаг 2: web_search
+2026-10-08 12:37:35,190 INFO Задача 2, шаг 2: web_search
+2026-10-08 12:37:48,247 INFO Задача 1, шаг 2: web_search
+2026-10-08 12:37:48,300 INFO Задача 2, шаг 3: web_search
+2026-10-08 12:37:53,082 INFO Задача 1, шаг 2: page_browser
+2026-10-08 12:37:53,397 INFO Задача 2, шаг 3: page_browser
+2026-10-08 12:38:14,254 INFO Задача 1, шаг 3: web_search
+2026-10-08 12:38:14,322 INFO Задача 2, шаг 4: page_browser
+2026-10-08 12:38:15,956 INFO Задача 1, шаг 3: web_search
+2026-10-08 12:38:16,514 INFO Задача 2, шаг 4: web_search
+2026-10-08 12:38:23,471 ERROR Ошибка задачи 2
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 166, in process
+    generated = await asyncio.wait_for(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 242, in run
+    raise RuntimeError("Модель вернула пустой ответ без вызовов инструментов.")
+RuntimeError: Модель вернула пустой ответ без вызовов инструментов.
+2026-10-08 12:38:23,472 INFO Прогресс: 1/5; правильных 0; ошибок 1
+2026-10-08 12:38:23,472 INFO Начата задача 3 (Easy)
+2026-10-08 12:38:41,153 INFO Задача 1, шаг 4: web_search
+2026-10-08 12:38:44,210 INFO Задача 1, шаг 4: web_search
+2026-10-08 12:38:56,586 INFO Загружен videos/hLJ_RCSKF8o.mp4: 23.0 МБ
+2026-10-08 12:39:00,439 INFO Compressed video hLJ_RCSKF8o.mp4 to 2.70MB (128 frames)
+2026-10-08 12:39:05,353 INFO Задача 1, шаг 5: page_browser
+2026-10-08 12:39:07,932 INFO Задача 1, шаг 5: web_search
+2026-10-08 12:39:23,953 INFO Загружен videos/_PlD2UUpQgI.mp4: 37.4 МБ
+2026-10-08 12:39:28,471 INFO Compressed video _PlD2UUpQgI.mp4 to 2.38MB (128 frames)
+2026-10-08 12:39:38,604 INFO Задача 1, шаг 6: page_browser
+2026-10-08 12:39:40,385 INFO Задача 1, шаг 6: web_search
+2026-10-08 12:39:55,121 INFO Задача 1, шаг 7: web_search
+2026-10-08 12:39:56,143 INFO Задача 1, шаг 7: web_search
+2026-10-08 12:40:06,386 ERROR Ошибка задачи 3
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 166, in process
+    generated = await asyncio.wait_for(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 229, in run
+    message, usage = await self.client.complete(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/openrouter_baseline.py", line 124, in complete
+    raise RuntimeError(f"OpenRouter HTTP {response.status_code}: {detail}")
+RuntimeError: OpenRouter HTTP 400: {"error":{"message":"Provider returned error","code":400,"metadata":{"raw":"data: {\"error\":{\"code\":\"invalid_parameter_error\",\"param\":null,\"message\":\"Download multimodal file timed out\",\"type\":\"invalid_request_error\"},\"id\":\"chatcmpl-9a22296d-47ee-93fd-ab5e-1536883d226d\"}\n\n","provider_name":"Alibaba","is_byok":false}},"user_id":"user_3JzvfBNETxKVb7EntXZdb0lIIZv"}
+2026-10-08 12:40:06,419 INFO Прогресс: 2/5; правильных 0; ошибок 2
+2026-10-08 12:40:06,419 INFO Начата задача 4 (Hard)
+2026-10-08 12:40:07,405 INFO Задача 1, шаг 8: page_browser
+2026-10-08 12:40:15,261 INFO Загружен videos/37QYx9KAbQA.mp4: 9.3 МБ
+2026-10-08 12:40:16,947 INFO Compressed video 37QYx9KAbQA.mp4 to 2.28MB (128 frames)
+2026-10-08 12:40:25,383 INFO Задача 1, шаг 9: code_executor
+2026-10-08 12:40:35,580 INFO Задача 1, шаг 10: code_executor
+2026-10-08 12:40:46,738 INFO Задача 1, шаг 11: web_search
+2026-10-08 12:40:48,008 INFO Задача 1, шаг 11: web_search
+2026-10-08 12:41:09,391 INFO Задача 1, шаг 12: page_browser
+2026-10-08 12:41:25,294 INFO Задача 1, шаг 13: page_browser
+2026-10-08 12:41:36,716 INFO Задача 1, шаг 14: code_executor
+2026-10-08 12:41:39,606 INFO Задача 4, шаг 1: web_search
+2026-10-08 12:41:41,279 INFO Задача 4, шаг 1: web_search
+2026-10-08 12:41:42,727 INFO Задача 4, шаг 1: web_search
+2026-10-08 12:41:48,179 INFO Прогресс: 3/5; правильных 1; ошибок 2
+2026-10-08 12:41:48,179 INFO Начата задача 5 (Easy)
+2026-10-08 12:41:49,818 INFO Загружен images/000000081303.jpg: 0.1 МБ
+2026-10-08 12:41:54,814 INFO Загружен audios/4_Eh16C9Qgg.wav: 7.5 МБ
+2026-10-08 12:42:05,068 INFO Задача 5, шаг 1: web_search
+2026-10-08 12:42:06,198 INFO Задача 5, шаг 1: web_search
+2026-10-08 12:42:19,074 INFO Задача 4, шаг 2: page_browser
+2026-10-08 12:42:20,166 INFO Задача 4, шаг 2: web_search
+2026-10-08 12:42:34,148 INFO Прогресс: 4/5; правильных 2; ошибок 2
+2026-10-08 12:44:08,562 INFO Задача 4, шаг 3: page_browser
+2026-10-08 12:44:09,273 INFO Задача 4, шаг 3: code_executor
+2026-10-08 12:44:54,361 INFO Прогресс: 5/5; правильных 2; ошибок 2
+{
+  "expected_count": 5,
+  "completed": 3,
+  "judged": 3,
+  "errors": 2,
+  "correct": 2,
+  "pass_at_1": null,
+  "partial_accuracy": 0.6666666666666666,
+  "by_level": {
+    "Easy": {
+      "count": 2,
+      "correct": 2
+    },
+    "Medium": {
+      "count": 0,
+      "correct": 0
+    },
+    "Hard": {
+      "count": 1,
+      "correct": 0
+    }
+  },
+  "tool_calls": {
+    "web_search": 19,
+    "page_browser": 8,
+    "code_executor": 4
+  }
+}
+Traceback (most recent call last):
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 245, in <module>
+    asyncio.run(main())
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 239, in main
+    await run(args, client, items, models)
+  File "/home/ilya/projects/multimodal/OmniGAIA/src/run_openrouter_baseline.py", line 192, in run
+    raise RuntimeError("Прогон содержит ошибки; результаты сохранены. Повторный запуск продолжит обработку.")
+RuntimeError: Прогон содержит ошибки; результаты сохранены. Повторный запуск продолжит обработку.

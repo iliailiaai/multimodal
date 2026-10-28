@@ -1,0 +1,394 @@
+{
+  "id": 111,
+  "question": "The provided audio highlights a specific city's prominence in streetcar transportation, while the image displays a streetcar with a distinct fleet number. By combining the city mentioned in the audio with the year represented by the number on the streetcar, identify the major silicon wafer manufacturing company that was founded and established its first U.S. production facility in that city during that specific year.",
+  "Level": "Medium",
+  "category": "Technology",
+  "task_type": "image + audio",
+  "answer": "Wacker Siltronic Corporation (Siltronic)",
+  "output": "<answer>Siltronic — the German silicon wafer maker that founded its Wacker Siltronic Corporation subsidiary in Portland, Oregon in 1978 (today's Siltronic Portland site), which was the company's first production facility in the United States.</answer>\n\n**Reasoning chain:**\n- **Audio:** The speaker (U.S. Transportation Secretary Ray LaHood) repeatedly declares **Portland** the \"transportation capital,\" \"green capital,\" and \"streetcar capital\" of the country, discussing the Portland Streetcar Eastside expansion and the Oregon Iron Works prototype car.\n- **Image:** The black-and-white photo shows a Portland Streetcar (destination sign \"MAIN STREET MALL\") bearing the car/fleet number **1978**.\n- **Combination (Portland + 1978):** Per Siltronic's official corporate history, \"1978 – Foundation of Wacker Siltronic Corporation in Portland, Oregon (USA),\" and the Portland site \"serves as the first international location in Siltronic's production network,\" beginning 100 mm wafer production in 1980. Siltronic is one of the world's leading silicon wafer manufacturers.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "The provided audio highlights a specific city's prominence in streetcar transportation, while the image displays a streetcar with a distinct fleet number. By combining the city mentioned in the audio with the year represented by the number on the streetcar, identify the major silicon wafer manufacturing company that was founded and established its first U.S. production facility in that city during that specific year."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:241539 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1365852 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The user wants me to combine information from the audio (city = Portland) and the image (streetcar fleet number = 1978) to identify a silicon wafer manufacturing company founded in Portland in 1978.\n\nLet me look at the image: the streetcar shows \"1978\" as its number. The audio mentions Portland repeatedly.\n\nSo I need a silicon wafer manufacturer founded in Portland in 1978. That sounds like INTED? Or maybe... Let me think. Silicon wafer manufacturers: Shin-Etsu, SUMCO, GlobalWafers (Memc), Siltronic, SK Siltron, MTI (Meridian)... \n\nActually, there's a company called \"International Substrate Corporation\"? Hmm. Let me search. I recall \"INTED\" was in Beaverton? Actually, let me think of wafer makers in Oregon: there's \"Siltronic\"? No. There's \"Fibertron\"? Hmm.\n\nWait — I think the answer might be \"MEMC\" no... Let me consider \"Oregon\" semiconductor: Intel Hillsboro, Microchip Gresham... Wafer manufacturing: \"GlobalWafers\"? Actually there's a company \"Silicon Devices\"? Hmm.\n\nLet me search the web: \"silicon wafer manufacturer founded 1978 Portland Oregon\".\n\nI believe the answer could be \"INTED\" (International Technology... ) Hmm. Actually I recall a company called \"Wafer Technology\"? Let me just search.\n\nAnother possibility: \"Siloam\"? Let's search.\n\nI'll do a web search.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_e7e783f8782e4e2fbb32e8df",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"silicon wafer manufacturer founded 1978 Portland Oregon\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_fec2a0afc6334920b9e956ee",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"1978\\\" Portland Oregon silicon wafer production company history first US facility\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user wants me to combine information from the audio (city = Portland) and the image (streetcar fleet number = 1978) to identify a silicon wafer manufacturing company founded in Portland in 1978.\n\nLet me look at the image: the streetcar shows \"1978\" as its number. The audio mentions Portland repeatedly.\n\nSo I need a silicon wafer manufacturer founded in Portland in 1978. That sounds like INTED? Or maybe... Let me think. Silicon wafer manufacturers: Shin-Etsu, SUMCO, GlobalWafers (Memc), Siltronic, SK Siltron, MTI (Meridian)... \n\nActually, there's a company called \"International Substrate Corporation\"? Hmm. Let me search. I recall \"INTED\" was in Beaverton? Actually, let me think of wafer makers in Oregon: there's \"Siltronic\"? No. There's \"Fibertron\"? Hmm.\n\nWait — I think the answer might be \"MEMC\" no... Let me consider \"Oregon\" semiconductor: Intel Hillsboro, Microchip Gresham... Wafer manufacturing: \"GlobalWafers\"? Actually there's a company \"Silicon Devices\"? Hmm.\n\nLet me search the web: \"silicon wafer manufacturer founded 1978 Portland Oregon\".\n\nI believe the answer could be \"INTED\" (International Technology... ) Hmm. Actually I recall a company called \"Wafer Technology\"? Let me just search.\n\nAnother possibility: \"Siloam\"? Let's search.\n\nI'll do a web search.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e7e783f8782e4e2fbb32e8df",
+      "content": "[{\"id\": 1, \"title\": \"Top 5 Silicon Wafer Manufacturing Companies in 2026\", \"url\": \"https://waferpro.com/top-5-silicon-wafer-manufacturing-companies/?srsltid=AU7gw4VNmhu_js3fTseF3RpN4pRAYoE6xYfFd1RAuvr858zCmcXNqsg4\", \"snippet\": \"In this article, we will explore the Top 5 Silicon Wafer Manufacturing Companies in the world. In-depth comparisons.\", \"date\": \"Jan 9, 2024\"}, {\"id\": 2, \"title\": \"Siltronic Portland powers forward: New solar field will ...\", \"url\": \"https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html\", \"snippet\": \"Founded in 1978 as ... Today, Siltronic Portland remains focused on manufacturing high-quality 200 mm wafers for customers worldwide.\", \"date\": \"May 17, 2024\"}, {\"id\": 3, \"title\": \"SEH America | Leader in Silicon Wafer Manufacturing in USA\", \"url\": \"https://sehamerica.com/\", \"snippet\": \"SEH America is a premier silicon wafer manufacturing company. We deliver ISO-certified semiconductor solutions from our Vancouver, Washington facility.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Siltronic AG\", \"url\": \"https://www.encyclopedia.com/books/politics-and-business-magazines/siltronic-ag\", \"snippet\": \"Company begins producing semiconductors. 1978: An American subsidiary, Wacker Siltronic Corporation, is established in Portland, Oregon. 1994: Wacker ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"U.S. Semiconductor Ecosystem Map\", \"url\": \"https://www.semiconductors.org/ecosystem/\", \"snippet\": \"Portland State University, Portland, OR ... Fabless – A semiconductor design company with no or limited wafer fabrication capability. (Source) ...\", \"date\": \"Dec 1, 2025\"}, {\"id\": 6, \"title\": \"The 78-year-old company helped lay a foundation for ...\", \"url\": \"https://www.facebook.com/PortlandBizJournal/posts/the-78-year-old-company-helped-lay-a-foundation-for-oregons-later-tech-firms/997486562389386/\", \"snippet\": \"In 1946 Vollum and Murdock joined with Miles Tippery and Glenn McDowell to create Tektronix, inc. The company became one of the world's largest ...\", \"date\": \"Sep 7, 2024\"}, {\"id\": 7, \"title\": \"Wafer World: Wafer Manufacturing\", \"url\": \"https://www.waferworld.com/\", \"snippet\": \"Silicon Wafer Manufacturing ... At Wafer Word, we specialize in making high-quality silicon wafers for a wide range of applications and custom specifications.\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Top 10 Silicon Wafer Manufacturers | PDF | Solar Cell\", \"url\": \"https://www.scribd.com/document/715135835/Top-10-Silicon-Wafer-Manufacturing-Companies-in-the-World\", \"snippet\": \"They specialize in producing silicon wafers to supply to the solar photovoltaic industry. Founded in 1978, we often refer to PV Crystalox Solar as “The\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Silicon Forest\", \"url\": \"https://www.oregonencyclopedia.org/articles/silicon_forest/\", \"snippet\": \"Since then, the profile of the Silicon Forest has centered on silicon wafer manufacturing, semiconductor design, and display technologies. The ...\", \"date\": \"Apr 19, 2022\"}, {\"id\": 10, \"title\": \"Jireh Semiconductor\", \"url\": \"https://www.aosmd.com/jireh-semiconductor\", \"snippet\": \"Jireh Semiconductor, Inc., a wholly owned subsidiary of Alpha and Omega Semiconductor Ltd., is the in-house wafer fab for AOS. Located in Hillsboro, OR in ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_fec2a0afc6334920b9e956ee",
+      "content": "[{\"id\": 1, \"title\": \"History\", \"url\": \"https://www.siltronic.com/en/our-company/history.html\", \"snippet\": \"1978, Foundation of Wacker Siltronic Corporation in Portland, Oregon (USA). 1984, First 200 mm wafers at Wacker-Chemitronic. 1990, First research and ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Siltronic AG\", \"url\": \"https://www.encyclopedia.com/books/politics-and-business-magazines/siltronic-ag\", \"snippet\": \"1958: Company begins producing semiconductors. 1978: An American subsidiary, Wacker Siltronic Corporation, is established in Portland, Oregon. 1994: Wacker ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Companies | The Silicon Engine - Computer History Museum\", \"url\": \"https://www.computerhistory.org/siliconengine/companies/\", \"snippet\": \"In 1961 the division produced the first commercial photorepeater for mask making and in 1978 introduced DSW (Direct Step on Wafer) technology that is still used ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"List of semiconductor fabrication plants\", \"url\": \"https://en.wikipedia.org/wiki/List_of_semiconductor_fabrication_plants\", \"snippet\": \"Tallinn, 1958, Radio equipment, Transisors, Photodiode, 1978. Intersil (formerly Harris Semiconductor, formerly GE, formerly RCA), United States, Ohio ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Siltronic\", \"url\": \"https://www.wikiwand.com/en/Siltronic\", \"snippet\": \"In 1978, Wacker-Chemic built a plant in Portland, Oregon and founded the Wacker Siltronic Corporation. Workers were trained in Germany before the plants ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Taking root in the silicon forest: The role of high - PDXScholar\", \"url\": \"https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=7855&context=open_access_etds\", \"snippet\": \"by H Mayer · 2003 · Cited by 14 — Intel established its first branch plant facility in the suburban Washington County community of Aloha in 1976. In 1978 and in 1980 ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Wyden talks tech, agriculture at Tigard meeting\", \"url\": \"https://newberggraphic.com/2023/08/20/wyden-talks-tech-agriculture-at-tigard-meeting/\", \"snippet\": \"Analog Devices in Beaverton has announced a $1 billion expansion of its fabrication plant, which it first opened in 1978. The company says ...\", \"date\": \"Aug 20, 2023\"}, {\"id\": 8, \"title\": \"Conexant Systems, Inc.\", \"url\": \"https://www.company-histories.com/Conexant-Systems-Inc-Company-History.html\", \"snippet\": \"In 1978 it began shipping high-speed OEM (original equipment manufacturer) ... Conexant also opened a design center in Portland, Oregon, to attract talent in the ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"History of TriQuint Semiconductor, Inc.\", \"url\": \"https://www.fundinguniverse.com/company-histories/triquint-semiconductor-inc-history/\", \"snippet\": \"TriQuint's earliest roots were traced to a research project undertaken by Tektronix Inc. in 1978. In their Beaverton, Oregon-based laboratories, Tektronix ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Why do we not make silicon chips in the US?\", \"url\": \"https://www.quora.com/Why-do-we-not-make-silicon-chips-in-the-US\", \"snippet\": \"Why do we not make silicon chips in the US?\", \"date\": \"2 months ago\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The evidence points to Siltronic (originally Wacker Siltronic Corporation), founded in 1978 in Portland, Oregon. Let me verify the details from Siltronic's history page to confirm the first U.S. production facility.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_9cb5e6892aea415bb164c03f",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.siltronic.com/en/our-company/history.html\", \"https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The evidence points to Siltronic (originally Wacker Siltronic Corporation), founded in 1978 in Portland, Oregon. Let me verify the details from Siltronic's history page to confirm the first U.S. production facility.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9cb5e6892aea415bb164c03f",
+      "content": "{\"https://www.siltronic.com/en/our-company/history.html\": \"Title: History – Siltronic / perfect silicon solutions\\n\\nURL Source: https://www.siltronic.com/en/our-company/history.html\\n\\nMarkdown Content:\\n[![Image 1: Siltronic AG – go to home]]\\n\\n* [Contact]\\n* [Sites]\\n\\n* Languages\\n  * [Deutsch]\\n  * [English]\\n\\n- [x] \\n* [Products]- [x] \\n\\n#### Silicon wafers\\n\\nHyperpure silicon wafers are the basis for almost all semiconductor elements and consequently represent an essential basis for the world’s electronics industry. With various diameters, material properties, and surface qualities, Siltronic’s extensive product range covers the global semiconductor industry’s specific requirements. \\n  * #### [Polished wafers Perfect surfaces for versatile applications]\\n  * #### [Epitaxial wafers Superior basis for highly integrated components.]\\n  * #### [Special products Specialized wafers for innovative technologies]\\n\\n* [Our Company]- [x] \\n\\n#### Siltronic AG\\n\\nPerfect Silicon Solutions: Positioned as one of the world’s leading manufacturers of silicon wafers with diameters up to 300 mm, Siltronic partners with many preeminent chip manufacturers and companies in the semiconductor industry. \\n  * #### [About Siltronic Technology leader and driving force for innovation]\\n  * #### [Strategy & Values Our goals, strategic priorities, and guiding principles.]\\n  * #### [Management Siltronic AG Executive Board and Supervisory Board]\\n  * #### [History Siltronic’s history goes back to the year 1953.]\\n  * #### [Sites Globally positioned: Siltronic is manufacturing in Asia, Europe and the USA.]\\n  * #### [Quality Achieving the ultimate in quality standards determines our corporate philosophy]\\n  * #### [Compliance Responsible actions as key to success]\\n  * #### [Partners Solution-oriented customer and supplier relations]\\n\\n* [Sustainability]- [x] \\n\\n#### Sustainability\\n\\nSustainability is part of our corporate DNA – for the benefit of people and the environment, as well as with a view to the company's profitability. \\n  * #### [Commitments Commitment beyond legal requirements]\\n  * #### [Targets Our targets help us to become better and better]\\n  * #### [Managing sustainability How we manage our sustainability performance]\\n  * #### [Environment How we protect the environment and its resources]\\n  * #### [Supply chain Together with our suppliers for more sustainability]\\n  * #### [Working conditions What we offer our employees]\\n  * #### [Products Products with benefits for sustainability]\\n  * #### [Society Siltronic is part of society]\\n  * #### [Transparency Reporting and evaluation]\\n\\n* [Career]- [x] \\n\\n#### Success Stories\\n\\nFounded in Germany, at home in the world: Today Siltronic is a global employer in which employees around the world place their trust and loyalty. Employees appreciate the good team spirit and sustainable personnel development just as much as they value the corporate culture based on flexibility and initiative.\\n\\n[Open positions in Germany][Open positions in the USA][Open positions in Singapore]+or+(siltronic+and+wafer)-jobs-in-tampines/) \\n  * #### [Students and Graduates]\\n  * #### [Professionals]\\n  * #### [Working in Germany]\\n  * #### [Working in USA]\\n  * #### [Working in Singapore]\\n  * #### [Siltronic as an employer]\\n\\n* [Investors]- [x] \\n\\n#### Investor Relations\\n\\nSiltronic AG has been listed since 2015 and is included on the SDAX and the TecDAX. At Siltronic, we regard investor relations as an obligation as well as a strong motivation. Our interactions with our shareholders and investors are characterized by transparency and openness. This is the only way to build trust and shape the future together. \\n  * #### [Information on the share Facts, figures and analyst estimates]\\n  * #### [Reports and presentations Current reports and presentations provide insights.]\\n  * #### [Fact Sheet Siltronic in overview]\\n  * #### [Corporate Governance Confident and concentrated on the essentials: our principles of corporate governance.]\\n  * #### [Financial releases Voting rights announcements, Directors’ Dealings and ad hoc disclosures]\\n  * #### [Annual General Meeting Agendas, important downloads and presentations]\\n  * #### [Investor Relations Team and Order Service Your contacts for all IR matters]\\n  * #### [Financial Calendar All important financial market dates at a glance]\\n\\n* [Press]- [x] \\n\\n  * #### [Press releases Current releases and archive]\\n  * #### [Media Press photos and videos]\\n  * #### [Press contact and order service Your contact for all press requests]\\n\\n# History\\n\\nWhat originally began in 1953 with the development of high-purity silicon reached an initial peak in 2015 with the successful IPO: Siltronic’s history also reflects the dynamic development of the wafer and semiconductor market over the last decades.\\n\\n* [Siltronic AG]\\n* [Our Company]\\n* History\\n\\nSiltronic AG has existed in its current form since 2004, while tracing its business origins back to the start of research and development involving high-purity silicon in 1953.\\n\\n* * *\\n\\n**1953**Initial research and development in the high-purity silicon area\\n**1958**Semiconductor production kicks off\\n**1959**First float-zone facility operational at the new high-purity silicon plant\\n**1961**High-purity silicon production facilities embark on industrial-scale production\\n**1962**Development of the first silicon wafer\\n**1968**Foundation of Wacker-Chemitronic Gesellschaft für Elektronik-Grundstoffe mbH (“Wacker-Chemitronic”)\\n**1978**Foundation of Wacker Siltronic Corporation in Portland, Oregon (USA).\\n**1984**First 200 mm wafers at Wacker-Chemitronic\\n**1990**First research and development projects for 300 mm wafers\\n**1994/1995**As sole shareholder, Wacker-Chemitronic establishes Wacker Siltronic Gesellschaft für Halbleitermaterialien mbH\\n**1995**Acquisition of Freiberger Elektronikwerkstoffe Produktions- und Vertriebsgesellschaft mbH, Freiberg, which was merged into our company on January 8, 1996\\n**1995**Wacker-Chemitronic transfers its wafer business to Wacker Siltronic\\n**1996**Wacker Siltronic Gesellschaft für Halbleitermaterialien mbH is converted into a stock corporation under the name of Wacker Siltronic Gesellschaft für Halbleitermaterialien AG\\n**1997**Foundation of Wacker Siltronic Singapore Pte. Ltd.\\n**1998**Initial operation of the first expansion stage of the 300 mm pilot production line in Burghausen\\n**1999**Fab in Singapore kicks off production\\n**2002**Company name changed to Wacker Siltronic AG\\n**2004**300 mm silicon wafer fab launches production in Freiberg\\n**2004**Company name changed to Siltronic AG\\n**2006**Foundation of joint venture Siltronic Samsung Wafer Pte. Ltd. (now: Siltronic Silicon Wafer Pte. Ltd.) with Samsung. Construction starts on 300 mm wafer fab in Singapore\\n**2008**The first wafers from the joint venture in Singapore are shipped on January 30, 2008\\n**2014**Acquisition of majority share (78 percent) in Siltronic Silicon Wafer Pte. Ltd. in Singapore\\n**2015**Siltronic executes successful IPO\\n**2017**Wacker executes a second placement and holds a minority of 30,8 percent\\n**2021**Start of construction of the new 300 mm fab at the Singapore site\\n**2023**Production of the first 300 mm wafers at the new Singapore fab\\n**2024**Inauguration of the new 300 mm fab in Singapore\\n\\n* [Imprint]\\n* [Privacy protection]\\n* [Legal notice]\\n\\ncreation: [599media GmbH]\\n\\n[![Image 2: LinkedIn - Logo]LinkedIn][![Image 3: Xing - Logo]LinkedIn]\\n\\n#### Your cookie settings\\n\\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\\n\\nManage settings Reject all Accept all\\n\\n#### Your cookie settings\\n\\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\\n\\n Categories \\n\\n External Media \\n\\nStreaming Services\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\nOur website may contain elements from external sources. It should be noted that we have no influence on whether operators of other websites comply with the applicable data protection provisions. For more information on the individual providers, please refer to the detailed information.\\n\\nShow detailed information\\n\\nThe providers using cookies on this site are listed below. Where possible, you can choose to allow certain cookies on this site.\\n\\nName Provider\\n\\nYouTube Google LLC\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\npromeas - LiveStream promeas GmbH\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\nMaps Service\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\nOur website may contain elements from external sources. It should be noted that we have no influence on whether operators of other websites comply with the applicable data protection provisions. For more information on the individual providers, please refer to the detailed information.\\n\\nShow detailed information\\n\\nThe providers using cookies on this site are listed below. Where possible, you can choose to allow certain cookies on this site.\\n\\nName Provider\\n\\nGoogle Maps Google LLC\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\nSave settings Accept all\\n\\n##teaserTitle##\\n\\n##teaserText##\\n\\n ##LINK## Show provider content\\n\", \"https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html\": \"Title: Siltronic Portland powers forward: New solar field will contribute to the company’s climate targets – Siltronic / perfect silicon solutions\\n\\nURL Source: https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html\\n\\nMarkdown Content:\\n[![Image 1: Siltronic AG – go to home]]\\n\\n* [Contact]\\n* [Sites]\\n\\n* Languages\\n  * [Deutsch]\\n  * [English]\\n\\n- [x] \\n* [Products]- [x] \\n\\n#### Silicon wafers\\n\\nHyperpure silicon wafers are the basis for almost all semiconductor elements and consequently represent an essential basis for the world’s electronics industry. With various diameters, material properties, and surface qualities, Siltronic’s extensive product range covers the global semiconductor industry’s specific requirements. \\n  * #### [Polished wafers Perfect surfaces for versatile applications]\\n  * #### [Epitaxial wafers Superior basis for highly integrated components.]\\n  * #### [Special products Specialized wafers for innovative technologies]\\n\\n* [Our Company]- [x] \\n\\n#### Siltronic AG\\n\\nPerfect Silicon Solutions: Positioned as one of the world’s leading manufacturers of silicon wafers with diameters up to 300 mm, Siltronic partners with many preeminent chip manufacturers and companies in the semiconductor industry. \\n  * #### [About Siltronic Technology leader and driving force for innovation]\\n  * #### [Strategy & Values Our goals, strategic priorities, and guiding principles.]\\n  * #### [Management Siltronic AG Executive Board and Supervisory Board]\\n  * #### [History Siltronic’s history goes back to the year 1953.]\\n  * #### [Sites Globally positioned: Siltronic is manufacturing in Asia, Europe and the USA.]\\n  * #### [Quality Achieving the ultimate in quality standards determines our corporate philosophy]\\n  * #### [Compliance Responsible actions as key to success]\\n  * #### [Partners Solution-oriented customer and supplier relations]\\n\\n* [Sustainability]- [x] \\n\\n#### Sustainability\\n\\nSustainability is part of our corporate DNA – for the benefit of people and the environment, as well as with a view to the company's profitability. \\n  * #### [Commitments Commitment beyond legal requirements]\\n  * #### [Targets Our targets help us to become better and better]\\n  * #### [Managing sustainability How we manage our sustainability performance]\\n  * #### [Environment How we protect the environment and its resources]\\n  * #### [Supply chain Together with our suppliers for more sustainability]\\n  * #### [Working conditions What we offer our employees]\\n  * #### [Products Products with benefits for sustainability]\\n  * #### [Society Siltronic is part of society]\\n  * #### [Transparency Reporting and evaluation]\\n\\n* [Career]- [x] \\n\\n#### Success Stories\\n\\nFounded in Germany, at home in the world: Today Siltronic is a global employer in which employees around the world place their trust and loyalty. Employees appreciate the good team spirit and sustainable personnel development just as much as they value the corporate culture based on flexibility and initiative.\\n\\n[Open positions in Germany][Open positions in the USA][Open positions in Singapore]+or+(siltronic+and+wafer)-jobs-in-tampines/) \\n  * #### [Students and Graduates]\\n  * #### [Professionals]\\n  * #### [Working in Germany]\\n  * #### [Working in USA]\\n  * #### [Working in Singapore]\\n  * #### [Siltronic as an employer]\\n\\n* [Investors]- [x] \\n\\n#### Investor Relations\\n\\nSiltronic AG has been listed since 2015 and is included on the SDAX and the TecDAX. At Siltronic, we regard investor relations as an obligation as well as a strong motivation. Our interactions with our shareholders and investors are characterized by transparency and openness. This is the only way to build trust and shape the future together. \\n  * #### [Information on the share Facts, figures and analyst estimates]\\n  * #### [Reports and presentations Current reports and presentations provide insights.]\\n  * #### [Fact Sheet Siltronic in overview]\\n  * #### [Corporate Governance Confident and concentrated on the essentials: our principles of corporate governance.]\\n  * #### [Financial releases Voting rights announcements, Directors’ Dealings and ad hoc disclosures]\\n  * #### [Annual General Meeting Agendas, important downloads and presentations]\\n  * #### [Investor Relations Team and Order Service Your contacts for all IR matters]\\n  * #### [Financial Calendar All important financial market dates at a glance]\\n\\n* [Press]- [x] \\n\\n  * #### [Press releases Current releases and archive]\\n  * #### [Media Press photos and videos]\\n  * #### [Press contact and order service Your contact for all press requests]\\n\\n* [Siltronic AG]\\n* [Press]\\n* [Press releases]\\n* Siltronic Portland powers forward: New solar field will contribute to the...\\n\\n# Siltronic Portland powers forward: New solar field will contribute to the company’s climate targets\\n\\n**Portland, May 17, 2024** –Siltronic Portland proudly announces the inauguration of its state-of-the-art solar field on May 16, 2024. This marks a milestone in the company's commitment to sustainability and reducing its carbon footprint.\\n\\n“We see sustainability not just as a duty, but as a deeply rooted conviction. It is our responsibility not only to ensure financial profits, but also to work for the sustainable development of Siltronic and the preservation of our environment for future generations. Our new solar field exemplifies our commitment to a greener and more sustainable future”, stated Claudia Schmitt, CFO of Siltronic.\\n\\nSiltronic AG has implemented a climate action plan aimed at limiting global warming to 1.5 degrees Celsius, in line with the 2015 Paris Climate Agreement. The company intends to reduce its Scope 1 and 2 greenhouse gas emissions by 42 percent by 2030, using 2021 as the baseline. Additionally, Siltronic aims to achieve net zero emissions by 2045. To achieve these targets, Siltronic utilizes three main levels: enhancing energy efficiency, generating its own renewable energy, and purchasing renewable energy.\\n\\nAs part of the in-house generation of renewable energy, the solar field with a capacity of 1,500 MWh per year started generating electricity last week. The energy produced from this solar field could sustain almost 140 Oregon households for an entire year. It contains 2,353 panels mounted on a fixed ground mount system and spans an area of 420 feet by 250 feet. The ribbon-cutting ceremony was conducted by Claudia Schmitt, CFO of Siltronic, and Subramania Krishnakumar, President of the Portland Site.\\n\\nFounded in 1978 as Wacker Siltronic Corporation, the Portland site serves as the first international location in Siltronic's production network. In 1980, the site celebrated the inauguration of Fab 1 and commenced production of 100 mm wafers, followed by expansions to increase capacity and capability, including the addition of 150 mm wafers in the mid-1980s. In 1996, production began in Fab 2, specializing in 200 mm wafers. Throughout its history, the Portland site has received numerous awards for its dedication to efficiency and sustainability. Today, Siltronic Portland remains focused on manufacturing high-quality 200 mm wafers for customers worldwide. With approximately 400 employees, the site specializes in wafering production, offering a range of polished and epitaxial wafers.\\n\\n**Contact:**\\n\\nVerena Stütze  \\n Head of Investor Relations & Communications  \\n Tel.: +49 (0)89 8564 3133  \\n E-mail: [investor.relations@siltronic.com]\\n\\n**Company profile:**\\n\\nAs one of the leading wafer manufacturers, Siltronic is globally oriented and operates production sites in Asia, Europe, and the USA. Silicon wafers are the foundation of the modern semiconductor industry and the basis for chips in all electronic applications – from computers and smartphones to electric cars and wind turbines. The international company is highly customer-oriented and focuses on quality, precision, innovation, and growth. Siltronic AG employs around 4,500 people worldwide and has been listed in the Prime Standard of the German Stock Exchange since 2015. Siltronic AG shares are included in both the MDAX and TecDAX stock market indices.\\n\\n##### 05/17/2024, 04.00 pm (CET/CETS)\\n\\n* * *\\n\\n[![Image 2: Subramania Krishnakumar, President of the Siltronic Portland site (left) and Claudia Schmitt, CFO of Siltronic (right)]]\\n\\n Subramania Krishnakumar, President of the Siltronic Portland site (left) and Claudia Schmitt, CFO of Siltronic (right) \\n\\n* * *\\n\\n##### Downloads\\n\\n* [Press release from May 17, 2024(pdf, 469 KB)]\\n\\n* * *\\n\\n[Back to news list]\\n\\n* [Imprint]\\n* [Privacy protection]\\n* [Legal notice]\\n\\ncreation: [599media GmbH]\\n\\n[![Image 3: LinkedIn - Logo]LinkedIn][![Image 4: Xing - Logo]LinkedIn]\\n\\n#### Your cookie settings\\n\\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\\n\\nManage settings Reject all Accept all\\n\\n#### Your cookie settings\\n\\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\\n\\n Categories \\n\\n External Media \\n\\nStreaming Services\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\nOur website may contain elements from external sources. It should be noted that we have no influence on whether operators of other websites comply with the applicable data protection provisions. For more information on the individual providers, please refer to the detailed information.\\n\\nShow detailed information\\n\\nThe providers using cookies on this site are listed below. Where possible, you can choose to allow certain cookies on this site.\\n\\nName Provider\\n\\nYouTube Google LLC\\n\\n- [x] Determines whether the service and its cookies are enabled or not. \\n\\npromeas - LiveStream promeas GmbH\\n\\n- [x] Determ\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "<answer>Siltronic — the German silicon wafer maker that founded its Wacker Siltronic Corporation subsidiary in Portland, Oregon in 1978 (today's Siltronic Portland site), which was the company's first production facility in the United States.</answer>\n\n**Reasoning chain:**\n- **Audio:** The speaker (U.S. Transportation Secretary Ray LaHood) repeatedly declares **Portland** the \"transportation capital,\" \"green capital,\" and \"streetcar capital\" of the country, discussing the Portland Streetcar Eastside expansion and the Oregon Iron Works prototype car.\n- **Image:** The black-and-white photo shows a Portland Streetcar (destination sign \"MAIN STREET MALL\") bearing the car/fleet number **1978**.\n- **Combination (Portland + 1978):** Per Siltronic's official corporate history, \"1978 – Foundation of Wacker Siltronic Corporation in Portland, Oregon (USA),\" and the Portland site \"serves as the first international location in Siltronic's production network,\" beginning 100 mm wafer production in 1980. Siltronic is one of the world's leading silicon wafer manufacturers.",
+      "reasoning": "The evidence is confirmed:\n\n- Audio: Portland (the speaker repeatedly says Portland is the streetcar capital, transportation capital, etc. — this is U.S. Transportation Secretary Ray LaHood at the Portland Streetcar Eastside expansion announcement).\n- Image: The streetcar displays fleet/car number \"1978\" (a Portland Streetcar, \"Main Street Mall\" destination sign).\n- Combining: Portland + 1978 → Siltronic (founded as Wacker Siltronic Corporation in Portland, Oregon in 1978), the first international/U.S. production site in Siltronic's network — a major silicon wafer manufacturer.\n\nAnswer: Siltronic (originally Wacker Siltronic Corporation; today Siltronic Portland).",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The evidence is confirmed:\n\n- Audio: Portland (the speaker repeatedly says Portland is the streetcar capital, transportation capital, etc. — this is U.S. Transportation Secretary Ray LaHood at the Portland Streetcar Eastside expansion announcement).\n- Image: The streetcar displays fleet/car number \"1978\" (a Portland Streetcar, \"Main Street Mall\" destination sign).\n- Combining: Portland + 1978 → Siltronic (founded as Wacker Siltronic Corporation in Portland, Oregon in 1978), the first international/U.S. production site in Siltronic's network — a major silicon wafer manufacturer.\n\nAnswer: Siltronic (originally Wacker Siltronic Corporation; today Siltronic Portland).",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"silicon wafer manufacturer founded 1978 Portland Oregon\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Top 5 Silicon Wafer Manufacturing Companies in 2026",
+          "url": "https://waferpro.com/top-5-silicon-wafer-manufacturing-companies/?srsltid=AU7gw4VNmhu_js3fTseF3RpN4pRAYoE6xYfFd1RAuvr858zCmcXNqsg4",
+          "snippet": "In this article, we will explore the Top 5 Silicon Wafer Manufacturing Companies in the world. In-depth comparisons.",
+          "date": "Jan 9, 2024"
+        },
+        {
+          "id": 2,
+          "title": "Siltronic Portland powers forward: New solar field will ...",
+          "url": "https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html",
+          "snippet": "Founded in 1978 as ... Today, Siltronic Portland remains focused on manufacturing high-quality 200 mm wafers for customers worldwide.",
+          "date": "May 17, 2024"
+        },
+        {
+          "id": 3,
+          "title": "SEH America | Leader in Silicon Wafer Manufacturing in USA",
+          "url": "https://sehamerica.com/",
+          "snippet": "SEH America is a premier silicon wafer manufacturing company. We deliver ISO-certified semiconductor solutions from our Vancouver, Washington facility.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Siltronic AG",
+          "url": "https://www.encyclopedia.com/books/politics-and-business-magazines/siltronic-ag",
+          "snippet": "Company begins producing semiconductors. 1978: An American subsidiary, Wacker Siltronic Corporation, is established in Portland, Oregon. 1994: Wacker ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "U.S. Semiconductor Ecosystem Map",
+          "url": "https://www.semiconductors.org/ecosystem/",
+          "snippet": "Portland State University, Portland, OR ... Fabless – A semiconductor design company with no or limited wafer fabrication capability. (Source) ...",
+          "date": "Dec 1, 2025"
+        },
+        {
+          "id": 6,
+          "title": "The 78-year-old company helped lay a foundation for ...",
+          "url": "https://www.facebook.com/PortlandBizJournal/posts/the-78-year-old-company-helped-lay-a-foundation-for-oregons-later-tech-firms/997486562389386/",
+          "snippet": "In 1946 Vollum and Murdock joined with Miles Tippery and Glenn McDowell to create Tektronix, inc. The company became one of the world's largest ...",
+          "date": "Sep 7, 2024"
+        },
+        {
+          "id": 7,
+          "title": "Wafer World: Wafer Manufacturing",
+          "url": "https://www.waferworld.com/",
+          "snippet": "Silicon Wafer Manufacturing ... At Wafer Word, we specialize in making high-quality silicon wafers for a wide range of applications and custom specifications.",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Top 10 Silicon Wafer Manufacturers | PDF | Solar Cell",
+          "url": "https://www.scribd.com/document/715135835/Top-10-Silicon-Wafer-Manufacturing-Companies-in-the-World",
+          "snippet": "They specialize in producing silicon wafers to supply to the solar photovoltaic industry. Founded in 1978, we often refer to PV Crystalox Solar as “The",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Silicon Forest",
+          "url": "https://www.oregonencyclopedia.org/articles/silicon_forest/",
+          "snippet": "Since then, the profile of the Silicon Forest has centered on silicon wafer manufacturing, semiconductor design, and display technologies. The ...",
+          "date": "Apr 19, 2022"
+        },
+        {
+          "id": 10,
+          "title": "Jireh Semiconductor",
+          "url": "https://www.aosmd.com/jireh-semiconductor",
+          "snippet": "Jireh Semiconductor, Inc., a wholly owned subsidiary of Alpha and Omega Semiconductor Ltd., is the in-house wafer fab for AOS. Located in Hillsboro, OR in ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"1978\\\" Portland Oregon silicon wafer production company history first US facility\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "History",
+          "url": "https://www.siltronic.com/en/our-company/history.html",
+          "snippet": "1978, Foundation of Wacker Siltronic Corporation in Portland, Oregon (USA). 1984, First 200 mm wafers at Wacker-Chemitronic. 1990, First research and ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Siltronic AG",
+          "url": "https://www.encyclopedia.com/books/politics-and-business-magazines/siltronic-ag",
+          "snippet": "1958: Company begins producing semiconductors. 1978: An American subsidiary, Wacker Siltronic Corporation, is established in Portland, Oregon. 1994: Wacker ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Companies | The Silicon Engine - Computer History Museum",
+          "url": "https://www.computerhistory.org/siliconengine/companies/",
+          "snippet": "In 1961 the division produced the first commercial photorepeater for mask making and in 1978 introduced DSW (Direct Step on Wafer) technology that is still used ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "List of semiconductor fabrication plants",
+          "url": "https://en.wikipedia.org/wiki/List_of_semiconductor_fabrication_plants",
+          "snippet": "Tallinn, 1958, Radio equipment, Transisors, Photodiode, 1978. Intersil (formerly Harris Semiconductor, formerly GE, formerly RCA), United States, Ohio ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Siltronic",
+          "url": "https://www.wikiwand.com/en/Siltronic",
+          "snippet": "In 1978, Wacker-Chemic built a plant in Portland, Oregon and founded the Wacker Siltronic Corporation. Workers were trained in Germany before the plants ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Taking root in the silicon forest: The role of high - PDXScholar",
+          "url": "https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=7855&context=open_access_etds",
+          "snippet": "by H Mayer · 2003 · Cited by 14 — Intel established its first branch plant facility in the suburban Washington County community of Aloha in 1976. In 1978 and in 1980 ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Wyden talks tech, agriculture at Tigard meeting",
+          "url": "https://newberggraphic.com/2023/08/20/wyden-talks-tech-agriculture-at-tigard-meeting/",
+          "snippet": "Analog Devices in Beaverton has announced a $1 billion expansion of its fabrication plant, which it first opened in 1978. The company says ...",
+          "date": "Aug 20, 2023"
+        },
+        {
+          "id": 8,
+          "title": "Conexant Systems, Inc.",
+          "url": "https://www.company-histories.com/Conexant-Systems-Inc-Company-History.html",
+          "snippet": "In 1978 it began shipping high-speed OEM (original equipment manufacturer) ... Conexant also opened a design center in Portland, Oregon, to attract talent in the ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "History of TriQuint Semiconductor, Inc.",
+          "url": "https://www.fundinguniverse.com/company-histories/triquint-semiconductor-inc-history/",
+          "snippet": "TriQuint's earliest roots were traced to a research project undertaken by Tektronix Inc. in 1978. In their Beaverton, Oregon-based laboratories, Tektronix ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Why do we not make silicon chips in the US?",
+          "url": "https://www.quora.com/Why-do-we-not-make-silicon-chips-in-the-US",
+          "snippet": "Why do we not make silicon chips in the US?",
+          "date": "2 months ago"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.siltronic.com/en/our-company/history.html\", \"https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html\"]\n\n}",
+      "result": {
+        "https://www.siltronic.com/en/our-company/history.html": "Title: History – Siltronic / perfect silicon solutions\n\nURL Source: https://www.siltronic.com/en/our-company/history.html\n\nMarkdown Content:\n[![Image 1: Siltronic AG – go to home]]\n\n* [Contact]\n* [Sites]\n\n* Languages\n  * [Deutsch]\n  * [English]\n\n- [x] \n* [Products]- [x] \n\n#### Silicon wafers\n\nHyperpure silicon wafers are the basis for almost all semiconductor elements and consequently represent an essential basis for the world’s electronics industry. With various diameters, material properties, and surface qualities, Siltronic’s extensive product range covers the global semiconductor industry’s specific requirements. \n  * #### [Polished wafers Perfect surfaces for versatile applications]\n  * #### [Epitaxial wafers Superior basis for highly integrated components.]\n  * #### [Special products Specialized wafers for innovative technologies]\n\n* [Our Company]- [x] \n\n#### Siltronic AG\n\nPerfect Silicon Solutions: Positioned as one of the world’s leading manufacturers of silicon wafers with diameters up to 300 mm, Siltronic partners with many preeminent chip manufacturers and companies in the semiconductor industry. \n  * #### [About Siltronic Technology leader and driving force for innovation]\n  * #### [Strategy & Values Our goals, strategic priorities, and guiding principles.]\n  * #### [Management Siltronic AG Executive Board and Supervisory Board]\n  * #### [History Siltronic’s history goes back to the year 1953.]\n  * #### [Sites Globally positioned: Siltronic is manufacturing in Asia, Europe and the USA.]\n  * #### [Quality Achieving the ultimate in quality standards determines our corporate philosophy]\n  * #### [Compliance Responsible actions as key to success]\n  * #### [Partners Solution-oriented customer and supplier relations]\n\n* [Sustainability]- [x] \n\n#### Sustainability\n\nSustainability is part of our corporate DNA – for the benefit of people and the environment, as well as with a view to the company's profitability. \n  * #### [Commitments Commitment beyond legal requirements]\n  * #### [Targets Our targets help us to become better and better]\n  * #### [Managing sustainability How we manage our sustainability performance]\n  * #### [Environment How we protect the environment and its resources]\n  * #### [Supply chain Together with our suppliers for more sustainability]\n  * #### [Working conditions What we offer our employees]\n  * #### [Products Products with benefits for sustainability]\n  * #### [Society Siltronic is part of society]\n  * #### [Transparency Reporting and evaluation]\n\n* [Career]- [x] \n\n#### Success Stories\n\nFounded in Germany, at home in the world: Today Siltronic is a global employer in which employees around the world place their trust and loyalty. Employees appreciate the good team spirit and sustainable personnel development just as much as they value the corporate culture based on flexibility and initiative.\n\n[Open positions in Germany][Open positions in the USA][Open positions in Singapore]+or+(siltronic+and+wafer)-jobs-in-tampines/) \n  * #### [Students and Graduates]\n  * #### [Professionals]\n  * #### [Working in Germany]\n  * #### [Working in USA]\n  * #### [Working in Singapore]\n  * #### [Siltronic as an employer]\n\n* [Investors]- [x] \n\n#### Investor Relations\n\nSiltronic AG has been listed since 2015 and is included on the SDAX and the TecDAX. At Siltronic, we regard investor relations as an obligation as well as a strong motivation. Our interactions with our shareholders and investors are characterized by transparency and openness. This is the only way to build trust and shape the future together. \n  * #### [Information on the share Facts, figures and analyst estimates]\n  * #### [Reports and presentations Current reports and presentations provide insights.]\n  * #### [Fact Sheet Siltronic in overview]\n  * #### [Corporate Governance Confident and concentrated on the essentials: our principles of corporate governance.]\n  * #### [Financial releases Voting rights announcements, Directors’ Dealings and ad hoc disclosures]\n  * #### [Annual General Meeting Agendas, important downloads and presentations]\n  * #### [Investor Relations Team and Order Service Your contacts for all IR matters]\n  * #### [Financial Calendar All important financial market dates at a glance]\n\n* [Press]- [x] \n\n  * #### [Press releases Current releases and archive]\n  * #### [Media Press photos and videos]\n  * #### [Press contact and order service Your contact for all press requests]\n\n# History\n\nWhat originally began in 1953 with the development of high-purity silicon reached an initial peak in 2015 with the successful IPO: Siltronic’s history also reflects the dynamic development of the wafer and semiconductor market over the last decades.\n\n* [Siltronic AG]\n* [Our Company]\n* History\n\nSiltronic AG has existed in its current form since 2004, while tracing its business origins back to the start of research and development involving high-purity silicon in 1953.\n\n* * *\n\n**1953**Initial research and development in the high-purity silicon area\n**1958**Semiconductor production kicks off\n**1959**First float-zone facility operational at the new high-purity silicon plant\n**1961**High-purity silicon production facilities embark on industrial-scale production\n**1962**Development of the first silicon wafer\n**1968**Foundation of Wacker-Chemitronic Gesellschaft für Elektronik-Grundstoffe mbH (“Wacker-Chemitronic”)\n**1978**Foundation of Wacker Siltronic Corporation in Portland, Oregon (USA).\n**1984**First 200 mm wafers at Wacker-Chemitronic\n**1990**First research and development projects for 300 mm wafers\n**1994/1995**As sole shareholder, Wacker-Chemitronic establishes Wacker Siltronic Gesellschaft für Halbleitermaterialien mbH\n**1995**Acquisition of Freiberger Elektronikwerkstoffe Produktions- und Vertriebsgesellschaft mbH, Freiberg, which was merged into our company on January 8, 1996\n**1995**Wacker-Chemitronic transfers its wafer business to Wacker Siltronic\n**1996**Wacker Siltronic Gesellschaft für Halbleitermaterialien mbH is converted into a stock corporation under the name of Wacker Siltronic Gesellschaft für Halbleitermaterialien AG\n**1997**Foundation of Wacker Siltronic Singapore Pte. Ltd.\n**1998**Initial operation of the first expansion stage of the 300 mm pilot production line in Burghausen\n**1999**Fab in Singapore kicks off production\n**2002**Company name changed to Wacker Siltronic AG\n**2004**300 mm silicon wafer fab launches production in Freiberg\n**2004**Company name changed to Siltronic AG\n**2006**Foundation of joint venture Siltronic Samsung Wafer Pte. Ltd. (now: Siltronic Silicon Wafer Pte. Ltd.) with Samsung. Construction starts on 300 mm wafer fab in Singapore\n**2008**The first wafers from the joint venture in Singapore are shipped on January 30, 2008\n**2014**Acquisition of majority share (78 percent) in Siltronic Silicon Wafer Pte. Ltd. in Singapore\n**2015**Siltronic executes successful IPO\n**2017**Wacker executes a second placement and holds a minority of 30,8 percent\n**2021**Start of construction of the new 300 mm fab at the Singapore site\n**2023**Production of the first 300 mm wafers at the new Singapore fab\n**2024**Inauguration of the new 300 mm fab in Singapore\n\n* [Imprint]\n* [Privacy protection]\n* [Legal notice]\n\ncreation: [599media GmbH]\n\n[![Image 2: LinkedIn - Logo]LinkedIn][![Image 3: Xing - Logo]LinkedIn]\n\n#### Your cookie settings\n\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\n\nManage settings Reject all Accept all\n\n#### Your cookie settings\n\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\n\n Categories \n\n External Media \n\nStreaming Services\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\nOur website may contain elements from external sources. It should be noted that we have no influence on whether operators of other websites comply with the applicable data protection provisions. For more information on the individual providers, please refer to the detailed information.\n\nShow detailed information\n\nThe providers using cookies on this site are listed below. Where possible, you can choose to allow certain cookies on this site.\n\nName Provider\n\nYouTube Google LLC\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\npromeas - LiveStream promeas GmbH\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\nMaps Service\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\nOur website may contain elements from external sources. It should be noted that we have no influence on whether operators of other websites comply with the applicable data protection provisions. For more information on the individual providers, please refer to the detailed information.\n\nShow detailed information\n\nThe providers using cookies on this site are listed below. Where possible, you can choose to allow certain cookies on this site.\n\nName Provider\n\nGoogle Maps Google LLC\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\nSave settings Accept all\n\n##teaserTitle##\n\n##teaserText##\n\n ##LINK## Show provider content\n",
+        "https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html": "Title: Siltronic Portland powers forward: New solar field will contribute to the company’s climate targets – Siltronic / perfect silicon solutions\n\nURL Source: https://www.siltronic.com/en/press/press-releases/siltronic-portland-powers-forward-new-solar-field-will-contribute-to-the-companys-climate-targets.html\n\nMarkdown Content:\n[![Image 1: Siltronic AG – go to home]]\n\n* [Contact]\n* [Sites]\n\n* Languages\n  * [Deutsch]\n  * [English]\n\n- [x] \n* [Products]- [x] \n\n#### Silicon wafers\n\nHyperpure silicon wafers are the basis for almost all semiconductor elements and consequently represent an essential basis for the world’s electronics industry. With various diameters, material properties, and surface qualities, Siltronic’s extensive product range covers the global semiconductor industry’s specific requirements. \n  * #### [Polished wafers Perfect surfaces for versatile applications]\n  * #### [Epitaxial wafers Superior basis for highly integrated components.]\n  * #### [Special products Specialized wafers for innovative technologies]\n\n* [Our Company]- [x] \n\n#### Siltronic AG\n\nPerfect Silicon Solutions: Positioned as one of the world’s leading manufacturers of silicon wafers with diameters up to 300 mm, Siltronic partners with many preeminent chip manufacturers and companies in the semiconductor industry. \n  * #### [About Siltronic Technology leader and driving force for innovation]\n  * #### [Strategy & Values Our goals, strategic priorities, and guiding principles.]\n  * #### [Management Siltronic AG Executive Board and Supervisory Board]\n  * #### [History Siltronic’s history goes back to the year 1953.]\n  * #### [Sites Globally positioned: Siltronic is manufacturing in Asia, Europe and the USA.]\n  * #### [Quality Achieving the ultimate in quality standards determines our corporate philosophy]\n  * #### [Compliance Responsible actions as key to success]\n  * #### [Partners Solution-oriented customer and supplier relations]\n\n* [Sustainability]- [x] \n\n#### Sustainability\n\nSustainability is part of our corporate DNA – for the benefit of people and the environment, as well as with a view to the company's profitability. \n  * #### [Commitments Commitment beyond legal requirements]\n  * #### [Targets Our targets help us to become better and better]\n  * #### [Managing sustainability How we manage our sustainability performance]\n  * #### [Environment How we protect the environment and its resources]\n  * #### [Supply chain Together with our suppliers for more sustainability]\n  * #### [Working conditions What we offer our employees]\n  * #### [Products Products with benefits for sustainability]\n  * #### [Society Siltronic is part of society]\n  * #### [Transparency Reporting and evaluation]\n\n* [Career]- [x] \n\n#### Success Stories\n\nFounded in Germany, at home in the world: Today Siltronic is a global employer in which employees around the world place their trust and loyalty. Employees appreciate the good team spirit and sustainable personnel development just as much as they value the corporate culture based on flexibility and initiative.\n\n[Open positions in Germany][Open positions in the USA][Open positions in Singapore]+or+(siltronic+and+wafer)-jobs-in-tampines/) \n  * #### [Students and Graduates]\n  * #### [Professionals]\n  * #### [Working in Germany]\n  * #### [Working in USA]\n  * #### [Working in Singapore]\n  * #### [Siltronic as an employer]\n\n* [Investors]- [x] \n\n#### Investor Relations\n\nSiltronic AG has been listed since 2015 and is included on the SDAX and the TecDAX. At Siltronic, we regard investor relations as an obligation as well as a strong motivation. Our interactions with our shareholders and investors are characterized by transparency and openness. This is the only way to build trust and shape the future together. \n  * #### [Information on the share Facts, figures and analyst estimates]\n  * #### [Reports and presentations Current reports and presentations provide insights.]\n  * #### [Fact Sheet Siltronic in overview]\n  * #### [Corporate Governance Confident and concentrated on the essentials: our principles of corporate governance.]\n  * #### [Financial releases Voting rights announcements, Directors’ Dealings and ad hoc disclosures]\n  * #### [Annual General Meeting Agendas, important downloads and presentations]\n  * #### [Investor Relations Team and Order Service Your contacts for all IR matters]\n  * #### [Financial Calendar All important financial market dates at a glance]\n\n* [Press]- [x] \n\n  * #### [Press releases Current releases and archive]\n  * #### [Media Press photos and videos]\n  * #### [Press contact and order service Your contact for all press requests]\n\n* [Siltronic AG]\n* [Press]\n* [Press releases]\n* Siltronic Portland powers forward: New solar field will contribute to the...\n\n# Siltronic Portland powers forward: New solar field will contribute to the company’s climate targets\n\n**Portland, May 17, 2024** –Siltronic Portland proudly announces the inauguration of its state-of-the-art solar field on May 16, 2024. This marks a milestone in the company's commitment to sustainability and reducing its carbon footprint.\n\n“We see sustainability not just as a duty, but as a deeply rooted conviction. It is our responsibility not only to ensure financial profits, but also to work for the sustainable development of Siltronic and the preservation of our environment for future generations. Our new solar field exemplifies our commitment to a greener and more sustainable future”, stated Claudia Schmitt, CFO of Siltronic.\n\nSiltronic AG has implemented a climate action plan aimed at limiting global warming to 1.5 degrees Celsius, in line with the 2015 Paris Climate Agreement. The company intends to reduce its Scope 1 and 2 greenhouse gas emissions by 42 percent by 2030, using 2021 as the baseline. Additionally, Siltronic aims to achieve net zero emissions by 2045. To achieve these targets, Siltronic utilizes three main levels: enhancing energy efficiency, generating its own renewable energy, and purchasing renewable energy.\n\nAs part of the in-house generation of renewable energy, the solar field with a capacity of 1,500 MWh per year started generating electricity last week. The energy produced from this solar field could sustain almost 140 Oregon households for an entire year. It contains 2,353 panels mounted on a fixed ground mount system and spans an area of 420 feet by 250 feet. The ribbon-cutting ceremony was conducted by Claudia Schmitt, CFO of Siltronic, and Subramania Krishnakumar, President of the Portland Site.\n\nFounded in 1978 as Wacker Siltronic Corporation, the Portland site serves as the first international location in Siltronic's production network. In 1980, the site celebrated the inauguration of Fab 1 and commenced production of 100 mm wafers, followed by expansions to increase capacity and capability, including the addition of 150 mm wafers in the mid-1980s. In 1996, production began in Fab 2, specializing in 200 mm wafers. Throughout its history, the Portland site has received numerous awards for its dedication to efficiency and sustainability. Today, Siltronic Portland remains focused on manufacturing high-quality 200 mm wafers for customers worldwide. With approximately 400 employees, the site specializes in wafering production, offering a range of polished and epitaxial wafers.\n\n**Contact:**\n\nVerena Stütze  \n Head of Investor Relations & Communications  \n Tel.: +49 (0)89 8564 3133  \n E-mail: [investor.relations@siltronic.com]\n\n**Company profile:**\n\nAs one of the leading wafer manufacturers, Siltronic is globally oriented and operates production sites in Asia, Europe, and the USA. Silicon wafers are the foundation of the modern semiconductor industry and the basis for chips in all electronic applications – from computers and smartphones to electric cars and wind turbines. The international company is highly customer-oriented and focuses on quality, precision, innovation, and growth. Siltronic AG employs around 4,500 people worldwide and has been listed in the Prime Standard of the German Stock Exchange since 2015. Siltronic AG shares are included in both the MDAX and TecDAX stock market indices.\n\n##### 05/17/2024, 04.00 pm (CET/CETS)\n\n* * *\n\n[![Image 2: Subramania Krishnakumar, President of the Siltronic Portland site (left) and Claudia Schmitt, CFO of Siltronic (right)]]\n\n Subramania Krishnakumar, President of the Siltronic Portland site (left) and Claudia Schmitt, CFO of Siltronic (right) \n\n* * *\n\n##### Downloads\n\n* [Press release from May 17, 2024(pdf, 469 KB)]\n\n* * *\n\n[Back to news list]\n\n* [Imprint]\n* [Privacy protection]\n* [Legal notice]\n\ncreation: [599media GmbH]\n\n[![Image 3: LinkedIn - Logo]LinkedIn][![Image 4: Xing - Logo]LinkedIn]\n\n#### Your cookie settings\n\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\n\nManage settings Reject all Accept all\n\n#### Your cookie settings\n\nWe use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. Read more in our [privacy policy].\n\n Categories \n\n External Media \n\nStreaming Services\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\nOur website may contain elements from external sources. It should be noted that we have no influence on whether operators of other websites comply with the applicable data protection provisions. For more information on the individual providers, please refer to the detailed information.\n\nShow detailed information\n\nThe providers using cookies on this site are listed below. Where possible, you can choose to allow certain cookies on this site.\n\nName Provider\n\nYouTube Google LLC\n\n- [x] Determines whether the service and its cookies are enabled or not. \n\npromeas - LiveStream promeas GmbH\n\n- [x] Determ"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 111,
+      "id": "gen-1791466819-lkBRe3ArNd5rc3H2OBsd",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 3500,
+        "completion_tokens": 420,
+        "total_tokens": 3920,
+        "cost": 0.0007224,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007224,
+          "upstream_inference_prompt_cost": 0.000525,
+          "upstream_inference_completions_cost": 0.0001974
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 337,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 16.428
+    },
+    {
+      "item_id": 111,
+      "id": "gen-1791466835-AxdYXHUfMkh6EaI4YiRq",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 5855,
+        "completion_tokens": 137,
+        "total_tokens": 5992,
+        "cost": 0.00094264,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00094264,
+          "upstream_inference_prompt_cost": 0.00087825,
+          "upstream_inference_completions_cost": 6.439e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 51,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 10.212
+    },
+    {
+      "item_id": 111,
+      "id": "gen-1791466847-ULjwRRYN96u03p1ggbGT",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 10833,
+        "completion_tokens": 417,
+        "total_tokens": 11250,
+        "cost": 0.00182094,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00182094,
+          "upstream_inference_prompt_cost": 0.00162495,
+          "upstream_inference_completions_cost": 0.00019599
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 161,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 10.677
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Siltronic — the German silicon wafer maker that founded its Wacker Siltronic Corporation subsidiary in Portland, Oregon in 1978 (today's Siltronic Portland site), which was the company's first production facility in the United States.",
+  "em_score": 0,
+  "llm_equal": 0,
+  "judge_response": "Incorrect",
+  "judge_error": null,
+  "elapsed_seconds": 52.33
+}

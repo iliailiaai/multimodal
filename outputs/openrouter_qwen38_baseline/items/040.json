@@ -1,0 +1,428 @@
+{
+  "id": 40,
+  "question": "While exploring music history, you come across two videos. One features a musician performing a cover of a well-known duet, and the other provides information on a vintage Gibson L48 guitar, including the year it was manufactured. Calculate the total number of days between January 1 of the guitar's manufacturing year and the official US single release date of the original song that is covered in the first video.",
+  "Level": "Easy",
+  "category": "Arts & Culture",
+  "task_type": "video w/ audio",
+  "answer": "13010",
+  "output": "**Analysis of the two videos:**\n\n- **Video 1:** The singer performs the lyrics \"You do something to me that I can't explain / Hold me closer and I feel no pain / Every beat of my heart, we got something going on / Tender love is blind, it requires a dedication...\" — this is a cover of **\"Islands in the Stream,\"** the famous duet written by the Bee Gees and originally recorded by **Kenny Rogers & Dolly Parton**. Per Wikipedia, the official US single release date was **August 15, 1983** (from the album *Eyes That See in the Dark*, B-side \"I Will Always Love You\").\n\n- **Video 2:** In the audio, Dan Erlewine states, \"Here is a **1948** Gibson archtop guitar, model L-48\" — so the manufacturing year is **1948**, giving a start date of **January 1, 1948**.\n\n**Calculation (verified with Python):**\n- Jan 1, 1948 → Jan 1, 1983: 35 years × 365 days + 9 leap days (1948–1980) = 12,784 days\n- Jan 1, 1983 → Aug 15, 1983: 226 days\n- Total: 12,784 + 226 = **13,010 days** (≈ 35.6 years)\n\n<answer>13,010 days</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "While exploring music history, you come across two videos. One features a musician performing a cover of a well-known duet, and the other provides information on a vintage Gibson L48 guitar, including the year it was manufactured. Calculate the total number of days between January 1 of the guitar's manufacturing year and the official US single release date of the original song that is covered in the first video."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:2064958 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:240636 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:4652522 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1258284 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try analyze this task.\n\nVideo 1: A man singing into a microphone with headphones on, playing guitar. The lyrics include \"You do something to me that I can't explain,\" \"Hold me closer and I feel no pain,\" \"Every beat of my heart, we got something going on,\" \"Tender love is blind, it requires a dedication, all this love we feel needs no conversation, we ride it together, ah ha, making love with each other, ah ha.\" These are the lyrics to \"Islands in the Stream,\" the Bee Gees song, famously a duet with Kenny Rogers and Dottie West... no, actually the famous duet version is Kenny Rogers and Dottie West? No — \"Islands in the Stream\" was written by the Bee Gees and became a #1 hit as a duet by Kenny Rogers and Dottie West... let me remember correctly: it was recorded as a duet by Kenny Rogers and Dottie West? No! It was Kenny Rogers and Dottie West... hmm, actually it was a duet by Kenny Rogers and Dottie West? Let me think. \"Islands in the Stream\" is a 1983 song written by the Bee Gees (Barry, Robin, and Maurice Gibb), recorded as a duet by Kenny Rogers and Dottie West... no, Dottie West? I'm pretty sure it was Dottie West... wait, the famous version is a duet by Kenny Rogers and Dottie West? Hmm, I think it's Dottie West... actually, it's Dottie West? Let me recall properly: \"Islands in the Stream\" was recorded by Kenny Rogers and Dottie West. Yes, Dottie West. It was released as a single in 1983 and reached #1 on the Billboard Hot 100. The song was originally intended for the Bee Gees... Barbra Streisand? Actually, the Bee Gees wrote it for Barbra Streisand and Donna Summer? Hmm.\n\nThe question: \"the official US single release date of the original song covered in the first video.\" So the original song is \"Islands in the Stream\" by Kenny Rogers and Dottie West (1983). I need the US single release date. I think it was released in August 1983? Let me confirm: \"Islands in the Stream\" single release: August 1983? Wikipedia says \"Islands in the Stream\" is a song written by the Bee Gees... recorded as a duet by American country music singers Kenny Rogers and Dottie West. Released: August 15, 1983? Hmm, I need to look it up.\n\nVideo 2: Dan Erlewine's Trade Secrets about a 1948 Gibson L-48 archtop guitar. So the manufacturing year is 1948.\n\nCalculate the total number of days between January 1, 1948 and the US single release date of \"Islands in the Stream\" (probably August 1983?). Let me compute.\n\nBut wait — \"a well-known duet\" — the cover in Video 1 is \"Islands in the Stream.\" The original song is by Kenny Rogers & Dottie West. Release date: I recall it was released in August 1983. Some sources say August 15, 1983? Let me search.\n\nActually, I should use the web_search tool to confirm the release date.\n\nThen compute the number of days between 1948-01-01 and the release date.\n\nLet me search.\n\nPlan:\n1. Search \"Islands in the Stream Kenny Rogers Dottie West single release date 1983.\"\n2. Confirm the Gibson L-48 1948 from the video (audio says \"Here is a 1948 Gibson archtop guitar, model L-48\").\n3. Compute the day difference with Python.\n\nLet me run the searches in parallel.\n\nNote: The question says \"the official US single release date.\" Wikipedia's infobox for \"Islands in the Stream\" might say \"Released: August 15, 1983\"? Hmm. Let me check. Actually, I recall the single was released in August 1983 and reached #1 on the Billboard Hot 100 in November 1983. Some sources: \"Islands in the Stream\" was released as a single on Liberty Records in August 1983? Hmm, Kenny Rogers was on Liberty Records. Let me search.\n\nAlso, the Bee Gees' own version was released later (1984?). The \"original\" is the Rogers/West version.\n\nLet me run the search.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_d46a03c6794e4b599eb42dd7",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Islands in the Stream\\\" Kenny Rogers Dottie West single release date 1983\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_2c32b14fd6fc41baae630289",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Gibson L-48 1948 archtop guitar Dan Erlewine trade secrets string spacing bridge\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try analyze this task.\n\nVideo 1: A man singing into a microphone with headphones on, playing guitar. The lyrics include \"You do something to me that I can't explain,\" \"Hold me closer and I feel no pain,\" \"Every beat of my heart, we got something going on,\" \"Tender love is blind, it requires a dedication, all this love we feel needs no conversation, we ride it together, ah ha, making love with each other, ah ha.\" These are the lyrics to \"Islands in the Stream,\" the Bee Gees song, famously a duet with Kenny Rogers and Dottie West... no, actually the famous duet version is Kenny Rogers and Dottie West? No — \"Islands in the Stream\" was written by the Bee Gees and became a #1 hit as a duet by Kenny Rogers and Dottie West... let me remember correctly: it was recorded as a duet by Kenny Rogers and Dottie West? No! It was Kenny Rogers and Dottie West... hmm, actually it was a duet by Kenny Rogers and Dottie West? Let me think. \"Islands in the Stream\" is a 1983 song written by the Bee Gees (Barry, Robin, and Maurice Gibb), recorded as a duet by Kenny Rogers and Dottie West... no, Dottie West? I'm pretty sure it was Dottie West... wait, the famous version is a duet by Kenny Rogers and Dottie West? Hmm, I think it's Dottie West... actually, it's Dottie West? Let me recall properly: \"Islands in the Stream\" was recorded by Kenny Rogers and Dottie West. Yes, Dottie West. It was released as a single in 1983 and reached #1 on the Billboard Hot 100. The song was originally intended for the Bee Gees... Barbra Streisand? Actually, the Bee Gees wrote it for Barbra Streisand and Donna Summer? Hmm.\n\nThe question: \"the official US single release date of the original song covered in the first video.\" So the original song is \"Islands in the Stream\" by Kenny Rogers and Dottie West (1983). I need the US single release date. I think it was released in August 1983? Let me confirm: \"Islands in the Stream\" single release: August 1983? Wikipedia says \"Islands in the Stream\" is a song written by the Bee Gees... recorded as a duet by American country music singers Kenny Rogers and Dottie West. Released: August 15, 1983? Hmm, I need to look it up.\n\nVideo 2: Dan Erlewine's Trade Secrets about a 1948 Gibson L-48 archtop guitar. So the manufacturing year is 1948.\n\nCalculate the total number of days between January 1, 1948 and the US single release date of \"Islands in the Stream\" (probably August 1983?). Let me compute.\n\nBut wait — \"a well-known duet\" — the cover in Video 1 is \"Islands in the Stream.\" The original song is by Kenny Rogers & Dottie West. Release date: I recall it was released in August 1983. Some sources say August 15, 1983? Let me search.\n\nActually, I should use the web_search tool to confirm the release date.\n\nThen compute the number of days between 1948-01-01 and the release date.\n\nLet me search.\n\nPlan:\n1. Search \"Islands in the Stream Kenny Rogers Dottie West single release date 1983.\"\n2. Confirm the Gibson L-48 1948 from the video (audio says \"Here is a 1948 Gibson archtop guitar, model L-48\").\n3. Compute the day difference with Python.\n\nLet me run the searches in parallel.\n\nNote: The question says \"the official US single release date.\" Wikipedia's infobox for \"Islands in the Stream\" might say \"Released: August 15, 1983\"? Hmm. Let me check. Actually, I recall the single was released in August 1983 and reached #1 on the Billboard Hot 100 in November 1983. Some sources: \"Islands in the Stream\" was released as a single on Liberty Records in August 1983? Hmm, Kenny Rogers was on Liberty Records. Let me search.\n\nAlso, the Bee Gees' own version was released later (1984?). The \"original\" is the Rogers/West version.\n\nLet me run the search.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d46a03c6794e4b599eb42dd7",
+      "content": "[{\"id\": 1, \"title\": \"Islands in the Stream (song)\", \"url\": \"https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)\", \"snippet\": \"The Bee Gees released a live version in 1998 and a studio version in 2001. \\\"Islands in the Stream\\\". Single by Kenny Rogers and Dolly Parton. from the album Eyes ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Remembering Dolly Parton (1946–2026) through Islands in ...\", \"url\": \"https://www.facebook.com/MelodiesinMotion634/posts/%EF%B8%8F-remembering-dolly-parton-19462026-through-islands-in-the-stream-her-unforgetta/122143888005038253/\", \"snippet\": \"Dolly Parton & Kenny Rogers - Islands In The Stream \\\"Islands in the Stream\\\" by Dolly Parton and Kenny Rogers, released in 1983, is a beloved ...\", \"date\": \"1 month ago\"}, {\"id\": 3, \"title\": \"Watch: Dolly Parton and Kenny Rogers Perform “Islands in ...\", \"url\": \"https://jambands.com/news/2026/08/26/watch-dolly-parton-and-kenny-rogers-perform-islands-in-the-stream-in-1983-my-morning-jacket-and-neko-case-play-it-in-2011/\", \"snippet\": \"Watch: Dolly Parton and Kenny Rogers Perform “Islands in the Stream” in 1983, My Morning Jacket and Neko Case Play It in 2011. Watch: Dolly ...\", \"date\": \"Aug 26, 2026\"}, {\"id\": 4, \"title\": \"Islands In The Stream - song and lyrics by Dolly Parton ...\", \"url\": \"https://open.spotify.com/track/0lu0c7Y6IYbXCrYc0uxZcG\", \"snippet\": \"Listen to Islands In The Stream on Spotify. Song · Dolly Parton, Kenny Rogers · 2010.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"There will never be another Kenny & Dolly! Did you know that “ ...\", \"url\": \"https://www.instagram.com/reel/CwF-ha6Ahsz/?hl=en\", \"snippet\": \"Released in 1983. \\\"Islands in the Stream' became a massive worldwide hit and reached No. 1 on the Billboard Hot 100. The unforgettable chemistry ...\", \"date\": \"3 years ago\"}, {\"id\": 6, \"title\": \"Islands In The Stream by Kenny Rogers and Dolly Parton\", \"url\": \"https://www.songfacts.com/facts/kenny-rogers-and-dolly-parton/islands-in-the-stream\", \"snippet\": \"In 1984 he released an entire album of duets (mostly with Dottie West) called Duets. ... This is my favorite song of yours \\\"Islands in the Stream\\\"; Stukka63 from ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"\\\"Islands in the Stream\\\" (1983)\", \"url\": \"https://au.rollingstone.com/music/music-lists/-38464/islands-in-the-stream-1983-38470/\", \"snippet\": \"“Islands in the Stream” (1983). Penned by the Bee Gees' brothers ... Both signed to the United Artists label, Kenny Rogers and Dottie West ...\", \"date\": \"Mar 18, 2022\"}, {\"id\": 8, \"title\": \"🎶 On this day in 1983, country royalty Kenny Rogers and ...\", \"url\": \"https://www.instagram.com/p/DQZS7bdDnCE/?hl=en\", \"snippet\": \"Their defining moment arrived in 1983 with “Islands in the Stream. The song initially did not feel complete as a Kenny Rogers solo recording.\", \"date\": \"11 months ago\"}, {\"id\": 9, \"title\": \"Kenny Rogers & Dolly Parton - Islands In The Stream\", \"url\": \"https://www.swedishcharts.com/showitem.asp?interpret=Kenny+Rogers+%26+Dolly+Parton&titel=Islands+In+The+Stream&cat=s\", \"snippet\": \"KENNY ROGERS IN SWEDISH CHARTS. Singles. Title, Entry, Peak, weeks. Islands In The Stream (Kenny Rogers & Dolly Parton), 1983-11-15, 3, 8. Albums. Title, Entry ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_2c32b14fd6fc41baae630289",
+      "content": "[{\"id\": 1, \"title\": \"Setting the string spacing at the bridge\", \"url\": \"https://www.stewmac.com/video-and-ideas/trade-secrets/setting-the-string-spacing-at-the-bridge/\", \"snippet\": \"The string spacing on this old Gibson is uneven. Dan Erlewine shows how he made the E-to-E string spacing wider, then located the other four ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Two 1917 Gibson L-1 archtop guitars: each with too-high ...\", \"url\": \"https://www.stewmac.com/video-and-ideas/online-resources/learn-about-guitar-bridge-and-tailpiece-installation-and-repair/two-1917-gibson-l-1-archtop-guitars-each-with-too-high-action/?srsltid=AU7gw4WppXW3lijeR7ZyQsoJ4Hh8zzYKrE09DxbWsLGp_v_kKq3lUBzg\", \"snippet\": \"After laying out the string spacing with the string spacing rule, I roughed-in the slots with a .020\\\" gauged saw, then fine tuned them with my ...\", \"date\": \"Apr 15, 2010\"}, {\"id\": 3, \"title\": \"Building a V-Style Guitar\", \"url\": \"https://www.youtube.com/watch?v=ZFaTzj8u8Yo\", \"snippet\": \"This guitar was inspired by a guitar that was made for Albert King by Dan Erlewine. Secrets Lessons of Electric Guitar Neck Shaping\", \"date\": \"5 years ago\"}, {\"id\": 4, \"title\": \"Live Q&A With Dan Erlewine - (Playback From) Tuesday ...\", \"url\": \"https://www.youtube.com/watch?v=JR9clG2Bn8s\", \"snippet\": \"Dan Erlewine and Brock take 90-minutes of guitar questions from our customers and subscribers. Lots of questions about guitar setups.\", \"date\": \"5 years ago\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The original song \"Islands in the Stream\" is by Kenny Rogers and Dolly Parton (not Dottie West—I was misremembering. It's Dolly Parton). The single was released from the album \"Eyes of Love.\" I need the official US single release date. Let me check the Wikipedia article.\n\nI've identified both elements: Video 1 is a cover of \"Islands in the Stream\" (originally a duet by Kenny Rogers & Dolly Parton), and Video 2 is about a 1948 Gibson L-48. Next, I need the exact US single release date from Wikipedia.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_028b4b88eba548eb9df868b3",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The original song \"Islands in the Stream\" is by Kenny Rogers and Dolly Parton (not Dottie West—I was misremembering. It's Dolly Parton). The single was released from the album \"Eyes of Love.\" I need the official US single release date. Let me check the Wikipedia article.\n\nI've identified both elements: Video 1 is a cover of \"Islands in the Stream\" (originally a duet by Kenny Rogers & Dolly Parton), and Video 2 is about a 1948 Gibson L-48. Next, I need the exact US single release date from Wikipedia.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_028b4b88eba548eb9df868b3",
+      "content": "{\"https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)\": \"Title: Islands in the Stream (song) - Wikipedia\\n\\nURL Source: https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)\\n\\nPublished Time: Sun, 04 Oct 2026 02:24:32 GMT\\n\\nMarkdown Content:\\n[Jump to content]#bodyContent)\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]#)\\n* [1 Background]#Background)\\n\\n* [2 Musical structure]#Musical_structure)\\n\\n* [3 Critical reception]#Critical_reception)\\n\\n* [4 Commercial performance]#Commercial_performance)\\n\\n* [5 In popular media]#In_popular_media)\\n\\n* [6 Charts]#Charts)Toggle Charts subsection\\n  * [6.1 Weekly charts]#Weekly_charts)\\n\\n  * [6.2 Year-end charts]#Year-end_charts)\\n\\n* [7 Certifications]#Certifications)\\n\\n* [8 Sampling]#Sampling)\\n\\n* [9 Bee Gees' recorded version]#Bee_Gees'_recorded_version)\\n\\n* [10 Comic Relief version]#Comic_Relief_version)Toggle Comic Relief version subsection\\n  * [10.1 Track listing]#Track_listing)\\n\\n  * [10.2 Charts]#Charts_2)\\n    * [10.2.1 Weekly charts]#Weekly_charts_2)\\n\\n    * [10.2.2 Year-end charts]#Year-end_charts_2)\\n\\n* [11 Other well-known cover versions]#Other_well-known_cover_versions)\\n\\n* [12 See also]#See_also)\\n\\n* [13 References]#References)\\n\\n- [x] Toggle the table of contents \\n\\n# Islands in the Stream (song)\\n\\n- [x] 13 languages \\n\\n* [Deutsch]\\n* [Español] \\\"Islands in the Stream (canción) – Spanish\\\")\\n* [Suomi]\\n* [Français]\\n* [Frysk] \\\"Islands in the Stream (liet) – Western Frisian\\\")\\n* [עברית]\\n* [Հայերեն]\\n* [Italiano]\\n* [Nederlands] \\\"Islands in the Stream (lied) – Dutch\\\")\\n* [Português]\\n* [Русский]\\n* [Svenska]\\n* [Tiếng Việt] \\\"Islands in the Stream (bài hát) – Vietnamese\\\")\\n\\n[Edit links]\\n\\n* [Article] \\\"View the content page [c]\\\")\\n* [Talk] \\\"Discuss improvements to the content page [t]\\\")\\n\\n- [x] English \\n\\n* [Read])\\n* [Edit]&action=edit \\\"Edit this page [e]\\\")\\n* [View history]&action=history \\\"Past revisions of this page [h]\\\")\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read])\\n* [Edit]&action=edit \\\"Edit this page [e]\\\")\\n* [View history]&action=history \\\"Past revisions of this page [h]\\\")\\n\\n General \\n\\n* [What links here] \\\"List of all English Wikipedia pages containing links to this page [j]\\\")\\n* [Related changes] \\\"Recent changes in pages linked from this page [k]\\\")\\n* [Upload file]\\n* [Permanent link]&oldid=1378345946 \\\"Permanent link to this revision of this page\\\")\\n* [Page information]&action=info \\\"More information about this page\\\")\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]&useparsoid=0)\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]&printable=yes \\\"Printable version of this page [p]\\\")\\n\\n In other projects \\n\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nFrom Wikipedia, the free encyclopedia\\n\\n1983 song by Kenny Rogers and Dolly Parton\\n\\n| \\\"Islands in the Stream\\\" |\\n| - |\\n| [![Image 4]] |\\n| [Single] \\\"Single (music)\\\") by [Kenny Rogers] and [Dolly Parton] |\\n| from the album _[Eyes That See in the Dark]_ |\\n| [B-side] | * \\\"I Will Always Love You\\\" (US) * \\\"Midsummer Nights\\\" (UK) |\\n| Released | August 15, 1983 |\\n| Recorded | May 1983 |\\n| [Studio] | * Middle Ear, Miami * [Lion Share], Los Angeles * [Ocean Way], Hollywood |\\n| [Genre] | * [Soft rock][[1]]#cite_note-1) * [country pop] |\\n| Length | 4:08 |\\n| [Label] | [RCA] |\\n| [Songwriters] | * [Barry Gibb] * [Robin Gibb] * [Maurice Gibb] |\\n| [Producer] | [Gibb-Galuten-Richardson] |\\n| [Kenny Rogers]singles chronology |\\n| \\\"[Scarlet Fever] \\\"Scarlet Fever (song)\\\")\\\" (1983)\\\"**Islands in the Stream**\\\" (1983)\\\"[This Woman] \\\"This Woman (Kenny Rogers song)\\\")\\\" (1984) |\\n|  |\\n| [Dolly Parton]singles chronology |\\n| \\\"[Potential New Boyfriend]\\\" (1983)\\\"**Islands in the Stream**\\\" (1983)\\\"[Save the Last Dance for Me]\\\" (1984) |\\n| Music video |\\n| [\\\"Islands in the Stream\\\"] on [YouTube] \\\"YouTube video (identifier)\\\") |\\n|  |\\n\\n\\\"**Islands in the Stream**\\\" is a song written by the [Bee Gees] and recorded by American [country music] artists [Kenny Rogers] and [Dolly Parton]. It was released in August 1983 as the first single from Rogers's fifteenth studio album _[Eyes That See in the Dark]_. The Bee Gees released a live version in 1998 and a studio version in 2001.\\n\\nThe song reached number one on the [_Billboard_ Hot 100] chart in the United States, giving each of Rogers and Parton their second pop number-one hit (after Rogers's \\\"[Lady] \\\"Lady (Kenny Rogers song)\\\")\\\" in 1980 and Parton's \\\"[9 to 5] \\\"9 to 5 (Dolly Parton song)\\\")\\\" in 1981). It also topped the Country and Adult Contemporary charts. In 2005, the song topped [Country Music Television]'s poll of the best country duets of all time; Parton and Rogers reunited to perform the song on a [CMT] \\\"CMT (American TV channel)\\\") special. As of May 2023, it has been triple [certified Platinum] by the [Recording Industry Association of America] for three million certified units.[[2]]#cite_note-ReferenceA-2)\\n\\nRogers and Parton went on to record a Christmas album together and had an additional hit with their 1985 duet \\\"[Real Love] \\\"Real Love (Dolly Parton and Kenny Rogers song)\\\")\\\".\\n\\n## Background\\n\\n[[edit]&action=edit&section=1 \\\"Edit section: Background\\\")]\\n\\nNamed after [the 1970 novel] \\\"Islands in the Stream (novel)\\\") by [Ernest Hemingway], the song was originally written for [Diana Ross] in an R&B style but later reworked for the duet by Rogers and Parton.[[3]]#cite_note-3)[[4]]#cite_note-BB-4)\\n\\nIt has been claimed that the song was also intended for [Marvin Gaye]. This is attributed to a 2001 _[Good Morning America]_ interview with the Bee Gees. When Barry Gibb said the song was written for Ross, Robin Gibb interrupted and said, \\\"No, we wrote it for Marvin Gaye ... We sent it to him but he was dead so it was a bit difficult for him to sing it.\\\"[[5]]#cite_note-5)[[6]]#cite_note-6) Gaye actually died in 1984, a year after the recording.[[7]]#cite_note-7) Separately, Robin Gibb has said the song was stylistically written \\\"... as a [Tamla] kind of soul song in a Marvin Gaye type feel\\\", though not asserting it was for Gaye.[[8]]#cite_note-8) In other interviews, Barry Gibb has always maintained that Ross was the original artist for the song with no mention of Gaye.[[4]]#cite_note-BB-4)[[9]]#cite_note-9)\\n\\nFor licensing reasons, the song was not included on the digital release of _Eyes That See in the Dark_ from [Capitol Records Nashville]. [Sony Music], the current owner of [RCA Records], protected copyrights in the recording, which is digitally available only in various compilations from Sony Music, especially those of [Dolly Parton].\\n\\n## Musical structure\\n\\n[[edit]&action=edit&section=2 \\\"Edit section: Musical structure\\\")]\\n\\nThe song is sung in moderate [**4** **4** time], with Rogers and Parton alternating lead vocals. Their version is in [C major] when Rogers sings lead, but [changes] \\\"Modulation (music)\\\") to [A-flat major] when Parton takes over the lead.[[10]]#cite_note-10)\\n\\n## Critical reception\\n\\n[[edit]&action=edit&section=3 \\\"Edit section: Critical reception\\\")]\\n\\n_[Cash Box]_ said that \\\"the sound is simply gorgeous, as is the melody, as are the voices.\\\"[[11]]#cite_note-11)\\n\\nIn 2024, _[Rolling Stone]_ ranked the song at #104 on its 200 Greatest Country Songs of All Time ranking.[[12]]#cite_note-12)\\n\\n## Commercial performance\\n\\n[[edit]&action=edit&section=4 \\\"Edit section: Commercial performance\\\")]\\n\\nThe song knocked [Bonnie Tyler]'s \\\"[Total Eclipse of the Heart]\\\" out of No. 1 on the _Billboard_ Hot 100, also topping the Country and Adult Contemporary listings. In December of that year, it was [certified platinum] by the [Recording Industry Association of America] for selling over two million physical copies in the US.[[2]]#cite_note-ReferenceA-2) After becoming available for digital download, it had sold a further 834,000 digital copies in the US, as of January 2019[[update]]&action=edit).[[13]]#cite_note-13)\\n\\nIn Australia, the song was number one for one week in December 1983 and became one of the highest selling singles of 1984.\\n\\nThe song reached a peak of No. 7 in the UK Singles Chart in 1983. As of July 2014[[update]]&action=edit), it had also sold 245,577 digital copies in the UK.[[14]]#cite_note-14)As of 2017[[update]]&action=edit), it had racked up 287,200 downloads and 4.83 million streams in the UK.[[15]]#cite_note-15) \\\"Islands in the Stream\\\" reappeared on the UK Singles Chart at No. 13 after Parton's death in August 2026, with the [Official Charts Company] reporting the song had amassed 2,195,255 total units in the UK since 1994.[[16]]#cite_note-16)\\n\\n## In popular media\\n\\n[[edit]&action=edit&section=5 \\\"Edit section: In popular media\\\")]\\n\\nIn April 2008, [South Bend], [Indiana], radio station [WZOW] played the song continuously for several days on end,[[17]]#cite_note-17) a [stunt] \\\"Stunting (broadcasting)\\\") drawing attention to the station's format change from [alternative rock] to [adult contemporary].\\n\\nThe song is prominently featured in the 2025 film, _[You're Cordially Invited]_, starring [Will Ferrell] and [Reese Witherspoon].\\n\\n## Charts\\n\\n[[edit]&action=edit&section=6 \\\"Edit section: Charts\\\")]\\n\\n### Weekly charts\\n\\n[[edit]&action=edit&section=7 \\\"Edit section: Weekly charts\\\")]\\n\\n| Chart (1983–1984) | Peak position |\\n| - | - |\\n| Australia ([Kent Music Report])[[18]]#cite_note-aus-18) | 1 |\\n| Austria ([Ö3 Austria Top 40])[[19]]#cite_note-sc_Austria_Kenny_Rogers_&_Dolly_Parton-19) | 1 |\\n| Belgium ([VRT Top 30] Flanders) | 4 |\\n| Canada ([_The Record_] \\\"The Record (magazine)\\\"))[[20]]#cite_note-20) | 1 |\\n| Canada Adult Contemporary Tracks (_[RPM] \\\"RPM (magazine)\\\")_) | 1 |\\n| Canada Country Tracks (_[RPM] \\\"RPM (magazine)\\\")_) | 1 |\\n| Canada Top Singles (_[RPM] \\\"RPM (magazine)\\\")_) | 1 |\\n| E\"}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "According to the Wikipedia infobox, \"Islands in the Stream\" was released as a single on August 15, 1983 (US release, B-side is \"I Will Always Love You\" (US)). Therefore, the official US single release date = August 15, 1983.\n\nGuitar production year: 1948 (from the audio: \"Here is a 1948 Gibson archtop guitar, model L-48\").\n\nNext, calculate the number of days from January 1, 1948 to August 15, 1983.\n\nLet me try calculating with Python.\n\nQuestion: \"Calculate the total number of days from January 1 of the guitar's production year to the official US single release date of the original song.\"\n\nNumber of days from 1948-01-01 to 1983-08-15. Let me calculate.\n\nOn Wikipedia, it's confirmed that the US single release date is August 15, 1983 (the B-side \"I Will Always Love You\" is listed as the US side). And in the audio of video 2, it's clearly stated that this guitar is a 1948 Gibson L-48. Now, let's calculate the number of days between January 1, 1948 and August 15, 1983.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_eaa317178c4d426f9c933fff",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"from datetime import date\\n\\nstart = date(1948, 1, 1)   # Jan 1 of the Gibson L-48's manufacturing year\\nend = date(1983, 8, 15)    # US single release of \\\"Islands in the Stream\\\" (Kenny Rogers & Dolly Parton)\\n\\ndelta = end - start\\nprint(\\\"Days between:\\\", delta.days)\\n\\nyears = 1983 - 1948\\nprint(\\\"Approx years:\\\", delta.days / 365.2425)\\n\\n# sanity check breakdown\\nfull_years_days = sum(366 if (y%4==0 and (y%100!=0 or y%400==0)) else 365 for y in range(1948, 1983))\\nprint(\\\"Days Jan 1 1948 -> Jan 1 1983:\\\", full_years_days)\\nprint(\\\"Days Jan 1 1983 -> Aug 15 1983:\\\", (date(1983,8,15)-date(1983,1,1)).days)\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "According to the Wikipedia infobox, \"Islands in the Stream\" was released as a single on August 15, 1983 (US release, B-side is \"I Will Always Love You\" (US)). Therefore, the official US single release date = August 15, 1983.\n\nGuitar production year: 1948 (from the audio: \"Here is a 1948 Gibson archtop guitar, model L-48\").\n\nNext, calculate the number of days from January 1, 1948 to August 15, 1983.\n\nLet me try calculating with Python.\n\nQuestion: \"Calculate the total number of days from January 1 of the guitar's production year to the official US single release date of the original song.\"\n\nNumber of days from 1948-01-01 to 1983-08-15. Let me calculate.\n\nOn Wikipedia, it's confirmed that the US single release date is August 15, 1983 (the B-side \"I Will Always Love You\" is listed as the US side). And in the audio of video 2, it's clearly stated that this guitar is a 1948 Gibson L-48. Now, let's calculate the number of days between January 1, 1948 and August 15, 1983.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_eaa317178c4d426f9c933fff",
+      "content": "{\"stdout\": \"Days between: 13010\\nApprox years: 35.62017016092048\\nDays Jan 1 1948 -> Jan 1 1983: 12784\\nDays Jan 1 1983 -> Aug 15 1983: 226\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "**Analysis of the two videos:**\n\n- **Video 1:** The singer performs the lyrics \"You do something to me that I can't explain / Hold me closer and I feel no pain / Every beat of my heart, we got something going on / Tender love is blind, it requires a dedication...\" — this is a cover of **\"Islands in the Stream,\"** the famous duet written by the Bee Gees and originally recorded by **Kenny Rogers & Dolly Parton**. Per Wikipedia, the official US single release date was **August 15, 1983** (from the album *Eyes That See in the Dark*, B-side \"I Will Always Love You\").\n\n- **Video 2:** In the audio, Dan Erlewine states, \"Here is a **1948** Gibson archtop guitar, model L-48\" — so the manufacturing year is **1948**, giving a start date of **January 1, 1948**.\n\n**Calculation (verified with Python):**\n- Jan 1, 1948 → Jan 1, 1983: 35 years × 365 days + 9 leap days (1948–1980) = 12,784 days\n- Jan 1, 1983 → Aug 15, 1983: 226 days\n- Total: 12,784 + 226 = **13,010 days** (≈ 35.6 years)\n\n<answer>13,010 days</answer>",
+      "reasoning": "Calculation: From January 1, 1948 to August 15, 1983 = 13,010 days (if counting the difference, i.e., excluding the start date and including the end date... actually, date subtraction gives the number of days elapsed between the two dates).\n\nVerification: From 1948 to 1983 is 35 years. Leap years in that range: 1948, 1952, ..., 1980 → 9 leap years (1948, 52, 56, 60, 64, 68, 72, 76, 80). 35*365 + 9 = 12775 + 9 = 12784. Then, from January 1, 1983 to August 15, 1983: January (30 days remaining after January 1? no—calculation: August 15 minus January 1 = 226 days). Total 13010 days.\n\nTherefore the answer: 13,010 days (approximately 35.6 years).\n\nPresenting the reasoning: Video 1 = cover of \"Islands in the Stream\" (lyrics match: \"You do something to me that I can't explain / Hold me closer and I feel no pain / Every beat of my heart we got something going on / Tender love is blind...\"). Original = Kenny Rogers & Dolly Parton, US single released August 15, 1983. Video 2 = 1948 Gibson L-48. Days from January 1, 1948 → August 15, 1983 = 13,010 days.\n\nNote: Depending on interpretation (\"total days between,\" possibly inclusive of both endpoints), some people might count it as 13,011 days. Standard interpretation: difference = 13,010 days. I'll state 13,010 days and add a note that if both endpoints are counted inclusively, it becomes 13,011 days.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Calculation: From January 1, 1948 to August 15, 1983 = 13,010 days (if counting the difference, i.e., excluding the start date and including the end date... actually, date subtraction gives the number of days elapsed between the two dates).\n\nVerification: From 1948 to 1983 is 35 years. Leap years in that range: 1948, 1952, ..., 1980 → 9 leap years (1948, 52, 56, 60, 64, 68, 72, 76, 80). 35*365 + 9 = 12775 + 9 = 12784. Then, from January 1, 1983 to August 15, 1983: January (30 days remaining after January 1? no—calculation: August 15 minus January 1 = 226 days). Total 13010 days.\n\nTherefore the answer: 13,010 days (approximately 35.6 years).\n\nPresenting the reasoning: Video 1 = cover of \"Islands in the Stream\" (lyrics match: \"You do something to me that I can't explain / Hold me closer and I feel no pain / Every beat of my heart we got something going on / Tender love is blind...\"). Original = Kenny Rogers & Dolly Parton, US single released August 15, 1983. Video 2 = 1948 Gibson L-48. Days from January 1, 1948 → August 15, 1983 = 13,010 days.\n\nNote: Depending on interpretation (\"total days between,\" possibly inclusive of both endpoints), some people might count it as 13,011 days. Standard interpretation: difference = 13,010 days. I'll state 13,010 days and add a note that if both endpoints are counted inclusively, it becomes 13,011 days.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Islands in the Stream\\\" Kenny Rogers Dottie West single release date 1983\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Islands in the Stream (song)",
+          "url": "https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)",
+          "snippet": "The Bee Gees released a live version in 1998 and a studio version in 2001. \"Islands in the Stream\". Single by Kenny Rogers and Dolly Parton. from the album Eyes ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Remembering Dolly Parton (1946–2026) through Islands in ...",
+          "url": "https://www.facebook.com/MelodiesinMotion634/posts/%EF%B8%8F-remembering-dolly-parton-19462026-through-islands-in-the-stream-her-unforgetta/122143888005038253/",
+          "snippet": "Dolly Parton & Kenny Rogers - Islands In The Stream \"Islands in the Stream\" by Dolly Parton and Kenny Rogers, released in 1983, is a beloved ...",
+          "date": "1 month ago"
+        },
+        {
+          "id": 3,
+          "title": "Watch: Dolly Parton and Kenny Rogers Perform “Islands in ...",
+          "url": "https://jambands.com/news/2026/08/26/watch-dolly-parton-and-kenny-rogers-perform-islands-in-the-stream-in-1983-my-morning-jacket-and-neko-case-play-it-in-2011/",
+          "snippet": "Watch: Dolly Parton and Kenny Rogers Perform “Islands in the Stream” in 1983, My Morning Jacket and Neko Case Play It in 2011. Watch: Dolly ...",
+          "date": "Aug 26, 2026"
+        },
+        {
+          "id": 4,
+          "title": "Islands In The Stream - song and lyrics by Dolly Parton ...",
+          "url": "https://open.spotify.com/track/0lu0c7Y6IYbXCrYc0uxZcG",
+          "snippet": "Listen to Islands In The Stream on Spotify. Song · Dolly Parton, Kenny Rogers · 2010.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "There will never be another Kenny & Dolly! Did you know that “ ...",
+          "url": "https://www.instagram.com/reel/CwF-ha6Ahsz/?hl=en",
+          "snippet": "Released in 1983. \"Islands in the Stream' became a massive worldwide hit and reached No. 1 on the Billboard Hot 100. The unforgettable chemistry ...",
+          "date": "3 years ago"
+        },
+        {
+          "id": 6,
+          "title": "Islands In The Stream by Kenny Rogers and Dolly Parton",
+          "url": "https://www.songfacts.com/facts/kenny-rogers-and-dolly-parton/islands-in-the-stream",
+          "snippet": "In 1984 he released an entire album of duets (mostly with Dottie West) called Duets. ... This is my favorite song of yours \"Islands in the Stream\"; Stukka63 from ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "\"Islands in the Stream\" (1983)",
+          "url": "https://au.rollingstone.com/music/music-lists/-38464/islands-in-the-stream-1983-38470/",
+          "snippet": "“Islands in the Stream” (1983). Penned by the Bee Gees' brothers ... Both signed to the United Artists label, Kenny Rogers and Dottie West ...",
+          "date": "Mar 18, 2022"
+        },
+        {
+          "id": 8,
+          "title": "🎶 On this day in 1983, country royalty Kenny Rogers and ...",
+          "url": "https://www.instagram.com/p/DQZS7bdDnCE/?hl=en",
+          "snippet": "Their defining moment arrived in 1983 with “Islands in the Stream. The song initially did not feel complete as a Kenny Rogers solo recording.",
+          "date": "11 months ago"
+        },
+        {
+          "id": 9,
+          "title": "Kenny Rogers & Dolly Parton - Islands In The Stream",
+          "url": "https://www.swedishcharts.com/showitem.asp?interpret=Kenny+Rogers+%26+Dolly+Parton&titel=Islands+In+The+Stream&cat=s",
+          "snippet": "KENNY ROGERS IN SWEDISH CHARTS. Singles. Title, Entry, Peak, weeks. Islands In The Stream (Kenny Rogers & Dolly Parton), 1983-11-15, 3, 8. Albums. Title, Entry ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Gibson L-48 1948 archtop guitar Dan Erlewine trade secrets string spacing bridge\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Setting the string spacing at the bridge",
+          "url": "https://www.stewmac.com/video-and-ideas/trade-secrets/setting-the-string-spacing-at-the-bridge/",
+          "snippet": "The string spacing on this old Gibson is uneven. Dan Erlewine shows how he made the E-to-E string spacing wider, then located the other four ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Two 1917 Gibson L-1 archtop guitars: each with too-high ...",
+          "url": "https://www.stewmac.com/video-and-ideas/online-resources/learn-about-guitar-bridge-and-tailpiece-installation-and-repair/two-1917-gibson-l-1-archtop-guitars-each-with-too-high-action/?srsltid=AU7gw4WppXW3lijeR7ZyQsoJ4Hh8zzYKrE09DxbWsLGp_v_kKq3lUBzg",
+          "snippet": "After laying out the string spacing with the string spacing rule, I roughed-in the slots with a .020\" gauged saw, then fine tuned them with my ...",
+          "date": "Apr 15, 2010"
+        },
+        {
+          "id": 3,
+          "title": "Building a V-Style Guitar",
+          "url": "https://www.youtube.com/watch?v=ZFaTzj8u8Yo",
+          "snippet": "This guitar was inspired by a guitar that was made for Albert King by Dan Erlewine. Secrets Lessons of Electric Guitar Neck Shaping",
+          "date": "5 years ago"
+        },
+        {
+          "id": 4,
+          "title": "Live Q&A With Dan Erlewine - (Playback From) Tuesday ...",
+          "url": "https://www.youtube.com/watch?v=JR9clG2Bn8s",
+          "snippet": "Dan Erlewine and Brock take 90-minutes of guitar questions from our customers and subscribers. Lots of questions about guitar setups.",
+          "date": "5 years ago"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)\"]\n\n}",
+      "result": {
+        "https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)": "Title: Islands in the Stream (song) - Wikipedia\n\nURL Source: https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)\n\nPublished Time: Sun, 04 Oct 2026 02:24:32 GMT\n\nMarkdown Content:\n[Jump to content]#bodyContent)\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]#)\n* [1 Background]#Background)\n\n* [2 Musical structure]#Musical_structure)\n\n* [3 Critical reception]#Critical_reception)\n\n* [4 Commercial performance]#Commercial_performance)\n\n* [5 In popular media]#In_popular_media)\n\n* [6 Charts]#Charts)Toggle Charts subsection\n  * [6.1 Weekly charts]#Weekly_charts)\n\n  * [6.2 Year-end charts]#Year-end_charts)\n\n* [7 Certifications]#Certifications)\n\n* [8 Sampling]#Sampling)\n\n* [9 Bee Gees' recorded version]#Bee_Gees'_recorded_version)\n\n* [10 Comic Relief version]#Comic_Relief_version)Toggle Comic Relief version subsection\n  * [10.1 Track listing]#Track_listing)\n\n  * [10.2 Charts]#Charts_2)\n    * [10.2.1 Weekly charts]#Weekly_charts_2)\n\n    * [10.2.2 Year-end charts]#Year-end_charts_2)\n\n* [11 Other well-known cover versions]#Other_well-known_cover_versions)\n\n* [12 See also]#See_also)\n\n* [13 References]#References)\n\n- [x] Toggle the table of contents \n\n# Islands in the Stream (song)\n\n- [x] 13 languages \n\n* [Deutsch]\n* [Español] \"Islands in the Stream (canción) – Spanish\")\n* [Suomi]\n* [Français]\n* [Frysk] \"Islands in the Stream (liet) – Western Frisian\")\n* [עברית]\n* [Հայերեն]\n* [Italiano]\n* [Nederlands] \"Islands in the Stream (lied) – Dutch\")\n* [Português]\n* [Русский]\n* [Svenska]\n* [Tiếng Việt] \"Islands in the Stream (bài hát) – Vietnamese\")\n\n[Edit links]\n\n* [Article] \"View the content page [c]\")\n* [Talk] \"Discuss improvements to the content page [t]\")\n\n- [x] English \n\n* [Read])\n* [Edit]&action=edit \"Edit this page [e]\")\n* [View history]&action=history \"Past revisions of this page [h]\")\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read])\n* [Edit]&action=edit \"Edit this page [e]\")\n* [View history]&action=history \"Past revisions of this page [h]\")\n\n General \n\n* [What links here] \"List of all English Wikipedia pages containing links to this page [j]\")\n* [Related changes] \"Recent changes in pages linked from this page [k]\")\n* [Upload file]\n* [Permanent link]&oldid=1378345946 \"Permanent link to this revision of this page\")\n* [Page information]&action=info \"More information about this page\")\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]&useparsoid=0)\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]&printable=yes \"Printable version of this page [p]\")\n\n In other projects \n\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nFrom Wikipedia, the free encyclopedia\n\n1983 song by Kenny Rogers and Dolly Parton\n\n| \"Islands in the Stream\" |\n| - |\n| [![Image 4]] |\n| [Single] \"Single (music)\") by [Kenny Rogers] and [Dolly Parton] |\n| from the album _[Eyes That See in the Dark]_ |\n| [B-side] | * \"I Will Always Love You\" (US) * \"Midsummer Nights\" (UK) |\n| Released | August 15, 1983 |\n| Recorded | May 1983 |\n| [Studio] | * Middle Ear, Miami * [Lion Share], Los Angeles * [Ocean Way], Hollywood |\n| [Genre] | * [Soft rock][[1]]#cite_note-1) * [country pop] |\n| Length | 4:08 |\n| [Label] | [RCA] |\n| [Songwriters] | * [Barry Gibb] * [Robin Gibb] * [Maurice Gibb] |\n| [Producer] | [Gibb-Galuten-Richardson] |\n| [Kenny Rogers]singles chronology |\n| \"[Scarlet Fever] \"Scarlet Fever (song)\")\" (1983)\"**Islands in the Stream**\" (1983)\"[This Woman] \"This Woman (Kenny Rogers song)\")\" (1984) |\n|  |\n| [Dolly Parton]singles chronology |\n| \"[Potential New Boyfriend]\" (1983)\"**Islands in the Stream**\" (1983)\"[Save the Last Dance for Me]\" (1984) |\n| Music video |\n| [\"Islands in the Stream\"] on [YouTube] \"YouTube video (identifier)\") |\n|  |\n\n\"**Islands in the Stream**\" is a song written by the [Bee Gees] and recorded by American [country music] artists [Kenny Rogers] and [Dolly Parton]. It was released in August 1983 as the first single from Rogers's fifteenth studio album _[Eyes That See in the Dark]_. The Bee Gees released a live version in 1998 and a studio version in 2001.\n\nThe song reached number one on the [_Billboard_ Hot 100] chart in the United States, giving each of Rogers and Parton their second pop number-one hit (after Rogers's \"[Lady] \"Lady (Kenny Rogers song)\")\" in 1980 and Parton's \"[9 to 5] \"9 to 5 (Dolly Parton song)\")\" in 1981). It also topped the Country and Adult Contemporary charts. In 2005, the song topped [Country Music Television]'s poll of the best country duets of all time; Parton and Rogers reunited to perform the song on a [CMT] \"CMT (American TV channel)\") special. As of May 2023, it has been triple [certified Platinum] by the [Recording Industry Association of America] for three million certified units.[[2]]#cite_note-ReferenceA-2)\n\nRogers and Parton went on to record a Christmas album together and had an additional hit with their 1985 duet \"[Real Love] \"Real Love (Dolly Parton and Kenny Rogers song)\")\".\n\n## Background\n\n[[edit]&action=edit&section=1 \"Edit section: Background\")]\n\nNamed after [the 1970 novel] \"Islands in the Stream (novel)\") by [Ernest Hemingway], the song was originally written for [Diana Ross] in an R&B style but later reworked for the duet by Rogers and Parton.[[3]]#cite_note-3)[[4]]#cite_note-BB-4)\n\nIt has been claimed that the song was also intended for [Marvin Gaye]. This is attributed to a 2001 _[Good Morning America]_ interview with the Bee Gees. When Barry Gibb said the song was written for Ross, Robin Gibb interrupted and said, \"No, we wrote it for Marvin Gaye ... We sent it to him but he was dead so it was a bit difficult for him to sing it.\"[[5]]#cite_note-5)[[6]]#cite_note-6) Gaye actually died in 1984, a year after the recording.[[7]]#cite_note-7) Separately, Robin Gibb has said the song was stylistically written \"... as a [Tamla] kind of soul song in a Marvin Gaye type feel\", though not asserting it was for Gaye.[[8]]#cite_note-8) In other interviews, Barry Gibb has always maintained that Ross was the original artist for the song with no mention of Gaye.[[4]]#cite_note-BB-4)[[9]]#cite_note-9)\n\nFor licensing reasons, the song was not included on the digital release of _Eyes That See in the Dark_ from [Capitol Records Nashville]. [Sony Music], the current owner of [RCA Records], protected copyrights in the recording, which is digitally available only in various compilations from Sony Music, especially those of [Dolly Parton].\n\n## Musical structure\n\n[[edit]&action=edit&section=2 \"Edit section: Musical structure\")]\n\nThe song is sung in moderate [**4** **4** time], with Rogers and Parton alternating lead vocals. Their version is in [C major] when Rogers sings lead, but [changes] \"Modulation (music)\") to [A-flat major] when Parton takes over the lead.[[10]]#cite_note-10)\n\n## Critical reception\n\n[[edit]&action=edit&section=3 \"Edit section: Critical reception\")]\n\n_[Cash Box]_ said that \"the sound is simply gorgeous, as is the melody, as are the voices.\"[[11]]#cite_note-11)\n\nIn 2024, _[Rolling Stone]_ ranked the song at #104 on its 200 Greatest Country Songs of All Time ranking.[[12]]#cite_note-12)\n\n## Commercial performance\n\n[[edit]&action=edit&section=4 \"Edit section: Commercial performance\")]\n\nThe song knocked [Bonnie Tyler]'s \"[Total Eclipse of the Heart]\" out of No. 1 on the _Billboard_ Hot 100, also topping the Country and Adult Contemporary listings. In December of that year, it was [certified platinum] by the [Recording Industry Association of America] for selling over two million physical copies in the US.[[2]]#cite_note-ReferenceA-2) After becoming available for digital download, it had sold a further 834,000 digital copies in the US, as of January 2019[[update]]&action=edit).[[13]]#cite_note-13)\n\nIn Australia, the song was number one for one week in December 1983 and became one of the highest selling singles of 1984.\n\nThe song reached a peak of No. 7 in the UK Singles Chart in 1983. As of July 2014[[update]]&action=edit), it had also sold 245,577 digital copies in the UK.[[14]]#cite_note-14)As of 2017[[update]]&action=edit), it had racked up 287,200 downloads and 4.83 million streams in the UK.[[15]]#cite_note-15) \"Islands in the Stream\" reappeared on the UK Singles Chart at No. 13 after Parton's death in August 2026, with the [Official Charts Company] reporting the song had amassed 2,195,255 total units in the UK since 1994.[[16]]#cite_note-16)\n\n## In popular media\n\n[[edit]&action=edit&section=5 \"Edit section: In popular media\")]\n\nIn April 2008, [South Bend], [Indiana], radio station [WZOW] played the song continuously for several days on end,[[17]]#cite_note-17) a [stunt] \"Stunting (broadcasting)\") drawing attention to the station's format change from [alternative rock] to [adult contemporary].\n\nThe song is prominently featured in the 2025 film, _[You're Cordially Invited]_, starring [Will Ferrell] and [Reese Witherspoon].\n\n## Charts\n\n[[edit]&action=edit&section=6 \"Edit section: Charts\")]\n\n### Weekly charts\n\n[[edit]&action=edit&section=7 \"Edit section: Weekly charts\")]\n\n| Chart (1983–1984) | Peak position |\n| - | - |\n| Australia ([Kent Music Report])[[18]]#cite_note-aus-18) | 1 |\n| Austria ([Ö3 Austria Top 40])[[19]]#cite_note-sc_Austria_Kenny_Rogers_&_Dolly_Parton-19) | 1 |\n| Belgium ([VRT Top 30] Flanders) | 4 |\n| Canada ([_The Record_] \"The Record (magazine)\"))[[20]]#cite_note-20) | 1 |\n| Canada Adult Contemporary Tracks (_[RPM] \"RPM (magazine)\")_) | 1 |\n| Canada Country Tracks (_[RPM] \"RPM (magazine)\")_) | 1 |\n| Canada Top Singles (_[RPM] \"RPM (magazine)\")_) | 1 |\n| E"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"from datetime import date\\n\\nstart = date(1948, 1, 1)   # Jan 1 of the Gibson L-48's manufacturing year\\nend = date(1983, 8, 15)    # US single release of \\\"Islands in the Stream\\\" (Kenny Rogers & Dolly Parton)\\n\\ndelta = end - start\\nprint(\\\"Days between:\\\", delta.days)\\n\\nyears = 1983 - 1948\\nprint(\\\"Approx years:\\\", delta.days / 365.2425)\\n\\n# sanity check breakdown\\nfull_years_days = sum(366 if (y%4==0 and (y%100!=0 or y%400==0)) else 365 for y in range(1948, 1983))\\nprint(\\\"Days Jan 1 1948 -> Jan 1 1983:\\\", full_years_days)\\nprint(\\\"Days Jan 1 1983 -> Aug 15 1983:\\\", (date(1983,8,15)-date(1983,1,1)).days)\"}",
+      "result": {
+        "stdout": "Days between: 13010\nApprox years: 35.62017016092048\nDays Jan 1 1948 -> Jan 1 1983: 12784\nDays Jan 1 1983 -> Aug 15 1983: 226",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 40,
+      "id": "gen-1791460847-tPxhMrBNxC8HNoquzfMW",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 32592,
+        "completion_tokens": 1107,
+        "total_tokens": 33699,
+        "cost": 0.00540909,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00540909,
+          "upstream_inference_prompt_cost": 0.0048888,
+          "upstream_inference_completions_cost": 0.00052029
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1011,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 49.517
+    },
+    {
+      "item_id": 40,
+      "id": "gen-1791460896-yHWqEFdrpxOKCqYLdniS",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 35238,
+        "completion_tokens": 179,
+        "total_tokens": 35417,
+        "cost": 0.001047526,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 32256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001047526,
+          "upstream_inference_prompt_cost": 0.000963396,
+          "upstream_inference_completions_cost": 8.413e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 133,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 59.239
+    },
+    {
+      "item_id": 40,
+      "id": "gen-1791460962-f0M7WJVmM0tQNQM3jxl0",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 38766,
+        "completion_tokens": 596,
+        "total_tokens": 39362,
+        "cost": 0.00129246,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 35840,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00129246,
+          "upstream_inference_prompt_cost": 0.00101234,
+          "upstream_inference_completions_cost": 0.00028012
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 308,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 101.437
+    },
+    {
+      "item_id": 40,
+      "id": "gen-1791461066-9XOmhfMCcnXSIwiQMFdI",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 39474,
+        "completion_tokens": 840,
+        "total_tokens": 40314,
+        "cost": 0.001033084,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39424,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001033084,
+          "upstream_inference_prompt_cost": 0.000638284,
+          "upstream_inference_completions_cost": 0.0003948
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 483,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 98.383
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "13,010 days",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 385.92
+}

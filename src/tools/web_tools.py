@@ -26,7 +26,9 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.dirname(CURRENT_DIR)
 if SRC_DIR not in sys.path:
     sys.path.append(SRC_DIR)
+from jina_access import anonymous, headers as reader_headers, AnonymousLimiter, retry_delay
 from config_loader import get_config
+from service_access import ServiceAccessError, check_service_access
 
 logger = logging.getLogger(__name__)
 
@@ -159,7 +161,7 @@ def save_web_cache():
 
 # Global rate limiters
 _serper_rate_limiter = RateLimiter(rate_limit=100)
-_jina_rate_limiter = RateLimiter(rate_limit=100)
+_jina_rate_limiter = AnonymousLimiter() if anonymous() else RateLimiter(rate_limit=100)
 
 
 async def _extract_text_from_url_async(
@@ -176,25 +178,28 @@ async def _extract_text_from_url_async(
     """
     try:
         if use_jina:
-            await _jina_rate_limiter.acquire()
-            jina_headers = {
-                'Authorization': f'Bearer {JINA_API_KEY}',
-                'X-Return-Format': 'markdown',
-            }
-            async with session.get(
-                f'https://r.jina.ai/{url}',
-                headers=jina_headers,
-                ssl=False,
-                timeout=aiohttp.ClientTimeout(total=timeout)
-            ) as response:
-                text = await response.text()
-                # Clean up markdown formatting
-                pattern = r"\(https?:.*?\)|\[https?:.*?\]"
-                text = re.sub(pattern, "", text)
-                text = text.replace('---', '-').replace('===', '=').replace('   ', ' ')
-                return text[:10000], text
+            for attempt in range(4):
+                await _jina_rate_limiter.acquire()
+                async with session.get(
+                    f'https://r.jina.ai/{url}',
+                    headers=reader_headers(JINA_API_KEY),
+                    timeout=aiohttp.ClientTimeout(total=timeout)
+                ) as response:
+                    if response.status == 429 and anonymous() and attempt < 3:
+                        _jina_rate_limiter.defer(retry_delay(response.headers.get("Retry-After")))
+                        await response.read()
+                        continue
+                    if response.status in {401, 402, 403}:
+                        check_service_access("Jina", response.status, await response.text())
+                    response.raise_for_status()
+                    text = await response.text()
+                    pattern = r"\(https?:.*?\)|\[https?:.*?\]"
+                    text = re.sub(pattern, "", text)
+                    text = text.replace('---', '-').replace('===', '=').replace('   ', ' ')
+                    return text[:10000], text
         else:
             async with session.get(url, timeout=aiohttp.ClientTimeout(total=timeout)) as response:
+                response.raise_for_status()
                 content_type = response.headers.get('content-type', '').lower()
                 if 'charset' in content_type:
                     charset = content_type.split('charset=')[-1]
@@ -221,6 +226,8 @@ async def _extract_text_from_url_async(
                 text = soup.get_text(separator=' ', strip=True)
                 return text[:10000], text
                 
+    except ServiceAccessError:
+        raise
     except Exception as e:
         error_msg = f"Error fetching {url}: {str(e)}"
         return error_msg, error_msg
@@ -256,7 +263,8 @@ async def web_search(query: str, top_k: int = 10) -> List[Dict[str, Any]]:
         try:
             timeout = aiohttp.ClientTimeout(total=30)
             async with aiohttp.ClientSession(timeout=timeout) as session:
-                async with session.post(url, headers=headers, data=payload, ssl=False) as response:
+                async with session.post(url, headers=headers, data=payload) as response:
+                    check_service_access("Serper", response.status)
                     response.raise_for_status()
                     search_results = await response.json()
 
@@ -277,6 +285,8 @@ async def web_search(query: str, top_k: int = 10) -> List[Dict[str, Any]]:
 
             return results
 
+        except ServiceAccessError:
+            raise
         except Exception as e:
             logger.error(f"Web search failed (attempt {attempt+1}/3): {e}")
             if attempt < 2:
@@ -348,6 +358,8 @@ async def page_browser(urls: List[str]) -> Dict[str, str]:
                 contents = await asyncio.gather(*fetch_tasks, return_exceptions=True)
 
                 for url, content in zip(urls_to_fetch, contents):
+                    if isinstance(content, ServiceAccessError):
+                        raise content
                     if isinstance(content, Exception):
                         result_text = f"Error: {str(content)}"
                     else:
@@ -360,6 +372,8 @@ async def page_browser(urls: List[str]) -> Dict[str, str]:
                         await _web_cache.set_page(url, result_text)
 
             break
+        except ServiceAccessError:
+            raise
         except Exception as e:
             logger.error(f"Page browser failed (attempt {attempt+1}/3): {e}")
             if attempt < 2:
@@ -610,4 +624,3 @@ if __name__ == "__main__":
         print(json.dumps(images, indent=2, ensure_ascii=False))
 
     asyncio.run(_test())
-

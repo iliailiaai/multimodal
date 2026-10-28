@@ -1,0 +1,359 @@
+[
+  {
+    "id": 20,
+    "question": "You are comparing the battery systems of two remote controls for electronic devices. Watch the first video to see the SNT remote control and its battery options, including an upgrade. Watch the second video featuring the Pinecone SG-2410 RC car and its remote control. Based on the second video, determine the battery type (e.g., AA, AAA) and quantity used in the Pinecone remote. Then, using the typical specifications provided: for the SNT remote's upgraded battery option, assume a capacity of 3000 mAh and voltage of 3.7V; for each battery in the Pinecone remote, assume a capacity of 2500 mAh and voltage of 1.5V. Calculate the ratio of the SNT remote's upgraded battery energy to the total energy of the batteries in the Pinecone remote. Round your answer to two decimal places.",
+    "omni_modal_input": [
+      {
+        "type": "video",
+        "id": "video_2kG1o5epv6o",
+        "path": "videos/2kG1o5epv6o.mp4"
+      },
+      {
+        "type": "video",
+        "id": "video_-_CGf8D5tew",
+        "path": "videos/-_CGf8D5tew.mp4"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Watch video_2kG1o5epv6o (timestamp ~2:14-2:39) to observe that the SNT remote control has two battery options: it can use either three AAA batteries or can be upgraded to use a single 18650 rechargeable battery. The question specifies using the upgraded battery option.",
+      "Step 2: Watch video_-_CGf8D5tew (timestamp ~80-90 seconds) to hear that 'the remote only needs two batteries' and observe the compact size of the Pinecone SG-2410 remote. Based on the remote's size and common RC remote designs, combined with external research confirming typical AA battery usage, determine that the Pinecone remote uses 2 AA batteries.",
+      "Step 3: Use the specifications provided in the question: SNT remote's upgraded 18650 battery is assumed to be 3.7V 3000mAh; Pinecone remote uses 2x AA batteries each assumed to be 1.5V 2500mAh.",
+      "Step 4: Calculate energy for SNT remote's upgraded battery: Energy = Voltage × Capacity = 3.7V × 3000mAh = 11,100 mWh.",
+      "Step 5: Calculate total energy for Pinecone remote's batteries: Energy per battery = 1.5V × 2500mAh = 3,750 mWh. Total for 2 batteries = 2 × 3,750 mWh = 7,500 mWh.",
+      "Step 6: Calculate the ratio: 11,100 mWh ÷ 7,500 mWh = 1.48. The SNT remote's upgraded battery provides 1.48 times more energy than the Pinecone remote's batteries."
+    ],
+    "sources": [
+      {
+        "type": "video_observation",
+        "description": "video_2kG1o5epv6o shows SNT remote battery options: 3 AAA batteries or 1 18650 battery upgrade (2:14-2:39)",
+        "key_information": "SNT remote supports 18650 battery upgrade option"
+      },
+      {
+        "type": "video_observation",
+        "description": "video_-_CGf8D5tew shows Pinecone remote and states 'the remote only needs two batteries' (80-90 seconds)",
+        "key_information": "Pinecone remote uses 2 batteries"
+      },
+      {
+        "type": "web_search",
+        "url": "Search results for 'SG-2410 remote battery 2 AA'",
+        "key_information": "Multiple product listings confirm Pinecone SG-2410 remote uses 2 AA batteries (not included)"
+      },
+      {
+        "type": "code_executor",
+        "code": "snt_energy = 3.7 * 3000\npinecone_energy = 2 * 1.5 * 2500\nratio = snt_energy / pinecone_energy\nprint(f'SNT: {snt_energy} mWh, Pinecone: {pinecone_energy} mWh, Ratio: {ratio:.2f}')",
+        "key_information": "Calculation result: 1.48"
+      }
+    ],
+    "answer": "1.48",
+    "total_steps": 6,
+    "Level": "Easy",
+    "required_external_tools": [
+      "web_search",
+      "code_executor"
+    ],
+    "task_type": "video w/ audio",
+    "category": "Technology"
+  },
+  {
+    "id": 42,
+    "question": "You are analyzing two educational videos related to quantum computing. From the first video, identify the probability percentage assigned to 'Outcome B' on the whiteboard and convert it to a decimal. From the second video, determine the total number of parallel quantum states the narrator mentions a quantum processor can handle, expressed as a power of 2. Then, use an external search tool to find the publication year of Google's landmark 'Quantum Supremacy' paper (published in Nature), which describes this specific processor. Finally, calculate the product of the probability (as a decimal) and the number of states, divide this product by the publication year, and return the integer part of the result.",
+    "omni_modal_input": [
+      {
+        "type": "video",
+        "id": "video_dmX1W5umC1c",
+        "path": "videos/dmX1W5umC1c.mp4"
+      },
+      {
+        "type": "video",
+        "id": "video_-ZNEzzDcllU",
+        "path": "videos/-ZNEzzDcllU.mp4"
+      }
+    ],
+    "annotated_solution": "Step 1: Analyze the first video (MinutePhysics) to find the probability of 'Outcome B'. At approximately 0:11, the whiteboard shows 'B? ← 50% chance'. Convert 50% to the decimal 0.5.\nStep 2: Analyze the second video (Google Quantum AI) to find the number of quantum states. Around 3:15, the narrator states 'two to the fifty-three states' and a visual overlay confirms '2^53 states'. This corresponds to 2**53.\nStep 3: Use web_search to find the publication year of Google's 'Quantum Supremacy' paper using the Sycamore processor. Search query: 'Google Sycamore quantum supremacy paper publication year'. The result is 2019 (published in Nature, October 2019).\nStep 4: Formulate the equation: (0.5 * (2**53)) / 2019.\nStep 5: Calculate the result. 0.5 * 2**53 is 2**52 (4,503,599,627,370,496). Dividing by 2019 yields approximately 2,230,609,027,920.008.\nStep 6: Take the integer part: 2230609027920.",
+    "sources": [
+      {
+        "type": "web_search",
+        "query": "Google quantum supremacy paper publication year",
+        "key_information": "The paper 'Quantum supremacy using a programmable superconducting processor' was published in Nature in October 2019."
+      }
+    ],
+    "answer": "2230609027920",
+    "total_steps": 6,
+    "Level": "Easy",
+    "required_external_tools": [
+      "web_search",
+      "code_executor"
+    ],
+    "task_type": "video w/ audio",
+    "category": "Technology"
+  },
+  {
+    "id": 56,
+    "question": "In the collage's bottom-right image, you can see a theater with a weathered vertical sign partially reading '...EATRE' next to a prominent 'VOODOO DOUGHNUT' sign. This distinctive venue is part of a city's cultural landscape. First, identify this theater by its specific name. Then, by conducting a web search, investigate whether it was operating as a standard first-run movie cinema in 2013. What was its primary function during that year?",
+    "omni_modal_input": [
+      {
+        "type": "audio",
+        "id": "audio_8ow2ibWNzBg",
+        "path": "audios/8ow2ibWNzBg.wav"
+      },
+      {
+        "type": "image",
+        "id": "image_000000097180",
+        "path": "images/000000097180.jpg"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Analyze the bottom-right image in the collage to identify the theater. The image shows a weathered red vertical sign with '...EATRE' and a prominent wooden sign for 'VOODOO DOUGHNUT' hanging from a brick building.",
+      "Step 2: Use web_search with queries like 'theater next to Voodoo Doughnut Portland' or 'Paris Theatre Portland Voodoo Doughnut' to identify the building as the Paris Theatre (also known as Paris Theater) located at 6 SW 3rd Avenue in Portland, Oregon.",
+      "Step 3: Use web_search with queries like 'Paris Theatre Portland 2013 function' or 'Paris Theatre adult movie theater 2013' to research its operational status during 2013.",
+      "Step 4: Analyze search results to find that the Paris Theatre operated as an adult movie theater from summer 2007 until 2016. Therefore, in 2013, it was not a standard first-run movie cinema but was functioning primarily as an adult movie theater/sex club.",
+      "Step 5: Conclude that the theater is the Paris Theatre (Portland, Oregon) and that in 2013 it was operating as an adult movie theater, not a standard movie cinema."
+    ],
+    "sources": [
+      {
+        "type": "web_search",
+        "url": "https://cinematreasures.org/theaters/10089",
+        "key_information": "Paris Theatre operated as an adult movie theater from summer 2007 until 2016. The main screen showed straight porn films and a smaller screen showed gay porn."
+      },
+      {
+        "type": "web_search",
+        "url": "https://en.wikipedia.org/wiki/Paris_Theatre_(Portland,_Oregon)",
+        "key_information": "The Paris Theatre in Portland is located next to Voodoo Doughnut and served as an adult movie theater."
+      }
+    ],
+    "answer": "The theater is the Paris Theatre (Portland, Oregon). In 2013, it was not operating as a standard first-run movie cinema; its primary function was as an adult movie theater/sex club.",
+    "total_steps": 5,
+    "Level": "Easy",
+    "required_external_tools": [
+      "web_search"
+    ],
+    "task_type": "image + audio",
+    "category": "Movies"
+  },
+  {
+    "id": 74,
+    "question": "Based on the audio, a watch design originates from 1979. The image features a Pepsi logo with italicized font on a cup. How many years are there between 1979 and the year this particular Pepsi logo variant was introduced?",
+    "omni_modal_input": [
+      {
+        "type": "audio",
+        "id": "audio_7f-VUoHWVmY",
+        "path": "audios/7f-VUoHWVmY.wav"
+      },
+      {
+        "type": "image",
+        "id": "image_000000005860",
+        "path": "images/000000005860.jpg"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Listen to the audio segment (30-60 seconds) where the announcer says 'from 1979 and back with a vengeance' referring to the Timex Q reissue watch, establishing 1979 as the watch design origin year.",
+      "Step 2: Examine the image to identify the Pepsi logo on the cup, noting the italicized font of the 'PEPSI' text.",
+      "Step 3: Research when Pepsi introduced the logo variant with italicized font. The 1991 Pepsi logo redesign introduced italicized typography according to historical records.",
+      "Step 4: Verify through web_search: 'Pepsi logo 1991 italic font introduction year' to find sources confirming the 1991 introduction date for the italicized font logo variant.",
+      "Step 5: Calculate the time difference: 1991 (logo introduction year) - 1979 (watch design origin year) = 12 years."
+    ],
+    "sources": [
+      {
+        "type": "web_search",
+        "url": "https://www.hatchwise.com/resources/history-of-logos-the-pepsi-logo",
+        "key_information": "In 1991, Pepsi debuted its new logo with italicized typeface."
+      },
+      {
+        "type": "web_search",
+        "url": "https://logos.fandom.com/wiki/Pepsi",
+        "key_information": "September 1991: radically altered new logo introduced."
+      },
+      {
+        "type": "web_search",
+        "url": "https://www.vistaprint.com/hub/pepsi-logo-history",
+        "key_information": "1991 logo featured italicized 'Pepsi' text."
+      }
+    ],
+    "answer": "12",
+    "total_steps": 5,
+    "Level": "Easy",
+    "required_external_tools": [
+      "web_search"
+    ],
+    "task_type": "image + audio",
+    "category": "Arts & Culture"
+  },
+  {
+    "id": 87,
+    "question": "You are a music enthusiast solving a puzzle that connects musical imitation, copyright law, and visual symbolism. Analyze the provided multimodal inputs and follow the guidance below to unravel the puzzle.\n\nFirst, listen to Audio 1 and identify the singer‑songwriter being imitated (denote as Artist A) and the original band (denote as Band B) whose song is being reinterpreted.\n\nSecond, examine Image 1 and extract the integer number displayed on the performer's jersey (denote as Number C).\n\nThird, listen to Audio 2 to learn about a plagiarism lawsuit involving Artist A. You will need to conduct external research to find the release years of the two songs at the center of this lawsuit: the older song (released in Year D) and the more recent song by Artist A (released in Year E).\n\nThen, look at Image 2 and identify the text displayed on the circular sign (denote as Text F). Calculate the numeric value of Text F by summing the alphabetical positions of its letters (A=1, B=2, …, Z=26).\n\nFinally, compute the expression: (Number C) × (Year E – Year D) + (numeric value of Text F). Provide the result.",
+    "omni_modal_input": [
+      {
+        "type": "audio",
+        "id": "audio_97Q40tk-ick",
+        "path": "audios/97Q40tk-ick.wav"
+      },
+      {
+        "type": "image",
+        "id": "image_000000127120",
+        "path": "images/000000127120.jpg"
+      },
+      {
+        "type": "audio",
+        "id": "audio_T1pV3TS7lY4",
+        "path": "audios/T1pV3TS7lY4.wav"
+      },
+      {
+        "type": "image",
+        "id": "image_000000237501",
+        "path": "images/000000237501.jpg"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Listen to Audio 1. The speaker explicitly states: 'What if Ed Sheeran wrote Mr. Brightside by the Killers?' Therefore, Artist A is Ed Sheeran and Band B is The Killers.",
+      "Step 2: Examine Image 1. The number '41' is clearly visible on the performer's sports jersey. Hence, Number C = 41.",
+      "Step 3: Listen to Audio 2. The narrator discusses a plagiarism lawsuit where Ed Sheeran was accused of copying Marvin Gaye's 'Let's Get It On' in his song 'Thinking Out Loud'.",
+      "Step 4: Using external knowledge, Marvin Gaye's 'Let's Get It On' was released in 1973 (Year D = 1973).",
+      "Step 5: Using external knowledge, Ed Sheeran's 'Thinking Out Loud' was released in 2014 (Year E = 2014).",
+      "Step 6: Verify that Year E – Year D = 2014 – 1973 = 41, which matches Number C (41).",
+      "Step 7: Examine Image 2. The circular sign in the background displays the text 'Note'. Therefore, Text F = 'Note'.",
+      "Step 8: Calculate the numeric value of 'Note' by summing the alphabetical positions of its letters: N=14, O=15, T=20, E=5. Total sum = 14+15+20+5 = 54.",
+      "Step 9: Compute the final expression: (Number C) × (Year E – Year D) + (numeric value of Text F) = 41 × (2014 – 1973) + 54 = 41 × 41 + 54.",
+      "Step 10: 41 × 41 + 54 = 1681 + 54 = 1735."
+    ],
+    "sources": [
+      {
+        "type": "web_search",
+        "url": "https://en.wikipedia.org/wiki/Let%27s_Get_It_On",
+        "key_information": "'Let's Get It On' release year: 1973"
+      },
+      {
+        "type": "web_search",
+        "url": "https://en.wikipedia.org/wiki/Thinking_Out_Loud",
+        "key_information": "'Thinking Out Loud' release year: 2014"
+      },
+      {
+        "type": "code_executor",
+        "code": "def alphabet_sum(text):\n    return sum(ord(c) - ord('A') + 1 for c in text.upper() if 'A' <= c <= 'Z')\nprint('Note sum:', alphabet_sum('Note'))\nprint('Result:', 41 * 41 + 54)",
+        "key_information": "Alphabet sum of 'Note' = 54; Final result = 1735"
+      }
+    ],
+    "answer": "1735",
+    "total_steps": 10,
+    "Level": "Hard",
+    "required_external_tools": [
+      "web_search",
+      "code_executor"
+    ],
+    "task_type": "image + audio",
+    "category": "Arts & Culture"
+  },
+  {
+    "id": 130,
+    "question": "Based on the provided videos, the first one features Tania Yuki, CEO of Shareablee, and the second one demonstrates Kred, a social media influence platform that competes with Klout. Please research to identify the founding dates of Shareablee (the social media analytics firm from the first video) and PeopleBrowsr (the parent company of Kred shown in the second video), and then determine how many years elapsed between their founding dates.",
+    "omni_modal_input": [
+      {
+        "type": "video",
+        "id": "video_-os04bhCdnE",
+        "path": "videos/-os04bhCdnE_1.mp4"
+      },
+      {
+        "type": "video",
+        "id": "video_-XObtwUk0gQ",
+        "path": "videos/-XObtwUk0gQ.mp4"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Analyze the first video (video_-os04bhCdnE) to identify the speaker as Tania Yuki, CEO of 'Shareablee', through on-screen text (lower-third graphic shows 'Tania Yuki, CEO, Shareablee').",
+      "Step 2: Analyze the second video (video_-XObtwUk0gQ) to identify the platform being demonstrated as 'Kred' through on-screen text showing 'www.kred.com' and the narrator describing it as a competitor to Klout that measures social media influence.",
+      "Step 3: Use web_search to determine that Shareablee was founded in February 2013. Multiple sources confirm this founding date.",
+      "Step 4: Use web_search to determine that PeopleBrowsr is the parent company of Kred and was founded in 2007. The mrweb.com article confirms PeopleBrowsr founded in 2007 and launched Kred API.",
+      "Step 5: Use code_executor to calculate the difference in years: 2013 - 2007 = 6 years.",
+      "Step 6: Conclude the answer is 6 years."
+    ],
+    "sources": [
+      {
+        "type": "video_analysis",
+        "key_information": "First video shows lower-third text: 'Tania Yuki, CEO, Shareablee'"
+      },
+      {
+        "type": "video_analysis",
+        "key_information": "Second video shows website 'www.kred.com' and narrator describes Kred as competitor to Klout"
+      },
+      {
+        "type": "web_search",
+        "url": "https://americanaustralian.org/team/tania-yuki/",
+        "key_information": "Shareablee was founded in February 2013"
+      },
+      {
+        "type": "web_search",
+        "url": "https://www.mrweb.com/drno/news15476.htm",
+        "key_information": "PeopleBrowsr founded in 2007 and launched Kred API"
+      },
+      {
+        "type": "code_executor",
+        "code": "print(2013 - 2007)",
+        "key_information": "6"
+      }
+    ],
+    "answer": "6",
+    "total_steps": 6,
+    "Level": "Medium",
+    "required_external_tools": [
+      "web_search",
+      "code_executor"
+    ],
+    "task_type": "video w/ audio",
+    "category": "Technology"
+  },
+  {
+    "id": 167,
+    "question": "When comparing the real-world cost of luxury goods over long periods, economists adjust for inflation to measure value in constant dollars. For this analysis, we will examine the inflation-adjusted price ratio of two iconic Rolls-Royce models. Using the manufacturer's suggested retail price (MSRP) of $479,775 for the 2015 Rolls-Royce Phantom Drophead Coupe, and the original price of the 1931 Rolls-Royce Phantom II as found in the audio recordings, calculate their real prices after adjusting for inflation to 2013 dollars. Use official annual average CPI-U data from the Federal Reserve Bank of Minneapolis. Express the ratio of the 2015 model's real price to the 1931 model's real price in the form '1 : X', where X is rounded to two decimal places. (Note: Use the 2013 base year as indicated, and for the calculation, use only the provided nominal prices, ignoring any pre-adjusted figures mentioned elsewhere.)",
+    "omni_modal_input": [
+      {
+        "type": "image",
+        "id": "image_000000042529",
+        "path": "images/000000042529_1.jpg"
+      },
+      {
+        "type": "audio",
+        "id": "audio_3DrOlyLIx3c",
+        "path": "audios/3DrOlyLIx3c_1.wav"
+      },
+      {
+        "type": "audio",
+        "id": "audio_ZzPz7QMwvkk",
+        "path": "audios/ZzPz7QMwvkk.wav"
+      }
+    ],
+    "annotated_solution": [
+      "Step 1: Analyze the image to identify the watermark text 'landahlauts, 2013', which indicates the base year for inflation adjustment should be 2013.",
+      "Step 2: Listen to the first audio (audio_3DrOlyLIx3c) to extract the original 1931 price of the Rolls-Royce Phantom II, which is stated as $19,000 USD at timestamp 135-150 seconds.",
+      "Step 3: Listen to the second audio (audio_ZzPz7QMwvkk) to confirm it features a 2015 Rolls-Royce Phantom Drophead Coupe (stated at 0-30 seconds). Use the specified MSRP of $479,775 for calculations.",
+      "Step 4: Use web_search to find the official US Consumer Price Index (CPI-U) annual averages for the years 1931, 2013, and 2015 from the Federal Reserve Bank of Minneapolis. The official values are: 1931 = 15.2, 2013 = 233.0, 2015 = 237.0.",
+      "Step 5: Calculate the inflation-adjusted price of the 1931 car to 2013 dollars: $19,000 × (233.0 / 15.2) = $291,250.",
+      "Step 6: Calculate the inflation-adjusted price of the 2015 car to 2013 dollars: $479,775 × (233.0 / 237.0) ≈ $471,677.53.",
+      "Step 7: The question asks for 'ratio of the real price of the 2015 model to the real price of the 1931 model', which is 2015_price : 1931_price = $471,677.53 : $291,250. To express as '1 : X', divide both sides by the 2015 price: 1 : ($291,250 / $471,677.53) ≈ 1 : 0.6175. Rounded to two decimal places: 1 : 0.62."
+    ],
+    "sources": [
+      {
+        "type": "web_search",
+        "url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-",
+        "key_information": "CPI-U annual averages: 1931 = 15.2, 2013 = 233.0, 2015 = 237.0"
+      },
+      {
+        "type": "web_search",
+        "url": "https://www.forbes.com/sites/joshmax/2015/10/12/2015-rolls-royce-phantom-drophead-coupe-review/",
+        "key_information": "MSRP for 2015 Rolls-Royce Phantom Drophead Coupe: $479,775"
+      },
+      {
+        "type": "code_executor",
+        "code": "price_1931 = 19000; price_2015 = 479775; cpi_1931 = 15.2; cpi_2013 = 233.0; cpi_2015 = 237.0; adj_1931 = price_1931 * (cpi_2013 / cpi_1931); adj_2015 = price_2015 * (cpi_2013 / cpi_2015); ratio = adj_1931 / adj_2015; print(f'Ratio as 1 : X where X = {ratio:.4f}, rounded to 2 decimals: 1 : {ratio:.2f}')",
+        "key_information": "X = 0.6175, rounded to 2 decimals: 1 : 0.62"
+      }
+    ],
+    "answer": "1 : 0.62",
+    "total_steps": 7,
+    "Level": "Medium",
+    "required_external_tools": [
+      "web_search",
+      "code_executor"
+    ],
+    "task_type": "image + audio",
+    "category": "Finance & Commerce"
+  }
+]

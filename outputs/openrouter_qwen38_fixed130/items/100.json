@@ -1,0 +1,947 @@
+{
+  "id": 100,
+  "question": "In a video demonstrating the preparation of a salad, two main ingredients are prominently featured with on-screen text overlays. Begin by identifying these two ingredients from the video. Next, using the USDA FoodData Central database (specifically the SR Legacy data), look up the protein content per 100g for the identified legume (look for the entry matching 'Chickpeas... canned, drained solids') and the identified cheese (look for the entry matching 'Cheese, feta'). Finally, calculate the absolute difference between their protein contents and round the result to the nearest whole number.",
+  "Level": "Easy",
+  "category": "Food & Nutrition",
+  "task_type": "video w/ audio",
+  "answer": "7",
+  "output": "## Step 1 — Ingredients identified in the video\n\nThe TikTok (@healthfood) chickpea salad recipe shows text overlays labeling each addition. The two prominently featured ingredients matching the question are:\n\n- **Chickpeas** (legume) — labeled on screen at ~0:03–0:05 as they're poured into the metal bowl\n- **Feta cheese** — labeled on screen at ~0:12–0:14 as it's crumbled in over the cucumber and tomatoes\n\n## Step 2 — USDA FoodData Central (SR Legacy) protein values\n\n| Food (SR Legacy) | FDC ID | Protein per 100 g |\n|---|---|---|\n| Chickpeas (garbanzo beans, bengal gram), mature seeds, **canned, drained solids** | 173800 (NDB 16358) | **7.05 g** |\n| **Cheese, feta** | 173420 (NDB 1019) | **14.2 g** (14.21 g in the classic SR listing) |\n\n## Step 3 — Absolute difference\n\n|14.2 − 7.05| = 7.15 g (≈7.16 using 14.21) → rounded to the nearest whole number = **7**\n\n<answer>**Ingredients:** Chickpeas (the legume) and Feta cheese — both called out with on-screen text labels in the video.\n\n**USDA FoodData Central (SR Legacy) protein per 100 g:**\n- Chickpeas, canned, drained solids (FDC ID 173800): **7.05 g**\n- Cheese, feta (FDC ID 173420): **14.2 g** (14.21 g)\n\n**Absolute difference:** 14.2 − 7.05 = 7.15 g ≈ **7 g** of protein per 100 g (feta has roughly twice the protein of the chickpeas).</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "In a video demonstrating the preparation of a salad, two main ingredients are prominently featured with on-screen text overlays. Begin by identifying these two ingredients from the video. Next, using the USDA FoodData Central database (specifically the SR Legacy data), look up the protein content per 100g for the identified legume (look for the entry matching 'Chickpeas... canned, drained solids') and the identified cheese (look for the entry matching 'Cheese, feta'). Finally, calculate the absolute difference between their protein contents and round the result to the nearest whole number."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:2536202 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:133068 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll start by confirming the two ingredients shown with text overlays in the video, then look up the USDA data.\n\nFrom the video frames, the on-screen text labels are: \"Chickpeas\" (~0:03–0:05), \"Red onion\", \"Cherry tomato\", \"Cucumber\", \"Feta cheese\" (~0:12–0:14), \"Avocado and cilantro\", \"Mix\", and the dressing list. The two ingredients matching the question's description (a legume and a cheese) are **chickpeas** and **feta cheese**.\n\nNow let me look up the USDA FoodData Central (SR Legacy) values.\n\n",
+      "reasoning": "The user wants me to identify two main ingredients from the video that are prominently featured with on-screen text overlays. Looking at the video frames:\n\n- At 3-5 seconds: \"Chickpeas\" text overlay\n- At 6-7 seconds: \"Red onion\"\n- At 8-9 seconds: \"Cherry tomato\"\n- At 10-11 seconds: \"Cucumber\"\n- At 12-14 seconds: \"Feta cheese\"\n- At 15-17 seconds: \"Avocado and cilantro\"\n- At 18-19 seconds: \"Mix\"\n- At 20-25 seconds: \"Add dressing - olive oil - lemon juice - pepper - salt - garlic\"\n- At 26-32 seconds: \"ENJOY\"\n\nThe question says \"two main ingredients are prominently featured with on-screen text overlays\" — and then asks about \"the identified legume\" and \"the identified cheese\". So the legume is chickpeas and the cheese is feta cheese.\n\nNow I need to look up USDA FoodData Central SR Legacy data:\n- Chickpeas, canned, drained solids: protein per 100g. I recall it's about 7.05 g? Let me think. USDA SR Legacy for \"Chickpeas, canned, drained solids\" (NDB number 09406?) — protein 7.05 g per 100g? Actually, cooked chickpeas (boiled) have 8.86 g protein per 100g. Canned chickpeas, drained solids: 7.05 g? Let me verify.\n\nUSDA FoodData Central: \"Chickpeas, canned, drained solids\" — FDC ID 168879? Protein 7.05 g? Hmm, I think canned chickpeas drained solids has protein ~7.05 g/100g. Let me search.\n\n- Cheese, feta: protein 14.21 g per 100g (SR Legacy FDC ID 169514?). Yes, feta cheese is 14.21 g protein per 100g.\n\nDifference: 14.21 - 7.05 = 7.16 → rounded to 7.\n\nLet me verify with web search / tool. I'll use web_search and possibly fetch the USDA page via page_browser.\n\nLet me do the searches.\n\nActually, I should double-check chickpeas canned drained solids protein. Some sources: \"Chickpeas, canned, drained solids, NDB 09406, protein 7.05 g\". Hmm, I've also seen 8.86 for mature seeds, boiled. Let me search.\n\nPlan:\n1. Web search USDA FoodData Central chickpeas canned drained solids protein SR Legacy.\n2. Web search cheese feta USDA protein 14.21.\n3. Compute difference.\n\nLet me run both searches in parallel.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_6b4b911c57b7441a9d47b3ea",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"USDA FoodData Central SR Legacy \\\"Chickpeas, canned, drained solids\\\" protein per 100g\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_ee16aff67dc24cfc886f2611",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"USDA FoodData Central SR Legacy \\\"Cheese, feta\\\" protein 14.21 g per 100g\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user wants me to identify two main ingredients from the video that are prominently featured with on-screen text overlays. Looking at the video frames:\n\n- At 3-5 seconds: \"Chickpeas\" text overlay\n- At 6-7 seconds: \"Red onion\"\n- At 8-9 seconds: \"Cherry tomato\"\n- At 10-11 seconds: \"Cucumber\"\n- At 12-14 seconds: \"Feta cheese\"\n- At 15-17 seconds: \"Avocado and cilantro\"\n- At 18-19 seconds: \"Mix\"\n- At 20-25 seconds: \"Add dressing - olive oil - lemon juice - pepper - salt - garlic\"\n- At 26-32 seconds: \"ENJOY\"\n\nThe question says \"two main ingredients are prominently featured with on-screen text overlays\" — and then asks about \"the identified legume\" and \"the identified cheese\". So the legume is chickpeas and the cheese is feta cheese.\n\nNow I need to look up USDA FoodData Central SR Legacy data:\n- Chickpeas, canned, drained solids: protein per 100g. I recall it's about 7.05 g? Let me think. USDA SR Legacy for \"Chickpeas, canned, drained solids\" (NDB number 09406?) — protein 7.05 g per 100g? Actually, cooked chickpeas (boiled) have 8.86 g protein per 100g. Canned chickpeas, drained solids: 7.05 g? Let me verify.\n\nUSDA FoodData Central: \"Chickpeas, canned, drained solids\" — FDC ID 168879? Protein 7.05 g? Hmm, I think canned chickpeas drained solids has protein ~7.05 g/100g. Let me search.\n\n- Cheese, feta: protein 14.21 g per 100g (SR Legacy FDC ID 169514?). Yes, feta cheese is 14.21 g protein per 100g.\n\nDifference: 14.21 - 7.05 = 7.16 → rounded to 7.\n\nLet me verify with web search / tool. I'll use web_search and possibly fetch the USDA page via page_browser.\n\nLet me do the searches.\n\nActually, I should double-check chickpeas canned drained solids protein. Some sources: \"Chickpeas, canned, drained solids, NDB 09406, protein 7.05 g\". Hmm, I've also seen 8.86 for mature seeds, boiled. Let me search.\n\nPlan:\n1. Web search USDA FoodData Central chickpeas canned drained solids protein SR Legacy.\n2. Web search cheese feta USDA protein 14.21.\n3. Compute difference.\n\nLet me run both searches in parallel.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_6b4b911c57b7441a9d47b3ea",
+      "content": "[{\"id\": 1, \"title\": \"USDA, FDA and ODS-NIH Database for the Iodine Content ...\", \"url\": \"https://www.ars.usda.gov/ARSUSERFILES/80400535/DATA/IODINE/IODINE_DATABASE_RELEASE_3_PER_SERVING.PDF\", \"snippet\": \"545 Beans, garbanzo (chickpeas), canned, drained solids. 0.67 cup. 90. 0.0. 1 ... 14Omitted sample with 545 mcg I/100g serving – value probably from FD&C Red No.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Crispy Roasted Chickpeas: Oven or Air Fryer, 3 Flavors\", \"url\": \"https://askscreenknow.com/roasted-chickpeas-three-ways/\", \"snippet\": \"Chickpeas per 100 g, USDA FoodData Central. Per 100 g ... USDA FoodData Central, Chickpeas, canned, drained solids (SR Legacy 173800) ...\", \"date\": \"7 days ago\"}, {\"id\": 3, \"title\": \"Food-Based Dietary Guidelines and Protein Quality ...\", \"url\": \"https://www.mdpi.com/2304-8158/11/5/647\", \"snippet\": \"by E Derbyshire · 2022 · Cited by 33 — Proteins are a macronutrient and central part of the human diet ... Chickpeas, Canned, Drained Solids [60], Kidney Beans, Drained Solids ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_ee16aff67dc24cfc886f2611",
+      "content": "[{\"id\": 1, \"title\": \"Nutrients: Protein (g)\", \"url\": \"https://www.nal.usda.gov/sites/default/files/page-files/Protein.pdf\", \"snippet\": \"Cheese, feta. 1.0 cup, crumbled. 21.32. Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8\\\" fat, cooked, broiled. 3.0 oz. 21.17. Chicken, stewing, meat ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Feta Cheese Calories: 77 per Ounce [1 Cup Crumbled 410]\", \"url\": \"https://bodypalapp.com/en-us/calories/feta-cheese/\", \"snippet\": \"The row used here is FNDDS 2705714, \\\"Cheese, Feta\\\". It carries the same analysis as the Foundation entry for whole-milk crumbled feta (19.71 g protein, 19.08 g ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"%usda feta cheese calories per 100g\", \"url\": \"https://iwdomes.de/amphtml/2026/10/recycling-keho-miliho.html?srsltid=AU7gw4U3m7aPG5oiH-OlAuebg6ExfwE7CK3NrAdz5hxabnhZMCrwXEnu\", \"snippet\": \"Cheese, Feta nutrition facts per 100 g: 265 kcal, 14.2 g protein, 21.5 g fat, 3.9 g carbs. Full vitamins, minerals and % Daily Value. Source: ...\", \"date\": \"Sep 18, 2025\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "Let me fetch the actual USDA FoodData Central pages to confirm the exact SR Legacy values.\n\n",
+      "reasoning": "Let me fetch the actual USDA FoodData Central pages for both entries to confirm exact values.\n\nFDC IDs: Chickpeas, canned, drained solids — SR Legacy, FDC ID 173800 (per search result 2). Cheese, feta — SR Legacy FDC ID 169514? Let me check. I'll fetch:\n- https://fdc.nal.usda.gov/food-details/173800/nutrients\n- https://fdc.nal.usda.gov/food-details/169514/nutrients (need to confirm feta's ID)\n\nLet me search for feta SR Legacy FDC ID.\n\nAlternatively fetch the legacy data report pages:\n- https://www.ars.usda.gov/... hmm.\n\nLet's try fetching fdc.nal.usda.gov pages. Note the site may be JS-heavy; page_browser might still extract. Let's try both.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_f77d8137f6204fc9a2dbdbd8",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://fdc.nal.usda.gov/food-details/173800/nutrients\", \"https://fdc.nal.usda.gov/food-details/169514/nutrients\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_e89c5191676142dca2702286",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"fdc.nal.usda.gov \\\"Cheese, feta\\\" SR Legacy food-details 100 g protein\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me fetch the actual USDA FoodData Central pages for both entries to confirm exact values.\n\nFDC IDs: Chickpeas, canned, drained solids — SR Legacy, FDC ID 173800 (per search result 2). Cheese, feta — SR Legacy FDC ID 169514? Let me check. I'll fetch:\n- https://fdc.nal.usda.gov/food-details/173800/nutrients\n- https://fdc.nal.usda.gov/food-details/169514/nutrients (need to confirm feta's ID)\n\nLet me search for feta SR Legacy FDC ID.\n\nAlternatively fetch the legacy data report pages:\n- https://www.ars.usda.gov/... hmm.\n\nLet's try fetching fdc.nal.usda.gov pages. Note the site may be JS-heavy; page_browser might still extract. Let's try both.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f77d8137f6204fc9a2dbdbd8",
+      "content": "{\"https://fdc.nal.usda.gov/food-details/173800/nutrients\": \"Title: Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids - Nutrients - SR Legacy\\n\\nURL Source: https://fdc.nal.usda.gov/food-details/173800/nutrients\\n\\nWarning: Target URL returned error 404: Not Found\\n\\nMarkdown Content:\\n[Skip to main content]\\n\\n![Image 1]\\nAn official website of the United States government\\n\\nHere's how you know\\n\\n![Image 2]\\n\\n**The .gov means it's official.**  \\n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\\n\\n![Image 3]\\n\\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\\n\\n![Image 4]\\n\\n[U.S. Department of Agriculture][Agricultural Research Service]\\n\\nMenu\\n\\n![Image 5]\\n\\n* [ARS Home]\\n* [About ARS]\\n* [Contact ARS]\\n\\n* [Home]\\n* [Search]\\n  * [Food Search]\\n  * [Component Search]\\n\\n* [Browse]\\n  * [Foundation Foods]\\n  * [SR Legacy Foods]\\n  * [Survey Foods (FNDDS)])\\n  * [Experimental Foods]\\n  * [Branded Foods]\\n\\n* [Resources]\\n  * [Resource Directory]\\n  * [Frequently Asked Questions]\\n  * [Release History]\\n  * [Upcoming Releases]\\n  * [FNA Child Nutrition Database]\\n\\n* [Data]\\n  * [Quick Guide]\\n  * [Data Type Documentation]\\n  * [Data Downloads]\\n  * [API Guide]\\n  * [Get an API Key]\\n\\n* [About Us]\\n* [Contact FoodData Central]\\n\\n# FoodData Central Food Details\\n\\n1. [ARS Home]\\n2. [FoodData Central]\\n3. Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids (SR Legacy, 173800)\\n\\nVersion: DEV_SNAPSHOT\\n\\n# Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids\\n\\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\\n\\nData Type:SR Legacy\\n\\nFood Category:Legumes and Legume Products\\n\\nFDC ID:173800\\n\\nNDB Number:16358\\n\\nFDC Published:4/1/2019\\n\\n* Nutrients\\n* Measures\\n* Other Information\\n\\nPortion:\\n\\nPortion selection: \\n\\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\\n| Water | 66.7 | g | Analytical | 4 | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 65.9 | 68.1 |  |  | [] | 5/1/2011 |\\n| Energy | 139 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2011 |\\n| Energy | 583 | kJ | Calculated |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2011 |\\n| Protein | 7.05 | g | [Analytical] | 4 | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 6.48 | 7.85 |  |  | [] | 5/1/2011 |\\n| Total lipid (fat) | 2.77 | g | Analytical | 4 | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 2.6 | 3.2 |  |  | [] | 5/1/2011 |\\n| Ash | 0.91 | g | Analytical | 4 | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.7 | 1.13 |  |  | [] | 5/1/2011 |\\n| Carbohydrate, by difference | 22.5 | g | Calculated |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2011 |\\n| Fiber, total dietary | 6.4 | g | Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2013 |\\n| Total Sugars | 4.01 | g | Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used |  | Samples for Total Sugars x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2013 |\\n| Calcium, Ca | 45 | mg | Analytical | 4 | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 29 | 52 |  |  | [] | 5/1/2011 |\\n| Iron, Fe | 1.07 | mg | Analytical | 4 | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 1.03 | 1.17 |  |  | [] | 5/1/2011 |\\n| Magnesium, Mg | 26 | mg | Analytical | 4 | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 24 | 28 |  |  | [] | 5/1/2011 |\\n| Phosphorus, P | 85 | mg | Analytical | 4 | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 74 | 95 |  |  | [] | 5/1/2011 |\\n| Potassium, K | 126 | mg | Analytical | 4 | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 108 | 145 |  |  | [] | 5/1/2011 |\\n| Sodium, Na | 246 | mg | Analytical | 4 | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 215 | 303 |  |  | [] | 5/1/2011 |\\n| Zinc, Zn | 0.63 | mg | Analytical | 4 | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.51 | 0.81 |  |  | [] | 5/1/2011 |\\n| Copper, Cu | 0.253 | mg | Analytical | 4 | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.229 | 0.296 |  |  | [] | 5/1/2011 |\\n| Manganese, Mn | 0.846 | mg | Analytical | 4 | Samples for Manganese, Mn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.462 | 1.12 |  |  | [] | 5/1/2011 |\\n| Selenium, Se | 3.1 | µg | Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used |  | Samples for Selenium, Se x Analysis Details Acquisition Samples with a single location, regardless of how many containers have\", \"https://fdc.nal.usda.gov/food-details/169514/nutrients\": \"Title: Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\\\" fat, prime, raw - Nutrients - SR Legacy\\n\\nURL Source: https://fdc.nal.usda.gov/food-details/169514/nutrients\\n\\nWarning: Target URL returned error 404: Not Found\\n\\nMarkdown Content:\\n[Skip to main content]\\n\\n![Image 1]\\nAn official website of the United States government\\n\\nHere's how you know\\n\\n![Image 2]\\n\\n**The .gov means it's official.**  \\n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\\n\\n![Image 3]\\n\\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\\n\\n![Image 4]\\n\\n[U.S. Department of Agriculture][Agricultural Research Service]\\n\\nMenu\\n\\n![Image 5]\\n\\n* [ARS Home]\\n* [About ARS]\\n* [Contact ARS]\\n\\n* [Home]\\n* [Search]\\n  * [Food Search]\\n  * [Component Search]\\n\\n* [Browse]\\n  * [Foundation Foods]\\n  * [SR Legacy Foods]\\n  * [Survey Foods (FNDDS)])\\n  * [Experimental Foods]\\n  * [Branded Foods]\\n\\n* [Resources]\\n  * [Resource Directory]\\n  * [Frequently Asked Questions]\\n  * [Release History]\\n  * [Upcoming Releases]\\n  * [FNA Child Nutrition Database]\\n\\n* [Data]\\n  * [Quick Guide]\\n  * [Data Type Documentation]\\n  * [Data Downloads]\\n  * [API Guide]\\n  * [Get an API Key]\\n\\n* [About Us]\\n* [Contact FoodData Central]\\n\\n# FoodData Central Food Details\\n\\n1. [ARS Home]\\n2. [FoodData Central]\\n3. Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\\\" fat, prime, raw (SR Legacy, 169514)\\n\\nVersion: DEV_SNAPSHOT\\n\\n# Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\\\" fat, prime, raw\\n\\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\\n\\nData Type:SR Legacy\\n\\nFood Category:Beef Products\\n\\nFDC ID:169514\\n\\nNDB Number:13859\\n\\nFDC Published:4/1/2019\\n\\n* Nutrients\\n* Measures\\n* Other Information\\n\\nPortion:\\n\\nPortion selection: \\n\\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\\n| Water | 53.2 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Energy | 335 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Energy | 1400 | kJ | Calculated |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2016 |\\n| Protein | 16.7 | g | [Based on physical composition; Derived from analytical data; Estimated physical composition] |  | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Total lipid (fat) | 29.2 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Ash | 0.8 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Carbohydrate, by difference | 0.06 | g | Calculated |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2016 |\\n| Fiber, total dietary | 0 | g | Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat) |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Calcium, Ca | 10 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Iron, Fe | 1.77 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Magnesium, Mg | 17 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Phosphorus, P | 160 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Potassium, K | 286 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Sodium, Na | 53 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Zinc, Zn | 3.62 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Copper, Cu | 0.057 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Manganese, Mn | 0.012 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Manganese, Mn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acqui\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e89c5191676142dca2702286",
+      "content": "[{\"id\": 1, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search?type=SR%20Legacy&query=cheese\", \"snippet\": \"SR Legacy Food Search Options ; 1018, Cheese, edam ; 1019, Cheese, feta ; 1020, Cheese, fontina ; 1021, Cheese, gjetost.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"FoodData Central Inventory and Update Log\", \"url\": \"https://fdc.nal.usda.gov/log\", \"snippet\": \"Cheese, feta, whole milk, crumbled; Cheese, parmesan, grated, refrigerated; Cottage cheese, full fat, large or small curd; Cream cheese, full fat, block; Cream ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search?query=whole%20milk&type=Foundation\", \"snippet\": \"SR/Foundation Food Category. 1036, Cheese, ricotta, whole milk. 1116, Yogurt, plain, whole milk. 1019, Cheese, feta, whole milk, crumbled. 1293, Yogurt, Greek ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search?query=egg&type=Foundation&SFFoodCategory=Dairy%20and%20Egg%20Products\", \"snippet\": \"SR Legacy Foods (291); Survey Foods (FNDDS) (0); Experimental Foods (0) ... Cheese, feta, whole milk, crumbled. 100296, Cheese, monterey jack, solid. 1029 ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Nutrients: Protein (g)\", \"url\": \"https://www.nal.usda.gov/sites/default/files/page-files/Protein.pdf\", \"snippet\": \"Cheese, feta. 1.0 cup, crumbled. 21.32. Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8\\\" fat, cooked, broiled. 3.0 oz. 21.17. Chicken, stewing, meat ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Nutrients: Sodium, Na(mg)\", \"url\": \"https://www.nal.usda.gov/sites/default/files/page-files/sodium.pdf\", \"snippet\": \"Cheese, feta. 1.0 cups, crumbled. 1708. Whey, sweet, dried. 1.0 cups. 1565. Biscuits, plain or buttermilk, dry mix. 1.0 cups, purchased. 1531. Gravy, beef, ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Optifood modeling to support revision of infant and young ...\", \"url\": \"https://cdn.who.int/media/docs/default-source/nutrition-and-food-safety/complementary-feeding/cf-guidelines/dietary-modelling.pdf?sfvrsn=8e2abbff_3\", \"snippet\": \"(https://fdc.nal.usda.gov/fdc-app.html#/food-details/171279/nutrients) ... Cheese, feta. 1. Cheese, fresh (queso fresco). 4. Cheese, gouda. 1. Cheese, hard ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"USDA, FDA, and ODS-NIH Database for the Iodine Content ...\", \"url\": \"https://www.ars.usda.gov/ARSUSERFILES/80400535/DATA/IODINE/IODINE%20DATABASE_RELEASE_3_REVISION_1_DOCUMENTATION.PDF\", \"snippet\": \"by JM Roseland · 2023 · Cited by 7 — FoodData Central database web site: https://fdc.nal.usda.gov/. Supported by ... Cheese, feta, whole milk, crumbled. 8. 48. 21. 30. 76 USDA. 2022. 190 01025. 391 ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Food Composition and Dedicated Databases\", \"url\": \"https://mdpi-res.com/bookfiles/book/7160/Food_Composition_and_Dedicated_Databases_Key_Tools_for_Human_Health_and_Public_Nutrition.pdf?v=1790730692\", \"snippet\": \"//fdc.nal.usda.gov (accessed on 10 March 2021). ... cheese, feta cheese, processed meat, meat pies ... All compounds were expressed in amount per 100 g or 100 mL of ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Investigating dietary vitamin D in Australia\", \"url\": \"https://curate.curtin.edu.au/ndownloader/files/62781076\", \"snippet\": \"Cheese, feta. Sydney, Melbourne. None. Cheese, mozzarella. Sydney, Perth. None ... https://fdc.nal.usda.gov/docs/Foundation_Foods_Documentation_Apr2020.pd · f ...\", \"date\": \"by ES Dunlop · 2022\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "Chickpeas confirmed (SR Legacy FDC ID 173800, Protein = 7.05 g/100 g). Now let me pin down the exact \"Cheese, feta\" SR Legacy entry.\n\n",
+      "reasoning": "Confirmed: Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids — SR Legacy, FDC ID 173800, Protein = 7.05 g per 100 g.\n\nNow for Cheese, feta — SR Legacy. The NDB number for Cheese, feta is 01025? Actually the search result mentioned \"391 01025\" hmm. The SR Legacy FDC ID for Cheese, feta is 169516? Let me find. Food search shows \"1019, Cheese, feta\" which is the SR Legacy... wait, that number 1019 looks like an NDB/rnd number. Let me fetch the FDC page directly. Known: Cheese, feta SR Legacy FDC ID = 169516? Let me search for it.\n\nCommon knowledge: Feta cheese USDA: 264 kcal, 14.21 g protein, 21.28 g fat, 4.09 g carbs per 100 g. That's SR Legacy \"Cheese, feta\" (NDB 01025). Let me verify by fetching the FDC page. I'll try a few candidate IDs, or better, use the FDC API without an API key? The public API requires a key. Let me instead fetch the food search page for feta in SR Legacy.\n\nTry: https://fdc.nal.usda.gov/food-details/169516/nutrients and https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\n\nLet me do both.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_7058ebc14c2e40c8abda314e",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\", \"https://fdc.nal.usda.gov/food-details/169516/nutrients\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed: Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids — SR Legacy, FDC ID 173800, Protein = 7.05 g per 100 g.\n\nNow for Cheese, feta — SR Legacy. The NDB number for Cheese, feta is 01025? Actually the search result mentioned \"391 01025\" hmm. The SR Legacy FDC ID for Cheese, feta is 169516? Let me find. Food search shows \"1019, Cheese, feta\" which is the SR Legacy... wait, that number 1019 looks like an NDB/rnd number. Let me fetch the FDC page directly. Known: Cheese, feta SR Legacy FDC ID = 169516? Let me search for it.\n\nCommon knowledge: Feta cheese USDA: 264 kcal, 14.21 g protein, 21.28 g fat, 4.09 g carbs per 100 g. That's SR Legacy \"Cheese, feta\" (NDB 01025). Let me verify by fetching the FDC page. I'll try a few candidate IDs, or better, use the FDC API without an API key? The public API requires a key. Let me instead fetch the food search page for feta in SR Legacy.\n\nTry: https://fdc.nal.usda.gov/food-details/169516/nutrients and https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\n\nLet me do both.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_7058ebc14c2e40c8abda314e",
+      "content": "{\"https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\": \"Title: Food Search | USDA FoodData Central\\n\\nURL Source: https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\\n\\nMarkdown Content:\\n[Skip to main content]\\n\\n![Image 1]\\nAn official website of the United States government\\n\\nHere's how you know\\n\\n![Image 2]\\n\\n**The .gov means it's official.**  \\n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\\n\\n![Image 3]\\n\\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\\n\\n![Image 4]\\n\\n[U.S. Department of Agriculture][Agricultural Research Service]\\n\\nMenu\\n\\n![Image 5]\\n\\n* [ARS Home]\\n* [About ARS]\\n* [Contact ARS]\\n\\n* [Home]\\n* [Search]\\n  * [Food Search]\\n  * [Component Search]\\n\\n* [Browse]\\n  * [Foundation Foods]\\n  * [SR Legacy Foods]\\n  * [Survey Foods (FNDDS)])\\n  * [Experimental Foods]\\n  * [Branded Foods]\\n\\n* [Resources]\\n  * [Resource Directory]\\n  * [Frequently Asked Questions]\\n  * [Release History]\\n  * [Upcoming Releases]\\n  * [FNA Child Nutrition Database]\\n\\n* [Data]\\n  * [Quick Guide]\\n  * [Data Type Documentation]\\n  * [Data Downloads]\\n  * [API Guide]\\n  * [Get an API Key]\\n\\n* [About Us]\\n* [Contact FoodData Central]\\n\\n# FoodData Central Food Search\\n\\n1. [ARS Home]\\n2. [FoodData Central]\\n3. [Food Search]\\n4. Food Search\\n\\nFood Search |Component Search \\n\\n[Search Operators]\\n\\n- [x] Require All Words  Reset Search \\n\\n## Helpful Links\\n\\n[Search Tips]\\n\\n[FAQ]\\n\\n[Inventory and Update Log]\\n\\n## Related Resources\\n\\n[Databases]\\n\\n[Documents]\\n\\n[Tools]\\n\\n* Foundation Foods (1)\\n* SR Legacy Foods (1)\\n* Survey Foods (FNDDS) (2)\\n* Experimental Foods (0)\\n* Branded Foods (1,229)\\n\\n## SR Legacy Foods\\n\\n* Historic data on food components including nutrients derived from analyses, calculations, and published literature. SR Legacy, released in April 2018, is the final release of this data type and will not be updated. \\n* Documentation and further details about SR Legacy: . \\n\\n## SR Legacy Food Search Options\\n\\nSR Food Category [Search Tips]\\n\\n1 result\\n\\n| NDB Number | Description | SR Food Category |\\n| - | - | - |\\n| 1019 | [Cheese, feta] | Dairy and Egg Products |\\n\\nIdentifier\\n\\nIdentifier Type\\n\\nType\\n\\nDescription\\n\\nServing Weight\\n\\nServing size weight unit\\n\\nServing Size\\n\\n per serving size () \\n\\n per 100 unit serving () \\n\\n[Return to Top]\\n\\n* [Home]\\n* [Food Search]\\n* [Component Search]\\n* [Data Type Documentation]\\n* [Download Data]\\n* [API Guide]\\n* [Help]\\n* [FAQ]\\n* [About Us]\\n* [Contact FoodData Central]\\n\\n* [AskUSDA]\\n* [USDA.gov]\\n* [Agricultural Research Service]\\n* [Plain Writing]\\n* [FOIA]\\n* [Accessibility Statement]\\n* [Information Quality]\\n* [Privacy Policy]\\n* [Non-Discrimination Statement]\\n* [USA.gov]\\n* [WhiteHouse.gov]\\n\\n![Image 6]\\n\\n[U.S. Department of Agriculture][Agricultural Research Service]\\n\\nSort\\n\", \"https://fdc.nal.usda.gov/food-details/169516/nutrients\": \"Title: Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\\\" fat, prime, cooked, roasted - Nutrients - SR Legacy\\n\\nURL Source: https://fdc.nal.usda.gov/food-details/169516/nutrients\\n\\nWarning: Target URL returned error 404: Not Found\\n\\nMarkdown Content:\\n[Skip to main content]\\n\\n![Image 1]\\nAn official website of the United States government\\n\\nHere's how you know\\n\\n![Image 2]\\n\\n**The .gov means it's official.**  \\n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\\n\\n![Image 3]\\n\\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\\n\\n![Image 4]\\n\\n[U.S. Department of Agriculture][Agricultural Research Service]\\n\\nMenu\\n\\n![Image 5]\\n\\n* [ARS Home]\\n* [About ARS]\\n* [Contact ARS]\\n\\n* [Home]\\n* [Search]\\n  * [Food Search]\\n  * [Component Search]\\n\\n* [Browse]\\n  * [Foundation Foods]\\n  * [SR Legacy Foods]\\n  * [Survey Foods (FNDDS)])\\n  * [Experimental Foods]\\n  * [Branded Foods]\\n\\n* [Resources]\\n  * [Resource Directory]\\n  * [Frequently Asked Questions]\\n  * [Release History]\\n  * [Upcoming Releases]\\n  * [FNA Child Nutrition Database]\\n\\n* [Data]\\n  * [Quick Guide]\\n  * [Data Type Documentation]\\n  * [Data Downloads]\\n  * [API Guide]\\n  * [Get an API Key]\\n\\n* [About Us]\\n* [Contact FoodData Central]\\n\\n# FoodData Central Food Details\\n\\n1. [ARS Home]\\n2. [FoodData Central]\\n3. Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\\\" fat, prime, cooked, roasted (SR Legacy, 169516)\\n\\nVersion: DEV_SNAPSHOT\\n\\n# Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\\\" fat, prime, cooked, roasted\\n\\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\\n\\nData Type:SR Legacy\\n\\nFood Category:Beef Products\\n\\nFDC ID:169516\\n\\nNDB Number:13861\\n\\nFDC Published:4/1/2019\\n\\n* Nutrients\\n* Measures\\n* Other Information\\n\\nPortion:\\n\\nPortion selection: \\n\\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\\n| Water | 41.8 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Energy | 411 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Energy | 1720 | kJ |  |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 1/1/1900 |\\n| Protein | 22.2 | g | [Based on physical composition; Derived from analytical data; Estimated physical composition] |  | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Total lipid (fat) | 35.1 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Ash | 0.91 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Carbohydrate, by difference | 0 | g | Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat) |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Fiber, total dietary | 0 | g | Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat) |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Calcium, Ca | 13 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Iron, Fe | 1.95 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Magnesium, Mg | 20 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Phosphorus, P | 178 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Potassium, K | 323 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Sodium, Na | 65 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Zinc, Zn | 4.82 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Copper, Cu | 0.076 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\\n| Manganese, Mn | 0.013 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Manganese, Mn x \"}"
+    },
+    {
+      "role": "assistant",
+      "content": "The search confirms \"Cheese, feta\" is an SR Legacy entry. Let me get its exact FDC record and protein value via the USDA API.\n\n",
+      "reasoning": "The search confirms \"Cheese, feta\" exists in SR Legacy with NDB number 1019 (i.e., NDB 01019? Actually feta's NDB is 01025... hmm, the table shows NDB Number 1019 for Cheese, feta). Wait, in the SR Legacy food search, the \"NDB Number\" column shows 1019 for Cheese, feta. Hmm, but standard NDB for feta is 01025? Let me check: Actually, USDA NDB 01025 = \"Cheese, feta\". Hmm. But the FDC search lists NDB Number 1019 for Cheese, feta? Let me reconsider: NDB 01019 = \"Cheese, cream, soft\"? Hmm. Let me just find the FDC ID for Cheese, feta.\n\nKnown FDC IDs: Cheese, feta = FDC ID 169514? No, that was beef rib. Let's think: SR Legacy dairy products FDC IDs range around 169496-169560? Hmm.\n\nActually, well-known: \"Cheese, feta\" SR Legacy FDC ID = 169516? No, that's beef.\n\nLet me search the FDC component search or use a known reference: MyFitnessPal / nutrition sites often cite FDC ID 169516... no.\n\nBetter approach: search web for \"Cheese, feta\" \"FDC ID\" SR Legacy. Or fetch the FDC food-details page by guessing IDs near dairy. Alternatively use the FDC API public endpoint? The API requires a key, but there's a demo key \"DEMO_KEY\" sometimes works with rate limits. Let's try requests with DEMO_KEY:\n\nhttps://api.nal.usda.gov/fdc/v1/foods/search?query=Cheese%2C%20feta&dataType=SR%20Legacy&api_key=DEMO_KEY\n\nLet me try that with code_executor (requests module available). Also fetch chickpeas to double check (already done: 7.05 g).\n\nLet me try.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_9a609270e0ab4aec89050fdf",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import requests, json\\n\\nurl = \\\"https://api.nal.usda.gov/fdc/v1/foods/search\\\"\\nparams = {\\n    \\\"query\\\": \\\"Cheese, feta\\\",\\n    \\\"dataType\\\": [\\\"SR Legacy\\\"],\\n    \\\"pageSize\\\": 10,\\n    \\\"api_key\\\": \\\"DEMO_KEY\\\"\\n}\\nr = requests.get(url, params=params, timeout=60)\\nprint(r.status_code)\\ndata = r.json()\\nfor f in data.get(\\\"foods\\\", [])[:10]:\\n    print(f.get(\\\"fdcId\\\"), \\\"|\\\", f.get(\\\"description\\\"), \\\"|\\\", f.get(\\\"dataType\\\"), \\\"| NDB:\\\", f.get(\\\"ndbNumber\\\"))\\n    prot = [n for n in f.get(\\\"foodElements\\\", []) if n.get(\\\"nutrientName\\\") == \\\"Protein\\\"]\\n    for p in prot:\\n        print(\\\"    Protein:\\\", p.get(\\\"value\\\"), p.get(\\\"nutrientUnit\\\"))\\n\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The search confirms \"Cheese, feta\" exists in SR Legacy with NDB number 1019 (i.e., NDB 01019? Actually feta's NDB is 01025... hmm, the table shows NDB Number 1019 for Cheese, feta). Wait, in the SR Legacy food search, the \"NDB Number\" column shows 1019 for Cheese, feta. Hmm, but standard NDB for feta is 01025? Let me check: Actually, USDA NDB 01025 = \"Cheese, feta\". Hmm. But the FDC search lists NDB Number 1019 for Cheese, feta? Let me reconsider: NDB 01019 = \"Cheese, cream, soft\"? Hmm. Let me just find the FDC ID for Cheese, feta.\n\nKnown FDC IDs: Cheese, feta = FDC ID 169514? No, that was beef rib. Let's think: SR Legacy dairy products FDC IDs range around 169496-169560? Hmm.\n\nActually, well-known: \"Cheese, feta\" SR Legacy FDC ID = 169516? No, that's beef.\n\nLet me search the FDC component search or use a known reference: MyFitnessPal / nutrition sites often cite FDC ID 169516... no.\n\nBetter approach: search web for \"Cheese, feta\" \"FDC ID\" SR Legacy. Or fetch the FDC food-details page by guessing IDs near dairy. Alternatively use the FDC API public endpoint? The API requires a key, but there's a demo key \"DEMO_KEY\" sometimes works with rate limits. Let's try requests with DEMO_KEY:\n\nhttps://api.nal.usda.gov/fdc/v1/foods/search?query=Cheese%2C%20feta&dataType=SR%20Legacy&api_key=DEMO_KEY\n\nLet me try that with code_executor (requests module available). Also fetch chickpeas to double check (already done: 7.05 g).\n\nLet me try.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9a609270e0ab4aec89050fdf",
+      "content": "{\"stdout\": \"\", \"result\": null, \"error\": \"ModuleNotFoundError: No module named 'requests'\"}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "No requests module. Let me use urllib.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_5448938d54c349c2adf2c4de",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"import urllib.request, urllib.parse, json\\n\\nbase = \\\"https://api.nal.usda.gov/fdc/v1/foods/search\\\"\\nqs = urllib.parse.urlencode({\\n    \\\"query\\\": \\\"Cheese, feta\\\",\\n    \\\"dataType\\\": \\\"SR Legacy\\\",\\n    \\\"pageSize\\\": \\\"10\\\",\\n    \\\"api_key\\\": \\\"DEMO_KEY\\\"\\n})\\nreq = urllib.request.Request(base + \\\"?\\\" + qs, headers={\\\"User-Agent\\\": \\\"Mozilla/5.0\\\"})\\ntry:\\n    with urllib.request.urlopen(req, timeout=60) as resp:\\n        data = json.load(resp)\\n    for f in data.get(\\\"foods\\\", [])[:10]:\\n        print(f.get(\\\"fdcId\\\"), \\\"|\\\", f.get(\\\"description\\\"), \\\"|\\\", f.get(\\\"dataType\\\"), \\\"| NDB:\\\", f.get(\\\"ndbNumber\\\"))\\n        for n in f.get(\\\"foodElements\\\", []) or []:\\n            if n.get(\\\"nutrientName\\\") == \\\"Protein\\\":\\n                print(\\\"    Protein:\\\", n.get(\\\"value\\\"), n.get(\\\"nutrientUnit\\\"))\\nexcept Exception as e:\\n    print(\\\"ERROR:\\\", type(e).__name__, e)\\n\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "No requests module. Let me use urllib.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5448938d54c349c2adf2c4de",
+      "content": "{\"stdout\": \"ERROR: URLError <urlopen error [Errno -3] Temporary failure in name resolution>\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "No network in the sandbox. So I need to use web_search / page_browser to find the FDC ID for Cheese, feta.\n\nLet me search: \"Cheese, feta\" \"FDC ID\" 169... Or search for a site that mirrors the data, e.g., \"fdc.nal.usda.gov/food-details\" feta.\n\nKnown: Feta cheese SR Legacy FDC ID is 169514? No (beef rib). Dairy SR Legacy IDs: Let me think about known ones:\n- \"Cheese, cheddar\" FDC ID 169154? Hmm.\n- \"Milk, whole\" 169514? no.\n\nLet me search the web for \"Cheese, feta\" \"171688\" etc. Better: search \"fdc.nal.usda.gov food-details feta cheese protein 14.21\".\n\nAlternatively use the FDC \"component search\" page or the food-details URL pattern: https://fdc.nal.usda.gov/food-details/{fdcId}/nutrients. I could try fetching the food search results page with the query in a way that returns links with FDC IDs. The earlier fetch of the food-search page showed a link \"[Cheese, feta]\" but the markdown stripped the href. Let me try fetching with a different approach — maybe the search page with &query=feta returns the link; the tool strips URLs. Hmm.\n\nAlternative: use web_search with query \"Cheese, feta\" site:fdc.nal.usda.gov.\n\nOr use known third-party sites that cite FDC IDs, e.g., \"usda fooddata central feta cheese 169516\" etc.\n\nLet me search.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_10924ca789e044d18b5d1139",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"Cheese, feta\\\" site:fdc.nal.usda.gov food-details nutrients\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_decf5d9b2b184df8b4fe70bb",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"feta cheese USDA SR Legacy FDC ID 169516 OR 169484 OR 169443 protein 14.21\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "No network in the sandbox. So I need to use web_search / page_browser to find the FDC ID for Cheese, feta.\n\nLet me search: \"Cheese, feta\" \"FDC ID\" 169... Or search for a site that mirrors the data, e.g., \"fdc.nal.usda.gov/food-details\" feta.\n\nKnown: Feta cheese SR Legacy FDC ID is 169514? No (beef rib). Dairy SR Legacy IDs: Let me think about known ones:\n- \"Cheese, cheddar\" FDC ID 169154? Hmm.\n- \"Milk, whole\" 169514? no.\n\nLet me search the web for \"Cheese, feta\" \"171688\" etc. Better: search \"fdc.nal.usda.gov food-details feta cheese protein 14.21\".\n\nAlternatively use the FDC \"component search\" page or the food-details URL pattern: https://fdc.nal.usda.gov/food-details/{fdcId}/nutrients. I could try fetching the food search results page with the query in a way that returns links with FDC IDs. The earlier fetch of the food-search page showed a link \"[Cheese, feta]\" but the markdown stripped the href. Let me try fetching with a different approach — maybe the search page with &query=feta returns the link; the tool strips URLs. Hmm.\n\nAlternative: use web_search with query \"Cheese, feta\" site:fdc.nal.usda.gov.\n\nOr use known third-party sites that cite FDC IDs, e.g., \"usda fooddata central feta cheese 169516\" etc.\n\nLet me search.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_10924ca789e044d18b5d1139",
+      "content": "[{\"id\": 1, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search?type=SR%20Legacy&query=cheese\", \"snippet\": \"Historic data on food components including nutrients derived from analyses, calculations, and published literature. ... Cheese, feta. 1020, Cheese, fontina. 1021 ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search/?query=cheese+feta\", \"snippet\": \"Data for food components including nutrients derived from analyses on ... Cheese, feta, whole milk, crumbled. Identifier. Identifier Type. Type. Description.\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search/?type=Foundation&query=cheese\", \"snippet\": \"Cheese, feta, whole milk, crumbled. 1017, Cream cheese, full fat, block. 1029, Cheese, mozzarella, low moisture, part-skim. 1042, Cheese, pasteurized process ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"FoodData Central Inventory and Update Log\", \"url\": \"https://fdc.nal.usda.gov/log\", \"snippet\": \"Vitamin K analysis added to existing samples: Buttermilk, low fat; Cheese, feta, whole milk, crumbled; Cheese, parmesan, grated, refrigerated; Cottage cheese, ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search?query=egg&type=Foundation&SFFoodCategory=Dairy%20and%20Egg%20Products\", \"snippet\": \"Data for food components including nutrients derived from analyses on ... Cheese, feta, whole milk, crumbled. 100296, Cheese, monterey jack, solid. 1029 ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search/?query=milk\", \"snippet\": \"Data for food components including nutrients derived from analyses on ... Cheese, feta, whole milk, crumbled. 100277, Oat milk, unsweetened, plain ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_decf5d9b2b184df8b4fe70bb",
+      "content": "[{\"id\": 1, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search?type=SR%20Legacy&query=cheese\", \"snippet\": \"The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/\", \"snippet\": \"USDA FoodData Central produces thorough resources for navigating and understanding nutritional info. Foundation Foods & SR Legacy Updates: SR Legacy Foods\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Food Search | USDA FoodData Central\", \"url\": \"https://fdc.nal.usda.gov/food-search\", \"snippet\": \"The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"FoodData Central FAQ\", \"url\": \"https://fdc.nal.usda.gov/faq\", \"snippet\": \"SR Legacy has been the primary food composition data type in the United States for decades. It provides a comprehensive list of values for food components,\", \"date\": \"\"}, {\"id\": 5, \"title\": \"USDA National Nutrient Database for Standard Reference ...\", \"url\": \"http://catalog.data.gov/dataset/usda-national-nutrient-database-for-standard-reference-legacy-release\", \"snippet\": \"SR-Legacy contains data on 7,793 food items and up to 150 food components that were reported in SR28 (2015), with selected corrections and updates.\", \"date\": \"\"}, {\"id\": 6, \"title\": \"SR Legacy Foods\", \"url\": \"https://fdc.nal.usda.gov/food-search?type=SR%20Legacy\", \"snippet\": \"The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Feta Cheese Nutrition Facts: Calories, Protein & Health ...\", \"url\": \"https://currypizzahouse.com/feta-cheese-nutrition-facts/\", \"snippet\": \"Protein: 4.0–5.3g. With 4–5 grams of protein per ounce, feta can contribute to daily protein intake. Protein helps: Maintain muscle mass ...\", \"date\": \"Feb 27, 2026\"}, {\"id\": 8, \"title\": \"Nutrition Facts for Feta Cheese\", \"url\": \"https://tools.myfooddata.com/nutrition-facts/173420/100g/1\", \"snippet\": \"There are 265 calories in Feta Cheese coming from 21% protein, 6% carbs, 73% fat, and 0% alcohol. This food consists of 58.2% water, 15% protein, 4.1% carbs, ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Feta Cheese Nutrients\", \"url\": \"https://nutrivore.com/foods/feta-cheese-nutrients/\", \"snippet\": \"Feta cheese has a Nutrivore Score of 189, which makes it a medium nutrient-dense food. It is particularly rich in vitamin B12 (cobalamin), medium chain ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"FoodData Central Inventory and Update Log\", \"url\": \"https://fdc.nal.usda.gov/log\", \"snippet\": \"Cheese, feta, whole milk, crumbled; Cheese, parmesan, grated, refrigerated; Cottage cheese, full fat, large or small curd; Cream cheese, full fat, block; Cream ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "Found a likely FDC ID (173420). Let me verify it directly on the USDA site.\n\n",
+      "reasoning": "Result 8: tools.myfooddata.com/nutrition-facts/173420/100g/1 — FDC ID 173420 appears to be \"Feta Cheese\" (myfooddata uses FDC IDs). Let me fetch that page and also the FDC page for 173420.\n\nNote: 173420 might be an SR Legacy entry for Cheese, feta. Let's check both.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_a569b95ddb93446f8e42760a",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://fdc.nal.usda.gov/food-details/173420/nutrients\", \"https://tools.myfooddata.com/nutrition-facts/173420/100g/1\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Result 8: tools.myfooddata.com/nutrition-facts/173420/100g/1 — FDC ID 173420 appears to be \"Feta Cheese\" (myfooddata uses FDC IDs). Let me fetch that page and also the FDC page for 173420.\n\nNote: 173420 might be an SR Legacy entry for Cheese, feta. Let's check both.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_a569b95ddb93446f8e42760a",
+      "content": "{\"https://fdc.nal.usda.gov/food-details/173420/nutrients\": \"Title: Cheese, feta - Nutrients - SR Legacy\\n\\nURL Source: https://fdc.nal.usda.gov/food-details/173420/nutrients\\n\\nWarning: Target URL returned error 404: Not Found\\n\\nMarkdown Content:\\n[Skip to main content]\\n\\n![Image 1]\\nAn official website of the United States government\\n\\nHere's how you know\\n\\n![Image 2]\\n\\n**The .gov means it's official.**  \\n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\\n\\n![Image 3]\\n\\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\\n\\n![Image 4]\\n\\n[U.S. Department of Agriculture][Agricultural Research Service]\\n\\nMenu\\n\\n![Image 5]\\n\\n* [ARS Home]\\n* [About ARS]\\n* [Contact ARS]\\n\\n* [Home]\\n* [Search]\\n  * [Food Search]\\n  * [Component Search]\\n\\n* [Browse]\\n  * [Foundation Foods]\\n  * [SR Legacy Foods]\\n  * [Survey Foods (FNDDS)])\\n  * [Experimental Foods]\\n  * [Branded Foods]\\n\\n* [Resources]\\n  * [Resource Directory]\\n  * [Frequently Asked Questions]\\n  * [Release History]\\n  * [Upcoming Releases]\\n  * [FNA Child Nutrition Database]\\n\\n* [Data]\\n  * [Quick Guide]\\n  * [Data Type Documentation]\\n  * [Data Downloads]\\n  * [API Guide]\\n  * [Get an API Key]\\n\\n* [About Us]\\n* [Contact FoodData Central]\\n\\n# FoodData Central Food Details\\n\\n1. [ARS Home]\\n2. [FoodData Central]\\n3. Cheese, feta (SR Legacy, 173420)\\n\\nVersion: DEV_SNAPSHOT\\n\\n# Cheese, feta\\n\\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\\n\\nData Type:SR Legacy\\n\\nFood Category:Dairy and Egg Products\\n\\nFDC ID:173420\\n\\nNDB Number:1019\\n\\nFDC Published:4/1/2019\\n\\n* Nutrients\\n* Measures\\n\\nPortion:\\n\\nPortion selection: \\n\\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\\n| Water | 55.2 | g |  |  | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Energy | 265 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\\n| Energy | 1110 | kJ | Calculated |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\\n| Protein | 14.2 | g | [] |  | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Total lipid (fat) | 21.5 | g | Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI) |  | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\\n| Ash | 5.2 | g |  |  | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Carbohydrate, by difference | 3.88 | g | Calculated |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\\n| Fiber, total dietary | 0 | g |  |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Total Sugars | 0 | g | Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI) |  | Samples for Total Sugars x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\\n| Calcium, Ca | 493 | mg |  |  | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Iron, Fe | 0.65 | mg |  |  | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Magnesium, Mg | 19 | mg |  |  | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Phosphorus, P | 337 | mg |  |  | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Potassium, K | 62 | mg |  |  | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Sodium, Na | 1140 | mg | Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI) |  | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\\n| Zinc, Zn | 2.88 | mg |  |  | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Copper, Cu | 0.032 | mg |  |  | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Manganese, Mn | 0.028 | mg |  |  | Samples for Manganese, Mn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\\n| Selenium, Se | 15 | µg | Analytical | 2 | Samples for Selenium, Se x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1992 |\\n| Vitamin C, total ascorbic acid | 0 | mg |  |  | Samples for Vitamin C, total ascorbic acid x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If mo\", \"https://tools.myfooddata.com/nutrition-facts/173420/100g/1\": \"Title: Nutrition Facts for  Feta Cheese\\n\\nURL Source: https://tools.myfooddata.com/nutrition-facts/173420/100g/1\\n\\nMarkdown Content:\\n[]\\n\\n×\\n* Tools\\n* Plans\\n* Articles\\n* About\\n* My Foods\\n\\n[Sign In][Sign Up]\\n\\n# [Nutrition Facts Search Tool]\\n\\nGet detailed nutrition data for over 800,000 foods.\\n\\n instructions Log this Food\\n\\n Scan Code \\n\\nFeta Cheese\\n\\n× \\n\\n[Compare][Add to Recipe]\\n\\n# Feta Cheese ✓+\\n\\n Cheese, feta \\n\\nData Source:USDA Standard Release[]\\n\\nServing Size:\\n\\n× \\n\\n Log this Food[]\\n\\n Log this Food[]\\n\\n| Nutrition Facts |\\n| - |\\n| Serving Size |\\n| 100 grams (100g) |\\n|  |\\n| Calories | 265 |\\n| % Daily Value * |\\n| Total Fat 21.5g | 28% |\\n| Saturated Fat 13.3g | 67% |\\n| _Trans_ Fat --g |\\n| Cholesterol 89mg | 30% |\\n| Sodium 1139mg | 47% |\\n| Total Carbohydrate 3.9g | 1% |\\n| Dietary Fiber 0g | 0% |\\n| Total Sugars 0g | 0% |\\n|  |  | Includes --g Added Sugars | --% |\\n| Protein 14.2g | 28% |\\n| Vitamin C 0mg | 0% |\\n| Vitamin D 0.4mcg | 2% |\\n| Iron 0.65mg | 4% |\\n| Calcium 493mg | 38% |\\n| Potassium 62mg | 1% |\\n| Phosphorus 337mg | 27% |\\n| *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. |\\n\\n-- = missing data\\n\\n[Source]Report error\\n\\n Settings \\n\\n*  Blood Sugar Index  0  Good \\n* This food is low in [carbohydrates] and [sugar] relative to the [fiber], [protein], and [fat]. It is a good choice for maintaining healthy blood sugar levels. \\n\\nWeight Loss \\n\\nMuscle Gain \\n\\nNutrient Density \\n\\n* PRAL score  11.22 \\n*  Inflammation Score  18 \\n*  Amino Acid Score  59%\\n*  Potassium/Sodium  0.05 \\n\\nWhere do the calories come from? \\n\\nA donut chart showing which nutrients contribute to the caloric total. There are 265 calories in Feta Cheese coming from 21% protein, 6% carbs, 73% fat, and 0% alcohol.\\n\\n21%Protein\\n\\n6%Carbs\\n\\n73%Fat\\n\\n0%Alcohol\\n\\nWhat is this food made of? \\n\\nA pie chart showing the macro nutrient components for Feta Cheese. This food consists of 58.2% water, 15% protein, 4.1% carbs, 22.7% fat, and 0% alcohol.\\n\\n58.2%Water 55.2g\\n\\n15%Protein 14.2g\\n\\n4.1%Carbs 3.9g\\n\\n22.7%Fat 21.5g\\n\\n0%Alcohol 0g\\n\\nDetailed Nutrition Facts\\n\\n165 nutrients\\n\\n| Macronutrients |\\n| - |\\n| -- = missing data | %DV |\\n| Weight | 100g |  |\\n| Calories (kcal) | 265 | 13% |\\n| Fat | 21.5g | 28% |\\n| Protein | 14.2g | 28% |\\n| Carbohydrate | 3.9g | 1% |\\n| Sugars | 0g | 0% |\\n| Fiber | 0g | 0% |\\n| Cholesterol | 89mg | 30% |\\n| Saturated Fats | 13.3g | 67% |\\n| Net-Carbs | 3.9g |  |\\n| Trans Fatty Acids | --g |  |\\n| Minerals |\\n| -- = missing data | %DV |\\n| Weight | 100g |  |\\n| Calcium | 493mg | 38% |\\n| Iron, Fe | 0.65mg | 4% |\\n| Potassium, K | 62mg | 1% |\\n| Magnesium | 19mg | 5% |\\n| Phosphorus, P | 337mg | 27% |\\n| Sodium | 1139mg | 47% |\\n| Zinc, Zn | 2.9mg | 26% |\\n| Copper, Cu | 0.03mg | 4% |\\n| Manganese | 0.03mg | 1% |\\n| Selenium, Se | 15mcg | 27% |\\n| Fluoride, F | --mcg | --% |\\n| Molybdenum | --mcg |  |\\n| Iodine, I | 48mcg |  |\\n| Chlorine | --mg |  |\\n| Chromium | --mcg |  |\\n| Vitamins |\\n| -- = missing data | %DV |\\n| Weight | 100g |  |\\n| Vitamin A, RAE | 125mcg | 14% |\\n| Vitamin C | 0mg | 0% |\\n| Thiamin (B1) | 0.15mg | 13% |\\n| Riboflavin (B2) | 0.84mg | 65% |\\n| Niacin (B3) | 0.99mg | 6% |\\n| Vitamin B5 (PA) | 0.97mg | 19% |\\n| Vitamin B6 | 0.42mg | 25% |\\n| Biotin | --mcg |  |\\n| Folate (B9) | 32mcg | 8% |\\n| Folic acid | 0mcg | 0% |\\n| Food Folate | 32mcg | 8% |\\n| Folate DFE | 32mcg | 8% |\\n| Choline | 15.4mg | 3% |\\n| Vitamin B12 | 1.7mcg | 70% |\\n| Retinol | 125mcg |  |\\n| Carotene, beta | 3mcg | 0% |\\n| Carotene, alpha | 0mcg | 0% |\\n| Cryptoxanthin, beta | 0mcg | 0% |\\n| Vitamin A, IU | 422IU |  |\\n| Lycopene | 0mcg |  |\\n| Lut + Zeaxanthin | 0mcg |  |\\n| Vitamin E | 0.18mg | 1% |\\n| Vitamin D | 0.4mcg | 2% |\\n| Vitamin D2 | --mcg |  |\\n| Vitamin D3 | 0.4mcg |  |\\n| Vitamin D (IU) | 16IU | 2% |\\n| Vitamin K | 1.8mcg | 2% |\\n| Vitamin K1 | --mcg |  |\\n| Menaquinone-4 (K2) | --mcg |  |\\n| Other |\\n| -- = missing data |  |\\n| Weight | 100g |  |\\n| Water | 55.2g |  |\\n| Ash | 5g |  |\\n| Alcohol | 0g |  |\\n| Caffeine | 0mg |  |\\n| Theobromine | 0mg |  |\\n| Oxalic acid | --mg |  |\\n| PRAL score | 11.22 |  |\\n| Carbs & Sugars |\\n| -- = missing data | %DV |\\n| Weight | 100g |  |\\n| Soluble Fiber | --g |  |\\n| Insoluble Fiber | --g |  |\\n| Added Sugar | --g | --% |\\n| Sucrose | --g |  |\\n| Glucose (Dextrose) | --g |  |\\n| Fructose | --g |  |\\n| Lactose | --g |  |\\n| Maltose | --g |  |\\n| Galactose | --g |  |\\n| Starch | --g |  |\\n| Carbohydrate, other | --g |  |\\n| Total sugar alcohols | --g |  |\\n| Xylitol | --g |  |\\n| Sorbitol | --g |  |\\n| Mannitol | --g |  |\\n| Erythritol | --g |  |\\n| Maltitol | --g |  |\\n| Isomalt | --g |  |\\n| Lactitol | --g |  |\\n| Glycerol (Glycerin) | --g |  |\\n| Hydrogenated starch hydrolysates (HSH) | --g |  |\\n| Fats |\\n| -- = missing data | %AI |\\n| Weight | 100g |  |\\n| Total Monounsaturated | 4.623g |  |\\n| Total Polyunsaturated | 0.591g |  |\\n| Omega 3s | 0.265g | 17% |\\n| Omega 6s | 0.326g | 2% |\\n| Omega 3 to Omega 6 Ratio | 0.81 |  |\\n| Omega 6 to Omega 3 Ratio | 1.23 |  |\\n| Omega 3 Fats |\\n| alpha-Linolenic Acid (ALA) | --g | --% |\\n| Eicosapentaenoic Acid (EPA) | 0g |  |\\n| Docosapentaenoic Acid (DPA) | 0g |  |\\n| Docosahexaenoic Acid (DHA) | 0g |  |\\n| n-3-Eicosatrienoic Acid (20:3) | --g |  |\\n| Omega-6 Fats |\\n| Linoleic Acid (18:2 n-6 cis cis) | --g |  |\\n| gamma-Linolenic Acid (GLA) | --g |  |\\n| cis-cis-n6-Eicosadienoic Acid | --g |  |\\n| Dihomo-gamma-linolenic acid (DGLA) | --g |  |\\n| Arachidonic acid (AA) | --g |  |\\n| Saturated Fats |\\n| Butyric (4:0) | 0.714g |  |\\n| Caproic (6:0) | 0.528g |  |\\n| Caprylic Acid (8:0) | 0.503g |  |\\n| Capric Acid (10:0) | 1.822g |  |\\n| Lauric Acid (12:0) | 1.068g |  |\\n| Tridecanoic Acid (13:0) | --g |  |\\n| Myristic Acid (14:0) | 2.545g |  |\\n| Pentadecanoic Acid (15:0) | --g |  |\\n| Palmitic Acid (16:0) | 4.748g |  |\\n| Margaric Acid (17:0) | --g |  |\\n| Stearic Acid (18:0) | 1.371g |  |\\n| Arachidic Acid (20:0) | --g |  |\\n| Behenic Acid (22:0) | --g |  |\\n| Lignoceric Acid (24:0) | --g |  |\\n| Monounsaturated Fats |\\n| Myristoleic Acid (14:1) | --g |  |\\n| Pentadecenoic Acid (15:1) | --g |  |\\n| Palmitoleic Acid (16:1) | 0.385g |  |\\n| cis-Palmitoleic Acid (16:1 cis) | --g |  |\\n| Heptadecenoic Acid (17:1) | --g |  |\\n| Oleic Acid (18:1) | 3.975g |  |\\n| cis-Oleic Acid (18:1 cis) | --g |  |\\n| cis-Vaccenic acid | --g |  |\\n| Gadoleic Acid (20:1) | 0g |  |\\n| Docosenoic Acid (22:1) | 0g |  |\\n| cis-Docosenoic Acid (22:1 cis) | --g |  |\\n| cis-Tetracosenoic Acid (24:1 cis) | --g |  |\\n| Polyunsaturated Fats |\\n| Octadecadienoic Acid (18:2) | 0.326g |  |\\n| Conjugated Linoleic Acid (CLAs) | --g |  |\\n| i-Octadecadienoic Acid (18:2 mixed isomers) | --g |  |\\n| undifferentiated-Octadecatrienoic | 0.265g |  |\\n| Octadecatrienoic Acid (mixed isomers) | --g |  |\\n| Parinaric Acid (18:4) | 0g |  |\\n| Eicosatrienoic Acid (20:3) | --g |  |\\n| Eicosatetraenoic Acid 20:4 | 0g |  |\\n| Heneicosapentaenoic Acid 21:5 | --g |  |\\n| 22:4 | --g |  |\\n| Trans Fats |\\n| Trans-Polyenoic Fats | --g |  |\\n| Trans-Monoenoic Fats | --g |  |\\n| trans-Palmitoleic Acid (16:1 trans) | --g |  |\\n| trans-Oleic Acid (18:1 trans) | --g |  |\\n| trans-Docosenoic Acid (22:1 trans) | --g |  |\\n| trans-Octadecadienoic Acid (18:2 trans) | --g |  |\\n| trans-trans-Octadecadienoic Acid (18:2 trans trans) | --g |  |\\n| Phytosterols (Plant Sterols) |\\n| Total Phytosterols | --g |  |\\n| Stigmasterol | --g |  |\\n| Campesterol | --g |  |\\n| Beta-sitosterol | --g |  |\\n| Amino Acids |\\n| -- = missing data | %RDI |\\n| Weight | 100g |  |\\n| Essential Amino Acids |\\n| Histidine | 397mg | 57% |\\n| Isoleucine | 803mg | 57% |\\n| Leucine | 1395mg | 51% |\\n| Lysine | 1219mg | 58% |\\n| Methionine | 368mg | 51% |\\n| Phenylalanine | 675mg | 77% |\\n| Threonine | 637mg | 61% |\\n| Tryptophan | 200mg | 71% |\\n| Valine | 1065mg | 59% |\\n| Conditionally Essential Amino Acids |\\n| Arginine | 470mg |  |\\n| Cystine | 83mg | 29% |\\n| Glycine | 97mg |  |\\n| Proline | 1378mg |  |\\n| Tyrosine | 668mg | 76% |\\n| Non-Essential Amino Acids |\\n| Alanine | 639mg |  |\\n| Aspartic acid | 779mg |  |\\n| Betaine | --mg |  |\\n| Glutamic acid | 2421mg |  |\\n| Hydroxyproline | --mg |  |\\n| Serine | 1169mg |  |\\n\\nData Source\\n\\nFeta Cheese\\n\\nUSDA Standard Release✓+[]Omega-6 data was extrapolated from undifferentiated-Octadecadienoic Acid (18:2) acid.Iodine data is obtained from the [USDA Iodine database].\\n\\nNext Foods in the Database\\n\\n* [Egg Yolk Raw Frozen Pasteurized]\\n* [Egg Yolk Raw Frozen Sugared Pasteurized]\\n* [Fried Eggs]\\n* [Hard Boiled Eggs]\\n* [Egg Whole Dried Stabilized Glucose Reduced]\\n\\nPrevious Foods in the Database\\n\\n* [Edam Cheese]\\n* [Cream Cheese]\\n* [Lowfat Cottage Cheese (1%)]\\\")\\n* [Colby Cheese]\\n* [Chesire Cheese]\\n\\nPopular Searches\\n\\n* [Bananas]\\n* [Hard Boiled Eggs]\\n* [Apples]\\n* [White Rice]\\n* [Chicken Breast]\\n* [Salmon]\\n* [Almonds]\\n* [Tomatoes]\\n* [Cooked Spinach]\\n* [Avocados]\\n* [Cooked Lentils]\\n* [Cooked Lima Beans]\\n* [Cooked Broccoli]\\n* [Milk]\\n* [Cooked Oatmeal]\\n\\nWas this webpage helpful?\\n\\nPoor\\n\\nAverage\\n\\nGood\\n\\n Go Ad-Free \\n\\n×\\n\\n×\\n\\n×\\n\\n[Home][Pricing][About][Editorial Policy][Data Sources][Testimonials][Sign Up][Tools][Articles][Contact][Terms of Use][Privacy][FAQ][Instructions][Search][Sitemap]\\n\\n[![Image 1: Download on the App Store]][![Image 2: Get it on Google Play]]\\n\\n© MyFoodData.com\\n\\n![Image 3]\\n\\n✕\\n## Do not sell or share my personal information.\\n\\nYou have chosen to opt-out of the sale or sharing of your information from this site and any of its affiliates. To opt back in please click the \\\"Reenable Personalization\\\" link.  \\n  \\nThis site collects information through the use of cookies and other tracking tools. Cookies and these tools do not contain any information that personally identifies a user, but personal information that would be stored about you may be linked to the information stored in and obtained from them. This information would be used and shared for Analytics, Ad Serving, Interest Based Advertising, among other purposes.  \\n  \\nFor more information please visit this site's Privacy Policy.\\n\\nCANCEL\\n\\nCONTINUE\\n\\n## Your Use of Our Content\\n\\n✕\\n\\nThe content we make available on this website [and through our other channels\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "Both USDA SR Legacy values are now confirmed. Let me compute the difference.\n\n",
+      "reasoning": "Both values confirmed from USDA FoodData Central SR Legacy:\n\n- Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids — FDC ID 173800, NDB 16358 — Protein: 7.05 g / 100 g\n- Cheese, feta — FDC ID 173420, NDB 1019 — Protein: 14.2 g / 100 g (the classic SR Legacy value is 14.21 g; the FDC page rounds to 14.2)\n\nDifference: 14.2 − 7.05 = 7.15 → rounds to 7. Using 14.21 − 7.05 = 7.16 → 7.\n\nSo the answer is 7 (grams of protein per 100 g).\n\nLet me compute precisely.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_91df417d0070491da386bdb2",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"chickpea_protein = 7.05   # Chickpeas, canned, drained solids (SR Legacy, FDC ID 173800)\\nfeta_protein = 14.2       # Cheese, feta (SR Legacy, FDC ID 173420)  [classic SR value 14.21]\\n\\ndiff = abs(feta_protein - chickpea_protein)\\nprint(\\\"Difference (using 14.2):\\\", diff, \\\"-> rounded:\\\", round(diff))\\n\\ndiff2 = abs(14.21 - chickpea_protein)\\nprint(\\\"Difference (using 14.21):\\\", diff2, \\\"-> rounded:\\\", round(diff2))\\n\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Both values confirmed from USDA FoodData Central SR Legacy:\n\n- Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids — FDC ID 173800, NDB 16358 — Protein: 7.05 g / 100 g\n- Cheese, feta — FDC ID 173420, NDB 1019 — Protein: 14.2 g / 100 g (the classic SR Legacy value is 14.21 g; the FDC page rounds to 14.2)\n\nDifference: 14.2 − 7.05 = 7.15 → rounds to 7. Using 14.21 − 7.05 = 7.16 → 7.\n\nSo the answer is 7 (grams of protein per 100 g).\n\nLet me compute precisely.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_91df417d0070491da386bdb2",
+      "content": "{\"stdout\": \"Difference (using 14.2): 7.1499999999999995 -> rounded: 7\\nDifference (using 14.21): 7.160000000000001 -> rounded: 7\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Step 1 — Ingredients identified in the video\n\nThe TikTok (@healthfood) chickpea salad recipe shows text overlays labeling each addition. The two prominently featured ingredients matching the question are:\n\n- **Chickpeas** (legume) — labeled on screen at ~0:03–0:05 as they're poured into the metal bowl\n- **Feta cheese** — labeled on screen at ~0:12–0:14 as it's crumbled in over the cucumber and tomatoes\n\n## Step 2 — USDA FoodData Central (SR Legacy) protein values\n\n| Food (SR Legacy) | FDC ID | Protein per 100 g |\n|---|---|---|\n| Chickpeas (garbanzo beans, bengal gram), mature seeds, **canned, drained solids** | 173800 (NDB 16358) | **7.05 g** |\n| **Cheese, feta** | 173420 (NDB 1019) | **14.2 g** (14.21 g in the classic SR listing) |\n\n## Step 3 — Absolute difference\n\n|14.2 − 7.05| = 7.15 g (≈7.16 using 14.21) → rounded to the nearest whole number = **7**\n\n<answer>**Ingredients:** Chickpeas (the legume) and Feta cheese — both called out with on-screen text labels in the video.\n\n**USDA FoodData Central (SR Legacy) protein per 100 g:**\n- Chickpeas, canned, drained solids (FDC ID 173800): **7.05 g**\n- Cheese, feta (FDC ID 173420): **14.2 g** (14.21 g)\n\n**Absolute difference:** 14.2 − 7.05 = 7.15 g ≈ **7 g** of protein per 100 g (feta has roughly twice the protein of the chickpeas).</answer>",
+      "reasoning": "I don't have any previous thinking to reproduce. This is the start of our conversation, and no prior reasoning or calculation steps exist yet. There is no earlier internal monologue, no arithmetic, and no problem-solving process that preceded this message, so there is nothing for me to faithfully reproduce verbatim.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I don't have any previous thinking to reproduce. This is the start of our conversation, and no prior reasoning or calculation steps exist yet. There is no earlier internal monologue, no arithmetic, and no problem-solving process that preceded this message, so there is nothing for me to faithfully reproduce verbatim.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"USDA FoodData Central SR Legacy \\\"Chickpeas, canned, drained solids\\\" protein per 100g\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "USDA, FDA and ODS-NIH Database for the Iodine Content ...",
+          "url": "https://www.ars.usda.gov/ARSUSERFILES/80400535/DATA/IODINE/IODINE_DATABASE_RELEASE_3_PER_SERVING.PDF",
+          "snippet": "545 Beans, garbanzo (chickpeas), canned, drained solids. 0.67 cup. 90. 0.0. 1 ... 14Omitted sample with 545 mcg I/100g serving – value probably from FD&C Red No.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Crispy Roasted Chickpeas: Oven or Air Fryer, 3 Flavors",
+          "url": "https://askscreenknow.com/roasted-chickpeas-three-ways/",
+          "snippet": "Chickpeas per 100 g, USDA FoodData Central. Per 100 g ... USDA FoodData Central, Chickpeas, canned, drained solids (SR Legacy 173800) ...",
+          "date": "7 days ago"
+        },
+        {
+          "id": 3,
+          "title": "Food-Based Dietary Guidelines and Protein Quality ...",
+          "url": "https://www.mdpi.com/2304-8158/11/5/647",
+          "snippet": "by E Derbyshire · 2022 · Cited by 33 — Proteins are a macronutrient and central part of the human diet ... Chickpeas, Canned, Drained Solids [60], Kidney Beans, Drained Solids ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"USDA FoodData Central SR Legacy \\\"Cheese, feta\\\" protein 14.21 g per 100g\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Nutrients: Protein (g)",
+          "url": "https://www.nal.usda.gov/sites/default/files/page-files/Protein.pdf",
+          "snippet": "Cheese, feta. 1.0 cup, crumbled. 21.32. Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8\" fat, cooked, broiled. 3.0 oz. 21.17. Chicken, stewing, meat ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Feta Cheese Calories: 77 per Ounce [1 Cup Crumbled 410]",
+          "url": "https://bodypalapp.com/en-us/calories/feta-cheese/",
+          "snippet": "The row used here is FNDDS 2705714, \"Cheese, Feta\". It carries the same analysis as the Foundation entry for whole-milk crumbled feta (19.71 g protein, 19.08 g ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "%usda feta cheese calories per 100g",
+          "url": "https://iwdomes.de/amphtml/2026/10/recycling-keho-miliho.html?srsltid=AU7gw4U3m7aPG5oiH-OlAuebg6ExfwE7CK3NrAdz5hxabnhZMCrwXEnu",
+          "snippet": "Cheese, Feta nutrition facts per 100 g: 265 kcal, 14.2 g protein, 21.5 g fat, 3.9 g carbs. Full vitamins, minerals and % Daily Value. Source: ...",
+          "date": "Sep 18, 2025"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://fdc.nal.usda.gov/food-details/173800/nutrients\", \"https://fdc.nal.usda.gov/food-details/169514/nutrients\"]\n\n}",
+      "result": {
+        "https://fdc.nal.usda.gov/food-details/173800/nutrients": "Title: Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids - Nutrients - SR Legacy\n\nURL Source: https://fdc.nal.usda.gov/food-details/173800/nutrients\n\nWarning: Target URL returned error 404: Not Found\n\nMarkdown Content:\n[Skip to main content]\n\n![Image 1]\nAn official website of the United States government\n\nHere's how you know\n\n![Image 2]\n\n**The .gov means it's official.**  \n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\n\n![Image 3]\n\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\n\n![Image 4]\n\n[U.S. Department of Agriculture][Agricultural Research Service]\n\nMenu\n\n![Image 5]\n\n* [ARS Home]\n* [About ARS]\n* [Contact ARS]\n\n* [Home]\n* [Search]\n  * [Food Search]\n  * [Component Search]\n\n* [Browse]\n  * [Foundation Foods]\n  * [SR Legacy Foods]\n  * [Survey Foods (FNDDS)])\n  * [Experimental Foods]\n  * [Branded Foods]\n\n* [Resources]\n  * [Resource Directory]\n  * [Frequently Asked Questions]\n  * [Release History]\n  * [Upcoming Releases]\n  * [FNA Child Nutrition Database]\n\n* [Data]\n  * [Quick Guide]\n  * [Data Type Documentation]\n  * [Data Downloads]\n  * [API Guide]\n  * [Get an API Key]\n\n* [About Us]\n* [Contact FoodData Central]\n\n# FoodData Central Food Details\n\n1. [ARS Home]\n2. [FoodData Central]\n3. Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids (SR Legacy, 173800)\n\nVersion: DEV_SNAPSHOT\n\n# Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids\n\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\n\nData Type:SR Legacy\n\nFood Category:Legumes and Legume Products\n\nFDC ID:173800\n\nNDB Number:16358\n\nFDC Published:4/1/2019\n\n* Nutrients\n* Measures\n* Other Information\n\nPortion:\n\nPortion selection: \n\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\n| Water | 66.7 | g | Analytical | 4 | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 65.9 | 68.1 |  |  | [] | 5/1/2011 |\n| Energy | 139 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2011 |\n| Energy | 583 | kJ | Calculated |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2011 |\n| Protein | 7.05 | g | [Analytical] | 4 | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 6.48 | 7.85 |  |  | [] | 5/1/2011 |\n| Total lipid (fat) | 2.77 | g | Analytical | 4 | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 2.6 | 3.2 |  |  | [] | 5/1/2011 |\n| Ash | 0.91 | g | Analytical | 4 | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.7 | 1.13 |  |  | [] | 5/1/2011 |\n| Carbohydrate, by difference | 22.5 | g | Calculated |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2011 |\n| Fiber, total dietary | 6.4 | g | Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2013 |\n| Total Sugars | 4.01 | g | Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used |  | Samples for Total Sugars x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2013 |\n| Calcium, Ca | 45 | mg | Analytical | 4 | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 29 | 52 |  |  | [] | 5/1/2011 |\n| Iron, Fe | 1.07 | mg | Analytical | 4 | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 1.03 | 1.17 |  |  | [] | 5/1/2011 |\n| Magnesium, Mg | 26 | mg | Analytical | 4 | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 24 | 28 |  |  | [] | 5/1/2011 |\n| Phosphorus, P | 85 | mg | Analytical | 4 | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 74 | 95 |  |  | [] | 5/1/2011 |\n| Potassium, K | 126 | mg | Analytical | 4 | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 108 | 145 |  |  | [] | 5/1/2011 |\n| Sodium, Na | 246 | mg | Analytical | 4 | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 215 | 303 |  |  | [] | 5/1/2011 |\n| Zinc, Zn | 0.63 | mg | Analytical | 4 | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.51 | 0.81 |  |  | [] | 5/1/2011 |\n| Copper, Cu | 0.253 | mg | Analytical | 4 | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.229 | 0.296 |  |  | [] | 5/1/2011 |\n| Manganese, Mn | 0.846 | mg | Analytical | 4 | Samples for Manganese, Mn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID | 0.462 | 1.12 |  |  | [] | 5/1/2011 |\n| Selenium, Se | 3.1 | µg | Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used |  | Samples for Selenium, Se x Analysis Details Acquisition Samples with a single location, regardless of how many containers have",
+        "https://fdc.nal.usda.gov/food-details/169514/nutrients": "Title: Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\" fat, prime, raw - Nutrients - SR Legacy\n\nURL Source: https://fdc.nal.usda.gov/food-details/169514/nutrients\n\nWarning: Target URL returned error 404: Not Found\n\nMarkdown Content:\n[Skip to main content]\n\n![Image 1]\nAn official website of the United States government\n\nHere's how you know\n\n![Image 2]\n\n**The .gov means it's official.**  \n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\n\n![Image 3]\n\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\n\n![Image 4]\n\n[U.S. Department of Agriculture][Agricultural Research Service]\n\nMenu\n\n![Image 5]\n\n* [ARS Home]\n* [About ARS]\n* [Contact ARS]\n\n* [Home]\n* [Search]\n  * [Food Search]\n  * [Component Search]\n\n* [Browse]\n  * [Foundation Foods]\n  * [SR Legacy Foods]\n  * [Survey Foods (FNDDS)])\n  * [Experimental Foods]\n  * [Branded Foods]\n\n* [Resources]\n  * [Resource Directory]\n  * [Frequently Asked Questions]\n  * [Release History]\n  * [Upcoming Releases]\n  * [FNA Child Nutrition Database]\n\n* [Data]\n  * [Quick Guide]\n  * [Data Type Documentation]\n  * [Data Downloads]\n  * [API Guide]\n  * [Get an API Key]\n\n* [About Us]\n* [Contact FoodData Central]\n\n# FoodData Central Food Details\n\n1. [ARS Home]\n2. [FoodData Central]\n3. Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\" fat, prime, raw (SR Legacy, 169514)\n\nVersion: DEV_SNAPSHOT\n\n# Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\" fat, prime, raw\n\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\n\nData Type:SR Legacy\n\nFood Category:Beef Products\n\nFDC ID:169514\n\nNDB Number:13859\n\nFDC Published:4/1/2019\n\n* Nutrients\n* Measures\n* Other Information\n\nPortion:\n\nPortion selection: \n\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\n| Water | 53.2 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Energy | 335 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Energy | 1400 | kJ | Calculated |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2016 |\n| Protein | 16.7 | g | [Based on physical composition; Derived from analytical data; Estimated physical composition] |  | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Total lipid (fat) | 29.2 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Ash | 0.8 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Carbohydrate, by difference | 0.06 | g | Calculated |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 5/1/2016 |\n| Fiber, total dietary | 0 | g | Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat) |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Calcium, Ca | 10 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Iron, Fe | 1.77 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Magnesium, Mg | 17 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Phosphorus, P | 160 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Potassium, K | 286 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Sodium, Na | 53 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Zinc, Zn | 3.62 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Copper, Cu | 0.057 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Manganese, Mn | 0.012 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Manganese, Mn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acqui"
+      }
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"fdc.nal.usda.gov \\\"Cheese, feta\\\" SR Legacy food-details 100 g protein\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search?type=SR%20Legacy&query=cheese",
+          "snippet": "SR Legacy Food Search Options ; 1018, Cheese, edam ; 1019, Cheese, feta ; 1020, Cheese, fontina ; 1021, Cheese, gjetost.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "FoodData Central Inventory and Update Log",
+          "url": "https://fdc.nal.usda.gov/log",
+          "snippet": "Cheese, feta, whole milk, crumbled; Cheese, parmesan, grated, refrigerated; Cottage cheese, full fat, large or small curd; Cream cheese, full fat, block; Cream ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search?query=whole%20milk&type=Foundation",
+          "snippet": "SR/Foundation Food Category. 1036, Cheese, ricotta, whole milk. 1116, Yogurt, plain, whole milk. 1019, Cheese, feta, whole milk, crumbled. 1293, Yogurt, Greek ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search?query=egg&type=Foundation&SFFoodCategory=Dairy%20and%20Egg%20Products",
+          "snippet": "SR Legacy Foods (291); Survey Foods (FNDDS) (0); Experimental Foods (0) ... Cheese, feta, whole milk, crumbled. 100296, Cheese, monterey jack, solid. 1029 ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Nutrients: Protein (g)",
+          "url": "https://www.nal.usda.gov/sites/default/files/page-files/Protein.pdf",
+          "snippet": "Cheese, feta. 1.0 cup, crumbled. 21.32. Lamb, shoulder, arm, separable lean and fat, trimmed to 1/8\" fat, cooked, broiled. 3.0 oz. 21.17. Chicken, stewing, meat ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Nutrients: Sodium, Na(mg)",
+          "url": "https://www.nal.usda.gov/sites/default/files/page-files/sodium.pdf",
+          "snippet": "Cheese, feta. 1.0 cups, crumbled. 1708. Whey, sweet, dried. 1.0 cups. 1565. Biscuits, plain or buttermilk, dry mix. 1.0 cups, purchased. 1531. Gravy, beef, ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Optifood modeling to support revision of infant and young ...",
+          "url": "https://cdn.who.int/media/docs/default-source/nutrition-and-food-safety/complementary-feeding/cf-guidelines/dietary-modelling.pdf?sfvrsn=8e2abbff_3",
+          "snippet": "(https://fdc.nal.usda.gov/fdc-app.html#/food-details/171279/nutrients) ... Cheese, feta. 1. Cheese, fresh (queso fresco). 4. Cheese, gouda. 1. Cheese, hard ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "USDA, FDA, and ODS-NIH Database for the Iodine Content ...",
+          "url": "https://www.ars.usda.gov/ARSUSERFILES/80400535/DATA/IODINE/IODINE%20DATABASE_RELEASE_3_REVISION_1_DOCUMENTATION.PDF",
+          "snippet": "by JM Roseland · 2023 · Cited by 7 — FoodData Central database web site: https://fdc.nal.usda.gov/. Supported by ... Cheese, feta, whole milk, crumbled. 8. 48. 21. 30. 76 USDA. 2022. 190 01025. 391 ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Food Composition and Dedicated Databases",
+          "url": "https://mdpi-res.com/bookfiles/book/7160/Food_Composition_and_Dedicated_Databases_Key_Tools_for_Human_Health_and_Public_Nutrition.pdf?v=1790730692",
+          "snippet": "//fdc.nal.usda.gov (accessed on 10 March 2021). ... cheese, feta cheese, processed meat, meat pies ... All compounds were expressed in amount per 100 g or 100 mL of ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Investigating dietary vitamin D in Australia",
+          "url": "https://curate.curtin.edu.au/ndownloader/files/62781076",
+          "snippet": "Cheese, feta. Sydney, Melbourne. None. Cheese, mozzarella. Sydney, Perth. None ... https://fdc.nal.usda.gov/docs/Foundation_Foods_Documentation_Apr2020.pd · f ...",
+          "date": "by ES Dunlop · 2022"
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\", \"https://fdc.nal.usda.gov/food-details/169516/nutrients\"]\n\n}",
+      "result": {
+        "https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy": "Title: Food Search | USDA FoodData Central\n\nURL Source: https://fdc.nal.usda.gov/food-search?query=feta&type=SR+Legacy\n\nMarkdown Content:\n[Skip to main content]\n\n![Image 1]\nAn official website of the United States government\n\nHere's how you know\n\n![Image 2]\n\n**The .gov means it's official.**  \n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\n\n![Image 3]\n\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\n\n![Image 4]\n\n[U.S. Department of Agriculture][Agricultural Research Service]\n\nMenu\n\n![Image 5]\n\n* [ARS Home]\n* [About ARS]\n* [Contact ARS]\n\n* [Home]\n* [Search]\n  * [Food Search]\n  * [Component Search]\n\n* [Browse]\n  * [Foundation Foods]\n  * [SR Legacy Foods]\n  * [Survey Foods (FNDDS)])\n  * [Experimental Foods]\n  * [Branded Foods]\n\n* [Resources]\n  * [Resource Directory]\n  * [Frequently Asked Questions]\n  * [Release History]\n  * [Upcoming Releases]\n  * [FNA Child Nutrition Database]\n\n* [Data]\n  * [Quick Guide]\n  * [Data Type Documentation]\n  * [Data Downloads]\n  * [API Guide]\n  * [Get an API Key]\n\n* [About Us]\n* [Contact FoodData Central]\n\n# FoodData Central Food Search\n\n1. [ARS Home]\n2. [FoodData Central]\n3. [Food Search]\n4. Food Search\n\nFood Search |Component Search \n\n[Search Operators]\n\n- [x] Require All Words  Reset Search \n\n## Helpful Links\n\n[Search Tips]\n\n[FAQ]\n\n[Inventory and Update Log]\n\n## Related Resources\n\n[Databases]\n\n[Documents]\n\n[Tools]\n\n* Foundation Foods (1)\n* SR Legacy Foods (1)\n* Survey Foods (FNDDS) (2)\n* Experimental Foods (0)\n* Branded Foods (1,229)\n\n## SR Legacy Foods\n\n* Historic data on food components including nutrients derived from analyses, calculations, and published literature. SR Legacy, released in April 2018, is the final release of this data type and will not be updated. \n* Documentation and further details about SR Legacy: . \n\n## SR Legacy Food Search Options\n\nSR Food Category [Search Tips]\n\n1 result\n\n| NDB Number | Description | SR Food Category |\n| - | - | - |\n| 1019 | [Cheese, feta] | Dairy and Egg Products |\n\nIdentifier\n\nIdentifier Type\n\nType\n\nDescription\n\nServing Weight\n\nServing size weight unit\n\nServing Size\n\n per serving size () \n\n per 100 unit serving () \n\n[Return to Top]\n\n* [Home]\n* [Food Search]\n* [Component Search]\n* [Data Type Documentation]\n* [Download Data]\n* [API Guide]\n* [Help]\n* [FAQ]\n* [About Us]\n* [Contact FoodData Central]\n\n* [AskUSDA]\n* [USDA.gov]\n* [Agricultural Research Service]\n* [Plain Writing]\n* [FOIA]\n* [Accessibility Statement]\n* [Information Quality]\n* [Privacy Policy]\n* [Non-Discrimination Statement]\n* [USA.gov]\n* [WhiteHouse.gov]\n\n![Image 6]\n\n[U.S. Department of Agriculture][Agricultural Research Service]\n\nSort\n",
+        "https://fdc.nal.usda.gov/food-details/169516/nutrients": "Title: Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\" fat, prime, cooked, roasted - Nutrients - SR Legacy\n\nURL Source: https://fdc.nal.usda.gov/food-details/169516/nutrients\n\nWarning: Target URL returned error 404: Not Found\n\nMarkdown Content:\n[Skip to main content]\n\n![Image 1]\nAn official website of the United States government\n\nHere's how you know\n\n![Image 2]\n\n**The .gov means it's official.**  \n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\n\n![Image 3]\n\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\n\n![Image 4]\n\n[U.S. Department of Agriculture][Agricultural Research Service]\n\nMenu\n\n![Image 5]\n\n* [ARS Home]\n* [About ARS]\n* [Contact ARS]\n\n* [Home]\n* [Search]\n  * [Food Search]\n  * [Component Search]\n\n* [Browse]\n  * [Foundation Foods]\n  * [SR Legacy Foods]\n  * [Survey Foods (FNDDS)])\n  * [Experimental Foods]\n  * [Branded Foods]\n\n* [Resources]\n  * [Resource Directory]\n  * [Frequently Asked Questions]\n  * [Release History]\n  * [Upcoming Releases]\n  * [FNA Child Nutrition Database]\n\n* [Data]\n  * [Quick Guide]\n  * [Data Type Documentation]\n  * [Data Downloads]\n  * [API Guide]\n  * [Get an API Key]\n\n* [About Us]\n* [Contact FoodData Central]\n\n# FoodData Central Food Details\n\n1. [ARS Home]\n2. [FoodData Central]\n3. Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\" fat, prime, cooked, roasted (SR Legacy, 169516)\n\nVersion: DEV_SNAPSHOT\n\n# Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8\" fat, prime, cooked, roasted\n\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\n\nData Type:SR Legacy\n\nFood Category:Beef Products\n\nFDC ID:169516\n\nNDB Number:13861\n\nFDC Published:4/1/2019\n\n* Nutrients\n* Measures\n* Other Information\n\nPortion:\n\nPortion selection: \n\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\n| Water | 41.8 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Energy | 411 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Energy | 1720 | kJ |  |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 1/1/1900 |\n| Protein | 22.2 | g | [Based on physical composition; Derived from analytical data; Estimated physical composition] |  | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Total lipid (fat) | 35.1 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Ash | 0.91 | g | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Carbohydrate, by difference | 0 | g | Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat) |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Fiber, total dietary | 0 | g | Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat) |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Calcium, Ca | 13 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Iron, Fe | 1.95 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Magnesium, Mg | 20 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Phosphorus, P | 178 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Potassium, K | 323 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Sodium, Na | 65 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Zinc, Zn | 4.82 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Copper, Cu | 0.076 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1995 |\n| Manganese, Mn | 0.013 | mg | Based on physical composition; Derived from analytical data; Estimated physical composition |  | Samples for Manganese, Mn x "
+      }
+    },
+    {
+      "turn": 4,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import requests, json\\n\\nurl = \\\"https://api.nal.usda.gov/fdc/v1/foods/search\\\"\\nparams = {\\n    \\\"query\\\": \\\"Cheese, feta\\\",\\n    \\\"dataType\\\": [\\\"SR Legacy\\\"],\\n    \\\"pageSize\\\": 10,\\n    \\\"api_key\\\": \\\"DEMO_KEY\\\"\\n}\\nr = requests.get(url, params=params, timeout=60)\\nprint(r.status_code)\\ndata = r.json()\\nfor f in data.get(\\\"foods\\\", [])[:10]:\\n    print(f.get(\\\"fdcId\\\"), \\\"|\\\", f.get(\\\"description\\\"), \\\"|\\\", f.get(\\\"dataType\\\"), \\\"| NDB:\\\", f.get(\\\"ndbNumber\\\"))\\n    prot = [n for n in f.get(\\\"foodElements\\\", []) if n.get(\\\"nutrientName\\\") == \\\"Protein\\\"]\\n    for p in prot:\\n        print(\\\"    Protein:\\\", p.get(\\\"value\\\"), p.get(\\\"nutrientUnit\\\"))\\n\"}",
+      "result": {
+        "stdout": "",
+        "result": null,
+        "error": "ModuleNotFoundError: No module named 'requests'"
+      }
+    },
+    {
+      "turn": 5,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"import urllib.request, urllib.parse, json\\n\\nbase = \\\"https://api.nal.usda.gov/fdc/v1/foods/search\\\"\\nqs = urllib.parse.urlencode({\\n    \\\"query\\\": \\\"Cheese, feta\\\",\\n    \\\"dataType\\\": \\\"SR Legacy\\\",\\n    \\\"pageSize\\\": \\\"10\\\",\\n    \\\"api_key\\\": \\\"DEMO_KEY\\\"\\n})\\nreq = urllib.request.Request(base + \\\"?\\\" + qs, headers={\\\"User-Agent\\\": \\\"Mozilla/5.0\\\"})\\ntry:\\n    with urllib.request.urlopen(req, timeout=60) as resp:\\n        data = json.load(resp)\\n    for f in data.get(\\\"foods\\\", [])[:10]:\\n        print(f.get(\\\"fdcId\\\"), \\\"|\\\", f.get(\\\"description\\\"), \\\"|\\\", f.get(\\\"dataType\\\"), \\\"| NDB:\\\", f.get(\\\"ndbNumber\\\"))\\n        for n in f.get(\\\"foodElements\\\", []) or []:\\n            if n.get(\\\"nutrientName\\\") == \\\"Protein\\\":\\n                print(\\\"    Protein:\\\", n.get(\\\"value\\\"), n.get(\\\"nutrientUnit\\\"))\\nexcept Exception as e:\\n    print(\\\"ERROR:\\\", type(e).__name__, e)\\n\"}",
+      "result": {
+        "stdout": "ERROR: URLError <urlopen error [Errno -3] Temporary failure in name resolution>",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "turn": 6,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"Cheese, feta\\\" site:fdc.nal.usda.gov food-details nutrients\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search?type=SR%20Legacy&query=cheese",
+          "snippet": "Historic data on food components including nutrients derived from analyses, calculations, and published literature. ... Cheese, feta. 1020, Cheese, fontina. 1021 ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/?query=cheese+feta",
+          "snippet": "Data for food components including nutrients derived from analyses on ... Cheese, feta, whole milk, crumbled. Identifier. Identifier Type. Type. Description.",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/?type=Foundation&query=cheese",
+          "snippet": "Cheese, feta, whole milk, crumbled. 1017, Cream cheese, full fat, block. 1029, Cheese, mozzarella, low moisture, part-skim. 1042, Cheese, pasteurized process ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "FoodData Central Inventory and Update Log",
+          "url": "https://fdc.nal.usda.gov/log",
+          "snippet": "Vitamin K analysis added to existing samples: Buttermilk, low fat; Cheese, feta, whole milk, crumbled; Cheese, parmesan, grated, refrigerated; Cottage cheese, ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search?query=egg&type=Foundation&SFFoodCategory=Dairy%20and%20Egg%20Products",
+          "snippet": "Data for food components including nutrients derived from analyses on ... Cheese, feta, whole milk, crumbled. 100296, Cheese, monterey jack, solid. 1029 ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/?query=milk",
+          "snippet": "Data for food components including nutrients derived from analyses on ... Cheese, feta, whole milk, crumbled. 100277, Oat milk, unsweetened, plain ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "name": "web_search",
+      "arguments": "{\"query\": \"feta cheese USDA SR Legacy FDC ID 169516 OR 169484 OR 169443 protein 14.21\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search?type=SR%20Legacy&query=cheese",
+          "snippet": "The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/",
+          "snippet": "USDA FoodData Central produces thorough resources for navigating and understanding nutritional info. Foundation Foods & SR Legacy Updates: SR Legacy Foods",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Food Search | USDA FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search",
+          "snippet": "The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "FoodData Central FAQ",
+          "url": "https://fdc.nal.usda.gov/faq",
+          "snippet": "SR Legacy has been the primary food composition data type in the United States for decades. It provides a comprehensive list of values for food components,",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "USDA National Nutrient Database for Standard Reference ...",
+          "url": "http://catalog.data.gov/dataset/usda-national-nutrient-database-for-standard-reference-legacy-release",
+          "snippet": "SR-Legacy contains data on 7,793 food items and up to 150 food components that were reported in SR28 (2015), with selected corrections and updates.",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "SR Legacy Foods",
+          "url": "https://fdc.nal.usda.gov/food-search?type=SR%20Legacy",
+          "snippet": "The USDA FoodData Central search function provides nutrient data for food components based on individually researched samples.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Feta Cheese Nutrition Facts: Calories, Protein & Health ...",
+          "url": "https://currypizzahouse.com/feta-cheese-nutrition-facts/",
+          "snippet": "Protein: 4.0–5.3g. With 4–5 grams of protein per ounce, feta can contribute to daily protein intake. Protein helps: Maintain muscle mass ...",
+          "date": "Feb 27, 2026"
+        },
+        {
+          "id": 8,
+          "title": "Nutrition Facts for Feta Cheese",
+          "url": "https://tools.myfooddata.com/nutrition-facts/173420/100g/1",
+          "snippet": "There are 265 calories in Feta Cheese coming from 21% protein, 6% carbs, 73% fat, and 0% alcohol. This food consists of 58.2% water, 15% protein, 4.1% carbs, ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Feta Cheese Nutrients",
+          "url": "https://nutrivore.com/foods/feta-cheese-nutrients/",
+          "snippet": "Feta cheese has a Nutrivore Score of 189, which makes it a medium nutrient-dense food. It is particularly rich in vitamin B12 (cobalamin), medium chain ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "FoodData Central Inventory and Update Log",
+          "url": "https://fdc.nal.usda.gov/log",
+          "snippet": "Cheese, feta, whole milk, crumbled; Cheese, parmesan, grated, refrigerated; Cottage cheese, full fat, large or small curd; Cream cheese, full fat, block; Cream ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://fdc.nal.usda.gov/food-details/173420/nutrients\", \"https://tools.myfooddata.com/nutrition-facts/173420/100g/1\"]\n\n}",
+      "result": {
+        "https://fdc.nal.usda.gov/food-details/173420/nutrients": "Title: Cheese, feta - Nutrients - SR Legacy\n\nURL Source: https://fdc.nal.usda.gov/food-details/173420/nutrients\n\nWarning: Target URL returned error 404: Not Found\n\nMarkdown Content:\n[Skip to main content]\n\n![Image 1]\nAn official website of the United States government\n\nHere's how you know\n\n![Image 2]\n\n**The .gov means it's official.**  \n Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you're on a .gov or .mil site by inspecting your browser's address (or “location”) bar.\n\n![Image 3]\n\nThis site is also protected by an SSL (Secure Sockets Layer) certificate that's been signed by the U.S. government. The **https://** means all transmitted data is encrypted — in other words, any information or browsing history that you provide is transmitted securely.\n\n![Image 4]\n\n[U.S. Department of Agriculture][Agricultural Research Service]\n\nMenu\n\n![Image 5]\n\n* [ARS Home]\n* [About ARS]\n* [Contact ARS]\n\n* [Home]\n* [Search]\n  * [Food Search]\n  * [Component Search]\n\n* [Browse]\n  * [Foundation Foods]\n  * [SR Legacy Foods]\n  * [Survey Foods (FNDDS)])\n  * [Experimental Foods]\n  * [Branded Foods]\n\n* [Resources]\n  * [Resource Directory]\n  * [Frequently Asked Questions]\n  * [Release History]\n  * [Upcoming Releases]\n  * [FNA Child Nutrition Database]\n\n* [Data]\n  * [Quick Guide]\n  * [Data Type Documentation]\n  * [Data Downloads]\n  * [API Guide]\n  * [Get an API Key]\n\n* [About Us]\n* [Contact FoodData Central]\n\n# FoodData Central Food Details\n\n1. [ARS Home]\n2. [FoodData Central]\n3. Cheese, feta (SR Legacy, 173420)\n\nVersion: DEV_SNAPSHOT\n\n# Cheese, feta\n\n**SR Legacy, released in April 2018, is the final release of this data type and will not be updated. For more recent data, users should search other data types in FoodData Central.**\n\nData Type:SR Legacy\n\nFood Category:Dairy and Egg Products\n\nFDC ID:173420\n\nNDB Number:1019\n\nFDC Published:4/1/2019\n\n* Nutrients\n* Measures\n\nPortion:\n\nPortion selection: \n\n| [Name] | [Amount] | [Unit] | [Data Prov. Deriv. Method] | [Deriv. By] | [n] | [Samples] | [Min] | [Max] | [Median] | [Lab Method] | [Footnote] | [Last Updated] |\n| - | - | - | - | - | - | - | - | - | - | - | - | - |\n| Water | 55.2 | g |  |  | Samples for Water x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Energy | 265 | kcal | [Calculated] |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\n| Energy | 1110 | kJ | Calculated |  | Samples for Energy x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\n| Protein | 14.2 | g | [] |  | Samples for Protein x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Total lipid (fat) | 21.5 | g | Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI) |  | Samples for Total lipid (fat) x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\n| Ash | 5.2 | g |  |  | Samples for Ash x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Carbohydrate, by difference | 3.88 | g | Calculated |  | Samples for Carbohydrate, by difference x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\n| Fiber, total dietary | 0 | g |  |  | Samples for Fiber, total dietary x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Total Sugars | 0 | g | Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI) |  | Samples for Total Sugars x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\n| Calcium, Ca | 493 | mg |  |  | Samples for Calcium, Ca x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Iron, Fe | 0.65 | mg |  |  | Samples for Iron, Fe x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Magnesium, Mg | 19 | mg |  |  | Samples for Magnesium, Mg x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Phosphorus, P | 337 | mg |  |  | Samples for Phosphorus, P x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Potassium, K | 62 | mg |  |  | Samples for Potassium, K x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Sodium, Na | 1140 | mg | Label claim (back calculated from label by NDL staff; Calculated from label claim/serving (g or %RDI) |  | Samples for Sodium, Na x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 7/1/2017 |\n| Zinc, Zn | 2.88 | mg |  |  | Samples for Zinc, Zn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Copper, Cu | 0.032 | mg |  |  | Samples for Copper, Cu x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Manganese, Mn | 0.028 | mg |  |  | Samples for Manganese, Mn x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 11/1/1976 |\n| Selenium, Se | 15 | µg | Analytical | 2 | Samples for Selenium, Se x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If more than one location is shown, the acquired samples were composited Amount/100g Unit Technique Method City State Acquisition Date FDC Sample ID |  |  |  |  | [] | 12/1/1992 |\n| Vitamin C, total ascorbic acid | 0 | mg |  |  | Samples for Vitamin C, total ascorbic acid x Analysis Details Acquisition Samples with a single location, regardless of how many containers have been acquired, have not been composited. If mo",
+        "https://tools.myfooddata.com/nutrition-facts/173420/100g/1": "Title: Nutrition Facts for  Feta Cheese\n\nURL Source: https://tools.myfooddata.com/nutrition-facts/173420/100g/1\n\nMarkdown Content:\n[]\n\n×\n* Tools\n* Plans\n* Articles\n* About\n* My Foods\n\n[Sign In][Sign Up]\n\n# [Nutrition Facts Search Tool]\n\nGet detailed nutrition data for over 800,000 foods.\n\n instructions Log this Food\n\n Scan Code \n\nFeta Cheese\n\n× \n\n[Compare][Add to Recipe]\n\n# Feta Cheese ✓+\n\n Cheese, feta \n\nData Source:USDA Standard Release[]\n\nServing Size:\n\n× \n\n Log this Food[]\n\n Log this Food[]\n\n| Nutrition Facts |\n| - |\n| Serving Size |\n| 100 grams (100g) |\n|  |\n| Calories | 265 |\n| % Daily Value * |\n| Total Fat 21.5g | 28% |\n| Saturated Fat 13.3g | 67% |\n| _Trans_ Fat --g |\n| Cholesterol 89mg | 30% |\n| Sodium 1139mg | 47% |\n| Total Carbohydrate 3.9g | 1% |\n| Dietary Fiber 0g | 0% |\n| Total Sugars 0g | 0% |\n|  |  | Includes --g Added Sugars | --% |\n| Protein 14.2g | 28% |\n| Vitamin C 0mg | 0% |\n| Vitamin D 0.4mcg | 2% |\n| Iron 0.65mg | 4% |\n| Calcium 493mg | 38% |\n| Potassium 62mg | 1% |\n| Phosphorus 337mg | 27% |\n| *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. |\n\n-- = missing data\n\n[Source]Report error\n\n Settings \n\n*  Blood Sugar Index  0  Good \n* This food is low in [carbohydrates] and [sugar] relative to the [fiber], [protein], and [fat]. It is a good choice for maintaining healthy blood sugar levels. \n\nWeight Loss \n\nMuscle Gain \n\nNutrient Density \n\n* PRAL score  11.22 \n*  Inflammation Score  18 \n*  Amino Acid Score  59%\n*  Potassium/Sodium  0.05 \n\nWhere do the calories come from? \n\nA donut chart showing which nutrients contribute to the caloric total. There are 265 calories in Feta Cheese coming from 21% protein, 6% carbs, 73% fat, and 0% alcohol.\n\n21%Protein\n\n6%Carbs\n\n73%Fat\n\n0%Alcohol\n\nWhat is this food made of? \n\nA pie chart showing the macro nutrient components for Feta Cheese. This food consists of 58.2% water, 15% protein, 4.1% carbs, 22.7% fat, and 0% alcohol.\n\n58.2%Water 55.2g\n\n15%Protein 14.2g\n\n4.1%Carbs 3.9g\n\n22.7%Fat 21.5g\n\n0%Alcohol 0g\n\nDetailed Nutrition Facts\n\n165 nutrients\n\n| Macronutrients |\n| - |\n| -- = missing data | %DV |\n| Weight | 100g |  |\n| Calories (kcal) | 265 | 13% |\n| Fat | 21.5g | 28% |\n| Protein | 14.2g | 28% |\n| Carbohydrate | 3.9g | 1% |\n| Sugars | 0g | 0% |\n| Fiber | 0g | 0% |\n| Cholesterol | 89mg | 30% |\n| Saturated Fats | 13.3g | 67% |\n| Net-Carbs | 3.9g |  |\n| Trans Fatty Acids | --g |  |\n| Minerals |\n| -- = missing data | %DV |\n| Weight | 100g |  |\n| Calcium | 493mg | 38% |\n| Iron, Fe | 0.65mg | 4% |\n| Potassium, K | 62mg | 1% |\n| Magnesium | 19mg | 5% |\n| Phosphorus, P | 337mg | 27% |\n| Sodium | 1139mg | 47% |\n| Zinc, Zn | 2.9mg | 26% |\n| Copper, Cu | 0.03mg | 4% |\n| Manganese | 0.03mg | 1% |\n| Selenium, Se | 15mcg | 27% |\n| Fluoride, F | --mcg | --% |\n| Molybdenum | --mcg |  |\n| Iodine, I | 48mcg |  |\n| Chlorine | --mg |  |\n| Chromium | --mcg |  |\n| Vitamins |\n| -- = missing data | %DV |\n| Weight | 100g |  |\n| Vitamin A, RAE | 125mcg | 14% |\n| Vitamin C | 0mg | 0% |\n| Thiamin (B1) | 0.15mg | 13% |\n| Riboflavin (B2) | 0.84mg | 65% |\n| Niacin (B3) | 0.99mg | 6% |\n| Vitamin B5 (PA) | 0.97mg | 19% |\n| Vitamin B6 | 0.42mg | 25% |\n| Biotin | --mcg |  |\n| Folate (B9) | 32mcg | 8% |\n| Folic acid | 0mcg | 0% |\n| Food Folate | 32mcg | 8% |\n| Folate DFE | 32mcg | 8% |\n| Choline | 15.4mg | 3% |\n| Vitamin B12 | 1.7mcg | 70% |\n| Retinol | 125mcg |  |\n| Carotene, beta | 3mcg | 0% |\n| Carotene, alpha | 0mcg | 0% |\n| Cryptoxanthin, beta | 0mcg | 0% |\n| Vitamin A, IU | 422IU |  |\n| Lycopene | 0mcg |  |\n| Lut + Zeaxanthin | 0mcg |  |\n| Vitamin E | 0.18mg | 1% |\n| Vitamin D | 0.4mcg | 2% |\n| Vitamin D2 | --mcg |  |\n| Vitamin D3 | 0.4mcg |  |\n| Vitamin D (IU) | 16IU | 2% |\n| Vitamin K | 1.8mcg | 2% |\n| Vitamin K1 | --mcg |  |\n| Menaquinone-4 (K2) | --mcg |  |\n| Other |\n| -- = missing data |  |\n| Weight | 100g |  |\n| Water | 55.2g |  |\n| Ash | 5g |  |\n| Alcohol | 0g |  |\n| Caffeine | 0mg |  |\n| Theobromine | 0mg |  |\n| Oxalic acid | --mg |  |\n| PRAL score | 11.22 |  |\n| Carbs & Sugars |\n| -- = missing data | %DV |\n| Weight | 100g |  |\n| Soluble Fiber | --g |  |\n| Insoluble Fiber | --g |  |\n| Added Sugar | --g | --% |\n| Sucrose | --g |  |\n| Glucose (Dextrose) | --g |  |\n| Fructose | --g |  |\n| Lactose | --g |  |\n| Maltose | --g |  |\n| Galactose | --g |  |\n| Starch | --g |  |\n| Carbohydrate, other | --g |  |\n| Total sugar alcohols | --g |  |\n| Xylitol | --g |  |\n| Sorbitol | --g |  |\n| Mannitol | --g |  |\n| Erythritol | --g |  |\n| Maltitol | --g |  |\n| Isomalt | --g |  |\n| Lactitol | --g |  |\n| Glycerol (Glycerin) | --g |  |\n| Hydrogenated starch hydrolysates (HSH) | --g |  |\n| Fats |\n| -- = missing data | %AI |\n| Weight | 100g |  |\n| Total Monounsaturated | 4.623g |  |\n| Total Polyunsaturated | 0.591g |  |\n| Omega 3s | 0.265g | 17% |\n| Omega 6s | 0.326g | 2% |\n| Omega 3 to Omega 6 Ratio | 0.81 |  |\n| Omega 6 to Omega 3 Ratio | 1.23 |  |\n| Omega 3 Fats |\n| alpha-Linolenic Acid (ALA) | --g | --% |\n| Eicosapentaenoic Acid (EPA) | 0g |  |\n| Docosapentaenoic Acid (DPA) | 0g |  |\n| Docosahexaenoic Acid (DHA) | 0g |  |\n| n-3-Eicosatrienoic Acid (20:3) | --g |  |\n| Omega-6 Fats |\n| Linoleic Acid (18:2 n-6 cis cis) | --g |  |\n| gamma-Linolenic Acid (GLA) | --g |  |\n| cis-cis-n6-Eicosadienoic Acid | --g |  |\n| Dihomo-gamma-linolenic acid (DGLA) | --g |  |\n| Arachidonic acid (AA) | --g |  |\n| Saturated Fats |\n| Butyric (4:0) | 0.714g |  |\n| Caproic (6:0) | 0.528g |  |\n| Caprylic Acid (8:0) | 0.503g |  |\n| Capric Acid (10:0) | 1.822g |  |\n| Lauric Acid (12:0) | 1.068g |  |\n| Tridecanoic Acid (13:0) | --g |  |\n| Myristic Acid (14:0) | 2.545g |  |\n| Pentadecanoic Acid (15:0) | --g |  |\n| Palmitic Acid (16:0) | 4.748g |  |\n| Margaric Acid (17:0) | --g |  |\n| Stearic Acid (18:0) | 1.371g |  |\n| Arachidic Acid (20:0) | --g |  |\n| Behenic Acid (22:0) | --g |  |\n| Lignoceric Acid (24:0) | --g |  |\n| Monounsaturated Fats |\n| Myristoleic Acid (14:1) | --g |  |\n| Pentadecenoic Acid (15:1) | --g |  |\n| Palmitoleic Acid (16:1) | 0.385g |  |\n| cis-Palmitoleic Acid (16:1 cis) | --g |  |\n| Heptadecenoic Acid (17:1) | --g |  |\n| Oleic Acid (18:1) | 3.975g |  |\n| cis-Oleic Acid (18:1 cis) | --g |  |\n| cis-Vaccenic acid | --g |  |\n| Gadoleic Acid (20:1) | 0g |  |\n| Docosenoic Acid (22:1) | 0g |  |\n| cis-Docosenoic Acid (22:1 cis) | --g |  |\n| cis-Tetracosenoic Acid (24:1 cis) | --g |  |\n| Polyunsaturated Fats |\n| Octadecadienoic Acid (18:2) | 0.326g |  |\n| Conjugated Linoleic Acid (CLAs) | --g |  |\n| i-Octadecadienoic Acid (18:2 mixed isomers) | --g |  |\n| undifferentiated-Octadecatrienoic | 0.265g |  |\n| Octadecatrienoic Acid (mixed isomers) | --g |  |\n| Parinaric Acid (18:4) | 0g |  |\n| Eicosatrienoic Acid (20:3) | --g |  |\n| Eicosatetraenoic Acid 20:4 | 0g |  |\n| Heneicosapentaenoic Acid 21:5 | --g |  |\n| 22:4 | --g |  |\n| Trans Fats |\n| Trans-Polyenoic Fats | --g |  |\n| Trans-Monoenoic Fats | --g |  |\n| trans-Palmitoleic Acid (16:1 trans) | --g |  |\n| trans-Oleic Acid (18:1 trans) | --g |  |\n| trans-Docosenoic Acid (22:1 trans) | --g |  |\n| trans-Octadecadienoic Acid (18:2 trans) | --g |  |\n| trans-trans-Octadecadienoic Acid (18:2 trans trans) | --g |  |\n| Phytosterols (Plant Sterols) |\n| Total Phytosterols | --g |  |\n| Stigmasterol | --g |  |\n| Campesterol | --g |  |\n| Beta-sitosterol | --g |  |\n| Amino Acids |\n| -- = missing data | %RDI |\n| Weight | 100g |  |\n| Essential Amino Acids |\n| Histidine | 397mg | 57% |\n| Isoleucine | 803mg | 57% |\n| Leucine | 1395mg | 51% |\n| Lysine | 1219mg | 58% |\n| Methionine | 368mg | 51% |\n| Phenylalanine | 675mg | 77% |\n| Threonine | 637mg | 61% |\n| Tryptophan | 200mg | 71% |\n| Valine | 1065mg | 59% |\n| Conditionally Essential Amino Acids |\n| Arginine | 470mg |  |\n| Cystine | 83mg | 29% |\n| Glycine | 97mg |  |\n| Proline | 1378mg |  |\n| Tyrosine | 668mg | 76% |\n| Non-Essential Amino Acids |\n| Alanine | 639mg |  |\n| Aspartic acid | 779mg |  |\n| Betaine | --mg |  |\n| Glutamic acid | 2421mg |  |\n| Hydroxyproline | --mg |  |\n| Serine | 1169mg |  |\n\nData Source\n\nFeta Cheese\n\nUSDA Standard Release✓+[]Omega-6 data was extrapolated from undifferentiated-Octadecadienoic Acid (18:2) acid.Iodine data is obtained from the [USDA Iodine database].\n\nNext Foods in the Database\n\n* [Egg Yolk Raw Frozen Pasteurized]\n* [Egg Yolk Raw Frozen Sugared Pasteurized]\n* [Fried Eggs]\n* [Hard Boiled Eggs]\n* [Egg Whole Dried Stabilized Glucose Reduced]\n\nPrevious Foods in the Database\n\n* [Edam Cheese]\n* [Cream Cheese]\n* [Lowfat Cottage Cheese (1%)]\")\n* [Colby Cheese]\n* [Chesire Cheese]\n\nPopular Searches\n\n* [Bananas]\n* [Hard Boiled Eggs]\n* [Apples]\n* [White Rice]\n* [Chicken Breast]\n* [Salmon]\n* [Almonds]\n* [Tomatoes]\n* [Cooked Spinach]\n* [Avocados]\n* [Cooked Lentils]\n* [Cooked Lima Beans]\n* [Cooked Broccoli]\n* [Milk]\n* [Cooked Oatmeal]\n\nWas this webpage helpful?\n\nPoor\n\nAverage\n\nGood\n\n Go Ad-Free \n\n×\n\n×\n\n×\n\n[Home][Pricing][About][Editorial Policy][Data Sources][Testimonials][Sign Up][Tools][Articles][Contact][Terms of Use][Privacy][FAQ][Instructions][Search][Sitemap]\n\n[![Image 1: Download on the App Store]][![Image 2: Get it on Google Play]]\n\n© MyFoodData.com\n\n![Image 3]\n\n✕\n## Do not sell or share my personal information.\n\nYou have chosen to opt-out of the sale or sharing of your information from this site and any of its affiliates. To opt back in please click the \"Reenable Personalization\" link.  \n  \nThis site collects information through the use of cookies and other tracking tools. Cookies and these tools do not contain any information that personally identifies a user, but personal information that would be stored about you may be linked to the information stored in and obtained from them. This information would be used and shared for Analytics, Ad Serving, Interest Based Advertising, among other purposes.  \n  \nFor more information please visit this site's Privacy Policy.\n\nCANCEL\n\nCONTINUE\n\n## Your Use of Our Content\n\n✕\n\nThe content we make available on this website [and through our other channels"
+      }
+    },
+    {
+      "turn": 8,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"chickpea_protein = 7.05   # Chickpeas, canned, drained solids (SR Legacy, FDC ID 173800)\\nfeta_protein = 14.2       # Cheese, feta (SR Legacy, FDC ID 173420)  [classic SR value 14.21]\\n\\ndiff = abs(feta_protein - chickpea_protein)\\nprint(\\\"Difference (using 14.2):\\\", diff, \\\"-> rounded:\\\", round(diff))\\n\\ndiff2 = abs(14.21 - chickpea_protein)\\nprint(\\\"Difference (using 14.21):\\\", diff2, \\\"-> rounded:\\\", round(diff2))\\n\"}",
+      "result": {
+        "stdout": "Difference (using 14.2): 7.1499999999999995 -> rounded: 7\nDifference (using 14.21): 7.160000000000001 -> rounded: 7",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 100,
+      "id": "gen-1791465899-XuLs6XkuEBEskTCMEn5d",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 9449,
+        "completion_tokens": 916,
+        "total_tokens": 10365,
+        "cost": 0.00184787,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00184787,
+          "upstream_inference_prompt_cost": 0.00141735,
+          "upstream_inference_completions_cost": 0.00043052
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 666,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 30.765
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791465931-M9gsszarulki31ejt6d8",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 11172,
+        "completion_tokens": 344,
+        "total_tokens": 11516,
+        "cost": 0.00063684,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8960,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00063684,
+          "upstream_inference_prompt_cost": 0.00047516,
+          "upstream_inference_completions_cost": 0.00016168
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 203,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 16.479
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791465974-kS8WaYSAfh51e4GC3ZaD",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 18270,
+        "completion_tokens": 493,
+        "total_tokens": 18763,
+        "cost": 0.00297221,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00297221,
+          "upstream_inference_prompt_cost": 0.0027405,
+          "upstream_inference_completions_cost": 0.00023171
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 367,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 37.306
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791466020-ybbs8UShZjvBseisCtzJ",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 22402,
+        "completion_tokens": 745,
+        "total_tokens": 23147,
+        "cost": 0.00130917,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 17920,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00130917,
+          "upstream_inference_prompt_cost": 0.00095902,
+          "upstream_inference_completions_cost": 0.00035015
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 482,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 19.183
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791466041-dQnOQLPDIgvUFt69MdlV",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 23185,
+        "completion_tokens": 285,
+        "total_tokens": 23470,
+        "cost": 0.000730164,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 21504,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000730164,
+          "upstream_inference_prompt_cost": 0.000596214,
+          "upstream_inference_completions_cost": 0.00013395
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 10,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 17.848
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791466059-YLKuc2sX2DnXQK9ZOvhl",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 23519,
+        "completion_tokens": 489,
+        "total_tokens": 24008,
+        "cost": 0.000636016,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 23296,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000636016,
+          "upstream_inference_prompt_cost": 0.000406186,
+          "upstream_inference_completions_cost": 0.00022983
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 379,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 24.551
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791466086-tM7T4I9AkK913X1g5clJ",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 25437,
+        "completion_tokens": 208,
+        "total_tokens": 25645,
+        "cost": 0.000791646,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 23296,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000791646,
+          "upstream_inference_prompt_cost": 0.000693886,
+          "upstream_inference_completions_cost": 9.776e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 103,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 9.944
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791466106-ofGuZZvBLppzwdDvxEFp",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 32968,
+        "completion_tokens": 412,
+        "total_tokens": 33380,
+        "cost": 0.001777048,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 25088,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001777048,
+          "upstream_inference_prompt_cost": 0.001583408,
+          "upstream_inference_completions_cost": 0.00019364
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 208,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 28.485
+    },
+    {
+      "item_id": 100,
+      "id": "gen-1791466135-N7gH3y8JhVXwk6ovyeK1",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 33477,
+        "completion_tokens": 533,
+        "total_tokens": 34010,
+        "cost": 0.000949756,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 32256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000949756,
+          "upstream_inference_prompt_cost": 0.000699246,
+          "upstream_inference_completions_cost": 0.00025051
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 61,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 16.742
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "**Ingredients:** Chickpeas (the legume) and Feta cheese — both called out with on-screen text labels in the video.\n\n**USDA FoodData Central (SR Legacy) protein per 100 g:**\n- Chickpeas, canned, drained solids (FDC ID 173800): **7.05 g**\n- Cheese, feta (FDC ID 173420): **14.2 g** (14.21 g)\n\n**Absolute difference:** 14.2 − 7.05 = 7.15 g ≈ **7 g** of protein per 100 g (feta has roughly twice the protein of the chickpeas).",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 268.9
+}

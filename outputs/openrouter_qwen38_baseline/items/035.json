@@ -1,0 +1,502 @@
+{
+  "id": 35,
+  "question": "In a video review of the Argus A camera, the narrator mentions its manufacture year based on the serial number and also notes the camera's age relative to the recording date. Using these clues, determine the year the video was recorded. Then, perform web searches to find: (a) the founding year of the International Radio Corporation (the original manufacturer), (b) the year the company changed its name to Argus, Inc., and (c) the production start and end years of the Argus A model. With all these dates, evaluate the expression: (recording year - founding year) × (name change year - manufacture year) ÷ (production end year - production start year), rounding the final result to the nearest integer.",
+  "Level": "Hard",
+  "category": "Arts & Culture",
+  "task_type": "video w/ audio",
+  "answer": "69",
+  "output": "## Solution\n\n**Step 1 — Recording year (from the video/audio):**\n- The narrator states the serial number indicates the camera was made in **1940**.\n- Later he says, \"for a camera that's, what, **77 years old** now?\"\n- Recording year = 1940 + 77 = **2017** ✓ (consistent with \"predates World War II\" and the 1936–1941 production span he cites).\n\n**Step 2 — Web research findings:**\n- **(a) Founding of International Radio Corporation:** **1931**, in Ann Arbor, Michigan (per Wikipedia's \"International Radio Corporation\" article and the Argus Museum history page).\n- **(b) Name change to Argus, Inc.:** **1944** (\"In 1944, the company changed its name to Argus, Inc.\" — Argus Museum and Wikipedia's \"Argus (camera company)\" article).\n- **(c) Argus A production years:** **1936–1941** (matches the audio; confirmed by Wikipedia's model list \"A (1936–1941),\" Camera-wiki, and other collector references).\n\n**Step 3 — Evaluate the expression:**\n- (Recording year − Founding year) = 2017 − 1931 = **86**\n- (Name change year − Manufacture year) = 1944 − 1940 = **4**\n- (Production end − Production start) = 1941 − 1936 = **5**\n- Result: 86 × 4 ÷ 5 = 344 ÷ 5 = 68.8 → rounded to **69**\n\n<answer>69</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "In a video review of the Argus A camera, the narrator mentions its manufacture year based on the serial number and also notes the camera's age relative to the recording date. Using these clues, determine the year the video was recorded. Then, perform web searches to find: (a) the founding year of the International Radio Corporation (the original manufacturer), (b) the year the company changed its name to Argus, Inc., and (c) the production start and end years of the Argus A model. With all these dates, evaluate the expression: (recording year - founding year) × (name change year - manufacture year) ÷ (production end year - production start year), rounding the final result to the nearest integer."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:2533354 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:1274124 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me try solve this step by step.\n\nFrom the audio: the camera was made from 1936 to 1941. The serial number indicates it was made in 1940. \"This guy actually predates World War II.\" Also, \"for a camera that's what, 77 years old now?\" So recording year = 1940 + 77 = 2017.\n\nNext, web search:\n(a) Founding year of International Radio Corporation — I recall it was founded in 1931 in Ann Arbor, Michigan by Charles Bickford... Actually, International Radio Corporation was founded in 1931. Let me confirm via search.\n(b) Year the company changed its name to Argus, Inc. — 1936? Actually, I.R.C. became Argus Camera Company in 1936... Let me search. Some sources say International Radio Corporation was reorganized as Argus, Inc. in 1936. Hmm, others say 1937. Needs confirmation.\n(c) Production start and end years of Argus A: 1936–1941 (from the video itself). But the search should confirm.\n\nFormula: (recording year − manufacturing year) × (renaming year − manufacturing year) ÷ (production end year − production start year)\n\nRecording year = 2017, manufacturing year = 1940. So 2017 − 1940 = 77.\nRenaming year = probably 1936; 1936 − 1940 = −4.\nProduction end − start = 1941 − 1936 = 5.\n\n77 × (−4) / 5 = −308/5 = −61.6 → rounded to −62.\n\nBut wait, if renaming year is 1937: 1937 − 1940 = −3; 77 × (−3)/5 = −231/5 = −46.2 → −46.\n\nSo I need to confirm the renaming year. Let me search.\n\nInternational Radio Corporation was founded in 1931 in Ann Arbor, Michigan. It moved to Fitzwilliam, New Hampshire... Actually, the Argus camera was first produced in 1936 by International Radio Corp in Ann Arbor, Michigan. In 1936 the company was reorganized as Argus Camera Company? Hmm.\n\nWikipedia's \"Argus Camera\": \"Argus, Inc. ... founded in 1931 as International Radio Corporation ... In 1936, the company introduced the Argus Corgi...\" Let me try to recall: Charles Bickford founded International Radio Corporation in 1931. The first Argus camera (Argus A) appeared in 1936. The company was renamed to Argus Camera Company in 1936? Or 1937? Some sources: \"In 1936, IRC was reorganized as Argus, Inc.\" Hmm.\n\nActually, according to orphancameras and other sources: \"International Radio Corp (I.R.C.) was founded in 1931 in Ann Arbor, Michigan... In 1936, the company began producing the Argus A camera... The company was renamed Argus Camera Company in 1937 and moved to Fitzwilliam, New Hampshire.\"\n\nLet me search to confirm.\n\nThe question says \"(b) the year the company changed its name to Argus, Inc.\" So the expected answer might be 1936. Hmm, but let me search anyway.\n\nLet me do a web search.\n\nPlan:\n1. Confirm the video's facts: recording year 2017 (1940 + 77).\n2. Search \"International Radio Corporation founded 1931 Argus\"\n3. Search \"Argus Inc name change year International Radio Corporation\"\n4. Search \"Argus A camera production years 1936 1941\"\n\nThen calculate.\n\nLet me run the searches in parallel.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_edecfcafc63a414184370ce2",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"International Radio Corporation founded 1931 Argus camera Charles Bickford\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_c1fd65eda2914ac3a715dc5c",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"International Radio Corporation changed name to Argus Inc year\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 2,
+          "id": "call_f2fd8d5ae3b248ecb132337e",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Argus A camera production years 1936 to 1941\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me try solve this step by step.\n\nFrom the audio: the camera was made from 1936 to 1941. The serial number indicates it was made in 1940. \"This guy actually predates World War II.\" Also, \"for a camera that's what, 77 years old now?\" So recording year = 1940 + 77 = 2017.\n\nNext, web search:\n(a) Founding year of International Radio Corporation — I recall it was founded in 1931 in Ann Arbor, Michigan by Charles Bickford... Actually, International Radio Corporation was founded in 1931. Let me confirm via search.\n(b) Year the company changed its name to Argus, Inc. — 1936? Actually, I.R.C. became Argus Camera Company in 1936... Let me search. Some sources say International Radio Corporation was reorganized as Argus, Inc. in 1936. Hmm, others say 1937. Needs confirmation.\n(c) Production start and end years of Argus A: 1936–1941 (from the video itself). But the search should confirm.\n\nFormula: (recording year − manufacturing year) × (renaming year − manufacturing year) ÷ (production end year − production start year)\n\nRecording year = 2017, manufacturing year = 1940. So 2017 − 1940 = 77.\nRenaming year = probably 1936; 1936 − 1940 = −4.\nProduction end − start = 1941 − 1936 = 5.\n\n77 × (−4) / 5 = −308/5 = −61.6 → rounded to −62.\n\nBut wait, if renaming year is 1937: 1937 − 1940 = −3; 77 × (−3)/5 = −231/5 = −46.2 → −46.\n\nSo I need to confirm the renaming year. Let me search.\n\nInternational Radio Corporation was founded in 1931 in Ann Arbor, Michigan. It moved to Fitzwilliam, New Hampshire... Actually, the Argus camera was first produced in 1936 by International Radio Corp in Ann Arbor, Michigan. In 1936 the company was reorganized as Argus Camera Company? Hmm.\n\nWikipedia's \"Argus Camera\": \"Argus, Inc. ... founded in 1931 as International Radio Corporation ... In 1936, the company introduced the Argus Corgi...\" Let me try to recall: Charles Bickford founded International Radio Corporation in 1931. The first Argus camera (Argus A) appeared in 1936. The company was renamed to Argus Camera Company in 1936? Or 1937? Some sources: \"In 1936, IRC was reorganized as Argus, Inc.\" Hmm.\n\nActually, according to orphancameras and other sources: \"International Radio Corp (I.R.C.) was founded in 1931 in Ann Arbor, Michigan... In 1936, the company began producing the Argus A camera... The company was renamed Argus Camera Company in 1937 and moved to Fitzwilliam, New Hampshire.\"\n\nLet me search to confirm.\n\nThe question says \"(b) the year the company changed its name to Argus, Inc.\" So the expected answer might be 1936. Hmm, but let me search anyway.\n\nLet me do a web search.\n\nPlan:\n1. Confirm the video's facts: recording year 2017 (1940 + 77).\n2. Search \"International Radio Corporation founded 1931 Argus\"\n3. Search \"Argus Inc name change year International Radio Corporation\"\n4. Search \"Argus A camera production years 1936 1941\"\n\nThen calculate.\n\nLet me run the searches in parallel.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_edecfcafc63a414184370ce2",
+      "content": "[{\"id\": 1, \"title\": \"List of British innovations and discoveries\", \"url\": \"https://en.wikipedia.org/wiki/List_of_British_innovations_and_discoveries\", \"snippet\": \"The following is a list and timeline of innovations as well as inventions and discoveries that involved British people or the United Kingdom including the ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"J2P and P2J Ver 1\", \"url\": \"https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-12-26.pdf\", \"snippet\": \"short of 100,000 sets, hardly much more than a show -case item for dealers, and, according to FCC commissioners and industry big-.\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_c1fd65eda2914ac3a715dc5c",
+      "content": "[{\"id\": 1, \"title\": \"History of Argus\", \"url\": \"https://www.argusmuseum.org/history-of-argus\", \"snippet\": \"Argus Cameras, Incorporated was originally founded as the International Radio Corporation ... In 1944, the company changed its name to Argus, Inc. By war's end, ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"International Radio Corporation\", \"url\": \"https://en.wikipedia.org/wiki/International_Radio_Corporation\", \"snippet\": \"After World War II, International Industries and its International Research division became wholly owned subsidiaries of Argus, Inc., after which point the ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"The Story of Argus Camera - Ann Arbor\", \"url\": \"https://aadl.org/arguscamera\", \"snippet\": \"With the first camera rolling off the assembly line in 1936, the name of the company was changed to Argus, after the Greek mythological god of 1,000 eyes.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Argus Model K Camera - Dan Cuny\", \"url\": \"https://www.dancuny.com/camera-collecting-blog/tag/International+Radio+Corp.\", \"snippet\": \"With Government loans, Argus expanded, and in 1944, the company changed its name to Argus, Inc. and won several awards for its war effort in ...\", \"date\": \"Jul 11, 2024\"}, {\"id\": 5, \"title\": \"International Radio Corp (Kadette); Ann Arbor, MI.\", \"url\": \"https://www.radiomuseum.org/dsp_hersteller_detail.cfm?company_id=2642\", \"snippet\": \"The Argus was introduced in 1936 and was immediately a great success. After the war, International Industries and their new International Research division ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"International Radio Corporation - Ann Arbor\", \"url\": \"https://localwiki.org/ann-arbor/International_Radio_Corporation\", \"snippet\": \"In 1939 the company sold its radio product line to W. Keene Jackson, who formed a new Kadette Radio Corp..\", \"date\": \"\"}, {\"id\": 7, \"title\": \"RCA founded in 1919 as radio corporation of america\", \"url\": \"https://www.facebook.com/MuseumTV/posts/on-this-day-in-1919-the-radio-corporation-of-america-was-founded-later-renamed-r/716832967154134/\", \"snippet\": \"On this day in 1919, the Radio Corporation of America was founded. Later renamed RCA, this corporation was originally created at the end of WWI ...\", \"date\": \"2 years ago\"}, {\"id\": 8, \"title\": \"ARGUS LEADER (SIOUX FALLS) | Encyclopedia of the ...\", \"url\": \"https://plainshumanities.unl.edu/encyclopedia/doc/egp.med.003.html\", \"snippet\": \"The consolidation occurred in 1887, and the name was hyphenated until December 3, 1979.\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Argus (camera company)\", \"url\": \"https://en.wikipedia.org/wiki/Argus_(camera_company)\", \"snippet\": \"... radio equipment for the armed forces during World War II. The company changed its name to Argus, Inc. in 1944. Argus introduced the Argus Model 21 in ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"International Radio Corporation's Best Seller\", \"url\": \"https://antiqueradios.com/forums/viewtopic.php?t=375144\", \"snippet\": \"In 1939 they introduced the Argus C3, which become such a success that IRC sold off its radio business and focused on cameras. Over two million ...\", \"date\": \"Apr 1, 2020\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f2fd8d5ae3b248ecb132337e",
+      "content": "[{\"id\": 1, \"title\": \"1936 Argus Model A camera takes crisp images\", \"url\": \"https://www.facebook.com/groups/vintagecameralens/posts/1100654044403138/\", \"snippet\": \"Manufactured from 1936 - 1941, the Argus A was designed to use Kodak 35mm daylight loading cartridges, and could be had for a modest $12.50.\", \"date\": \"2 years ago\"}, {\"id\": 2, \"title\": \"Argus A - Camera-wiki.org - The free camera encyclopedia\", \"url\": \"https://camera-wiki.org/wiki/Argus_A\", \"snippet\": \"Produced in Ann Arbor, Michigan, from 1936 to 1941 by the company still called International Research Corporation, [1] the original price of $ ...\", \"date\": \"May 17, 2025\"}, {\"id\": 3, \"title\": \"When Was My Argus Camera Made?\", \"url\": \"https://argusinfo.net/DatingGuide/DatingYourArgus.htm\", \"snippet\": \"A guide to estimating the date of production for Argus cameras made between 1936 and 1966. A 1936 - 1941. The range 1037 - 211589 is per ...\", \"date\": \"Nov 18, 2025\"}, {\"id\": 4, \"title\": \"Argus A c.1938-1948 – William B. Cavanaugh Collection\", \"url\": \"https://library.umbc.edu/cavanaugh/home/35mm-film/argus-a/\", \"snippet\": \"Argus A, 1936-1941. The Argus A was one of the first American-made 35 mm cameras. Argus was the most common 35mm camera sold in America until the Kodak 35.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Argus A 35mm Camera\", \"url\": \"https://filmphotographyproject.com/argus-35mm-camera/\", \"snippet\": \"The Model A was made from 1936 to 1941. Introductory price was $12.50. All total about half a million Model A type cameras were produced.\", \"date\": \"Jan 12, 2015\"}, {\"id\": 6, \"title\": \"Argus A\", \"url\": \"https://www.cameraquest.com/arg2.htm\", \"snippet\": \"The original A was made from 1936 to 1941. It lived on in six derivative models until 1951. over 210,000 Argus A's were produced and that the A ...\", \"date\": \"Jan 31, 2016\"}, {\"id\": 7, \"title\": \"Argus \\\"A\\\" Series Cameras\", \"url\": \"https://www.arguscg.org/reference/a.shtml\", \"snippet\": \"Gambino Model: A Production Years: 1936-1941 Description: 50mm F4.5 Original Argus with Collapsible Lens Mount. Produced in Grey, Brown, as well as Black and ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"52 Cameras: # 144 — Argus A\", \"url\": \"https://www.youtube.com/watch?v=2KZAkl53hZE\", \"snippet\": \"52 Cameras: # 144 — Argus A. Vintage Camera Digest The BEST camera from ARGUS? Size 6x9 Folding Cameras (Bessa I, Moskva 5, Agfa Billy Record ...\", \"date\": \"8 years ago\"}, {\"id\": 9, \"title\": \"Argus Model C camera - Dan Cuny\", \"url\": \"https://www.dancuny.com/camera-collecting-blog/2025/9/17/argus-model-c-camera\", \"snippet\": \"In 1936, IRC launched the Argus Model A, the first low-cost 35mm camera manufactured in the United States. Priced at just $12.50 when most ...\", \"date\": \"Sep 18, 2025\"}, {\"id\": 10, \"title\": \"The Story Of The Argus A\", \"url\": \"https://theargusa.com/History.htm\", \"snippet\": \"The Argus, priced at only $12.50, was a success from its debut in early 1936; IRC later claimed to have sold 30,000 cameras in the first week alone. Prospects ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "There's some contradictory information regarding the year the name was changed. According to the Argus Museum, \"In 1944, the company changed its name to Argus, Inc.\" Wikipedia (Argus camera company) also states, \"The company changed its name to Argus, Inc. in 1944.\" However, the Ann Arbor District Library says, \"As the first camera rolled off the assembly line in 1936, the company name was changed to Argus.\"\n\nThe question specifically asks about \"(b) the year the company changed its name to Argus, Inc.\"——the phrase \"Argus, Inc.\" matches the 1944 date in Wikipedia and the Argus Museum. Therefore, (b) = 1944.\n\nNext, regarding (a) the founding year of International Radio Corporation. Let's check Wikipedia. I believe it was founded in 1931. Let me pull up the Wikipedia page for International Radio Corporation and the history page of the Argus Museum to verify.\n\nAlso, production years for the Argus A: 1936–1941 (confirmed by multiple sources and the video itself).\n\nYear of recording: 1940 + 77 = 2017.\n\nNow let's calculate:\n- Recording year − Founding year = 2017 − 1931 = 86\n- Name change year − Manufacturing year = 1944 − 1940 = 4\n- Production end year − Production start year = 1941 − 1936 = 5\n\n86 × 4 / 5 = 344/5 = 68.8 → 69.\n\nWait——but the question says \"(recording year − founding year).\" Hmm, reading it again: \"(recording year - founding year) × (name change year - manufacturing year) ÷ (production end year - production start year).\" Yes, that's right.\n\nSo 86 × 4 = 344; 344 / 5 = 68.8 ≈ 69.\n\nBut let me double-check the founding year of International Radio Corporation. Wikipedia: \"International Radio Corporation (IRC) was founded in 1931 in Ann Arbor, Michigan by Dr. Charles Bickford...\" Hmm, actually I recall it might have been 1931 or 1932. Let me pull up the Wikipedia page to verify.\n\nAlso, let me verify the 1944 name change to \"Argus, Inc.\" on the Argus Museum's history page.\n\nI've obtained several important dates. Next, I'll check the details on the Wikipedia page and the Argus Museum's history page. Specifically, regarding the founding year of International Radio Corporation and the exact year it was renamed to \"Argus, Inc.\"",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_61e1d7557e76487f9e901d66",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/International_Radio_Corporation\", \"https://www.argusmuseum.org/history-of-argus\", \"https://en.wikipedia.org/wiki/Argus_(camera_company)\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "There's some contradictory information regarding the year the name was changed. According to the Argus Museum, \"In 1944, the company changed its name to Argus, Inc.\" Wikipedia (Argus camera company) also states, \"The company changed its name to Argus, Inc. in 1944.\" However, the Ann Arbor District Library says, \"As the first camera rolled off the assembly line in 1936, the company name was changed to Argus.\"\n\nThe question specifically asks about \"(b) the year the company changed its name to Argus, Inc.\"——the phrase \"Argus, Inc.\" matches the 1944 date in Wikipedia and the Argus Museum. Therefore, (b) = 1944.\n\nNext, regarding (a) the founding year of International Radio Corporation. Let's check Wikipedia. I believe it was founded in 1931. Let me pull up the Wikipedia page for International Radio Corporation and the history page of the Argus Museum to verify.\n\nAlso, production years for the Argus A: 1936–1941 (confirmed by multiple sources and the video itself).\n\nYear of recording: 1940 + 77 = 2017.\n\nNow let's calculate:\n- Recording year − Founding year = 2017 − 1931 = 86\n- Name change year − Manufacturing year = 1944 − 1940 = 4\n- Production end year − Production start year = 1941 − 1936 = 5\n\n86 × 4 / 5 = 344/5 = 68.8 → 69.\n\nWait——but the question says \"(recording year − founding year).\" Hmm, reading it again: \"(recording year - founding year) × (name change year - manufacturing year) ÷ (production end year - production start year).\" Yes, that's right.\n\nSo 86 × 4 = 344; 344 / 5 = 68.8 ≈ 69.\n\nBut let me double-check the founding year of International Radio Corporation. Wikipedia: \"International Radio Corporation (IRC) was founded in 1931 in Ann Arbor, Michigan by Dr. Charles Bickford...\" Hmm, actually I recall it might have been 1931 or 1932. Let me pull up the Wikipedia page to verify.\n\nAlso, let me verify the 1944 name change to \"Argus, Inc.\" on the Argus Museum's history page.\n\nI've obtained several important dates. Next, I'll check the details on the Wikipedia page and the Argus Museum's history page. Specifically, regarding the founding year of International Radio Corporation and the exact year it was renamed to \"Argus, Inc.\"",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_61e1d7557e76487f9e901d66",
+      "content": "{\"https://en.wikipedia.org/wiki/International_Radio_Corporation\": \"Title: International Radio Corporation\\n\\nURL Source: https://en.wikipedia.org/wiki/International_Radio_Corporation\\n\\nPublished Time: 2015-03-09T21:54:30Z\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5]]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 History]Toggle History subsection\\n  * [1.1 Establishment]\\n\\n  * [1.2 Early products and profitability]\\n\\n  * [1.3 Later products and financial difficulties]\\n\\n  * [1.4 Diversification]\\n\\n  * [1.5 Final years]\\n\\n* [2 Notes]\\n\\n* [3 References]\\n\\n* [4 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# International Radio Corporation\\n\\n- [x] Add languages \\n\\n[Add links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n* [Add interlanguage links]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor \\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nAmerican radio receiver manufacturing company\\n\\nInternational Radio Corporation| Industry | Manufacturing |\\n| - |\\n| Founded | 1931(1931) in [Ann Arbor, Michigan], United States |\\n| Founder | Charles Albert Verschoor |\\n| Successor | [Argus, Inc.] \\\"Argus (camera company)\\\") |\\n| Headquarters | Ann Arbor, Michigan , United States |\\n| Brands | Kadette |\\n| [Operating income] | $2,700,000(1937) |\\n| Number of employees | 150(1936) |\\n\\nThe **International Radio Corporation** (**IRC**) was an American [radio receiver] \\\"Receiver (radio)\\\") manufacturing company based in [Ann Arbor, Michigan]. It was established in 1931 by Charles Albert Verschoor with financial backing from Ann Arbor mayor William E. Brown, Jr., and a group of local business leaders. IRC manufactured numerous different radios, many bearing the Kadette name, including the first mass-produced [AC/DC radio], the first pocket radio, and the first [clock radio]. Due to the seasonal nature of radio sales, the company attempted to diversify its offerings with a product that would sell well during the summer, eventually settling on a [camera] that would become the [Argus] \\\"Argus (camera company)\\\"). In 1939, IRC sold its radio-manufacturing business to its former General Sales Manager, W. Keene Jackson, although his new Kadette Radio Corporation only survived for a year before it went defunct. After [World War II], International Industries and its International Research division became [wholly owned subsidiaries] of Argus, Inc., after which point the International name ceased to exist.\\n\\n## History\\n\\n[[edit]]\\n\\n### Establishment\\n\\n[[edit]]\\n\\nThe International Radio Corporation was founded in 1931 in [Ann Arbor, Michigan],[[1]][[2]] the creation of Charles Albert Verschoor, who had begun making radios in the 1920s.[[3]][[4]] Described as a \\\"colorful old-time promoter\\\" in a January 1945 _[Fortune] \\\"Fortune (magazine)\\\")_ magazine article and as a \\\"go-getting inventor\\\" by Mary Hunt, Verschoor had previous experience in [automobile manufacturing] as well. The company was initially financed with $10,000 raised by Ann Arbor mayor William E. Brown, Jr., and a group of local business leaders who desired to create a new local company with substantial potential for growth and job creation during the [Great Depression]. It was based out of a former furniture factory located at 405 Fourth Street on Ann Arbor's west side.[[5]]\\n\\n### Early products and profitability\\n\\n[[edit]]\\n\\n[![Image 6]]\\n\\nKadette Model H (1932), made of [Bakelite]\\n\\nIRC debuted its first radio, the International Duo, on August 7, 1931; it was named for its ability to receive both local [longwave] and European [shortwave] radio signals. It measured 14 in (36 cm) by 16 in (41 cm) by 9 in (23 cm), at a time when most table radios measured 20 in (51 cm) in length without their separate [speaker].[[5]]\\n\\nShortly thereafter,[[nb 1]] IRC introduced the Kadette, the first mass-produced [AC/DC radio];[[6]] it was a four-[tube], 6-pound (2.7 kg) radio small enough to be easily portable that featured an innovative plastic cabinet.[[3]][[4]] This cabinet material, called [Bakelite], was fairly cheap to produce and helped IRC to turn a substantial profit on its radio sales.[[1]] Manufactured by the Chicago Molded Products Company, the Kadette's plastic cabinet was the first to be used on a radio, although its [Gothic] styling gave it a fairly traditional appearance. The radio also boasted an innovative new [circuit design], while its ability to operate on either [alternating] (AC) or [direct current] (DC) allowed it to operate without a [power transformer], resulting in it being cheaper, smaller, and lighter than its competitors;[[4]] it also allowed the Kadette to be plugged into typical household [wall sockets].[[5]] Furthermore, IRC released a kit that instructed customers how to modify their Kadettes for [battery] \\\"Battery (electricity)\\\")-powered mobile applications, such as in railroad cars and automobiles;[[5]] in the words of Robert E. Mayer, this kit \\\"effectively started the [car radio] market\\\".[[3]]\\n\\nThe popularity of the Kadette led to \\\"almost immediate profitability\\\" for IRC, and by 1933 it was the only company in Ann Arbor that was still able to pay [dividends] to its [shareholders].[[4]][[7]] During the early 1930s, Ann Arbor was less adversely affected by the Great Depression than [Detroit] or most other [Michigan] communities, although lost orders and inability to pay dividends were common occurrences for Ann Arbor-based companies.[[7]]\\n\\n### Later products and financial difficulties\\n\\n[[edit]]\\n\\nFollowing after the Kadette were a variety of other models, many of which were innovative in their own right: the Kadette Jr., the world's first pocket radio; the Kadette Jewel, the original Kadette's successor that was available in five different color combinations; the Kadette Classic, built with three different types of plastic; and the Kadette Clockette, which resembled a small [mantel clock] and was available in four different wooden case styles.[[4]] IRC also introduced a number of related accessories, including the Tunemaster, a portable radio [remote control], and the Kadette Autime, the first mass-produced [clock radio].[[5]]\\n\\nIn 1937, as its sales had climbed to $2,700,000,[[5]] IRC introduced a 10-tube Kadette radio for $19.95, a price comparable with many four- and five-tube sets when its 10-tube competitors cost $100 or more. With three ballast tubes, these 10-tube radios were met with largely negative reviews; in the words of Alan Voorhees, they were \\\"$20 sets with extra ballast tubes thrown in\\\".[[4]] They were also reminiscent of 10-tube radios that Verschoor had built between 1925 and 1930 under the \\\"Arborphone\\\" name, which had only five functioning tubes alongside five superfluous ones intended simply to impress prospective customers.[[5]]\\n\\nFurthermore, when radio dealers sold IRC's 10-tube Kadettes, they achieved [profit margins] of 15% at most, far less than what they could earn selling premium models made by competitors. After the company began requiring its dealers to stock its slower selling units in order to also have access to its 10-tube Kadettes, some dealers resorted to giving unauthorized discounts to move the less attractive models, resulting in their total profit margins on the whole Kadette line falling to as low as 5% in some cases. As their profit margins fell, many dealers dropped Kadettes from their catalogs altogether; while IRC made efforts to reverse this trend, in many cases irreparable damage had already been done.[[4]]\\n\\n### Diversification\\n\\n[[edit]]\\n\\n[![Image 7]]\\n\\nAn [Argus C3], produced by [Argus] \\\"Argus (camera company)\\\") between 1939 and 1966\\n\\nWhile IRC's radio business was initially successful, it was generally seasonal in nature;[[3]] due to better reception in winter[[5]] as well as general patterns of behavior before the widespread adoption of [air conditioning], sales of radios were much higher during the winter months than during the summer.[[1]] This prompted Verschoor to explore possibilities for expanding the company's product line in order to reduce the slack periods caused by the seasonal variation in its radio sales.[[3]] Looking for a product that could be produced relatively cheaply and that would also sell well during the summer months, he decided upon an inexpensive [Leica]-inspired [camera] that would ultimately become the [Argus] \\\"Argus (camera company)\\\"), which launched to nearly instant success in 1936.[[1]][[4]] That same year, when IRC had 150 employees, it sold its Kadette AC/DC [patents] to [RCA].[[5]]\\n\\n### Final years\\n\\n[[edit]]\\n\\nIn 1938, Verschoor departed from IRC after being pressured to leave. By the early 1940s the company was being run by a \\\"modern management team\\\".[[5]]\\n\\nIn 1939, International Industries sold its radio-manufacturing business to the company's former General Sales Manager, W. Keene Jackson. After renaming it the Kadette \", \"https://www.argusmuseum.org/history-of-argus\": \"Title: Argus Museum Ann Arbor\\n\\nURL Source: https://www.argusmuseum.org/history-of-argus\\n\\nMarkdown Content:\\n* [History of the Museum]\\n  * [History of Argus]\\n  * [Your Argus Story]\\n  * [FAQ]\\n\\n* [Events]\\n  * [Art Purchasing]\\n  * [Fall Conference]\\n\\n* [Exhibitions]\\n* [Contact Us]\\n* [Support the Museum]\\n  * [Become a Member]\\n  * [Donate]\\n\\n* [Plan Your Visit]\\n  * [Hours and Directions]\\n\\n**Get in touch**\\n\\n555-555-5555\\n\\nmymail@mailservice.com\\n\\ndirector@argusmuseum.org\\n\\n[][][][]\\n\\n[![Image 1]]\\n\\n[![Image 2]]\\n\\n* |\\n* About  The Argus Museum is where you can... See and learn about the products, history and people of a company that was a significant part of 20th Century Ann Arbor -- in its original building! View exhibitions of current photography by artists both in and outside the Ann Arbor area. Attend conferences, workshops and events in cooperation with other area museums  Title [Learn more about the Argus Museum][Learn more about Argus Cameras, Inc.][Tell us about your connection to Argus!]  \\n* |\\n* [Plan Your Visit] The Argus Museum is open to the public, and a fun place to visit! Even better is to make it the highlight of a visit to Ann Arbor, Washtenaw County and Michigan.  Title [Hours and Directions][More Local Attractions]  \\n* |\\n* [Events]Title [Art Purchasing][Fall Conference]  \\n* |\\n* [Exhibitions]  \\n* |\\n* [News]  \\n* |\\n* [FAQ]  \\n* |\\n* [Research]  \\n* |\\n* [Links]  \\n* |\\n* [Contact Us]  \\n\\n[Support the Museum][Call Us 1-313-499-0551]\\n\\n# History of Argus\\n\\nArgus Cameras, Incorporated was originally founded as the International Radio Corporation in 1931 by a group of local businessmen from Ann Arbor, Michigan who wanted to inject new life into the area and create much-need jobs during the Great Depression. These businessmen included William E. Brown Jr., who later became the mayor of Ann Arbor; George Burke, a judge at the Nuremberg War Crimes Trial who became a director of the Argus Company; and Charles Albert Vershoor who became the company’s president. This new firm created 75 jobs in its first year. Key to their success was a line of radios with cabinets made out of molded plastic, rather than wood, which could be sold at lower prices. This line was sold under the 'Kadette' brand.\\n\\n![Image 3]\\n\\n* * *\\n\\nRadios were a seasonal business, selling well in fall and winter but poorly in spring and summer. Verschoor had the idea to smooth out the sales cycle by producing an inexpensive but reliable 35mm camera, to capitalize on the growing popularity of Kodachrome color film. He replicated his success in the radio line by making the camera body out of molded plastic. Their first camera, the Model A, was introduced in May 1936, at $12.50, an unheard-of price for a 35mm camera. Its immediate success, and subsequent popularity of an expanded line of photographic products, led the company to sell its radio patents, change its name to International Research Corporation, and make cameras their primary business.\\n\\n![Image 4]\\n\\n![Image 5]\\n\\n* * *\\n\\nStarting in 1940, the company began producing military optical equipment under US government contracts. In August 1942, all domestic production ceased and Argus devoted its production to military optics and radio equipment for the US and allied armed forces. Government loans, which the company eventually repaid in full, enabled the company to expand its production facilites. In 1944, the company changed its name to Argus, Inc. By war's end, the company had won the coveted Army-Navy \\\"E\\\" Award, for outstanding war production, five times.\\n\\n![Image 6]\\n\\n* * *\\n\\nAfter the war, Argus resumed civilian production. They revamped their line to produce mostly mid-line amateur photographic products, filling a product gap in the US that few other companies were able to fill successfully. In addition to cameras, they expanded their lineup of slide projectors, which eventually became a mainstay product line.\\n\\nIn 1949, they changed the company name to Argus Cameras, Inc. Under a revised management team led by Robert Lewis, Argus became the second-largest manufacturer and distributor of camera equipment in the United States well into the 1950s, surpassed only by the Eastman Kodak company. In 1957, Argus Camera Inc. was acquired by Sylvania, though it continued business as Argus. Sylvania subsequently sold Argus to Mansfield, a Chicago-based importer of photographic products, in 1962. Camera production slowly moved out of Ann Arbor over the next several years. After a series of transactions, by 1969, all domestic camera production had ended. From then on, the Argus brand was owned by a series of companies, all of which imported photographic products labeled 'Argus' well into the 21st century.\\n\\n![Image 7]\\n\\n![Image 8]\\n\\n* * *\\n\\nThough the Model A camera got them started in the photographic line, the company's best-known product was the Model C3 camera. Introduced in 1939, it was an upgrade from the Model A, with a coupled rangefinder and in-camera flash synchronization. Selling for $25, it was the most full-featured US camera in its price range, and was immediately successful. Sized and shaped like a brick with a lens, it became known as 'The Brick'. As a simple but effective design and an excellent value, it outlasted not only all of its would-be competitors, but every other camera Argus ever produced. By the time it exited the product line in 1966, over two million C3s had been produced!\\n\\n[![Image 9]]\\n\\n##### CONTACT\\n\\nTelephone: 313-499-0551\\n\\nE-mail:[director@argusmuseum.org](mailto:director@argusmuseum.org)\\n\\n##### LOCATION\\n\\n525 W William St, Ann Arbor, MI 48103, United States of America\\n\\n[Get Directions to the Museum]\\n\\n##### CONNECT\\n\\n[][][][]\\n\\n[Get Our Newsletter]\\n\\n© Argus Museum is a 501(c)(3) corporation - EIN 92-0809786. | website by[Assetlab]\\n\\n Share by:\\n\", \"https://en.wikipedia.org/wiki/Argus_(camera_company)\": \"Title: Argus (camera company)\\n\\nURL Source: https://en.wikipedia.org/wiki/Argus_(camera_company)\\n\\nPublished Time: 2006-01-16T21:18:27Z\\n\\nMarkdown Content:\\n[Jump to content]#bodyContent)\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5])]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]#)\\n* [1 History]#History)\\n\\n* [2 Models]#Models)Toggle Models subsection\\n  * [2.1 A series]#A_series)\\n\\n  * [2.2 C series]#C_series)\\n\\n  * [2.3 Argoflex]#Argoflex)\\n\\n  * [2.4 Autronic]#Autronic)\\n\\n  * [2.5 Other models]#Other_models)\\n\\n  * [2.6 Digital]#Digital)\\n\\n* [3 Awards]#Awards)\\n\\n* [4 See also]#See_also)\\n\\n* [5 References]#References)\\n\\n* [6 Further reading]#Further_reading)\\n\\n* [7 External links]#External_links)\\n\\n- [x] Toggle the table of contents \\n\\n# Argus (camera company)\\n\\n- [x] 3 languages \\n\\n* [Español]\\n* [日本語] \\\"アーガス (カメラ) – Japanese\\\")\\n* [Русский] \\\"Argus (фотоаппаратура) – Russian\\\")\\n\\n[Edit links]\\n\\n* [Article] \\\"View the content page [alt-c]\\\")\\n* [Talk] \\\"Discuss improvements to the content page [alt-t]\\\")\\n\\n- [x] English \\n\\n* [Read])\\n* [Edit]&action=edit \\\"Edit this page [alt-e]\\\")\\n* [View history]&action=history \\\"Past revisions of this page [alt-h]\\\")\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read])\\n* [Edit]&action=edit \\\"Edit this page [alt-e]\\\")\\n* [View history]&action=history \\\"Past revisions of this page [alt-h]\\\")\\n\\n General \\n\\n* [What links here] \\\"List of all English Wikipedia pages containing links to this page [alt-j]\\\")\\n* [Related changes] \\\"Recent changes in pages linked from this page [alt-k]\\\")\\n* [Upload file]\\n* [Permanent link]&oldid=1321699708 \\\"Permanent link to this revision of this page\\\")\\n* [Page information]&action=info \\\"More information about this page\\\")\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]&useparsoid=0)\\n* [Edit interlanguage links]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]&printable=yes \\\"Printable version of this page [alt-p]\\\")\\n\\n In other projects \\n\\n* [Wikimedia Commons]\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor \\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nCamera company\\n\\n[![Image 6: icon]]This article **needs [more citations]**. Please help [improve this article] \\\"Special:EditPage/Argus (camera company)\\\") by [adding citations to reliable sources]. Unsourced material may be challenged and [removed].  \\n_Find sources:_[\\\"Argus\\\"camera company]–[news]**·**[newspapers]**·**[books]**·**[scholar]**·**[JSTOR]_(May 2020)_ _([Learn how and when to remove this message])_\\n\\nArgus[![Image 7]],_535_West_William_Street,_Ann_Arbor,_Michigan_-_panoramio.jpg)\\n\\nArgus Building\\nIndustry[Cameras]\\nFounded 1936;90 years ago(1936)\\nDefunct 1969;57 years ago(1969)\\nHeadquarters[Ann Arbor, Michigan], U.S.\\n\\n**Argus** was an American maker of cameras and photographic products, founded in 1936 in [Ann Arbor, Michigan]. Argus originated as a subsidiary of the [International Radio Corporation] (IRC), founded by Charles Verschoor.\\n\\n## History\\n\\n[[edit]&action=edit&section=1 \\\"Edit section: History\\\")]\\n\\n[![Image 8]]\\n\\n1960s portable Argus PreViewer color slide viewer\\n\\nThe International Radio Corporation was founded in 1931 by local businessman William E. Brown Jr., [George J. Burke] (who was a judge at the [Nuremberg trials]),[[1]]#cite_note-1) and Charles Albert Vershoor.[[2]]#cite_note-:0-2) IRC started out selling a line of radios, developed by Verschoor, that had a body made out of molded plastic instead of wood. The Model A, the company's first camera, was introduced in May 1936.[[2]]#cite_note-:0-2)\\n\\nIn August 1942, the company stopped all domestic production and focused on producing military optics and radio equipment for the armed forces during [World War II].[[2]]#cite_note-:0-2)\\n\\nThe company changed its name to Argus, Inc. in 1944. Argus introduced the Argus Model 21 in 1947, a metal-bodied camera and the company’s first model with an automatic shutter cocking to prevent double exposure and a hot shoe for flash.[[3]]#cite_note-:1-3)\\n\\nBy the end of World War II, Argus had won the Army-Navy “E” award five times for “excellence in design and manufacture of war-related material\\\".[[4]]#cite_note-4)[[5]]#cite_note-5) Argus Inc. changed its name to Argus Cameras, Inc. in 1949.[[6]]#cite_note-6)\\n\\nIts best-known product was the [C3] rangefinder camera, which enjoyed a 27-year production run and became one of the top-selling cameras in history. The company's Model A was the first low-cost [35 mm] camera in the United States.\\n\\nIn 1956, the Argus 50mm f/2.8 Cintagon lens, designed for the C44 camera, was one of the first commercial lenses designed with the aid of a computer.[[3]]#cite_note-:1-3)\\n\\nIn 1957, [Sylvania Electric Products] acquired the company but continued to operate as Argus. In 1962, Sylvania sold the company to Mansfield Industries, an importer of photography products.[[3]]#cite_note-:1-3) By 1969 it had ceased camera production (some rebadged cameras continued to be sold under the Argus name through the 1970s).[_[citation needed]_]\\n\\nMore recently, the Argus brand has been reestablished, and is used on a variety of inexpensive [digital] cameras made by Argus Camera Company, LLC., located in [Inverness, Illinois].\\n\\n## Models\\n\\n[[edit]&action=edit&section=2 \\\"Edit section: Models\\\")]\\n\\n[![Image 9]]\\n\\nArgus C3\\n\\n### A series\\n\\n[[edit]&action=edit&section=3 \\\"Edit section: A series\\\")]\\n\\n* A (1936–1941)\\n* AF (1937–1938)\\n* B (1937)\\n* A2B (1939–1950)\\n* A2F (1939–1941)\\n* AA (1940–1942)\\n* FA (1950–1951)\\n\\n### C series\\n\\n[[edit]&action=edit&section=4 \\\"Edit section: C series\\\")]\\n\\n[![Image 10]].JPG)\\n\\nArgus 21\\n\\n* C (1938–1939)\\n* C2 (1938–1942)\\n* [C3] (1938–1968)\\n* 21 (1947–1952)\\n* C4 (1951–1957)\\n* C44 (1956–1957)\\n* [C3 Golden Shield] (1958–1966)\\n* [C3 Matchmatic] (1958–1966)\\n* [C3 Standard] (1958–1966)\\n* C44R (1958–1962)\\n* C4R (1958)\\n* [C33] (1959–1961)\\n\\n### Argoflex\\n\\n[[edit]&action=edit&section=5 \\\"Edit section: Argoflex\\\")]\\n\\n[![Image 11]]\\n\\nArgoflex Seventy-Five\\n\\n* Argoflex E (1940–1948)\\n* Argoflex\\n* Argoflex II (1947)\\n* Argoflex EM (1948)\\n* Argoflex EF (1948–1951)\\n* Argoflex Seventy-Five (1949–1958)\\n\\n* Argus Seventy-Five (made in Australia)\\n\\n* Seventy-Five (1949–1958)\\n* 40 (1950–1954)\\n* Argoflex Forty (1950–1954)\\n* Super Seventy-Five (1954–1958)\\n* 75 (1958–1964)\\n\\n### Autronic\\n\\n[[edit]&action=edit&section=6 \\\"Edit section: Autronic\\\")]\\n\\n[![Image 12]].jpg)\\n\\nArgus Autronic 35\\n\\n* Autronic 35 (1960 only)\\n* Autronic C3 (1960–1962)\\n* Autronic I (1962–1965)\\n* Autronic II (1962–1965)\\n\\n### Other models\\n\\n[[edit]&action=edit&section=7 \\\"Edit section: Other models\\\")]\\n\\n[![Image 13]]\\n\\n_Argus Lady Carefree_, plastic camera for 126 mm film cartridges, c. 1967\\n\\n* K (1939–1940)\\n* M (1939–1940)\\n* A3 (1940–1942)\\n* CC (1941–1942)\\n* Minca (1947–1948)\\n* A5 (1953–1956)\\n* A-Four (1953–1956)\\n* C-Twenty (1957–1958)\\n* Lady Carefree (126, circa 1967)\\n* Carefree (126)\\n\\n### Digital\\n\\n[[edit]&action=edit&section=8 \\\"Edit section: Digital\\\")]\\n\\n[![Image 14]]\\n\\nArgus DC1500\\n\\n[![Image 15]]\\n\\nArgus DC3000\\n\\n* DCV-011\\n* DCM-098\\n* DCM-099\\n* DC-1088\\n* DC-1500\\n* DC-1512E\\n* DC-2185\\n* DC-2700\\n* DC-3000 (May 2000)\\n* DC-3185\\n* DC-3190\\n* DC-3195\\n* DC-3270DV\\n* DC-3550\\n* DC-5190\\n* DC-5195\\n* DC-5340\\n* DC-6340\\n\\n## Awards\\n\\n[[edit]&action=edit&section=9 \\\"Edit section: Awards\\\")]\\n\\nArgus had two cameras for children developed in partnership with TEAMS Design. The cameras, the Bean and Sprout, won a Bronze 2009 IDEA award[[7]]#cite_note-7) from _[Bloomberg BusinessWeek]_ and the [Industrial Designers Society of America] in addition to an Appliance Design 2009 EID award.[[8]]#cite_note-Appliance_Design_EID_Awards-8)\\n\\n## See also\\n\\n[[edit]&action=edit&section=10 \\\"Edit section: See also\\\")]\\n\\n* [Argus Museum]\\n\\n## References\\n\\n[[edit]&action=edit&section=11 \\\"Edit section: References\\\")]\\n\\n1. [↑]#cite_ref-1 \\\"Jump up\\\")[\\\"George Burke Dies Suddenly | Ann Arbor District Library\\\"]. _aadl.org_. [Archived] from the original on 2024-04-19. Retrieved 2024-04-19.\\n2. [Jump up to: 1]#cite_ref-:0_2-0)[2]#cite_ref-:0_2-1)[3]#cite_ref-:0_2-2)[\\\"Argus Museum Ann Arbor\\\"]. _www.argusmuseum.org_. [Archived] from the original on 2024-07-03. Retrieved 2024-04-19.\\n3. [Jump up to: 1]#cite_ref-:1_3-0)[2]#cite_ref-:1_3-1)[3]#cite_ref-:1_3-2)[\\\"Argus Cameras; The American Firm That Made Miniature Photography Affordable Page 2\\\"]. _Shutterbug_. 2006-03-01. Retrieved 2024-05-17.\\n4. [↑]#cite_ref-4 \\\"Jump up\\\")[\\\"Argus Eyes for Victory | Ann Arbor District Library\\\"]. _aadl.org_. Retrieved 2024-06-07.\\n5. [↑]#cite_ref-5 \\\"Jump up\\\")Argus Camera Co. (1943-06-26). [_Argus Eyes 1943 June 26_].\\n6. [↑]#cite_ref-6 \\\"Jump up\\\")[\\\"Argus, Inc., Is New Name | Ann Arbor District Library\\\"]. _aadl.org_. Retrieved 2024-06-07.\\n7. [↑]#cite_ref-7 \\\"Jump up\\\")[\\\"Argus Bean Children's Digital Camera - Industrial Designers Society of America\\\"]. _www.idsa.org_. Retrieved 2025-03-10.\\n8. [↑]#cite_ref-Appliance_Design_EID_Awards_8-0 \\\"Jump up\\\")[\\\"Appliance Design EID Awards\\\"]. Archived from the original on 2012-01-27. Retrieved 2009-10-13.\\n\\n## Further reading\\n\\n[[edit]&action=edit&section=12 \\\"Edit section: Further reading\\\")]\\n\\n* Larsen, Deborah J. (September/October 2024). \\\"A Snapshot of History: Argus Cameras in Ann Arbor.\\\" _Michigan History_. p. 16+. Lansing, Michigan: [Historical Society of Michigan]. ISSN 0026-2196. Retrieved [via Gale \"}"
+    },
+    {
+      "role": "assistant",
+      "content": "All the dates are now confirmed. Let me verify the calculation with code.\n\n",
+      "reasoning": "With this, all the necessary dates are now assembled:\n\nFrom the video/audio:\n- Manufacturing year (based on serial number): 1940\n- \"77 years old now\" → Recording year = 1940 + 77 = 2017\n- Production period of the Argus A: 1936–1941 (mentioned in the audio, confirmed by sources)\n\nFrom web searches:\n(a) Founding of International Radio Corporation: 1931 (Wikipedia, Argus Museum)\n(b) Year of name change to Argus, Inc.: 1944 (Wikipedia's \"Argus (camera company)\": \"The company changed its name to Argus, Inc. in 1944.\" Argus Museum: \"In 1944, the company changed its name to Argus, Inc.\")\n(c) Production of the Argus A: 1936–1941 (Wikipedia's model list: \"A (1936–1941)\")\n\nCalculation:\n(Recording year − Founding year) × (Name change year − Manufacturing year) ÷ (Production end year − Production start year)\n= (2017 − 1931) × (1944 − 1940) ÷ (1941 − 1936)\n= 86 × 4 ÷ 5\n= 344 ÷ 5\n= 68.8\n≈ 69\n\nLet me verify with code.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_9d6c20e87b8c46ec9a04cb9a",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"# Dates from the video/audio\\nmanufacture_year = 1940          # serial number indicates 1940\\nage_at_recording = 77            # \\\"a camera that's, what, 77 years old now?\\\"\\nrecording_year = manufacture_year + age_at_recording\\n\\n# Dates from web research\\nfounding_year_IRC = 1931         # International Radio Corporation founded (Wikipedia, Argus Museum)\\nname_change_year = 1944          # Changed name to \\\"Argus, Inc.\\\" in 1944 (Wikipedia, Argus Museum)\\nprod_start = 1936                # Argus A production (audio + Wikipedia \\\"A (1936–1941)\\\")\\nprod_end = 1941\\n\\nprint(\\\"Recording year:\\\", recording_year)\\n\\nresult = (recording_year - founding_year_IRC) * (name_change_year - manufacture_year) / (prod_end - prod_start)\\nprint(\\\"(2017-1931) =\\\", recording_year - founding_year_IRC)\\nprint(\\\"(1944-1940) =\\\", name_change_year - manufacture_year)\\nprint(\\\"(1941-1936) =\\\", prod_end - prod_start)\\nprint(\\\"Exact result:\\\", result)\\nprint(\\\"Rounded:\\\", round(result))\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "With this, all the necessary dates are now assembled:\n\nFrom the video/audio:\n- Manufacturing year (based on serial number): 1940\n- \"77 years old now\" → Recording year = 1940 + 77 = 2017\n- Production period of the Argus A: 1936–1941 (mentioned in the audio, confirmed by sources)\n\nFrom web searches:\n(a) Founding of International Radio Corporation: 1931 (Wikipedia, Argus Museum)\n(b) Year of name change to Argus, Inc.: 1944 (Wikipedia's \"Argus (camera company)\": \"The company changed its name to Argus, Inc. in 1944.\" Argus Museum: \"In 1944, the company changed its name to Argus, Inc.\")\n(c) Production of the Argus A: 1936–1941 (Wikipedia's model list: \"A (1936–1941)\")\n\nCalculation:\n(Recording year − Founding year) × (Name change year − Manufacturing year) ÷ (Production end year − Production start year)\n= (2017 − 1931) × (1944 − 1940) ÷ (1941 − 1936)\n= 86 × 4 ÷ 5\n= 344 ÷ 5\n= 68.8\n≈ 69\n\nLet me verify with code.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9d6c20e87b8c46ec9a04cb9a",
+      "content": "{\"stdout\": \"Recording year: 2017\\n(2017-1931) = 86\\n(1944-1940) = 4\\n(1941-1936) = 5\\nExact result: 68.8\\nRounded: 69\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Solution\n\n**Step 1 — Recording year (from the video/audio):**\n- The narrator states the serial number indicates the camera was made in **1940**.\n- Later he says, \"for a camera that's, what, **77 years old** now?\"\n- Recording year = 1940 + 77 = **2017** ✓ (consistent with \"predates World War II\" and the 1936–1941 production span he cites).\n\n**Step 2 — Web research findings:**\n- **(a) Founding of International Radio Corporation:** **1931**, in Ann Arbor, Michigan (per Wikipedia's \"International Radio Corporation\" article and the Argus Museum history page).\n- **(b) Name change to Argus, Inc.:** **1944** (\"In 1944, the company changed its name to Argus, Inc.\" — Argus Museum and Wikipedia's \"Argus (camera company)\" article).\n- **(c) Argus A production years:** **1936–1941** (matches the audio; confirmed by Wikipedia's model list \"A (1936–1941),\" Camera-wiki, and other collector references).\n\n**Step 3 — Evaluate the expression:**\n- (Recording year − Founding year) = 2017 − 1931 = **86**\n- (Name change year − Manufacture year) = 1944 − 1940 = **4**\n- (Production end − Production start) = 1941 − 1936 = **5**\n- Result: 86 × 4 ÷ 5 = 344 ÷ 5 = 68.8 → rounded to **69**\n\n<answer>69</answer>",
+      "reasoning": "The calculation has been verified. Let's write up the final answer.\n\nSummary:\n- Determining the recording year: The audio states that the serial number indicates a manufacturing year of 1940, and the narrator says \"this is a camera that's now 77 years old,\" so recording year = 1940 + 77 = 2017.\n- (a) IRC was founded in 1931 (Wikipedia, Argus Museum).\n- (b) The name was changed to Argus, Inc. in 1944 (Wikipedia, Argus Museum).\n- (c) Production of the Argus A: 1936–1941 (audio and Wikipedia's model list).\n\nFormula: (2017 − 1931) × (1944 − 1940) ÷ (1941 − 1936) = 86 × 4 ÷ 5 = 68.8 ≈ 69.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The calculation has been verified. Let's write up the final answer.\n\nSummary:\n- Determining the recording year: The audio states that the serial number indicates a manufacturing year of 1940, and the narrator says \"this is a camera that's now 77 years old,\" so recording year = 1940 + 77 = 2017.\n- (a) IRC was founded in 1931 (Wikipedia, Argus Museum).\n- (b) The name was changed to Argus, Inc. in 1944 (Wikipedia, Argus Museum).\n- (c) Production of the Argus A: 1936–1941 (audio and Wikipedia's model list).\n\nFormula: (2017 − 1931) × (1944 − 1940) ÷ (1941 − 1936) = 86 × 4 ÷ 5 = 68.8 ≈ 69.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"International Radio Corporation founded 1931 Argus camera Charles Bickford\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "List of British innovations and discoveries",
+          "url": "https://en.wikipedia.org/wiki/List_of_British_innovations_and_discoveries",
+          "snippet": "The following is a list and timeline of innovations as well as inventions and discoveries that involved British people or the United Kingdom including the ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "J2P and P2J Ver 1",
+          "url": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1953/Billboard%201953-12-26.pdf",
+          "snippet": "short of 100,000 sets, hardly much more than a show -case item for dealers, and, according to FCC commissioners and industry big-.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"International Radio Corporation changed name to Argus Inc year\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "History of Argus",
+          "url": "https://www.argusmuseum.org/history-of-argus",
+          "snippet": "Argus Cameras, Incorporated was originally founded as the International Radio Corporation ... In 1944, the company changed its name to Argus, Inc. By war's end, ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "International Radio Corporation",
+          "url": "https://en.wikipedia.org/wiki/International_Radio_Corporation",
+          "snippet": "After World War II, International Industries and its International Research division became wholly owned subsidiaries of Argus, Inc., after which point the ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "The Story of Argus Camera - Ann Arbor",
+          "url": "https://aadl.org/arguscamera",
+          "snippet": "With the first camera rolling off the assembly line in 1936, the name of the company was changed to Argus, after the Greek mythological god of 1,000 eyes.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Argus Model K Camera - Dan Cuny",
+          "url": "https://www.dancuny.com/camera-collecting-blog/tag/International+Radio+Corp.",
+          "snippet": "With Government loans, Argus expanded, and in 1944, the company changed its name to Argus, Inc. and won several awards for its war effort in ...",
+          "date": "Jul 11, 2024"
+        },
+        {
+          "id": 5,
+          "title": "International Radio Corp (Kadette); Ann Arbor, MI.",
+          "url": "https://www.radiomuseum.org/dsp_hersteller_detail.cfm?company_id=2642",
+          "snippet": "The Argus was introduced in 1936 and was immediately a great success. After the war, International Industries and their new International Research division ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "International Radio Corporation - Ann Arbor",
+          "url": "https://localwiki.org/ann-arbor/International_Radio_Corporation",
+          "snippet": "In 1939 the company sold its radio product line to W. Keene Jackson, who formed a new Kadette Radio Corp..",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "RCA founded in 1919 as radio corporation of america",
+          "url": "https://www.facebook.com/MuseumTV/posts/on-this-day-in-1919-the-radio-corporation-of-america-was-founded-later-renamed-r/716832967154134/",
+          "snippet": "On this day in 1919, the Radio Corporation of America was founded. Later renamed RCA, this corporation was originally created at the end of WWI ...",
+          "date": "2 years ago"
+        },
+        {
+          "id": 8,
+          "title": "ARGUS LEADER (SIOUX FALLS) | Encyclopedia of the ...",
+          "url": "https://plainshumanities.unl.edu/encyclopedia/doc/egp.med.003.html",
+          "snippet": "The consolidation occurred in 1887, and the name was hyphenated until December 3, 1979.",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Argus (camera company)",
+          "url": "https://en.wikipedia.org/wiki/Argus_(camera_company)",
+          "snippet": "... radio equipment for the armed forces during World War II. The company changed its name to Argus, Inc. in 1944. Argus introduced the Argus Model 21 in ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "International Radio Corporation's Best Seller",
+          "url": "https://antiqueradios.com/forums/viewtopic.php?t=375144",
+          "snippet": "In 1939 they introduced the Argus C3, which become such a success that IRC sold off its radio business and focused on cameras. Over two million ...",
+          "date": "Apr 1, 2020"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Argus A camera production years 1936 to 1941\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "1936 Argus Model A camera takes crisp images",
+          "url": "https://www.facebook.com/groups/vintagecameralens/posts/1100654044403138/",
+          "snippet": "Manufactured from 1936 - 1941, the Argus A was designed to use Kodak 35mm daylight loading cartridges, and could be had for a modest $12.50.",
+          "date": "2 years ago"
+        },
+        {
+          "id": 2,
+          "title": "Argus A - Camera-wiki.org - The free camera encyclopedia",
+          "url": "https://camera-wiki.org/wiki/Argus_A",
+          "snippet": "Produced in Ann Arbor, Michigan, from 1936 to 1941 by the company still called International Research Corporation, [1] the original price of $ ...",
+          "date": "May 17, 2025"
+        },
+        {
+          "id": 3,
+          "title": "When Was My Argus Camera Made?",
+          "url": "https://argusinfo.net/DatingGuide/DatingYourArgus.htm",
+          "snippet": "A guide to estimating the date of production for Argus cameras made between 1936 and 1966. A 1936 - 1941. The range 1037 - 211589 is per ...",
+          "date": "Nov 18, 2025"
+        },
+        {
+          "id": 4,
+          "title": "Argus A c.1938-1948 – William B. Cavanaugh Collection",
+          "url": "https://library.umbc.edu/cavanaugh/home/35mm-film/argus-a/",
+          "snippet": "Argus A, 1936-1941. The Argus A was one of the first American-made 35 mm cameras. Argus was the most common 35mm camera sold in America until the Kodak 35.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Argus A 35mm Camera",
+          "url": "https://filmphotographyproject.com/argus-35mm-camera/",
+          "snippet": "The Model A was made from 1936 to 1941. Introductory price was $12.50. All total about half a million Model A type cameras were produced.",
+          "date": "Jan 12, 2015"
+        },
+        {
+          "id": 6,
+          "title": "Argus A",
+          "url": "https://www.cameraquest.com/arg2.htm",
+          "snippet": "The original A was made from 1936 to 1941. It lived on in six derivative models until 1951. over 210,000 Argus A's were produced and that the A ...",
+          "date": "Jan 31, 2016"
+        },
+        {
+          "id": 7,
+          "title": "Argus \"A\" Series Cameras",
+          "url": "https://www.arguscg.org/reference/a.shtml",
+          "snippet": "Gambino Model: A Production Years: 1936-1941 Description: 50mm F4.5 Original Argus with Collapsible Lens Mount. Produced in Grey, Brown, as well as Black and ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "52 Cameras: # 144 — Argus A",
+          "url": "https://www.youtube.com/watch?v=2KZAkl53hZE",
+          "snippet": "52 Cameras: # 144 — Argus A. Vintage Camera Digest The BEST camera from ARGUS? Size 6x9 Folding Cameras (Bessa I, Moskva 5, Agfa Billy Record ...",
+          "date": "8 years ago"
+        },
+        {
+          "id": 9,
+          "title": "Argus Model C camera - Dan Cuny",
+          "url": "https://www.dancuny.com/camera-collecting-blog/2025/9/17/argus-model-c-camera",
+          "snippet": "In 1936, IRC launched the Argus Model A, the first low-cost 35mm camera manufactured in the United States. Priced at just $12.50 when most ...",
+          "date": "Sep 18, 2025"
+        },
+        {
+          "id": 10,
+          "title": "The Story Of The Argus A",
+          "url": "https://theargusa.com/History.htm",
+          "snippet": "The Argus, priced at only $12.50, was a success from its debut in early 1936; IRC later claimed to have sold 30,000 cameras in the first week alone. Prospects ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/International_Radio_Corporation\", \"https://www.argusmuseum.org/history-of-argus\", \"https://en.wikipedia.org/wiki/Argus_(camera_company)\"]\n\n}",
+      "result": {
+        "https://en.wikipedia.org/wiki/International_Radio_Corporation": "Title: International Radio Corporation\n\nURL Source: https://en.wikipedia.org/wiki/International_Radio_Corporation\n\nPublished Time: 2015-03-09T21:54:30Z\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5]]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 History]Toggle History subsection\n  * [1.1 Establishment]\n\n  * [1.2 Early products and profitability]\n\n  * [1.3 Later products and financial difficulties]\n\n  * [1.4 Diversification]\n\n  * [1.5 Final years]\n\n* [2 Notes]\n\n* [3 References]\n\n* [4 External links]\n\n- [x] Toggle the table of contents \n\n# International Radio Corporation\n\n- [x] Add languages \n\n[Add links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n* [Add interlanguage links]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor \n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\nFrom Wikipedia, the free encyclopedia\n\nAmerican radio receiver manufacturing company\n\nInternational Radio Corporation| Industry | Manufacturing |\n| - |\n| Founded | 1931(1931) in [Ann Arbor, Michigan], United States |\n| Founder | Charles Albert Verschoor |\n| Successor | [Argus, Inc.] \"Argus (camera company)\") |\n| Headquarters | Ann Arbor, Michigan , United States |\n| Brands | Kadette |\n| [Operating income] | $2,700,000(1937) |\n| Number of employees | 150(1936) |\n\nThe **International Radio Corporation** (**IRC**) was an American [radio receiver] \"Receiver (radio)\") manufacturing company based in [Ann Arbor, Michigan]. It was established in 1931 by Charles Albert Verschoor with financial backing from Ann Arbor mayor William E. Brown, Jr., and a group of local business leaders. IRC manufactured numerous different radios, many bearing the Kadette name, including the first mass-produced [AC/DC radio], the first pocket radio, and the first [clock radio]. Due to the seasonal nature of radio sales, the company attempted to diversify its offerings with a product that would sell well during the summer, eventually settling on a [camera] that would become the [Argus] \"Argus (camera company)\"). In 1939, IRC sold its radio-manufacturing business to its former General Sales Manager, W. Keene Jackson, although his new Kadette Radio Corporation only survived for a year before it went defunct. After [World War II], International Industries and its International Research division became [wholly owned subsidiaries] of Argus, Inc., after which point the International name ceased to exist.\n\n## History\n\n[[edit]]\n\n### Establishment\n\n[[edit]]\n\nThe International Radio Corporation was founded in 1931 in [Ann Arbor, Michigan],[[1]][[2]] the creation of Charles Albert Verschoor, who had begun making radios in the 1920s.[[3]][[4]] Described as a \"colorful old-time promoter\" in a January 1945 _[Fortune] \"Fortune (magazine)\")_ magazine article and as a \"go-getting inventor\" by Mary Hunt, Verschoor had previous experience in [automobile manufacturing] as well. The company was initially financed with $10,000 raised by Ann Arbor mayor William E. Brown, Jr., and a group of local business leaders who desired to create a new local company with substantial potential for growth and job creation during the [Great Depression]. It was based out of a former furniture factory located at 405 Fourth Street on Ann Arbor's west side.[[5]]\n\n### Early products and profitability\n\n[[edit]]\n\n[![Image 6]]\n\nKadette Model H (1932), made of [Bakelite]\n\nIRC debuted its first radio, the International Duo, on August 7, 1931; it was named for its ability to receive both local [longwave] and European [shortwave] radio signals. It measured 14 in (36 cm) by 16 in (41 cm) by 9 in (23 cm), at a time when most table radios measured 20 in (51 cm) in length without their separate [speaker].[[5]]\n\nShortly thereafter,[[nb 1]] IRC introduced the Kadette, the first mass-produced [AC/DC radio];[[6]] it was a four-[tube], 6-pound (2.7 kg) radio small enough to be easily portable that featured an innovative plastic cabinet.[[3]][[4]] This cabinet material, called [Bakelite], was fairly cheap to produce and helped IRC to turn a substantial profit on its radio sales.[[1]] Manufactured by the Chicago Molded Products Company, the Kadette's plastic cabinet was the first to be used on a radio, although its [Gothic] styling gave it a fairly traditional appearance. The radio also boasted an innovative new [circuit design], while its ability to operate on either [alternating] (AC) or [direct current] (DC) allowed it to operate without a [power transformer], resulting in it being cheaper, smaller, and lighter than its competitors;[[4]] it also allowed the Kadette to be plugged into typical household [wall sockets].[[5]] Furthermore, IRC released a kit that instructed customers how to modify their Kadettes for [battery] \"Battery (electricity)\")-powered mobile applications, such as in railroad cars and automobiles;[[5]] in the words of Robert E. Mayer, this kit \"effectively started the [car radio] market\".[[3]]\n\nThe popularity of the Kadette led to \"almost immediate profitability\" for IRC, and by 1933 it was the only company in Ann Arbor that was still able to pay [dividends] to its [shareholders].[[4]][[7]] During the early 1930s, Ann Arbor was less adversely affected by the Great Depression than [Detroit] or most other [Michigan] communities, although lost orders and inability to pay dividends were common occurrences for Ann Arbor-based companies.[[7]]\n\n### Later products and financial difficulties\n\n[[edit]]\n\nFollowing after the Kadette were a variety of other models, many of which were innovative in their own right: the Kadette Jr., the world's first pocket radio; the Kadette Jewel, the original Kadette's successor that was available in five different color combinations; the Kadette Classic, built with three different types of plastic; and the Kadette Clockette, which resembled a small [mantel clock] and was available in four different wooden case styles.[[4]] IRC also introduced a number of related accessories, including the Tunemaster, a portable radio [remote control], and the Kadette Autime, the first mass-produced [clock radio].[[5]]\n\nIn 1937, as its sales had climbed to $2,700,000,[[5]] IRC introduced a 10-tube Kadette radio for $19.95, a price comparable with many four- and five-tube sets when its 10-tube competitors cost $100 or more. With three ballast tubes, these 10-tube radios were met with largely negative reviews; in the words of Alan Voorhees, they were \"$20 sets with extra ballast tubes thrown in\".[[4]] They were also reminiscent of 10-tube radios that Verschoor had built between 1925 and 1930 under the \"Arborphone\" name, which had only five functioning tubes alongside five superfluous ones intended simply to impress prospective customers.[[5]]\n\nFurthermore, when radio dealers sold IRC's 10-tube Kadettes, they achieved [profit margins] of 15% at most, far less than what they could earn selling premium models made by competitors. After the company began requiring its dealers to stock its slower selling units in order to also have access to its 10-tube Kadettes, some dealers resorted to giving unauthorized discounts to move the less attractive models, resulting in their total profit margins on the whole Kadette line falling to as low as 5% in some cases. As their profit margins fell, many dealers dropped Kadettes from their catalogs altogether; while IRC made efforts to reverse this trend, in many cases irreparable damage had already been done.[[4]]\n\n### Diversification\n\n[[edit]]\n\n[![Image 7]]\n\nAn [Argus C3], produced by [Argus] \"Argus (camera company)\") between 1939 and 1966\n\nWhile IRC's radio business was initially successful, it was generally seasonal in nature;[[3]] due to better reception in winter[[5]] as well as general patterns of behavior before the widespread adoption of [air conditioning], sales of radios were much higher during the winter months than during the summer.[[1]] This prompted Verschoor to explore possibilities for expanding the company's product line in order to reduce the slack periods caused by the seasonal variation in its radio sales.[[3]] Looking for a product that could be produced relatively cheaply and that would also sell well during the summer months, he decided upon an inexpensive [Leica]-inspired [camera] that would ultimately become the [Argus] \"Argus (camera company)\"), which launched to nearly instant success in 1936.[[1]][[4]] That same year, when IRC had 150 employees, it sold its Kadette AC/DC [patents] to [RCA].[[5]]\n\n### Final years\n\n[[edit]]\n\nIn 1938, Verschoor departed from IRC after being pressured to leave. By the early 1940s the company was being run by a \"modern management team\".[[5]]\n\nIn 1939, International Industries sold its radio-manufacturing business to the company's former General Sales Manager, W. Keene Jackson. After renaming it the Kadette ",
+        "https://www.argusmuseum.org/history-of-argus": "Title: Argus Museum Ann Arbor\n\nURL Source: https://www.argusmuseum.org/history-of-argus\n\nMarkdown Content:\n* [History of the Museum]\n  * [History of Argus]\n  * [Your Argus Story]\n  * [FAQ]\n\n* [Events]\n  * [Art Purchasing]\n  * [Fall Conference]\n\n* [Exhibitions]\n* [Contact Us]\n* [Support the Museum]\n  * [Become a Member]\n  * [Donate]\n\n* [Plan Your Visit]\n  * [Hours and Directions]\n\n**Get in touch**\n\n555-555-5555\n\nmymail@mailservice.com\n\ndirector@argusmuseum.org\n\n[][][][]\n\n[![Image 1]]\n\n[![Image 2]]\n\n* |\n* About  The Argus Museum is where you can... See and learn about the products, history and people of a company that was a significant part of 20th Century Ann Arbor -- in its original building! View exhibitions of current photography by artists both in and outside the Ann Arbor area. Attend conferences, workshops and events in cooperation with other area museums  Title [Learn more about the Argus Museum][Learn more about Argus Cameras, Inc.][Tell us about your connection to Argus!]  \n* |\n* [Plan Your Visit] The Argus Museum is open to the public, and a fun place to visit! Even better is to make it the highlight of a visit to Ann Arbor, Washtenaw County and Michigan.  Title [Hours and Directions][More Local Attractions]  \n* |\n* [Events]Title [Art Purchasing][Fall Conference]  \n* |\n* [Exhibitions]  \n* |\n* [News]  \n* |\n* [FAQ]  \n* |\n* [Research]  \n* |\n* [Links]  \n* |\n* [Contact Us]  \n\n[Support the Museum][Call Us 1-313-499-0551]\n\n# History of Argus\n\nArgus Cameras, Incorporated was originally founded as the International Radio Corporation in 1931 by a group of local businessmen from Ann Arbor, Michigan who wanted to inject new life into the area and create much-need jobs during the Great Depression. These businessmen included William E. Brown Jr., who later became the mayor of Ann Arbor; George Burke, a judge at the Nuremberg War Crimes Trial who became a director of the Argus Company; and Charles Albert Vershoor who became the company’s president. This new firm created 75 jobs in its first year. Key to their success was a line of radios with cabinets made out of molded plastic, rather than wood, which could be sold at lower prices. This line was sold under the 'Kadette' brand.\n\n![Image 3]\n\n* * *\n\nRadios were a seasonal business, selling well in fall and winter but poorly in spring and summer. Verschoor had the idea to smooth out the sales cycle by producing an inexpensive but reliable 35mm camera, to capitalize on the growing popularity of Kodachrome color film. He replicated his success in the radio line by making the camera body out of molded plastic. Their first camera, the Model A, was introduced in May 1936, at $12.50, an unheard-of price for a 35mm camera. Its immediate success, and subsequent popularity of an expanded line of photographic products, led the company to sell its radio patents, change its name to International Research Corporation, and make cameras their primary business.\n\n![Image 4]\n\n![Image 5]\n\n* * *\n\nStarting in 1940, the company began producing military optical equipment under US government contracts. In August 1942, all domestic production ceased and Argus devoted its production to military optics and radio equipment for the US and allied armed forces. Government loans, which the company eventually repaid in full, enabled the company to expand its production facilites. In 1944, the company changed its name to Argus, Inc. By war's end, the company had won the coveted Army-Navy \"E\" Award, for outstanding war production, five times.\n\n![Image 6]\n\n* * *\n\nAfter the war, Argus resumed civilian production. They revamped their line to produce mostly mid-line amateur photographic products, filling a product gap in the US that few other companies were able to fill successfully. In addition to cameras, they expanded their lineup of slide projectors, which eventually became a mainstay product line.\n\nIn 1949, they changed the company name to Argus Cameras, Inc. Under a revised management team led by Robert Lewis, Argus became the second-largest manufacturer and distributor of camera equipment in the United States well into the 1950s, surpassed only by the Eastman Kodak company. In 1957, Argus Camera Inc. was acquired by Sylvania, though it continued business as Argus. Sylvania subsequently sold Argus to Mansfield, a Chicago-based importer of photographic products, in 1962. Camera production slowly moved out of Ann Arbor over the next several years. After a series of transactions, by 1969, all domestic camera production had ended. From then on, the Argus brand was owned by a series of companies, all of which imported photographic products labeled 'Argus' well into the 21st century.\n\n![Image 7]\n\n![Image 8]\n\n* * *\n\nThough the Model A camera got them started in the photographic line, the company's best-known product was the Model C3 camera. Introduced in 1939, it was an upgrade from the Model A, with a coupled rangefinder and in-camera flash synchronization. Selling for $25, it was the most full-featured US camera in its price range, and was immediately successful. Sized and shaped like a brick with a lens, it became known as 'The Brick'. As a simple but effective design and an excellent value, it outlasted not only all of its would-be competitors, but every other camera Argus ever produced. By the time it exited the product line in 1966, over two million C3s had been produced!\n\n[![Image 9]]\n\n##### CONTACT\n\nTelephone: 313-499-0551\n\nE-mail:[director@argusmuseum.org](mailto:director@argusmuseum.org)\n\n##### LOCATION\n\n525 W William St, Ann Arbor, MI 48103, United States of America\n\n[Get Directions to the Museum]\n\n##### CONNECT\n\n[][][][]\n\n[Get Our Newsletter]\n\n© Argus Museum is a 501(c)(3) corporation - EIN 92-0809786. | website by[Assetlab]\n\n Share by:\n",
+        "https://en.wikipedia.org/wiki/Argus_(camera_company)": "Title: Argus (camera company)\n\nURL Source: https://en.wikipedia.org/wiki/Argus_(camera_company)\n\nPublished Time: 2006-01-16T21:18:27Z\n\nMarkdown Content:\n[Jump to content]#bodyContent)\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 4] Photograph a historic site, help Wikipedia, and win a prize. Participate in the world's largest photography competition this month!Learn more ![Image 5])]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]#)\n* [1 History]#History)\n\n* [2 Models]#Models)Toggle Models subsection\n  * [2.1 A series]#A_series)\n\n  * [2.2 C series]#C_series)\n\n  * [2.3 Argoflex]#Argoflex)\n\n  * [2.4 Autronic]#Autronic)\n\n  * [2.5 Other models]#Other_models)\n\n  * [2.6 Digital]#Digital)\n\n* [3 Awards]#Awards)\n\n* [4 See also]#See_also)\n\n* [5 References]#References)\n\n* [6 Further reading]#Further_reading)\n\n* [7 External links]#External_links)\n\n- [x] Toggle the table of contents \n\n# Argus (camera company)\n\n- [x] 3 languages \n\n* [Español]\n* [日本語] \"アーガス (カメラ) – Japanese\")\n* [Русский] \"Argus (фотоаппаратура) – Russian\")\n\n[Edit links]\n\n* [Article] \"View the content page [alt-c]\")\n* [Talk] \"Discuss improvements to the content page [alt-t]\")\n\n- [x] English \n\n* [Read])\n* [Edit]&action=edit \"Edit this page [alt-e]\")\n* [View history]&action=history \"Past revisions of this page [alt-h]\")\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read])\n* [Edit]&action=edit \"Edit this page [alt-e]\")\n* [View history]&action=history \"Past revisions of this page [alt-h]\")\n\n General \n\n* [What links here] \"List of all English Wikipedia pages containing links to this page [alt-j]\")\n* [Related changes] \"Recent changes in pages linked from this page [alt-k]\")\n* [Upload file]\n* [Permanent link]&oldid=1321699708 \"Permanent link to this revision of this page\")\n* [Page information]&action=info \"More information about this page\")\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]&useparsoid=0)\n* [Edit interlanguage links]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]&printable=yes \"Printable version of this page [alt-p]\")\n\n In other projects \n\n* [Wikimedia Commons]\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor \n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\nFrom Wikipedia, the free encyclopedia\n\nCamera company\n\n[![Image 6: icon]]This article **needs [more citations]**. Please help [improve this article] \"Special:EditPage/Argus (camera company)\") by [adding citations to reliable sources]. Unsourced material may be challenged and [removed].  \n_Find sources:_[\"Argus\"camera company]–[news]**·**[newspapers]**·**[books]**·**[scholar]**·**[JSTOR]_(May 2020)_ _([Learn how and when to remove this message])_\n\nArgus[![Image 7]],_535_West_William_Street,_Ann_Arbor,_Michigan_-_panoramio.jpg)\n\nArgus Building\nIndustry[Cameras]\nFounded 1936;90 years ago(1936)\nDefunct 1969;57 years ago(1969)\nHeadquarters[Ann Arbor, Michigan], U.S.\n\n**Argus** was an American maker of cameras and photographic products, founded in 1936 in [Ann Arbor, Michigan]. Argus originated as a subsidiary of the [International Radio Corporation] (IRC), founded by Charles Verschoor.\n\n## History\n\n[[edit]&action=edit&section=1 \"Edit section: History\")]\n\n[![Image 8]]\n\n1960s portable Argus PreViewer color slide viewer\n\nThe International Radio Corporation was founded in 1931 by local businessman William E. Brown Jr., [George J. Burke] (who was a judge at the [Nuremberg trials]),[[1]]#cite_note-1) and Charles Albert Vershoor.[[2]]#cite_note-:0-2) IRC started out selling a line of radios, developed by Verschoor, that had a body made out of molded plastic instead of wood. The Model A, the company's first camera, was introduced in May 1936.[[2]]#cite_note-:0-2)\n\nIn August 1942, the company stopped all domestic production and focused on producing military optics and radio equipment for the armed forces during [World War II].[[2]]#cite_note-:0-2)\n\nThe company changed its name to Argus, Inc. in 1944. Argus introduced the Argus Model 21 in 1947, a metal-bodied camera and the company’s first model with an automatic shutter cocking to prevent double exposure and a hot shoe for flash.[[3]]#cite_note-:1-3)\n\nBy the end of World War II, Argus had won the Army-Navy “E” award five times for “excellence in design and manufacture of war-related material\".[[4]]#cite_note-4)[[5]]#cite_note-5) Argus Inc. changed its name to Argus Cameras, Inc. in 1949.[[6]]#cite_note-6)\n\nIts best-known product was the [C3] rangefinder camera, which enjoyed a 27-year production run and became one of the top-selling cameras in history. The company's Model A was the first low-cost [35 mm] camera in the United States.\n\nIn 1956, the Argus 50mm f/2.8 Cintagon lens, designed for the C44 camera, was one of the first commercial lenses designed with the aid of a computer.[[3]]#cite_note-:1-3)\n\nIn 1957, [Sylvania Electric Products] acquired the company but continued to operate as Argus. In 1962, Sylvania sold the company to Mansfield Industries, an importer of photography products.[[3]]#cite_note-:1-3) By 1969 it had ceased camera production (some rebadged cameras continued to be sold under the Argus name through the 1970s).[_[citation needed]_]\n\nMore recently, the Argus brand has been reestablished, and is used on a variety of inexpensive [digital] cameras made by Argus Camera Company, LLC., located in [Inverness, Illinois].\n\n## Models\n\n[[edit]&action=edit&section=2 \"Edit section: Models\")]\n\n[![Image 9]]\n\nArgus C3\n\n### A series\n\n[[edit]&action=edit&section=3 \"Edit section: A series\")]\n\n* A (1936–1941)\n* AF (1937–1938)\n* B (1937)\n* A2B (1939–1950)\n* A2F (1939–1941)\n* AA (1940–1942)\n* FA (1950–1951)\n\n### C series\n\n[[edit]&action=edit&section=4 \"Edit section: C series\")]\n\n[![Image 10]].JPG)\n\nArgus 21\n\n* C (1938–1939)\n* C2 (1938–1942)\n* [C3] (1938–1968)\n* 21 (1947–1952)\n* C4 (1951–1957)\n* C44 (1956–1957)\n* [C3 Golden Shield] (1958–1966)\n* [C3 Matchmatic] (1958–1966)\n* [C3 Standard] (1958–1966)\n* C44R (1958–1962)\n* C4R (1958)\n* [C33] (1959–1961)\n\n### Argoflex\n\n[[edit]&action=edit&section=5 \"Edit section: Argoflex\")]\n\n[![Image 11]]\n\nArgoflex Seventy-Five\n\n* Argoflex E (1940–1948)\n* Argoflex\n* Argoflex II (1947)\n* Argoflex EM (1948)\n* Argoflex EF (1948–1951)\n* Argoflex Seventy-Five (1949–1958)\n\n* Argus Seventy-Five (made in Australia)\n\n* Seventy-Five (1949–1958)\n* 40 (1950–1954)\n* Argoflex Forty (1950–1954)\n* Super Seventy-Five (1954–1958)\n* 75 (1958–1964)\n\n### Autronic\n\n[[edit]&action=edit&section=6 \"Edit section: Autronic\")]\n\n[![Image 12]].jpg)\n\nArgus Autronic 35\n\n* Autronic 35 (1960 only)\n* Autronic C3 (1960–1962)\n* Autronic I (1962–1965)\n* Autronic II (1962–1965)\n\n### Other models\n\n[[edit]&action=edit&section=7 \"Edit section: Other models\")]\n\n[![Image 13]]\n\n_Argus Lady Carefree_, plastic camera for 126 mm film cartridges, c. 1967\n\n* K (1939–1940)\n* M (1939–1940)\n* A3 (1940–1942)\n* CC (1941–1942)\n* Minca (1947–1948)\n* A5 (1953–1956)\n* A-Four (1953–1956)\n* C-Twenty (1957–1958)\n* Lady Carefree (126, circa 1967)\n* Carefree (126)\n\n### Digital\n\n[[edit]&action=edit&section=8 \"Edit section: Digital\")]\n\n[![Image 14]]\n\nArgus DC1500\n\n[![Image 15]]\n\nArgus DC3000\n\n* DCV-011\n* DCM-098\n* DCM-099\n* DC-1088\n* DC-1500\n* DC-1512E\n* DC-2185\n* DC-2700\n* DC-3000 (May 2000)\n* DC-3185\n* DC-3190\n* DC-3195\n* DC-3270DV\n* DC-3550\n* DC-5190\n* DC-5195\n* DC-5340\n* DC-6340\n\n## Awards\n\n[[edit]&action=edit&section=9 \"Edit section: Awards\")]\n\nArgus had two cameras for children developed in partnership with TEAMS Design. The cameras, the Bean and Sprout, won a Bronze 2009 IDEA award[[7]]#cite_note-7) from _[Bloomberg BusinessWeek]_ and the [Industrial Designers Society of America] in addition to an Appliance Design 2009 EID award.[[8]]#cite_note-Appliance_Design_EID_Awards-8)\n\n## See also\n\n[[edit]&action=edit&section=10 \"Edit section: See also\")]\n\n* [Argus Museum]\n\n## References\n\n[[edit]&action=edit&section=11 \"Edit section: References\")]\n\n1. [↑]#cite_ref-1 \"Jump up\")[\"George Burke Dies Suddenly | Ann Arbor District Library\"]. _aadl.org_. [Archived] from the original on 2024-04-19. Retrieved 2024-04-19.\n2. [Jump up to: 1]#cite_ref-:0_2-0)[2]#cite_ref-:0_2-1)[3]#cite_ref-:0_2-2)[\"Argus Museum Ann Arbor\"]. _www.argusmuseum.org_. [Archived] from the original on 2024-07-03. Retrieved 2024-04-19.\n3. [Jump up to: 1]#cite_ref-:1_3-0)[2]#cite_ref-:1_3-1)[3]#cite_ref-:1_3-2)[\"Argus Cameras; The American Firm That Made Miniature Photography Affordable Page 2\"]. _Shutterbug_. 2006-03-01. Retrieved 2024-05-17.\n4. [↑]#cite_ref-4 \"Jump up\")[\"Argus Eyes for Victory | Ann Arbor District Library\"]. _aadl.org_. Retrieved 2024-06-07.\n5. [↑]#cite_ref-5 \"Jump up\")Argus Camera Co. (1943-06-26). [_Argus Eyes 1943 June 26_].\n6. [↑]#cite_ref-6 \"Jump up\")[\"Argus, Inc., Is New Name | Ann Arbor District Library\"]. _aadl.org_. Retrieved 2024-06-07.\n7. [↑]#cite_ref-7 \"Jump up\")[\"Argus Bean Children's Digital Camera - Industrial Designers Society of America\"]. _www.idsa.org_. Retrieved 2025-03-10.\n8. [↑]#cite_ref-Appliance_Design_EID_Awards_8-0 \"Jump up\")[\"Appliance Design EID Awards\"]. Archived from the original on 2012-01-27. Retrieved 2009-10-13.\n\n## Further reading\n\n[[edit]&action=edit&section=12 \"Edit section: Further reading\")]\n\n* Larsen, Deborah J. (September/October 2024). \"A Snapshot of History: Argus Cameras in Ann Arbor.\" _Michigan History_. p. 16+. Lansing, Michigan: [Historical Society of Michigan]. ISSN 0026-2196. Retrieved [via Gale "
+      }
+    },
+    {
+      "turn": 3,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"# Dates from the video/audio\\nmanufacture_year = 1940          # serial number indicates 1940\\nage_at_recording = 77            # \\\"a camera that's, what, 77 years old now?\\\"\\nrecording_year = manufacture_year + age_at_recording\\n\\n# Dates from web research\\nfounding_year_IRC = 1931         # International Radio Corporation founded (Wikipedia, Argus Museum)\\nname_change_year = 1944          # Changed name to \\\"Argus, Inc.\\\" in 1944 (Wikipedia, Argus Museum)\\nprod_start = 1936                # Argus A production (audio + Wikipedia \\\"A (1936–1941)\\\")\\nprod_end = 1941\\n\\nprint(\\\"Recording year:\\\", recording_year)\\n\\nresult = (recording_year - founding_year_IRC) * (name_change_year - manufacture_year) / (prod_end - prod_start)\\nprint(\\\"(2017-1931) =\\\", recording_year - founding_year_IRC)\\nprint(\\\"(1944-1940) =\\\", name_change_year - manufacture_year)\\nprint(\\\"(1941-1936) =\\\", prod_end - prod_start)\\nprint(\\\"Exact result:\\\", result)\\nprint(\\\"Rounded:\\\", round(result))\"}",
+      "result": {
+        "stdout": "Recording year: 2017\n(2017-1931) = 86\n(1944-1940) = 4\n(1941-1936) = 5\nExact result: 68.8\nRounded: 69",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 35,
+      "id": "gen-1791460495-7RK0rkOsio5NMDWqPOag",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 17239,
+        "completion_tokens": 1032,
+        "total_tokens": 18271,
+        "cost": 0.00307089,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00307089,
+          "upstream_inference_prompt_cost": 0.00258585,
+          "upstream_inference_completions_cost": 0.00048504
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 912,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 39.876
+    },
+    {
+      "item_id": 35,
+      "id": "gen-1791460539-MktrInBO9S2D4YljlytW",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 20454,
+        "completion_tokens": 690,
+        "total_tokens": 21144,
+        "cost": 0.001231248,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16128,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001231248,
+          "upstream_inference_prompt_cost": 0.000906948,
+          "upstream_inference_completions_cost": 0.0003243
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 617,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 42.028
+    },
+    {
+      "item_id": 35,
+      "id": "gen-1791460585-Mx28Cb79AkHpI3Pg1GXo",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 29315,
+        "completion_tokens": 680,
+        "total_tokens": 29995,
+        "cost": 0.002075442,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 19712,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002075442,
+          "upstream_inference_prompt_cost": 0.001755842,
+          "upstream_inference_completions_cost": 0.0003196
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 344,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 48.887
+    },
+    {
+      "item_id": 35,
+      "id": "gen-1791460635-dWqMM0mGQaCyEwtqLClo",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 30095,
+        "completion_tokens": 632,
+        "total_tokens": 30727,
+        "cost": 0.000969242,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 28672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000969242,
+          "upstream_inference_prompt_cost": 0.000672202,
+          "upstream_inference_completions_cost": 0.00029704
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 226,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 26.863
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "69",
+  "em_score": 1,
+  "llm_equal": 1,
+  "judge_response": "Exact match",
+  "judge_error": null,
+  "elapsed_seconds": 203.63
+}

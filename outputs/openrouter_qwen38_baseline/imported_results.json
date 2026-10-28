@@ -1,0 +1,69 @@
+{
+  "source_run": "outputs/openrouter_qwen38_pilot20",
+  "imported_at": "2026-10-08T11:41:32.408212+00:00",
+  "item_ids": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "request_cost_usd": 0.2413219932,
+  "protocol": {
+    "model": "qwen/qwen3.8-omni-flash",
+    "judge": "deepseek/deepseek-v3.2",
+    "dataset_revision": "adf542cf70735e061b8d73300cdbae9c847b9bc3",
+    "input_sha256": "5b47b938ed74e1063fd3a8ae1702f369091b654e5abf64e210ab60cfdba5a533",
+    "active_perception": false,
+    "tools": [
+      "web_search",
+      "page_browser",
+      "code_executor"
+    ],
+    "media_preprocessing": "GeminiBaseAgent: max 128 uniformly sampled video frames; 2 FPS output; smart_resize min 224^2 max 512^2 pixels; original images; separate mono 16kHz MP3 audio, first 30 minutes",
+    "agent_protocol": "OpenRouter native function calling; original baseline system prompt and tool schemas",
+    "evaluation_protocol": "upstream answer extraction and normalization; DeepSeek-V3.2; strict Correct/Incorrect parsing; judge failures excluded from final score until resolved",
+    "max_turns": 50,
+    "max_tokens": 20480,
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20
+    }
+  },
+  "source_manifest_sha256": "f3a4ea316977f48403164148e83ef63362064eefbed4f675c2eccee2b77e7986",
+  "item_sha256": {
+    "001.json": "d11e35d556865fcec4c5a77c7f232b37ad1c0a6becf46c6cde3508276294a8d9",
+    "002.json": "fdc66ed0bd84e17ef7d0bc471c5657b09daa8a4e633d40a89755cb48a283d02d",
+    "004.json": "988289794f5e1900a7f60b680ee373ed07be6063e4221fead45b0f08de4b85a9",
+    "005.json": "54114d34cff67f55d1ae10ea7464b1553dc40d5873b9a5b310bff7fa4e0068f0",
+    "007.json": "97f0bcd71f908ea9672031771aa3a5e9dc824fb3bc00d9ead2d40dddec2eb3a3",
+    "008.json": "5f920f1ba9bfc74bfc08cafd7cecd5bd9a45ed365cc7a74c32b4861a1d4a62c2",
+    "009.json": "db04984f6d385d20fd77294bae0e39e5a30c004fcb6f69807abc617d63d217ef",
+    "010.json": "1654714a7778b88132dc4e676b76e649069acd5e99b4194eacc96c7c3d64b5c0",
+    "011.json": "c974b020f51465d8978df240a0aa1c67de7cbd5b1d66ae822d7aaf6acf34284e",
+    "012.json": "ceb920d36099f4638f81597907f5919fc70746e528df083d10dee93839950628",
+    "013.json": "06bebdc37c1ce52573ebb1666f23578f494ca73988546d4a01b4d5513d2f0f00",
+    "014.json": "b3e2780a22158aa8129e1e7cf10ee5cdd5bc6351f802aea2f7f90aa50b3ad516",
+    "015.json": "21a3341b9e2dd3831ecb1c0317d4971deb36401f0a838e9d15fb9268b38587e1",
+    "016.json": "81e957b6207cb4724ad1c82e6d2a4f3381fbeefaa5c5d5af2a2bd1664f1ef21b",
+    "017.json": "5af3bbc57ebeb50b361414b8f734b54d856b856e23f5179cb60155b8ab62189e",
+    "018.json": "76df35e326f2f8757cc7818c13821789676b7daddad4ca63ca9eca1a56d490dc",
+    "019.json": "88e0e06afe9a7af2eaf3d769c98cf9ddb0707bb07805dcf3e65dbf42f651ff58",
+    "020.json": "f68638ab0bef44ca8f81abf33284465357bfd37c1e29b8031284f8fa33f47f0d"
+  },
+  "note_ru": "Импортированы все 18 оценённых ответов пилота, включая 5 неправильных. Задачи 3 и 6 с техническими ошибками будут выполнены повторно. Настройки модели, инструменты и предобработка медиа прежние; добавлены только учёт длительного запуска и остановка при недоступности API-кредитов."
+}

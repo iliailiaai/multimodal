@@ -1,0 +1,441 @@
+{
+  "created_at": "2026-10-08T10:44:30.047659+00:00",
+  "description_ru": "Новый прогон первых 20 задач OmniGAIA на Qwen3.8 Omni Flash через OpenRouter, без обучения и активного восприятия. Ответы предыдущего пилота не переносились.",
+  "selected_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "model": "qwen/qwen3.8-omni-flash",
+  "judge": "deepseek/deepseek-v3.2",
+  "dataset_revision": "adf542cf70735e061b8d73300cdbae9c847b9bc3",
+  "active_perception": false,
+  "training": false,
+  "concurrency": 4,
+  "wall_seconds": 1323.003,
+  "metrics": {
+    "expected_count": 20,
+    "completed": 18,
+    "judged": 18,
+    "errors": 2,
+    "correct": 13,
+    "pass_at_1": null,
+    "partial_accuracy": 0.7222222222222222,
+    "by_level": {
+      "Easy": {
+        "count": 5,
+        "correct": 4
+      },
+      "Medium": {
+        "count": 8,
+        "correct": 6
+      },
+      "Hard": {
+        "count": 5,
+        "correct": 3
+      }
+    },
+    "tool_calls": {
+      "web_search": 119,
+      "page_browser": 47,
+      "code_executor": 24
+    }
+  },
+  "incorrect": 5,
+  "fraction_correct_among_all_attempted": 0.65,
+  "score_note_ru": "13 правильных ответов из 18 полученных (72,22%). Из всех 20 выбранных задач решено 65%; две ошибки API выделены отдельно. Итогового pass@1 по всему бенчмарку из 360 задач нет.",
+  "technical_error_ids": [
+    3,
+    6
+  ],
+  "error_note_ru": "Задачи 3 и 6 завершились Download multimodal file timed out после четырёх попыток передачи неизменного запроса. Задача 20 также содержит два видео, но завершилась успешно; общий запрет нескольких видео не подтверждён.",
+  "openrouter": {
+    "by_model": {
+      "qwen": {
+        "model": "qwen/qwen3.8-omni-flash",
+        "requests": 129,
+        "cost_usd": 0.240243658,
+        "input_tokens": 3180538,
+        "output_tokens": 144437,
+        "cached_input_tokens": 2274048
+      },
+      "judge": {
+        "model": "deepseek/deepseek-v3.2",
+        "requests": 11,
+        "cost_usd": 0.0010783352,
+        "input_tokens": 4215,
+        "output_tokens": 16,
+        "cached_input_tokens": 0
+      }
+    },
+    "logged_cost_usd": 0.2413219932,
+    "account_usage_delta_usd": 0.241321992,
+    "billing_reconciled": true,
+    "non_200_requests_without_generation": 8
+  },
+  "serper": {
+    "credits_used": 120,
+    "search_tool_calls": 119,
+    "healthcheck_requests": 1,
+    "credits_remaining": 2343,
+    "cash_cost_usd": 0,
+    "billing_note_ru": "Расход подтверждён разницей кредитов на dashboard; использован бесплатный запас."
+  },
+  "jina": {
+    "free_tokens_remaining": 9672386,
+    "paid_tokens_remaining": 0,
+    "has_payment_method": false,
+    "cash_cost_usd": 0,
+    "tokens_consumed_in_this_run": null,
+    "billing_note_ru": "Использован бесплатный запас. Баланс Jina до этого прогона не зафиксирован; точное число бесплатных токенов за эти 20 задач отдельно не измерено."
+  },
+  "rough_projection_360": {
+    "openrouter_usd_using_all_attempts_average": 4.3437958776,
+    "openrouter_usd_using_completed_average": 4.826439864,
+    "serper_searches_using_completed_average": 2380,
+    "note_ru": "Линейная оценка на малой выборке при таком же поведении модели и кэша. Стоимость решения двух входов, на которых API пока не работает, не измерена. Это не фиксированный бюджет."
+  },
+  "items": {
+    "1": {
+      "level": "Easy",
+      "status": "completed",
+      "correct": 0,
+      "predicted_answer": "790 advertisers",
+      "reference_answer": "790",
+      "elapsed_seconds": 541.93,
+      "requests": 24,
+      "cost_usd": 0.0351526612,
+      "tool_calls": {
+        "web_search": 25,
+        "page_browser": 8,
+        "code_executor": 3
+      },
+      "error": null,
+      "trace_file": "items/001.json"
+    },
+    "2": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "20 months",
+      "reference_answer": "20",
+      "elapsed_seconds": 76.85,
+      "requests": 6,
+      "cost_usd": 0.0047138284,
+      "tool_calls": {
+        "web_search": 4,
+        "code_executor": 1,
+        "page_browser": 2
+      },
+      "error": null,
+      "trace_file": "items/002.json"
+    },
+    "3": {
+      "level": "Easy",
+      "status": "error",
+      "correct": null,
+      "predicted_answer": null,
+      "reference_answer": "2 years",
+      "elapsed_seconds": 170.33,
+      "requests": 0,
+      "cost_usd": 0.0,
+      "tool_calls": {},
+      "error": "RuntimeError: OpenRouter HTTP 400: {\"error\":{\"message\":\"Provider returned error\",\"code\":400,\"metadata\":{\"raw\":\"data: {\\\"error\\\":{\\\"code\\\":\\\"invalid_parameter_error\\\",\\\"param\\\":null,\\\"message\\\":\\\"Download multimodal file timed out\\\",\\\"type\\\":\\\"invalid_request_error\\\"},\\\"id\\\":\\\"chatcmpl-fecf0a91-e441-97c8-bdee-99893842b81f\\\"}\\n\\n\",\"provider_name\":\"Alibaba\",\"is_byok\":false}},\"user_id\":\"user_3JzvfBNETxKVb7EntXZdb0lIIZv\"}",
+      "trace_file": "items/003.json"
+    },
+    "4": {
+      "level": "Hard",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "16695",
+      "reference_answer": "16695",
+      "elapsed_seconds": 312.84,
+      "requests": 4,
+      "cost_usd": 0.017123578,
+      "tool_calls": {
+        "web_search": 3,
+        "page_browser": 2,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/004.json"
+    },
+    "5": {
+      "level": "Easy",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "K2 — and its primary binding partner for integrated/system setups is Marker (e.g., the K2 × Marker \"Perfect Match\" packages using Marker Griffon 13 bindings).",
+      "reference_answer": "Marker",
+      "elapsed_seconds": 30.88,
+      "requests": 3,
+      "cost_usd": 0.0017795316,
+      "tool_calls": {
+        "web_search": 2
+      },
+      "error": null,
+      "trace_file": "items/005.json"
+    },
+    "6": {
+      "level": "Medium",
+      "status": "error",
+      "correct": null,
+      "predicted_answer": null,
+      "reference_answer": "102,924 times",
+      "elapsed_seconds": 531.44,
+      "requests": 0,
+      "cost_usd": 0.0,
+      "tool_calls": {},
+      "error": "RuntimeError: OpenRouter HTTP 400: {\"error\":{\"message\":\"Provider returned error\",\"code\":400,\"metadata\":{\"raw\":\"data: {\\\"error\\\":{\\\"code\\\":\\\"invalid_parameter_error\\\",\\\"param\\\":null,\\\"message\\\":\\\"Download multimodal file timed out\\\",\\\"type\\\":\\\"invalid_request_error\\\"},\\\"id\\\":\\\"chatcmpl-31ae1edc-22c4-9092-a77e-5839a0eff7fb\\\"}\\n\\n\",\"provider_name\":\"Alibaba\",\"is_byok\":false}},\"user_id\":\"user_3JzvfBNETxKVb7EntXZdb0lIIZv\"}",
+      "trace_file": "items/006.json"
+    },
+    "7": {
+      "level": "Easy",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "10",
+      "reference_answer": "10",
+      "elapsed_seconds": 378.14,
+      "requests": 11,
+      "cost_usd": 0.013115918,
+      "tool_calls": {
+        "web_search": 8,
+        "page_browser": 4,
+        "code_executor": 3
+      },
+      "error": null,
+      "trace_file": "items/007.json"
+    },
+    "8": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "**1. Species & family (from the images)**\n- **Image 1 – Purple Gallinule (*Porphyrio martinica*)**, family **Rallidae** (order Gruiformes). Diagnostic: very long toes walking on floating lily pads, iridescent blue‑green‑purple plumage, red frontal shield/bill tipped yellow.\n- **Image 2 – Common Gallinule (*Gallinula galeata*)**, family **Rallidae**. Diagnostic: brownish mantle, slate‑gray underparts, bold white flank stripe, red bill with yellow tip.\n\n**2. Average water depth at nest sites – Table 1, Trent & Lapinski (2015), *J. Alabama Ornithol. Soc.* 61(1), Lower Mobile‑Tensaw River Delta, Alabama**\n- Common Gallinule: **32 cm** (range 10–80)\n- Purple Gallinule: **43 cm** (range 10–110)\n\n**3. Count‑down time (sink ≈ 1 ft/s; 1 ft = 30.48 cm)**\n- Common Gallinule: 32 cm = 1.05 ft → **≈ 1.0 s**\n- Purple Gallinule: 43 cm = 1.41 ft → **≈ 1.4 s**\n\n**4. Recommended spinnerbait weight (audio guide)**\nBoth target depths (≈1.0 ft and ≈1.4 ft) fall in the \"super‑shallow cover, 2 ft or less / flooded lily pads & grass\" window, so the appropriate weight for **each** is the **3/8 oz** Cobart‑series spinnerbait.\n\n**5. Optimal overlap month for pre‑spawn bass fishing in Purple Gallinule habitat**\nIn the southern U.S. Purple Gallinules begin their breeding season with arrival, pairing and territory establishment in **April** (nesting/eggs follow in May – the Alabama table's first eggs are 12 May). The audio's pre‑spawn pattern for the heavier 3/4–1 oz baits (dirty spring‑runoff water, fish staged on banks and near boats) corresponds to the southern largemouth pre‑spawn window of late winter–April. The month where the early part of the gallinule breeding season and bass pre‑spawn coincide is therefore **April**.",
+      "reference_answer": "Common Gallinule: 1.0 second count-down, 3/8 oz spinnerbait. Purple Gallinule: 1.4 seconds count-down, 3/8 oz spinnerbait. Optimal month for heavier spinnerbaits in Purple Gallinule habitat: April.",
+      "elapsed_seconds": 352.74,
+      "requests": 12,
+      "cost_usd": 0.017034923,
+      "tool_calls": {
+        "web_search": 12,
+        "page_browser": 4,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/008.json"
+    },
+    "9": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "8452",
+      "reference_answer": "8452",
+      "elapsed_seconds": 218.37,
+      "requests": 4,
+      "cost_usd": 0.016821108,
+      "tool_calls": {
+        "web_search": 3,
+        "page_browser": 2,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/009.json"
+    },
+    "10": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 0,
+      "predicted_answer": "1928",
+      "reference_answer": "1930",
+      "elapsed_seconds": 79.06,
+      "requests": 5,
+      "cost_usd": 0.004843993,
+      "tool_calls": {
+        "web_search": 2,
+        "page_browser": 1,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/010.json"
+    },
+    "11": {
+      "level": "Hard",
+      "status": "completed",
+      "correct": 0,
+      "predicted_answer": "**Identifications:** Launch site = NASA **Wallops Flight Facility, Wallops Island, Virginia** (37.933° N, 75.468° W), inferred from \"Wallops Launch Control … Black Brant 9 … DYNAMO‑2\"; rocket type = **Black Brant IX**. Lighthouse = **Cape Neddick Light (\"The Nubble\"), York, Maine** (43.1652° N, 70.5911° W).\n\n**1. Great‑circle distance:** haversine, R = 6371 km, central angle 6.409° → **≈ 713 km** (443 mi).\n\n**2. Data:** Black Brant IX maximum flight height = **300 km**. Nubble focal plane = **88 ft** (26.8 m = 0.0268 km); nominal range = **13 nmi = 24.08 km** (≈24.1 km).\n\n**3. Line of sight — YES.** Using d = √(2Rh): from the rocket, d₁ = √(2·6371·300) ≈ **1955 km**; from the lamp, d₂ = √(2·6371·0.0268) ≈ **18.5 km**. Combined visibility = 1955 + 18.5 ≈ **1974 km**, which greatly exceeds the 713 km separation (margin ≈ 1260 km). Equivalently, the minimum rocket altitude for LOS is (713 − 18.5)²/(2·6371) ≈ **38 km**, far below 300 km. Exact geometry: the rocket would appear at ≈**19° elevation**, slant range ≈788 km.\n\n**4. Why the light is invisible from Wallops:** (a) Earth's curvature — the beam's horizon is only 18.5 km (dip 0.17°); a Wallops observer would need the lamp at ≈39 km altitude instead of 27 m to see it; (b) the 24.1 km nominal range is ~30× too short for 713 km; (c) inverse‑square losses alone reduce intensity to ~(24.08/713)² ≈ 1/870; (d) all 713 km lie within the dense, extinction‑heavy lower atmosphere. The rocket, by contrast, is a bright object raised above the atmospheric bulge and the geometric horizon, so it can be seen from the lighthouse even though its launch site can never see the lighthouse's beam.",
+      "reference_answer": "1. Great-circle distance: 713 km. 2. Rocket maximum altitude: 600 km; Lighthouse focal plane height: 88 ft (0.0268 km); Lighthouse nominal range: 13 nautical miles = 24.1 km. 3. Yes, the rocket would be visible from the lighthouse because the sum of horizon distances (2847.8 km) exceeds the great-circle distance (713 km). 4. The lighthouse's light would not be visible from the launch site because its nominal range is only 24.1 km, which is far less than the 713 km distance between the locations.",
+      "elapsed_seconds": 206.48,
+      "requests": 7,
+      "cost_usd": 0.014343869,
+      "tool_calls": {
+        "web_search": 6,
+        "page_browser": 3,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/011.json"
+    },
+    "12": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "≈ €2.67",
+      "reference_answer": "2.67",
+      "elapsed_seconds": 329.21,
+      "requests": 10,
+      "cost_usd": 0.010479642,
+      "tool_calls": {
+        "web_search": 9,
+        "page_browser": 5,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/012.json"
+    },
+    "13": {
+      "level": "Easy",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "Show me the money!",
+      "reference_answer": "Show me the money!",
+      "elapsed_seconds": 265.85,
+      "requests": 2,
+      "cost_usd": 0.005126298,
+      "tool_calls": {
+        "web_search": 2
+      },
+      "error": null,
+      "trace_file": "items/013.json"
+    },
+    "14": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "83.93%",
+      "reference_answer": "83.93%",
+      "elapsed_seconds": 198.91,
+      "requests": 4,
+      "cost_usd": 0.007060086,
+      "tool_calls": {
+        "web_search": 4,
+        "page_browser": 1,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/014.json"
+    },
+    "15": {
+      "level": "Hard",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "**1. Date on the photograph:** The post-mortem photograph of Mrs. Mills, Mr. Tuttle and Lydia — the one Grace finds in the servants' quarters at the climax (shown in the recap at ~11:38–11:52, confirming their deaths \"more than half a century\" before the 1945 setting) — is dated **December 1891**, the year of the tuberculosis outbreak that killed the three servants.\n\n**2. The Spanish monarch:** The Palacio de Miramar in San Sebastián was commissioned as a royal summer residence for **Queen María Cristina of Austria (Maria Christina)** — the Queen Regent, widow of Alfonso XII and regent for her young son Alfonso XIII — who moved the court's summers to San Sebastián after her widowhood. (The palace was later inherited by Alfonso XIII.)\n\n**3. Wornum's design philosophy in both palaces:** Both buildings express his signature transplantation of the British Domestic Revival to Spain. Miramar (1893) is a \"purely English\"-style palace inspired by Queen Anne cottages with Neo-Gothic ornament, while Los Hornillos (1897–1904, for the Duke of Santo Mauro, head of Alfonso XIII's household) is a textbook Neo-Tudor/\"Old English\" country house: steeply pitched roofs, half-timbering with herringbone brick infill, tall mullioned windows, high chimney stacks, jettied upper stories over porch pillars, dormers and a tower, set within a deliberately picturesque estate (chapel, cottages, lakes) adapted to local materials (ceramic roof tiles instead of slate). His philosophy was thus consistent: romantic, medievalizing English picturesque architecture, tailored to landscape and patron, whether royal (Miramar) or aristocratic (Los Hornillos) — a style that later influenced Santander's Palacio de la Magdalena.\n\n**4. Relationship between the photograph's date and the Miramar timeline:** December 1891 sits **between** the two documented milestones of the palace's construction: Wornum's project/design dates from **1889**, and the palace was completed in **1893**. In other words, the photograph's date falls during the planning-and-building phase of the Miramar Palace — roughly one year before its completion — so the fictional 1891 tuberculosis deaths depicted in *The Others* coincide with the same late-Victorian moment in which Wornum was erecting María Cristina's summer residence, which in turn preceded his Cantabrian masterpiece, Los Hornillos (1897–1904), the actual filming location of the manor.",
+      "reference_answer": "December 1891, and Miramar Palace was specifically commissioned by Queen María Cristina of Austria (Queen Consort of Alfonso XII and Queen Regent of Spain). Architecturally, both palaces exemplify Ralph Selden Wornum's English Neo-Tudor/Neo-Gothic style adapted for Spanish aristocracy. Historically, the photograph date (December 1891) falls during the construction period of Miramar Palace (1889-1893), commissioned by the same royal family that would appreciate the architectural style seen in the film's location.",
+      "elapsed_seconds": 475.2,
+      "requests": 11,
+      "cost_usd": 0.021008045,
+      "tool_calls": {
+        "web_search": 12,
+        "page_browser": 5
+      },
+      "error": null,
+      "trace_file": "items/015.json"
+    },
+    "16": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 0,
+      "predicted_answer": "≈ 312.61 km² (about 313 km²)",
+      "reference_answer": "312.96",
+      "elapsed_seconds": 326.4,
+      "requests": 10,
+      "cost_usd": 0.033064278,
+      "tool_calls": {
+        "web_search": 6,
+        "page_browser": 1,
+        "code_executor": 5
+      },
+      "error": null,
+      "trace_file": "items/016.json"
+    },
+    "17": {
+      "level": "Hard",
+      "status": "completed",
+      "correct": 0,
+      "predicted_answer": "**Brand identified:** NAYA (Canadian spring water; the blue‑labelled bottle in the image).\n\n**1. BIER 2012 baseline (full lifecycle, PET water bottles):**\n- 500 mL bottle ≈ **82.8 g CO₂e**\n- 1.5 L bottle ≈ **163 g CO₂e**\n\n**2. Naya's Carbon Trust–certified claim:** using 100% rPET instead of virgin plastic reduces the full lifecycle carbon footprint of its bottle by **30%** (stated for the 1.5 L format).\n\n**3. Calculated saving for a 500 mL bottle (applying 30% proportionally):**\n- Savings = 82.8 g × 0.30 = **≈ 24.8 g CO₂e per bottle** (24.84 g)\n- rPET bottle footprint = 82.8 − 24.84 = **≈ 58.0 g CO₂e** vs 82.8 g for virgin PET\n- (Same logic on 1.5 L: 163 × 0.30 ≈ 48.9 g CO₂e saved, leaving ≈ 114.1 g.)",
+      "reference_answer": "24.84",
+      "elapsed_seconds": 231.19,
+      "requests": 12,
+      "cost_usd": 0.011824095,
+      "tool_calls": {
+        "web_search": 11,
+        "page_browser": 6,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/017.json"
+    },
+    "18": {
+      "level": "Medium",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "50, 5005, 92",
+      "reference_answer": "50, 5005, 92",
+      "elapsed_seconds": 213.85,
+      "requests": 9,
+      "cost_usd": 0.012005904,
+      "tool_calls": {
+        "web_search": 8,
+        "page_browser": 3,
+        "code_executor": 2
+      },
+      "error": null,
+      "trace_file": "items/018.json"
+    },
+    "19": {
+      "level": "Hard",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "Thursday, 19 January 2023 — i.e. the training would have run from Monday 9 January to Thursday 19 January 2023. (The earlier Thursdays, 5 and 12 January, are impossible because the substitute New Year's Day bank holiday on Monday 2 January 2023 — and Boxing Day, Monday 26 December 2022 — break up the required 9 consecutive working days from a Monday start.)",
+      "reference_answer": "2023-01-19",
+      "elapsed_seconds": 90.4,
+      "requests": 3,
+      "cost_usd": 0.004257305,
+      "tool_calls": {
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/019.json"
+    },
+    "20": {
+      "level": "Easy",
+      "status": "completed",
+      "correct": 1,
+      "predicted_answer": "1.48",
+      "reference_answer": "1.48",
+      "elapsed_seconds": 132.6,
+      "requests": 3,
+      "cost_usd": 0.01156693,
+      "tool_calls": {
+        "web_search": 2,
+        "code_executor": 1
+      },
+      "error": null,
+      "trace_file": "items/020.json"
+    }
+  }
+}

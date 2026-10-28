@@ -1,0 +1,628 @@
+{
+  "id": 148,
+  "question": "While researching historical prices, you listen to an audio clip stating that a Rolls-Royce Phantom II cost $19,000 (American dollars) in 1931. You also have a related image with a visible watermark. Identify the year in the watermark. Then, using the official US Consumer Price Index (CPI-U) annual averages for 1931 and the watermark year you identified, calculate what the 1931 price of the car would be equivalent to in terms of purchasing power in the watermark year. Round your final answer to the nearest thousand dollars. (Important: Perform the inflation calculation yourself using external CPI data; do not rely on any adjusted figures mentioned in the audio clip.)",
+  "Level": "Easy",
+  "category": "Finance & Commerce",
+  "task_type": "image + audio",
+  "answer": "291000",
+  "output": "## Analysis\n\n**Step 1 — Watermark year:** The image (a red Rolls‑Royce Phantom parked near Big Ben/the Houses of Parliament in London) carries the watermark **\"landahlauts, 2013\"** → target year = **2013**.\n\n**Step 2 — Official CPI‑U annual averages (BLS, 1982‑84 = 100):**\n- 1931: **15.2**\n- 2013: **232.957**\n\n**Step 3 — Inflation calculation:**\n- Ratio = 232.957 ÷ 15.2 = **15.3261**\n- $19,000 × 15.3261 = **$291,196.25**\n\n**Step 4 — Rounded to the nearest thousand:** **≈ $291,000**\n\n(This is notably higher than the $270,785.72 figure quoted in the audio, which is why the CPI‑based computation was done independently as instructed.)\n\n<answer>Watermark year: 2013. Using official BLS CPI‑U annual averages (1931 = 15.2; 2013 = 232.957), the 1931 price of $19,000 is equivalent to about $291,196 in 2013 dollars — i.e., roughly **$291,000** when rounded to the nearest thousand.</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "While researching historical prices, you listen to an audio clip stating that a Rolls-Royce Phantom II cost $19,000 (American dollars) in 1931. You also have a related image with a visible watermark. Identify the year in the watermark. Then, using the official US Consumer Price Index (CPI-U) annual averages for 1931 and the watermark year you identified, calculate what the 1931 price of the car would be equivalent to in terms of purchasing power in the watermark year. Round your final answer to the nearest thousand dollars. (Important: Perform the inflation calculation yourself using external CPI data; do not rely on any adjusted figures mentioned in the audio clip.)"
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:243071 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:2266140 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "The user wants me to:\n1. Identify the year in the watermark of the image. The watermark says \"landahlauts, 2013\". So the year is 2013.\n2. Find the official US CPI-U annual averages for 1931 and 2013.\n3. Calculate what $19,000 in 1931 would be equivalent to in 2013 dollars.\n4. Round to the nearest thousand dollars.\n\nLet me search for the CPI-U annual averages for 1931 and 2013.\n\nFrom memory: CPI-U annual average for 1931 is approximately 15.5 (or 15.4?). For 2013 it's approximately 232.957.\n\nLet me verify with a search.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_99f5465c1e664e329b82bfb6",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"CPI-U annual average 1931 and 2013 US Consumer Price Index all urban consumers\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_d36b34a0444347948a821542",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"BLS CPI-U annual average values 1931 = 15.5, 2013 = 232.957\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user wants me to:\n1. Identify the year in the watermark of the image. The watermark says \"landahlauts, 2013\". So the year is 2013.\n2. Find the official US CPI-U annual averages for 1931 and 2013.\n3. Calculate what $19,000 in 1931 would be equivalent to in 2013 dollars.\n4. Round to the nearest thousand dollars.\n\nLet me search for the CPI-U annual averages for 1931 and 2013.\n\nFrom memory: CPI-U annual average for 1931 is approximately 15.5 (or 15.4?). For 2013 it's approximately 232.957.\n\nLet me verify with a search.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_99f5465c1e664e329b82bfb6",
+      "content": "[{\"id\": 1, \"title\": \"Consumer Price Index Historical Tables for U.S. City Average\", \"url\": \"https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\", \"snippet\": \"Historical Tables for U.S. City Average CONSUMER PRICE INDEX FOR ALL URBAN CONSUMERS (CPI-U) (not seasonally adjusted) ALL ITEMS (1982-84=100)\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Consumer Price Index, 1913\", \"url\": \"https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-\", \"snippet\": \"This chart uses data from the sole measure of CPI available until 1978, which it reflects the CPI for all urban consumers (CPI-U).\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Consumer Price Index Data from 1913 to 2026\", \"url\": \"https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\", \"snippet\": \"Consumer Price Index for All Urban Consumers (CPI-U) from 1913 to 2026* ; 2013, 230.280, 232.166 ; 2014, 233.916, 234.781 ; 2015, 233.707, 234.722 ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"historical-cpi-u-201710.pdf\", \"url\": \"https://www.bls.gov/cpi/tables/historical-cpi-u-201710.pdf\", \"snippet\": \"Historical Consumer Price Index for All Urban Consumers (CPI-U): U. S. city average, all items (1982-84=100, unless otherwise noted) Annual avg. 1913 - - 9.9 - ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Consumer Price Index for All Urban Consumers (CPI-U)\", \"url\": \"https://ir.mit.edu/projects/cpi-u/\", \"snippet\": \"The CPI-U by Fiscal Year averages the CPI-U. The CPI Base uses 1982–1984 as the base year equaling 100. prior year 1913 9.8 3.0 — 9.8 1914 9.9 3.0 1.62% 2013 ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Table 1. Consumer Price Index for All Urban ...\", \"url\": \"https://www.bls.gov/news.release/cpi.t01.htm\", \"snippet\": \"Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, by expenditure category, August 2026 [1982-84=100, unless otherwise noted]\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Consumer Price Index - February 2024\", \"url\": \"https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\", \"snippet\": \"Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month [1982-84=100, unless otherwise noted]\", \"date\": \"\"}, {\"id\": 8, \"title\": \"All Items in U.S. City Average (CPIAUCNS) | FRED\", \"url\": \"https://fred.stlouisfed.org/series/cpiaucns\", \"snippet\": \"Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCNS) 334.980 | Index 1982-1984=100, Not Seasonally Adjusted | Monthly. ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Consumer price index in the United States\", \"url\": \"https://en.wikipedia.org/wiki/Consumer_price_index_in_the_United_States\", \"snippet\": \"The United States Consumer Price Index (CPI) is a family of various consumer price indices published monthly by the United States Bureau of Labor Statistics ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Table 5. Chained Consumer Price Index for All Urban ...\", \"url\": \"https://www.bls.gov/news.release/cpi.t05.htm\", \"snippet\": \"Chained Consumer Price Index for All Urban Consumers (C-CPI-U) and the Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items index ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_d36b34a0444347948a821542",
+      "content": "[{\"id\": 1, \"title\": \"Historical CPI-U\", \"url\": \"https://www.bls.gov/cpi/tables/historical-cpi-u-201711.pdf\", \"snippet\": \"Year. Semiannual averages. Annual avg. Percent change from previous. 1st half. 2nd half. Dec. Annual avg. 1970. -. -. 38.8. 5.6. 5.7. 1971. -. -. 40.5. 3.3. 4.4.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Consumer Price Index, 1913\", \"url\": \"https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-\", \"snippet\": \"This chart uses data from the sole measure of CPI available until 1978, after which it reflects the CPI for all urban consumers (CPI-U). The current year's ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Table 1. Consumer Price Index for All Urban ...\", \"url\": \"https://www.bls.gov/news.release/cpi.t01.htm\", \"snippet\": \"Table 1. Consumer Price Index for All Urban Consumers (CPI-U): U. S. city average, by expenditure category ; 13.540 · 8.232 · 1.026 ; 341.295 · 314.608 · 359.740 ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Consumer Price Index Historical Tables for U.S. City Average\", \"url\": \"https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\", \"snippet\": \"Historical Tables for U.S. City Average CONSUMER PRICE INDEX FOR ALL URBAN CONSUMERS (CPI-U) (not seasonally adjusted) ALL ITEMS (1982-84=100)\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Table 5. Chained Consumer Price Index for All Urban ...\", \"url\": \"https://www.bls.gov/news.release/cpi.t05.htm\", \"snippet\": \"Chained Consumer Price Index for All Urban Consumers (C-CPI-U) U.S. city average, all items index. CPI-U December 2013 1.3\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Consumer Price Index for All Urban Consumers: All Items in ...\", \"url\": \"https://fred.stlouisfed.org/series/CPIAUCSL\", \"snippet\": \"View data of the CPI, or an inflation measure derived from tracking the changes in the weighted-average price of a basket of common goods and services.\", \"date\": \"\"}, {\"id\": 7, \"title\": \"CPI Home : U.S. Bureau of Labor Statistics\", \"url\": \"https://www.bls.gov/cpi/\", \"snippet\": \"The Consumer Price Index (CPI) is a measure of the average change over time in the prices paid by urban consumers\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Consumer Price Index Data from 1913 to 2026\", \"url\": \"https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\", \"snippet\": \"Consumer Price Index for All Urban Consumers (CPI-U) from 1913 to 2026* ; 2013, 230.280, 232.166 ; 2014, 233.916, 234.781 ; 2015, 233.707, 234.722 ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Consumer Price Index - February 2024\", \"url\": \"https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\", \"snippet\": \"1931 ... Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, index averages.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Table 2. Consumer Price Index for All Urban ...\", \"url\": \"https://www.bls.gov/news.release/cpi.t02.htm\", \"snippet\": \"Consumer Price Index for All Urban Consumers (CPI-U): U. S. city average, by detailed expenditure category. Table 2. Consumer Price Index for All Urban ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "I need to get the exact annual average CPI-U values for 1931 and 2013. Let me fetch the BLS historical CPI-U table or the usinflationcalculator page.\n\nFrom the search snippet, 2013 annual average appears to be 232.957 (the snippet shows 230.280 and 232.166 which might be Dec values or something else). Let me check the actual data.\n\nActually, the standard values I recall:\n- 1931 annual average CPI-U = 15.5 (some sources say 15.4 or 15.5)\n- 2013 annual average CPI-U = 232.957\n\nLet me verify by fetching the BLS data.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_962c2b8e8939474aa23492c4",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\", \"https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\"]\n\n}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I need to get the exact annual average CPI-U values for 1931 and 2013. Let me fetch the BLS historical CPI-U table or the usinflationcalculator page.\n\nFrom the search snippet, 2013 annual average appears to be 232.957 (the snippet shows 230.280 and 232.166 which might be Dec values or something else). Let me check the actual data.\n\nActually, the standard values I recall:\n- 1931 annual average CPI-U = 15.5 (some sources say 15.4 or 15.5)\n- 2013 annual average CPI-U = 232.957\n\nLet me verify by fetching the BLS data.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_962c2b8e8939474aa23492c4",
+      "content": "{\"https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\": \"Title: Consumer Price Index Data from 1913 to 2026\\n\\nURL Source: https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\\n\\nPublished Time: 2008-07-19T04:03:03+00:00\\n\\nMarkdown Content:\\n* [Inflation Calculator]\\n* [Inflation and Prices]\\n  * [Current U.S. Inflation Rates (2000-2026)]\\n  * [U.S. Inflation Rates by Year: Historical Data (1914–2026)]\\n  * [Consumer Price Index Data from 1913 to 2026]\\n  * [Consumer Price Index – Release Schedule]\\n  * [Inflation vs. Consumer Price Index (CPI), How They Are Different]\\n  * [Core Inflation Rates]\\n  * [Rates for I Bonds]\\n  * [Grocery Store Prices]\\n  * [Energy Prices: Gasoline, Electricity and Fuel Oil]\\n  * [Average Inflation Rates]\\n  * [Monthly US Inflation Rates: 1913-Present]\\n\\n* [Gas, Food & Other Inflation]\\n  * [Gasoline Inflation (1968-2026)]\\n  * [Food Inflation (1968-2026)]\\n  * [Health Care Inflation (1948-2026)]\\n  * [College Inflation (1978-2026)]\\n  * [Airfare Inflation (1964-2026)]\\n\\n* [Items Adjusted for Inflation]\\n  * [Gasoline Prices Adjusted for Inflation]\\n  * [Electricity Prices By Year And Adjusted For Inflation]\\n  * [Milk Prices By Year And Adjusted For Inflation]\\n  * [Coffee Prices By Year And Adjusted For Inflation]\\n  * [Bacon Prices By Year And Adjusted For Inflation]\\n  * [Egg Prices By Year And Adjusted For Inflation]\\n\\n* [FAQ’s]\\n* [More Calcs]\\n  * [Inflation Calculator: By Month and Year (1913-2025)]\\n  * [Inflation in New York, Newark and Jersey City Metropolitan Area]\\n  * [Inflation in Los Angeles, Long Beach and Anaheim Metropolitan Area]\\n\\n* [About & Contact Us]\\n\\nSearch\\n\\n[![Image 1: Find US Dollar\\\\'s Value From 1913-2023]]\\n\\n[![Image 2: Find US Dollar\\\\'s Value From 1913-2023]]\\n\\n* [Inflation Calculator]\\n* [Inflation and Prices]\\n  * [Current U.S. Inflation Rates (2000-2026)]\\n  * [U.S. Inflation Rates by Year: Historical Data (1914–2026)]\\n  * [Consumer Price Index Data from 1913 to 2026]\\n  * [Consumer Price Index – Release Schedule]\\n  * [Inflation vs. Consumer Price Index (CPI), How They Are Different]\\n  * [Core Inflation Rates]\\n  * [Rates for I Bonds]\\n  * [Grocery Store Prices]\\n  * [Energy Prices: Gasoline, Electricity and Fuel Oil]\\n  * [Average Inflation Rates]\\n  * [Monthly US Inflation Rates: 1913-Present]\\n\\n* [Gas, Food & Other Inflation]\\n  * [Gasoline Inflation (1968-2026)]\\n  * [Food Inflation (1968-2026)]\\n  * [Health Care Inflation (1948-2026)]\\n  * [College Inflation (1978-2026)]\\n  * [Airfare Inflation (1964-2026)]\\n\\n* [Items Adjusted for Inflation]\\n  * [Gasoline Prices Adjusted for Inflation]\\n  * [Electricity Prices By Year And Adjusted For Inflation]\\n  * [Milk Prices By Year And Adjusted For Inflation]\\n  * [Coffee Prices By Year And Adjusted For Inflation]\\n  * [Bacon Prices By Year And Adjusted For Inflation]\\n  * [Egg Prices By Year And Adjusted For Inflation]\\n\\n* [FAQ’s]\\n* [More Calcs]\\n  * [Inflation Calculator: By Month and Year (1913-2025)]\\n  * [Inflation in New York, Newark and Jersey City Metropolitan Area]\\n  * [Inflation in Los Angeles, Long Beach and Anaheim Metropolitan Area]\\n\\n* [About & Contact Us]\\n\\nMore\\n\\nSearch\\n\\n[]\\n\\n[Home][Inflation and Prices]Consumer Price Index Data from 1913 to 2026\\n\\n# Consumer Price Index Data from 1913 to 2026\\n\\nThe Consumer Price Index (CPI-U), published by the U.S. Bureau of Labor Statistics ([BLS]) within the U.S. Department of Labor, is the primary measure used to track inflation in the United States. Updated monthly, the CPI powers this site’s always-current [Inflation Calculato]r and other inflation-related tools.\\n\\nThe latest CPI update was released September 11, covering inflation data through August 2026. The next CPI report is scheduled for October 14, 2026, and will include inflation figures through September 2026.\\n\\n**What Is the Consumer Price Index (CPI)?**\\n\\nBefore exploring the historical inflation data below, you may want to learn more about how the Consumer Price Index measures inflation. See our [detailed explanation of the CPI], How They Are Different\\\") and how it is used to calculate inflation.\\n\\nThe first chart below illustrates price changes over time across major CPI categories, showing how inflation has affected different parts of the economy. The chart tracks percentage price changes from January 2019 through August 2026.\\n\\nHover over the chart to view specific data points, or select a category from the legend on the right to highlight it. This makes it easy to follow how prices in individual CPI categories have changed over time.\\n\\nBelow the chart is a table listing overall CPI values since 1913.\\n\\n_October 2025 data was unavailable due to the 2025 lapse in appropriations._\\n\\nFinally, the next grouping of data shows actually CPI figures from 1913 to present.\\n\\n### Consumer Price Index for All Urban Consumers (CPI-U) from 1913 to 2026*\\n\\n**Annual****Percent Change**\\n**Year****Jan****Feb****Mar****Apr****May****June****July****Aug****Sep****Oct****Nov****Dec****Avg****Dec-Dec****Avg-Avg**\\n**1913**9.8 9.8 9.8 9.8 9.7 9.8 9.9 9.9 10.0 10.0 10.1 10.0 9.9––\\n**1914**10.0 9.9 9.9 9.8 9.9 9.9 10.0 10.2 10.2 10.1 10.2 10.1 10.0 1.0 1.0\\n**1915**10.1 10.0 9.9 10.0 10.1 10.1 10.1 10.1 10.1 10.2 10.3 10.3 10.1 2.0 1.0\\n**1916**10.4 10.4 10.5 10.6 10.7 10.8 10.8 10.9 11.1 11.3 11.5 11.6 10.9 12.6 7.9\\n**1917**11.7 12.0 12.0 12.6 12.8 13.0 12.8 13.0 13.3 13.5 13.5 13.7 12.8 18.1 17.4\\n**1918**14.0 14.1 14.0 14.2 14.5 14.7 15.1 15.4 15.7 16.0 16.3 16.5 15.1 20.4 18.0\\n**1919**16.5 16.2 16.4 16.7 16.9 16.9 17.4 17.7 17.8 18.1 18.5 18.9 17.3 14.5 14.6\\n**1920**19.3 19.5 19.7 20.3 20.6 20.9 20.8 20.3 20.0 19.9 19.8 19.4 20.0 2.6 15.6\\n**1921**19.0 18.4 18.3 18.1 17.7 17.6 17.7 17.7 17.5 17.5 17.4 17.3 17.9-10.8-10.5\\n**1922**16.9 16.9 16.7 16.7 16.7 16.7 16.8 16.6 16.6 16.7 16.8 16.9 16.8-2.3-6.1\\n**1923**16.8 16.8 16.8 16.9 16.9 17.0 17.2 17.1 17.2 17.3 17.3 17.3 17.1 2.4 1.8\\n**1924**17.3 17.2 17.1 17.0 17.0 17.0 17.1 17.0 17.1 17.2 17.2 17.3 17.1 0.0 0.0\\n**1925**17.3 17.2 17.3 17.2 17.3 17.5 17.7 17.7 17.7 17.7 18.0 17.9 17.5 3.5 2.3\\n**1926**17.9 17.9 17.8 17.9 17.8 17.7 17.5 17.4 17.5 17.6 17.7 17.7 17.7-1.1 1.1\\n**1927**17.5 17.4 17.3 17.3 17.4 17.6 17.3 17.2 17.3 17.4 17.3 17.3 17.4-2.3-1.7\\n**1928**17.3 17.1 17.1 17.1 17.2 17.1 17.1 17.1 17.3 17.2 17.2 17.1 17.1-1.2-1.7\\n**1929**17.1 17.1 17.0 16.9 17.0 17.1 17.3 17.3 17.3 17.3 17.3 17.2 17.1 0.6 0.0\\n**1930**17.1 17.0 16.9 17.0 16.9 16.8 16.6 16.5 16.6 16.5 16.4 16.1 16.7-6.4-2.3\\n**1931**15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 15.2-9.3-9.0\\n**1932**14.3 14.1 14.0 13.9 13.7 13.6 13.6 13.5 13.4 13.3 13.2 13.1 13.7-10.3-9.9\\n**1933**12.9 12.7 12.6 12.6 12.6 12.7 13.1 13.2 13.2 13.2 13.2 13.2 13.0 0.8-5.1\\n**1934**13.2 13.3 13.3 13.3 13.3 13.4 13.4 13.4 13.6 13.5 13.5 13.4 13.4 1.5 3.1\\n**1935**13.6 13.7 13.7 13.8 13.8 13.7 13.7 13.7 13.7 13.7 13.8 13.8 13.7 3.0 2.2\\n**1936**13.8 13.8 13.7 13.7 13.7 13.8 13.9 14.0 14.0 14.0 14.0 14.0 13.9 1.4 1.5\\n**1937**14.1 14.1 14.2 14.3 14.4 14.4 14.5 14.5 14.6 14.6 14.5 14.4 14.4 2.9 3.6\\n**1938**14.2 14.1 14.1 14.2 14.1 14.1 14.1 14.1 14.1 14.0 14.0 14.0 14.1-2.8-2.1\\n**1939**14.0 13.9 13.9 13.8 13.8 13.8 13.8 13.8 14.1 14.0 14.0 14.0 13.9 0.0-1.4\\n**1940**13.9 14.0 14.0 14.0 14.0 14.1 14.0 14.0 14.0 14.0 14.0 14.1 14.0 0.7 0.7\\n**1941**14.1 14.1 14.2 14.3 14.4 14.7 14.7 14.9 15.1 15.3 15.4 15.5 14.7 9.9 5.0\\n**1942**15.7 15.8 16.0 16.1 16.3 16.3 16.4 16.5 16.5 16.7 16.8 16.9 16.3 9.0 10.9\\n**1943**16.9 16.9 17.2 17.4 17.5 17.5 17.4 17.3 17.4 17.4 17.4 17.4 17.3 3.0 6.1\\n**1944**17.4 17.4 17.4 17.5 17.5 17.6 17.7 17.7 17.7 17.7 17.7 17.8 17.6 2.3 1.7\\n**1945**17.8 17.8 17.8 17.8 17.9 18.1 18.1 18.1 18.1 18.1 18.1 18.2 18.0 2.2 2.3\\n**1946**18.2 18.1 18.3 18.4 18.5 18.7 19.8 20.2 20.4 20.8 21.3 21.5 19.5 18.1 8.3\\n**1947**21.5 21.5 21.9 21.9 21.9 22.0 22.2 22.5 23.0 23.0 23.1 23.4 22.3 8.8 14.4\\n**1948**23.7 23.5 23.4 23.8 23.9 24.1 24.4 24.5 24.5 24.4 24.2 24.1 24.1 3.0 8.1\\n**1949**24.0 23.8 23.8 23.9 23.8 23.9 23.7 23.8 23.9 23.7 23.8 23.6 23.8-2.1-1.2\\n**1950**23.5 23.5 23.6 23.6 23.7 23.8 24.1 24.3 24.4 24.6 24.7 25.0 24.1 5.9 1.3\\n**1951**25.4 25.7 25.8 25.8 25.9 25.9 25.9 25.9 26.1 26.2 26.4 26.5 26.0 6.0 7.9\\n**1952**26.5 26.3 26.3 26.4 26.4 26.5 26.7 26.7 26.7 26.7 26.7 26.7 26.5 0.8 1.9\\n**1953**26.6 26.5 26.6 26.6 26.7 26.8 26.8 26.9 26.9 27.0 26.9 26.9 26.7 0.7 0.8\\n**1954**26.9 26.9 26.9 26.8 26.9 26.9 26.9 26.9 26.8 26.8 26.8 26.7 26.9-0.7 0.7\\n**1955**26.7 26.7 26.7 26.7 26.7 26.7 26.8 26.8 26.9 26.9 26.9 26.8 26.8 0.4-0.4\\n**1956**26.8 26.8 26.8 26.9 27.0 27.2 27.4 27.3 27.4 27.5 27.5 27.6 27.2 3.0 1.5\\n**1957**27.6 27.7 27.8 27.9 28.0 28.1 28.3 28.3 28.3 28.3 28.4 28.4 28.1 2.9 3.3\\n**1958**28.6 28.6 28.8 28.9 28.9 28.9 29.0 28.9 28.9 28.9 29.0 28.9 28.9 1.8 2.8\\n**1959**29.0 28.9 28.9 29.0 29.0 29.1 29.2 29.2 29.3 29.4 29.4 29.4 29.1 1.7 0.7\\n**1960**29.3 29.4 29.4 29.5 29.5 29.6 29.6 29.6 29.6 29.8 29.8 29.8 29.6 1.4 1.7\\n**1961**29.8 29.8 29.8 29.8 29.8 29.8 30.0 29.9 30.0 30.0 30.0 30.0 29.9 0.7 1.0\\n**1962**30.0 30.1 30.1 30.2 30.2 30.2 30.3 30.3 30.4 30.4 30.4 30.4 30.2 1.3 1.0\\n**1963**30.4 30.4 30.5 30.5 30.5 30.6 30.7 30.7 30.7 30.8 30.8 30.9 30.6 1.6 1.3\\n**1964**30.9 30.9 30.9 30.9 30.9 31.0 31.1 31.0 31.1 31.1 31.2 31.2 31.0 1.0 1.3\\n**1965**31.2 31.2 31.3 31.4 31.4 31.6 31.6 31.6 31.6 31.7 31.7 31.8 31.5 1.9 1.6\\n**1966**31.8 32.0 32.1 32.3 32.3 32.4 32.5 32.7 32.7 32.9 32.9 32.9 32.4 3.5 2.9\\n**1967**32.9 32.9 33.0 33.1 33.2 33.3 33.4 33.5 33.6 33.7 33.8 33.9 33.4 3.0 3.1\\n**1968**34.1 34.2 34.3 34.4 34.5 34.7 34.9 35.0 35.1 35.3 35.4 35.5 34.8 4.7 4.2\\n**1969**35.6 35.8 36.1 36.3 36.4 36.6 36.8 37.0 37.1 37.3 37.5 37.7 36.7 6.2 5.5\\n**1970**37.8 38.0 38.2 38.5 38.6 38.8 39.0 39.0 39.2 39.4 39.6 39.8 38.8 5.6 5.7\\n**1971**39.8 39.9 40.0 40.1 40.3 40.6 40.7 40.8 40.8 40.9 40.9 41.1 40.5 3.3 4.4\\n**1972**41.1 41.3 41.4 41.5 41.6 41.7 41.9 42.0 42.1 42.3 42.4 42.5 41.8 3.4 3.2\\n**1973**42.6 42.9 43.3 43.6 43.9 44.2 44.3 45.1 45.2 45.6 45.9 46.2 44.4 8.7 6.2\\n**1974**46.6 47.2 47.8 48.0 48.6 49.0 49.4 50.0 50.6 51.1 51.5 51.9 49.3 12.3 11.0\\n**1975**52.1 52.5 52.7 52.9 53.2 53.6 54.2 54\", \"https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\": \"Title: Consumer Price Index Historical Tables for U.S. City Average : U.S. Bureau of Labor Statistics\\n\\nURL Source: https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\\n\\nMarkdown Content:\\n[Skip to Content]\\n\\n![Image 1: U.S. flag]\\nAn official website of the United States government Here is how you know\\n\\n[![Image 2: Department of Labor Logo] United States Department of Labor]\\n\\n![Image 3: Dot gov]\\n**The .gov means it's official.**  \\n Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you're on a federal government site.\\n\\n![Image 4: Https]\\n**The site is secure.**  \\n The **https://** ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.\\n\\n[U.S. Bureau of Labor Statistics]\\n\\n[Release Calendar] | [Subscribe](javascript:window.open('https://public.govdelivery.com/accounts/USDOLBLS/subscriber/new ','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void(''); \\\"Subscribe to BLS E-mail Updates\\\")\\n\\nSearch button Search: \\n\\nMenu\\n\\n* Search button Search:  [Release Calendar] | [Subscribe](javascript:window.open('https://public.govdelivery.com/accounts/USDOLBLS/subscriber/new ','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void(''); \\\"Subscribe to BLS E-mail Updates\\\") \\n* [Home]\\n\\n  * [About BLS]\\n  * [History]\\n  * [Our Leadership]\\n  * [Budget and Performance]\\n  * [Questions and Answers]\\n  * [A-Z Index]\\n  * [Glossary]\\n  * [BLS Speakers Available]\\n  * [Errata]\\n  * [Contact BLS]\\n\\n  * [Overview of BLS Statistics]\\n  * [Guide to Programs & Services]\\n  * [Demographics]\\n  * [Industries]\\n  * [Business Costs]\\n  * [Occupations]\\n  * [Geography]\\n\\n  * [Resources For]\\n  * [Business Leaders]\\n  * [Consumers]\\n  * [Developers]\\n  * [Economists]\\n  * [Investors]\\n  * [Jobseekers]\\n  * [Media]\\n  * [Public Policymakers]\\n  * [Researcher]\\n  * [Students & Teachers]\\n  * [Survey Respondents]\\n\\n* [Subjects]\\n\\n  * [Inflation & Prices]\\n  * [Consumer Price Index]\\n  * [Producer Price Indexes]\\n  * [Import/Export Price Indexes]\\n  * [Contract Escalation]\\n  * [Price Index Research]\\n  * [Pay & Benefits]\\n  * [Employment Cost Index]\\n  * [Employer Costs for Employee Compensation]\\n  * [Wage Data by Occupation]\\n  * [Earnings by Demographics]\\n  * [Earnings by Industry]\\n  * [County Wages]\\n  * [Benefits]\\n  * [Modeled Wage Estimates]\\n  * [Compensation Research]\\n  * [Strikes & Lockouts]\\n  * [Wage Records from Unemployment Insurance]\\n  * [Occupational Requirements]\\n\\n  * [Unemployment]\\n  * [National Unemployment Rate]\\n  * [State & Local Unemployment Rates]\\n  * [Unemployment Research]\\n  * [Employment]\\n  * [National Employment]\\n  * [State & Local Employment]\\n  * [County Employment]\\n  * [Worker Characteristics]\\n  * [American Indian Report]\\n  * [Employment Projections]\\n  * [Job Openings & Labor Turnover Survey]\\n  * [Business Response Survey]\\n  * [Employment by Occupation]\\n  * [Work Experience Over Time]\\n  * [Business Employment Dynamics]\\n  * [Foreign Direct Investment]\\n  * [Employment Research]\\n  * [Workplace Injuries]\\n\\n  * [Productivity]\\n  * [Labor and Total Factor Productivity]\\n  * [Productivity Research]\\n  * [Spending & Time Use]\\n  * [Consumer Expenditures]\\n  * [How Americans Spend Time]\\n  * [International]\\n  * [International Technical Cooperation]\\n  * [Import/Export Price Indexes]\\n  * [Geographic Information]\\n  * [Northeast (Boston-New York)]\\n  * [Mid-Atlantic (Philadelphia)]\\n  * [Southeast (Atlanta)]\\n  * [Midwest (Chicago)]\\n  * [Southwest (Dallas)]\\n  * [Mountain-Plains (Kansas City)]\\n  * [West (San Francisco)]\\n\\n* [Data Tools]\\n\\n  * [Data Retrieval Tools]\\n  * [BLS Popular Series]\\n  * [Series Report]\\n  * [Top Picks, One Screen, Multi-Screen, and Maps]\\n  * [Data Finder]\\n  * [Public Data API]\\n\\n  * [Charts and Applications]\\n  * [Charts for Economic News Releases]\\n  * [CPI Inflation Calculator]\\n  * [Injury and Illness Calculator]\\n  * [Pay Measure Comparison]\\n  * [Demographic Data Sources]\\n  * [COVID-19 Economic Trends]\\n  * [Industry Productivity Viewer]\\n  * [Employment and Wages Data Viewer]\\n  * [Industry Finder from the Quarterly Census of Employment and Wages]\\n\\n  * [Customized Tables]\\n  * [U.S. Economy at a Glance]\\n  * [Regions, States & Areas at a Glance]\\n  * [Industry at a Glance]\\n  * [Text Files]\\n  * [News Release Tables]\\n  * [More Sources of Data]\\n  * [Restricted Data Access]\\n  * [Discontinued Databases]\\n  * [Questions & Answers]\\n  * [Special Notices]\\n\\n* [Publications]\\n\\n  * [Latest Publications]\\n  * [The Economics Daily]\\n  * [Monthly Labor Review]\\n  * [Beyond the Numbers]\\n  * [Spotlight on Statistics]\\n  * [Reports]\\n  * [Videos]\\n  * [Career Outlook]\\n\\n  * [Occupational Outlook Handbook]\\n  * [Geographic Profile]\\n  * [Handbook of Methods]\\n  * [Research Papers]\\n  * [Copyright Information]\\n  * [Contact & Help]\\n  * [Weekly Update]\\n\\n* [Economic Releases]\\n\\n  * [Latest Releases]\\n  * [Major Economic Indicators]\\n  * [Schedules for news Releases]\\n  * [By Month]\\n  * [By News Release]\\n  * [Current Year]\\n  * [Prior Years]\\n  * [Archived News Releases]\\n\\n  * [Employment & Unemployment]\\n  * [Monthly]\\n  * [Quarterly, annual, and other]\\n  * [Inflation & Prices]\\n  * [Pay & Benefits & Workplace Injuries]\\n  * [Productivity & Technology]\\n  * [Employment Projections]\\n  * [Regional News Releases]\\n\\n* [Classroom]\\n\\n  * [K-12 Student & Teacher Resources]\\n  * [Games & Quizzes]\\n  * [Student's Desk]\\n  * [Teacher's Desk]\\n  * [Questions & Answers]\\n\\n* [Beta]\\n\\n  * [Redesigned News Releases]\\n\\n# Mid-Atlantic Information Office\\n\\nSHARE ON:[![Image 5: share on facebook]](javascript:void(0);)[![Image 6: share on twitter]](javascript:void(0);)[![Image 7: share on linkedin]](javascript:void(0);)\\n\\nSearch Mid-Atlantic Region \\n\\n* [Mid-Atlantic Home]\\n* [Mid-Atlantic Geography](javascript:)[Delaware][District of Columbia][Maryland][New Jersey][Pennsylvania][Virginia][West Virginia] \\n* [Mid-Atlantic Subjects](javascript:)[Inflation, Prices & Spending][Pay & Benefits][Employment & Unemployment][Workplace Injuries] \\n* [Mid-Atlantic Archives](javascript:)[News Releases][CPI Summaries][Notices] \\n* [Contact Mid-Atlantic]\\n\\n# Consumer Price Index Historical Tables for U.S. City Average\\n\\nCONSUMER PRICE INDEX FOR ALL URBAN CONSUMERS (CPI-U) \\n (not seasonally adjusted)\\n| ALL ITEMS (1982-84=100) | U.S. City Average |\\n| - | - |\\n| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |\\n| Consumer Price Index |  |\\n| 2016 | 236.916 | 237.111 | 238.132 | 239.261 | 240.229 | 241.018 | 240.628 | 240.849 | 241.428 | 241.729 | 241.353 | 241.432 |\\n| 2017 | 242.839 | 243.603 | 243.801 | 244.524 | 244.733 | 244.955 | 244.786 | 245.519 | 246.819 | 246.663 | 246.669 | 246.524 |\\n| 2018 | 247.867 | 248.991 | 249.554 | 250.546 | 251.588 | 251.989 | 252.006 | 252.146 | 252.439 | 252.885 | 252.038 | 251.233 |\\n| 2019 | 251.712 | 252.776 | 254.202 | 255.548 | 256.092 | 256.143 | 256.571 | 256.558 | 256.759 | 257.346 | 257.208 | 256.974 |\\n| 2020 | 257.971 | 258.678 | 258.115 | 256.389 | 256.394 | 257.797 | 259.101 | 259.918 | 260.280 | 260.388 | 260.229 | 260.474 |\\n| 2021 | 261.582 | 263.014 | 264.877 | 267.054 | 269.195 | 271.696 | 273.003 | 273.567 | 274.310 | 276.589 | 277.948 | 278.802 |\\n| 2022 | 281.148 | 283.716 | 287.504 | 289.109 | 292.296 | 296.311 | 296.276 | 296.171 | 296.808 | 298.012 | 297.711 | 296.797 |\\n| 2023 | 299.170 | 300.840 | 301.836 | 303.363 | 304.127 | 305.109 | 305.691 | 307.026 | 307.789 | 307.671 | 307.051 | 306.746 |\\n| 2024 | 308.417 | 310.326 | 312.332 | 313.548 | 314.069 | 314.175 | 314.540 | 314.796 | 315.301 | 315.664 | 315.493 | 315.605 |\\n| 2025 | 317.671 | 319.082 | 319.799 | 320.795 | 321.465 | 322.561 | 323.048 | 323.976 | 324.800 | ([1])- | 324.122 | 324.054 |\\n| 2026 | 325.252 | 326.785 | 330.213 | 333.020 | 335.123 | 333.952 | 333.918 | 334.980 |  |  |  |  |\\n|  |\\n| Percent change from 12 months ago |  |\\n| 2016 | 1.4 | 1.0 | 0.9 | 1.1 | 1.0 | 1.0 | 0.8 | 1.1 | 1.5 | 1.6 | 1.7 | 2.1 |\\n| 2017 | 2.5 | 2.7 | 2.4 | 2.2 | 1.9 | 1.6 | 1.7 | 1.9 | 2.2 | 2.0 | 2.2 | 2.1 |\\n| 2018 | 2.1 | 2.2 | 2.4 | 2.5 | 2.8 | 2.9 | 2.9 | 2.7 | 2.3 | 2.5 | 2.2 | 1.9 |\\n| 2019 | 1.6 | 1.5 | 1.9 | 2.0 | 1.8 | 1.6 | 1.8 | 1.7 | 1.7 | 1.8 | 2.1 | 2.3 |\\n| 2020 | 2.5 | 2.3 | 1.5 | 0.3 | 0.1 | 0.6 | 1.0 | 1.3 | 1.4 | 1.2 | 1.2 | 1.4 |\\n| 2021 | 1.4 | 1.7 | 2.6 | 4.2 | 5.0 | 5.4 | 5.4 | 5.3 | 5.4 | 6.2 | 6.8 | 7.0 |\\n| 2022 | 7.5 | 7.9 | 8.5 | 8.3 | 8.6 | 9.1 | 8.5 | 8.3 | 8.2 | 7.7 | 7.1 | 6.5 |\\n| 2023 | 6.4 | 6.0 | 5.0 | 4.9 | 4.0 | 3.0 | 3.2 | 3.7 | 3.7 | 3.2 | 3.1 | 3.4 |\\n| 2024 | 3.1 | 3.2 | 3.5 | 3.4 | 3.3 | 3.0 | 2.9 | 2.5 | 2.4 | 2.6 | 2.7 | 2.9 |\\n| 2025 | 3.0 | 2.8 | 2.4 | 2.3 | 2.4 | 2.7 | 2.7 | 2.9 | 3.0 |  | 2.7 | 2.7 |\\n| 2026 | 2.4 | 2.4 | 3.3 | 3.8 | 4.2 | 3.5 | 3.4 | 3.4 |  |  |  |  |\\n| Footnotes [(1)]Data unavailable due to the 2025 lapse in appropriations |\\n\\nCONSUMER PRICE INDEX FOR URBAN WAGE EARNERS AND CLERICAL WORKERS (CPI-W) \\n (not seasonally adjusted)\\n| ALL ITEMS (1982-84=100) | U.S. City Average |\\n| - | - |\\n| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |\\n| Consumer Price Index |  |\\n| 2016 | 231.061 | 230.972 | 232.209 | 233.438 | 234.436 | 235.289 | 234.771 | 234.904 | 235.495 | 235.732 | 235.215 | 235.390 |\\n| 2017 | 236.854 | 237.477 | 237.656 | 238.432 | 238.609 | 238.813 | 238.617 | 239.448 | 240.939 | 240.573 | 240.666 | 240.526 |\\n| 2018 | 241.919 | 242.988 | 243.463 | 244.607 | 245.770 | 246.196 | 246.155 | 246.336 | 246.565 | 247.038 | 245.933 | 244.786 |\\n| 2019 | 245.133 | 246.218 | 247.768 | 249.332 | 249.871 | 249.747 | 250.236 | 250.112 | 250.251 | 250.894 | 250.644 | 250.452 |\\n| 2020 | 251.361 | 251.935 | 251.375 | 249.515 | 249.521 | 251.054 | 252.636 | 253.597 | 254.004 | 254.076 | 253.826 | 254.081 |\\n| 2021 | 255.296 | 256.843 | 258.935 | 261.237 | 263.612 | 266.412 | 267.789 | 268.387 | 269.086 | 271.552 | 273.042 | 273.925 |\\n| 2022 | 276.296 | 278.943 | 283.176 | 284.575 | 288.022 | 292.542 | 292.219 | 291.629 | 291.854 | 293.003 | 292.495 | 291.051 |\\n| 2023 | 293.565 | 295.057 | 29\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "I have the 1931 annual average (15.2) from the CPI table. Let me verify the official BLS annual averages for both 1931 and 2013 precisely.\n\n",
+      "reasoning": "From the usinflationcalculator page, I can see the 1931 annual average CPI-U is 15.2. Wait, let me look again: \"1931 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 15.2 -9.3 -9.0\". So the annual average for 1931 is 15.2.\n\nHmm, but I thought it was 15.5. Let me double-check. The BLS official annual average for 1931 CPI-U is 15.2? Actually, I recall the BLS historical table lists 1931 annual average as 15.5 in some versions... Let me verify. Actually, the commonly cited figure: 1931 annual average CPI-U (1982-84=100) = 15.5? Hmm.\n\nWait, the usinflationcalculator data shows monthly values for 1931: Jan 15.9, Feb 15.7, Mar 15.6, Apr 15.5, May 15.3, Jun 15.1, Jul 15.1, Aug 15.1, Sep 15.0, Oct 14.9, Nov 14.7, Dec 14.6. Average of these = let me compute: 15.9+15.7=31.6; +15.6=47.2; +15.5=62.7; +15.3=78.0; +15.1=93.1; +15.1=108.2; +15.1=123.3; +15.0=138.3; +14.9=153.2; +14.7=167.9; +14.6=182.5. 182.5/12 = 15.208. So annual average ≈ 15.2. Yes, that matches the listed 15.2.\n\nHmm, but many sources cite 1931 as 15.5. Let me check: Actually the BLS official annual average for 1931 is 15.5? Let me check the BLS historical PDF. Actually I recall from the BLS \"Historical Consumer Price Index for All Urban Consumers\" table: 1930 = 16.7, 1931 = 15.5? Hmm, no. Let me think.\n\nActually, I've seen the value 15.5 for 1931 in some tables (e.g., the 1931 annual average in the \"CPI, All U.S. Urban Consumers, All Items, 1982-84=100\" series from BLS's online database is 15.5?). Hmm.\n\nLet me check the Minneapolis Fed inflation calculator or the BLS data directly. The usinflationcalculator site is generally accurate and mirrors BLS data. It says 15.2 for 1931 annual average.\n\nHmm wait, but actually I recall that the official BLS annual average for 1931 is 15.5... Let me verify with another source. Actually, I think there might be confusion: 1931 annual average = 15.5? Let me compute the average of monthly values from BLS: BLS monthly 1931: Jan 15.9, Feb 15.7, Mar 15.6, Apr 15.5, May 15.3, Jun 15.1, Jul 15.1, Aug 15.1, Sep 15.0, Oct 14.9, Nov 14.7, Dec 14.6 → average 15.2. So 15.2 is correct.\n\nHmm, but I've definitely seen \"1931: 15.5\" somewhere. That might be the 1931 value in a different base (e.g., 1967=100). Indeed, in 1967=100 base, 1931 CPI ≈ 8.8? No...\n\nAnyway, let me trust the BLS-derived data: 1931 annual average = 15.2 (some sources round to 15.5? no).\n\nHold on. Let me double check with the BLS historical PDF (historical-cpi-u-202402.pdf) which lists annual averages. Let me fetch that.\n\nAlso I need 2013 annual average = 232.957? The snippet from usinflationcalculator showed \"2013 230.280 232.166\" which is probably Dec-Dec and Avg-Avg percent changes, not the index. Let me get the 2013 row.\n\nKnown value: 2013 annual average CPI-U = 232.957. Yes, that's the widely cited figure.\n\nSo ratio = 232.957 / 15.2 = 15.326... × $19,000 = $291,196. Hmm, let me compute: 232.957/15.2 = 15.3261. ×19000 = 291,196. Rounded to nearest thousand = $291,000.\n\nBut if 1931 = 15.5, then ratio = 232.957/15.5 = 15.0295, ×19000 = 285,560 → $286,000.\n\nSo the answer depends on the exact 1931 value. I need to be careful. Let me check the official BLS annual average for 1931.\n\nActually, I now recall clearly: The BLS CPI-U annual average for 1931 is 15.5? Hmm. Let me look at the data: many inflation calculators state \"$19,000 in 1931 = $270,785.72 today\" — wait, the audio says $270,785.72. Interesting! The audio's figure of $270,785.72 corresponds to some year. Let's see: 19000 × (CPI_x / 15.2) = 270785.72 → CPI_x = 270785.72 × 15.2 / 19000 = 216.63. Hmm, 216.63 is around 2010? Actually 2010 annual average CPI-U = 218.056. Hmm, 2009 = 214.537. So 216.63 ≈ mid-2010? Not exactly.\n\nTry with 1931 = 15.5: CPI_x = 270785.72 × 15.5/19000 = 220.89. Hmm, 2011 = 224.939, 2010 = 218.056. Not matching either.\n\nMaybe the audio used a different base or a specific month. Anyway, the task says not to rely on the audio's figure.\n\nLet me verify the official BLS annual averages precisely. Fetch the BLS historical CPI-U PDF or use FRED annual data.\n\nFRED series CPIAUCNS annual average: 1931 = 15.2? Let me check. Actually FRED's annual data for CPIAUCNS 1931 = 15.2 (I believe). And 2013 = 232.957.\n\nLet me confirm via a search/fetch.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_6d2ab7bb9e3f4b2498bc4bb5",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31\", \"https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_41fc6b1a304c4820b393527d",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"1931\\\" CPI-U annual average 15.2 \\\"2013\\\" 232.957 bureau of labor statistics\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "From the usinflationcalculator page, I can see the 1931 annual average CPI-U is 15.2. Wait, let me look again: \"1931 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 15.2 -9.3 -9.0\". So the annual average for 1931 is 15.2.\n\nHmm, but I thought it was 15.5. Let me double-check. The BLS official annual average for 1931 CPI-U is 15.2? Actually, I recall the BLS historical table lists 1931 annual average as 15.5 in some versions... Let me verify. Actually, the commonly cited figure: 1931 annual average CPI-U (1982-84=100) = 15.5? Hmm.\n\nWait, the usinflationcalculator data shows monthly values for 1931: Jan 15.9, Feb 15.7, Mar 15.6, Apr 15.5, May 15.3, Jun 15.1, Jul 15.1, Aug 15.1, Sep 15.0, Oct 14.9, Nov 14.7, Dec 14.6. Average of these = let me compute: 15.9+15.7=31.6; +15.6=47.2; +15.5=62.7; +15.3=78.0; +15.1=93.1; +15.1=108.2; +15.1=123.3; +15.0=138.3; +14.9=153.2; +14.7=167.9; +14.6=182.5. 182.5/12 = 15.208. So annual average ≈ 15.2. Yes, that matches the listed 15.2.\n\nHmm, but many sources cite 1931 as 15.5. Let me check: Actually the BLS official annual average for 1931 is 15.5? Let me check the BLS historical PDF. Actually I recall from the BLS \"Historical Consumer Price Index for All Urban Consumers\" table: 1930 = 16.7, 1931 = 15.5? Hmm, no. Let me think.\n\nActually, I've seen the value 15.5 for 1931 in some tables (e.g., the 1931 annual average in the \"CPI, All U.S. Urban Consumers, All Items, 1982-84=100\" series from BLS's online database is 15.5?). Hmm.\n\nLet me check the Minneapolis Fed inflation calculator or the BLS data directly. The usinflationcalculator site is generally accurate and mirrors BLS data. It says 15.2 for 1931 annual average.\n\nHmm wait, but actually I recall that the official BLS annual average for 1931 is 15.5... Let me verify with another source. Actually, I think there might be confusion: 1931 annual average = 15.5? Let me compute the average of monthly values from BLS: BLS monthly 1931: Jan 15.9, Feb 15.7, Mar 15.6, Apr 15.5, May 15.3, Jun 15.1, Jul 15.1, Aug 15.1, Sep 15.0, Oct 14.9, Nov 14.7, Dec 14.6 → average 15.2. So 15.2 is correct.\n\nHmm, but I've definitely seen \"1931: 15.5\" somewhere. That might be the 1931 value in a different base (e.g., 1967=100). Indeed, in 1967=100 base, 1931 CPI ≈ 8.8? No...\n\nAnyway, let me trust the BLS-derived data: 1931 annual average = 15.2 (some sources round to 15.5? no).\n\nHold on. Let me double check with the BLS historical PDF (historical-cpi-u-202402.pdf) which lists annual averages. Let me fetch that.\n\nAlso I need 2013 annual average = 232.957? The snippet from usinflationcalculator showed \"2013 230.280 232.166\" which is probably Dec-Dec and Avg-Avg percent changes, not the index. Let me get the 2013 row.\n\nKnown value: 2013 annual average CPI-U = 232.957. Yes, that's the widely cited figure.\n\nSo ratio = 232.957 / 15.2 = 15.326... × $19,000 = $291,196. Hmm, let me compute: 232.957/15.2 = 15.3261. ×19000 = 291,196. Rounded to nearest thousand = $291,000.\n\nBut if 1931 = 15.5, then ratio = 232.957/15.5 = 15.0295, ×19000 = 285,560 → $286,000.\n\nSo the answer depends on the exact 1931 value. I need to be careful. Let me check the official BLS annual average for 1931.\n\nActually, I now recall clearly: The BLS CPI-U annual average for 1931 is 15.5? Hmm. Let me look at the data: many inflation calculators state \"$19,000 in 1931 = $270,785.72 today\" — wait, the audio says $270,785.72. Interesting! The audio's figure of $270,785.72 corresponds to some year. Let's see: 19000 × (CPI_x / 15.2) = 270785.72 → CPI_x = 270785.72 × 15.2 / 19000 = 216.63. Hmm, 216.63 is around 2010? Actually 2010 annual average CPI-U = 218.056. Hmm, 2009 = 214.537. So 216.63 ≈ mid-2010? Not exactly.\n\nTry with 1931 = 15.5: CPI_x = 270785.72 × 15.5/19000 = 220.89. Hmm, 2011 = 224.939, 2010 = 218.056. Not matching either.\n\nMaybe the audio used a different base or a specific month. Anyway, the task says not to rely on the audio's figure.\n\nLet me verify the official BLS annual averages precisely. Fetch the BLS historical CPI-U PDF or use FRED annual data.\n\nFRED series CPIAUCNS annual average: 1931 = 15.2? Let me check. Actually FRED's annual data for CPIAUCNS 1931 = 15.2 (I believe). And 2013 = 232.957.\n\nLet me confirm via a search/fetch.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_6d2ab7bb9e3f4b2498bc4bb5",
+      "content": "{\"https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31\": \"Error fetching https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31: 422, message='Unprocessable Entity', url='https://r.jina.ai/https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31'\", \"https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\": \"Title: Consumer Price Index - February 2024\\n\\nURL Source: https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\\n\\nPublished Time: Tue, 14 Jul 2026 17:39:33 GMT\\n\\nNumber of Pages: 5\\n\\nMarkdown Content:\\n# Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month \\n\\n## [1982-84=100, unless otherwise noted] \\n\\nYear Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sep. Oct. Nov. Dec. 1913...................................... . 9.8 9.8 9.8 9.8 9.7 9.8 9.9 9.9 10.0 10.0 10.1 10.0 1914...................................... . 10.0 9.9 9.9 9.8 9.9 9.9 10.0 10.2 10.2 10.1 10.2 10.1 1915...................................... . 10.1 10.0 9.9 10.0 10.1 10.1 10.1 10.1 10.1 10.2 10.3 10.3 1916...................................... . 10.4 10.4 10.5 10.6 10.7 10.8 10.8 10.9 11.1 11.3 11.5 11.6 1917...................................... . 11.7 12.0 12.0 12.6 12.8 13.0 12.8 13.0 13.3 13.5 13.5 13.7 1918...................................... . 14.0 14.1 14.0 14.2 14.5 14.7 15.1 15.4 15.7 16.0 16.3 16.5 1919...................................... . 16.5 16.2 16.4 16.7 16.9 16.9 17.4 17.7 17.8 18.1 18.5 18.9 1920...................................... . 19.3 19.5 19.7 20.3 20.6 20.9 20.8 20.3 20.0 19.9 19.8 19.4 1921...................................... . 19.0 18.4 18.3 18.1 17.7 17.6 17.7 17.7 17.5 17.5 17.4 17.3 1922...................................... . 16.9 16.9 16.7 16.7 16.7 16.7 16.8 16.6 16.6 16.7 16.8 16.9 1923...................................... . 16.8 16.8 16.8 16.9 16.9 17.0 17.2 17.1 17.2 17.3 17.3 17.3 1924...................................... . 17.3 17.2 17.1 17.0 17.0 17.0 17.1 17.0 17.1 17.2 17.2 17.3 1925...................................... . 17.3 17.2 17.3 17.2 17.3 17.5 17.7 17.7 17.7 17.7 18.0 17.9 1926...................................... . 17.9 17.9 17.8 17.9 17.8 17.7 17.5 17.4 17.5 17.6 17.7 17.7 1927...................................... . 17.5 17.4 17.3 17.3 17.4 17.6 17.3 17.2 17.3 17.4 17.3 17.3 1928...................................... . 17.3 17.1 17.1 17.1 17.2 17.1 17.1 17.1 17.3 17.2 17.2 17.1 1929...................................... . 17.1 17.1 17.0 16.9 17.0 17.1 17.3 17.3 17.3 17.3 17.3 17.2 1930...................................... . 17.1 17.0 16.9 17.0 16.9 16.8 16.6 16.5 16.6 16.5 16.4 16.1 1931...................................... . 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 1932...................................... . 14.3 14.1 14.0 13.9 13.7 13.6 13.6 13.5 13.4 13.3 13.2 13.1 1933...................................... . 12.9 12.7 12.6 12.6 12.6 12.7 13.1 13.2 13.2 13.2 13.2 13.2 1934...................................... . 13.2 13.3 13.3 13.3 13.3 13.4 13.4 13.4 13.6 13.5 13.5 13.4 1935...................................... . 13.6 13.7 13.7 13.8 13.8 13.7 13.7 13.7 13.7 13.7 13.8 13.8 1936...................................... . 13.8 13.8 13.7 13.7 13.7 13.8 13.9 14.0 14.0 14.0 14.0 14.0 1937...................................... . 14.1 14.1 14.2 14.3 14.4 14.4 14.5 14.5 14.6 14.6 14.5 14.4 1938...................................... . 14.2 14.1 14.1 14.2 14.1 14.1 14.1 14.1 14.1 14.0 14.0 14.0 1939...................................... . 14.0 13.9 13.9 13.8 13.8 13.8 13.8 13.8 14.1 14.0 14.0 14.0 1940...................................... . 13.9 14.0 14.0 14.0 14.0 14.1 14.0 14.0 14.0 14.0 14.0 14.1 1941...................................... . 14.1 14.1 14.2 14.3 14.4 14.7 14.7 14.9 15.1 15.3 15.4 15.5 1942...................................... . 15.7 15.8 16.0 16.1 16.3 16.3 16.4 16.5 16.5 16.7 16.8 16.9 1943...................................... . 16.9 16.9 17.2 17.4 17.5 17.5 17.4 17.3 17.4 17.4 17.4 17.4 1944...................................... . 17.4 17.4 17.4 17.5 17.5 17.6 17.7 17.7 17.7 17.7 17.7 17.8 1945...................................... . 17.8 17.8 17.8 17.8 17.9 18.1 18.1 18.1 18.1 18.1 18.1 18.2 1946...................................... . 18.2 18.1 18.3 18.4 18.5 18.7 19.8 20.2 20.4 20.8 21.3 21.5 1947...................................... . 21.5 21.5 21.9 21.9 21.9 22.0 22.2 22.5 23.0 23.0 23.1 23.4 1948...................................... . 23.7 23.5 23.4 23.8 23.9 24.1 24.4 24.5 24.5 24.4 24.2 24.1 1949...................................... . 24.0 23.8 23.8 23.9 23.8 23.9 23.7 23.8 23.9 23.7 23.8 23.6 1950...................................... . 23.5 23.5 23.6 23.6 23.7 23.8 24.1 24.3 24.4 24.6 24.7 25.0 1951...................................... . 25.4 25.7 25.8 25.8 25.9 25.9 25.9 25.9 26.1 26.2 26.4 26.5 1952...................................... . 26.5 26.3 26.3 26.4 26.4 26.5 26.7 26.7 26.7 26.7 26.7 26.7 1953...................................... . 26.6 26.5 26.6 26.6 26.7 26.8 26.8 26.9 26.9 27.0 26.9 26.9 1954...................................... . 26.9 26.9 26.9 26.8 26.9 26.9 26.9 26.9 26.8 26.8 26.8 26.7 1955...................................... . 26.7 26.7 26.7 26.7 26.7 26.7 26.8 26.8 26.9 26.9 26.9 26.8 1956...................................... . 26.8 26.8 26.8 26.9 27.0 27.2 27.4 27.3 27.4 27.5 27.5 27.6 1957...................................... . 27.6 27.7 27.8 27.9 28.0 28.1 28.3 28.3 28.3 28.3 28.4 28.4 1958...................................... . 28.6 28.6 28.8 28.9 28.9 28.9 29.0 28.9 28.9 28.9 29.0 28.9 1959...................................... . 29.0 28.9 28.9 29.0 29.0 29.1 29.2 29.2 29.3 29.4 29.4 29.4 1960...................................... . 29.3 29.4 29.4 29.5 29.5 29.6 29.6 29.6 29.6 29.8 29.8 29.8 1961...................................... . 29.8 29.8 29.8 29.8 29.8 29.8 30.0 29.9 30.0 30.0 30.0 30.0 1962...................................... . 30.0 30.1 30.1 30.2 30.2 30.2 30.3 30.3 30.4 30.4 30.4 30.4 1963...................................... . 30.4 30.4 30.5 30.5 30.5 30.6 30.7 30.7 30.7 30.8 30.8 30.9 1964...................................... . 30.9 30.9 30.9 30.9 30.9 31.0 31.1 31.0 31.1 31.1 31.2 31.2 1965...................................... . 31.2 31.2 31.3 31.4 31.4 31.6 31.6 31.6 31.6 31.7 31.7 31.8 1966...................................... . 31.8 32.0 32.1 32.3 32.3 32.4 32.5 32.7 32.7 32.9 32.9 32.9 1967...................................... . 32.9 32.9 33.0 33.1 33.2 33.3 33.4 33.5 33.6 33.7 33.8 33.9 1968...................................... . 34.1 34.2 34.3 34.4 34.5 34.7 34.9 35.0 35.1 35.3 35.4 35.5 1969...................................... . 35.6 35.8 36.1 36.3 36.4 36.6 36.8 37.0 37.1 37.3 37.5 37.7 1970...................................... . 37.8 38.0 38.2 38.5 38.6 38.8 39.0 39.0 39.2 39.4 39.6 39.8 Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month — Continued \\n\\n## [1982-84=100, unless otherwise noted] \\n\\nYear Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sep. Oct. Nov. Dec. 1971...................................... . 39.8 39.9 40.0 40.1 40.3 40.6 40.7 40.8 40.8 40.9 40.9 41.1 1972...................................... . 41.1 41.3 41.4 41.5 41.6 41.7 41.9 42.0 42.1 42.3 42.4 42.5 1973...................................... . 42.6 42.9 43.3 43.6 43.9 44.2 44.3 45.1 45.2 45.6 45.9 46.2 1974...................................... . 46.6 47.2 47.8 48.0 48.6 49.0 49.4 50.0 50.6 51.1 51.5 51.9 1975...................................... . 52.1 52.5 52.7 52.9 53.2 53.6 54.2 54.3 54.6 54.9 55.3 55.5 1976...................................... . 55.6 55.8 55.9 56.1 56.5 56.8 57.1 57.4 57.6 57.9 58.0 58.2 1977...................................... . 58.5 59.1 59.5 60.0 60.3 60.7 61.0 61.2 61.4 61.6 61.9 62.1 1978...................................... . 62.5 62.9 63.4 63.9 64.5 65.2 65.7 66.0 66.5 67.1 67.4 67.7 1979...................................... . 68.3 69.1 69.8 70.6 71.5 72.3 73.1 73.8 74.6 75.2 75.9 76.7 1980...................................... . 77.8 78.9 80.1 81.0 81.8 82.7 82.7 83.3 84.0 84.8 85.5 86.3 1981...................................... . 87.0 87.9 88.5 89.1 89.8 90.6 91.6 92.3 93.2 93.4 93.7 94.0 1982...................................... . 94.3 94.6 94.5 94.9 95.8 97.0 97.5 97.7 97.9 98.2 98.0 97.6 1983...................................... . 97.8 97.9 97.9 98.6 99.2 99.5 99.9 100.2 100.7 101.0 101.2 101.3 1984...................................... . 101.9 102.4 102.6 103.1 103.4 103.7 104.1 104.5 105.0 105.3 105.3 105.3 1985...................................... . 105.5 106.0 106.4 106.9 107.3 107.6 107.8 108.0 108.3 108.7 109.0 109.3 1986...................................... . 109.6 109.3 108.8 108.6 108.9 109.5 109.5 109.7 110.2 110.3 110.4 110.5 1987...................................... . 111.2 111.6 112.1 112.7 113.1 113.5 113.8 114.4 115.0 115.3 115.4 115.4 1988...................................... . 115.7 116.0 116.5 117.1 117.5 118.0 118.5 119.0 119.8 120.2 120.3 120.5 1989...................................... . 121.1 121.6 122.3 123.1 123.8 124.1 124.4 124.6 125.0 125.6 125.9 126.1 1990...................................... . 127.4 128.0 128.7 128.9 129.2 129.9 130.4 131.6 132.7 133.5 133.8 133.8 1991...................................... . 134.6 134.8 135.0 135.2 135.6 136.0 136.2 136.6 137.2 137.4 137.8 137.9 1992...................................... . 138.1 138.6 139.3 139.5 139.7 140.2 140.5 140.9 141.3 141.8 142.0 141.9 1993...................................... . 142.6 143.1 143.6 144.0 144.2 144.4 144.4 144.8 145.1 145.7 145.8 145.8 1994...................................... . 146.2 146.7 147.2 147.4 147.5 148.0 148.4 149.0 149.4 149.5 149.7 149.7 1995...................................... . 150.3 150.9 151.4 151.9 152.2 152.5 152.5 152.9 153.2 153.7 153.6 153.5 1996...................................... . 154.4 154.9 155.7 156.3 156.6 156.7 157.0 157.3 157.8 158.3 158.6 158.6 1997...................................... . 159.1 159.6 160.0 160.2 160.1 160.3 160.5 160.8 161.2 161.6 161.5 161.3 1998...................................... . 161.6 161.9 162.2 162.5 162.8 163.0 163.2 163.4 163.6 164.0 164.0 163.9 1999...................................... . 164.3 164.5 165.0 166.2 166.2 166.2 166.7 167.1 167.9 168.2 168.3 168.3 2000.................\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_41fc6b1a304c4820b393527d",
+      "content": "[{\"id\": 1, \"title\": \"Historical CPI-U\", \"url\": \"https://www.bls.gov/cpi/tables/historical-cpi-u-201711.pdf\", \"snippet\": \"1931. 15.9. 15.7. 15.6. 15.5. 15.3. 15.1. 15.1. 15.1. 15.0. 14.9. 14.7. 14.6. 1932. 14.3 ... 2013. 230.280. 232.166. 232.773. 232.531. 232.945. 233.504. 233.596.\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Consumer Price Index - February 2024\", \"url\": \"https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\", \"snippet\": \"2013....................................... 230.280 232.166 232.773 232.531 ... 1931 ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Consumer Price Index Data from 1913 to 2026\", \"url\": \"https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\", \"snippet\": \"1931, 15.9, 15.7, 15.6, 15.5, 15.3, 15.1, 15.1, 15.1, 15.0, 14.9, 14.7, 14.6, 15.2 ... 2013, 230.280, 232.166, 232.773, 232.531, 232.945, 233.504, 233.596 ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"NEWS RELEASE\", \"url\": \"https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/db8cd063-6a15-eb11-a813-001dd8018921/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=PUBLIC%20CX-9%20022718.pdf\", \"snippet\": \"1931. -. -. 15.2. -9.3. -9.0. 1932. -. -. 13.7. -10.3. -9.9. 1933. -. -. 13.0 .8. -5.1 ... 2013. 232.366 233.548 232.957. 1.5. 1.5. 2014. 236.384 237.088 236.736.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Historical CPI Data — Annual U.S. Index 1913 to Present\", \"url\": \"https://cpichart.com/historical-cpi/\", \"snippet\": \"2013, 232.957, +1.5%. 2012, 229.594, +2.1%. 2011, 224.939, +3.2%. 2010, 218.056, + ... -5.1%. 1932, 13.7, -9.9%. 1931, 15.2, -9.0%. 1930, 16.7, -2.3%. 1929, 17.1 ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Inflation Calculator | US Dollar Value 1913-2026\", \"url\": \"https://www.calculatorsoup.com/calculators/financial/inflation-calculator.php\", \"snippet\": \"2013, 1.6%, 2.0%, 1.5%, 1.1%, 1.4%, 1.8%, 2.0%, 1.5%, 1.2%, 1.0%, 1.2%, 1.5%, 1.5%. 2012 ... 1931, -7.0%, -7.6%, -7.7%, -8.8%, -9.5%, -10.1%, -9.0%, -8.5%, -9.6% ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"2019 CPI-U Annual Average Data | PDF\", \"url\": \"https://www.scribd.com/document/474148715/SeriesReport-20191210083704-8bc2e0\", \"snippet\": \"document contains the Consumer Price Index (CPI) data from the Bureau of Labor Statistics ... 1931 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6\", \"date\": \"\"}, {\"id\": 8, \"title\": \"http://www.bls.gov/cpi/cpifiles/cpiai.txt\", \"url\": \"http://documents.saintleo.edu/docs/ECO110HA/BLS_Table.pdf\", \"snippet\": \"by CP Index · Cited by 6 — 1931 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 15.2 -9.3 ... 2013 230.280 232.166 232.773 232.531 232.945 233.504 233.596 233.877 ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Consumer Price Index Data from 1913 to 2021\", \"url\": \"https://leecounty.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=14585&ItemID=4398\", \"snippet\": \"1931. 15.9. 15.7. 15.6. 15.5. 15.3. 15.1. 15.1. 15.1. 15.0. 14.9. 14.7. 14.6. 15.2. -9.3 ... 2013. 230.280. 232.166. 232.773. 232.531. 232.945. 233.504. 233.596.\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Apparel data in fashion : The Economics Daily\", \"url\": \"https://www.bls.gov/opub/ted/2025/apparel-data-in-fashion.htm\", \"snippet\": \"1931. 15.2, 22.0, —, —, —, —, —, —, —, —, —. 1932. 13.7, 19.5 ... 2013. 232.957, 127.411, 116.223, 99.560, 126.674, 102.619, 130.374, 136.765 ...\", \"date\": \"Feb 5, 2025\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "The watermark reads \"landahlauts, 2013\", so the target year is **2013**. Official BLS CPI-U annual averages confirmed: 1931 = 15.2, 2013 = 232.957. Let me compute the inflation adjustment.\n\n",
+      "reasoning": "Confirmed official BLS CPI-U annual averages:\n- 1931: 15.2\n- 2013: 232.957\n\nNow compute: $19,000 × (232.957 / 15.2) = ?\n\n232.957 / 15.2 = 15.32611842...\n× 19000 = 291,196.25...\n\nLet me compute precisely with code.\n\nRounded to nearest thousand: $291,000.\n\nLet me also double check the watermark year: \"landahlauts, 2013\" — yes, 2013.\n\nLet me run the calculation.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_9ff65d2a53dc4fae8b7e10ae",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"cpi_1931 = 15.2      # BLS CPI-U annual average, 1931 (1982-84=100)\\ncpi_2013 = 232.957   # BLS CPI-U annual average, 2013 (1982-84=100)\\nprice_1931 = 19000\\n\\nratio = cpi_2013 / cpi_1931\\nadjusted = price_1931 * ratio\\n\\nprint(\\\"CPI ratio (2013/1931):\\\", round(ratio, 4))\\nprint(\\\"Equivalent 2013 price: $\\\", round(adjusted, 2))\\nprint(\\\"Rounded to nearest thousand: $\\\", round(adjusted/1000)*1000)\\n\\n# sanity check with slightly different 1931 rounding (15.208 from monthly mean)\\nimport statistics\\nmonthly_1931 = [15.9,15.7,15.6,15.5,15.3,15.1,15.1,15.1,15.0,14.9,14.7,14.6]\\nalt = 19000 * cpi_2013 / statistics.mean(monthly_1931)\\nprint(\\\"Using unrounded 1931 mean (%.3f): $%.2f -> %s\\\" % (statistics.mean(monthly_1931), alt, round(alt/1000)*1000))\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed official BLS CPI-U annual averages:\n- 1931: 15.2\n- 2013: 232.957\n\nNow compute: $19,000 × (232.957 / 15.2) = ?\n\n232.957 / 15.2 = 15.32611842...\n× 19000 = 291,196.25...\n\nLet me compute precisely with code.\n\nRounded to nearest thousand: $291,000.\n\nLet me also double check the watermark year: \"landahlauts, 2013\" — yes, 2013.\n\nLet me run the calculation.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9ff65d2a53dc4fae8b7e10ae",
+      "content": "{\"stdout\": \"CPI ratio (2013/1931): 15.3261\\nEquivalent 2013 price: $ 291196.25\\nRounded to nearest thousand: $ 291000\\nUsing unrounded 1931 mean (15.208): $291036.69 -> 291000\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Analysis\n\n**Step 1 — Watermark year:** The image (a red Rolls‑Royce Phantom parked near Big Ben/the Houses of Parliament in London) carries the watermark **\"landahlauts, 2013\"** → target year = **2013**.\n\n**Step 2 — Official CPI‑U annual averages (BLS, 1982‑84 = 100):**\n- 1931: **15.2**\n- 2013: **232.957**\n\n**Step 3 — Inflation calculation:**\n- Ratio = 232.957 ÷ 15.2 = **15.3261**\n- $19,000 × 15.3261 = **$291,196.25**\n\n**Step 4 — Rounded to the nearest thousand:** **≈ $291,000**\n\n(This is notably higher than the $270,785.72 figure quoted in the audio, which is why the CPI‑based computation was done independently as instructed.)\n\n<answer>Watermark year: 2013. Using official BLS CPI‑U annual averages (1931 = 15.2; 2013 = 232.957), the 1931 price of $19,000 is equivalent to about $291,196 in 2013 dollars — i.e., roughly **$291,000** when rounded to the nearest thousand.</answer>",
+      "reasoning": "The result is robust: ~$291,000 either way.\n\nFinal answer: watermark year 2013; $19,000 in 1931 ≈ $291,000 in 2013 (using CPI-U annual averages 15.2 and 232.957).\n\nNote the audio claimed $270,785.72, which differs — consistent with the instruction not to rely on it.\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The result is robust: ~$291,000 either way.\n\nFinal answer: watermark year 2013; $19,000 in 1931 ≈ $291,000 in 2013 (using CPI-U annual averages 15.2 and 232.957).\n\nNote the audio claimed $270,785.72, which differs — consistent with the instruction not to rely on it.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"CPI-U annual average 1931 and 2013 US Consumer Price Index all urban consumers\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Consumer Price Index Historical Tables for U.S. City Average",
+          "url": "https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm",
+          "snippet": "Historical Tables for U.S. City Average CONSUMER PRICE INDEX FOR ALL URBAN CONSUMERS (CPI-U) (not seasonally adjusted) ALL ITEMS (1982-84=100)",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Consumer Price Index, 1913",
+          "url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-",
+          "snippet": "This chart uses data from the sole measure of CPI available until 1978, which it reflects the CPI for all urban consumers (CPI-U).",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Consumer Price Index Data from 1913 to 2026",
+          "url": "https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/",
+          "snippet": "Consumer Price Index for All Urban Consumers (CPI-U) from 1913 to 2026* ; 2013, 230.280, 232.166 ; 2014, 233.916, 234.781 ; 2015, 233.707, 234.722 ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "historical-cpi-u-201710.pdf",
+          "url": "https://www.bls.gov/cpi/tables/historical-cpi-u-201710.pdf",
+          "snippet": "Historical Consumer Price Index for All Urban Consumers (CPI-U): U. S. city average, all items (1982-84=100, unless otherwise noted) Annual avg. 1913 - - 9.9 - ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Consumer Price Index for All Urban Consumers (CPI-U)",
+          "url": "https://ir.mit.edu/projects/cpi-u/",
+          "snippet": "The CPI-U by Fiscal Year averages the CPI-U. The CPI Base uses 1982–1984 as the base year equaling 100. prior year 1913 9.8 3.0 — 9.8 1914 9.9 3.0 1.62% 2013 ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Table 1. Consumer Price Index for All Urban ...",
+          "url": "https://www.bls.gov/news.release/cpi.t01.htm",
+          "snippet": "Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, by expenditure category, August 2026 [1982-84=100, unless otherwise noted]",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Consumer Price Index - February 2024",
+          "url": "https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf",
+          "snippet": "Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month [1982-84=100, unless otherwise noted]",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "All Items in U.S. City Average (CPIAUCNS) | FRED",
+          "url": "https://fred.stlouisfed.org/series/cpiaucns",
+          "snippet": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCNS) 334.980 | Index 1982-1984=100, Not Seasonally Adjusted | Monthly. ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Consumer price index in the United States",
+          "url": "https://en.wikipedia.org/wiki/Consumer_price_index_in_the_United_States",
+          "snippet": "The United States Consumer Price Index (CPI) is a family of various consumer price indices published monthly by the United States Bureau of Labor Statistics ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Table 5. Chained Consumer Price Index for All Urban ...",
+          "url": "https://www.bls.gov/news.release/cpi.t05.htm",
+          "snippet": "Chained Consumer Price Index for All Urban Consumers (C-CPI-U) and the Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items index ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"BLS CPI-U annual average values 1931 = 15.5, 2013 = 232.957\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Historical CPI-U",
+          "url": "https://www.bls.gov/cpi/tables/historical-cpi-u-201711.pdf",
+          "snippet": "Year. Semiannual averages. Annual avg. Percent change from previous. 1st half. 2nd half. Dec. Annual avg. 1970. -. -. 38.8. 5.6. 5.7. 1971. -. -. 40.5. 3.3. 4.4.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Consumer Price Index, 1913",
+          "url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-",
+          "snippet": "This chart uses data from the sole measure of CPI available until 1978, after which it reflects the CPI for all urban consumers (CPI-U). The current year's ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Table 1. Consumer Price Index for All Urban ...",
+          "url": "https://www.bls.gov/news.release/cpi.t01.htm",
+          "snippet": "Table 1. Consumer Price Index for All Urban Consumers (CPI-U): U. S. city average, by expenditure category ; 13.540 · 8.232 · 1.026 ; 341.295 · 314.608 · 359.740 ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Consumer Price Index Historical Tables for U.S. City Average",
+          "url": "https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm",
+          "snippet": "Historical Tables for U.S. City Average CONSUMER PRICE INDEX FOR ALL URBAN CONSUMERS (CPI-U) (not seasonally adjusted) ALL ITEMS (1982-84=100)",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Table 5. Chained Consumer Price Index for All Urban ...",
+          "url": "https://www.bls.gov/news.release/cpi.t05.htm",
+          "snippet": "Chained Consumer Price Index for All Urban Consumers (C-CPI-U) U.S. city average, all items index. CPI-U December 2013 1.3",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Consumer Price Index for All Urban Consumers: All Items in ...",
+          "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+          "snippet": "View data of the CPI, or an inflation measure derived from tracking the changes in the weighted-average price of a basket of common goods and services.",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "CPI Home : U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/cpi/",
+          "snippet": "The Consumer Price Index (CPI) is a measure of the average change over time in the prices paid by urban consumers",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Consumer Price Index Data from 1913 to 2026",
+          "url": "https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/",
+          "snippet": "Consumer Price Index for All Urban Consumers (CPI-U) from 1913 to 2026* ; 2013, 230.280, 232.166 ; 2014, 233.916, 234.781 ; 2015, 233.707, 234.722 ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Consumer Price Index - February 2024",
+          "url": "https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf",
+          "snippet": "1931 ... Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, index averages.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Table 2. Consumer Price Index for All Urban ...",
+          "url": "https://www.bls.gov/news.release/cpi.t02.htm",
+          "snippet": "Consumer Price Index for All Urban Consumers (CPI-U): U. S. city average, by detailed expenditure category. Table 2. Consumer Price Index for All Urban ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\", \"https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\"]\n\n}",
+      "result": {
+        "https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/": "Title: Consumer Price Index Data from 1913 to 2026\n\nURL Source: https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/\n\nPublished Time: 2008-07-19T04:03:03+00:00\n\nMarkdown Content:\n* [Inflation Calculator]\n* [Inflation and Prices]\n  * [Current U.S. Inflation Rates (2000-2026)]\n  * [U.S. Inflation Rates by Year: Historical Data (1914–2026)]\n  * [Consumer Price Index Data from 1913 to 2026]\n  * [Consumer Price Index – Release Schedule]\n  * [Inflation vs. Consumer Price Index (CPI), How They Are Different]\n  * [Core Inflation Rates]\n  * [Rates for I Bonds]\n  * [Grocery Store Prices]\n  * [Energy Prices: Gasoline, Electricity and Fuel Oil]\n  * [Average Inflation Rates]\n  * [Monthly US Inflation Rates: 1913-Present]\n\n* [Gas, Food & Other Inflation]\n  * [Gasoline Inflation (1968-2026)]\n  * [Food Inflation (1968-2026)]\n  * [Health Care Inflation (1948-2026)]\n  * [College Inflation (1978-2026)]\n  * [Airfare Inflation (1964-2026)]\n\n* [Items Adjusted for Inflation]\n  * [Gasoline Prices Adjusted for Inflation]\n  * [Electricity Prices By Year And Adjusted For Inflation]\n  * [Milk Prices By Year And Adjusted For Inflation]\n  * [Coffee Prices By Year And Adjusted For Inflation]\n  * [Bacon Prices By Year And Adjusted For Inflation]\n  * [Egg Prices By Year And Adjusted For Inflation]\n\n* [FAQ’s]\n* [More Calcs]\n  * [Inflation Calculator: By Month and Year (1913-2025)]\n  * [Inflation in New York, Newark and Jersey City Metropolitan Area]\n  * [Inflation in Los Angeles, Long Beach and Anaheim Metropolitan Area]\n\n* [About & Contact Us]\n\nSearch\n\n[![Image 1: Find US Dollar\\'s Value From 1913-2023]]\n\n[![Image 2: Find US Dollar\\'s Value From 1913-2023]]\n\n* [Inflation Calculator]\n* [Inflation and Prices]\n  * [Current U.S. Inflation Rates (2000-2026)]\n  * [U.S. Inflation Rates by Year: Historical Data (1914–2026)]\n  * [Consumer Price Index Data from 1913 to 2026]\n  * [Consumer Price Index – Release Schedule]\n  * [Inflation vs. Consumer Price Index (CPI), How They Are Different]\n  * [Core Inflation Rates]\n  * [Rates for I Bonds]\n  * [Grocery Store Prices]\n  * [Energy Prices: Gasoline, Electricity and Fuel Oil]\n  * [Average Inflation Rates]\n  * [Monthly US Inflation Rates: 1913-Present]\n\n* [Gas, Food & Other Inflation]\n  * [Gasoline Inflation (1968-2026)]\n  * [Food Inflation (1968-2026)]\n  * [Health Care Inflation (1948-2026)]\n  * [College Inflation (1978-2026)]\n  * [Airfare Inflation (1964-2026)]\n\n* [Items Adjusted for Inflation]\n  * [Gasoline Prices Adjusted for Inflation]\n  * [Electricity Prices By Year And Adjusted For Inflation]\n  * [Milk Prices By Year And Adjusted For Inflation]\n  * [Coffee Prices By Year And Adjusted For Inflation]\n  * [Bacon Prices By Year And Adjusted For Inflation]\n  * [Egg Prices By Year And Adjusted For Inflation]\n\n* [FAQ’s]\n* [More Calcs]\n  * [Inflation Calculator: By Month and Year (1913-2025)]\n  * [Inflation in New York, Newark and Jersey City Metropolitan Area]\n  * [Inflation in Los Angeles, Long Beach and Anaheim Metropolitan Area]\n\n* [About & Contact Us]\n\nMore\n\nSearch\n\n[]\n\n[Home][Inflation and Prices]Consumer Price Index Data from 1913 to 2026\n\n# Consumer Price Index Data from 1913 to 2026\n\nThe Consumer Price Index (CPI-U), published by the U.S. Bureau of Labor Statistics ([BLS]) within the U.S. Department of Labor, is the primary measure used to track inflation in the United States. Updated monthly, the CPI powers this site’s always-current [Inflation Calculato]r and other inflation-related tools.\n\nThe latest CPI update was released September 11, covering inflation data through August 2026. The next CPI report is scheduled for October 14, 2026, and will include inflation figures through September 2026.\n\n**What Is the Consumer Price Index (CPI)?**\n\nBefore exploring the historical inflation data below, you may want to learn more about how the Consumer Price Index measures inflation. See our [detailed explanation of the CPI], How They Are Different\") and how it is used to calculate inflation.\n\nThe first chart below illustrates price changes over time across major CPI categories, showing how inflation has affected different parts of the economy. The chart tracks percentage price changes from January 2019 through August 2026.\n\nHover over the chart to view specific data points, or select a category from the legend on the right to highlight it. This makes it easy to follow how prices in individual CPI categories have changed over time.\n\nBelow the chart is a table listing overall CPI values since 1913.\n\n_October 2025 data was unavailable due to the 2025 lapse in appropriations._\n\nFinally, the next grouping of data shows actually CPI figures from 1913 to present.\n\n### Consumer Price Index for All Urban Consumers (CPI-U) from 1913 to 2026*\n\n**Annual****Percent Change**\n**Year****Jan****Feb****Mar****Apr****May****June****July****Aug****Sep****Oct****Nov****Dec****Avg****Dec-Dec****Avg-Avg**\n**1913**9.8 9.8 9.8 9.8 9.7 9.8 9.9 9.9 10.0 10.0 10.1 10.0 9.9––\n**1914**10.0 9.9 9.9 9.8 9.9 9.9 10.0 10.2 10.2 10.1 10.2 10.1 10.0 1.0 1.0\n**1915**10.1 10.0 9.9 10.0 10.1 10.1 10.1 10.1 10.1 10.2 10.3 10.3 10.1 2.0 1.0\n**1916**10.4 10.4 10.5 10.6 10.7 10.8 10.8 10.9 11.1 11.3 11.5 11.6 10.9 12.6 7.9\n**1917**11.7 12.0 12.0 12.6 12.8 13.0 12.8 13.0 13.3 13.5 13.5 13.7 12.8 18.1 17.4\n**1918**14.0 14.1 14.0 14.2 14.5 14.7 15.1 15.4 15.7 16.0 16.3 16.5 15.1 20.4 18.0\n**1919**16.5 16.2 16.4 16.7 16.9 16.9 17.4 17.7 17.8 18.1 18.5 18.9 17.3 14.5 14.6\n**1920**19.3 19.5 19.7 20.3 20.6 20.9 20.8 20.3 20.0 19.9 19.8 19.4 20.0 2.6 15.6\n**1921**19.0 18.4 18.3 18.1 17.7 17.6 17.7 17.7 17.5 17.5 17.4 17.3 17.9-10.8-10.5\n**1922**16.9 16.9 16.7 16.7 16.7 16.7 16.8 16.6 16.6 16.7 16.8 16.9 16.8-2.3-6.1\n**1923**16.8 16.8 16.8 16.9 16.9 17.0 17.2 17.1 17.2 17.3 17.3 17.3 17.1 2.4 1.8\n**1924**17.3 17.2 17.1 17.0 17.0 17.0 17.1 17.0 17.1 17.2 17.2 17.3 17.1 0.0 0.0\n**1925**17.3 17.2 17.3 17.2 17.3 17.5 17.7 17.7 17.7 17.7 18.0 17.9 17.5 3.5 2.3\n**1926**17.9 17.9 17.8 17.9 17.8 17.7 17.5 17.4 17.5 17.6 17.7 17.7 17.7-1.1 1.1\n**1927**17.5 17.4 17.3 17.3 17.4 17.6 17.3 17.2 17.3 17.4 17.3 17.3 17.4-2.3-1.7\n**1928**17.3 17.1 17.1 17.1 17.2 17.1 17.1 17.1 17.3 17.2 17.2 17.1 17.1-1.2-1.7\n**1929**17.1 17.1 17.0 16.9 17.0 17.1 17.3 17.3 17.3 17.3 17.3 17.2 17.1 0.6 0.0\n**1930**17.1 17.0 16.9 17.0 16.9 16.8 16.6 16.5 16.6 16.5 16.4 16.1 16.7-6.4-2.3\n**1931**15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 15.2-9.3-9.0\n**1932**14.3 14.1 14.0 13.9 13.7 13.6 13.6 13.5 13.4 13.3 13.2 13.1 13.7-10.3-9.9\n**1933**12.9 12.7 12.6 12.6 12.6 12.7 13.1 13.2 13.2 13.2 13.2 13.2 13.0 0.8-5.1\n**1934**13.2 13.3 13.3 13.3 13.3 13.4 13.4 13.4 13.6 13.5 13.5 13.4 13.4 1.5 3.1\n**1935**13.6 13.7 13.7 13.8 13.8 13.7 13.7 13.7 13.7 13.7 13.8 13.8 13.7 3.0 2.2\n**1936**13.8 13.8 13.7 13.7 13.7 13.8 13.9 14.0 14.0 14.0 14.0 14.0 13.9 1.4 1.5\n**1937**14.1 14.1 14.2 14.3 14.4 14.4 14.5 14.5 14.6 14.6 14.5 14.4 14.4 2.9 3.6\n**1938**14.2 14.1 14.1 14.2 14.1 14.1 14.1 14.1 14.1 14.0 14.0 14.0 14.1-2.8-2.1\n**1939**14.0 13.9 13.9 13.8 13.8 13.8 13.8 13.8 14.1 14.0 14.0 14.0 13.9 0.0-1.4\n**1940**13.9 14.0 14.0 14.0 14.0 14.1 14.0 14.0 14.0 14.0 14.0 14.1 14.0 0.7 0.7\n**1941**14.1 14.1 14.2 14.3 14.4 14.7 14.7 14.9 15.1 15.3 15.4 15.5 14.7 9.9 5.0\n**1942**15.7 15.8 16.0 16.1 16.3 16.3 16.4 16.5 16.5 16.7 16.8 16.9 16.3 9.0 10.9\n**1943**16.9 16.9 17.2 17.4 17.5 17.5 17.4 17.3 17.4 17.4 17.4 17.4 17.3 3.0 6.1\n**1944**17.4 17.4 17.4 17.5 17.5 17.6 17.7 17.7 17.7 17.7 17.7 17.8 17.6 2.3 1.7\n**1945**17.8 17.8 17.8 17.8 17.9 18.1 18.1 18.1 18.1 18.1 18.1 18.2 18.0 2.2 2.3\n**1946**18.2 18.1 18.3 18.4 18.5 18.7 19.8 20.2 20.4 20.8 21.3 21.5 19.5 18.1 8.3\n**1947**21.5 21.5 21.9 21.9 21.9 22.0 22.2 22.5 23.0 23.0 23.1 23.4 22.3 8.8 14.4\n**1948**23.7 23.5 23.4 23.8 23.9 24.1 24.4 24.5 24.5 24.4 24.2 24.1 24.1 3.0 8.1\n**1949**24.0 23.8 23.8 23.9 23.8 23.9 23.7 23.8 23.9 23.7 23.8 23.6 23.8-2.1-1.2\n**1950**23.5 23.5 23.6 23.6 23.7 23.8 24.1 24.3 24.4 24.6 24.7 25.0 24.1 5.9 1.3\n**1951**25.4 25.7 25.8 25.8 25.9 25.9 25.9 25.9 26.1 26.2 26.4 26.5 26.0 6.0 7.9\n**1952**26.5 26.3 26.3 26.4 26.4 26.5 26.7 26.7 26.7 26.7 26.7 26.7 26.5 0.8 1.9\n**1953**26.6 26.5 26.6 26.6 26.7 26.8 26.8 26.9 26.9 27.0 26.9 26.9 26.7 0.7 0.8\n**1954**26.9 26.9 26.9 26.8 26.9 26.9 26.9 26.9 26.8 26.8 26.8 26.7 26.9-0.7 0.7\n**1955**26.7 26.7 26.7 26.7 26.7 26.7 26.8 26.8 26.9 26.9 26.9 26.8 26.8 0.4-0.4\n**1956**26.8 26.8 26.8 26.9 27.0 27.2 27.4 27.3 27.4 27.5 27.5 27.6 27.2 3.0 1.5\n**1957**27.6 27.7 27.8 27.9 28.0 28.1 28.3 28.3 28.3 28.3 28.4 28.4 28.1 2.9 3.3\n**1958**28.6 28.6 28.8 28.9 28.9 28.9 29.0 28.9 28.9 28.9 29.0 28.9 28.9 1.8 2.8\n**1959**29.0 28.9 28.9 29.0 29.0 29.1 29.2 29.2 29.3 29.4 29.4 29.4 29.1 1.7 0.7\n**1960**29.3 29.4 29.4 29.5 29.5 29.6 29.6 29.6 29.6 29.8 29.8 29.8 29.6 1.4 1.7\n**1961**29.8 29.8 29.8 29.8 29.8 29.8 30.0 29.9 30.0 30.0 30.0 30.0 29.9 0.7 1.0\n**1962**30.0 30.1 30.1 30.2 30.2 30.2 30.3 30.3 30.4 30.4 30.4 30.4 30.2 1.3 1.0\n**1963**30.4 30.4 30.5 30.5 30.5 30.6 30.7 30.7 30.7 30.8 30.8 30.9 30.6 1.6 1.3\n**1964**30.9 30.9 30.9 30.9 30.9 31.0 31.1 31.0 31.1 31.1 31.2 31.2 31.0 1.0 1.3\n**1965**31.2 31.2 31.3 31.4 31.4 31.6 31.6 31.6 31.6 31.7 31.7 31.8 31.5 1.9 1.6\n**1966**31.8 32.0 32.1 32.3 32.3 32.4 32.5 32.7 32.7 32.9 32.9 32.9 32.4 3.5 2.9\n**1967**32.9 32.9 33.0 33.1 33.2 33.3 33.4 33.5 33.6 33.7 33.8 33.9 33.4 3.0 3.1\n**1968**34.1 34.2 34.3 34.4 34.5 34.7 34.9 35.0 35.1 35.3 35.4 35.5 34.8 4.7 4.2\n**1969**35.6 35.8 36.1 36.3 36.4 36.6 36.8 37.0 37.1 37.3 37.5 37.7 36.7 6.2 5.5\n**1970**37.8 38.0 38.2 38.5 38.6 38.8 39.0 39.0 39.2 39.4 39.6 39.8 38.8 5.6 5.7\n**1971**39.8 39.9 40.0 40.1 40.3 40.6 40.7 40.8 40.8 40.9 40.9 41.1 40.5 3.3 4.4\n**1972**41.1 41.3 41.4 41.5 41.6 41.7 41.9 42.0 42.1 42.3 42.4 42.5 41.8 3.4 3.2\n**1973**42.6 42.9 43.3 43.6 43.9 44.2 44.3 45.1 45.2 45.6 45.9 46.2 44.4 8.7 6.2\n**1974**46.6 47.2 47.8 48.0 48.6 49.0 49.4 50.0 50.6 51.1 51.5 51.9 49.3 12.3 11.0\n**1975**52.1 52.5 52.7 52.9 53.2 53.6 54.2 54",
+        "https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm": "Title: Consumer Price Index Historical Tables for U.S. City Average : U.S. Bureau of Labor Statistics\n\nURL Source: https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm\n\nMarkdown Content:\n[Skip to Content]\n\n![Image 1: U.S. flag]\nAn official website of the United States government Here is how you know\n\n[![Image 2: Department of Labor Logo] United States Department of Labor]\n\n![Image 3: Dot gov]\n**The .gov means it's official.**  \n Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you're on a federal government site.\n\n![Image 4: Https]\n**The site is secure.**  \n The **https://** ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.\n\n[U.S. Bureau of Labor Statistics]\n\n[Release Calendar] | [Subscribe](javascript:window.open('https://public.govdelivery.com/accounts/USDOLBLS/subscriber/new ','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void(''); \"Subscribe to BLS E-mail Updates\")\n\nSearch button Search: \n\nMenu\n\n* Search button Search:  [Release Calendar] | [Subscribe](javascript:window.open('https://public.govdelivery.com/accounts/USDOLBLS/subscriber/new ','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void(''); \"Subscribe to BLS E-mail Updates\") \n* [Home]\n\n  * [About BLS]\n  * [History]\n  * [Our Leadership]\n  * [Budget and Performance]\n  * [Questions and Answers]\n  * [A-Z Index]\n  * [Glossary]\n  * [BLS Speakers Available]\n  * [Errata]\n  * [Contact BLS]\n\n  * [Overview of BLS Statistics]\n  * [Guide to Programs & Services]\n  * [Demographics]\n  * [Industries]\n  * [Business Costs]\n  * [Occupations]\n  * [Geography]\n\n  * [Resources For]\n  * [Business Leaders]\n  * [Consumers]\n  * [Developers]\n  * [Economists]\n  * [Investors]\n  * [Jobseekers]\n  * [Media]\n  * [Public Policymakers]\n  * [Researcher]\n  * [Students & Teachers]\n  * [Survey Respondents]\n\n* [Subjects]\n\n  * [Inflation & Prices]\n  * [Consumer Price Index]\n  * [Producer Price Indexes]\n  * [Import/Export Price Indexes]\n  * [Contract Escalation]\n  * [Price Index Research]\n  * [Pay & Benefits]\n  * [Employment Cost Index]\n  * [Employer Costs for Employee Compensation]\n  * [Wage Data by Occupation]\n  * [Earnings by Demographics]\n  * [Earnings by Industry]\n  * [County Wages]\n  * [Benefits]\n  * [Modeled Wage Estimates]\n  * [Compensation Research]\n  * [Strikes & Lockouts]\n  * [Wage Records from Unemployment Insurance]\n  * [Occupational Requirements]\n\n  * [Unemployment]\n  * [National Unemployment Rate]\n  * [State & Local Unemployment Rates]\n  * [Unemployment Research]\n  * [Employment]\n  * [National Employment]\n  * [State & Local Employment]\n  * [County Employment]\n  * [Worker Characteristics]\n  * [American Indian Report]\n  * [Employment Projections]\n  * [Job Openings & Labor Turnover Survey]\n  * [Business Response Survey]\n  * [Employment by Occupation]\n  * [Work Experience Over Time]\n  * [Business Employment Dynamics]\n  * [Foreign Direct Investment]\n  * [Employment Research]\n  * [Workplace Injuries]\n\n  * [Productivity]\n  * [Labor and Total Factor Productivity]\n  * [Productivity Research]\n  * [Spending & Time Use]\n  * [Consumer Expenditures]\n  * [How Americans Spend Time]\n  * [International]\n  * [International Technical Cooperation]\n  * [Import/Export Price Indexes]\n  * [Geographic Information]\n  * [Northeast (Boston-New York)]\n  * [Mid-Atlantic (Philadelphia)]\n  * [Southeast (Atlanta)]\n  * [Midwest (Chicago)]\n  * [Southwest (Dallas)]\n  * [Mountain-Plains (Kansas City)]\n  * [West (San Francisco)]\n\n* [Data Tools]\n\n  * [Data Retrieval Tools]\n  * [BLS Popular Series]\n  * [Series Report]\n  * [Top Picks, One Screen, Multi-Screen, and Maps]\n  * [Data Finder]\n  * [Public Data API]\n\n  * [Charts and Applications]\n  * [Charts for Economic News Releases]\n  * [CPI Inflation Calculator]\n  * [Injury and Illness Calculator]\n  * [Pay Measure Comparison]\n  * [Demographic Data Sources]\n  * [COVID-19 Economic Trends]\n  * [Industry Productivity Viewer]\n  * [Employment and Wages Data Viewer]\n  * [Industry Finder from the Quarterly Census of Employment and Wages]\n\n  * [Customized Tables]\n  * [U.S. Economy at a Glance]\n  * [Regions, States & Areas at a Glance]\n  * [Industry at a Glance]\n  * [Text Files]\n  * [News Release Tables]\n  * [More Sources of Data]\n  * [Restricted Data Access]\n  * [Discontinued Databases]\n  * [Questions & Answers]\n  * [Special Notices]\n\n* [Publications]\n\n  * [Latest Publications]\n  * [The Economics Daily]\n  * [Monthly Labor Review]\n  * [Beyond the Numbers]\n  * [Spotlight on Statistics]\n  * [Reports]\n  * [Videos]\n  * [Career Outlook]\n\n  * [Occupational Outlook Handbook]\n  * [Geographic Profile]\n  * [Handbook of Methods]\n  * [Research Papers]\n  * [Copyright Information]\n  * [Contact & Help]\n  * [Weekly Update]\n\n* [Economic Releases]\n\n  * [Latest Releases]\n  * [Major Economic Indicators]\n  * [Schedules for news Releases]\n  * [By Month]\n  * [By News Release]\n  * [Current Year]\n  * [Prior Years]\n  * [Archived News Releases]\n\n  * [Employment & Unemployment]\n  * [Monthly]\n  * [Quarterly, annual, and other]\n  * [Inflation & Prices]\n  * [Pay & Benefits & Workplace Injuries]\n  * [Productivity & Technology]\n  * [Employment Projections]\n  * [Regional News Releases]\n\n* [Classroom]\n\n  * [K-12 Student & Teacher Resources]\n  * [Games & Quizzes]\n  * [Student's Desk]\n  * [Teacher's Desk]\n  * [Questions & Answers]\n\n* [Beta]\n\n  * [Redesigned News Releases]\n\n# Mid-Atlantic Information Office\n\nSHARE ON:[![Image 5: share on facebook]](javascript:void(0);)[![Image 6: share on twitter]](javascript:void(0);)[![Image 7: share on linkedin]](javascript:void(0);)\n\nSearch Mid-Atlantic Region \n\n* [Mid-Atlantic Home]\n* [Mid-Atlantic Geography](javascript:)[Delaware][District of Columbia][Maryland][New Jersey][Pennsylvania][Virginia][West Virginia] \n* [Mid-Atlantic Subjects](javascript:)[Inflation, Prices & Spending][Pay & Benefits][Employment & Unemployment][Workplace Injuries] \n* [Mid-Atlantic Archives](javascript:)[News Releases][CPI Summaries][Notices] \n* [Contact Mid-Atlantic]\n\n# Consumer Price Index Historical Tables for U.S. City Average\n\nCONSUMER PRICE INDEX FOR ALL URBAN CONSUMERS (CPI-U) \n (not seasonally adjusted)\n| ALL ITEMS (1982-84=100) | U.S. City Average |\n| - | - |\n| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |\n| Consumer Price Index |  |\n| 2016 | 236.916 | 237.111 | 238.132 | 239.261 | 240.229 | 241.018 | 240.628 | 240.849 | 241.428 | 241.729 | 241.353 | 241.432 |\n| 2017 | 242.839 | 243.603 | 243.801 | 244.524 | 244.733 | 244.955 | 244.786 | 245.519 | 246.819 | 246.663 | 246.669 | 246.524 |\n| 2018 | 247.867 | 248.991 | 249.554 | 250.546 | 251.588 | 251.989 | 252.006 | 252.146 | 252.439 | 252.885 | 252.038 | 251.233 |\n| 2019 | 251.712 | 252.776 | 254.202 | 255.548 | 256.092 | 256.143 | 256.571 | 256.558 | 256.759 | 257.346 | 257.208 | 256.974 |\n| 2020 | 257.971 | 258.678 | 258.115 | 256.389 | 256.394 | 257.797 | 259.101 | 259.918 | 260.280 | 260.388 | 260.229 | 260.474 |\n| 2021 | 261.582 | 263.014 | 264.877 | 267.054 | 269.195 | 271.696 | 273.003 | 273.567 | 274.310 | 276.589 | 277.948 | 278.802 |\n| 2022 | 281.148 | 283.716 | 287.504 | 289.109 | 292.296 | 296.311 | 296.276 | 296.171 | 296.808 | 298.012 | 297.711 | 296.797 |\n| 2023 | 299.170 | 300.840 | 301.836 | 303.363 | 304.127 | 305.109 | 305.691 | 307.026 | 307.789 | 307.671 | 307.051 | 306.746 |\n| 2024 | 308.417 | 310.326 | 312.332 | 313.548 | 314.069 | 314.175 | 314.540 | 314.796 | 315.301 | 315.664 | 315.493 | 315.605 |\n| 2025 | 317.671 | 319.082 | 319.799 | 320.795 | 321.465 | 322.561 | 323.048 | 323.976 | 324.800 | ([1])- | 324.122 | 324.054 |\n| 2026 | 325.252 | 326.785 | 330.213 | 333.020 | 335.123 | 333.952 | 333.918 | 334.980 |  |  |  |  |\n|  |\n| Percent change from 12 months ago |  |\n| 2016 | 1.4 | 1.0 | 0.9 | 1.1 | 1.0 | 1.0 | 0.8 | 1.1 | 1.5 | 1.6 | 1.7 | 2.1 |\n| 2017 | 2.5 | 2.7 | 2.4 | 2.2 | 1.9 | 1.6 | 1.7 | 1.9 | 2.2 | 2.0 | 2.2 | 2.1 |\n| 2018 | 2.1 | 2.2 | 2.4 | 2.5 | 2.8 | 2.9 | 2.9 | 2.7 | 2.3 | 2.5 | 2.2 | 1.9 |\n| 2019 | 1.6 | 1.5 | 1.9 | 2.0 | 1.8 | 1.6 | 1.8 | 1.7 | 1.7 | 1.8 | 2.1 | 2.3 |\n| 2020 | 2.5 | 2.3 | 1.5 | 0.3 | 0.1 | 0.6 | 1.0 | 1.3 | 1.4 | 1.2 | 1.2 | 1.4 |\n| 2021 | 1.4 | 1.7 | 2.6 | 4.2 | 5.0 | 5.4 | 5.4 | 5.3 | 5.4 | 6.2 | 6.8 | 7.0 |\n| 2022 | 7.5 | 7.9 | 8.5 | 8.3 | 8.6 | 9.1 | 8.5 | 8.3 | 8.2 | 7.7 | 7.1 | 6.5 |\n| 2023 | 6.4 | 6.0 | 5.0 | 4.9 | 4.0 | 3.0 | 3.2 | 3.7 | 3.7 | 3.2 | 3.1 | 3.4 |\n| 2024 | 3.1 | 3.2 | 3.5 | 3.4 | 3.3 | 3.0 | 2.9 | 2.5 | 2.4 | 2.6 | 2.7 | 2.9 |\n| 2025 | 3.0 | 2.8 | 2.4 | 2.3 | 2.4 | 2.7 | 2.7 | 2.9 | 3.0 |  | 2.7 | 2.7 |\n| 2026 | 2.4 | 2.4 | 3.3 | 3.8 | 4.2 | 3.5 | 3.4 | 3.4 |  |  |  |  |\n| Footnotes [(1)]Data unavailable due to the 2025 lapse in appropriations |\n\nCONSUMER PRICE INDEX FOR URBAN WAGE EARNERS AND CLERICAL WORKERS (CPI-W) \n (not seasonally adjusted)\n| ALL ITEMS (1982-84=100) | U.S. City Average |\n| - | - |\n| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |\n| Consumer Price Index |  |\n| 2016 | 231.061 | 230.972 | 232.209 | 233.438 | 234.436 | 235.289 | 234.771 | 234.904 | 235.495 | 235.732 | 235.215 | 235.390 |\n| 2017 | 236.854 | 237.477 | 237.656 | 238.432 | 238.609 | 238.813 | 238.617 | 239.448 | 240.939 | 240.573 | 240.666 | 240.526 |\n| 2018 | 241.919 | 242.988 | 243.463 | 244.607 | 245.770 | 246.196 | 246.155 | 246.336 | 246.565 | 247.038 | 245.933 | 244.786 |\n| 2019 | 245.133 | 246.218 | 247.768 | 249.332 | 249.871 | 249.747 | 250.236 | 250.112 | 250.251 | 250.894 | 250.644 | 250.452 |\n| 2020 | 251.361 | 251.935 | 251.375 | 249.515 | 249.521 | 251.054 | 252.636 | 253.597 | 254.004 | 254.076 | 253.826 | 254.081 |\n| 2021 | 255.296 | 256.843 | 258.935 | 261.237 | 263.612 | 266.412 | 267.789 | 268.387 | 269.086 | 271.552 | 273.042 | 273.925 |\n| 2022 | 276.296 | 278.943 | 283.176 | 284.575 | 288.022 | 292.542 | 292.219 | 291.629 | 291.854 | 293.003 | 292.495 | 291.051 |\n| 2023 | 293.565 | 295.057 | 29"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31\", \"https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\"]\n\n}",
+      "result": {
+        "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31": "Error fetching https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31: 422, message='Unprocessable Entity', url='https://r.jina.ai/https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&fq=Annual&fy=average&discont=0&start_date=1930-01-01&end_date=2014-12-31'",
+        "https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf": "Title: Consumer Price Index - February 2024\n\nURL Source: https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf\n\nPublished Time: Tue, 14 Jul 2026 17:39:33 GMT\n\nNumber of Pages: 5\n\nMarkdown Content:\n# Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month \n\n## [1982-84=100, unless otherwise noted] \n\nYear Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sep. Oct. Nov. Dec. 1913...................................... . 9.8 9.8 9.8 9.8 9.7 9.8 9.9 9.9 10.0 10.0 10.1 10.0 1914...................................... . 10.0 9.9 9.9 9.8 9.9 9.9 10.0 10.2 10.2 10.1 10.2 10.1 1915...................................... . 10.1 10.0 9.9 10.0 10.1 10.1 10.1 10.1 10.1 10.2 10.3 10.3 1916...................................... . 10.4 10.4 10.5 10.6 10.7 10.8 10.8 10.9 11.1 11.3 11.5 11.6 1917...................................... . 11.7 12.0 12.0 12.6 12.8 13.0 12.8 13.0 13.3 13.5 13.5 13.7 1918...................................... . 14.0 14.1 14.0 14.2 14.5 14.7 15.1 15.4 15.7 16.0 16.3 16.5 1919...................................... . 16.5 16.2 16.4 16.7 16.9 16.9 17.4 17.7 17.8 18.1 18.5 18.9 1920...................................... . 19.3 19.5 19.7 20.3 20.6 20.9 20.8 20.3 20.0 19.9 19.8 19.4 1921...................................... . 19.0 18.4 18.3 18.1 17.7 17.6 17.7 17.7 17.5 17.5 17.4 17.3 1922...................................... . 16.9 16.9 16.7 16.7 16.7 16.7 16.8 16.6 16.6 16.7 16.8 16.9 1923...................................... . 16.8 16.8 16.8 16.9 16.9 17.0 17.2 17.1 17.2 17.3 17.3 17.3 1924...................................... . 17.3 17.2 17.1 17.0 17.0 17.0 17.1 17.0 17.1 17.2 17.2 17.3 1925...................................... . 17.3 17.2 17.3 17.2 17.3 17.5 17.7 17.7 17.7 17.7 18.0 17.9 1926...................................... . 17.9 17.9 17.8 17.9 17.8 17.7 17.5 17.4 17.5 17.6 17.7 17.7 1927...................................... . 17.5 17.4 17.3 17.3 17.4 17.6 17.3 17.2 17.3 17.4 17.3 17.3 1928...................................... . 17.3 17.1 17.1 17.1 17.2 17.1 17.1 17.1 17.3 17.2 17.2 17.1 1929...................................... . 17.1 17.1 17.0 16.9 17.0 17.1 17.3 17.3 17.3 17.3 17.3 17.2 1930...................................... . 17.1 17.0 16.9 17.0 16.9 16.8 16.6 16.5 16.6 16.5 16.4 16.1 1931...................................... . 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 1932...................................... . 14.3 14.1 14.0 13.9 13.7 13.6 13.6 13.5 13.4 13.3 13.2 13.1 1933...................................... . 12.9 12.7 12.6 12.6 12.6 12.7 13.1 13.2 13.2 13.2 13.2 13.2 1934...................................... . 13.2 13.3 13.3 13.3 13.3 13.4 13.4 13.4 13.6 13.5 13.5 13.4 1935...................................... . 13.6 13.7 13.7 13.8 13.8 13.7 13.7 13.7 13.7 13.7 13.8 13.8 1936...................................... . 13.8 13.8 13.7 13.7 13.7 13.8 13.9 14.0 14.0 14.0 14.0 14.0 1937...................................... . 14.1 14.1 14.2 14.3 14.4 14.4 14.5 14.5 14.6 14.6 14.5 14.4 1938...................................... . 14.2 14.1 14.1 14.2 14.1 14.1 14.1 14.1 14.1 14.0 14.0 14.0 1939...................................... . 14.0 13.9 13.9 13.8 13.8 13.8 13.8 13.8 14.1 14.0 14.0 14.0 1940...................................... . 13.9 14.0 14.0 14.0 14.0 14.1 14.0 14.0 14.0 14.0 14.0 14.1 1941...................................... . 14.1 14.1 14.2 14.3 14.4 14.7 14.7 14.9 15.1 15.3 15.4 15.5 1942...................................... . 15.7 15.8 16.0 16.1 16.3 16.3 16.4 16.5 16.5 16.7 16.8 16.9 1943...................................... . 16.9 16.9 17.2 17.4 17.5 17.5 17.4 17.3 17.4 17.4 17.4 17.4 1944...................................... . 17.4 17.4 17.4 17.5 17.5 17.6 17.7 17.7 17.7 17.7 17.7 17.8 1945...................................... . 17.8 17.8 17.8 17.8 17.9 18.1 18.1 18.1 18.1 18.1 18.1 18.2 1946...................................... . 18.2 18.1 18.3 18.4 18.5 18.7 19.8 20.2 20.4 20.8 21.3 21.5 1947...................................... . 21.5 21.5 21.9 21.9 21.9 22.0 22.2 22.5 23.0 23.0 23.1 23.4 1948...................................... . 23.7 23.5 23.4 23.8 23.9 24.1 24.4 24.5 24.5 24.4 24.2 24.1 1949...................................... . 24.0 23.8 23.8 23.9 23.8 23.9 23.7 23.8 23.9 23.7 23.8 23.6 1950...................................... . 23.5 23.5 23.6 23.6 23.7 23.8 24.1 24.3 24.4 24.6 24.7 25.0 1951...................................... . 25.4 25.7 25.8 25.8 25.9 25.9 25.9 25.9 26.1 26.2 26.4 26.5 1952...................................... . 26.5 26.3 26.3 26.4 26.4 26.5 26.7 26.7 26.7 26.7 26.7 26.7 1953...................................... . 26.6 26.5 26.6 26.6 26.7 26.8 26.8 26.9 26.9 27.0 26.9 26.9 1954...................................... . 26.9 26.9 26.9 26.8 26.9 26.9 26.9 26.9 26.8 26.8 26.8 26.7 1955...................................... . 26.7 26.7 26.7 26.7 26.7 26.7 26.8 26.8 26.9 26.9 26.9 26.8 1956...................................... . 26.8 26.8 26.8 26.9 27.0 27.2 27.4 27.3 27.4 27.5 27.5 27.6 1957...................................... . 27.6 27.7 27.8 27.9 28.0 28.1 28.3 28.3 28.3 28.3 28.4 28.4 1958...................................... . 28.6 28.6 28.8 28.9 28.9 28.9 29.0 28.9 28.9 28.9 29.0 28.9 1959...................................... . 29.0 28.9 28.9 29.0 29.0 29.1 29.2 29.2 29.3 29.4 29.4 29.4 1960...................................... . 29.3 29.4 29.4 29.5 29.5 29.6 29.6 29.6 29.6 29.8 29.8 29.8 1961...................................... . 29.8 29.8 29.8 29.8 29.8 29.8 30.0 29.9 30.0 30.0 30.0 30.0 1962...................................... . 30.0 30.1 30.1 30.2 30.2 30.2 30.3 30.3 30.4 30.4 30.4 30.4 1963...................................... . 30.4 30.4 30.5 30.5 30.5 30.6 30.7 30.7 30.7 30.8 30.8 30.9 1964...................................... . 30.9 30.9 30.9 30.9 30.9 31.0 31.1 31.0 31.1 31.1 31.2 31.2 1965...................................... . 31.2 31.2 31.3 31.4 31.4 31.6 31.6 31.6 31.6 31.7 31.7 31.8 1966...................................... . 31.8 32.0 32.1 32.3 32.3 32.4 32.5 32.7 32.7 32.9 32.9 32.9 1967...................................... . 32.9 32.9 33.0 33.1 33.2 33.3 33.4 33.5 33.6 33.7 33.8 33.9 1968...................................... . 34.1 34.2 34.3 34.4 34.5 34.7 34.9 35.0 35.1 35.3 35.4 35.5 1969...................................... . 35.6 35.8 36.1 36.3 36.4 36.6 36.8 37.0 37.1 37.3 37.5 37.7 1970...................................... . 37.8 38.0 38.2 38.5 38.6 38.8 39.0 39.0 39.2 39.4 39.6 39.8 Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month — Continued \n\n## [1982-84=100, unless otherwise noted] \n\nYear Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sep. Oct. Nov. Dec. 1971...................................... . 39.8 39.9 40.0 40.1 40.3 40.6 40.7 40.8 40.8 40.9 40.9 41.1 1972...................................... . 41.1 41.3 41.4 41.5 41.6 41.7 41.9 42.0 42.1 42.3 42.4 42.5 1973...................................... . 42.6 42.9 43.3 43.6 43.9 44.2 44.3 45.1 45.2 45.6 45.9 46.2 1974...................................... . 46.6 47.2 47.8 48.0 48.6 49.0 49.4 50.0 50.6 51.1 51.5 51.9 1975...................................... . 52.1 52.5 52.7 52.9 53.2 53.6 54.2 54.3 54.6 54.9 55.3 55.5 1976...................................... . 55.6 55.8 55.9 56.1 56.5 56.8 57.1 57.4 57.6 57.9 58.0 58.2 1977...................................... . 58.5 59.1 59.5 60.0 60.3 60.7 61.0 61.2 61.4 61.6 61.9 62.1 1978...................................... . 62.5 62.9 63.4 63.9 64.5 65.2 65.7 66.0 66.5 67.1 67.4 67.7 1979...................................... . 68.3 69.1 69.8 70.6 71.5 72.3 73.1 73.8 74.6 75.2 75.9 76.7 1980...................................... . 77.8 78.9 80.1 81.0 81.8 82.7 82.7 83.3 84.0 84.8 85.5 86.3 1981...................................... . 87.0 87.9 88.5 89.1 89.8 90.6 91.6 92.3 93.2 93.4 93.7 94.0 1982...................................... . 94.3 94.6 94.5 94.9 95.8 97.0 97.5 97.7 97.9 98.2 98.0 97.6 1983...................................... . 97.8 97.9 97.9 98.6 99.2 99.5 99.9 100.2 100.7 101.0 101.2 101.3 1984...................................... . 101.9 102.4 102.6 103.1 103.4 103.7 104.1 104.5 105.0 105.3 105.3 105.3 1985...................................... . 105.5 106.0 106.4 106.9 107.3 107.6 107.8 108.0 108.3 108.7 109.0 109.3 1986...................................... . 109.6 109.3 108.8 108.6 108.9 109.5 109.5 109.7 110.2 110.3 110.4 110.5 1987...................................... . 111.2 111.6 112.1 112.7 113.1 113.5 113.8 114.4 115.0 115.3 115.4 115.4 1988...................................... . 115.7 116.0 116.5 117.1 117.5 118.0 118.5 119.0 119.8 120.2 120.3 120.5 1989...................................... . 121.1 121.6 122.3 123.1 123.8 124.1 124.4 124.6 125.0 125.6 125.9 126.1 1990...................................... . 127.4 128.0 128.7 128.9 129.2 129.9 130.4 131.6 132.7 133.5 133.8 133.8 1991...................................... . 134.6 134.8 135.0 135.2 135.6 136.0 136.2 136.6 137.2 137.4 137.8 137.9 1992...................................... . 138.1 138.6 139.3 139.5 139.7 140.2 140.5 140.9 141.3 141.8 142.0 141.9 1993...................................... . 142.6 143.1 143.6 144.0 144.2 144.4 144.4 144.8 145.1 145.7 145.8 145.8 1994...................................... . 146.2 146.7 147.2 147.4 147.5 148.0 148.4 149.0 149.4 149.5 149.7 149.7 1995...................................... . 150.3 150.9 151.4 151.9 152.2 152.5 152.5 152.9 153.2 153.7 153.6 153.5 1996...................................... . 154.4 154.9 155.7 156.3 156.6 156.7 157.0 157.3 157.8 158.3 158.6 158.6 1997...................................... . 159.1 159.6 160.0 160.2 160.1 160.3 160.5 160.8 161.2 161.6 161.5 161.3 1998...................................... . 161.6 161.9 162.2 162.5 162.8 163.0 163.2 163.4 163.6 164.0 164.0 163.9 1999...................................... . 164.3 164.5 165.0 166.2 166.2 166.2 166.7 167.1 167.9 168.2 168.3 168.3 2000................."
+      }
+    },
+    {
+      "turn": 3,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"1931\\\" CPI-U annual average 15.2 \\\"2013\\\" 232.957 bureau of labor statistics\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Historical CPI-U",
+          "url": "https://www.bls.gov/cpi/tables/historical-cpi-u-201711.pdf",
+          "snippet": "1931. 15.9. 15.7. 15.6. 15.5. 15.3. 15.1. 15.1. 15.1. 15.0. 14.9. 14.7. 14.6. 1932. 14.3 ... 2013. 230.280. 232.166. 232.773. 232.531. 232.945. 233.504. 233.596.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Consumer Price Index - February 2024",
+          "url": "https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202402.pdf",
+          "snippet": "2013....................................... 230.280 232.166 232.773 232.531 ... 1931 ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Consumer Price Index Data from 1913 to 2026",
+          "url": "https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/",
+          "snippet": "1931, 15.9, 15.7, 15.6, 15.5, 15.3, 15.1, 15.1, 15.1, 15.0, 14.9, 14.7, 14.6, 15.2 ... 2013, 230.280, 232.166, 232.773, 232.531, 232.945, 233.504, 233.596 ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "NEWS RELEASE",
+          "url": "https://iurc.portal.in.gov/_entity/sharepointdocumentlocation/db8cd063-6a15-eb11-a813-001dd8018921/bb9c6bba-fd52-45ad-8e64-a444aef13c39?file=PUBLIC%20CX-9%20022718.pdf",
+          "snippet": "1931. -. -. 15.2. -9.3. -9.0. 1932. -. -. 13.7. -10.3. -9.9. 1933. -. -. 13.0 .8. -5.1 ... 2013. 232.366 233.548 232.957. 1.5. 1.5. 2014. 236.384 237.088 236.736.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Historical CPI Data — Annual U.S. Index 1913 to Present",
+          "url": "https://cpichart.com/historical-cpi/",
+          "snippet": "2013, 232.957, +1.5%. 2012, 229.594, +2.1%. 2011, 224.939, +3.2%. 2010, 218.056, + ... -5.1%. 1932, 13.7, -9.9%. 1931, 15.2, -9.0%. 1930, 16.7, -2.3%. 1929, 17.1 ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Inflation Calculator | US Dollar Value 1913-2026",
+          "url": "https://www.calculatorsoup.com/calculators/financial/inflation-calculator.php",
+          "snippet": "2013, 1.6%, 2.0%, 1.5%, 1.1%, 1.4%, 1.8%, 2.0%, 1.5%, 1.2%, 1.0%, 1.2%, 1.5%, 1.5%. 2012 ... 1931, -7.0%, -7.6%, -7.7%, -8.8%, -9.5%, -10.1%, -9.0%, -8.5%, -9.6% ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "2019 CPI-U Annual Average Data | PDF",
+          "url": "https://www.scribd.com/document/474148715/SeriesReport-20191210083704-8bc2e0",
+          "snippet": "document contains the Consumer Price Index (CPI) data from the Bureau of Labor Statistics ... 1931 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "http://www.bls.gov/cpi/cpifiles/cpiai.txt",
+          "url": "http://documents.saintleo.edu/docs/ECO110HA/BLS_Table.pdf",
+          "snippet": "by CP Index · Cited by 6 — 1931 15.9 15.7 15.6 15.5 15.3 15.1 15.1 15.1 15.0 14.9 14.7 14.6 15.2 -9.3 ... 2013 230.280 232.166 232.773 232.531 232.945 233.504 233.596 233.877 ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Consumer Price Index Data from 1913 to 2021",
+          "url": "https://leecounty.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=14585&ItemID=4398",
+          "snippet": "1931. 15.9. 15.7. 15.6. 15.5. 15.3. 15.1. 15.1. 15.1. 15.0. 14.9. 14.7. 14.6. 15.2. -9.3 ... 2013. 230.280. 232.166. 232.773. 232.531. 232.945. 233.504. 233.596.",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Apparel data in fashion : The Economics Daily",
+          "url": "https://www.bls.gov/opub/ted/2025/apparel-data-in-fashion.htm",
+          "snippet": "1931. 15.2, 22.0, —, —, —, —, —, —, —, —, —. 1932. 13.7, 19.5 ... 2013. 232.957, 127.411, 116.223, 99.560, 126.674, 102.619, 130.374, 136.765 ...",
+          "date": "Feb 5, 2025"
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"cpi_1931 = 15.2      # BLS CPI-U annual average, 1931 (1982-84=100)\\ncpi_2013 = 232.957   # BLS CPI-U annual average, 2013 (1982-84=100)\\nprice_1931 = 19000\\n\\nratio = cpi_2013 / cpi_1931\\nadjusted = price_1931 * ratio\\n\\nprint(\\\"CPI ratio (2013/1931):\\\", round(ratio, 4))\\nprint(\\\"Equivalent 2013 price: $\\\", round(adjusted, 2))\\nprint(\\\"Rounded to nearest thousand: $\\\", round(adjusted/1000)*1000)\\n\\n# sanity check with slightly different 1931 rounding (15.208 from monthly mean)\\nimport statistics\\nmonthly_1931 = [15.9,15.7,15.6,15.5,15.3,15.1,15.1,15.1,15.0,14.9,14.7,14.6]\\nalt = 19000 * cpi_2013 / statistics.mean(monthly_1931)\\nprint(\\\"Using unrounded 1931 mean (%.3f): $%.2f -> %s\\\" % (statistics.mean(monthly_1931), alt, round(alt/1000)*1000))\"}",
+      "result": {
+        "stdout": "CPI ratio (2013/1931): 15.3261\nEquivalent 2013 price: $ 291196.25\nRounded to nearest thousand: $ 291000\nUsing unrounded 1931 mean (15.208): $291036.69 -> 291000",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 148,
+      "id": "gen-1791469169-VvYDvWB6uk1SHOSj1zWz",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 5208,
+        "completion_tokens": 295,
+        "total_tokens": 5503,
+        "cost": 0.00091985,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00091985,
+          "upstream_inference_prompt_cost": 0.0007812,
+          "upstream_inference_completions_cost": 0.00013865
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 186,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 28.961
+    },
+    {
+      "item_id": 148,
+      "id": "gen-1791469199-SpZhqmUR5YZfDFL72w0Y",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 7680,
+        "completion_tokens": 264,
+        "total_tokens": 7944,
+        "cost": 0.00127608,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00127608,
+          "upstream_inference_prompt_cost": 0.001152,
+          "upstream_inference_completions_cost": 0.00012408
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 176,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 29.384
+    },
+    {
+      "item_id": 148,
+      "id": "gen-1791469230-ysEz5SAEnpGcMDxJGLYI",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 19495,
+        "completion_tokens": 2099,
+        "total_tokens": 21594,
+        "cost": 0.00391078,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00391078,
+          "upstream_inference_prompt_cost": 0.00292425,
+          "upstream_inference_completions_cost": 0.00098653
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1874,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 47.826
+    },
+    {
+      "item_id": 148,
+      "id": "gen-1791469284-3Or3QODq49qQ2kbUELfZ",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 30197,
+        "completion_tokens": 651,
+        "total_tokens": 30848,
+        "cost": 0.00243424,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 17920,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00243424,
+          "upstream_inference_prompt_cost": 0.00212827,
+          "upstream_inference_completions_cost": 0.00030597
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 178,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 23.205
+    },
+    {
+      "item_id": 148,
+      "id": "gen-1791469305-nzxGRBdc8iqlStQOgvnn",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 30971,
+        "completion_tokens": 471,
+        "total_tokens": 31442,
+        "cost": 0.001024972,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 28672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001024972,
+          "upstream_inference_prompt_cost": 0.000803602,
+          "upstream_inference_completions_cost": 0.00022137
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 109,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 18.075
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "Watermark year: 2013. Using official BLS CPI‑U annual averages (1931 = 15.2; 2013 = 232.957), the 1931 price of $19,000 is equivalent to about $291,196 in 2013 dollars — i.e., roughly **$291,000** when rounded to the nearest thousand.",
+  "em_score": 0,
+  "llm_equal": 0,
+  "judge_response": "Incorrect",
+  "judge_error": null,
+  "elapsed_seconds": 175.53
+}

@@ -1,0 +1,264 @@
+{
+  "id": 155,
+  "question": "Space exploration history is marked by numerous milestones. Consider two events from different eras: an engineer in an interview discusses working on the Psyche mission to a metal asteroid, and a historical photograph captures the Space Shuttle Enterprise after its first free-flight test. What was the name of the first asteroid to be orbited by a spacecraft, which occurred in the calendar year that falls exactly halfway between the years of these two events?",
+  "Level": "Hard",
+  "category": "Science & Nature",
+  "task_type": "image + audio",
+  "answer": "433 Eros",
+  "output": "**Reasoning chain:**\n\n1. **Audio event (Psyche interview):** The speaker describes being \"moments after the launch,\" representing General Dynamics' mechanical team doing analysis and testing of the Psyche SST. NASA's Psyche mission launched on **October 13, 2023** (the audio notes approval in August 2022, arrival early 2026 — consistent with the 2023 launch).\n\n2. **Image event (photograph):** The caption reads that the Boeing 747 Shuttle carrier aircraft and NASA T‑38 chase aircraft fly over the Space Shuttle Orbiter Enterprise after its first free‑flight test at NASA's Dryden Flight Research Center, Edwards Air Force Base, California, on **12 August 1977**.\n\n3. **Midpoint year:** (1977 + 2023) / 2 = **2000** exactly.\n\n4. **Asteroid orbited in 2000:** NASA's NEAR Shoemaker entered orbit around the near‑Earth asteroid **433 Eros** on February 14, 2000 — the first spacecraft ever to orbit an asteroid (and later, in 2001, the first to land on one).\n\n<answer>433 Eros</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Space exploration history is marked by numerous milestones. Consider two events from different eras: an engineer in an interview discusses working on the Psyche mission to a metal asteroid, and a historical photograph captures the Space Shuttle Enterprise after its first free-flight test. What was the name of the first asteroid to be orbited by a spacecraft, which occurred in the calendar year that falls exactly halfway between the years of these two events?"
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:128460 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:820524 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<media:350235 characters>"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Let me analyze this. The audio mentions the Psyche mission launch — the audio says \"We've been approved to go in August of 2022\" and the interview is \"moments after the launch\" — Psyche launched October 13, 2023. So the event year is 2023.\n\nThe image shows the Space Shuttle Enterprise after its first free-flight test at Edwards Air Force Base on August 12, 1977. So the event year is 1977.\n\nHalfway between 1977 and 2023: (1977 + 2023)/2 = 4000/2 = 2000. So the year 2000.\n\nThe first asteroid to be orbited by a spacecraft: 433 Eros, orbited by NEAR Shoemaker on February 14, 2000. Yes! NEAR Shoemaker entered orbit around Eros on February 14, 2000. That's the first spacecraft to orbit an asteroid.\n\nSo the answer is 433 Eros.\n\nLet me verify the details with tools perhaps. Let me double-check the Psyche launch date (October 13, 2023, on a Falcon Heavy) — yes. And Enterprise first free flight August 12, 1977 — yes, caption confirms.\n\nMidpoint: 2000. NEAR Shoemaker orbited Eros in 2000. Answer: 433 Eros.\n\nLet me do a quick verification search.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_f0e1bc87003b42a6aca28e2f",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"print((1977+2023)/2)\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_8cb25b67e2074cd6a6c25577",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"first spacecraft to orbit an asteroid NEAR Shoemaker Eros 2000\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me analyze this. The audio mentions the Psyche mission launch — the audio says \"We've been approved to go in August of 2022\" and the interview is \"moments after the launch\" — Psyche launched October 13, 2023. So the event year is 2023.\n\nThe image shows the Space Shuttle Enterprise after its first free-flight test at Edwards Air Force Base on August 12, 1977. So the event year is 1977.\n\nHalfway between 1977 and 2023: (1977 + 2023)/2 = 4000/2 = 2000. So the year 2000.\n\nThe first asteroid to be orbited by a spacecraft: 433 Eros, orbited by NEAR Shoemaker on February 14, 2000. Yes! NEAR Shoemaker entered orbit around Eros on February 14, 2000. That's the first spacecraft to orbit an asteroid.\n\nSo the answer is 433 Eros.\n\nLet me verify the details with tools perhaps. Let me double-check the Psyche launch date (October 13, 2023, on a Falcon Heavy) — yes. And Enterprise first free flight August 12, 1977 — yes, caption confirms.\n\nMidpoint: 2000. NEAR Shoemaker orbited Eros in 2000. Answer: 433 Eros.\n\nLet me do a quick verification search.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f0e1bc87003b42a6aca28e2f",
+      "content": "{\"stdout\": \"2000.0\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8cb25b67e2074cd6a6c25577",
+      "content": "[{\"id\": 1, \"title\": \"NEAR Shoemaker\", \"url\": \"https://science.nasa.gov/mission/near-shoemaker/\", \"snippet\": \"NASA's NEAR was the first spacecraft to orbit an asteroid and also was the first to land on one. NEAR's landing on Eros marked the first time a U.S. spacecraft ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"NEAR Shoemaker\", \"url\": \"https://en.wikipedia.org/wiki/NEAR_Shoemaker\", \"snippet\": \"It was the first spacecraft to orbit an asteroid and land on it successfully. In February 2000, the mission closed in on the asteroid and orbited it. On ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"landing on an asteroid! After spending a year studying Eros ...\", \"url\": \"https://www.facebook.com/NASAHistoryOffice/posts/nasas-near-shoemaker-spacecraft-achieved-another-first-25-years-ago-today-landin/1213948620916243/\", \"snippet\": \"Despite an engine hiccup that forced flight path adjustments, NEAR Shoemaker entered orbit on February 14, 2000, making it the first spacecraft ...\", \"date\": \"7 months ago\"}, {\"id\": 4, \"title\": \"NEAR | Johns Hopkins University ...\", \"url\": \"https://www.jhuapl.edu/destinations/missions/near\", \"snippet\": \"A month after beginning its orbit at Eros, in March 2000, the spacecraft was renamed NEAR Shoemaker, to honor the late planetary geologist Eugene Shoemaker.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"The NEAR shoemaker mission to asteroid 433 eros\", \"url\": \"https://www.sciencedirect.com/science/article/pii/S009457650200098X\", \"snippet\": \"by L Prockter · 2002 · Cited by 129 — It became the first spacecraft to enter orbit around an asteroid, doing so at the large near-Earth asteroid 433 Eros in February 2000. The spacecraft ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"NEAR Shoemaker | Astronomy and Astrophysics\", \"url\": \"https://www.ebsco.com/research-starters/astronomy-and-astrophysics/near-shoemaker/\", \"snippet\": \"The spacecraft entered orbit around the asteroid 433 Eros on February 14, 2000, where it remained for a year. Then, on February 12, 2001, the mission team, led ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"The NEAR shoemaker mission to asteroid 433 eros - ADS\", \"url\": \"http://ui.adsabs.harvard.edu/abs/2002AcAau..51..491P/abstract\", \"snippet\": \"by L Prockter · 2002 · Cited by 128 — It became the first spacecraft to enter orbit around an asteroid, doing so at the large near-Earth asteroid 433 Eros in February 2000. The spacecraft ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"NASA's NEAR Shoemaker -- the intrepid space probe ...\", \"url\": \"https://spaceflightnow.com/near/status_text.html\", \"snippet\": \"NEAR Shoemaker launched on Feb. 17, 1996 - the first in NASA's Discovery Program of low-cost, scientifically focused planetary missions - and became the first ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"25th Anniversary Of Nasa's Near-Shoemaker Mission\", \"url\": \"https://asteroidday.org/resources/event-resources/25th-anniversary-of-nasas-near-shoemaker-mission/\", \"snippet\": \"On 17 February 1996, NASA's NEAR Shoemaker mission blasted off to asteroid Eros. This was the first mission created specifically to orbit an ...\", \"date\": \"Feb 12, 2021\"}, {\"id\": 10, \"title\": \"On February 12, 2001, NASA landed a spacecraft on an ...\", \"url\": \"https://www.facebook.com/spacecom/videos/otd-in-space-february-12-near-shoemaker-lands-on-asteroid-eros/1108326993518375/\", \"snippet\": \"14th) in 2000, NEAR-Shoemaker (Near Earth Asteroid Rendezvous) entered orbit around Eros, becoming the first spacecraft to orbit an asteroid.\", \"date\": \"2 years ago\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "**Reasoning chain:**\n\n1. **Audio event (Psyche interview):** The speaker describes being \"moments after the launch,\" representing General Dynamics' mechanical team doing analysis and testing of the Psyche SST. NASA's Psyche mission launched on **October 13, 2023** (the audio notes approval in August 2022, arrival early 2026 — consistent with the 2023 launch).\n\n2. **Image event (photograph):** The caption reads that the Boeing 747 Shuttle carrier aircraft and NASA T‑38 chase aircraft fly over the Space Shuttle Orbiter Enterprise after its first free‑flight test at NASA's Dryden Flight Research Center, Edwards Air Force Base, California, on **12 August 1977**.\n\n3. **Midpoint year:** (1977 + 2023) / 2 = **2000** exactly.\n\n4. **Asteroid orbited in 2000:** NASA's NEAR Shoemaker entered orbit around the near‑Earth asteroid **433 Eros** on February 14, 2000 — the first spacecraft ever to orbit an asteroid (and later, in 2001, the first to land on one).\n\n<answer>433 Eros</answer>",
+      "reasoning": "Confirmed. The answer: 433 Eros.\n\nLet me lay out the reasoning:\n- Audio: interview moments after Psyche launch → October 13, 2023.\n- Image: caption says Enterprise first free-flight test at Edwards AFB, California, 12 August 1977.\n- Midpoint year: (1977 + 2023)/2 = 2000.\n- First asteroid orbited by a spacecraft: 433 Eros, by NEAR Shoemaker on February 14, 2000.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Confirmed. The answer: 433 Eros.\n\nLet me lay out the reasoning:\n- Audio: interview moments after Psyche launch → October 13, 2023.\n- Image: caption says Enterprise first free-flight test at Edwards AFB, California, 12 August 1977.\n- Midpoint year: (1977 + 2023)/2 = 2000.\n- First asteroid orbited by a spacecraft: 433 Eros, by NEAR Shoemaker on February 14, 2000.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"print((1977+2023)/2)\"}",
+      "result": {
+        "stdout": "2000.0",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"first spacecraft to orbit an asteroid NEAR Shoemaker Eros 2000\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "NEAR Shoemaker",
+          "url": "https://science.nasa.gov/mission/near-shoemaker/",
+          "snippet": "NASA's NEAR was the first spacecraft to orbit an asteroid and also was the first to land on one. NEAR's landing on Eros marked the first time a U.S. spacecraft ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "NEAR Shoemaker",
+          "url": "https://en.wikipedia.org/wiki/NEAR_Shoemaker",
+          "snippet": "It was the first spacecraft to orbit an asteroid and land on it successfully. In February 2000, the mission closed in on the asteroid and orbited it. On ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "landing on an asteroid! After spending a year studying Eros ...",
+          "url": "https://www.facebook.com/NASAHistoryOffice/posts/nasas-near-shoemaker-spacecraft-achieved-another-first-25-years-ago-today-landin/1213948620916243/",
+          "snippet": "Despite an engine hiccup that forced flight path adjustments, NEAR Shoemaker entered orbit on February 14, 2000, making it the first spacecraft ...",
+          "date": "7 months ago"
+        },
+        {
+          "id": 4,
+          "title": "NEAR | Johns Hopkins University ...",
+          "url": "https://www.jhuapl.edu/destinations/missions/near",
+          "snippet": "A month after beginning its orbit at Eros, in March 2000, the spacecraft was renamed NEAR Shoemaker, to honor the late planetary geologist Eugene Shoemaker.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "The NEAR shoemaker mission to asteroid 433 eros",
+          "url": "https://www.sciencedirect.com/science/article/pii/S009457650200098X",
+          "snippet": "by L Prockter · 2002 · Cited by 129 — It became the first spacecraft to enter orbit around an asteroid, doing so at the large near-Earth asteroid 433 Eros in February 2000. The spacecraft ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "NEAR Shoemaker | Astronomy and Astrophysics",
+          "url": "https://www.ebsco.com/research-starters/astronomy-and-astrophysics/near-shoemaker/",
+          "snippet": "The spacecraft entered orbit around the asteroid 433 Eros on February 14, 2000, where it remained for a year. Then, on February 12, 2001, the mission team, led ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "The NEAR shoemaker mission to asteroid 433 eros - ADS",
+          "url": "http://ui.adsabs.harvard.edu/abs/2002AcAau..51..491P/abstract",
+          "snippet": "by L Prockter · 2002 · Cited by 128 — It became the first spacecraft to enter orbit around an asteroid, doing so at the large near-Earth asteroid 433 Eros in February 2000. The spacecraft ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "NASA's NEAR Shoemaker -- the intrepid space probe ...",
+          "url": "https://spaceflightnow.com/near/status_text.html",
+          "snippet": "NEAR Shoemaker launched on Feb. 17, 1996 - the first in NASA's Discovery Program of low-cost, scientifically focused planetary missions - and became the first ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "25th Anniversary Of Nasa's Near-Shoemaker Mission",
+          "url": "https://asteroidday.org/resources/event-resources/25th-anniversary-of-nasas-near-shoemaker-mission/",
+          "snippet": "On 17 February 1996, NASA's NEAR Shoemaker mission blasted off to asteroid Eros. This was the first mission created specifically to orbit an ...",
+          "date": "Feb 12, 2021"
+        },
+        {
+          "id": 10,
+          "title": "On February 12, 2001, NASA landed a spacecraft on an ...",
+          "url": "https://www.facebook.com/spacecom/videos/otd-in-space-february-12-near-shoemaker-lands-on-asteroid-eros/1108326993518375/",
+          "snippet": "14th) in 2000, NEAR-Shoemaker (Near Earth Asteroid Rendezvous) entered orbit around Eros, becoming the first spacecraft to orbit an asteroid.",
+          "date": "2 years ago"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 155,
+      "id": "gen-1791469864-KNiHETlV1y4OmYWjpxPz",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 2849,
+        "completion_tokens": 436,
+        "total_tokens": 3285,
+        "cost": 0.00063227,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00063227,
+          "upstream_inference_prompt_cost": 0.00042735,
+          "upstream_inference_completions_cost": 0.00020492
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 351,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 18.416
+    },
+    {
+      "item_id": 155,
+      "id": "gen-1791469886-hKI0Fp3HIJx7dvoLILjx",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 4405,
+        "completion_tokens": 419,
+        "total_tokens": 4824,
+        "cost": 0.00085768,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00085768,
+          "upstream_inference_prompt_cost": 0.00066075,
+          "upstream_inference_completions_cost": 0.00019693
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 130,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 13.951
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "433 Eros",
+  "em_score": 1,
+  "llm_equal": 1,
+  "judge_response": "Exact match",
+  "judge_error": null,
+  "elapsed_seconds": 43.67
+}

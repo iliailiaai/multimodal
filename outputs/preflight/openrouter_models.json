@@ -1,0 +1,201 @@
+[
+  {
+    "id": "qwen/qwen3.8-omni-flash",
+    "canonical_slug": "qwen/qwen3.8-omni-flash-20260918",
+    "hugging_face_id": null,
+    "name": "Qwen: Qwen3.8 Omni Flash",
+    "created": 1789959954,
+    "description": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilities with native audio-video understanding. It is suited for audio-video analysis and summarization,...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.00000047",
+      "input_cache_read": "0.000000016"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.8-omni-flash-20260918/endpoints"
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supports_max_tokens": true
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v3.2",
+    "canonical_slug": "deepseek/deepseek-v3.2-20251201",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
+    "name": "DeepSeek: DeepSeek V3.2",
+    "created": 1764594642,
+    "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000028",
+      "completion": "0.00000042",
+      "input_cache_read": "0.000000028"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v3.2-20251201/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1140,
+          "win_rate": 49.4,
+          "rank": 66
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1091,
+          "win_rate": 40.5,
+          "rank": 63
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1168,
+          "win_rate": 49.3,
+          "rank": 70
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1165,
+          "win_rate": 48.2,
+          "rank": 71
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1142,
+          "win_rate": 46.5,
+          "rank": 74
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1031,
+          "win_rate": 40.8,
+          "rank": 76
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1156,
+          "win_rate": 46.8,
+          "rank": 70
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1181,
+          "win_rate": 50.2,
+          "rank": 70
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 21.5,
+        "coding_index": 44.2,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false
+    }
+  }
+]

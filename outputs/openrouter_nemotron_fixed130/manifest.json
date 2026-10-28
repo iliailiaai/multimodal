@@ -1,0 +1,384 @@
+{
+  "created_at": "2026-10-27T21:53:46.063258+00:00",
+  "upstream_commit": "af5f797f9388f0eba02a55399e7636e34b5f3c56",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "judge": "deepseek/deepseek-v3.2",
+  "model_info": {
+    "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "canonical_slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428",
+    "hugging_face_id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+    "created": 1777393095,
+    "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 10.3,
+        "coding_index": 13.8,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supports_max_tokens": true
+    }
+  },
+  "judge_info": {
+    "id": "deepseek/deepseek-v3.2",
+    "canonical_slug": "deepseek/deepseek-v3.2-20251201",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
+    "name": "DeepSeek: DeepSeek V3.2",
+    "created": 1764594642,
+    "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000028",
+      "completion": "0.00000042",
+      "input_cache_read": "0.000000028"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v3.2-20251201/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1130,
+          "win_rate": 49.4,
+          "rank": 76
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1080,
+          "win_rate": 40.5,
+          "rank": 66
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1162,
+          "win_rate": 49.3,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1158,
+          "win_rate": 48.2,
+          "rank": 79
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1130,
+          "win_rate": 46.5,
+          "rank": 88
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1029,
+          "win_rate": 40.8,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1144,
+          "win_rate": 46.8,
+          "rank": 80
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1173,
+          "win_rate": 50.2,
+          "rank": 81
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 21.5,
+        "coding_index": 44.2,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false
+    }
+  },
+  "item_ids": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    33,
+    34,
+    35,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    49,
+    52,
+    53,
+    56,
+    57,
+    59,
+    61,
+    62,
+    64,
+    65,
+    67,
+    68,
+    69,
+    71,
+    73,
+    74,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    83,
+    86,
+    87,
+    88,
+    89,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    99,
+    100,
+    101,
+    102,
+    104,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    118,
+    119,
+    120,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    154,
+    155,
+    156,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    167
+  ],
+  "dataset_revision": "adf542cf70735e061b8d73300cdbae9c847b9bc3",
+  "input_sha256": "f57628c0b0858e750c21af9152dbe671af6a401288d6e4c711dbca9a3df5e77d",
+  "active_perception": false,
+  "tools": [
+    "web_search",
+    "page_browser",
+    "code_executor"
+  ],
+  "media_preprocessing": "GeminiBaseAgent: max 128 uniformly sampled video frames; 2 FPS output; smart_resize min 224^2 max 512^2 pixels; original images; separate mono 16kHz MP3 audio, first 30 minutes",
+  "agent_protocol": "OpenRouter native function calling; original baseline system prompt and tool schemas",
+  "model_api_adaptations": [
+    "top_k omitted: unsupported",
+    "tool_choice omitted: provider default; tools removed on forced final"
+  ],
+  "evaluation_protocol": "upstream answer extraction and normalization; DeepSeek-V3.2; strict Correct/Incorrect parsing; judge failures excluded from final score until resolved",
+  "max_turns": 50,
+  "max_tokens": 20480,
+  "sampling": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": null
+  },
+  "jina_reader_mode": "anonymous",
+  "concurrency": 2,
+  "source_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/config_loader.py": "74737bcecca7e5741ef70a2cb87ccbb6f3f0915e40cc5dedb0a682f9e019ef19",
+    "src/evaluate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/evaluate/eval_results.py": "44a8a2a1a10f5d3f015c3959b7de5a73cb718f5adf5b1ea0fb5025d8bc05a035",
+    "src/jina_access.py": "8ed6478eac55381ae2f77e894e8572f46d93579e14cb07c7207bc2cedc976433",
+    "src/openrouter_baseline.py": "81c65cd22314d82286e7f4e1c9d469961a48b53fde7a54a5e30be2999b4be48b",
+    "src/run_base_agent.py": "aa78c5a7d91291bf123a46ab6e5985fc26c9ec6ebce95d504150def2bb7a73c4",
+    "src/run_openrouter_baseline.py": "69cb6cb30b33a8f407a8c1f5564bb638b11d1bd93c766787ef7e138313f3c0ec",
+    "src/run_openrouter_job.py": "0fc575c7db94822cf9368698054544003147703bb2f9fd13e1c6600245e5d9bd",
+    "src/service_access.py": "95e9a50effb495af16feb42c3612a644d0513c02aaf95f0d0c1b2bc881bcea73",
+    "src/tools/__init__.py": "d65678ef5cd4f1736a500062da025fd58d22b8ecb53bd22bc404927bf24d1749",
+    "src/tools/code_executor.py": "37e23f81d865022e7b2b57fce96e3d595e7fd5257247482236b90afd33d577a1",
+    "src/tools/isolated_code_executor.py": "cd7ebf4be1fb4f2b034173ab0360e643aee32ab9d57768f6405b2ed2ee64afb9",
+    "src/tools/web_tools.py": "f42d6dbd217d9261e4eabbdf8a2514d6c58526b66b9837fd1807a55b2c207a13"
+  },
+  "requirements_sha256": "abe68d4e813eefa3afd399e716202b38042fd9b51c322599f05d40e76acef8d1"
+}

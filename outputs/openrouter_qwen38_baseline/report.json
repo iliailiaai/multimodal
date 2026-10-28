@@ -1,0 +1,52 @@
+{
+  "model": "qwen/qwen3.8-omni-flash",
+  "judge": "deepseek/deepseek-v3.2",
+  "active_perception": false,
+  "state": "blocked",
+  "stop_reason": "Jina: HTTP 402; проверьте ключ и доступные кредиты.",
+  "metrics": {
+    "expected_count": 360,
+    "completed": 130,
+    "judged": 130,
+    "errors": 40,
+    "correct": 84,
+    "pass_at_1": null,
+    "partial_accuracy": 0.6461538461538462,
+    "by_level": {
+      "Easy": {
+        "count": 54,
+        "correct": 43
+      },
+      "Medium": {
+        "count": 54,
+        "correct": 29
+      },
+      "Hard": {
+        "count": 22,
+        "correct": 12
+      }
+    },
+    "tool_calls": {
+      "web_search": 786,
+      "page_browser": 362,
+      "code_executor": 142,
+      "web_fetch": 1
+    },
+    "recorded": 170,
+    "pending": 190
+  },
+  "openrouter_usage": {
+    "requests": 1069,
+    "cost_usd": 3.302306306600001,
+    "input_tokens": 34751440,
+    "output_tokens": 1439019
+  },
+  "score_note_ru": "Технические ошибки учитываются отдельно. Итоговый pass_at_1 появится только после оценки всех выбранных задач.",
+  "started_at": "2026-10-27T20:48:37.987875+00:00",
+  "finished_at": "2026-10-27T20:50:24.555970+00:00",
+  "return_code": -15,
+  "imported_results_count": 18,
+  "imported_openrouter_cost_usd": 0.2413219932,
+  "new_openrouter_cost_usd": 3.060984313400001,
+  "billing_note_ru": "Стоимость по журналу запросов включает импортированные ответы пилота. Новые расходы указаны отдельно. Баланс ключа может включать сторонние параллельные обращения."
+}

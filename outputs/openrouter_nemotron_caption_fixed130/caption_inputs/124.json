@@ -1,0 +1,65 @@
+{
+  "item_id": 124,
+  "images": [
+    {
+      "caption": "This is a detailed description of the image, focusing on the architecture and signage of Coors Field.\n\n### Overall Scene\n\nThe image captures the top of the Coors Field stadium clock tower on an overcast day. The scene is dominated by large, bold lettering, a clock, and an American flag. The sky is a pale, cloudy gray.\n\n---\n\n### Detailed Description\n\n**1. The Clock Tower and Signage**\n\n- **Structure:** The central structure is a brick clock tower with a black, arched top. It is built from red brick.\n- **Signage:**\n    - On the left, the word \"COORS\" is displayed in large, three-dimensional, white letters with a dark blue or black outline.\n    - On the right, the word \"FIELD\" is displayed in the same style, with a dark blue or black outline.\n- **Clock:**\n    - The clock has a cream-colored face with black numerals and hands.\n    - The brand name \"BULOVA\" is printed in black at the top of the clock face.\n    - The time shown is approximately **12:20**. The hour hand is just past the 12, and the minute hand is pointing at the 4.\n    - The numbers on the clock are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.\n\n**2. The Flag and Pole**\n\n- A tall, thin flagpole rises from the center of the clock tower.\n- An American flag is flying at half-mast, its red, white, and blue colors visible against the gray sky.\n- The flag is positioned above the clock, with a small golden sphere at the top of the pole.\n\n**3. The Sky**\n\n- The background is a uniform, overcast sky, suggesting a cloudy or gloomy day.",
+      "eos_finished": true,
+      "generation_attempts": [
+        {
+          "max_new_tokens": 2048,
+          "generated_tokens": 399,
+          "eos_finished": true,
+          "seconds": 8.288
+        }
+      ],
+      "captioner_input_tokens": 277,
+      "captioner_image_grid_thw": [
+        [
+          1,
+          26,
+          40
+        ]
+      ],
+      "runtime": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.6",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 3060",
+        "dtype": "bfloat16",
+        "attention": "sdpa"
+      },
+      "image_sha256": "7130ea0d50699c1596632f9180e5b7bded0df417009be27cdafc9bdf4a1bfbd2",
+      "width": 640,
+      "height": 424,
+      "cache_hit": false,
+      "caption_block": "[Image 1 description]\nThis is a detailed description of the image, focusing on the architecture and signage of Coors Field.\n\n### Overall Scene\n\nThe image captures the top of the Coors Field stadium clock tower on an overcast day. The scene is dominated by large, bold lettering, a clock, and an American flag. The sky is a pale, cloudy gray.\n\n---\n\n### Detailed Description\n\n**1. The Clock Tower and Signage**\n\n- **Structure:** The central structure is a brick clock tower with a black, arched top. It is built from red brick.\n- **Signage:**\n    - On the left, the word \"COORS\" is displayed in large, three-dimensional, white letters with a dark blue or black outline.\n    - On the right, the word \"FIELD\" is displayed in the same style, with a dark blue or black outline.\n- **Clock:**\n    - The clock has a cream-colored face with black numerals and hands.\n    - The brand name \"BULOVA\" is printed in black at the top of the clock face.\n    - The time shown is approximately **12:20**. The hour hand is just past the 12, and the minute hand is pointing at the 4.\n    - The numbers on the clock are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.\n\n**2. The Flag and Pole**\n\n- A tall, thin flagpole rises from the center of the clock tower.\n- An American flag is flying at half-mast, its red, white, and blue colors visible against the gray sky.\n- The flag is positioned above the clock, with a small golden sphere at the top of the pole.\n\n**3. The Sky**\n\n- The background is a uniform, overcast sky, suggesting a cloudy or gloomy day.\n[/Image 1 description]",
+      "image_visual_tokens": 280,
+      "native_image_size_hw": [
+        448,
+        640
+      ],
+      "image_tokens_single": 282,
+      "caption_text_tokens_single": 397,
+      "caption_tokens_single": 410,
+      "image_counter_api_verified": false,
+      "protocol": {
+        "mode": "image_captioning",
+        "caption_model": "internlm/CapRL-Qwen3VL-2B",
+        "caption_revision": "b838cec8b6c4791ed6169d12db21db0b47bb70e5",
+        "prompt": "Please describe this image in detail.",
+        "caption_sampling": "greedy; EOS required; budgets 2048 then 8192; no truncation",
+        "counter_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+        "counter_revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+        "counter_method": "native image_processor num_tokens + image delimiters; native tokenizer of complete caption block",
+        "counter_scope": "all main-model HTTP attempts including retries; video/audio excluded",
+        "image_counter_api_verified": false,
+        "counter_version": 1
+      },
+      "occurrence_id": "124:1",
+      "source_path": "images/000000016720.jpg"
+    }
+  ],
+  "image_payloads_after": 0,
+  "other_media_sha256_before": "fa49ce59313e6257a9706bcf4a77a7cb27de9a9cd43394d6e3d83ebccf3c5ff9",
+  "other_media_sha256_after": "fa49ce59313e6257a9706bcf4a77a7cb27de9a9cd43394d6e3d83ebccf3c5ff9"
+}

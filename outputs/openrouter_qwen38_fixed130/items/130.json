@@ -1,0 +1,903 @@
+{
+  "id": 130,
+  "question": "Based on the provided videos, the first one features Tania Yuki, CEO of Shareablee, and the second one demonstrates Kred, a social media influence platform that competes with Klout. Please research to identify the founding dates of Shareablee (the social media analytics firm from the first video) and PeopleBrowsr (the parent company of Kred shown in the second video), and then determine how many years elapsed between their founding dates.",
+  "Level": "Medium",
+  "category": "Technology",
+  "task_type": "video w/ audio",
+  "answer": "6",
+  "output": "## Research Findings\n\n**Video 1 — Shareablee, Inc.** (Tania Yuki, CEO, discussing Ford's \"dress color\" real-time marketing campaign):\n- Founded **February 2013** by Tania Yuki in New York\n- Confirmed by Shareablee's own LinkedIn company page (\"Founded: 2013\"), the American Australian Association bio (\"Shareablee was founded in February 2013 when Tania saw a new frontier emerging across social media\"), Comscore's acquisition press materials (\"Launched in 2013\"), and Yuki's own account (\"I founded Shareablee in 2013\"). The company was later acquired by Comscore in December 2021.\n\n**Video 2 — PeopleBrowsr** (parent company of Kred, demonstrated by Jennifer Herndon):\n- Founded **2007** (early 2007) by Jodee Rich in San Francisco\n- Confirmed by PeopleBrowsr's LinkedIn page (\"Founded in 2007, we have deep experience in analytics, social networks and blockchain\"), ZDNet (\"Established in early 2007, PeopleBrowsr aggregates public social-media posts...\"), iTnews (\"Rich formed PeopleBrowsr in 2007\"), and MrWeb. Kred itself was debuted by the company in **October 2011**.\n- *Note:* Wikipedia's infobox lists \"Launched 2006,\" referring to the web property, but the company's incorporation/founding is consistently reported as 2007.\n\n**Calculation:** 2013 − 2007 = **6 years**\n\n<answer>6 years elapsed between the two founding dates. PeopleBrowsr — the San Francisco company behind Kred, the influence-scoring platform demonstrated in the second video — was founded in early 2007 by Jodee Rich. Shareablee — the New York social media analytics firm founded by Tania Yuki, the CEO interviewed in the first video about Ford's real-time \"dress color\" marketing campaign — was founded in February 2013. That is a gap of approximately 6 years (2013 − 2007 = 6).</answer>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an omni-modal general AI assistant. Please answer the question provided to you based on the input image, audio, or video content.\n\nYou should think step by step to answer the question. You may use available tools to assist with your analysis if needed.\n\nPlease provide your final answer using this format: <answer>YOUR_ANSWER</answer>."
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the provided videos, the first one features Tania Yuki, CEO of Shareablee, and the second one demonstrates Kred, a social media influence platform that competes with Klout. Please research to identify the founding dates of Shareablee (the social media analytics firm from the first video) and PeopleBrowsr (the parent company of Kred shown in the second video), and then determine how many years elapsed between their founding dates."
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:1602478 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:556860 characters>",
+            "format": "mp3"
+          }
+        },
+        {
+          "type": "video_url",
+          "video_url": {
+            "url": "<media:2658478 characters>"
+          }
+        },
+        {
+          "type": "input_audio",
+          "input_audio": {
+            "data": "<media:2561052 characters>",
+            "format": "mp3"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll research the founding dates of both companies mentioned in the videos.\n\n",
+      "reasoning": "The user wants me to research the founding dates of Shareablee and PeopleBrowsr, then calculate the number of years between them.\n\nLet me search for this information.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_3ef98891c0e247dfbfd25982",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Shareablee founded year Tania Yuki company history\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_56f75640fe684a7ba474284b",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"PeopleBrowsr founded year company history Kred\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 2,
+          "id": "call_08e868cfee114773957c1355",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Shareablee social media analytics company founded 2011\"}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 3,
+          "id": "call_e95747ff28dc4d60987ba8b5",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"PeopleBrowsr Wikipedia founded 2009\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The user wants me to research the founding dates of Shareablee and PeopleBrowsr, then calculate the number of years between them.\n\nLet me search for this information.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ef98891c0e247dfbfd25982",
+      "content": "[{\"id\": 1, \"title\": \"Tania Yuki - Sesimi\", \"url\": \"https://www.linkedin.com/in/taniayuki\", \"snippet\": \"... Experience. Sesimi. -. Licenses & Certifications. Advanced Social Media Analytics Certfication · Shareablee, Inc · See credential ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Tania Yuki\", \"url\": \"https://americanaustralian.org/team/tania-yuki/\", \"snippet\": \"Shareablee was founded in February 2013 when Tania saw a new frontier emerging across social media. Shareablee has evolved from 3 people in Tania's living room ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Tania Yuki — Tania Yuki: Founder and CEO, Shareablee\", \"url\": \"http://www.howdidshegetthere.com/tania-yuki/tag/Tania+Yuki\", \"snippet\": \"Tania Yuki is Founder and CEO of Shareablee, an two-year old start up that provides actionable social media insights for top brands and ...\", \"date\": \"Oct 20, 2014\"}, {\"id\": 4, \"title\": \"How did she do it? A Q&A with Tania Yuki, founder and ...\", \"url\": \"https://medium.com/golden-seeds-blog/how-did-she-do-it-a-q-a-with-tania-yuki-founder-and-ceo-of-shareablee-29fecde67692\", \"snippet\": \"I founded Shareablee in 2013. I had been working at comScore in product management, where I led the development of its first online video ...\", \"date\": \"Sep 27, 2018\"}, {\"id\": 5, \"title\": \"Tania Yuki - Founder & CEO @ Shareablee\", \"url\": \"https://www.crunchbase.com/person/tania-yuki-2\", \"snippet\": \"Tania Yuki is founder and CEO of Shareablee, featured company Visible World, grew revenue more than 50% year over year.\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Tania Yuki — PinkWisdom\", \"url\": \"https://www.pinkwisdom.com/career-experts/tania-yuki\", \"snippet\": \"Tania Yuki is the founder and CEO of Shareablee, a leading provider of social content analytics for business. She has spent most of her career in digital ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Shareablee CEO Tania Yuki Named as One of the Top ...\", \"url\": \"https://www.prnewswire.com/news-releases/shareablee-ceo-tania-yuki-named-as-one-of-the-top-women-in-digital-300059131.html\", \"snippet\": \"Having spent most of her career in digital marketing, Yuki founded Shareablee in 2013 and in the past year has expanded operations to ten countries ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Faces of AWNY: Meet Tania Yuki\", \"url\": \"https://australianwomeninnewyork.org/2026/06/28/faces-of-awny-meet-tania-yuki/\", \"snippet\": \"From leading digital media ventures and product innovation at ComScore to founding Shareablee—later acquired by ComScore—she has built a career ...\", \"date\": \"Jun 28, 2026\"}, {\"id\": 9, \"title\": \"Shareablee - 2026 Company Profile & Team\", \"url\": \"https://tracxn.com/d/companies/shareablee/__2iT0R6PXXF5ff4xzi0CCfYdsGNeBnJQX8zCcn9W-QDY\", \"snippet\": \"Shareablee is an acquired company based in New York City (United States), founded in 2012 by Tania Yuki. It operates as a Platform which ...\", \"date\": \"Jun 30, 2026\"}, {\"id\": 10, \"title\": \"How businesses use your data | Founder and CEO Tania Yuki\", \"url\": \"https://www.youtube.com/watch?v=ScHs4sA0aTQ\", \"snippet\": \"Tania Yuki, Founder and CEO of Shareablee explains her journey of starting Shareablee. If you're in a corporate setting where data analytics ...\", \"date\": \"5 years ago\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_56f75640fe684a7ba474284b",
+      "content": "[{\"id\": 1, \"title\": \"PeopleBrowsr\", \"url\": \"https://en.wikipedia.org/wiki/PeopleBrowsr\", \"snippet\": \"Kred. edit. In October 2011, the company debuted Kred for measuring influence and outreach on social networks. Experimental projects. edit. PeopleBrowsr is ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"PeopleBrowsr — Superpowers for AI Agents\", \"url\": \"https://www.peoplebrowsr.com/\", \"snippet\": \"Superpowers for Agents. Two decades of empowering people through gameplay, social streams, scoring, and non-fungible blockchain tokenization — now evolved ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"PeopleBrowsr\", \"url\": \"https://www.linkedin.com/company/peoplebrowsr-inc.\", \"snippet\": \"Kred). Founded in 2007, we have deep experience in analytics, social networks and blockchain. Since inception, we have earned over $20m in revenue from Fortune ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"PeopleBrowsr - Crunchbase Company Profile & Funding\", \"url\": \"https://www.crunchbase.com/organization/peoplebrowsr\", \"snippet\": \"PeopleBrowsr is a tech company which provides brands, government and TLD owners with the ability to launch Instant Collaborative Networks.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"PeopleBrowsr's Competitors, Revenue, Number ...\", \"url\": \"https://www.owler.com/company/peoplebrowsr\", \"snippet\": \"When was PeopleBrowsr founded? PeopleBrowsr was founded in 01/2006. Who is PeopleBrowsr's CEO? PeopleBrowsr's CEO is Jodee Rich ...\", \"date\": \"\"}, {\"id\": 6, \"title\": \"PeopleBrowsr Rolls Out Social 'Kred' Identifier\", \"url\": \"https://www.mrweb.com/drno/news15476.htm\", \"snippet\": \"Founded in 2007, PeopleBrowsr's research platform enables users to ... Kred API uses the company's database of 'hundreds of billions of ...\", \"date\": \"May 17, 2012\"}, {\"id\": 7, \"title\": \"PeopleBrowsr - 2026 Company Profile, Team & Competitors\", \"url\": \"https://tracxn.com/d/companies/peoplebrowsr/__LaXzk8NVpRUmmWbp6N86eWap3cOGRn8AJn4M3cE7_Kk\", \"snippet\": \"PeopleBrowsr is an unfunded company based in Burlingame (United States), founded in 2007. It operates as a Community marketing solutions ...\", \"date\": \"Sep 7, 2026\"}, {\"id\": 8, \"title\": \"PeopleBrowsr Information\", \"url\": \"https://rocketreach.co/peoplebrowsr-profile_b5c877c7f42e3507\", \"snippet\": \"NFT.Kred). Founded in 2007, we have deep experience in analytics, social networks and blockchain. Since inception, we have earned over $20m in revenue ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"PEOPLEBROWSR LIMITED more information\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/08194180/more\", \"snippet\": \"PEOPLEBROWSR LIMITED - Free company information from Companies House including registered office address, filing history, accounts, annual return, officers, ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"PeopleBrowsr-Twitter Case Illustrates Risks Of Building A ...\", \"url\": \"https://martech.org/peoplebrowsr-case-illustrates-risks-of-building-business-on-third-party-platforms/\", \"snippet\": \"PeopleBrowsr, the social analytics platform that derives substantially all its data (including its Kred scoring) from access to Twitter's feed,\", \"date\": \"Nov 29, 2012\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_08e868cfee114773957c1355",
+      "content": "[{\"id\": 1, \"title\": \"Shareablee Named a Top Performer in Social Media ...\", \"url\": \"https://www.comscore.com/Insights/Press-Releases/2021/7/Shareablee-Named-a-Top-Performer-in-Social-Media-Analytics-Software-for-Customer-Satisfaction\", \"snippet\": \"Launched in 2013, Shareablee empowers brands by providing data that can help them define and drive success on social media by arming them with metrics and ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Comscore Social (formerly Shareablee, Inc.)\", \"url\": \"https://www.linkedin.com/company/shareablee-inc\", \"snippet\": \"Privately Held. Founded: 2013. Specialties: social media marketing, social media analytics, competitive benchmarking, actionable analytics, social media ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Blog — Shareablee\", \"url\": \"https://www.shareablee.com/blog-news\", \"snippet\": \"Shareablee Named a Top Performer in Social Media Analytics Software for Customer Satisfaction. Earned, Owned and Social Media Analytics Leaders Partner\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Shareablee, Inc (Acquired by Comscore)\", \"url\": \"https://bouncewatch.com/company/shareablee-inc-acquired-by-comscore\", \"snippet\": \"Shareablee is the leader in audience-based social media measurement. Founded in 2012, Shareablee, Inc (Acquired by Comscore) was founded in 2013.\", \"date\": \"\"}, {\"id\": 5, \"title\": \"Shareablee - 2026 Company Profile & Team\", \"url\": \"https://tracxn.com/d/companies/shareablee/__2iT0R6PXXF5ff4xzi0CCfYdsGNeBnJQX8zCcn9W-QDY\", \"snippet\": \"Shareablee is an acquired company based in New York City (United States), founded in 2012 by Tania Yuki. provides actionable social media ...\", \"date\": \"Jun 30, 2026\"}, {\"id\": 6, \"title\": \"Comscore Social Details 2026\", \"url\": \"https://www.trustradius.com/products/comscore-social/details\", \"snippet\": \"Comscore Social (Shareablee) is a social media analytics platform built to boost social ROI through actionable engagement intelligence. Copyright 2013–2026 ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Comscore Announces Acquisition of Leading Social Media ...\", \"url\": \"https://www.prnewswire.com/news-releases/comscore-announces-acquisition-of-leading-social-media--technology-provider-shareablee-301447162.html\", \"snippet\": \"Shareablee, a Meta for Media Measurement Partner, provides analytics and intelligence to many of the world's largest brands, publishers and ...\", \"date\": \"Dec 17, 2021\"}, {\"id\": 8, \"title\": \"Shareablee (@shareablee) • Instagram photos and videos\", \"url\": \"https://www.instagram.com/shareablee/\", \"snippet\": \"Leader in audience-based social media measurement for media publishers, agencies, & brands. We help you measure what matters. Founded by @taniayuki\", \"date\": \"\"}, {\"id\": 9, \"title\": \"Shareablee PowerRankings\", \"url\": \"https://marketplace.microsoft.com/en-us/product/web-apps/shareableinc.shareableepowerrankings?tab=overview\", \"snippet\": \"Shareablee's PowerRankings™ provides the first true audience-centric metrics set for researchers, brands, agencies, publishers, and marketers to quantify ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"Shareablee Market Share & Competitors in Social Media ...\", \"url\": \"https://www.smarte.pro/technology/shareablee\", \"snippet\": \"Shareablee is a social media measurement and audience insights platform that tracks engagement across platforms. It provides data on brand performance, ...\", \"date\": \"\"}]"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e95747ff28dc4d60987ba8b5",
+      "content": "[{\"id\": 1, \"title\": \"PeopleBrowsr\", \"url\": \"https://en.wikipedia.org/wiki/PeopleBrowsr\", \"snippet\": \"PeopleBrowsr is a technology company that provides enterprise, government and Top Level Domain owners with the ability to launch their own blockchain ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"History of Wikipedia\", \"url\": \"https://en.wikipedia.org/wiki/History_of_Wikipedia\", \"snippet\": \"The three-millionth article on the English Wikipedia, Beate Eriksen, was created on 17 August 2009 at 04:05 UTC. On 27 December 2009, the German ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Article\", \"url\": \"https://en.wikipedia.org/wiki/Wikipedia\", \"snippet\": \"WikiReader is a dedicated reader device that contains an offline copy of Wikipedia, which was launched by OpenMoko and first released in 2009.\", \"date\": \"\"}, {\"id\": 4, \"title\": \"25 years ago, Wikipedia started as an ambitious project to ...\", \"url\": \"https://www.facebook.com/abcmelbourne/posts/25-years-ago-wikipedia-started-as-an-ambitious-project-to-democratise-the-entire/1495114318955506/\", \"snippet\": \"25 years ago, Wikipedia started as an ambitious project to democratise the entirety of human knowledge. Today, citizen volunteers ...\", \"date\": \"5 months ago\"}, {\"id\": 5, \"title\": \"Larry Sanger\", \"url\": \"https://en.wikipedia.org/wiki/Larry_Sanger\", \"snippet\": \"Lawrence Mark Sanger (born July 16, 1968) is an American Internet project developer and philosopher who co-founded Wikipedia with Jimmy Wales.\", \"date\": \"\"}, {\"id\": 6, \"title\": \"Wikipedia: Freedom in community\", \"url\": \"https://www.acton.org/pub/commentary/2010/01/05/wikipedia-freedom-community\", \"snippet\": \"Ten years ago this month, internet entrepreneur Jimmy Wales hired Larry Sanger to develop an online encyclopedia.\", \"date\": \"Jan 5, 2010\"}, {\"id\": 7, \"title\": \"Will AI End WIkipedia | Larry Sanger\", \"url\": \"https://www.youtube.com/watch?v=80HTH6pnPY4&xstg=CAMSBhUDzO3xHw%3D%3D\", \"snippet\": \"Share your videos with friends, family, and the world.\", \"date\": \"9 months ago\"}, {\"id\": 8, \"title\": \"Wikipedia - 20 Years Of Helping People Around The World ...\", \"url\": \"https://www.forbes.com/sites/mikevorhaus/2021/01/14/wikipedia20-years-of-helping-people-around-the-world-find-information/\", \"snippet\": \"Wikipedia is celebrating its 20th anniversary. Wikipedia was founded on January 15, 2001. dpa/picture alliance via Getty Images. Before ...\", \"date\": \"Jan 14, 2021\"}, {\"id\": 9, \"title\": \"PeopleBrowsr — Superpowers for AI Agents\", \"url\": \"https://www.peoplebrowsr.com/\", \"snippet\": \"Two decades of empowering people through gameplay, social streams, scoring, and non-fungible blockchain tokenization — now evolved to power identity, reputation ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"My Role in Wikipedia (links)\", \"url\": \"https://larrysanger.org/role-in-wikipedia/my-role-in-wikipedia-links/\", \"snippet\": \"To the best of my knowledge, I was first described in the press as co-founder of Wikipedia back in September 2001 by The New York Times.\", \"date\": \"\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "Let me verify these founding dates with authoritative sources.\n\n",
+      "reasoning": "The search results show some conflicting information:\n- Shareablee: Most sources say founded in 2013 (LinkedIn, PRNewswire, Medium, comScore press release). Some say 2012 (Tracxn). The American Australian Association says \"February 2013\".\n- PeopleBrowsr: LinkedIn says founded in 2007. MrWeb says 2007. Tracxn says 2007. Owler says 01/2006.\n\nLet me check the Wikipedia page for PeopleBrowsr to get the definitive founding date.\n",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_727304b74de84f7a8af01226",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/PeopleBrowsr\", \"https://americanaustralian.org/team/tania-yuki/\", \"https://www.linkedin.com/company/shareablee-inc\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_318de20e75d04f2f883802d0",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"\\\"PeopleBrowsr\\\" founded 2007 Jodee Rich history company\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The search results show some conflicting information:\n- Shareablee: Most sources say founded in 2013 (LinkedIn, PRNewswire, Medium, comScore press release). Some say 2012 (Tracxn). The American Australian Association says \"February 2013\".\n- PeopleBrowsr: LinkedIn says founded in 2007. MrWeb says 2007. Tracxn says 2007. Owler says 01/2006.\n\nLet me check the Wikipedia page for PeopleBrowsr to get the definitive founding date.\n",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_727304b74de84f7a8af01226",
+      "content": "{\"https://en.wikipedia.org/wiki/PeopleBrowsr\": \"Title: PeopleBrowsr\\n\\nURL Source: https://en.wikipedia.org/wiki/PeopleBrowsr\\n\\nPublished Time: 2010-10-09T02:30:36Z\\n\\nMarkdown Content:\\n[Jump to content]\\n\\n- [x] Main menu \\n\\nMain menu\\n\\nmove to sidebar hide\\n\\n Navigation \\n\\n* [Main page]\\n* [Contents]\\n* [Current events]\\n* [Random article]\\n* [About Wikipedia]\\n* [Contact us]\\n\\n Contribute \\n\\n* [Help]\\n* [Learn to edit]\\n* [Community portal]\\n* [Recent changes]\\n* [Upload file]\\n* [Special pages]\\n\\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\\n\\n[Search]\\n\\nSearch\\n\\n- [x] Appearance \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n- [x] Personal tools \\n\\n* [Donate]\\n* [Create account]\\n* [Log in]\\n\\n[![Image 4: Banner logo] Thousands of Latino trailblazers are missing or half-written on Wikipedia. Help fix the gap, Sep 15 to Oct 15!]\\n\\n## Contents\\n\\nmove to sidebar hide\\n\\n* [(Top)]\\n* [1 Company profile]\\n\\n* [2 Kred]\\n\\n* [3 Experimental projects]\\n\\n* [4 SocialOS]\\n\\n* [5 Top Level Domains]\\n\\n* [6 Sale of the .Best Top Level Domain]\\n\\n* [7 Litigation]\\n\\n* [8 References]\\n\\n* [9 External links]\\n\\n- [x] Toggle the table of contents \\n\\n# PeopleBrowsr\\n\\n- [x] 1 language \\n\\n* [Français]\\n\\n[Edit links]\\n\\n* [Article]\\n* [Talk]\\n\\n- [x] English \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n- [x] Tools \\n\\nTools\\n\\nmove to sidebar hide\\n\\n Actions \\n\\n* [Read]\\n* [Edit]\\n* [View history]\\n\\n General \\n\\n* [What links here]\\n* [Related changes]\\n* [Upload file]\\n* [Permanent link]\\n* [Page information]\\n* [Cite this page]\\n* [Get shortened URL]\\n* [Switch to legacy parser]\\n* [Edit interlanguage links]\\n\\n Print/export \\n\\n* [Download as PDF]\\n* [Printable version]\\n\\n In other projects \\n\\n* [Wikidata item]\\n\\nAppearance\\n\\nmove to sidebar hide\\n\\nText\\n\\n* Small  Standard  Large \\n\\nThis page always uses small font size\\n\\nWidth\\n\\n* Standard  Wide \\n\\nThe content is as wide as possible for your browser window.\\n\\nColor \\n\\n* Automatic  Light  Dark \\n\\nThis page is always in light mode.\\n\\nFrom Wikipedia, the free encyclopedia\\n\\nTechnology company\\n\\nPeopleBrowsr[![Image 5]]\\nCompany type[Private]\\nWebsite type[Social Networking]\\nAvailable in English\\nFounded![Image 6][California][San Francisco, California]\\nHeadquarters San Francisco\\n\\n, \\n\\n![Image 7][United States]\\nArea served Worldwide\\n[Founder][Jodee Rich]\\nKey people Jodee Rich CEO\\nEmployees 33[[1]]\\nWebsite[peoplebrowsr.com]\\nAdvertising No\\nRegistration Optional\\nLaunched 2006\\nCurrent status Active\\n\\n**PeopleBrowsr** is a technology company that provides enterprise, government and Top Level Domain owners with the ability to launch their own [blockchain] integrated social networks and analyze and engage the members of those networks. An owner of new TLDs itself, PeopleBrowsr is the creator of .CEO, .Best (sold to The Best SAS in July 2018) and .Kred.\\n\\n## Company profile\\n\\n[[edit]]\\n\\nPeopleBrowsr works with enterprise, government and [TLD] owners in multiple industries.[[2]] In December 2008, it launched a deep search dashboard for managing and engaging with the social stream.[[3]] PeopleBrowsr has been receiving, analyzing and indexing the full Twitter firehose since 2008. In combination with other sources, PeopleBrowsr has compiled a trillion conversation datamine which enables it to conduct analytics using Kred Influence Measurement Company has combined its trillion conversation datamine, Kred Influencer Analytics, SocialOS network platform and three [TLDs], to become the leading Social Network provider for organizations around the world.\\n\\n## Kred\\n\\n[[edit]]\\n\\nIn October 2011, the company debuted **Kred** for measuring influence and outreach on social networks.[[4]]\\n\\n## Experimental projects\\n\\n[[edit]]\\n\\nPeopleBrowsr is engaged in research projects including the development of [artificial intelligence] and new social networking platforms.[[5]] PeopleBrowsr CEO Jodee Rich believes that the documenting of history in real time with social networking platforms is creating a wealth of data that can be used to help computers better understand human behavior. In this way, machines can be trained to mine the human data to learn behavior, rather than having to be taught how to think like humans.[[6]]\\n\\n## SocialOS\\n\\n[[edit]]\\n\\nIn June 2013 PeopleBrowsr launched SocialOS which is a set of [APIs] which bridges existing networks and enables new social networks to be rapidly rolled-out.\\n\\n## Top Level Domains\\n\\n[[edit]]\\n\\nPeopleBrowsr owns Top Level Domains .CEO, .Kred, and formerly .Best.[[7]] These domains were released in late 2013 and early 2014 and are powered by the Company's products: SocialOS, Kred and its Trillion Conversation Datamine.\\n\\n## Sale of the .Best Top Level Domain\\n\\n[[edit]]\\n\\nIn June 2018, PeopleBrowsr received approval from [ICANN] (Internet Corporation for Assigned Names and Numbers) to sell its BestTLD Pty Ltd subsidiary to The Best SAS, a Paris-based company led by President, Cyril Fremont, in a strategic deal that would leverage PeopleBrowsr's SocialOS technology.\\n\\nBestTLD Pty Ltd owns the .Best Top Level Domain. It has distribution agreements with GoDaddy and over 50 other Domain Registrars.[[8]]\\n\\n## Litigation\\n\\n[[edit]]\\n\\nIn November 2012, PeopleBrowsr sued [Twitter] over a proposed shutdown of PeopleBrowser's access to the Twitter firehose, which was set to occur on November 30, 2012.[[9]] After PeopleBrowsr won an injunction to prevent the disconnection of the Twitter firehose, Twitter attempted to move the case into Federal court, which may have invalidated the injunction.[[10]][[11]] In March 2013 PeopleBrowsr won a battle to keep the case within the California court system, thereby keeping the injunction in place.[[12]] Twitter and PeopleBrowsr reached an out-of-court settlement in April 2013.[[13]]\\n\\n## References\\n\\n[[edit]]\\n\\n1. [↑][\\\"PeopleBrowsr Inc.: Company Profile\\\"]. _LinkedIn_. Retrieved 21 October 2011.\\n2. [↑]Lassica, J.D. (7 April 2010). [\\\"PeopleBrowsr: Find and act on Twitter conversations\\\"]. _SocialMedia.biz_. Retrieved 2 November 2011.\\n3. [↑][\\\"PeopleBrowsr goes alpha - Digital Media\\\"]. Archived from [the original] on 2010-10-05. Retrieved 2010-10-09. PeopleBrowsr goes alpha, Natalie Apostolou, 12 December 2008, Digital Media\\n4. [↑][] TechCrunch, \\\"You Might Have Klout, But What's Your Kred?\\\"\\n5. [↑][] Mitchell Bingemann, May 26, 2010, The Australian\\n6. [↑]Mark Alvarez, [Building a Collective Consciousness in the Cloud], June 29, 2010, L'Atellier.com\\n7. [↑]Jemima Whyte, [], October 7, 2013, Australian Financial Review\\n8. [↑][\\\"The Best SAS acquires .Best TLD in Strategic Deal\\\"].\\n9. [↑][PeopleBrowsr sues Twitter over Firehose access, gets injunction, claims it is violating openness]\\n10. [↑][PeopleBrowsr vs. Twitter Legal Battle Returns to San Francisco Court]\\n11. [↑][PeopleBrowsr Claims “Twitter Changed Position On Eve Of Discovery” Over Federal Jurisdiction Request]\\n12. [↑][PeopleBrowsr vs. Twitter Legal Battle Returns to San Francisco Court]\\n13. [↑][\\\"Twitter Settles with PeopleBrowsr, Gives the Company Firehose Access Until the End of the Year\\\"]. 25 April 2013.\\n\\n## External links\\n\\n[[edit]]\\n\\n* [PeopleBrowsr]\\n\\nRetrieved from \\\"\\\"\\n\\n[Categories]: \\n* [Social media companies]\\n* [Web analytics]\\n* [Internet properties established in 2006]\\n\\nHidden categories: \\n* [Articles with short description]\\n* [Short description matches Wikidata]\\n\\n*  This page was last edited on 22 September 2026, at 04:14(UTC).\\n* Page was rendered with [Parsoid].\\n* Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License]; additional terms may apply. By using this site, you agree to the [Terms of Use] and [Privacy Policy]. Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.], a non-profit organization.\\n\\n* [Privacy policy]\\n* [About Wikipedia]\\n* [Disclaimers]\\n* [Contact Wikipedia]\\n* [Legal & safety contacts]\\n* [Code of Conduct]\\n* [Developers]\\n* [Statistics]\\n* [Cookie statement]\\n* [Mobile view]\\n* [Edit preview settings]\\n\\n* [![Image 9: Wikimedia Foundation]]\\n* [![Image 10: Powered by MediaWiki]]\\n\\nSearch\\n\\nSearch\\n\\n- [x] Toggle the table of contents \\n\\nPeopleBrowsr\\n\\n[][][][][][][]\\n\\n1 language[Add topic]\\n\\n[]\\n\", \"https://americanaustralian.org/team/tania-yuki/\": \"Title: Tania Yuki - American Australian Association\\n\\nURL Source: https://americanaustralian.org/team/tania-yuki/\\n\\nMarkdown Content:\\n×Search\\n\\n[![Image 1]]\\n\\n* [About]\\n  * [Overview]\\n  * [Governance]\\n  * [Team]\\n  * [Subscribe]\\n\\n* [Events]\\n  * [All Upcoming Events]\\n  * [Defence Industry Dialogue]\\n  * [New York Benefit Dinner]\\n  * [G’Day USA Arts Gala]\\n  * [AUSTRALIA HOUSE @SXSW]\\n  * [ANZAC Day & Veterans’ Lunch]\\n  * [BIO San Diego]\\n  * [Sydney Gala]\\n  * [Webinar Replays]\\n\\n* [Scholarships]\\n  * [Graduate Education Scholarships]\\n  * [Veterans’ Scholarships]\\n  * [Arts Scholarships & Grants]\\n  * [FAQs]\\n  * [Alumni]\\n    * [Alumni Network]\\n    * [Past Scholars]\\n\\n* [Donate]\\n* [Search]\\n* [Login]\\n* [Call Us](tel:+12123386860 \\\"Call Us\\\")\\n* [Email Us](mailto:info@americanaustralian.org \\\"Email Us\\\")\\n\\n**Tania Yuki** is Founder and former CEO of Shareablee. Tania began her career as a media and internet attorney, specializing in digital rights management, IP and film financing. After moving to the US, Tania went on to run online video content as Head of Acquisitions and Branding and led product management for comScore’s Video Metrix, the world’s leading online video ratings service.\\n\\nShareablee was founded in February 2013 when Tania saw a new frontier emerging across social media. She was convinced that social data would fundamentally change how companies communicate and do business and dedicated herself to understanding what makes social content succeed. Since then Shareablee has evolved from 3 people in Tania’s living room to a dynamic company of 60+ employees that boasts the world’s largest system of brand performance data across social platforms and industry-standard metrics that help clients navigate and win on social media. Shareablee collects & transforms the social data into actionable business intelligence.\\n\\n## For latest news and events\\n\\n* [Facebook]\\n* [LinkedIn]\\n* [Instagram]\\n\\n**Headquarters:**\\n\\n600 Third Ave Fl 34  \\n New York, NY 10016  \\n P: +1 212 338 6860  \\n E: [info@americanaustralian.org](mailto:info@americanaustralian.org)\\n\\n**Sydney Office Address:**\\n\\nUnited States Studies Centre  \\n Institute Building (H03)  \\n The University of Sydney NSW 2007  \\n P: +61 2 7249 3040\\n\\n### Education & Exchange\\n\\n* [Scholarships]\\n* [Exchange Visitor Program | J1 Visa]\\n* [Alumni Network]\\n\\n### Links\\n\\n* [Photo Gallery]\\n* [Event Space]\\n\\n### Affiliates\\n\\n* [Australian Women in New York]\\n* [AFNGA]\\n* [United States Studies Centre]\\n* [The Perth USAsia Centre]\\n\\nThe American Australian Association is a registered non–profit organization as described in Section 501(c)(3) of the Internal Revenue Code - EIN 13-6151807.\\n\\nWebsite by [Net Ninjas]\\n\\nWe use cookies to personalize and enhance your experience on our site. Visit our [Privacy Policy] for more information on our data collection practices. By clicking Accept, you agree to our use of cookies for the purposes listed in our Privacy Policy and Cookie Settings. Please note that “Necessary Cookies” will be set, regardless of your consent.[Cookie settings][ACCEPT]\\n\\nPrivacy & Cookies Policy\\n\\nClose\\n\\n#### Privacy Policy\\n\\nLast updated December 01, 2019  Thank you for choosing to be part of our community at American Australian Association, Inc. (“Company”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If y...\\n\\n[]\\n\\n[Necessary]\\n\\n- [x] Necessary \\n\\nAlways Enabled\\n\\n Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information. \\n\\n[Non-necessary]\\n\\n- [x] Non-necessary \\n\\n Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website. \\n\\n[SAVE & ACCEPT]\\n\\n* [About▼]\\n  * [Overview]\\n  * [Governance]\\n  * [Team]\\n  * [Subscribe]\\n\\n* [Events▼]\\n  * [All Upcoming Events]\\n  * [Defence Industry Dialogue]\\n  * [New York Benefit Dinner]\\n  * [G’Day USA Arts Gala]\\n  * [AUSTRALIA HOUSE @SXSW]\\n  * [ANZAC Day & Veterans’ Lunch]\\n  * [BIO San Diego]\\n  * [Sydney Gala]\\n  * [Webinar Replays]\\n\\n* [Scholarships▼]\\n  * [Graduate Education Scholarships]\\n  * [Veterans’ Scholarships]\\n  * [Arts Scholarships & Grants]\\n  * [FAQs]\\n  * [Alumni▼]\\n    * [Alumni Network]\\n    * [Past Scholars]\\n\\n* [Donate]\\n* [Search]\\n* [Login]\\n* [Call Us](tel:+12123386860)\\n* [Email Us](mailto:info@americanaustralian.org)\\n\", \"https://www.linkedin.com/company/shareablee-inc\": \"Title: Comscore Social (formerly Shareablee, Inc.) | LinkedIn\\n\\nURL Source: https://www.linkedin.com/company/shareablee-inc\\n\\nMarkdown Content:\\n[Skip to main content][LinkedIn]\\n* [Top Content]\\n* [People]\\n* [Learning]\\n* [Jobs]\\n* [Games]\\n\\n[Sign in][Join now][![Image 1]]\\n\\n![Image 2: Comscore Social (formerly Shareablee, Inc.)’s cover photo]\\n\\n![Image 3: Comscore Social (formerly Shareablee, Inc.)]\\n\\n# Comscore Social (formerly Shareablee, Inc.)\\n\\n## Market Research\\n\\n### New York, NY  6,404 followers\\n\\n#### Acquired by Comscore, a leader in audience-based social media measurement for media publishers, agencies and brands.\\n\\n[Follow]\\n\\n* [![Image 4]![Image 5]![Image 6] View all 9 employees]\\n\\n* [Report this company]\\n\\n## About us\\n\\nNow a part of Comscore (NASDAQ: SCOR) Shareablee was the first and only industry-level measurement solution for media companies and brands wanting to understand the impact and effectiveness of their cross-platform social media campaigns. The platform is available globally, with clients in 15 countries worldwide. Shareablee captures real-time interactions of more than +850M consumers against its global dictionary of brands, publishers, TV shows, influencers, celebrities. With a roster of platform clients consisting of many industry leading media companies and brands, including the NBA, WWE Warner Bros, P&G, Hulu, NBC, AOL and Luxottica. The platform also includes subscribers from leading advertising agencies represented by Publicis, WPP, Maxus and Interpublic Group. Shareablee was recognized with many awards including being named a Unilever Foundry Award winner, and CEO and Founder Tania Yuki was awarded the L’Oreal Founders Award for Innovation in Technology.\\n\\n Website \\nExternal link for Comscore Social (formerly Shareablee, Inc.)\\n\\n Industry  Market Research \\n\\n Company size  51-200 employees \\n\\n Headquarters  New York, NY \\n\\n Type  Privately Held \\n\\n Founded  2013 \\n\\n Specialties  social media marketing, social media analytics, competitive benchmarking, actionable analytics, social media measurement, social media data, social media, benchmarking, and social media rankings \\n\\n## Locations\\n\\n*  Primary New York, NY 10038, US [Get directions]\\n\\n## Employees at Comscore Social (formerly Shareablee, Inc.)\\n\\n* [![Image 7: Click here to view Karol Sowiński’s profile]### Karol Sowiński]\\n* [![Image 8: Click here to view Sid Arthur’s profile]### Sid Arthur]\\n* [![Image 9: Click here to view Artur Kozera’s profile]### Artur Kozera]\\n* [![Image 10: Click here to view Michał Modzelewski’s profile]### Michał Modzelewski]\\n\\n[See all employees]\\n\\n## Affiliated pages\\n\\n* [![Image 11]### Shareablee Insights Archive]\\n\\n## Similar pages\\n\\n* [![Image 12]### Comscore, Inc. Software Development Reston, VA]\\n* [![Image 13]### Nielsen Technology, Information and Media New York, NY]\\n* [![Image 14]### Kantar Market Research London, England]\\n* [![Image 15]### Ipsos Market Research]\\n* [![Image 16]### VideoAmp Advertising Services Los Angeles, California]\\n* [![Image 17]### Correct Context IT Services and IT Consulting Wrocław , dolnośląskie]\\n* [![Image 18]### Proximic by Comscore Advertising Services New York, NY]\\n* [![Image 19]### GfK - An NIQ Company Information Services Nuremberg, Bavaria]\\n* [![Image 20]### Circana Market Research Chicago, Illinois]\\n* [![Image 21]### Albert: AI Marketing (Acq. by Zoomd) Advertising Services Herzliya Pituah, Israel]\\n\\n Show more similar pages  Show fewer similar pages \\n\\n## Browse jobs\\n\\n* ### [Sales Director jobs 83,949 open jobs]\\n* ### [Marketing Account Executive jobs 34,745 open jobs]\\n* ### [Marketing Manager jobs 106,879 open jobs]\\n* ### [Account Director jobs 75,061 open jobs]\\n* ### [Partnerships Manager jobs 61,442 open jobs]\\n* ### [Community Manager jobs 115,952 open jobs]\\n* ### [Vice President jobs 235,270 open jobs]\\n* ### [Salesperson jobs 172,678 open jobs]\\n* ### [Account Executive jobs 71,457 open jobs]\\n* ### [Sales Manager jobs 310,050 open jobs]\\n* ### [Account Manager jobs 121,519 open jobs]\\n* ### [Director jobs 1,220,357 open jobs]\\n* ### [Manager jobs 1,880,925 open jobs]\\n* ### [Market Research Intern jobs 11,967 open jobs]\\n* ### [Market Researcher jobs 1,673 open jobs]\\n* ### [Senior Data Analyst jobs 35,445 open jobs]\\n* ### [Market Research Analyst jobs 35,163 open jobs]\\n* ### [Research Analyst jobs 62,874 open jobs]\\n* ### [Marketing Executive jobs 66,900 open jobs]\\n* ### [Assistant Manager jobs 360,456 open jobs]\\n\\n Show more jobs like this  Show fewer jobs like this \\n\\n More searches  More searches \\n* \\n  * [Analyst jobs]\\n  * [Business Consultant jobs]\\n  * [Project Manager jobs]\\n\\n  * [Account Executive jobs]\\n  * [Recruiter jobs]\\n  * [Executive jobs]\\n\\n  * [Manager jobs]\\n  * [Business Development Specialist jobs]\\n\\n* LinkedIn© 2026\\n* [About]\\n* [Accessibility]\\n* [User Agreement]\\n* [Privacy Policy]\\n* [Your California Privacy Choices]\\n* [Cookie Policy]\\n* [Copyright Policy]\\n* [Brand Policy]\\n* [Guest Controls]\\n* [Community Guidelines]\\n* \\n  *  العربية (Arabic) \\n  *  বাংলা (Bangla) \\n  *  Čeština (Czech) \\n  *  Dansk (Danish) \\n  *  Deutsch (German) \\n  *  Ελληνικά (Greek) \\n  * **English (English)**\\n  *  Español (Spanish) \\n  *  فارسی (Persian) \\n  *  Suomi (Finnish) \\n  *  Français (French) \\n  *  हिंदी (Hindi) \\n  *  Magyar (Hungarian) \\n  *  Bahasa Indonesia (Indonesian) \\n  *  Italiano (Italian) \\n  *  עברית (Hebrew) \\n  *  日本語 (Japanese) \\n  *  한국어 (Korean) \\n  *  मराठी (Marathi) \\n  *  Bahasa Malaysia (Malay) \\n  *  Nederlands (Dutch) \\n  *  Norsk (Norwegian) \\n  *  ਪੰਜਾਬੀ (Punjabi) \\n  *  Polski (Polish) \\n  *  Português (Portuguese) \\n  *  Română (Romanian) \\n  *  Русский (Russian) \\n  *  Svenska (Swedish) \\n  *  తెలుగు (Telugu) \\n  *  ภาษาไทย (Thai) \\n  *  Tagalog (Tagalog) \\n  *  Türkçe (Turkish) \\n  *  Українська (Ukrainian) \\n  *  Tiếng Việt (Vietnamese) \\n  *  简体中文 (Chinese (Simplified)) \\n  *  正體中文 (Chinese (Traditional)) \\n\\n Language \\n\\nAgree & Join LinkedIn\\n\\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\\n\\n![Image 22]\\n## Sign in to see who you already know at Comscore Social (formerly Shareablee, Inc.)\\n\\n Email or phone  \\n\\n Password  \\n\\nShow\\n\\n[Forgot password?] Sign in \\n\\nSign in with Email\\n\\nor\\n\\nNew to LinkedIn? [Join now]\\n\\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\\n\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_318de20e75d04f2f883802d0",
+      "content": "[{\"id\": 1, \"title\": \"Jodee Rich\", \"url\": \"https://en.wikipedia.org/wiki/Jodee_Rich\", \"snippet\": \"He is now the CEO and founder of social analytics and influence measurement provider PeopleBrowsr and the creator of new TLDs dotCEO, dotBest and dotKred. Jodee ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Jodee Rich - CEO PeopleBrowsr, NFT.Kred and ...\", \"url\": \"https://www.linkedin.com/in/jodeerich\", \"snippet\": \"Jodee Rich. CEO PeopleBrowsr, NFT.Kred and NFT.NYC. Two decades empowering people with gameplay, social streams, scoring, and tokenization — now ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Jodee Rich bound for social return\", \"url\": \"https://www.zdnet.com/article/jodee-rich-bound-for-social-return/\", \"snippet\": \"Established in early 2007, PeopleBrowsr aggregates public social-media posts from Twitter, Facebook, YouTube, WordPress and other sites into ...\", \"date\": \"Sep 13, 2010\"}, {\"id\": 4, \"title\": \"New Twitter tool, ReSearch.ly, lets you conduct searches ...\", \"url\": \"https://venturebeat.com/ai/peoplebrowsr-research-ly-launch\", \"snippet\": \"But Jodee Rich, chief executive of a company called PeopleBrowsr, argues that his new monitoring application, ReSearch.ly, is tailored to ...\", \"date\": \"Dec 2, 2010\"}, {\"id\": 5, \"title\": \"Twitter settles with PeopleBrowsr over data access\", \"url\": \"https://www.itnews.com.au/news/twitter-settles-with-peoplebrowsr-over-data-access-341211\", \"snippet\": \"Rich formed PeopleBrowsr in 2007. He was formerly the head of Australian telco One Tel until its collapse in 2005. Add iTnews as your ...\", \"date\": \"Apr 26, 2013\"}, {\"id\": 6, \"title\": \"Jodee Rich (@WingDude) / X\", \"url\": \"https://x.com/WingDude\", \"snippet\": \"NYC producer and co-founder. Husband, father, kitefoiler, pilot, battle seasoned, skier, techy. New York, USA. PeopleBrowsr.com · Joined March 2007 · 2,056 ...\", \"date\": \"\"}, {\"id\": 7, \"title\": \"Jodee Rich - Alchetron, The Free Social Encyclopedia\", \"url\": \"https://alchetron.com/Jodee-Rich\", \"snippet\": \"In 2007, Rich founded PeopleBrowsr. In 2011, PeopleBrowsr launched Kred Influence Measurement. dotCEO. On 27 March 2013, Rich launched the TLD ...\", \"date\": \"Apr 25, 2026\"}, {\"id\": 8, \"title\": \"Jodee Rich (@WingDude) — Twitter Score 37.5/1000\", \"url\": \"https://twitterscore.io/twitter/WingDude/\", \"snippet\": \"Jodee Rich founded PeopleBrowsr, a social data analytics company, and continues to lead it as CEO. He also serves as CEO of NFT.Kred, a platform focused on ...\", \"date\": \"\"}, {\"id\": 9, \"title\": \"PeopleBrowsr Launches Kred, Measurable Influence and Outreach\", \"url\": \"https://www.firmenpresse.de/pressrelease71177/peoplebrowsr-launches-kred-measurable-influence-and-outreach.html\", \"snippet\": \"\\\"Kred is built on the fundamental belief that we are all influential somewhere,\\\" said PeopleBrowsr CEO Jodee Rich. \\\"Kred asserts the importance of trust and ...\", \"date\": \"\"}, {\"id\": 10, \"title\": \"The Eternal Mystic Fire — a meaningful milestone in my NFT ...\", \"url\": \"https://www.instagram.com/p/DbvOF75HQbD/\", \"snippet\": \"... Jodee Rich, Co-Founder of NFT.NYC and CEO of Kred / PeopleBrowsr. The artwork explores the idea of inner fire, transformation, resilience ...\", \"date\": \"2 months ago\"}]"
+    },
+    {
+      "role": "assistant",
+      "content": "Let me cross-check the PeopleBrowsr founding date, as sources vary between 2006 and 2007.\n\n",
+      "reasoning": "There's some discrepancy:\n- PeopleBrowsr: Wikipedia says \"Launched 2006\" and category \"Internet properties established in 2006\". However, multiple sources (LinkedIn, ZDNet, iTnews, Alchetron, MrWeb, Tracxn) say founded in 2007. ZDNet says \"Established in early 2007, PeopleBrowsr...\" and iTnews says \"Rich formed PeopleBrowsr in 2007.\"\n\nThe most common answer is 2007 for the founding. Wikipedia's \"Launched 2006\" refers to the website launch. Hmm. Let me consider: Owler said \"founded in 01/2006\". \n\nActually, the question asks about \"founding dates.\" The predominant sources say PeopleBrowsr was founded in 2007 (Jodee Rich formed it in 2007). Wikipedia lists \"Launched 2006\" in the infobox.\n\n- Shareablee: LinkedIn says Founded 2013. American Australian Association says \"founded in February 2013\". Multiple sources say 2013. Tracxn says 2012.\n\nSo the difference: 2013 - 2007 = 6 years. Or 2013 - 2006 = 7 years.\n\nLet me dig deeper to confirm. Let me check the PeopleBrowsr Wikipedia infobox again — it says \"Launched 2006\". And the category \"Internet properties established in 2006.\"\n\nHmm, the question says \"determine how many years elapsed between their founding dates.\" The most reliable founding dates: Shareablee founded February 2013; PeopleBrowsr founded 2007 (per LinkedIn company page, ZDNet, iTnews, MrWeb).\n\n2013 - 2007 = 6 years.\n\nLet me double-check by looking at a couple more sources to be safe. Let me also verify the Shareablee founding date more precisely.\n\nLet me search for more details.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_5e032584c8df4b0faa2167cb",
+          "function": {
+            "name": "page_browser",
+            "arguments": "{\"urls\": \n[\"https://www.linkedin.com/company/peoplebrowsr-inc.\", \"https://www.zdnet.com/article/jodee-rich-bound-for-social-return/\", \"https://www.crunchbase.com/organization/peoplebrowsr\"]\n\n}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "call_9a88db1f60cf42a0b4503292",
+          "function": {
+            "name": "web_search",
+            "arguments": "{\"query\": \"Shareablee \\\"founded in 2013\\\" OR \\\"launched in 2013\\\" Tania Yuki social media analytics startup\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "There's some discrepancy:\n- PeopleBrowsr: Wikipedia says \"Launched 2006\" and category \"Internet properties established in 2006\". However, multiple sources (LinkedIn, ZDNet, iTnews, Alchetron, MrWeb, Tracxn) say founded in 2007. ZDNet says \"Established in early 2007, PeopleBrowsr...\" and iTnews says \"Rich formed PeopleBrowsr in 2007.\"\n\nThe most common answer is 2007 for the founding. Wikipedia's \"Launched 2006\" refers to the website launch. Hmm. Let me consider: Owler said \"founded in 01/2006\". \n\nActually, the question asks about \"founding dates.\" The predominant sources say PeopleBrowsr was founded in 2007 (Jodee Rich formed it in 2007). Wikipedia lists \"Launched 2006\" in the infobox.\n\n- Shareablee: LinkedIn says Founded 2013. American Australian Association says \"founded in February 2013\". Multiple sources say 2013. Tracxn says 2012.\n\nSo the difference: 2013 - 2007 = 6 years. Or 2013 - 2006 = 7 years.\n\nLet me dig deeper to confirm. Let me check the PeopleBrowsr Wikipedia infobox again — it says \"Launched 2006\". And the category \"Internet properties established in 2006.\"\n\nHmm, the question says \"determine how many years elapsed between their founding dates.\" The most reliable founding dates: Shareablee founded February 2013; PeopleBrowsr founded 2007 (per LinkedIn company page, ZDNet, iTnews, MrWeb).\n\n2013 - 2007 = 6 years.\n\nLet me double-check by looking at a couple more sources to be safe. Let me also verify the Shareablee founding date more precisely.\n\nLet me search for more details.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5e032584c8df4b0faa2167cb",
+      "content": "{\"https://www.linkedin.com/company/peoplebrowsr-inc.\": \"Title: PeopleBrowsr | LinkedIn\\n\\nURL Source: https://www.linkedin.com/company/peoplebrowsr-inc.\\n\\nMarkdown Content:\\n[Skip to main content][LinkedIn]\\n* [Top Content]\\n* [People]\\n* [Learning]\\n* [Jobs]\\n* [Games]\\n\\n[Sign in][Join now][![Image 1]]\\n\\n![Image 2: PeopleBrowsr’s cover photo]\\n\\n![Image 3: PeopleBrowsr]\\n\\n# PeopleBrowsr\\n\\n## Technology, Information and Internet\\n\\n### San Francisco, CA  3,103 followers\\n\\n#### We have integrated our core SocialOS technology with the blockchain to create the leading Whitelabel NFT Hub solution\\n\\n[Follow]\\n\\n* [![Image 4]![Image 5] Discover all 13 employees]\\n\\n* [Report this company]\\n\\n## About us\\n\\nAt PeopleBrowsr, we are on a mission to change the way influencers, creators and brands connect with their customers/fans. We have integrated our core SocialOS technology with the blockchain to create the leading Whitelabel NFT Hub solution (www.NFT.Kred). Founded in 2007, we have deep experience in analytics, social networks and blockchain. Since inception, we have earned over $20m in revenue from Fortune 500 companies and Governments around the world. We run the largest NFT conference in the world in NYC every year (www.NFT.NYC).\\n\\n Website \\nExternal link for PeopleBrowsr\\n\\n Industry  Technology, Information and Internet \\n\\n Company size  11-50 employees \\n\\n Headquarters  San Francisco, CA \\n\\n Type  Privately Held \\n\\n Founded  2007 \\n\\n Specialties  Top-Level Domains, Social Media, Real-Time Web, Social Search, and Marketing \\n\\n## Locations\\n\\n*  Primary 474 Bryant Street\\n\\nSan Francisco, CA 94107, US [Get directions]\\n* Level 3 No 5 Lime Street\\n\\nKing St Wharf\\n\\nSydney, New South Wales 2000, AU [Get directions]\\n\\n## Employees at PeopleBrowsr\\n\\n* [![Image 6: Click here to view Jodee Rich’s profile]### Jodee Rich]\\n* [![Image 7: Click here to view PB TestAc’s profile]### PB TestAc]\\n\\n[See all employees]\\n\\n## Similar pages\\n\\n* [![Image 8]### NFT.NYC Technology, Information and Internet New York, NY]\\n* [![Image 9]### NFT.Kred IT Services and IT Consulting San Francisco, California]\\n* [![Image 10]### Kred IT Services and IT Consulting San Francisco, California]\\n* [![Image 11]### Perfectlancer Internet Publishing Los Angeles, California]\\n* [![Image 12]### CryptoLions Information Technology & Services Lviv, Lviv]\\n* [![Image 13]### Onsite Helper IT Services and IT Consulting Melbourne, Victoria]\\n* [![Image 14]### Petal Technology, Information and Internet Cambridge, MA]\\n* [![Image 15]### PiKNiK Software Development San Diego, CA]\\n* [![Image 16]### Qosmic Retail Apparel and Fashion]\\n* [![Image 17]### Penny Arcade, Inc. Online Audio and Video Media Redmond, WA]\\n\\n Show more similar pages  Show fewer similar pages \\n\\n## Browse jobs\\n\\n* ### [Recruiter jobs 243,016 open jobs]\\n* ### [Administrator jobs 469,404 open jobs]\\n* ### [Developer jobs 258,935 open jobs]\\n* ### [Engineer jobs 555,845 open jobs]\\n* ### [Translator jobs 16,933 open jobs]\\n\\n More searches  More searches \\n* \\n  * [President jobs]\\n  * [Recruiter jobs]\\n\\n  * [Business Development Manager jobs]\\n  * [Business Manager jobs]\\n\\n* LinkedIn© 2026\\n* [About]\\n* [Accessibility]\\n* [User Agreement]\\n* [Privacy Policy]\\n* [Your California Privacy Choices]\\n* [Cookie Policy]\\n* [Copyright Policy]\\n* [Brand Policy]\\n* [Guest Controls]\\n* [Community Guidelines]\\n* \\n  *  العربية (Arabic) \\n  *  বাংলা (Bangla) \\n  *  Čeština (Czech) \\n  *  Dansk (Danish) \\n  *  Deutsch (German) \\n  *  Ελληνικά (Greek) \\n  * **English (English)**\\n  *  Español (Spanish) \\n  *  فارسی (Persian) \\n  *  Suomi (Finnish) \\n  *  Français (French) \\n  *  हिंदी (Hindi) \\n  *  Magyar (Hungarian) \\n  *  Bahasa Indonesia (Indonesian) \\n  *  Italiano (Italian) \\n  *  עברית (Hebrew) \\n  *  日本語 (Japanese) \\n  *  한국어 (Korean) \\n  *  मराठी (Marathi) \\n  *  Bahasa Malaysia (Malay) \\n  *  Nederlands (Dutch) \\n  *  Norsk (Norwegian) \\n  *  ਪੰਜਾਬੀ (Punjabi) \\n  *  Polski (Polish) \\n  *  Português (Portuguese) \\n  *  Română (Romanian) \\n  *  Русский (Russian) \\n  *  Svenska (Swedish) \\n  *  తెలుగు (Telugu) \\n  *  ภาษาไทย (Thai) \\n  *  Tagalog (Tagalog) \\n  *  Türkçe (Turkish) \\n  *  Українська (Ukrainian) \\n  *  Tiếng Việt (Vietnamese) \\n  *  简体中文 (Chinese (Simplified)) \\n  *  正體中文 (Chinese (Traditional)) \\n\\n Language \\n\\nAgree & Join LinkedIn\\n\\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\\n\\n![Image 18]\\n## Sign in to see who you already know at PeopleBrowsr\\n\\n Email or phone  \\n\\n Password  \\n\\nShow\\n\\n[Forgot password?] Sign in \\n\\nSign in with Email\\n\\nor\\n\\nNew to LinkedIn? [Join now]\\n\\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\\n\", \"https://www.zdnet.com/article/jodee-rich-bound-for-social-return/\": \"Title: Jodee Rich bound for social return\\n\\nURL Source: https://www.zdnet.com/article/jodee-rich-bound-for-social-return/\\n\\nPublished Time: 2010-09-13T01:52:01-04:00\\n\\nMarkdown Content:\\nX\\n\\n[Skip to content]- [x] \\n\\n[Tomorrow belongs to those who embrace it today]\\n\\n[Add as a preferred source on Google]\\n\\n Join / Log In  Log Out \\n\\n Open  Close  \\n\\n[Tomorrow belongs to those who embrace it today]\\n\\n* [Latest]\\n* [Tech]\\n* [Best Products]\\n* [Business]\\n* [Comparisons]\\n* [Innovation]\\n* [How To]\\n* [Services & Software]\\n* [Deals]\\n* [Security]\\n* [Reviews]\\n\\nSearch \\n\\n Search  Close \\n\\n/ trending today\\n\\nOur gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.\\n\\n[Explore]\\n\\n* [Latest]\\n* - [x] Tech \\n  * [Laptops]\\n  * [TVs]\\n  * [Smartphones]\\n  * [Tablets]\\n  * [Gaming]\\n  * [Headphones]\\n  * [Speakers]\\n  * [Mobile Accessories]\\n  * [Smart Watches]\\n  * [Smart Home]\\n  * [Computing]\\n  * [Home & Office]\\n  * [Robot vacuums]\\n  * [Kitchen & Household]\\n\\n* - [x] Best Lists \\n  * [Best blood pressure watches]\\n  * [Best smart rings]\\n  * [best AI chatbots]\\n  * [Best iPhone]\\n  * [Best Samsung phone]\\n  * [Best Android phone]\\n  * [Best smartwatch]\\n  * [Best phone]\\n  * [Best tablet]\\n  * [Best power bank]\\n\\n* - [x] Business \\n  * [Amazon]\\n  * [Apple]\\n  * [Google]\\n  * [Developer]\\n  * [E-Commerce]\\n  * [Edge Computing]\\n  * [Professional Development]\\n  * [Small Business]\\n  * [Microsoft]\\n  * [Windows]\\n\\n* [Comparisons]\\n* - [x] Innovation \\n  * [Artificial Intelligence]\\n  * [Smart Glasses]\\n  * [AR + VR]\\n  * [Cloud]\\n  * [Digital Transformation]\\n  * [Energy]\\n  * [Sustainability]\\n  * [Transportation]\\n  * [Work Life]\\n  * [Robotics]\\n\\n* [How To]\\n* - [x] Services & Software \\n  * [Enterprise Software]\\n  * [Mac OS]\\n  * [Linux]\\n  * [Windows 10]\\n  * [Windows 11]\\n  * [Operating Systems]\\n\\n* [Deals]\\n* - [x] Security \\n  * [VPN]\\n  * [Password Manager]\\n  * [Cyber Threats]\\n  * [Ransomware]\\n\\n* [Reviews]\\n\\n[Add as a preferred source on Google]\\n\\n![Image 2: peoplebrowsr1.jpg]\\n\\n[Business]>[Social Media]\\n\\n# Jodee Rich bound for social return\\n\\nControversial Australian entrepreneur, Jodee Rich, is set to return to the Aussie business scene, creating an Australian portal for his social-media venture PeopleBrowsr.\\n\\n![Image 3]\\n\\n[Luke Hopewell]\\n\\n A fresh recruit onto the tech journalism battlefield, Luke Hopewell is eager to see some action.… [Read full bio]\\n\\n#### Luke Hopewell\\n\\n[Read full bio]\\n\\nSeptember 13, 2010, 1:52 am ET\\n\\n 1 min read \\n\\n[][][][]\\n\\n**Controversial Australian entrepreneur, Jodee Rich, is set to return to the Aussie business scene, creating an Australian portal for his social-media venture [PeopleBrowsr].**\\n\\n**The PeopleBrowsr homepage**_(Screenshot by Luke Hopewell/ZDNet Australia)_\\n\\nEstablished in early 2007, PeopleBrowsr aggregates public social-media posts from [Twitter], [Facebook], [YouTube], WordPress and other sites into mineable data to track and on-sell the trends and information to other businesses.\\n\\nMore from ZDNET\\n\\nRich told [_The Australian_] that an Australian portal for the social-media data mine PeopleBrowsr would be arriving in Australia “shortly”.\\n\\nAt its inception, PeopleBrowsr built itself a stable of public posts from Flickr, YouTube and Craigslist, before launching an application programming interface bridge into Twitter and Facebook in 2008.\\n\\nSo far, PeopleBrowsr has aggregated the last three years of “public online conversations”, spanning 20 terabytes of storage space.\\n\\nThe goal of PeopleBrowsr is to monitor social-media trends for brands, events and individuals. PeopleBrowsr’s clients so far include Kodak, Disney, Sony, SAP, Bacardi, Comcast and Universal Music in the US.\\n\\nThe PeopleBrowsr website believes that, over the next 12 months, Twitter’s market of posts will grow from its current 15 billion collective tweets by a hundredfold.\\n\\nRich’s entrepreneurial journey has not been without incident, after the multimillion-dollar collapse of Imagineering and, most recently, Australian telco [One.Tel].\\n\\nShow Comments\\n\\n Log In to Comment \\n\\n*  Log Out \\n\\n[Community Guidelines]\\n\\nPlease accept cookies to view the comments powered by Disqus.\\n\\n![Image 4: Luke Hopewell]\\n\\nLuke Hopewell\\n\\nA fresh recruit onto the tech journalism battlefield, Luke Hopewell is eager to see some action. After a tour of duty in the belly of the Telstra beast, he is keen to report big stories on the enterprise beat. Drawing on past experience in radio, print and magazine, he plans to ask all the tough questions you want answered.[See full bio]\\n\\n### The Latest from Luke\\n\\n* [Toyota learns BI from kitchen renovation]\\n* [Qantas promotes tech head to lead Jetstar]\\n* [Spreets co-founders to exit company]\\n\\n## / latest\\n\\n[![Image 5]]\\n\\n### [Best October Prime Day deals under $25: Last chance to save on Anker, Govee and more]\\n\\n[![Image 6]]\\n\\n### [Best Buy has a ton of Nintendo Switch consoles and games on sale after Prime Day]\\n\\n[![Image 7]]\\n\\n### [Last chance October Prime Day phone deals: Discounts from Samsung, Google, and more]\\n\\n[![Image 8: A Samsung Odyssey G55 monitor on a blue and green background]]\\n\\n### [Still live – Best October Prime Day 2026 monitor deals from Samsung, LG, and more]\\n\\n[]\\n\\n[][][][][][]\\n\\n[US][Japan][Korea][France]\\n\\n* [about ZDNET]\\n* [meet the team]\\n* [sitemap]\\n* [topics]\\n* [newsletters]\\n* [accessibility]\\n* [licensing]\\n\\n### BEST PRODUCTS\\n\\n* [Best blood pressure watch]\\n* [Best smart ring]\\n* [Best AI chatbot]\\n* [Best iPhone]\\n* [Best Samsung phone]\\n* [Best Android phone]\\n* [Best smartwatch]\\n* [Best phone]\\n* [Best tablet]\\n* [Best power bank]\\n\\n### COMPARISONS\\n\\n* [Oura Ring 5 vs Oura Ring 4]\\n* [M5 MacBook Pro vs M1 MacBook Pro]\\n* [Roku vs Fire Stick]\\n* [M3 MacBook Air vs M2 MacBook Air]\\n* [LG vs Samsung TV]\\n* [iPhone 16 Pro vs iPhone 13 Pro]\\n* [Samsung Galaxy vs Google Pixel]\\n* [Samsung Galaxy S26 vs S24]\\n* [ChatGPT Plus vs Gemini Pro]\\n* [Samsung Galaxy S26 Ultra vs iPhone 17 Pro Max]\\n* [ChatGPT vs Claude]\\n* [iPhone 17 Pro vs iPhone 14 Pro]\\n\\n### BUSINESS\\n\\n* [Best password manager]\\n* [Best AI detector]\\n* [Best free AI image generator]\\n* [Best antivirus software]\\n* [Best small business accounting software]\\n* [Best payroll software]\\n* [Best web hosting]\\n* [Best personal finance software]\\n* [Best email marketing software]\\n* [Best budgeting software]\\n* [Best free web hosting]\\n\\n### REVIEWS\\n\\n* [iPhone 17 review]\\n* [Oura Ring 5 review]\\n* [Samsung Galaxy S25 Ultra review]\\n* [Amazon Echo Studio review]\\n* [Google Pixel Buds Pro 2 review]\\n* [MacBook Air M5 review]\\n* [Samsung S95F OLED review]\\n* [Samsung Galaxy S26 Ultra review]\\n* [iPad Pro M5 (2026) review]\\n* [AirPods Max 2 review]\\n\\n### HOW TO\\n\\n* [How to clear Android phone cache]\\n* [How to use a MoCA adapter]\\n* [How to clear TV cache]\\n* [How to upgrade incompatible PC to Windows 11]\\n* [How to disable ACR on TV]\\n* [How to turn on private DNS on Android]\\n* [How to clear iPhone cache]\\n* [How to clear Roku TV cache]\\n* [How to clear Windows 11 cache]\\n* [How to turn off motion smoothing]\\n\\n### DEALS\\n\\n* [SanDisk SSD Deal]\\n* [Samsung M9 Monitor Deal]\\n* [LG B5 OLED TV Deal]\\n* [Fitbit Air Deal]\\n* [Motorola Moto G Deal]\\n* [Samsung Galaxy Watch 8 Deal]\\n* [Samsung Galaxy s26 Deal]\\n* [Apple Watch Series 11 Deal]\\n* [Incogni Deal]\\n* [Microsoft Surface Pro Deal]\\n\\n### POPULAR BRANDS\\n\\n* [Amazon]\\n* [Apple]\\n* [Microsoft]\\n* [Windows]\\n* [Google]\\n* [Linux]\\n* [Android]\\n* [Samsung]\\n* [Dell]\\n* [Oracle]\\n* [Lenovo]\\n* [HP Inc.]\\n\\n### EVENTS\\n\\n* [Amazon Prime Day]\\n* [CES]\\n* [Lab Awards]\\n* [Mobile World Congress]\\n* [Safety Net]\\n* [Samsung Unpacked]\\n* [Shopping Holiday]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n[]\\n\\n* [Privacy Policy]\\n* [Advertise]\\n* [Terms of Use]\\n* [![Image 9]Withdraw Consent / Manage Privacy Preferences]\\n\\n© 2026 ZDNET, a Ziff Davis company. All rights reserved.\\n\\n![Image 10]![Image 11: Transparent audience pixel]![Image 12: Transparent audience pixel]\\n\", \"https://www.crunchbase.com/organization/peoplebrowsr\": \"Title: Just a moment...\\n\\nURL Source: https://www.crunchbase.com/organization/peoplebrowsr\\n\\nWarning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.\\n\\nMarkdown Content:\\nWe must verify your session before you can proceed\\n\\nVerification successful. Waiting for www.crunchbase.com to respond\\n\\nNeed help? [Contact our support team](mailto:support@crunchbase.com).\\n\\nRay ID: `a475b2a1c97c9bb9`\\n\"}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_9a88db1f60cf42a0b4503292",
+      "content": "[{\"id\": 1, \"title\": \"Comscore to Acquire Shareablee\", \"url\": \"https://customerland.net/comscore-to-acquire-shareablee/\", \"snippet\": \"Founded in 2013 by data scientist/entrepreneur Tania Yuki, Shareablee today counts many of the world's top brands as customers for its Data Explorer product ...\", \"date\": \"\"}, {\"id\": 2, \"title\": \"Tania Yuki - Executive Bio, Work History, and Contacts - Equilar ...\", \"url\": \"https://people.equilar.com/bio/person/tania-yuki-comscore-inc/27962642\", \"snippet\": \"Tania re-joined Comscore in late 2021 after Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of ...\", \"date\": \"\"}, {\"id\": 3, \"title\": \"Six - Dh-CES 2023\", \"url\": \"https://www.digitalhollywood.com/six---dh-ces-2023\", \"snippet\": \"... Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of 2021, was acquired by Comscore. Shareablee ...\", \"date\": \"\"}, {\"id\": 4, \"title\": \"Startup Stories: Transforming the world's social data into ...\", \"url\": \"https://www.mixcloud.com/devradioaudio-channel9/startup-stories-transforming-the-worlds-social-data-into-actionable-business-intelligence-with-sha/\", \"snippet\": \"Founded in 2013, Shareablee is the first and only industry-level measurement solution for media companies and brands wanting to understand the impact and ...\", \"date\": \"\"}, {\"id\": 5, \"title\": \"2023 AudiencexScience Speaker Bios\", \"url\": \"https://thearf.org/arf-events/audiencexscience-2023-speakers-bios/\", \"snippet\": \"... startup that she founded in 2013 and led as CEO through to the end of 2021, was acquired by Comscore. Prior to founding Shareablee, Tania ...\", \"date\": \"Mar 17, 2023\"}, {\"id\": 6, \"title\": \"AI Summit - Session Eight\", \"url\": \"https://www.digitalhollywood.com/ai-summit---session-eight\", \"snippet\": \"... Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of 2021, was acquired by Comscore.\", \"date\": \"Jul 18, 2023\"}, {\"id\": 7, \"title\": \"Interactive Advertising Bureau | 2022 IAB NewFronts\", \"url\": \"https://www.iab.com/events/2022-iab-newfronts/\", \"snippet\": \"Tania re-joined Comscore in late 2021 after Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of ...\", \"date\": \"\"}, {\"id\": 8, \"title\": \"Canadian Online Publishing Awards\", \"url\": \"https://archive.is/wip/A5uSo\", \"snippet\": \"Shareablee is the leader in audience-based social media measurement for media ... Launched in 2013, Shareablee empowers brands by providing data ...\", \"date\": \"Feb 5, 2021\"}]"
+    },
+    {
+      "role": "assistant",
+      "reasoning": "Now I have solid confirmation:\n\n**Shareablee**: Founded in 2013 (specifically February 2013) by Tania Yuki. Confirmed by LinkedIn company page (\"Founded: 2013\"), American Australian Association (\"Shareablee was founded in February 2013\"), Comscore press releases, Equilar bio, and multiple other sources.\n\n**PeopleBrowsr**: Founded in 2007 by Jodee Rich. Confirmed by LinkedIn company page (\"Founded: 2007\", \"Founded in 2007, we have deep experience...\"), ZDNet (\"Established in early 2007, PeopleBrowsr...\"), iTnews (\"Rich formed PeopleBrowsr in 2007\"), MrWeb (\"Founded in 2007, PeopleBrowsr's research platform...\"), Tracxn, RocketReach.\n\nNote: Wikipedia infobox says \"Launched 2006\" and category \"Internet properties established in 2006\" — this refers to the website launch, whereas the company formation is 2007. The overwhelming majority of sources, including the company's own LinkedIn page, say 2007.\n\nDifference: 2013 - 2007 = 6 years.\n\nLet me compute this.",
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "call_26f2684f7c484769ba26fd18",
+          "function": {
+            "name": "code_executor",
+            "arguments": "{\"code\": \"from datetime import date\\n\\n# Shareablee (Video 1 - Tania Yuki's company)\\nshareablee_founded = date(2013, 2, 1)   # February 2013\\n\\n# PeopleBrowsr (Video 2 - parent company of Kred)\\npeoplebrowsr_founded = date(2007, 1, 1)  # early 2007\\n\\ndiff_years = shareablee_founded.year - peoplebrowsr_founded.year\\nprint(\\\"Shareablee founded:\\\", shareablee_founded.strftime(\\\"%B %Y\\\"))\\nprint(\\\"PeopleBrowsr founded:\\\", \\\"early 2007\\\")\\nprint(\\\"Years elapsed between founding dates:\\\", diff_years)\\n\\n# Sanity check with alternative PeopleBrowsr date sometimes cited (2006 website launch)\\nprint(\\\"\\\\nAlt. if PeopleBrowsr = 2006:\\\", 2013 - 2006, \\\"years\\\")\"}"
+          }
+        }
+      ],
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Now I have solid confirmation:\n\n**Shareablee**: Founded in 2013 (specifically February 2013) by Tania Yuki. Confirmed by LinkedIn company page (\"Founded: 2013\"), American Australian Association (\"Shareablee was founded in February 2013\"), Comscore press releases, Equilar bio, and multiple other sources.\n\n**PeopleBrowsr**: Founded in 2007 by Jodee Rich. Confirmed by LinkedIn company page (\"Founded: 2007\", \"Founded in 2007, we have deep experience...\"), ZDNet (\"Established in early 2007, PeopleBrowsr...\"), iTnews (\"Rich formed PeopleBrowsr in 2007\"), MrWeb (\"Founded in 2007, PeopleBrowsr's research platform...\"), Tracxn, RocketReach.\n\nNote: Wikipedia infobox says \"Launched 2006\" and category \"Internet properties established in 2006\" — this refers to the website launch, whereas the company formation is 2007. The overwhelming majority of sources, including the company's own LinkedIn page, say 2007.\n\nDifference: 2013 - 2007 = 6 years.\n\nLet me compute this.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_26f2684f7c484769ba26fd18",
+      "content": "{\"stdout\": \"Shareablee founded: February 2013\\nPeopleBrowsr founded: early 2007\\nYears elapsed between founding dates: 6\\n\\nAlt. if PeopleBrowsr = 2006: 7 years\", \"result\": null, \"error\": null}"
+    },
+    {
+      "role": "assistant",
+      "content": "## Research Findings\n\n**Video 1 — Shareablee, Inc.** (Tania Yuki, CEO, discussing Ford's \"dress color\" real-time marketing campaign):\n- Founded **February 2013** by Tania Yuki in New York\n- Confirmed by Shareablee's own LinkedIn company page (\"Founded: 2013\"), the American Australian Association bio (\"Shareablee was founded in February 2013 when Tania saw a new frontier emerging across social media\"), Comscore's acquisition press materials (\"Launched in 2013\"), and Yuki's own account (\"I founded Shareablee in 2013\"). The company was later acquired by Comscore in December 2021.\n\n**Video 2 — PeopleBrowsr** (parent company of Kred, demonstrated by Jennifer Herndon):\n- Founded **2007** (early 2007) by Jodee Rich in San Francisco\n- Confirmed by PeopleBrowsr's LinkedIn page (\"Founded in 2007, we have deep experience in analytics, social networks and blockchain\"), ZDNet (\"Established in early 2007, PeopleBrowsr aggregates public social-media posts...\"), iTnews (\"Rich formed PeopleBrowsr in 2007\"), and MrWeb. Kred itself was debuted by the company in **October 2011**.\n- *Note:* Wikipedia's infobox lists \"Launched 2006,\" referring to the web property, but the company's incorporation/founding is consistently reported as 2007.\n\n**Calculation:** 2013 − 2007 = **6 years**\n\n<answer>6 years elapsed between the two founding dates. PeopleBrowsr — the San Francisco company behind Kred, the influence-scoring platform demonstrated in the second video — was founded in early 2007 by Jodee Rich. Shareablee — the New York social media analytics firm founded by Tania Yuki, the CEO interviewed in the first video about Ford's real-time \"dress color\" marketing campaign — was founded in February 2013. That is a gap of approximately 6 years (2013 − 2007 = 6).</answer>",
+      "reasoning": "The answer is 6 years.\n\nLet me summarize the findings.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The answer is 6 years.\n\nLet me summarize the findings.",
+          "format": "unknown",
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Shareablee founded year Tania Yuki company history\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Tania Yuki - Sesimi",
+          "url": "https://www.linkedin.com/in/taniayuki",
+          "snippet": "... Experience. Sesimi. -. Licenses & Certifications. Advanced Social Media Analytics Certfication · Shareablee, Inc · See credential ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Tania Yuki",
+          "url": "https://americanaustralian.org/team/tania-yuki/",
+          "snippet": "Shareablee was founded in February 2013 when Tania saw a new frontier emerging across social media. Shareablee has evolved from 3 people in Tania's living room ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Tania Yuki — Tania Yuki: Founder and CEO, Shareablee",
+          "url": "http://www.howdidshegetthere.com/tania-yuki/tag/Tania+Yuki",
+          "snippet": "Tania Yuki is Founder and CEO of Shareablee, an two-year old start up that provides actionable social media insights for top brands and ...",
+          "date": "Oct 20, 2014"
+        },
+        {
+          "id": 4,
+          "title": "How did she do it? A Q&A with Tania Yuki, founder and ...",
+          "url": "https://medium.com/golden-seeds-blog/how-did-she-do-it-a-q-a-with-tania-yuki-founder-and-ceo-of-shareablee-29fecde67692",
+          "snippet": "I founded Shareablee in 2013. I had been working at comScore in product management, where I led the development of its first online video ...",
+          "date": "Sep 27, 2018"
+        },
+        {
+          "id": 5,
+          "title": "Tania Yuki - Founder & CEO @ Shareablee",
+          "url": "https://www.crunchbase.com/person/tania-yuki-2",
+          "snippet": "Tania Yuki is founder and CEO of Shareablee, featured company Visible World, grew revenue more than 50% year over year.",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Tania Yuki — PinkWisdom",
+          "url": "https://www.pinkwisdom.com/career-experts/tania-yuki",
+          "snippet": "Tania Yuki is the founder and CEO of Shareablee, a leading provider of social content analytics for business. She has spent most of her career in digital ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Shareablee CEO Tania Yuki Named as One of the Top ...",
+          "url": "https://www.prnewswire.com/news-releases/shareablee-ceo-tania-yuki-named-as-one-of-the-top-women-in-digital-300059131.html",
+          "snippet": "Having spent most of her career in digital marketing, Yuki founded Shareablee in 2013 and in the past year has expanded operations to ten countries ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Faces of AWNY: Meet Tania Yuki",
+          "url": "https://australianwomeninnewyork.org/2026/06/28/faces-of-awny-meet-tania-yuki/",
+          "snippet": "From leading digital media ventures and product innovation at ComScore to founding Shareablee—later acquired by ComScore—she has built a career ...",
+          "date": "Jun 28, 2026"
+        },
+        {
+          "id": 9,
+          "title": "Shareablee - 2026 Company Profile & Team",
+          "url": "https://tracxn.com/d/companies/shareablee/__2iT0R6PXXF5ff4xzi0CCfYdsGNeBnJQX8zCcn9W-QDY",
+          "snippet": "Shareablee is an acquired company based in New York City (United States), founded in 2012 by Tania Yuki. It operates as a Platform which ...",
+          "date": "Jun 30, 2026"
+        },
+        {
+          "id": 10,
+          "title": "How businesses use your data | Founder and CEO Tania Yuki",
+          "url": "https://www.youtube.com/watch?v=ScHs4sA0aTQ",
+          "snippet": "Tania Yuki, Founder and CEO of Shareablee explains her journey of starting Shareablee. If you're in a corporate setting where data analytics ...",
+          "date": "5 years ago"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"PeopleBrowsr founded year company history Kred\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "PeopleBrowsr",
+          "url": "https://en.wikipedia.org/wiki/PeopleBrowsr",
+          "snippet": "Kred. edit. In October 2011, the company debuted Kred for measuring influence and outreach on social networks. Experimental projects. edit. PeopleBrowsr is ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "PeopleBrowsr — Superpowers for AI Agents",
+          "url": "https://www.peoplebrowsr.com/",
+          "snippet": "Superpowers for Agents. Two decades of empowering people through gameplay, social streams, scoring, and non-fungible blockchain tokenization — now evolved ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "PeopleBrowsr",
+          "url": "https://www.linkedin.com/company/peoplebrowsr-inc.",
+          "snippet": "Kred). Founded in 2007, we have deep experience in analytics, social networks and blockchain. Since inception, we have earned over $20m in revenue from Fortune ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "PeopleBrowsr - Crunchbase Company Profile & Funding",
+          "url": "https://www.crunchbase.com/organization/peoplebrowsr",
+          "snippet": "PeopleBrowsr is a tech company which provides brands, government and TLD owners with the ability to launch Instant Collaborative Networks.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "PeopleBrowsr's Competitors, Revenue, Number ...",
+          "url": "https://www.owler.com/company/peoplebrowsr",
+          "snippet": "When was PeopleBrowsr founded? PeopleBrowsr was founded in 01/2006. Who is PeopleBrowsr's CEO? PeopleBrowsr's CEO is Jodee Rich ...",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "PeopleBrowsr Rolls Out Social 'Kred' Identifier",
+          "url": "https://www.mrweb.com/drno/news15476.htm",
+          "snippet": "Founded in 2007, PeopleBrowsr's research platform enables users to ... Kred API uses the company's database of 'hundreds of billions of ...",
+          "date": "May 17, 2012"
+        },
+        {
+          "id": 7,
+          "title": "PeopleBrowsr - 2026 Company Profile, Team & Competitors",
+          "url": "https://tracxn.com/d/companies/peoplebrowsr/__LaXzk8NVpRUmmWbp6N86eWap3cOGRn8AJn4M3cE7_Kk",
+          "snippet": "PeopleBrowsr is an unfunded company based in Burlingame (United States), founded in 2007. It operates as a Community marketing solutions ...",
+          "date": "Sep 7, 2026"
+        },
+        {
+          "id": 8,
+          "title": "PeopleBrowsr Information",
+          "url": "https://rocketreach.co/peoplebrowsr-profile_b5c877c7f42e3507",
+          "snippet": "NFT.Kred). Founded in 2007, we have deep experience in analytics, social networks and blockchain. Since inception, we have earned over $20m in revenue ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "PEOPLEBROWSR LIMITED more information",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/08194180/more",
+          "snippet": "PEOPLEBROWSR LIMITED - Free company information from Companies House including registered office address, filing history, accounts, annual return, officers, ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "PeopleBrowsr-Twitter Case Illustrates Risks Of Building A ...",
+          "url": "https://martech.org/peoplebrowsr-case-illustrates-risks-of-building-business-on-third-party-platforms/",
+          "snippet": "PeopleBrowsr, the social analytics platform that derives substantially all its data (including its Kred scoring) from access to Twitter's feed,",
+          "date": "Nov 29, 2012"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Shareablee social media analytics company founded 2011\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Shareablee Named a Top Performer in Social Media ...",
+          "url": "https://www.comscore.com/Insights/Press-Releases/2021/7/Shareablee-Named-a-Top-Performer-in-Social-Media-Analytics-Software-for-Customer-Satisfaction",
+          "snippet": "Launched in 2013, Shareablee empowers brands by providing data that can help them define and drive success on social media by arming them with metrics and ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Comscore Social (formerly Shareablee, Inc.)",
+          "url": "https://www.linkedin.com/company/shareablee-inc",
+          "snippet": "Privately Held. Founded: 2013. Specialties: social media marketing, social media analytics, competitive benchmarking, actionable analytics, social media ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Blog — Shareablee",
+          "url": "https://www.shareablee.com/blog-news",
+          "snippet": "Shareablee Named a Top Performer in Social Media Analytics Software for Customer Satisfaction. Earned, Owned and Social Media Analytics Leaders Partner",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Shareablee, Inc (Acquired by Comscore)",
+          "url": "https://bouncewatch.com/company/shareablee-inc-acquired-by-comscore",
+          "snippet": "Shareablee is the leader in audience-based social media measurement. Founded in 2012, Shareablee, Inc (Acquired by Comscore) was founded in 2013.",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "Shareablee - 2026 Company Profile & Team",
+          "url": "https://tracxn.com/d/companies/shareablee/__2iT0R6PXXF5ff4xzi0CCfYdsGNeBnJQX8zCcn9W-QDY",
+          "snippet": "Shareablee is an acquired company based in New York City (United States), founded in 2012 by Tania Yuki. provides actionable social media ...",
+          "date": "Jun 30, 2026"
+        },
+        {
+          "id": 6,
+          "title": "Comscore Social Details 2026",
+          "url": "https://www.trustradius.com/products/comscore-social/details",
+          "snippet": "Comscore Social (Shareablee) is a social media analytics platform built to boost social ROI through actionable engagement intelligence. Copyright 2013–2026 ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Comscore Announces Acquisition of Leading Social Media ...",
+          "url": "https://www.prnewswire.com/news-releases/comscore-announces-acquisition-of-leading-social-media--technology-provider-shareablee-301447162.html",
+          "snippet": "Shareablee, a Meta for Media Measurement Partner, provides analytics and intelligence to many of the world's largest brands, publishers and ...",
+          "date": "Dec 17, 2021"
+        },
+        {
+          "id": 8,
+          "title": "Shareablee (@shareablee) • Instagram photos and videos",
+          "url": "https://www.instagram.com/shareablee/",
+          "snippet": "Leader in audience-based social media measurement for media publishers, agencies, & brands. We help you measure what matters. Founded by @taniayuki",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "Shareablee PowerRankings",
+          "url": "https://marketplace.microsoft.com/en-us/product/web-apps/shareableinc.shareableepowerrankings?tab=overview",
+          "snippet": "Shareablee's PowerRankings™ provides the first true audience-centric metrics set for researchers, brands, agencies, publishers, and marketers to quantify ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "Shareablee Market Share & Competitors in Social Media ...",
+          "url": "https://www.smarte.pro/technology/shareablee",
+          "snippet": "Shareablee is a social media measurement and audience insights platform that tracks engagement across platforms. It provides data on brand performance, ...",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "name": "web_search",
+      "arguments": "{\"query\": \"PeopleBrowsr Wikipedia founded 2009\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "PeopleBrowsr",
+          "url": "https://en.wikipedia.org/wiki/PeopleBrowsr",
+          "snippet": "PeopleBrowsr is a technology company that provides enterprise, government and Top Level Domain owners with the ability to launch their own blockchain ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "History of Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/History_of_Wikipedia",
+          "snippet": "The three-millionth article on the English Wikipedia, Beate Eriksen, was created on 17 August 2009 at 04:05 UTC. On 27 December 2009, the German ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Article",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia",
+          "snippet": "WikiReader is a dedicated reader device that contains an offline copy of Wikipedia, which was launched by OpenMoko and first released in 2009.",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "25 years ago, Wikipedia started as an ambitious project to ...",
+          "url": "https://www.facebook.com/abcmelbourne/posts/25-years-ago-wikipedia-started-as-an-ambitious-project-to-democratise-the-entire/1495114318955506/",
+          "snippet": "25 years ago, Wikipedia started as an ambitious project to democratise the entirety of human knowledge. Today, citizen volunteers ...",
+          "date": "5 months ago"
+        },
+        {
+          "id": 5,
+          "title": "Larry Sanger",
+          "url": "https://en.wikipedia.org/wiki/Larry_Sanger",
+          "snippet": "Lawrence Mark Sanger (born July 16, 1968) is an American Internet project developer and philosopher who co-founded Wikipedia with Jimmy Wales.",
+          "date": ""
+        },
+        {
+          "id": 6,
+          "title": "Wikipedia: Freedom in community",
+          "url": "https://www.acton.org/pub/commentary/2010/01/05/wikipedia-freedom-community",
+          "snippet": "Ten years ago this month, internet entrepreneur Jimmy Wales hired Larry Sanger to develop an online encyclopedia.",
+          "date": "Jan 5, 2010"
+        },
+        {
+          "id": 7,
+          "title": "Will AI End WIkipedia | Larry Sanger",
+          "url": "https://www.youtube.com/watch?v=80HTH6pnPY4&xstg=CAMSBhUDzO3xHw%3D%3D",
+          "snippet": "Share your videos with friends, family, and the world.",
+          "date": "9 months ago"
+        },
+        {
+          "id": 8,
+          "title": "Wikipedia - 20 Years Of Helping People Around The World ...",
+          "url": "https://www.forbes.com/sites/mikevorhaus/2021/01/14/wikipedia20-years-of-helping-people-around-the-world-find-information/",
+          "snippet": "Wikipedia is celebrating its 20th anniversary. Wikipedia was founded on January 15, 2001. dpa/picture alliance via Getty Images. Before ...",
+          "date": "Jan 14, 2021"
+        },
+        {
+          "id": 9,
+          "title": "PeopleBrowsr — Superpowers for AI Agents",
+          "url": "https://www.peoplebrowsr.com/",
+          "snippet": "Two decades of empowering people through gameplay, social streams, scoring, and non-fungible blockchain tokenization — now evolved to power identity, reputation ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "My Role in Wikipedia (links)",
+          "url": "https://larrysanger.org/role-in-wikipedia/my-role-in-wikipedia-links/",
+          "snippet": "To the best of my knowledge, I was first described in the press as co-founder of Wikipedia back in September 2001 by The New York Times.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://en.wikipedia.org/wiki/PeopleBrowsr\", \"https://americanaustralian.org/team/tania-yuki/\", \"https://www.linkedin.com/company/shareablee-inc\"]\n\n}",
+      "result": {
+        "https://en.wikipedia.org/wiki/PeopleBrowsr": "Title: PeopleBrowsr\n\nURL Source: https://en.wikipedia.org/wiki/PeopleBrowsr\n\nPublished Time: 2010-10-09T02:30:36Z\n\nMarkdown Content:\n[Jump to content]\n\n- [x] Main menu \n\nMain menu\n\nmove to sidebar hide\n\n Navigation \n\n* [Main page]\n* [Contents]\n* [Current events]\n* [Random article]\n* [About Wikipedia]\n* [Contact us]\n\n Contribute \n\n* [Help]\n* [Learn to edit]\n* [Community portal]\n* [Recent changes]\n* [Upload file]\n* [Special pages]\n\n[![Image 1]![Image 2: Wikipedia]![Image 3: The Free Encyclopedia]]\n\n[Search]\n\nSearch\n\n- [x] Appearance \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n- [x] Personal tools \n\n* [Donate]\n* [Create account]\n* [Log in]\n\n[![Image 4: Banner logo] Thousands of Latino trailblazers are missing or half-written on Wikipedia. Help fix the gap, Sep 15 to Oct 15!]\n\n## Contents\n\nmove to sidebar hide\n\n* [(Top)]\n* [1 Company profile]\n\n* [2 Kred]\n\n* [3 Experimental projects]\n\n* [4 SocialOS]\n\n* [5 Top Level Domains]\n\n* [6 Sale of the .Best Top Level Domain]\n\n* [7 Litigation]\n\n* [8 References]\n\n* [9 External links]\n\n- [x] Toggle the table of contents \n\n# PeopleBrowsr\n\n- [x] 1 language \n\n* [Français]\n\n[Edit links]\n\n* [Article]\n* [Talk]\n\n- [x] English \n\n* [Read]\n* [Edit]\n* [View history]\n\n- [x] Tools \n\nTools\n\nmove to sidebar hide\n\n Actions \n\n* [Read]\n* [Edit]\n* [View history]\n\n General \n\n* [What links here]\n* [Related changes]\n* [Upload file]\n* [Permanent link]\n* [Page information]\n* [Cite this page]\n* [Get shortened URL]\n* [Switch to legacy parser]\n* [Edit interlanguage links]\n\n Print/export \n\n* [Download as PDF]\n* [Printable version]\n\n In other projects \n\n* [Wikidata item]\n\nAppearance\n\nmove to sidebar hide\n\nText\n\n* Small  Standard  Large \n\nThis page always uses small font size\n\nWidth\n\n* Standard  Wide \n\nThe content is as wide as possible for your browser window.\n\nColor \n\n* Automatic  Light  Dark \n\nThis page is always in light mode.\n\nFrom Wikipedia, the free encyclopedia\n\nTechnology company\n\nPeopleBrowsr[![Image 5]]\nCompany type[Private]\nWebsite type[Social Networking]\nAvailable in English\nFounded![Image 6][California][San Francisco, California]\nHeadquarters San Francisco\n\n, \n\n![Image 7][United States]\nArea served Worldwide\n[Founder][Jodee Rich]\nKey people Jodee Rich CEO\nEmployees 33[[1]]\nWebsite[peoplebrowsr.com]\nAdvertising No\nRegistration Optional\nLaunched 2006\nCurrent status Active\n\n**PeopleBrowsr** is a technology company that provides enterprise, government and Top Level Domain owners with the ability to launch their own [blockchain] integrated social networks and analyze and engage the members of those networks. An owner of new TLDs itself, PeopleBrowsr is the creator of .CEO, .Best (sold to The Best SAS in July 2018) and .Kred.\n\n## Company profile\n\n[[edit]]\n\nPeopleBrowsr works with enterprise, government and [TLD] owners in multiple industries.[[2]] In December 2008, it launched a deep search dashboard for managing and engaging with the social stream.[[3]] PeopleBrowsr has been receiving, analyzing and indexing the full Twitter firehose since 2008. In combination with other sources, PeopleBrowsr has compiled a trillion conversation datamine which enables it to conduct analytics using Kred Influence Measurement Company has combined its trillion conversation datamine, Kred Influencer Analytics, SocialOS network platform and three [TLDs], to become the leading Social Network provider for organizations around the world.\n\n## Kred\n\n[[edit]]\n\nIn October 2011, the company debuted **Kred** for measuring influence and outreach on social networks.[[4]]\n\n## Experimental projects\n\n[[edit]]\n\nPeopleBrowsr is engaged in research projects including the development of [artificial intelligence] and new social networking platforms.[[5]] PeopleBrowsr CEO Jodee Rich believes that the documenting of history in real time with social networking platforms is creating a wealth of data that can be used to help computers better understand human behavior. In this way, machines can be trained to mine the human data to learn behavior, rather than having to be taught how to think like humans.[[6]]\n\n## SocialOS\n\n[[edit]]\n\nIn June 2013 PeopleBrowsr launched SocialOS which is a set of [APIs] which bridges existing networks and enables new social networks to be rapidly rolled-out.\n\n## Top Level Domains\n\n[[edit]]\n\nPeopleBrowsr owns Top Level Domains .CEO, .Kred, and formerly .Best.[[7]] These domains were released in late 2013 and early 2014 and are powered by the Company's products: SocialOS, Kred and its Trillion Conversation Datamine.\n\n## Sale of the .Best Top Level Domain\n\n[[edit]]\n\nIn June 2018, PeopleBrowsr received approval from [ICANN] (Internet Corporation for Assigned Names and Numbers) to sell its BestTLD Pty Ltd subsidiary to The Best SAS, a Paris-based company led by President, Cyril Fremont, in a strategic deal that would leverage PeopleBrowsr's SocialOS technology.\n\nBestTLD Pty Ltd owns the .Best Top Level Domain. It has distribution agreements with GoDaddy and over 50 other Domain Registrars.[[8]]\n\n## Litigation\n\n[[edit]]\n\nIn November 2012, PeopleBrowsr sued [Twitter] over a proposed shutdown of PeopleBrowser's access to the Twitter firehose, which was set to occur on November 30, 2012.[[9]] After PeopleBrowsr won an injunction to prevent the disconnection of the Twitter firehose, Twitter attempted to move the case into Federal court, which may have invalidated the injunction.[[10]][[11]] In March 2013 PeopleBrowsr won a battle to keep the case within the California court system, thereby keeping the injunction in place.[[12]] Twitter and PeopleBrowsr reached an out-of-court settlement in April 2013.[[13]]\n\n## References\n\n[[edit]]\n\n1. [↑][\"PeopleBrowsr Inc.: Company Profile\"]. _LinkedIn_. Retrieved 21 October 2011.\n2. [↑]Lassica, J.D. (7 April 2010). [\"PeopleBrowsr: Find and act on Twitter conversations\"]. _SocialMedia.biz_. Retrieved 2 November 2011.\n3. [↑][\"PeopleBrowsr goes alpha - Digital Media\"]. Archived from [the original] on 2010-10-05. Retrieved 2010-10-09. PeopleBrowsr goes alpha, Natalie Apostolou, 12 December 2008, Digital Media\n4. [↑][] TechCrunch, \"You Might Have Klout, But What's Your Kred?\"\n5. [↑][] Mitchell Bingemann, May 26, 2010, The Australian\n6. [↑]Mark Alvarez, [Building a Collective Consciousness in the Cloud], June 29, 2010, L'Atellier.com\n7. [↑]Jemima Whyte, [], October 7, 2013, Australian Financial Review\n8. [↑][\"The Best SAS acquires .Best TLD in Strategic Deal\"].\n9. [↑][PeopleBrowsr sues Twitter over Firehose access, gets injunction, claims it is violating openness]\n10. [↑][PeopleBrowsr vs. Twitter Legal Battle Returns to San Francisco Court]\n11. [↑][PeopleBrowsr Claims “Twitter Changed Position On Eve Of Discovery” Over Federal Jurisdiction Request]\n12. [↑][PeopleBrowsr vs. Twitter Legal Battle Returns to San Francisco Court]\n13. [↑][\"Twitter Settles with PeopleBrowsr, Gives the Company Firehose Access Until the End of the Year\"]. 25 April 2013.\n\n## External links\n\n[[edit]]\n\n* [PeopleBrowsr]\n\nRetrieved from \"\"\n\n[Categories]: \n* [Social media companies]\n* [Web analytics]\n* [Internet properties established in 2006]\n\nHidden categories: \n* [Articles with short description]\n* [Short description matches Wikidata]\n\n*  This page was last edited on 22 September 2026, at 04:14(UTC).\n* Page was rendered with [Parsoid].\n* Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License]; additional terms may apply. By using this site, you agree to the [Terms of Use] and [Privacy Policy]. Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.], a non-profit organization.\n\n* [Privacy policy]\n* [About Wikipedia]\n* [Disclaimers]\n* [Contact Wikipedia]\n* [Legal & safety contacts]\n* [Code of Conduct]\n* [Developers]\n* [Statistics]\n* [Cookie statement]\n* [Mobile view]\n* [Edit preview settings]\n\n* [![Image 9: Wikimedia Foundation]]\n* [![Image 10: Powered by MediaWiki]]\n\nSearch\n\nSearch\n\n- [x] Toggle the table of contents \n\nPeopleBrowsr\n\n[][][][][][][]\n\n1 language[Add topic]\n\n[]\n",
+        "https://americanaustralian.org/team/tania-yuki/": "Title: Tania Yuki - American Australian Association\n\nURL Source: https://americanaustralian.org/team/tania-yuki/\n\nMarkdown Content:\n×Search\n\n[![Image 1]]\n\n* [About]\n  * [Overview]\n  * [Governance]\n  * [Team]\n  * [Subscribe]\n\n* [Events]\n  * [All Upcoming Events]\n  * [Defence Industry Dialogue]\n  * [New York Benefit Dinner]\n  * [G’Day USA Arts Gala]\n  * [AUSTRALIA HOUSE @SXSW]\n  * [ANZAC Day & Veterans’ Lunch]\n  * [BIO San Diego]\n  * [Sydney Gala]\n  * [Webinar Replays]\n\n* [Scholarships]\n  * [Graduate Education Scholarships]\n  * [Veterans’ Scholarships]\n  * [Arts Scholarships & Grants]\n  * [FAQs]\n  * [Alumni]\n    * [Alumni Network]\n    * [Past Scholars]\n\n* [Donate]\n* [Search]\n* [Login]\n* [Call Us](tel:+12123386860 \"Call Us\")\n* [Email Us](mailto:info@americanaustralian.org \"Email Us\")\n\n**Tania Yuki** is Founder and former CEO of Shareablee. Tania began her career as a media and internet attorney, specializing in digital rights management, IP and film financing. After moving to the US, Tania went on to run online video content as Head of Acquisitions and Branding and led product management for comScore’s Video Metrix, the world’s leading online video ratings service.\n\nShareablee was founded in February 2013 when Tania saw a new frontier emerging across social media. She was convinced that social data would fundamentally change how companies communicate and do business and dedicated herself to understanding what makes social content succeed. Since then Shareablee has evolved from 3 people in Tania’s living room to a dynamic company of 60+ employees that boasts the world’s largest system of brand performance data across social platforms and industry-standard metrics that help clients navigate and win on social media. Shareablee collects & transforms the social data into actionable business intelligence.\n\n## For latest news and events\n\n* [Facebook]\n* [LinkedIn]\n* [Instagram]\n\n**Headquarters:**\n\n600 Third Ave Fl 34  \n New York, NY 10016  \n P: +1 212 338 6860  \n E: [info@americanaustralian.org](mailto:info@americanaustralian.org)\n\n**Sydney Office Address:**\n\nUnited States Studies Centre  \n Institute Building (H03)  \n The University of Sydney NSW 2007  \n P: +61 2 7249 3040\n\n### Education & Exchange\n\n* [Scholarships]\n* [Exchange Visitor Program | J1 Visa]\n* [Alumni Network]\n\n### Links\n\n* [Photo Gallery]\n* [Event Space]\n\n### Affiliates\n\n* [Australian Women in New York]\n* [AFNGA]\n* [United States Studies Centre]\n* [The Perth USAsia Centre]\n\nThe American Australian Association is a registered non–profit organization as described in Section 501(c)(3) of the Internal Revenue Code - EIN 13-6151807.\n\nWebsite by [Net Ninjas]\n\nWe use cookies to personalize and enhance your experience on our site. Visit our [Privacy Policy] for more information on our data collection practices. By clicking Accept, you agree to our use of cookies for the purposes listed in our Privacy Policy and Cookie Settings. Please note that “Necessary Cookies” will be set, regardless of your consent.[Cookie settings][ACCEPT]\n\nPrivacy & Cookies Policy\n\nClose\n\n#### Privacy Policy\n\nLast updated December 01, 2019  Thank you for choosing to be part of our community at American Australian Association, Inc. (“Company”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If y...\n\n[]\n\n[Necessary]\n\n- [x] Necessary \n\nAlways Enabled\n\n Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information. \n\n[Non-necessary]\n\n- [x] Non-necessary \n\n Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website. \n\n[SAVE & ACCEPT]\n\n* [About▼]\n  * [Overview]\n  * [Governance]\n  * [Team]\n  * [Subscribe]\n\n* [Events▼]\n  * [All Upcoming Events]\n  * [Defence Industry Dialogue]\n  * [New York Benefit Dinner]\n  * [G’Day USA Arts Gala]\n  * [AUSTRALIA HOUSE @SXSW]\n  * [ANZAC Day & Veterans’ Lunch]\n  * [BIO San Diego]\n  * [Sydney Gala]\n  * [Webinar Replays]\n\n* [Scholarships▼]\n  * [Graduate Education Scholarships]\n  * [Veterans’ Scholarships]\n  * [Arts Scholarships & Grants]\n  * [FAQs]\n  * [Alumni▼]\n    * [Alumni Network]\n    * [Past Scholars]\n\n* [Donate]\n* [Search]\n* [Login]\n* [Call Us](tel:+12123386860)\n* [Email Us](mailto:info@americanaustralian.org)\n",
+        "https://www.linkedin.com/company/shareablee-inc": "Title: Comscore Social (formerly Shareablee, Inc.) | LinkedIn\n\nURL Source: https://www.linkedin.com/company/shareablee-inc\n\nMarkdown Content:\n[Skip to main content][LinkedIn]\n* [Top Content]\n* [People]\n* [Learning]\n* [Jobs]\n* [Games]\n\n[Sign in][Join now][![Image 1]]\n\n![Image 2: Comscore Social (formerly Shareablee, Inc.)’s cover photo]\n\n![Image 3: Comscore Social (formerly Shareablee, Inc.)]\n\n# Comscore Social (formerly Shareablee, Inc.)\n\n## Market Research\n\n### New York, NY  6,404 followers\n\n#### Acquired by Comscore, a leader in audience-based social media measurement for media publishers, agencies and brands.\n\n[Follow]\n\n* [![Image 4]![Image 5]![Image 6] View all 9 employees]\n\n* [Report this company]\n\n## About us\n\nNow a part of Comscore (NASDAQ: SCOR) Shareablee was the first and only industry-level measurement solution for media companies and brands wanting to understand the impact and effectiveness of their cross-platform social media campaigns. The platform is available globally, with clients in 15 countries worldwide. Shareablee captures real-time interactions of more than +850M consumers against its global dictionary of brands, publishers, TV shows, influencers, celebrities. With a roster of platform clients consisting of many industry leading media companies and brands, including the NBA, WWE Warner Bros, P&G, Hulu, NBC, AOL and Luxottica. The platform also includes subscribers from leading advertising agencies represented by Publicis, WPP, Maxus and Interpublic Group. Shareablee was recognized with many awards including being named a Unilever Foundry Award winner, and CEO and Founder Tania Yuki was awarded the L’Oreal Founders Award for Innovation in Technology.\n\n Website \nExternal link for Comscore Social (formerly Shareablee, Inc.)\n\n Industry  Market Research \n\n Company size  51-200 employees \n\n Headquarters  New York, NY \n\n Type  Privately Held \n\n Founded  2013 \n\n Specialties  social media marketing, social media analytics, competitive benchmarking, actionable analytics, social media measurement, social media data, social media, benchmarking, and social media rankings \n\n## Locations\n\n*  Primary New York, NY 10038, US [Get directions]\n\n## Employees at Comscore Social (formerly Shareablee, Inc.)\n\n* [![Image 7: Click here to view Karol Sowiński’s profile]### Karol Sowiński]\n* [![Image 8: Click here to view Sid Arthur’s profile]### Sid Arthur]\n* [![Image 9: Click here to view Artur Kozera’s profile]### Artur Kozera]\n* [![Image 10: Click here to view Michał Modzelewski’s profile]### Michał Modzelewski]\n\n[See all employees]\n\n## Affiliated pages\n\n* [![Image 11]### Shareablee Insights Archive]\n\n## Similar pages\n\n* [![Image 12]### Comscore, Inc. Software Development Reston, VA]\n* [![Image 13]### Nielsen Technology, Information and Media New York, NY]\n* [![Image 14]### Kantar Market Research London, England]\n* [![Image 15]### Ipsos Market Research]\n* [![Image 16]### VideoAmp Advertising Services Los Angeles, California]\n* [![Image 17]### Correct Context IT Services and IT Consulting Wrocław , dolnośląskie]\n* [![Image 18]### Proximic by Comscore Advertising Services New York, NY]\n* [![Image 19]### GfK - An NIQ Company Information Services Nuremberg, Bavaria]\n* [![Image 20]### Circana Market Research Chicago, Illinois]\n* [![Image 21]### Albert: AI Marketing (Acq. by Zoomd) Advertising Services Herzliya Pituah, Israel]\n\n Show more similar pages  Show fewer similar pages \n\n## Browse jobs\n\n* ### [Sales Director jobs 83,949 open jobs]\n* ### [Marketing Account Executive jobs 34,745 open jobs]\n* ### [Marketing Manager jobs 106,879 open jobs]\n* ### [Account Director jobs 75,061 open jobs]\n* ### [Partnerships Manager jobs 61,442 open jobs]\n* ### [Community Manager jobs 115,952 open jobs]\n* ### [Vice President jobs 235,270 open jobs]\n* ### [Salesperson jobs 172,678 open jobs]\n* ### [Account Executive jobs 71,457 open jobs]\n* ### [Sales Manager jobs 310,050 open jobs]\n* ### [Account Manager jobs 121,519 open jobs]\n* ### [Director jobs 1,220,357 open jobs]\n* ### [Manager jobs 1,880,925 open jobs]\n* ### [Market Research Intern jobs 11,967 open jobs]\n* ### [Market Researcher jobs 1,673 open jobs]\n* ### [Senior Data Analyst jobs 35,445 open jobs]\n* ### [Market Research Analyst jobs 35,163 open jobs]\n* ### [Research Analyst jobs 62,874 open jobs]\n* ### [Marketing Executive jobs 66,900 open jobs]\n* ### [Assistant Manager jobs 360,456 open jobs]\n\n Show more jobs like this  Show fewer jobs like this \n\n More searches  More searches \n* \n  * [Analyst jobs]\n  * [Business Consultant jobs]\n  * [Project Manager jobs]\n\n  * [Account Executive jobs]\n  * [Recruiter jobs]\n  * [Executive jobs]\n\n  * [Manager jobs]\n  * [Business Development Specialist jobs]\n\n* LinkedIn© 2026\n* [About]\n* [Accessibility]\n* [User Agreement]\n* [Privacy Policy]\n* [Your California Privacy Choices]\n* [Cookie Policy]\n* [Copyright Policy]\n* [Brand Policy]\n* [Guest Controls]\n* [Community Guidelines]\n* \n  *  العربية (Arabic) \n  *  বাংলা (Bangla) \n  *  Čeština (Czech) \n  *  Dansk (Danish) \n  *  Deutsch (German) \n  *  Ελληνικά (Greek) \n  * **English (English)**\n  *  Español (Spanish) \n  *  فارسی (Persian) \n  *  Suomi (Finnish) \n  *  Français (French) \n  *  हिंदी (Hindi) \n  *  Magyar (Hungarian) \n  *  Bahasa Indonesia (Indonesian) \n  *  Italiano (Italian) \n  *  עברית (Hebrew) \n  *  日本語 (Japanese) \n  *  한국어 (Korean) \n  *  मराठी (Marathi) \n  *  Bahasa Malaysia (Malay) \n  *  Nederlands (Dutch) \n  *  Norsk (Norwegian) \n  *  ਪੰਜਾਬੀ (Punjabi) \n  *  Polski (Polish) \n  *  Português (Portuguese) \n  *  Română (Romanian) \n  *  Русский (Russian) \n  *  Svenska (Swedish) \n  *  తెలుగు (Telugu) \n  *  ภาษาไทย (Thai) \n  *  Tagalog (Tagalog) \n  *  Türkçe (Turkish) \n  *  Українська (Ukrainian) \n  *  Tiếng Việt (Vietnamese) \n  *  简体中文 (Chinese (Simplified)) \n  *  正體中文 (Chinese (Traditional)) \n\n Language \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\n\n![Image 22]\n## Sign in to see who you already know at Comscore Social (formerly Shareablee, Inc.)\n\n Email or phone  \n\n Password  \n\nShow\n\n[Forgot password?] Sign in \n\nSign in with Email\n\nor\n\nNew to LinkedIn? [Join now]\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\n"
+      }
+    },
+    {
+      "turn": 2,
+      "name": "web_search",
+      "arguments": "{\"query\": \"\\\"PeopleBrowsr\\\" founded 2007 Jodee Rich history company\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Jodee Rich",
+          "url": "https://en.wikipedia.org/wiki/Jodee_Rich",
+          "snippet": "He is now the CEO and founder of social analytics and influence measurement provider PeopleBrowsr and the creator of new TLDs dotCEO, dotBest and dotKred. Jodee ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Jodee Rich - CEO PeopleBrowsr, NFT.Kred and ...",
+          "url": "https://www.linkedin.com/in/jodeerich",
+          "snippet": "Jodee Rich. CEO PeopleBrowsr, NFT.Kred and NFT.NYC. Two decades empowering people with gameplay, social streams, scoring, and tokenization — now ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Jodee Rich bound for social return",
+          "url": "https://www.zdnet.com/article/jodee-rich-bound-for-social-return/",
+          "snippet": "Established in early 2007, PeopleBrowsr aggregates public social-media posts from Twitter, Facebook, YouTube, WordPress and other sites into ...",
+          "date": "Sep 13, 2010"
+        },
+        {
+          "id": 4,
+          "title": "New Twitter tool, ReSearch.ly, lets you conduct searches ...",
+          "url": "https://venturebeat.com/ai/peoplebrowsr-research-ly-launch",
+          "snippet": "But Jodee Rich, chief executive of a company called PeopleBrowsr, argues that his new monitoring application, ReSearch.ly, is tailored to ...",
+          "date": "Dec 2, 2010"
+        },
+        {
+          "id": 5,
+          "title": "Twitter settles with PeopleBrowsr over data access",
+          "url": "https://www.itnews.com.au/news/twitter-settles-with-peoplebrowsr-over-data-access-341211",
+          "snippet": "Rich formed PeopleBrowsr in 2007. He was formerly the head of Australian telco One Tel until its collapse in 2005. Add iTnews as your ...",
+          "date": "Apr 26, 2013"
+        },
+        {
+          "id": 6,
+          "title": "Jodee Rich (@WingDude) / X",
+          "url": "https://x.com/WingDude",
+          "snippet": "NYC producer and co-founder. Husband, father, kitefoiler, pilot, battle seasoned, skier, techy. New York, USA. PeopleBrowsr.com · Joined March 2007 · 2,056 ...",
+          "date": ""
+        },
+        {
+          "id": 7,
+          "title": "Jodee Rich - Alchetron, The Free Social Encyclopedia",
+          "url": "https://alchetron.com/Jodee-Rich",
+          "snippet": "In 2007, Rich founded PeopleBrowsr. In 2011, PeopleBrowsr launched Kred Influence Measurement. dotCEO. On 27 March 2013, Rich launched the TLD ...",
+          "date": "Apr 25, 2026"
+        },
+        {
+          "id": 8,
+          "title": "Jodee Rich (@WingDude) — Twitter Score 37.5/1000",
+          "url": "https://twitterscore.io/twitter/WingDude/",
+          "snippet": "Jodee Rich founded PeopleBrowsr, a social data analytics company, and continues to lead it as CEO. He also serves as CEO of NFT.Kred, a platform focused on ...",
+          "date": ""
+        },
+        {
+          "id": 9,
+          "title": "PeopleBrowsr Launches Kred, Measurable Influence and Outreach",
+          "url": "https://www.firmenpresse.de/pressrelease71177/peoplebrowsr-launches-kred-measurable-influence-and-outreach.html",
+          "snippet": "\"Kred is built on the fundamental belief that we are all influential somewhere,\" said PeopleBrowsr CEO Jodee Rich. \"Kred asserts the importance of trust and ...",
+          "date": ""
+        },
+        {
+          "id": 10,
+          "title": "The Eternal Mystic Fire — a meaningful milestone in my NFT ...",
+          "url": "https://www.instagram.com/p/DbvOF75HQbD/",
+          "snippet": "... Jodee Rich, Co-Founder of NFT.NYC and CEO of Kred / PeopleBrowsr. The artwork explores the idea of inner fire, transformation, resilience ...",
+          "date": "2 months ago"
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "name": "page_browser",
+      "arguments": "{\"urls\": \n[\"https://www.linkedin.com/company/peoplebrowsr-inc.\", \"https://www.zdnet.com/article/jodee-rich-bound-for-social-return/\", \"https://www.crunchbase.com/organization/peoplebrowsr\"]\n\n}",
+      "result": {
+        "https://www.linkedin.com/company/peoplebrowsr-inc.": "Title: PeopleBrowsr | LinkedIn\n\nURL Source: https://www.linkedin.com/company/peoplebrowsr-inc.\n\nMarkdown Content:\n[Skip to main content][LinkedIn]\n* [Top Content]\n* [People]\n* [Learning]\n* [Jobs]\n* [Games]\n\n[Sign in][Join now][![Image 1]]\n\n![Image 2: PeopleBrowsr’s cover photo]\n\n![Image 3: PeopleBrowsr]\n\n# PeopleBrowsr\n\n## Technology, Information and Internet\n\n### San Francisco, CA  3,103 followers\n\n#### We have integrated our core SocialOS technology with the blockchain to create the leading Whitelabel NFT Hub solution\n\n[Follow]\n\n* [![Image 4]![Image 5] Discover all 13 employees]\n\n* [Report this company]\n\n## About us\n\nAt PeopleBrowsr, we are on a mission to change the way influencers, creators and brands connect with their customers/fans. We have integrated our core SocialOS technology with the blockchain to create the leading Whitelabel NFT Hub solution (www.NFT.Kred). Founded in 2007, we have deep experience in analytics, social networks and blockchain. Since inception, we have earned over $20m in revenue from Fortune 500 companies and Governments around the world. We run the largest NFT conference in the world in NYC every year (www.NFT.NYC).\n\n Website \nExternal link for PeopleBrowsr\n\n Industry  Technology, Information and Internet \n\n Company size  11-50 employees \n\n Headquarters  San Francisco, CA \n\n Type  Privately Held \n\n Founded  2007 \n\n Specialties  Top-Level Domains, Social Media, Real-Time Web, Social Search, and Marketing \n\n## Locations\n\n*  Primary 474 Bryant Street\n\nSan Francisco, CA 94107, US [Get directions]\n* Level 3 No 5 Lime Street\n\nKing St Wharf\n\nSydney, New South Wales 2000, AU [Get directions]\n\n## Employees at PeopleBrowsr\n\n* [![Image 6: Click here to view Jodee Rich’s profile]### Jodee Rich]\n* [![Image 7: Click here to view PB TestAc’s profile]### PB TestAc]\n\n[See all employees]\n\n## Similar pages\n\n* [![Image 8]### NFT.NYC Technology, Information and Internet New York, NY]\n* [![Image 9]### NFT.Kred IT Services and IT Consulting San Francisco, California]\n* [![Image 10]### Kred IT Services and IT Consulting San Francisco, California]\n* [![Image 11]### Perfectlancer Internet Publishing Los Angeles, California]\n* [![Image 12]### CryptoLions Information Technology & Services Lviv, Lviv]\n* [![Image 13]### Onsite Helper IT Services and IT Consulting Melbourne, Victoria]\n* [![Image 14]### Petal Technology, Information and Internet Cambridge, MA]\n* [![Image 15]### PiKNiK Software Development San Diego, CA]\n* [![Image 16]### Qosmic Retail Apparel and Fashion]\n* [![Image 17]### Penny Arcade, Inc. Online Audio and Video Media Redmond, WA]\n\n Show more similar pages  Show fewer similar pages \n\n## Browse jobs\n\n* ### [Recruiter jobs 243,016 open jobs]\n* ### [Administrator jobs 469,404 open jobs]\n* ### [Developer jobs 258,935 open jobs]\n* ### [Engineer jobs 555,845 open jobs]\n* ### [Translator jobs 16,933 open jobs]\n\n More searches  More searches \n* \n  * [President jobs]\n  * [Recruiter jobs]\n\n  * [Business Development Manager jobs]\n  * [Business Manager jobs]\n\n* LinkedIn© 2026\n* [About]\n* [Accessibility]\n* [User Agreement]\n* [Privacy Policy]\n* [Your California Privacy Choices]\n* [Cookie Policy]\n* [Copyright Policy]\n* [Brand Policy]\n* [Guest Controls]\n* [Community Guidelines]\n* \n  *  العربية (Arabic) \n  *  বাংলা (Bangla) \n  *  Čeština (Czech) \n  *  Dansk (Danish) \n  *  Deutsch (German) \n  *  Ελληνικά (Greek) \n  * **English (English)**\n  *  Español (Spanish) \n  *  فارسی (Persian) \n  *  Suomi (Finnish) \n  *  Français (French) \n  *  हिंदी (Hindi) \n  *  Magyar (Hungarian) \n  *  Bahasa Indonesia (Indonesian) \n  *  Italiano (Italian) \n  *  עברית (Hebrew) \n  *  日本語 (Japanese) \n  *  한국어 (Korean) \n  *  मराठी (Marathi) \n  *  Bahasa Malaysia (Malay) \n  *  Nederlands (Dutch) \n  *  Norsk (Norwegian) \n  *  ਪੰਜਾਬੀ (Punjabi) \n  *  Polski (Polish) \n  *  Português (Portuguese) \n  *  Română (Romanian) \n  *  Русский (Russian) \n  *  Svenska (Swedish) \n  *  తెలుగు (Telugu) \n  *  ภาษาไทย (Thai) \n  *  Tagalog (Tagalog) \n  *  Türkçe (Turkish) \n  *  Українська (Ukrainian) \n  *  Tiếng Việt (Vietnamese) \n  *  简体中文 (Chinese (Simplified)) \n  *  正體中文 (Chinese (Traditional)) \n\n Language \n\nAgree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\n\n![Image 18]\n## Sign in to see who you already know at PeopleBrowsr\n\n Email or phone  \n\n Password  \n\nShow\n\n[Forgot password?] Sign in \n\nSign in with Email\n\nor\n\nNew to LinkedIn? [Join now]\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement], [Privacy Policy], and [Cookie Policy].\n",
+        "https://www.zdnet.com/article/jodee-rich-bound-for-social-return/": "Title: Jodee Rich bound for social return\n\nURL Source: https://www.zdnet.com/article/jodee-rich-bound-for-social-return/\n\nPublished Time: 2010-09-13T01:52:01-04:00\n\nMarkdown Content:\nX\n\n[Skip to content]- [x] \n\n[Tomorrow belongs to those who embrace it today]\n\n[Add as a preferred source on Google]\n\n Join / Log In  Log Out \n\n Open  Close  \n\n[Tomorrow belongs to those who embrace it today]\n\n* [Latest]\n* [Tech]\n* [Best Products]\n* [Business]\n* [Comparisons]\n* [Innovation]\n* [How To]\n* [Services & Software]\n* [Deals]\n* [Security]\n* [Reviews]\n\nSearch \n\n Search  Close \n\n/ trending today\n\nOur gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.\n\n[Explore]\n\n* [Latest]\n* - [x] Tech \n  * [Laptops]\n  * [TVs]\n  * [Smartphones]\n  * [Tablets]\n  * [Gaming]\n  * [Headphones]\n  * [Speakers]\n  * [Mobile Accessories]\n  * [Smart Watches]\n  * [Smart Home]\n  * [Computing]\n  * [Home & Office]\n  * [Robot vacuums]\n  * [Kitchen & Household]\n\n* - [x] Best Lists \n  * [Best blood pressure watches]\n  * [Best smart rings]\n  * [best AI chatbots]\n  * [Best iPhone]\n  * [Best Samsung phone]\n  * [Best Android phone]\n  * [Best smartwatch]\n  * [Best phone]\n  * [Best tablet]\n  * [Best power bank]\n\n* - [x] Business \n  * [Amazon]\n  * [Apple]\n  * [Google]\n  * [Developer]\n  * [E-Commerce]\n  * [Edge Computing]\n  * [Professional Development]\n  * [Small Business]\n  * [Microsoft]\n  * [Windows]\n\n* [Comparisons]\n* - [x] Innovation \n  * [Artificial Intelligence]\n  * [Smart Glasses]\n  * [AR + VR]\n  * [Cloud]\n  * [Digital Transformation]\n  * [Energy]\n  * [Sustainability]\n  * [Transportation]\n  * [Work Life]\n  * [Robotics]\n\n* [How To]\n* - [x] Services & Software \n  * [Enterprise Software]\n  * [Mac OS]\n  * [Linux]\n  * [Windows 10]\n  * [Windows 11]\n  * [Operating Systems]\n\n* [Deals]\n* - [x] Security \n  * [VPN]\n  * [Password Manager]\n  * [Cyber Threats]\n  * [Ransomware]\n\n* [Reviews]\n\n[Add as a preferred source on Google]\n\n![Image 2: peoplebrowsr1.jpg]\n\n[Business]>[Social Media]\n\n# Jodee Rich bound for social return\n\nControversial Australian entrepreneur, Jodee Rich, is set to return to the Aussie business scene, creating an Australian portal for his social-media venture PeopleBrowsr.\n\n![Image 3]\n\n[Luke Hopewell]\n\n A fresh recruit onto the tech journalism battlefield, Luke Hopewell is eager to see some action.… [Read full bio]\n\n#### Luke Hopewell\n\n[Read full bio]\n\nSeptember 13, 2010, 1:52 am ET\n\n 1 min read \n\n[][][][]\n\n**Controversial Australian entrepreneur, Jodee Rich, is set to return to the Aussie business scene, creating an Australian portal for his social-media venture [PeopleBrowsr].**\n\n**The PeopleBrowsr homepage**_(Screenshot by Luke Hopewell/ZDNet Australia)_\n\nEstablished in early 2007, PeopleBrowsr aggregates public social-media posts from [Twitter], [Facebook], [YouTube], WordPress and other sites into mineable data to track and on-sell the trends and information to other businesses.\n\nMore from ZDNET\n\nRich told [_The Australian_] that an Australian portal for the social-media data mine PeopleBrowsr would be arriving in Australia “shortly”.\n\nAt its inception, PeopleBrowsr built itself a stable of public posts from Flickr, YouTube and Craigslist, before launching an application programming interface bridge into Twitter and Facebook in 2008.\n\nSo far, PeopleBrowsr has aggregated the last three years of “public online conversations”, spanning 20 terabytes of storage space.\n\nThe goal of PeopleBrowsr is to monitor social-media trends for brands, events and individuals. PeopleBrowsr’s clients so far include Kodak, Disney, Sony, SAP, Bacardi, Comcast and Universal Music in the US.\n\nThe PeopleBrowsr website believes that, over the next 12 months, Twitter’s market of posts will grow from its current 15 billion collective tweets by a hundredfold.\n\nRich’s entrepreneurial journey has not been without incident, after the multimillion-dollar collapse of Imagineering and, most recently, Australian telco [One.Tel].\n\nShow Comments\n\n Log In to Comment \n\n*  Log Out \n\n[Community Guidelines]\n\nPlease accept cookies to view the comments powered by Disqus.\n\n![Image 4: Luke Hopewell]\n\nLuke Hopewell\n\nA fresh recruit onto the tech journalism battlefield, Luke Hopewell is eager to see some action. After a tour of duty in the belly of the Telstra beast, he is keen to report big stories on the enterprise beat. Drawing on past experience in radio, print and magazine, he plans to ask all the tough questions you want answered.[See full bio]\n\n### The Latest from Luke\n\n* [Toyota learns BI from kitchen renovation]\n* [Qantas promotes tech head to lead Jetstar]\n* [Spreets co-founders to exit company]\n\n## / latest\n\n[![Image 5]]\n\n### [Best October Prime Day deals under $25: Last chance to save on Anker, Govee and more]\n\n[![Image 6]]\n\n### [Best Buy has a ton of Nintendo Switch consoles and games on sale after Prime Day]\n\n[![Image 7]]\n\n### [Last chance October Prime Day phone deals: Discounts from Samsung, Google, and more]\n\n[![Image 8: A Samsung Odyssey G55 monitor on a blue and green background]]\n\n### [Still live – Best October Prime Day 2026 monitor deals from Samsung, LG, and more]\n\n[]\n\n[][][][][][]\n\n[US][Japan][Korea][France]\n\n* [about ZDNET]\n* [meet the team]\n* [sitemap]\n* [topics]\n* [newsletters]\n* [accessibility]\n* [licensing]\n\n### BEST PRODUCTS\n\n* [Best blood pressure watch]\n* [Best smart ring]\n* [Best AI chatbot]\n* [Best iPhone]\n* [Best Samsung phone]\n* [Best Android phone]\n* [Best smartwatch]\n* [Best phone]\n* [Best tablet]\n* [Best power bank]\n\n### COMPARISONS\n\n* [Oura Ring 5 vs Oura Ring 4]\n* [M5 MacBook Pro vs M1 MacBook Pro]\n* [Roku vs Fire Stick]\n* [M3 MacBook Air vs M2 MacBook Air]\n* [LG vs Samsung TV]\n* [iPhone 16 Pro vs iPhone 13 Pro]\n* [Samsung Galaxy vs Google Pixel]\n* [Samsung Galaxy S26 vs S24]\n* [ChatGPT Plus vs Gemini Pro]\n* [Samsung Galaxy S26 Ultra vs iPhone 17 Pro Max]\n* [ChatGPT vs Claude]\n* [iPhone 17 Pro vs iPhone 14 Pro]\n\n### BUSINESS\n\n* [Best password manager]\n* [Best AI detector]\n* [Best free AI image generator]\n* [Best antivirus software]\n* [Best small business accounting software]\n* [Best payroll software]\n* [Best web hosting]\n* [Best personal finance software]\n* [Best email marketing software]\n* [Best budgeting software]\n* [Best free web hosting]\n\n### REVIEWS\n\n* [iPhone 17 review]\n* [Oura Ring 5 review]\n* [Samsung Galaxy S25 Ultra review]\n* [Amazon Echo Studio review]\n* [Google Pixel Buds Pro 2 review]\n* [MacBook Air M5 review]\n* [Samsung S95F OLED review]\n* [Samsung Galaxy S26 Ultra review]\n* [iPad Pro M5 (2026) review]\n* [AirPods Max 2 review]\n\n### HOW TO\n\n* [How to clear Android phone cache]\n* [How to use a MoCA adapter]\n* [How to clear TV cache]\n* [How to upgrade incompatible PC to Windows 11]\n* [How to disable ACR on TV]\n* [How to turn on private DNS on Android]\n* [How to clear iPhone cache]\n* [How to clear Roku TV cache]\n* [How to clear Windows 11 cache]\n* [How to turn off motion smoothing]\n\n### DEALS\n\n* [SanDisk SSD Deal]\n* [Samsung M9 Monitor Deal]\n* [LG B5 OLED TV Deal]\n* [Fitbit Air Deal]\n* [Motorola Moto G Deal]\n* [Samsung Galaxy Watch 8 Deal]\n* [Samsung Galaxy s26 Deal]\n* [Apple Watch Series 11 Deal]\n* [Incogni Deal]\n* [Microsoft Surface Pro Deal]\n\n### POPULAR BRANDS\n\n* [Amazon]\n* [Apple]\n* [Microsoft]\n* [Windows]\n* [Google]\n* [Linux]\n* [Android]\n* [Samsung]\n* [Dell]\n* [Oracle]\n* [Lenovo]\n* [HP Inc.]\n\n### EVENTS\n\n* [Amazon Prime Day]\n* [CES]\n* [Lab Awards]\n* [Mobile World Congress]\n* [Safety Net]\n* [Samsung Unpacked]\n* [Shopping Holiday]\n\n[]\n\n[]\n\n[]\n\n[]\n\n[]\n\n[]\n\n[]\n\n[]\n\n[]\n\n* [Privacy Policy]\n* [Advertise]\n* [Terms of Use]\n* [![Image 9]Withdraw Consent / Manage Privacy Preferences]\n\n© 2026 ZDNET, a Ziff Davis company. All rights reserved.\n\n![Image 10]![Image 11: Transparent audience pixel]![Image 12: Transparent audience pixel]\n",
+        "https://www.crunchbase.com/organization/peoplebrowsr": "Title: Just a moment...\n\nURL Source: https://www.crunchbase.com/organization/peoplebrowsr\n\nWarning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.\n\nMarkdown Content:\nWe must verify your session before you can proceed\n\nVerification successful. Waiting for www.crunchbase.com to respond\n\nNeed help? [Contact our support team](mailto:support@crunchbase.com).\n\nRay ID: `a475b2a1c97c9bb9`\n"
+      }
+    },
+    {
+      "turn": 3,
+      "name": "web_search",
+      "arguments": "{\"query\": \"Shareablee \\\"founded in 2013\\\" OR \\\"launched in 2013\\\" Tania Yuki social media analytics startup\"}",
+      "result": [
+        {
+          "id": 1,
+          "title": "Comscore to Acquire Shareablee",
+          "url": "https://customerland.net/comscore-to-acquire-shareablee/",
+          "snippet": "Founded in 2013 by data scientist/entrepreneur Tania Yuki, Shareablee today counts many of the world's top brands as customers for its Data Explorer product ...",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "title": "Tania Yuki - Executive Bio, Work History, and Contacts - Equilar ...",
+          "url": "https://people.equilar.com/bio/person/tania-yuki-comscore-inc/27962642",
+          "snippet": "Tania re-joined Comscore in late 2021 after Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of ...",
+          "date": ""
+        },
+        {
+          "id": 3,
+          "title": "Six - Dh-CES 2023",
+          "url": "https://www.digitalhollywood.com/six---dh-ces-2023",
+          "snippet": "... Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of 2021, was acquired by Comscore. Shareablee ...",
+          "date": ""
+        },
+        {
+          "id": 4,
+          "title": "Startup Stories: Transforming the world's social data into ...",
+          "url": "https://www.mixcloud.com/devradioaudio-channel9/startup-stories-transforming-the-worlds-social-data-into-actionable-business-intelligence-with-sha/",
+          "snippet": "Founded in 2013, Shareablee is the first and only industry-level measurement solution for media companies and brands wanting to understand the impact and ...",
+          "date": ""
+        },
+        {
+          "id": 5,
+          "title": "2023 AudiencexScience Speaker Bios",
+          "url": "https://thearf.org/arf-events/audiencexscience-2023-speakers-bios/",
+          "snippet": "... startup that she founded in 2013 and led as CEO through to the end of 2021, was acquired by Comscore. Prior to founding Shareablee, Tania ...",
+          "date": "Mar 17, 2023"
+        },
+        {
+          "id": 6,
+          "title": "AI Summit - Session Eight",
+          "url": "https://www.digitalhollywood.com/ai-summit---session-eight",
+          "snippet": "... Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of 2021, was acquired by Comscore.",
+          "date": "Jul 18, 2023"
+        },
+        {
+          "id": 7,
+          "title": "Interactive Advertising Bureau | 2022 IAB NewFronts",
+          "url": "https://www.iab.com/events/2022-iab-newfronts/",
+          "snippet": "Tania re-joined Comscore in late 2021 after Shareablee, the venture-backed technology startup that she founded in 2013 and led as CEO through to the end of ...",
+          "date": ""
+        },
+        {
+          "id": 8,
+          "title": "Canadian Online Publishing Awards",
+          "url": "https://archive.is/wip/A5uSo",
+          "snippet": "Shareablee is the leader in audience-based social media measurement for media ... Launched in 2013, Shareablee empowers brands by providing data ...",
+          "date": "Feb 5, 2021"
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "name": "code_executor",
+      "arguments": "{\"code\": \"from datetime import date\\n\\n# Shareablee (Video 1 - Tania Yuki's company)\\nshareablee_founded = date(2013, 2, 1)   # February 2013\\n\\n# PeopleBrowsr (Video 2 - parent company of Kred)\\npeoplebrowsr_founded = date(2007, 1, 1)  # early 2007\\n\\ndiff_years = shareablee_founded.year - peoplebrowsr_founded.year\\nprint(\\\"Shareablee founded:\\\", shareablee_founded.strftime(\\\"%B %Y\\\"))\\nprint(\\\"PeopleBrowsr founded:\\\", \\\"early 2007\\\")\\nprint(\\\"Years elapsed between founding dates:\\\", diff_years)\\n\\n# Sanity check with alternative PeopleBrowsr date sometimes cited (2006 website launch)\\nprint(\\\"\\\\nAlt. if PeopleBrowsr = 2006:\\\", 2013 - 2006, \\\"years\\\")\"}",
+      "result": {
+        "stdout": "Shareablee founded: February 2013\nPeopleBrowsr founded: early 2007\nYears elapsed between founding dates: 6\n\nAlt. if PeopleBrowsr = 2006: 7 years",
+        "result": null,
+        "error": null
+      }
+    }
+  ],
+  "requests": [
+    {
+      "item_id": 130,
+      "id": "gen-1791468201-VtEtVPuXIjZt1ZdQ398R",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 34496,
+        "completion_tokens": 198,
+        "total_tokens": 34694,
+        "cost": 0.00526746,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00526746,
+          "upstream_inference_prompt_cost": 0.0051744,
+          "upstream_inference_completions_cost": 9.306e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 36,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 27.367
+    },
+    {
+      "item_id": 130,
+      "id": "gen-1791468233-3a0NSTURdsbEV9M7D6Tk",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 38445,
+        "completion_tokens": 251,
+        "total_tokens": 38696,
+        "cost": 0.00588472,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00588472,
+          "upstream_inference_prompt_cost": 0.00576675,
+          "upstream_inference_completions_cost": 0.00011797
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 131,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 32.701
+    },
+    {
+      "item_id": 130,
+      "id": "gen-1791468269-ECzjrJ7kz7Z7Sor6aDMw",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 45517,
+        "completion_tokens": 628,
+        "total_tokens": 46145,
+        "cost": 0.00712271,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00712271,
+          "upstream_inference_prompt_cost": 0.00682755,
+          "upstream_inference_completions_cost": 0.00029516
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 467,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 28.081
+    },
+    {
+      "item_id": 130,
+      "id": "gen-1791468313-UqqdMjugbON7rgrqBP7Y",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 51169,
+        "completion_tokens": 531,
+        "total_tokens": 51700,
+        "cost": 0.00792492,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00792492,
+          "upstream_inference_prompt_cost": 0.00767535,
+          "upstream_inference_completions_cost": 0.00024957
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 288,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "attempt": 1,
+      "elapsed_seconds": 37.136
+    },
+    {
+      "item_id": 130,
+      "id": "gen-1791468357-6BXFYcWZN0xswB4dyTSy",
+      "model": "qwen/qwen3.8-omni-flash",
+      "provider": "Alibaba",
+      "judge": false,
+      "usage": {
+        "prompt_tokens": 51782,
+        "completion_tokens": 505,
+        "total_tokens": 52287,
+        "cost": 0.00800465,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00800465,
+          "upstream_inference_prompt_cost": 0.0077673,
+          "upstream_inference_completions_cost": 0.00023735
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "attempt": 1,
+      "elapsed_seconds": 33.863
+    }
+  ],
+  "forced_final": false,
+  "status": "completed",
+  "predicted_answer": "6 years elapsed between the two founding dates. PeopleBrowsr — the San Francisco company behind Kred, the influence-scoring platform demonstrated in the second video — was founded in early 2007 by Jodee Rich. Shareablee — the New York social media analytics firm founded by Tania Yuki, the CEO interviewed in the first video about Ford's real-time \"dress color\" marketing campaign — was founded in February 2013. That is a gap of approximately 6 years (2013 − 2007 = 6).",
+  "em_score": 0,
+  "llm_equal": 1,
+  "judge_response": "Correct",
+  "judge_error": null,
+  "elapsed_seconds": 235.59
+}
